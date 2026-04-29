@@ -91,7 +91,7 @@ const SPRING = {
 
 const COVER_WIDTH = 176;
 const COVER_HEIGHT = 218;
-const STACK_STEP = 70;
+const STACK_STEP = 84;
 const PARTING_DISTANCE = 40;
 const HOVER_LIFT = -32;
 
@@ -383,6 +383,13 @@ function Cover({
         className="absolute inset-0 z-10 bg-zinc-950"
         style={{ maskImage, WebkitMaskImage: maskImage }}
       />
+
+      <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 aspect-square w-[49%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-zinc-700/70">
+        <div className="absolute inset-[11%] rounded-full border border-zinc-800/90" />
+        <div className="absolute inset-[24%] rounded-full border border-zinc-700/50" />
+        <div className="absolute inset-[37%] rounded-full border border-zinc-800/80" />
+        <div className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-700" />
+      </div>
 
       <div className="absolute inset-0 z-20 border border-zinc-800" />
 
