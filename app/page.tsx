@@ -131,17 +131,10 @@ export default function Page() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.18 }}
-                    className="w-full max-w-4xl"
+                    className="absolute bottom-6 left-4 sm:left-6"
                   >
-                    <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.26em] text-zinc-500">
-                      Index / 08 objects
-                    </p>
-                    <h1 className="max-w-4xl text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50 sm:text-6xl lg:text-7xl">
-                      Select work by extraction.
-                    </h1>
-                    <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-500">
-                      A single-view archive for product systems, agents, and
-                      operating logic. Hover to part the crate. Click to extract.
+                    <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-600">
+                      Hover to part / Click to extract
                     </p>
                   </motion.div>
                 )}
@@ -185,7 +178,15 @@ function TypographicBaseCanvas({
           }}
           transition={{ duration: 0.22 }}
         >
-          AI-NATIVE WORKFLOWS &amp; SAAS.
+          AI-NATIVE WORKFLOWS.
+        </motion.p>
+        <motion.p
+          animate={{
+            color: isMuted ? "#18181b" : isActive ? "#27272a" : "#3f3f46",
+          }}
+          transition={{ duration: 0.22 }}
+        >
+          SAAS SYSTEMS.
         </motion.p>
         <motion.p
           animate={{
