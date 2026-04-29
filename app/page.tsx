@@ -131,12 +131,8 @@ export default function Page() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.18 }}
-                    className="absolute bottom-6 left-4 sm:left-6"
-                  >
-                    <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-600">
-                      Hover to part / Click to extract
-                    </p>
-                  </motion.div>
+                    className="sr-only"
+                  />
                 )}
               </AnimatePresence>
             </section>
