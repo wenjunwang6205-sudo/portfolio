@@ -244,6 +244,13 @@ const SPRING = {
   damping: 25,
 } as const;
 
+const LAYOUT_SPRING = {
+  type: "spring",
+  stiffness: 190,
+  damping: 28,
+  mass: 0.9,
+} as const;
+
 const COVER_WIDTH = 176;
 const COVER_HEIGHT = 218;
 const STACK_STEP = 88;
@@ -289,7 +296,7 @@ export default function Page() {
                 }
               }}
             >
-              <AnimatePresence mode="popLayout">
+              <AnimatePresence mode="sync">
                 {selectedItem && selectedIndex !== null ? (
                   <DetailView
                     key={selectedItem.id}
@@ -440,7 +447,7 @@ function Crate({
               {!selected && (
                 <motion.div
                   layoutId={`crate-cover-${item.id}`}
-                  transition={SPRING}
+                  transition={LAYOUT_SPRING}
                   className="h-[218px] w-[176px] border border-zinc-800 bg-zinc-950 text-left"
                 >
                   <Cover item={item} index={index} />
@@ -464,10 +471,13 @@ function DetailView({
   onClose: () => void;
 }) {
   return (
-    <div
+    <motion.div
       className="grid w-full max-w-5xl items-start gap-6 md:grid-cols-[minmax(220px,34vh)_minmax(0,1fr)] md:gap-8"
       onClick={(event) => event.stopPropagation()}
       role="presentation"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 1, transition: { duration: 0.46 } }}
     >
       <button
         type="button"
@@ -484,7 +494,7 @@ function DetailView({
       <div className="w-[min(52vw,280px)] md:w-full" onClick={(event) => event.stopPropagation()}>
         <motion.div
           layoutId={`crate-cover-${item.id}`}
-          transition={SPRING}
+          transition={LAYOUT_SPRING}
           className="aspect-[4/5] w-full border border-zinc-800 bg-zinc-950"
         >
           <Cover item={item} index={selectedIndex} />
@@ -494,7 +504,7 @@ function DetailView({
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 6 }}
+        exit={{ opacity: 0, y: 6, transition: { duration: 0.16, ease: "easeOut" } }}
         transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
         className="grid min-h-full content-start gap-5"
         onClick={(event) => event.stopPropagation()}
@@ -514,7 +524,7 @@ function DetailView({
 
         <ProjectNarrative item={item} />
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 
