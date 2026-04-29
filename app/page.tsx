@@ -301,25 +301,30 @@ function DetailView({
   onClose: () => void;
 }) {
   return (
-    <div className="grid w-full max-w-5xl items-start gap-6 md:grid-cols-[minmax(220px,34vh)_minmax(0,1fr)] md:gap-8">
+    <div
+      className="grid w-full max-w-5xl items-start gap-6 md:grid-cols-[minmax(220px,34vh)_minmax(0,1fr)] md:gap-8"
+      onClick={onClose}
+      role="presentation"
+    >
       <button
         type="button"
         onClick={onClose}
-        className="absolute right-4 top-4 z-20 flex h-9 items-center gap-2 border border-zinc-800 bg-zinc-950 px-3 font-mono text-xs text-zinc-500 transition-colors hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
+        className="absolute right-4 top-4 z-20 flex h-9 items-center gap-2 border border-zinc-700 bg-zinc-950 px-3 font-mono text-xs uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-zinc-500 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
         aria-label="Close selected item"
       >
         <span>[</span>
+        <span>Close</span>
         <X aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
         <span>]</span>
       </button>
 
-      <div className="w-[min(52vw,280px)] md:w-full">
+      <div className="w-[min(52vw,280px)] md:w-full" onClick={(event) => event.stopPropagation()}>
         <motion.div
           layoutId={`crate-cover-${item.id}`}
           transition={SPRING}
           className="aspect-[4/5] w-full border border-zinc-800 bg-zinc-950"
         >
-          <Cover item={item} index={selectedIndex} detail />
+          <Cover item={item} index={selectedIndex} />
         </motion.div>
       </div>
 
@@ -329,6 +334,7 @@ function DetailView({
         exit={{ opacity: 0, y: 6 }}
         transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
         className="grid min-h-full content-start gap-5"
+        onClick={(event) => event.stopPropagation()}
       >
         <div>
           <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
@@ -339,7 +345,7 @@ function DetailView({
           </h2>
         </div>
 
-        <div className="aspect-video border border-zinc-800 bg-zinc-900">
+        <div className="h-[clamp(150px,23vh,220px)] border border-zinc-800 bg-zinc-900">
           <ProjectImage item={item} selectedIndex={selectedIndex} />
         </div>
 
@@ -377,11 +383,9 @@ function ProjectImage({
 function Cover({
   item,
   index,
-  detail = false,
 }: {
   item: CrateItem;
   index: number;
-  detail?: boolean;
 }) {
   const displayIndex = String(index + 1).padStart(2, "0");
   const maskImage =
@@ -423,13 +427,7 @@ function Cover({
       </div>
 
       <div className="absolute bottom-3 left-3 right-[4.6rem] z-30">
-        <h3
-          className={
-            detail
-              ? "text-4xl font-black leading-[0.86] tracking-[-0.06em] text-zinc-100 sm:text-6xl"
-              : "text-xl font-black leading-[0.88] tracking-[-0.05em] text-zinc-100"
-          }
-        >
+        <h3 className="text-xl font-black leading-[0.88] tracking-[-0.05em] text-zinc-100">
           {item.title}
         </h3>
       </div>
