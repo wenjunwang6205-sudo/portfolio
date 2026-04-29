@@ -337,7 +337,7 @@ function DetailView({
           </h2>
         </div>
 
-        <div className="h-[clamp(150px,23vh,220px)] border border-zinc-800 bg-zinc-900">
+        <div className="aspect-[16/10] max-h-[280px] w-full border border-zinc-800 bg-zinc-900">
           <ProjectImage item={item} selectedIndex={selectedIndex} />
         </div>
 
@@ -357,12 +357,12 @@ function ProjectImage({
   selectedIndex: number;
 }) {
   return (
-    <div className="h-full w-full overflow-hidden bg-zinc-900 grayscale contrast-75 brightness-75">
+    <div className="h-full w-full overflow-hidden bg-zinc-900 grayscale contrast-90 brightness-90">
       {item.image ? (
         <img
           src={item.image}
           alt=""
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           draggable={false}
         />
       ) : (
