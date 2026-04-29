@@ -90,8 +90,10 @@ export default function Page() {
   return (
     <main className="min-h-screen overflow-hidden bg-zinc-950 font-sans text-zinc-50">
       <LayoutGroup>
-        <section className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col border-x border-zinc-800 bg-zinc-950">
-          <header className="flex h-14 items-center justify-between border-b border-zinc-800 px-4 sm:px-6">
+        <section className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col overflow-hidden border-x border-zinc-800 bg-zinc-950">
+          <TypographicBaseCanvas />
+
+          <header className="relative z-10 flex h-14 items-center justify-between border-b border-zinc-800 bg-zinc-950/70 px-4 sm:px-6">
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
               Crate Digger / Product Portfolio
             </p>
@@ -100,7 +102,7 @@ export default function Page() {
             </p>
           </header>
 
-          <div className="grid flex-1 grid-rows-[1fr_auto]">
+          <div className="relative z-10 grid flex-1 grid-rows-[1fr_auto]">
             <section className="relative grid place-items-center px-4 pb-6 pt-6 sm:px-6">
               <AnimatePresence mode="popLayout">
                 {selectedItem && selectedIndex !== null ? (
@@ -147,6 +149,18 @@ export default function Page() {
         </section>
       </LayoutGroup>
     </main>
+  );
+}
+
+function TypographicBaseCanvas() {
+  return (
+    <div className="pointer-events-none absolute left-0 top-0 z-0 w-full px-4 pt-16 sm:px-6 sm:pt-20">
+      <div className="select-none font-sans text-[clamp(3.4rem,8vw,8.8rem)] font-black uppercase leading-[0.82] tracking-tighter text-zinc-900">
+        <p>WENJUN.</p>
+        <p>AI-NATIVE WORKFLOWS &amp; SAAS.</p>
+        <p>BASED IN SHANGHAI.</p>
+      </div>
+    </div>
   );
 }
 
