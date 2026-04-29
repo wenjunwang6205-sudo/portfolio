@@ -479,26 +479,25 @@ function DetailView({
       animate={{ opacity: 1 }}
       exit={{ opacity: 1, transition: { duration: 0.46 } }}
     >
-      <button
-        type="button"
-        onClick={onClose}
-        className="absolute right-4 top-4 z-20 flex h-9 items-center gap-2 border border-zinc-700 bg-zinc-950 px-3 font-mono text-xs uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-zinc-500 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
-        aria-label="Close selected item"
-      >
-        <span>[</span>
-        <span>Close</span>
-        <X aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
-        <span>]</span>
-      </button>
-
-      <div className="w-[min(52vw,280px)] md:w-full" onClick={(event) => event.stopPropagation()}>
+      <div className="flex w-full items-start justify-between gap-4 md:block" onClick={(event) => event.stopPropagation()}>
         <motion.div
           layoutId={`crate-cover-${item.id}`}
           transition={LAYOUT_SPRING}
-          className="aspect-[4/5] w-full border border-zinc-800 bg-zinc-950"
+          className="aspect-[4/5] w-[min(52vw,280px)] border border-zinc-800 bg-zinc-950 md:w-full"
         >
           <Cover item={item} index={selectedIndex} />
         </motion.div>
+        <button
+          type="button"
+          onClick={onClose}
+          className="flex h-9 shrink-0 items-center gap-2 border border-zinc-700 bg-zinc-950 px-3 font-mono text-xs uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-zinc-500 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500 md:hidden"
+          aria-label="Close selected item"
+        >
+          <span>[</span>
+          <span>Close</span>
+          <X aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
+          <span>]</span>
+        </button>
       </div>
 
       <motion.div
@@ -509,6 +508,18 @@ function DetailView({
         className="grid min-h-full content-start gap-5"
         onClick={(event) => event.stopPropagation()}
       >
+        <button
+          type="button"
+          onClick={onClose}
+          className="hidden h-9 w-fit items-center gap-2 justify-self-end border border-zinc-700 bg-zinc-950 px-3 font-mono text-xs uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-zinc-500 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500 md:flex"
+          aria-label="Close selected item"
+        >
+          <span>[</span>
+          <span>Close</span>
+          <X aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
+          <span>]</span>
+        </button>
+
         <div>
           <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
             {item.tag} / {item.type}
