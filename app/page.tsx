@@ -15,31 +15,31 @@ type CrateItem = {
 
 const ITEMS: CrateItem[] = [
   {
-    id: "deepinsight",
-    title: "DeepInsight",
-    type: "Game Industry Sentiment & PR Analysis Agent",
-    tag: "SYS.AGENT",
-    image: "./assets/WechatIMG454.jpg",
-    content:
-      "A product intelligence agent that scans player discourse, classifies PR risk, and turns noisy community feedback into structured decision signals.",
-  },
-  {
     id: "easypromo",
-    title: "EasyPromo",
+    title: "EASYPROMO",
     type: "Marketing Plan & Brief Generation Agent",
-    tag: "MKT.GEN",
+    tag: "SYS.AGENT_ORCHESTRATOR",
     image: "./assets/WechatIMG490.jpg",
     content:
-      "A planning workflow that transforms campaign inputs into positioning, channel strategy, creative briefs, and review-ready launch documents.",
+      "多 Agent 营销策划生成引擎，基于 Orchestrator 调度、动态模型路由与质量评估机制，将复杂方案交付周期压缩至 30 分钟以内。负责定义任务流、分支策略与输出质量标准。",
+  },
+  {
+    id: "deepinsight",
+    title: "DEEPINSIGHT",
+    type: "Game Industry Sentiment & PR Analysis Agent",
+    tag: "DATA.SENTIMENT_PIPELINE",
+    image: "./assets/WechatIMG454.jpg",
+    content:
+      "跨平台游戏舆情分析系统，整合 10+ 平台异构数据，将非结构化玩家反馈转化为高信噪比运营情报。负责设计检索链路、置信度过滤与自动化洞察工作流。",
   },
   {
     id: "zhongyou-hub",
-    title: "Zhongyou Hub",
+    title: "ZHONGYOU HUB",
     type: "Creator Multi-platform Management & Settlement SaaS",
-    tag: "OPS.SAAS",
+    tag: "SAAS.MULTI_TENANT",
     image: "./assets/WechatIMG505.jpg",
     content:
-      "A creator operations platform for account binding, campaign delivery, revenue attribution, exception handling, and settlement tracking.",
+      "四端联动的游戏达人生态 SaaS 平台，覆盖商单分发、内容协作、激励矩阵与多级佣金清算。负责重构任务流、结算逻辑与跨周期管理机制。",
   },
   {
     id: "data-orchestrator",
