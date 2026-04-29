@@ -125,12 +125,35 @@ const ITEMS: CrateItem[] = [
     ],
   },
   {
-    id: "data-orchestrator",
-    title: "Data Orchestrator",
-    type: "LLM Workflow & Multi-agent System",
-    tag: "LLM.FLOW",
+    id: "eventfull",
+    title: "EVENTFULL",
+    type: "Social Event Management Hub",
+    tag: "SOCIAL.PRIVACY_MATCHING",
     content:
-      "An orchestration layer for task graphs, tool calls, agent roles, retries, evaluation states, and human review checkpoints.",
+      "全能的社交活动管理中枢，帮助用户精准切换私密社交与公域社交模式。系统在保护隐私的同时，让兴趣活动被真正匹配的人发现、报名和持续互动。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 项目概览",
+        body: "这是一个全能的社交活动管理中枢。它的核心任务只有一件事：帮用户精准切换“私密社交”与“公域社交”模式。无论是几个人的秘密聚会，还是几百人的兴趣小组，系统都能在保证隐私的同时，让好玩的活动被对的人发现。",
+      },
+      {
+        heading: "[ ARCHITECTURE ] 核心逻辑",
+        points: [
+          {
+            label: "双向社交控制",
+            text: "系统将活动分为“私人”和“公开”两套逻辑。私人模式下，活动只在小圈子内可见；公开模式下，活动会推送到大厅，让全城有相同标签的人都能搜索并报名。",
+          },
+          {
+            label: "自动兴趣匹配",
+            text: "系统根据用户年龄、喜好等标签进行精准画像，不再依赖死板列表。喜欢健身或音乐的用户会优先在首页看到相关兴趣小组和本地活动。",
+          },
+          {
+            label: "分层聊天系统",
+            text: "聊天功能被拆解为私聊与群聊两个层级。私聊用于一对一细节确认，群聊用于社区消息同步和文件共享，并通过实时技术保障低延迟沟通。",
+          },
+        ],
+      },
+    ],
   },
   {
     id: "node-flow",
