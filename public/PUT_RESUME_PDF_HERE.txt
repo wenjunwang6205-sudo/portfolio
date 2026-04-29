@@ -1,0 +1,5 @@
+Place your resume PDF at:
+
+public/resume.pdf
+
+The header "Resume PDF" link points to ./resume.pdf after the site is deployed.

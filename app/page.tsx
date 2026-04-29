@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { X } from "lucide-react";
+import { FileText, X } from "lucide-react";
 import { useState } from "react";
 
 type CrateItem = {
@@ -91,15 +91,24 @@ export default function Page() {
     <main className="min-h-screen overflow-hidden bg-zinc-950 font-sans text-zinc-50">
       <LayoutGroup>
         <section className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col overflow-hidden border-x border-zinc-800 bg-zinc-950">
-          <TypographicBaseCanvas />
+          <TypographicBaseCanvas
+            isActive={hoveredIndex !== null}
+            isMuted={selectedIndex !== null}
+          />
 
           <header className="relative z-10 flex h-14 items-center justify-between border-b border-zinc-800 bg-zinc-950/70 px-4 sm:px-6">
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-              Crate Digger / Product Portfolio
+              WENJUN / Product Portfolio
             </p>
-            <p className="hidden font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-700 sm:block">
-              2D Selection System
-            </p>
+            <a
+              href="./resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-8 items-center gap-2 border border-zinc-800 px-3 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 transition-colors hover:border-zinc-700 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
+            >
+              <FileText aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
+              <span>Resume PDF</span>
+            </a>
           </header>
 
           <div className="relative z-10 grid flex-1 grid-rows-[1fr_auto]">
@@ -152,13 +161,40 @@ export default function Page() {
   );
 }
 
-function TypographicBaseCanvas() {
+function TypographicBaseCanvas({
+  isActive,
+  isMuted,
+}: {
+  isActive: boolean;
+  isMuted: boolean;
+}) {
   return (
     <div className="pointer-events-none absolute left-0 top-0 z-0 w-full px-4 pt-16 sm:px-6 sm:pt-20">
-      <div className="select-none font-sans text-[clamp(3.4rem,8vw,8.8rem)] font-black uppercase leading-[0.82] tracking-tighter text-zinc-900">
-        <p>WENJUN.</p>
-        <p>AI-NATIVE WORKFLOWS &amp; SAAS.</p>
-        <p>BASED IN SHANGHAI.</p>
+      <div className="select-none font-sans text-[clamp(3.4rem,8vw,8.8rem)] font-black uppercase leading-[0.82] tracking-tighter">
+        <motion.p
+          animate={{
+            color: isMuted ? "#18181b" : isActive ? "#52525b" : "#3f3f46",
+          }}
+          transition={{ duration: 0.22 }}
+        >
+          WENJUN.
+        </motion.p>
+        <motion.p
+          animate={{
+            color: isMuted ? "#18181b" : isActive ? "#27272a" : "#3f3f46",
+          }}
+          transition={{ duration: 0.22 }}
+        >
+          AI-NATIVE WORKFLOWS &amp; SAAS.
+        </motion.p>
+        <motion.p
+          animate={{
+            color: isMuted ? "#18181b" : isActive ? "#27272a" : "#3f3f46",
+          }}
+          transition={{ duration: 0.22 }}
+        >
+          BASED IN SHANGHAI.
+        </motion.p>
       </div>
     </div>
   );
