@@ -65,22 +65,6 @@ const ITEMS: CrateItem[] = [
     content:
       "A discovery system that turns ambiguous opportunities into problem frames, evidence maps, MVP scopes, and validation plans.",
   },
-  {
-    id: "vector-db",
-    title: "Vector DB",
-    type: "Knowledge Retrieval Infrastructure",
-    tag: "RAG.DB",
-    content:
-      "A retrieval layer for organizing product knowledge, source references, semantic search, and context assembly for AI workflows.",
-  },
-  {
-    id: "metric-sync",
-    title: "Metric Sync",
-    type: "Business Metrics Alignment Dashboard",
-    tag: "BI.SYNC",
-    content:
-      "A metrics workspace that aligns definitions, ownership, anomaly review, and recurring business decision rituals.",
-  },
 ];
 
 const SPRING = {
