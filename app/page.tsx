@@ -1,354 +1,339 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { ArrowUpRight, X } from "lucide-react";
+import { X } from "lucide-react";
 import { useState } from "react";
 
-type Project = {
+type CrateItem = {
   id: string;
-  index: string;
   title: string;
-  subtitle: string;
-  category: string;
-  year: string;
-  description: string;
-  architecture: string[];
-  logic: string[];
-  outcome: string;
-  tone: string;
+  type: string;
+  content: string;
 };
 
-const SPRING = {
-  type: "spring",
-  stiffness: 200,
-  damping: 25,
-} as const;
-
-const PROJECTS: Project[] = [
+const ITEMS: CrateItem[] = [
   {
     id: "deepinsight",
-    index: "01",
     title: "DeepInsight",
-    subtitle: "Game Industry Sentiment & PR Analysis Agent",
-    category: "Agent / Research Intelligence",
-    year: "2026",
-    description:
-      "A signal extraction agent for game studios. It reads public discourse, separates noise from risk, and turns community sentiment into product and PR decisions.",
-    architecture: [
-      "Source ingestion across community, media, and creator channels",
-      "Sentiment clustering with topic drift detection",
-      "Risk scoring layer for PR, design, and live-ops teams",
-    ],
-    logic: [
-      "Detect recurring pain points before they become public incidents",
-      "Compare player language against release beats and patch notes",
-      "Output executive briefs with evidence trails and confidence levels",
-    ],
-    outcome:
-      "Designed for faster issue framing, cleaner escalation paths, and more defensible response timing.",
-    tone: "from-zinc-900 via-zinc-800 to-zinc-950",
+    type: "Game Industry Sentiment & PR Analysis Agent",
+    content:
+      "A product intelligence agent that scans player discourse, classifies PR risk, and turns noisy community feedback into structured decision signals.",
   },
   {
     id: "easypromo",
-    index: "02",
     title: "EasyPromo",
-    subtitle: "Marketing Plan & Brief Generation Agent",
-    category: "Agent / Marketing Workflow",
-    year: "2026",
-    description:
-      "A planning assistant that turns campaign inputs into structured positioning, channel plans, content briefs, and reusable launch documents.",
-    architecture: [
-      "Campaign intake schema for audience, offer, channel, and constraints",
-      "Brief generation pipeline with brand and compliance checks",
-      "Iteration workspace for marketer review and regeneration",
-    ],
-    logic: [
-      "Convert unclear launch ideas into comparable plan options",
-      "Keep messaging consistent while allowing channel-specific execution",
-      "Reduce blank-page time for early campaign planning",
-    ],
-    outcome:
-      "Focused on compressing planning cycles while preserving human taste and final judgment.",
-    tone: "from-stone-900 via-zinc-800 to-neutral-950",
+    type: "Marketing Plan & Brief Generation Agent",
+    content:
+      "A planning workflow that transforms campaign inputs into positioning, channel strategy, creative briefs, and review-ready launch documents.",
   },
   {
-    id: "zhongyou-platform",
-    index: "03",
-    title: "Zhongyou Platform",
-    subtitle: "Creator Multi-platform Management & Settlement SaaS",
-    category: "SaaS / Creator Operations",
-    year: "2025",
-    description:
-      "A creator operations platform for managing multi-channel accounts, campaign delivery, revenue attribution, and settlement workflows.",
-    architecture: [
-      "Creator profile and account binding across multiple platforms",
-      "Campaign delivery tracking with role-based approval states",
-      "Settlement ledger for revenue split, audit, and payout status",
-    ],
-    logic: [
-      "Replace spreadsheet coordination with accountable workflow states",
-      "Make finance, operation, and creator-facing data speak the same language",
-      "Expose exceptions early before settlement cycles close",
-    ],
-    outcome:
-      "Structured for lower manual reconciliation cost and clearer multi-party responsibility.",
-    tone: "from-neutral-900 via-zinc-700 to-zinc-950",
+    id: "zhongyou-hub",
+    title: "Zhongyou Hub",
+    type: "Creator Multi-platform Management & Settlement SaaS",
+    content:
+      "A creator operations platform for account binding, campaign delivery, revenue attribution, exception handling, and settlement tracking.",
   },
   {
     id: "data-orchestrator",
-    index: "04",
     title: "Data Orchestrator",
-    subtitle: "LLM Workflow & Multi-agent System",
-    category: "Infrastructure / AI Workflow",
-    year: "2026",
-    description:
-      "A workflow layer for coordinating LLM tasks, tool calls, evaluation states, and multi-agent collaboration across product scenarios.",
-    architecture: [
-      "Task graph with explicit state, dependency, and retry rules",
-      "Agent role assignment for research, synthesis, validation, and execution",
-      "Evaluation hooks for traceability, regression checks, and human review",
-    ],
-    logic: [
-      "Turn open-ended AI work into inspectable production workflows",
-      "Separate orchestration from model output to reduce hidden failure modes",
-      "Make quality measurable before scaling automation",
-    ],
-    outcome:
-      "Built around control, observability, and repeatability rather than one-off prompt demos.",
-    tone: "from-zinc-950 via-neutral-800 to-stone-950",
+    type: "LLM Workflow & Multi-agent System",
+    content:
+      "An orchestration layer for task graphs, tool calls, agent roles, retries, evaluation states, and human review checkpoints.",
+  },
+  {
+    id: "node-flow",
+    title: "Node Flow",
+    type: "Visual Workflow Builder",
+    content:
+      "A node-based interface for mapping product logic, dependencies, fallback paths, and operator-controlled automation sequences.",
+  },
+  {
+    id: "genesis",
+    title: "Genesis",
+    type: "0-1 Product Discovery System",
+    content:
+      "A discovery system that turns ambiguous opportunities into problem frames, evidence maps, MVP scopes, and validation plans.",
+  },
+  {
+    id: "vector-db",
+    title: "Vector DB",
+    type: "Knowledge Retrieval Infrastructure",
+    content:
+      "A retrieval layer for organizing product knowledge, source references, semantic search, and context assembly for AI workflows.",
+  },
+  {
+    id: "metric-sync",
+    title: "Metric Sync",
+    type: "Business Metrics Alignment Dashboard",
+    content:
+      "A metrics workspace that aligns definitions, ownership, anomaly review, and recurring business decision rituals.",
   },
 ];
 
+const SPRING = {
+  type: "spring",
+  stiffness: 300,
+  damping: 25,
+} as const;
+
+const COVER_WIDTH = 176;
+const COVER_HEIGHT = 218;
+const STACK_STEP = 70;
+const PARTING_DISTANCE = 40;
+const HOVER_LIFT = -32;
+
 export default function Page() {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const selectedItem = selectedIndex === null ? null : ITEMS[selectedIndex];
 
   return (
-    <main className="min-h-screen overflow-hidden bg-zinc-950 px-4 py-4 font-sans text-zinc-50 sm:px-6 lg:px-8">
+    <main className="min-h-screen overflow-hidden bg-zinc-950 font-sans text-zinc-50">
       <LayoutGroup>
-        <div className="mx-auto flex min-h-[calc(100vh-2rem)] w-full max-w-7xl flex-col border border-zinc-800 bg-zinc-950">
-          <header className="flex items-center justify-between border-b border-zinc-800 px-4 py-3 sm:px-5">
-            <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-400">
-              Product Records
-            </div>
-            <div className="hidden font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-600 sm:block">
-              Portfolio / Selection Interface
-            </div>
+        <section className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col border-x border-zinc-800 bg-zinc-950">
+          <header className="flex h-14 items-center justify-between border-b border-zinc-800 px-4 sm:px-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+              Crate Digger / Product Portfolio
+            </p>
+            <p className="hidden font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-700 sm:block">
+              2D Selection System
+            </p>
           </header>
 
-          <AnimatePresence initial={false} mode="popLayout">
-            {selectedProject ? (
-              <ProjectDetail
-                key="detail"
-                project={selectedProject}
-                onClose={() => setSelectedProject(null)}
-              />
-            ) : (
-              <Gallery key="gallery" onSelect={setSelectedProject} />
-            )}
-          </AnimatePresence>
-        </div>
+          <div className="grid flex-1 grid-rows-[1fr_auto]">
+            <section className="relative grid place-items-center px-4 pb-6 pt-6 sm:px-6">
+              <AnimatePresence mode="popLayout">
+                {selectedItem && selectedIndex !== null ? (
+                  <DetailView
+                    key={selectedItem.id}
+                    item={selectedItem}
+                    selectedIndex={selectedIndex}
+                    onClose={() => {
+                      setSelectedIndex(null);
+                      setHoveredIndex(null);
+                    }}
+                  />
+                ) : (
+                  <motion.div
+                    key="intro"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.18 }}
+                    className="w-full max-w-4xl"
+                  >
+                    <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.26em] text-zinc-500">
+                      Index / 08 objects
+                    </p>
+                    <h1 className="max-w-4xl text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50 sm:text-6xl lg:text-7xl">
+                      Select work by extraction.
+                    </h1>
+                    <p className="mt-5 max-w-xl text-sm leading-6 text-zinc-500">
+                      A single-view archive for product systems, agents, and
+                      operating logic. Hover to part the crate. Click to extract.
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </section>
+
+            <Crate
+              hoveredIndex={hoveredIndex}
+              selectedIndex={selectedIndex}
+              onHover={setHoveredIndex}
+              onSelect={setSelectedIndex}
+            />
+          </div>
+        </section>
       </LayoutGroup>
     </main>
   );
 }
 
-function Gallery({ onSelect }: { onSelect: (project: Project) => void }) {
+function Crate({
+  hoveredIndex,
+  selectedIndex,
+  onHover,
+  onSelect,
+}: {
+  hoveredIndex: number | null;
+  selectedIndex: number | null;
+  onHover: (index: number | null) => void;
+  onSelect: (index: number) => void;
+}) {
+  const totalWidth = COVER_WIDTH + STACK_STEP * (ITEMS.length - 1);
+
   return (
-    <motion.section
-      className="flex flex-1 flex-col justify-between gap-10 p-4 sm:p-5 lg:p-7"
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.16 }}
-    >
-      <div className="grid gap-8 lg:grid-cols-[0.82fr_1fr] lg:items-end">
-        <div>
-          <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-500">
-            Single-page portfolio
-          </p>
-          <h1 className="max-w-4xl text-5xl font-semibold leading-[0.94] tracking-[-0.04em] text-zinc-50 sm:text-7xl lg:text-8xl">
-            Select a project like evidence.
-          </h1>
-        </div>
-        <p className="max-w-xl text-sm leading-6 text-zinc-400 sm:text-base">
-          A cold, deliberate record-selection interface for product work. Each
-          sleeve expands into a precise case view: architecture, logic, and the
-          product judgment behind the system.
-        </p>
+    <section className="relative h-[270px] overflow-hidden border-t border-zinc-800 bg-zinc-950 sm:h-[300px]">
+      <div className="absolute inset-x-0 top-0 flex h-10 items-center justify-between border-b border-zinc-800 px-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-600 sm:px-6">
+        <span>Record crate</span>
+        <span>{selectedIndex === null ? "Hover / click" : "Selected"}</span>
       </div>
 
-      <div className="grid grid-cols-1 gap-px border border-zinc-800 bg-zinc-800 md:grid-cols-2 xl:grid-cols-4">
-        {PROJECTS.map((project) => (
-          <button
-            key={project.id}
-            type="button"
-            onClick={() => onSelect(project)}
-            className="group bg-zinc-950 text-left outline-none"
-            aria-label={`Open ${project.title}`}
-          >
-            <motion.div
-              layoutId={`cover-${project.id}`}
+      <div
+        className="absolute bottom-6 left-1/2 h-[218px]"
+        style={{ width: totalWidth, transform: "translateX(-50%)" }}
+        onMouseLeave={() => onHover(null)}
+      >
+        {ITEMS.map((item, index) => {
+          const selected = selectedIndex === index;
+          const hiddenBySelection = selectedIndex !== null && !selected;
+          const isHovered = hoveredIndex === index && selectedIndex === null;
+          const isBeforeHovered =
+            hoveredIndex !== null && index < hoveredIndex && selectedIndex === null;
+          const isAfterHovered =
+            hoveredIndex !== null && index > hoveredIndex && selectedIndex === null;
+
+          const x =
+            isBeforeHovered
+              ? -PARTING_DISTANCE
+              : isAfterHovered
+                ? PARTING_DISTANCE
+                : 0;
+
+          return (
+            <motion.button
+              key={item.id}
+              type="button"
+              aria-label={`Select ${item.title}`}
+              onMouseEnter={() => onHover(index)}
+              onFocus={() => onHover(index)}
+              onBlur={() => onHover(null)}
+              onClick={() => onSelect(index)}
+              className="absolute bottom-0 top-auto block outline-none"
+              style={{
+                left: index * STACK_STEP,
+                width: COVER_WIDTH,
+                zIndex: isHovered ? 30 : index + 1,
+              }}
+              animate={{
+                x,
+                y: isHovered ? HOVER_LIFT : 0,
+                opacity: hiddenBySelection ? 0 : 1,
+              }}
               transition={SPRING}
-              className={`relative aspect-[4/5] overflow-hidden border-b border-zinc-800 bg-gradient-to-br ${project.tone}`}
+              disabled={selectedIndex !== null}
             >
-              <CoverFace project={project} />
-            </motion.div>
-
-            <div className="grid gap-4 p-4 sm:p-5">
-              <div className="flex items-center justify-between gap-4">
-                <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-500">
-                  {project.index}
-                </span>
-                <ArrowUpRight
-                  aria-hidden="true"
-                  className="h-4 w-4 text-zinc-700 transition-colors group-hover:text-zinc-50"
-                  strokeWidth={1.5}
-                />
-              </div>
-              <div>
-                <h2 className="text-xl font-medium tracking-[-0.03em] text-zinc-50">
-                  {project.title}
-                </h2>
-                <p className="mt-2 min-h-10 text-sm leading-5 text-zinc-500">
-                  {project.subtitle}
-                </p>
-              </div>
-            </div>
-          </button>
-        ))}
+              {!selected && (
+                <motion.div
+                  layoutId={`crate-cover-${item.id}`}
+                  transition={SPRING}
+                  className="h-[218px] w-[176px] border border-zinc-800 bg-zinc-950 text-left"
+                >
+                  <Cover item={item} index={index} />
+                </motion.div>
+              )}
+            </motion.button>
+          );
+        })}
       </div>
-    </motion.section>
+    </section>
   );
 }
 
-function ProjectDetail({
-  project,
+function DetailView({
+  item,
+  selectedIndex,
   onClose,
 }: {
-  project: Project;
+  item: CrateItem;
+  selectedIndex: number;
   onClose: () => void;
 }) {
   return (
-    <motion.section
-      className="relative flex flex-1 flex-col"
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 1 }}
-    >
+    <div className="grid w-full max-w-5xl gap-5">
       <button
         type="button"
         onClick={onClose}
-        className="absolute right-4 top-4 z-20 flex h-9 items-center gap-2 border border-zinc-800 bg-zinc-950 px-3 font-mono text-xs text-zinc-400 transition-colors hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
-        aria-label="Close project detail"
+        className="absolute right-4 top-4 z-20 flex h-9 items-center gap-2 border border-zinc-800 bg-zinc-950 px-3 font-mono text-xs text-zinc-500 transition-colors hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
+        aria-label="Close selected item"
       >
         <span>[</span>
         <X aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
         <span>]</span>
       </button>
 
-      <motion.div
-        layoutId={`cover-${project.id}`}
-        transition={SPRING}
-        className={`relative h-[44vh] min-h-[320px] overflow-hidden border-b border-zinc-800 bg-gradient-to-br ${project.tone}`}
-      >
-        <CoverFace project={project} isDetail />
-      </motion.div>
+      <div className="mx-auto w-[min(54vw,320px)]">
+        <motion.div
+          layoutId={`crate-cover-${item.id}`}
+          transition={SPRING}
+          className="aspect-[4/5] w-full border border-zinc-800 bg-zinc-950"
+        >
+          <Cover item={item} index={selectedIndex} detail />
+        </motion.div>
+      </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 14 }}
+        initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 8 }}
         transition={{ duration: 0.24, delay: 0.2, ease: "easeOut" }}
-        className="grid gap-px border-b border-zinc-800 bg-zinc-800 lg:grid-cols-[0.72fr_1fr]"
+        className="grid gap-px border border-zinc-800 bg-zinc-800 lg:grid-cols-[0.74fr_1fr]"
       >
-        <section className="bg-zinc-950 p-4 sm:p-6 lg:p-8">
-          <div className="mb-10 flex items-center justify-between gap-6 font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-500">
-            <span>{project.category}</span>
-            <span>{project.year}</span>
-          </div>
-
-          <h1 className="max-w-3xl text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50 sm:text-7xl">
-            {project.title}
-          </h1>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-zinc-400">
-            {project.description}
+        <section className="bg-zinc-950 p-4 sm:p-5">
+          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+            Selected record
+          </p>
+          <h2 className="text-4xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50 sm:text-5xl">
+            {item.title}
+          </h2>
+        </section>
+        <section className="bg-zinc-950 p-4 sm:p-5">
+          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+            {item.type}
+          </p>
+          <p className="max-w-2xl text-sm leading-6 text-zinc-400">
+            {item.content}
           </p>
         </section>
-
-        <section className="grid gap-px bg-zinc-800 md:grid-cols-2">
-          <DetailBlock title="Architecture" items={project.architecture} />
-          <DetailBlock title="Logic" items={project.logic} />
-          <div className="bg-zinc-950 p-4 md:col-span-2 sm:p-6 lg:p-8">
-            <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-500">
-              Outcome Signal
-            </p>
-            <p className="max-w-3xl text-xl leading-8 tracking-[-0.02em] text-zinc-50">
-              {project.outcome}
-            </p>
-          </div>
-        </section>
       </motion.div>
-    </motion.section>
-  );
-}
-
-function CoverFace({
-  project,
-  isDetail = false,
-}: {
-  project: Project;
-  isDetail?: boolean;
-}) {
-  return (
-    <div className="absolute inset-0">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(250,250,250,0.055)_1px,transparent_1px),linear-gradient(to_bottom,rgba(250,250,250,0.045)_1px,transparent_1px)] bg-[size:28px_28px]" />
-      <div className="absolute inset-x-0 top-0 border-t border-zinc-700/70" />
-      <div className="absolute bottom-0 left-0 right-0 border-t border-zinc-700/70" />
-
-      <div className="absolute left-5 top-5 font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400">
-        {project.index}
-      </div>
-      <div className="absolute right-5 top-5 font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-500">
-        {project.year}
-      </div>
-
-      <div className="absolute inset-x-5 bottom-5">
-        <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-          {project.category}
-        </p>
-        <h3
-          className={
-            isDetail
-              ? "max-w-5xl text-6xl font-semibold leading-[0.86] tracking-[-0.06em] text-zinc-50 sm:text-8xl lg:text-9xl"
-              : "text-4xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50"
-          }
-        >
-          {project.title}
-        </h3>
-      </div>
-
-      <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full border border-zinc-600/80 sm:h-36 sm:w-36">
-        <div className="absolute inset-8 rounded-full border border-zinc-700/80" />
-        <div className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-500" />
-      </div>
     </div>
   );
 }
 
-function DetailBlock({ title, items }: { title: string; items: string[] }) {
+function Cover({
+  item,
+  index,
+  detail = false,
+}: {
+  item: CrateItem;
+  index: number;
+  detail?: boolean;
+}) {
+  const displayIndex = String(index + 1).padStart(2, "0");
+
   return (
-    <div className="bg-zinc-950 p-4 sm:p-6 lg:p-8">
-      <p className="mb-5 font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-500">
-        {title}
-      </p>
-      <ul className="space-y-4">
-        {items.map((item) => (
-          <li
-            key={item}
-            className="border-t border-zinc-800 pt-4 text-sm leading-6 text-zinc-400"
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
+    <div className="relative h-full w-full overflow-hidden bg-zinc-950">
+      <div className="absolute inset-x-0 top-0 border-t border-zinc-700" />
+      <div className="absolute inset-x-0 bottom-0 border-t border-zinc-800" />
+      <div className="absolute bottom-0 top-0 left-6 border-l border-zinc-800" />
+      <div className="absolute bottom-0 top-0 right-6 border-l border-zinc-800" />
+
+      <div className="absolute left-4 top-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+        {displayIndex}
+      </div>
+      <div className="absolute right-4 top-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-700">
+        PM
+      </div>
+
+      <div className="absolute left-4 right-4 top-1/2 -translate-y-1/2 border-y border-zinc-800 py-5">
+        <p className="mb-3 font-mono text-[9px] uppercase tracking-[0.22em] text-zinc-600">
+          {item.type}
+        </p>
+        <h3
+          className={
+            detail
+              ? "text-4xl font-semibold leading-[0.86] tracking-[-0.06em] text-zinc-50 sm:text-6xl"
+              : "text-2xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50"
+          }
+        >
+          {item.title}
+        </h3>
+      </div>
+
+      <div className="absolute bottom-4 left-4 right-4 font-mono text-[9px] uppercase tracking-[0.24em] text-zinc-700">
+        Archive / {item.id}
+      </div>
     </div>
   );
 }
