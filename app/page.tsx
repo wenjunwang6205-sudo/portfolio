@@ -11,6 +11,16 @@ type CrateItem = {
   tag: string;
   image?: string;
   content: string;
+  details?: DetailSection[];
+};
+
+type DetailSection = {
+  heading: string;
+  body?: string;
+  points?: Array<{
+    label: string;
+    text: string;
+  }>;
 };
 
 const ITEMS: CrateItem[] = [
@@ -22,6 +32,33 @@ const ITEMS: CrateItem[] = [
     image: "./assets/WechatIMG490.jpg",
     content:
       "专注于复杂营销方案自动生成的全链路协作引擎。系统将传统高度依赖人工的策略 SOP 解构为可被计算的标准流，采用 Orchestrator 中央调度架构动态分配子任务。底层集成多模型动态路由（Claude/GPT-4o/Qwen）以平衡输出质量与算力成本，并内置包含多源 RAG 检索、策略 Critic 选优与自动化校验的质量闭环体系。最终实现将数十小时的非标准文案交付压缩至 30 分钟以内的高可用输出。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 系统概述",
+        body: "多体协作 (Multi-Agent) 驱动的自动化营销策划生成引擎。系统旨在将传统非标准化的策略 SOP 降维，转化为可被大模型精确执行的标准化计算流，从而实现长文本方案的规模化输出。",
+      },
+      {
+        heading: "[ ARCHITECTURE ] 核心架构",
+        points: [
+          {
+            label: "编排模式",
+            text: "采用 Orchestrator 中央调度架构，规避了线性 Pipeline 导致的置信度指数级衰减问题。",
+          },
+          {
+            label: "动态路由",
+            text: "底层集成多模型调度策略，Claude/GPT-4o 负责创意叙事层的生成，Qwen 负责信息降维与结构化解析，实现算力成本与输出质量的动态平衡。",
+          },
+          {
+            label: "质量闭环",
+            text: "内置多源 RAG 检索阵列、策略 Critic 自动选优与循环修复机制，确保长文内容的一致性与逻辑闭环。",
+          },
+        ],
+      },
+      {
+        heading: "[ PERFORMANCE ] 交付表现",
+        body: "支持对话式意图输入与两级智能分发（Tool Call + 正则兜底）。将原本耗时数天的投标级全案交付周期压缩至 30 分钟以内，全自动完成率突破 90%。",
+      },
+    ],
   },
   {
     id: "deepinsight",
@@ -31,6 +68,29 @@ const ITEMS: CrateItem[] = [
     image: "./assets/WechatIMG454.jpg",
     content:
       "面向复杂游戏舆情环境的结构化智能分析平台。系统直连海内外 10+ 社交与内容生态，通过自动化 Pipeline 完成异构数据的采集、清洗与合规去重。核心分析引擎摒弃低置信度的黑盒预测，聚焦于事实级的数据驱动：支持全维度的情感拆解、高热话题追踪与异常信号识别。终端提供对话式交互与多场景报告自动生成能力，实现从海量噪音到高信噪比商业情报的即时转化。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 系统概述",
+        body: "专为游戏行业定制的结构化智能舆情分析平台。针对头部游戏极其复杂的跨平台玩家交互生态，提供从海量社群噪音到结构化商业情报的自动化提纯与洞察生成。",
+      },
+      {
+        heading: "[ ARCHITECTURE ] 核心架构",
+        points: [
+          {
+            label: "数据管线",
+            text: "直连 10+ 海内外垂直社区与内容生态，执行异构数据标准化、脱敏与实体去重，摒弃低置信度的黑盒情绪预测，坚持事实与数据驱动。",
+          },
+          {
+            label: "分析引擎",
+            text: "支持深层话题下钻、跨游戏竞品声量对比、高热异常信号识别与恶意内容分级池化，将非结构化反馈映射为结构化标签体系。",
+          },
+        ],
+      },
+      {
+        heading: "[ PERFORMANCE ] 交付表现",
+        body: "终端配备对话式交互中枢，支持针对特定游戏版本或运营活动的动态检索。自动化输出涵盖运营日报、专题深挖报告等 6+ 种核心业务版式，实现分钟级的情报流转。",
+      },
+    ],
   },
   {
     id: "zhongyou-hub",
@@ -40,6 +100,29 @@ const ITEMS: CrateItem[] = [
     image: "./assets/WechatIMG505.jpg",
     content:
       "四端联动的创作者生态中枢与清算系统。作为连接游戏厂商、MCN 机构与达人的业务基础设施，底层构建了严密的“项目-周期-任务”三级拓扑架构以支撑跨周期追踪与预算防重。核心能力包含高扩展性的动态激励规则引擎（支持多维度组合计价），以及集成防刷风控的三端级联分佣与自动化结算工作流，保障海量内容与资金的闭环流转。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 系统概述",
+        body: "支撑海量游戏达人内容生态与资金流转的四端 SaaS 基础设施。面向厂商、MCN 与创作者群体，提供贯穿全生命周期的商业化分发与合规清算中枢。",
+      },
+      {
+        heading: "[ ARCHITECTURE ] 核心架构",
+        points: [
+          {
+            label: "拓扑结构",
+            text: "底层构建“项目-周期-任务组”三级架构，确保跨周期数据的唯一性与连续性，并预留了支持多语言与跨区业务扩展的国际化底层框架。",
+          },
+          {
+            label: "计价与清算",
+            text: "核心集成动态激励规则引擎，支持 SABC 分级矩阵与多维组合计价；串联三端级联分佣模块，实现精准的资金切分与拨付。",
+          },
+        ],
+      },
+      {
+        heading: "[ PERFORMANCE ] 交付表现",
+        body: "构建了全链路防刷风控与分级智能审核机制（自动化小额审批与大额人工流转介入）。稳定承载超 3.2 亿次内容曝光与百万级预算流转，数据大盘提供双视角的 ROI 实时监控指标。",
+      },
+    ],
   },
   {
     id: "data-orchestrator",
@@ -341,10 +424,50 @@ function DetailView({
           <ProjectImage item={item} selectedIndex={selectedIndex} />
         </div>
 
-        <p className="max-w-2xl text-sm leading-relaxed text-zinc-400">
-          {item.content}
-        </p>
+        <ProjectNarrative item={item} />
       </motion.div>
+    </div>
+  );
+}
+
+function ProjectNarrative({ item }: { item: CrateItem }) {
+  if (!item.details) {
+    return (
+      <p className="max-w-2xl text-sm leading-relaxed text-zinc-400">
+        {item.content}
+      </p>
+    );
+  }
+
+  return (
+    <div className="grid max-w-2xl gap-3">
+      {item.details.map((section) => (
+        <section
+          key={section.heading}
+          className="border-t border-zinc-800 pt-3 first:border-t-0 first:pt-0"
+        >
+          <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-600">
+            {section.heading}
+          </p>
+          {section.body ? (
+            <p className="text-[13px] leading-relaxed text-zinc-300">
+              {section.body}
+            </p>
+          ) : null}
+          {section.points ? (
+            <div className="grid gap-2">
+              {section.points.map((point) => (
+                <p key={point.label} className="text-[13px] leading-relaxed text-zinc-300">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-zinc-500">
+                    {point.label}:
+                  </span>{" "}
+                  {point.text}
+                </p>
+              ))}
+            </div>
+          ) : null}
+        </section>
+      ))}
     </div>
   );
 }
