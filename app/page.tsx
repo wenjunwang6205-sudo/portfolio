@@ -565,7 +565,7 @@ function ProjectImage({
         <img
           src={item.image}
           alt=""
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover"
           draggable={false}
         />
       ) : (
