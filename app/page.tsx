@@ -91,7 +91,7 @@ const SPRING = {
 
 const COVER_WIDTH = 176;
 const COVER_HEIGHT = 218;
-const STACK_STEP = 96;
+const STACK_STEP = 88;
 const PARTING_DISTANCE = 40;
 const HOVER_LIFT = -32;
 
@@ -384,12 +384,10 @@ function Cover({
         style={{ maskImage, WebkitMaskImage: maskImage }}
       />
 
-      <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 aspect-square w-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-zinc-400/70">
-        <div className="absolute inset-[9%] rounded-full border border-zinc-500/70" />
-        <div className="absolute inset-[20%] rounded-full border border-zinc-400/55" />
-        <div className="absolute inset-[31%] rounded-full border border-zinc-500/55" />
-        <div className="absolute inset-[42%] rounded-full border border-zinc-400/45" />
-        <div className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-400/80" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 aspect-square w-[48%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-zinc-500/55">
+        <div className="absolute inset-[13%] rounded-full border border-zinc-600/65" />
+        <div className="absolute inset-[29%] rounded-full border border-zinc-500/45" />
+        <div className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-500/70" />
       </div>
 
       <div className="absolute inset-0 z-20 border border-zinc-800" />
