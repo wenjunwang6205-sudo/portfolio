@@ -162,8 +162,8 @@ function TypographicBaseCanvas({
   isMuted: boolean;
 }) {
   return (
-    <div className="pointer-events-none absolute left-0 top-0 z-0 w-full px-4 pt-16 sm:px-6 sm:pt-20">
-      <div className="select-none font-sans text-[clamp(3.4rem,8vw,8.8rem)] font-black uppercase leading-[0.82] tracking-tighter">
+    <div className="pointer-events-none absolute left-0 top-0 z-0 w-full px-4 pt-14 sm:px-6 sm:pt-[4.5rem]">
+      <div className="select-none font-sans text-[clamp(2.4rem,5.6vw,6.4rem)] font-black uppercase leading-[0.9] tracking-tighter">
         <motion.p
           animate={{
             color: isMuted ? "#18181b" : isActive ? "#52525b" : "#3f3f46",
