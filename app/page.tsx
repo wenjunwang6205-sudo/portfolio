@@ -19,7 +19,7 @@ const ITEMS: CrateItem[] = [
     title: "DeepInsight",
     type: "Game Industry Sentiment & PR Analysis Agent",
     tag: "SYS.AGENT",
-    image: "./projects/deepinsight.svg",
+    image: "./assets/WechatIMG454.jpg",
     content:
       "A product intelligence agent that scans player discourse, classifies PR risk, and turns noisy community feedback into structured decision signals.",
   },
@@ -28,7 +28,7 @@ const ITEMS: CrateItem[] = [
     title: "EasyPromo",
     type: "Marketing Plan & Brief Generation Agent",
     tag: "MKT.GEN",
-    image: "./projects/easypromo.svg",
+    image: "./assets/WechatIMG490.jpg",
     content:
       "A planning workflow that transforms campaign inputs into positioning, channel strategy, creative briefs, and review-ready launch documents.",
   },
@@ -37,7 +37,7 @@ const ITEMS: CrateItem[] = [
     title: "Zhongyou Hub",
     type: "Creator Multi-platform Management & Settlement SaaS",
     tag: "OPS.SAAS",
-    image: "./projects/zhongyou-hub.svg",
+    image: "./assets/WechatIMG505.jpg",
     content:
       "A creator operations platform for account binding, campaign delivery, revenue attribution, exception handling, and settlement tracking.",
   },
@@ -46,7 +46,6 @@ const ITEMS: CrateItem[] = [
     title: "Data Orchestrator",
     type: "LLM Workflow & Multi-agent System",
     tag: "LLM.FLOW",
-    image: "./projects/data-orchestrator.svg",
     content:
       "An orchestration layer for task graphs, tool calls, agent roles, retries, evaluation states, and human review checkpoints.",
   },
