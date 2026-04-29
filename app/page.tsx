@@ -8,6 +8,8 @@ type CrateItem = {
   id: string;
   title: string;
   type: string;
+  tag: string;
+  image?: string;
   content: string;
 };
 
@@ -16,6 +18,7 @@ const ITEMS: CrateItem[] = [
     id: "deepinsight",
     title: "DeepInsight",
     type: "Game Industry Sentiment & PR Analysis Agent",
+    tag: "SYS.AGENT",
     content:
       "A product intelligence agent that scans player discourse, classifies PR risk, and turns noisy community feedback into structured decision signals.",
   },
@@ -23,6 +26,7 @@ const ITEMS: CrateItem[] = [
     id: "easypromo",
     title: "EasyPromo",
     type: "Marketing Plan & Brief Generation Agent",
+    tag: "MKT.GEN",
     content:
       "A planning workflow that transforms campaign inputs into positioning, channel strategy, creative briefs, and review-ready launch documents.",
   },
@@ -30,6 +34,7 @@ const ITEMS: CrateItem[] = [
     id: "zhongyou-hub",
     title: "Zhongyou Hub",
     type: "Creator Multi-platform Management & Settlement SaaS",
+    tag: "OPS.SAAS",
     content:
       "A creator operations platform for account binding, campaign delivery, revenue attribution, exception handling, and settlement tracking.",
   },
@@ -37,6 +42,7 @@ const ITEMS: CrateItem[] = [
     id: "data-orchestrator",
     title: "Data Orchestrator",
     type: "LLM Workflow & Multi-agent System",
+    tag: "LLM.FLOW",
     content:
       "An orchestration layer for task graphs, tool calls, agent roles, retries, evaluation states, and human review checkpoints.",
   },
@@ -44,6 +50,7 @@ const ITEMS: CrateItem[] = [
     id: "node-flow",
     title: "Node Flow",
     type: "Visual Workflow Builder",
+    tag: "NODE.UI",
     content:
       "A node-based interface for mapping product logic, dependencies, fallback paths, and operator-controlled automation sequences.",
   },
@@ -51,6 +58,7 @@ const ITEMS: CrateItem[] = [
     id: "genesis",
     title: "Genesis",
     type: "0-1 Product Discovery System",
+    tag: "DISC.01",
     content:
       "A discovery system that turns ambiguous opportunities into problem frames, evidence maps, MVP scopes, and validation plans.",
   },
@@ -58,6 +66,7 @@ const ITEMS: CrateItem[] = [
     id: "vector-db",
     title: "Vector DB",
     type: "Knowledge Retrieval Infrastructure",
+    tag: "RAG.DB",
     content:
       "A retrieval layer for organizing product knowledge, source references, semantic search, and context assembly for AI workflows.",
   },
@@ -65,6 +74,7 @@ const ITEMS: CrateItem[] = [
     id: "metric-sync",
     title: "Metric Sync",
     type: "Business Metrics Alignment Dashboard",
+    tag: "BI.SYNC",
     content:
       "A metrics workspace that aligns definitions, ownership, anomaly review, and recurring business decision rituals.",
   },
@@ -348,39 +358,84 @@ function Cover({
   detail?: boolean;
 }) {
   const displayIndex = String(index + 1).padStart(2, "0");
+  const maskImage =
+    "radial-gradient(circle at center, transparent 24%, black 24.7%)";
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-zinc-950">
-      <div className="absolute inset-x-0 top-0 border-t border-zinc-700" />
-      <div className="absolute inset-x-0 bottom-0 border-t border-zinc-800" />
-      <div className="absolute bottom-0 top-0 left-6 border-l border-zinc-800" />
-      <div className="absolute bottom-0 top-0 right-6 border-l border-zinc-800" />
-
-      <div className="absolute left-4 top-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-        {displayIndex}
+    <div className="relative h-full w-full overflow-hidden border border-zinc-800 bg-zinc-950">
+      <div className="absolute inset-0 bg-zinc-800 grayscale contrast-75 brightness-75">
+        {item.image ? (
+          <img
+            src={item.image}
+            alt=""
+            className="h-full w-full object-cover"
+            draggable={false}
+          />
+        ) : (
+          <Blueprint index={index} />
+        )}
       </div>
-      <div className="absolute right-4 top-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-700">
-        PM
+
+      <div
+        className="absolute inset-0 z-10 bg-zinc-950"
+        style={{ maskImage, WebkitMaskImage: maskImage }}
+      />
+
+      <div className="absolute inset-0 z-20 border border-zinc-800" />
+
+      <div className="absolute left-3 top-3 z-30 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+        [ {displayIndex} ]
+      </div>
+      <div className="absolute right-3 top-3 z-30 font-mono text-[9px] uppercase tracking-[0.24em] text-zinc-700">
+        WJ
       </div>
 
-      <div className="absolute left-4 right-4 top-1/2 -translate-y-1/2 border-y border-zinc-800 py-5">
-        <p className="mb-3 font-mono text-[9px] uppercase tracking-[0.22em] text-zinc-600">
-          {item.type}
-        </p>
+      <div className="absolute bottom-3 left-3 right-[4.6rem] z-30">
         <h3
           className={
             detail
-              ? "text-4xl font-semibold leading-[0.86] tracking-[-0.06em] text-zinc-50 sm:text-6xl"
-              : "text-2xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50"
+              ? "text-4xl font-black leading-[0.86] tracking-[-0.06em] text-zinc-100 sm:text-6xl"
+              : "text-xl font-black leading-[0.88] tracking-[-0.05em] text-zinc-100"
           }
         >
           {item.title}
         </h3>
       </div>
 
-      <div className="absolute bottom-4 left-4 right-4 font-mono text-[9px] uppercase tracking-[0.24em] text-zinc-700">
-        Archive / {item.id}
+      <div className="absolute bottom-3 right-3 z-30 max-w-[4rem] text-right font-mono text-[9px] uppercase leading-none tracking-[0.18em] text-zinc-500">
+        {item.tag}
       </div>
+    </div>
+  );
+}
+
+function Blueprint({ index }: { index: number }) {
+  const offset = index % 4;
+
+  return (
+    <div className="relative h-full w-full overflow-hidden bg-zinc-800 opacity-70">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(244,244,245,0.14)_1px,transparent_1px),linear-gradient(to_bottom,rgba(244,244,245,0.1)_1px,transparent_1px)] bg-[size:18px_18px]" />
+      <div className="absolute left-[12%] top-[16%] h-[26%] w-[48%] border border-zinc-500/60" />
+      <div className="absolute bottom-[18%] right-[12%] h-[32%] w-[42%] border border-zinc-500/50" />
+      <div
+        className="absolute h-px bg-zinc-500/60"
+        style={{
+          left: `${16 + offset * 4}%`,
+          right: "18%",
+          top: `${40 + offset * 6}%`,
+        }}
+      />
+      <div
+        className="absolute w-px bg-zinc-500/50"
+        style={{
+          top: "18%",
+          bottom: `${20 + offset * 3}%`,
+          left: `${46 + offset * 5}%`,
+        }}
+      />
+      <div className="absolute left-[20%] top-[24%] h-2 w-2 bg-zinc-400/70" />
+      <div className="absolute right-[24%] top-[54%] h-2 w-2 bg-zinc-400/60" />
+      <div className="absolute bottom-[24%] left-[34%] h-2 w-2 bg-zinc-400/50" />
     </div>
   );
 }
