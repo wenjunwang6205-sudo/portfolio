@@ -10,6 +10,7 @@ type CrateItem = {
   type: string;
   tag: string;
   image?: string;
+  imagePosition?: string;
   content: string;
   details?: DetailSection[];
 };
@@ -30,6 +31,7 @@ const ITEMS: CrateItem[] = [
     type: "Marketing Plan & Brief Generation Agent",
     tag: "SYS.AGENT_ORCHESTRATOR",
     image: "./assets/01.png",
+    imagePosition: "object-top",
     content:
       "专注于复杂营销方案自动生成的全链路协作引擎。系统将传统高度依赖人工的策略 SOP 解构为可被计算的标准流，采用 Orchestrator 中央调度架构动态分配子任务。底层集成多模型动态路由（Claude/GPT-4o/Qwen）以平衡输出质量与算力成本，并内置包含多源 RAG 检索、策略 Critic 选优与自动化校验的质量闭环体系。最终实现将数十小时的非标准文案交付压缩至 30 分钟以内的高可用输出。",
     details: [
@@ -66,6 +68,7 @@ const ITEMS: CrateItem[] = [
     type: "Game Industry Sentiment & PR Analysis Agent",
     tag: "DATA.SENTIMENT_PIPELINE",
     image: "./assets/02.png",
+    imagePosition: "object-top",
     content:
       "面向复杂游戏舆情环境的结构化智能分析平台。系统直连海内外 10+ 社交与内容生态，通过自动化 Pipeline 完成异构数据的采集、清洗与合规去重。核心分析引擎摒弃低置信度的黑盒预测，聚焦于事实级的数据驱动：支持全维度的情感拆解、高热话题追踪与异常信号识别。终端提供对话式交互与多场景报告自动生成能力，实现从海量噪音到高信噪比商业情报的即时转化。",
     details: [
@@ -98,6 +101,7 @@ const ITEMS: CrateItem[] = [
     type: "Creator Multi-platform Management & Settlement SaaS",
     tag: "SAAS.MULTI_TENANT",
     image: "./assets/03.png",
+    imagePosition: "object-top",
     content:
       "四端联动的创作者生态中枢与清算系统。作为连接游戏厂商、MCN 机构与达人的业务基础设施，底层构建了严密的“项目-周期-任务”三级拓扑架构以支撑跨周期追踪与预算防重。核心能力包含高扩展性的动态激励规则引擎（支持多维度组合计价），以及集成防刷风控的三端级联分佣与自动化结算工作流，保障海量内容与资金的闭环流转。",
     details: [
@@ -565,7 +569,7 @@ function ProjectImage({
         <img
           src={item.image}
           alt=""
-          className="h-full w-full object-cover"
+          className={`h-full w-full object-cover ${item.imagePosition ?? "object-center"}`}
           draggable={false}
         />
       ) : (
