@@ -156,20 +156,74 @@ const ITEMS: CrateItem[] = [
     ],
   },
   {
-    id: "node-flow",
-    title: "Node Flow",
-    type: "Visual Workflow Builder",
-    tag: "NODE.UI",
+    id: "zhongyou-portal",
+    title: "ZHONGYOU PORTAL",
+    type: "Official Showcase & Lead Generation Portal",
+    tag: "WEB.I18N_PORTAL",
     content:
-      "A node-based interface for mapping product logic, dependencies, fallback paths, and operator-controlled automation sequences.",
+      "面向中游网业务的官方展示与获客门户。通过清晰的信息区块、轻量游戏化交互与低成本双语内容管线，提升 B 端客户的信息理解和留资转化效率。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 系统概述",
+        body: "面向中游网（Zhongyou Hub）业务的官方展示与获客门户。网站以清晰的区块结构（功能特性、业务流程、行动呼吁）为核心，结合轻量级的游戏化交互，提供兼具专业度与品牌个性的内容浏览体验。",
+      },
+      {
+        heading: "[ CORE FEATURES ] 核心逻辑",
+        points: [
+          {
+            label: "自动化翻译管线",
+            text: "构建了基于大模型的异步翻译工作流。配置端单次调用大模型 API 翻译后，结果直接存入英文版数据库。前端直接读取静态数据，避免实时翻译延迟与 API 调用成本。",
+          },
+          {
+            label: "数据动态同步",
+            text: "打通官网展示层与后台业务系统的 API，实现 QA 问答库等动态内容的前后台双向同步，降低人工维护成本。",
+          },
+          {
+            label: "互动转化设计",
+            text: "在关键的信息流转节点加入类似游戏界面的微动效反馈，在不破坏 B 端专业感的前提下，引导用户向核心 CTA 区域转化。",
+          },
+        ],
+      },
+      {
+        heading: "[ PERFORMANCE ] 业务价值",
+        body: "以极低的开发和维护成本实现了高可用的中英双语官网，通过清晰的信息层级与流畅的交互动线，有效提升了产品对潜在 B 端客户的展示效率与留资转化率。",
+      },
+    ],
   },
   {
-    id: "genesis",
-    title: "Genesis",
-    type: "0-1 Product Discovery System",
-    tag: "DISC.01",
+    id: "studio-gallery",
+    title: "STUDIO GALLERY",
+    type: "Digital Gallery for Independent Design Studio",
+    tag: "WEB.GALLERY_SYSTEM",
     content:
-      "A discovery system that turns ambiguous opportunities into problem frames, evidence maps, MVP scopes, and validation plans.",
+      "为独立设计工作室定制的线上数字画廊。以极简排版和自适应媒介框架承载多类型作品，同时保留清晰、低阻力的商业合作入口。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 系统概述",
+        body: "为独立设计工作室定制的线上数字画廊。网站以“UI 退让于内容”为核心设计原则，通过极致克制的留白和极简排版，将视觉焦点完全交还给艺术作品本身。",
+      },
+      {
+        heading: "[ CORE FEATURES ] 核心逻辑",
+        points: [
+          {
+            label: "多媒介展示框架",
+            text: "针对平面设计、字体排印、摄影等不同比例和质感的视觉资产，设计统一且自适应的网格容器，确保跨设备浏览时的比例完美与视觉对齐。",
+          },
+          {
+            label: "极简视觉语言",
+            text: "摒弃所有多余的装饰性组件，仅通过网格系统、无衬线字体的字重对比以及精确的负空间来搭建界面的信息层级。",
+          },
+          {
+            label: "商业连接路径",
+            text: "在沉浸式作品展示的底层逻辑中，自然嵌入低阻力的合作联络模块，确保用户在产生意向时能以最短路径触达主理人。",
+          },
+        ],
+      },
+      {
+        heading: "[ PERFORMANCE ] 业务价值",
+        body: "成功将跨领域的零散创作整合为具有高度统一品牌基调的线上阵地。在维持工作室极简、高冷审美设定的同时，提供了清晰、友好的商业合作入口。",
+      },
+    ],
   },
 ];
 
