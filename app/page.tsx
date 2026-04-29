@@ -301,7 +301,7 @@ function DetailView({
   onClose: () => void;
 }) {
   return (
-    <div className="grid w-full max-w-5xl gap-5">
+    <div className="grid w-full max-w-5xl items-start gap-6 md:grid-cols-[minmax(220px,34vh)_minmax(0,1fr)] md:gap-8">
       <button
         type="button"
         onClick={onClose}
@@ -313,7 +313,7 @@ function DetailView({
         <span>]</span>
       </button>
 
-      <div className="mx-auto w-[min(54vw,320px)]">
+      <div className="w-[min(52vw,280px)] md:w-full">
         <motion.div
           layoutId={`crate-cover-${item.id}`}
           transition={SPRING}
@@ -324,29 +324,52 @@ function DetailView({
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 12 }}
+        initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 8 }}
-        transition={{ duration: 0.24, delay: 0.2, ease: "easeOut" }}
-        className="grid gap-px border border-zinc-800 bg-zinc-800 lg:grid-cols-[0.74fr_1fr]"
+        exit={{ opacity: 0, y: 6 }}
+        transition={{ duration: 0.5, delay: 0.08, ease: "easeOut" }}
+        className="grid min-h-full content-start gap-5"
       >
-        <section className="bg-zinc-950 p-4 sm:p-5">
-          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-            Selected record
+        <div>
+          <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+            {item.tag} / {item.type}
           </p>
-          <h2 className="text-4xl font-semibold leading-[0.9] tracking-[-0.05em] text-zinc-50 sm:text-5xl">
+          <h2 className="text-3xl font-black uppercase leading-[0.88] tracking-tighter text-zinc-50 sm:text-5xl">
             {item.title}
           </h2>
-        </section>
-        <section className="bg-zinc-950 p-4 sm:p-5">
-          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-            {item.type}
-          </p>
-          <p className="max-w-2xl text-sm leading-6 text-zinc-400">
-            {item.content}
-          </p>
-        </section>
+        </div>
+
+        <div className="aspect-video border border-zinc-800 bg-zinc-900">
+          <ProjectImage item={item} selectedIndex={selectedIndex} />
+        </div>
+
+        <p className="max-w-2xl text-sm leading-relaxed text-zinc-400">
+          {item.content}
+        </p>
       </motion.div>
+    </div>
+  );
+}
+
+function ProjectImage({
+  item,
+  selectedIndex,
+}: {
+  item: CrateItem;
+  selectedIndex: number;
+}) {
+  return (
+    <div className="h-full w-full overflow-hidden bg-zinc-900 grayscale contrast-75 brightness-75">
+      {item.image ? (
+        <img
+          src={item.image}
+          alt=""
+          className="h-full w-full object-cover"
+          draggable={false}
+        />
+      ) : (
+        <Blueprint index={selectedIndex} />
+      )}
     </div>
   );
 }
