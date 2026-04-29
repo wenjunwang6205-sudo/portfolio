@@ -125,7 +125,15 @@ export default function Page() {
           </header>
 
           <div className="relative z-10 grid flex-1 grid-rows-[1fr_auto]">
-            <section className="relative grid place-items-center px-4 pb-6 pt-6 sm:px-6">
+            <section
+              className="relative grid place-items-center px-4 pb-6 pt-6 sm:px-6"
+              onClick={() => {
+                if (selectedIndex !== null) {
+                  setSelectedIndex(null);
+                  setHoveredIndex(null);
+                }
+              }}
+            >
               <AnimatePresence mode="popLayout">
                 {selectedItem && selectedIndex !== null ? (
                   <DetailView
@@ -303,7 +311,7 @@ function DetailView({
   return (
     <div
       className="grid w-full max-w-5xl items-start gap-6 md:grid-cols-[minmax(220px,34vh)_minmax(0,1fr)] md:gap-8"
-      onClick={onClose}
+      onClick={(event) => event.stopPropagation()}
       role="presentation"
     >
       <button
