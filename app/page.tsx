@@ -10,6 +10,7 @@ type CrateItem = {
   type: string;
   tag: string;
   image?: string;
+  imageFit?: string;
   imagePosition?: string;
   content: string;
   details?: DetailSection[];
@@ -134,6 +135,7 @@ const ITEMS: CrateItem[] = [
     type: "Social Event Management Hub",
     tag: "SOCIAL.PRIVACY_MATCHING",
     image: "./assets/04.png",
+    imageFit: "object-contain",
     content:
       "全能的社交活动管理中枢，帮助用户精准切换私密社交与公域社交模式。系统在保护隐私的同时，让兴趣活动被真正匹配的人发现、报名和持续互动。",
     details: [
@@ -166,6 +168,7 @@ const ITEMS: CrateItem[] = [
     type: "Official Showcase & Lead Generation Portal",
     tag: "WEB.I18N_PORTAL",
     image: "./assets/05.png",
+    imagePosition: "object-top",
     content:
       "面向中游网业务的官方展示与获客门户。通过清晰的信息区块、轻量游戏化交互与低成本双语内容管线，提升 B 端客户的信息理解和留资转化效率。",
     details: [
@@ -202,6 +205,7 @@ const ITEMS: CrateItem[] = [
     type: "Digital Gallery for Independent Design Studio",
     tag: "WEB.GALLERY_SYSTEM",
     image: "./assets/06.jpg",
+    imagePosition: "object-top",
     content:
       "为独立设计工作室定制的线上数字画廊。以极简排版和自适应媒介框架承载多类型作品，同时保留清晰、低阻力的商业合作入口。",
     details: [
@@ -569,7 +573,7 @@ function ProjectImage({
         <img
           src={item.image}
           alt=""
-          className={`h-full w-full object-cover ${item.imagePosition ?? "object-center"}`}
+          className={`h-full w-full ${item.imageFit ?? "object-cover"} ${item.imagePosition ?? "object-center"}`}
           draggable={false}
         />
       ) : (
