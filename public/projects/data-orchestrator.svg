@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900">
+  <rect width="720" height="900" fill="#252527"/>
+  <g stroke="#bdbdc4" stroke-width="2" fill="none" opacity=".42">
+    <rect x="86" y="148" width="150" height="86"/>
+    <rect x="292" y="148" width="150" height="86"/>
+    <rect x="498" y="148" width="136" height="86"/>
+    <rect x="190" y="354" width="150" height="86"/>
+    <rect x="396" y="354" width="150" height="86"/>
+    <rect x="292" y="594" width="150" height="86"/>
+    <path d="M236 191h56M442 191h56M360 234v120M340 397h56M471 440v154M265 440v154M292 637h-27M442 637h29"/>
+    <circle cx="161" cy="191" r="18"/>
+    <circle cx="367" cy="191" r="18"/>
+    <circle cx="566" cy="191" r="18"/>
+    <circle cx="265" cy="397" r="18"/>
+    <circle cx="471" cy="397" r="18"/>
+    <circle cx="367" cy="637" r="18"/>
+  </g>
+  <g stroke="#e4e4e7" stroke-width="1" opacity=".17">
+    <path d="M0 90h720M0 180h720M0 270h720M0 360h720M0 450h720M0 540h720M0 630h720M0 720h720M0 810h720"/>
+    <path d="M90 0v900M180 0v900M270 0v900M360 0v900M450 0v900M540 0v900M630 0v900"/>
+  </g>
+  <g fill="#e4e4e7" opacity=".5" font-family="monospace" font-size="22">
+    <text x="86" y="82">MULTI-AGENT TASK GRAPH</text>
+    <text x="86" y="802">STATE / RETRY / EVALUATION</text>
+  </g>
+</svg>

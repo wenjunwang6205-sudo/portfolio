@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900">
+  <rect width="720" height="900" fill="#242426"/>
+  <g stroke="#b8b8be" stroke-width="2" fill="none" opacity=".4">
+    <path d="M78 150h564v560H78z"/>
+    <path d="M78 230h564M78 310h564M78 390h564M78 470h564M78 550h564M78 630h564"/>
+    <path d="M198 150v560M342 150v560M486 150v560"/>
+    <circle cx="138" cy="190" r="20"/>
+    <circle cx="138" cy="350" r="20"/>
+    <circle cx="138" cy="510" r="20"/>
+    <path d="M236 190h68M380 190h68M524 190h60"/>
+    <path d="M236 350h80M380 350h56M524 350h74"/>
+    <path d="M236 510h92M380 510h48M524 510h66"/>
+  </g>
+  <g stroke="#e4e4e7" stroke-width="1" opacity=".16">
+    <path d="M0 60h720M0 120h720M0 180h720M0 240h720M0 300h720M0 360h720M0 420h720M0 480h720M0 540h720M0 600h720M0 660h720M0 720h720M0 780h720M0 840h720"/>
+    <path d="M60 0v900M120 0v900M180 0v900M240 0v900M300 0v900M360 0v900M420 0v900M480 0v900M540 0v900M600 0v900M660 0v900"/>
+  </g>
+  <g fill="#e4e4e7" opacity=".5" font-family="monospace" font-size="22">
+    <text x="78" y="92">CREATOR SETTLEMENT LEDGER</text>
+    <text x="78" y="798">ACCOUNT / DELIVERY / PAYOUT</text>
+  </g>
+</svg>

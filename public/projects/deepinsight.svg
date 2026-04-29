@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900">
+  <rect width="720" height="900" fill="#27272a"/>
+  <g stroke="#a1a1aa" stroke-width="2" fill="none" opacity=".42">
+    <path d="M80 150h210v130H80z"/>
+    <path d="M430 120h180v96H430z"/>
+    <path d="M366 350h230v180H366z"/>
+    <path d="M92 594h260v126H92z"/>
+    <path d="M290 215h140M520 216v134M366 440H250v154"/>
+    <circle cx="185" cy="215" r="28"/>
+    <circle cx="520" cy="168" r="22"/>
+    <circle cx="480" cy="440" r="54"/>
+    <circle cx="222" cy="654" r="38"/>
+  </g>
+  <g stroke="#d4d4d8" stroke-width="1" opacity=".22">
+    <path d="M0 90h720M0 180h720M0 270h720M0 360h720M0 450h720M0 540h720M0 630h720M0 720h720M0 810h720"/>
+    <path d="M90 0v900M180 0v900M270 0v900M360 0v900M450 0v900M540 0v900M630 0v900"/>
+  </g>
+  <g fill="#e4e4e7" opacity=".5" font-family="monospace" font-size="22">
+    <text x="80" y="82">SIGNAL MAP / SENTIMENT</text>
+    <text x="80" y="820">RISK CLUSTERS: 04</text>
+  </g>
+</svg>
