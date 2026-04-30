@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { FileText, X } from "lucide-react";
+import { X } from "lucide-react";
 import { useState } from "react";
 
 type CrateItem = {
@@ -260,6 +260,7 @@ const HOVER_LIFT = -32;
 export default function Page() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const selectedItem = selectedIndex === null ? null : ITEMS[selectedIndex];
 
   return (
@@ -275,16 +276,18 @@ export default function Page() {
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
               WENJUN / Product Portfolio
             </p>
-            <a
-              href="./resume.pdf"
-              target="_blank"
-              rel="noreferrer"
+            <button
+              type="button"
+              onClick={() => setIsAboutOpen(true)}
               className="flex h-8 items-center gap-2 border border-zinc-800 px-3 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 transition-colors hover:border-zinc-700 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
             >
-              <FileText aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
-              <span>Resume PDF</span>
-            </a>
+              <span>[ About ]</span>
+            </button>
           </header>
+
+          <AnimatePresence>
+            {isAboutOpen ? <AboutPanel onClose={() => setIsAboutOpen(false)} /> : null}
+          </AnimatePresence>
 
           <div className="relative z-10 grid flex-1 grid-rows-[1fr_auto]">
             <section
@@ -330,6 +333,106 @@ export default function Page() {
         </section>
       </LayoutGroup>
     </main>
+  );
+}
+
+function AboutPanel({ onClose }: { onClose: () => void }) {
+  const strengths = [
+    {
+      label: "AI PRODUCT 0-1",
+      text: "设计学科背景出身，现聚焦 AI 驱动的业务流程自动化与 Agent 工作流编排，主导 EasyPromo、DeepInsight、中游网等 0-1 项目。",
+    },
+    {
+      label: "AGENT WORKFLOW",
+      text: "能将业务 SOP 拆解为可执行的 Agent 工作流，设计模型路由、质量评估、成本控制、人机协同与异常兜底机制。",
+    },
+    {
+      label: "EXPERIENCE SYSTEM",
+      text: "具备信息架构、用户动线、复杂流程梳理与多端体验设计能力，能把业务目标转化为清晰产品结构与交互原型。",
+    },
+    {
+      label: "DELIVERY",
+      text: "覆盖需求分析、PRD、原型、工程协作与上线推进，能与业务、运营、设计、研发多角色协同交付。",
+    },
+  ];
+
+  return (
+    <motion.div
+      className="absolute inset-0 z-40 grid place-items-center bg-zinc-950/82 px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.22, ease: "easeOut" }}
+      onClick={onClose}
+    >
+      <motion.section
+        className="w-full max-w-3xl border border-zinc-800 bg-zinc-950"
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 8 }}
+        transition={{ duration: 0.28, ease: "easeOut" }}
+        onClick={(event) => event.stopPropagation()}
+        aria-label="Wenjun introduction"
+      >
+        <header className="flex items-start justify-between gap-6 border-b border-zinc-800 p-4 sm:p-5">
+          <div>
+            <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+              About / Contact
+            </p>
+            <h2 className="text-3xl font-black uppercase leading-[0.9] tracking-tighter text-zinc-50 sm:text-5xl">
+              WANG WENJUN
+            </h2>
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+              AI Product Manager / Shanghai
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="flex h-9 shrink-0 items-center gap-2 border border-zinc-700 bg-zinc-950 px-3 font-mono text-xs uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-zinc-500 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
+            aria-label="Close introduction"
+          >
+            <span>[</span>
+            <span>Close</span>
+            <X aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <span>]</span>
+          </button>
+        </header>
+
+        <div className="grid gap-px bg-zinc-800 sm:grid-cols-2">
+          {strengths.map((item) => (
+            <section key={item.label} className="bg-zinc-950 p-4 sm:p-5">
+              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-zinc-500">
+                {item.label}
+              </p>
+              <p className="text-[13px] leading-relaxed text-zinc-300">
+                {item.text}
+              </p>
+            </section>
+          ))}
+        </div>
+
+        <footer className="grid gap-2 border-t border-zinc-800 p-4 font-mono text-[10px] uppercase tracking-[0.18em] text-zinc-500 sm:grid-cols-3 sm:p-5">
+          <a className="transition-colors hover:text-zinc-50" href="tel:+8618721378389">
+            187 2137 8389
+          </a>
+          <a
+            className="transition-colors hover:text-zinc-50"
+            href="mailto:wenjun.wang6205@gmail.com"
+          >
+            wenjun.wang6205@gmail.com
+          </a>
+          <a
+            className="transition-colors hover:text-zinc-50 sm:text-right"
+            href="https://wenjunwang6205-sudo.github.io/portfolio/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Portfolio
+          </a>
+        </footer>
+      </motion.section>
+    </motion.div>
   );
 }
 
