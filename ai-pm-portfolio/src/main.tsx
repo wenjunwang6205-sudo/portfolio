@@ -312,6 +312,27 @@ const content = {
             ],
           },
         },
+        {
+          role: "user",
+          text: "再基于这个 campaign，生成一组 AIGC 短视频素材 brief。重点是 B 站、小红书和抖音，可以给到分镜和视频生成提示词，但要保留人工审核。",
+        },
+        {
+          role: "assistant",
+          route: "已识别为「策略到 AIGC 素材生产」任务，正在调用 Creative Pack Agent，并将视频生成提示词纳入人工审核流程。",
+          taskTitle: "生成 AIGC Creative Pack",
+          subagent: "SubAgent 执行完成 · 3 条素材 brief",
+          thinking: ["提取 campaign 主线：探索自由、角色剧情、预约转化", "按平台拆分素材形态：B 站氛围 PV、小红书角色人设、抖音高燃切片", "生成镜头、字幕、画面风格和视频提示词", "加入 IP 相似度、夸张承诺、版权与品牌安全审核点"],
+          suggestions: ["导出 Prompt Pack", "生成分镜表", "检查品牌风险"],
+          output: {
+            title: "AIGC 素材 brief",
+            body: "这一步不是直接批量生成视频，而是把营销策略转译为可审核、可复用的 AIGC 素材生产 brief，供设计、运营和模型工具继续执行。",
+            paragraphs: [
+              "B 站 15s 世界观探索向：开场用远景展示遗迹、天空裂隙与角色背影，镜头从低机位推进到广角世界。Prompt 重点描述开放世界、神秘遗迹、电影感光影、缓慢推镜；审核点是避免出现未授权 IP 风格和过度承诺真实玩法。",
+              "小红书角色剧情向：以 3 张角色设定图为参考，生成情绪化角色人设短片。Prompt 重点描述角色气质、服饰细节、日记式字幕和柔和光线；审核点是角色相似度、人物设定一致性和社区表达语气。",
+              "抖音 10s 预约转化向：用 PV 高燃片段节奏组织倒计时、预约福利和核心卖点字幕。Prompt 重点描述快速剪辑、冲刺镜头、能量粒子、强节奏字幕；审核点是福利表述准确性、平台合规和最终落地页一致性。",
+            ],
+          },
+        },
       ],
     },
     insightDemo: {
@@ -604,6 +625,27 @@ const content = {
               "Stage one uses the reveal PV as the awareness entry point. On Bilibili, PV analysis, lore breakdowns, and long-form seeding build imagination around exploration; on TapTap, the reservation page gives early interested users a clear conversion path.",
               "Stage two centers on the 3 character key visuals. Xiaohongshu character cards, mood-board posts, and lightweight discussion topics create character-fan engagement, then guide that discussion back to TapTap comments.",
               "Stage three introduces creator interpretation and trial-style content to make exploration freedom and character stories more concrete. Stage four closes conversion through reservation reward countdowns, UGC prompts, and Douyin short-video reach.",
+            ],
+          },
+        },
+        {
+          role: "user",
+          text: "Based on this campaign, generate an AIGC short-video creative pack for Bilibili, Xiaohongshu, and Douyin. Include storyboards and video-generation prompts, but keep human review in the loop.",
+        },
+        {
+          role: "assistant",
+          route: "Recognized as a strategy-to-AIGC production task. Calling Creative Pack Agent and adding human review checkpoints for generated video prompts.",
+          taskTitle: "Generate AIGC Creative Pack",
+          subagent: "SubAgent completed · 3 asset briefs",
+          thinking: ["Extract campaign themes: exploration freedom, character stories, reservation conversion", "Map platform formats: Bilibili atmospheric PV, Xiaohongshu character storytelling, Douyin high-energy cuts", "Generate shots, captions, visual style, and video prompts", "Add review checks for IP similarity, overclaiming, copyright, and brand safety"],
+          suggestions: ["Export prompt pack", "Create storyboard", "Check brand risks"],
+          output: {
+            title: "AIGC Asset Brief",
+            body: "This step does not mass-generate final videos. It translates campaign strategy into reviewable and reusable AIGC production briefs for designers, operators, and model tools.",
+            paragraphs: [
+              "Bilibili 15s world-exploration asset: open with ruins, sky fissures, and a character silhouette, moving from low-angle push-in to wide world reveal. Prompt emphasis: open world, mysterious ruins, cinematic lighting, slow camera push. Review checks: unauthorized IP resemblance and overpromising gameplay.",
+              "Xiaohongshu character-story asset: use the 3 character key visuals as reference and create a mood-driven character short. Prompt emphasis: character temperament, outfit details, diary-style captions, soft lighting. Review checks: character consistency, similarity threshold, and platform tone.",
+              "Douyin 10s reservation-conversion asset: organize PV-style cuts around countdown, reservation reward, and core selling-point captions. Prompt emphasis: fast cuts, sprint shots, energy particles, rhythmic subtitles. Review checks: reward accuracy, platform compliance, and landing-page consistency.",
             ],
           },
         },
@@ -929,6 +971,7 @@ function AgentDemoPage({
           <div>
             <p>{demo.eyebrow}</p>
             <h1>{demo.title}</h1>
+            <span>{demo.subtitle}</span>
           </div>
         </header>
 
@@ -1143,7 +1186,7 @@ function AboutPage({
             <span>{copy.contact.emailValue}</span>
             <span>{copy.contact.wechatValue}</span>
           </div>
-          <a className="cv-button" href={toPath("/resume.pdf")} download>
+          <a className="cv-button" href={toPath("/assets/王文君-产品经理-18721378389.pdf")} download>
             <Download size={17} />
             {copy.about.download}
           </a>
@@ -1610,7 +1653,6 @@ function Nav({
 
       <div className="nav-links">
         <a href={toPath("/")}>{copy.nav.home}</a>
-        <a href={toPath("/#projects")}>{copy.nav.project}</a>
         <a href={toPath("/about")}>{copy.nav.about}</a>
       </div>
 

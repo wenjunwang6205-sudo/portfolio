@@ -600,6 +600,15 @@ h1 span {
   line-height: 1.2;
 }
 
+.demo-titlebar div > span {
+  display: block;
+  max-width: 720px;
+  margin-top: 7px;
+  color: #6f6a62;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
 .ai-chat-shell {
   position: relative;
   overflow: hidden;
@@ -1179,8 +1188,8 @@ h1 span {
 
 .about-text-section div {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 20px 44px;
+  max-width: 820px;
+  gap: 14px;
 }
 
 .about-text-section p {
@@ -1193,7 +1202,6 @@ h1 span {
 
 .about-text-section span {
   display: block;
-  max-width: 760px;
   color: #424242;
   font-size: 16px;
   line-height: 1.78;
