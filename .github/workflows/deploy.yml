@@ -27,17 +27,23 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: ai-pm-portfolio/package-lock.json
 
       - name: Install dependencies
+        working-directory: ai-pm-portfolio
         run: npm ci
 
       - name: Build static site
+        working-directory: ai-pm-portfolio
         run: npm run build
+
+      - name: Add SPA fallback
+        run: cp ai-pm-portfolio/dist/index.html ai-pm-portfolio/dist/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./ai-pm-portfolio/dist
 
   deploy:
     environment:
