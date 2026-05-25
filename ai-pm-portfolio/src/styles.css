@@ -2237,6 +2237,28 @@ h1 span {
   .admin-photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .about-proof-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-proof-grid article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .about-proof-grid article:nth-child(n + 3) {
+    border-top: 1px solid #e8e5de;
+  }
+
+  .about-project-timeline article {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-compact-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -2279,12 +2301,11 @@ h1 span {
   }
 
   .about-page {
-    padding-top: 20px;
+    padding: 20px;
   }
 
-  .about-hero,
-  .about-section {
-    padding: 22px;
+  .about-hero {
+    padding: 0 0 34px;
   }
 
   .about-hero h1 {
@@ -2295,12 +2316,64 @@ h1 span {
     font-size: 16px;
   }
 
-  .about-grid {
+  .about-summary,
+  .about-text-section span {
+    font-size: 15px;
+  }
+
+  .about-contact-line {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
-  .timeline-section {
-    grid-row: auto;
+  .about-contact-line span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .about-proof-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .about-proof-grid article {
+    min-height: auto;
+    padding: 20px 0;
+    border-right: 0;
+    border-top: 1px solid #e8e5de;
+  }
+
+  .about-proof-grid article:first-child {
+    border-top: 0;
+  }
+
+  .about-projects,
+  .about-text-section,
+  .about-compact-grid {
+    padding: 36px 0;
+  }
+
+  .about-project-timeline article {
+    padding: 24px 0;
+  }
+
+  .about-project-timeline h3 {
+    font-size: 22px;
+  }
+
+  .about-project-timeline dl div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .compact-timeline article {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .skill-cloud span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .demo-page {
