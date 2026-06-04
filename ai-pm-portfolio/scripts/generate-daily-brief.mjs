@@ -52,9 +52,92 @@ function getSinceDate(briefDate) {
 function buildGithubReason(repo) {
   const topicText = repo.topics?.length ? `，topics: ${repo.topics.slice(0, 5).join(", ")}` : "";
   return {
-    zh: `入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 ${repo.stars.toLocaleString("en-US")} stars、${repo.forks.toLocaleString("en-US")} forks${topicText}，可作为开发者采用和技术趋势信号观察。`,
-    en: `Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around ${repo.stars.toLocaleString("en-US")} stars and ${repo.forks.toLocaleString("en-US")} forks${topicText}, making it a developer adoption and trend signal.`,
+    zh: `昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 ${repo.stars.toLocaleString("en-US")} stars、${repo.forks.toLocaleString("en-US")} forks${topicText}，可作为开发者采用和技术趋势信号观察。`,
+    en: `Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around ${repo.stars.toLocaleString("en-US")} stars and ${repo.forks.toLocaleString("en-US")} forks${topicText}, making it a developer adoption and trend signal.`,
   };
+}
+
+function cleanGithubDescription(description) {
+  return description
+    .replace(/^Sponsor\s+Star\s+[\w.-]+\s*\/\s*[\w.-]+\s*/i, "")
+    .replace(/^Sponsor\s+Star\s+/i, "")
+    .trim();
+}
+
+function buildChineseIntro(repo) {
+  const description = repo.description || "暂无项目描述。";
+  return {
+    zh: `中文简介：${description}`,
+    en: `Chinese intro: ${description}`,
+  };
+}
+
+function buildTodayHighlight(repo) {
+  const starsTodayText =
+    typeof repo.starsToday === "number"
+      ? `今日新增 ${repo.starsToday.toLocaleString("en-US")} 星`
+      : "今日新增待精确统计";
+  return {
+    zh: `今日亮点：${starsTodayText}；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。`,
+    en: `Today's highlight: ${starsTodayText}; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today.`,
+  };
+}
+
+function isAiRelevant(repo) {
+  const haystack = [
+    repo.name,
+    repo.description,
+    repo.language,
+    ...(repo.topics ?? []),
+  ]
+    .join(" ")
+    .toLowerCase();
+  return /\b(ai|agent|llm|rag|gpt|claude|ollama|model|prompt|diffusion|machine-learning|deep-learning|generative)\b/.test(
+    haystack,
+  );
+}
+
+async function collectTrendingProjects() {
+  try {
+    const html = await fetchText("https://github.com/trending?since=daily");
+    const articles = html.match(/<article[\s\S]*?<\/article>/gi) ?? [];
+    return articles
+      .map((article) => {
+        const href = article.match(/<h2[\s\S]*?<a[^>]+href="\/([^"]+\/[^"]+)"/i)?.[1]?.trim();
+        if (!href) return null;
+
+        const name = href.replace(/\s+/g, "");
+        const description = stripHtml(
+          article.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1] ?? "",
+        );
+        const language = stripHtml(
+          article.match(/<span[^>]*itemprop="programmingLanguage"[^>]*>([\s\S]*?)<\/span>/i)?.[1] ?? "",
+        );
+        const starsText = stripHtml(
+          article.match(/href="\/[^"]+\/stargazers"[^>]*>([\s\S]*?)<\/a>/i)?.[1] ?? "0",
+        );
+        const starsTodayText = stripHtml(
+          article.match(/([0-9,]+)\s+stars?\s+today/i)?.[1] ?? "",
+        );
+
+        return {
+          name,
+          description: cleanGithubDescription(description),
+          url: `https://github.com/${name}`,
+          stars: Number(starsText.replace(/,/g, "")) || 0,
+          forks: 0,
+          language: language || "Unknown",
+          updatedAt: "",
+          topics: [],
+          starsToday: starsTodayText ? Number(starsTodayText.replace(/,/g, "")) : null,
+        };
+      })
+      .filter(Boolean)
+      .filter(isAiRelevant);
+  } catch (error) {
+    console.warn(`GitHub trending failed: ${error.message}`);
+    return [];
+  }
 }
 
 function stripHtml(value) {
@@ -116,6 +199,10 @@ async function collectGithubProjects(targetDate) {
     : {};
   const byUrl = new Map();
 
+  for (const repo of await collectTrendingProjects()) {
+    byUrl.set(repo.url, repo);
+  }
+
   for (const query of githubQueries) {
     const url = new URL("https://api.github.com/search/repositories");
     url.searchParams.set("q", `${query} pushed:>=${targetDate}`);
@@ -129,13 +216,14 @@ async function collectGithubProjects(targetDate) {
         if (!byUrl.has(repo.html_url)) {
           byUrl.set(repo.html_url, {
             name: repo.full_name,
-            description: repo.description ?? "",
+            description: cleanGithubDescription(repo.description ?? ""),
             url: repo.html_url,
             stars: repo.stargazers_count ?? 0,
             forks: repo.forks_count ?? 0,
             language: repo.language ?? "Unknown",
             updatedAt: repo.updated_at,
             topics: repo.topics ?? [],
+            starsToday: byUrl.get(repo.html_url)?.starsToday ?? null,
           });
         }
       }
@@ -145,7 +233,7 @@ async function collectGithubProjects(targetDate) {
   }
 
   return [...byUrl.values()]
-    .sort((a, b) => b.stars - a.stars)
+    .sort((a, b) => (b.starsToday ?? -1) - (a.starsToday ?? -1) || b.stars - a.stars)
     .slice(0, 30);
 }
 
@@ -250,6 +338,11 @@ function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
       title: { zh: repo.name, en: repo.name },
       category: { zh: "GitHub 项目", en: "GitHub project" },
       summary: { zh: repo.description || "暂无描述。", en: repo.description || "No description." },
+      totalStars: repo.stars,
+      language: repo.language,
+      dailyStars: repo.starsToday,
+      chineseIntro: buildChineseIntro(repo),
+      todayHighlight: buildTodayHighlight(repo),
       inclusionReason: buildGithubReason(repo),
       pmInsight: {
         zh: "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -315,6 +408,11 @@ DailySignal = {
   "title": { "zh": string, "en": string },
   "category": { "zh": string, "en": string },
   "summary": { "zh": string, "en": string },
+  "totalStars"?: number,
+  "language"?: string,
+  "dailyStars"?: number | null,
+  "chineseIntro"?: { "zh": string, "en": string },
+  "todayHighlight"?: { "zh": string, "en": string },
   "inclusionReason"?: { "zh": string, "en": string },
   "pmInsight": { "zh": string, "en": string },
   "impact": "High" | "Medium" | "Watch",
@@ -323,7 +421,7 @@ DailySignal = {
 
 数量建议：
 - signals: 2-3 条
-- githubProjects: 必须 10 条；每条都必须写 inclusionReason，说明它为什么今天被放进来，例如近期更新、AI/LLM/Agent/RAG 方向相关、开发者采用信号、平台趋势信号、可借鉴的产品形态等
+- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。todayHighlight 用“今日亮点:”开头，说明它为什么今天被放进来，例如 GitHub Trending 今日新增、近期更新、AI/LLM/Agent/RAG 方向相关、开发者采用信号、平台趋势信号、可借鉴的产品形态等
 - companyUpdates: 2-4 条
 - opportunities: 1-3 条
 
@@ -425,6 +523,11 @@ export type DailySignal = {
   title: LocalizedText;
   category: LocalizedText;
   summary: LocalizedText;
+  totalStars?: number;
+  language?: string;
+  dailyStars?: number | null;
+  chineseIntro?: LocalizedText;
+  todayHighlight?: LocalizedText;
   inclusionReason?: LocalizedText;
   pmInsight: LocalizedText;
   impact: "High" | "Medium" | "Watch";

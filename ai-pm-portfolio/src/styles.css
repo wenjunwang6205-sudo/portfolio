@@ -1589,6 +1589,35 @@ h1 span {
   line-height: 1.32;
 }
 
+.github-brief-card h3 {
+  font-size: 20px;
+  word-break: break-word;
+}
+
+.github-brief-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+  color: #151515;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.github-brief-meta span:last-child {
+  color: #6b665f;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.github-brief-daily {
+  margin-top: 8px !important;
+  color: #b65136 !important;
+  font-size: 14px !important;
+  font-weight: 820;
+}
+
 .daily-signal-card > p {
   margin: 12px 0 0;
   color: #5f5f5f;

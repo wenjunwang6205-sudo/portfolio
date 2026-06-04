@@ -12,6 +12,11 @@ export type DailySignal = {
   title: LocalizedText;
   category: LocalizedText;
   summary: LocalizedText;
+  totalStars?: number;
+  language?: string;
+  dailyStars?: number | null;
+  chineseIntro?: LocalizedText;
+  todayHighlight?: LocalizedText;
   inclusionReason?: LocalizedText;
   pmInsight: LocalizedText;
   impact: "High" | "Medium" | "Watch";
@@ -60,8 +65,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Trend signal"
         },
         "summary": {
-          "zh": "GitHub 抓取中排名靠前的项目包括 affaan-m/ECC，说明开发者仍在围绕 Agent 运行时、工作流和 AI 工具效率做密集迭代。",
-          "en": "The collected GitHub signals include affaan-m/ECC, showing continued developer iteration around agent runtimes, workflows, and AI tooling efficiency."
+          "zh": "GitHub 抓取中排名靠前的项目包括 chopratejas/headroom，说明开发者仍在围绕 Agent 运行时、工作流和 AI 工具效率做密集迭代。",
+          "en": "The collected GitHub signals include chopratejas/headroom, showing continued developer iteration around agent runtimes, workflows, and AI tooling efficiency."
         },
         "pmInsight": {
           "zh": "产品经理可以重点观察这些项目如何处理任务状态、权限、失败恢复和可追溯输出，这些会直接影响 Agent 产品体验。",
@@ -70,8 +75,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "impact": "Medium",
         "sources": [
           {
-            "label": "affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
+            "label": "chopratejas/headroom",
+            "url": "https://github.com/chopratejas/headroom"
           }
         ]
       },
@@ -104,6 +109,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "githubProjects": [
       {
         "title": {
+          "zh": "chopratejas/headroom",
+          "en": "chopratejas/headroom"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
+        },
+        "totalStars": 10970,
+        "language": "Python",
+        "dailyStars": 3530,
+        "chineseIntro": {
+          "zh": "中文简介：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "en": "Chinese intro: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 3,530 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 3,530 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,970 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,970 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/chopratejas/headroom"
+          }
+        ]
+      },
+      {
+        "title": {
           "zh": "affaan-m/ECC",
           "en": "affaan-m/ECC"
         },
@@ -115,9 +160,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
+        "totalStars": 206331,
+        "language": "JavaScript",
+        "dailyStars": 2141,
+        "chineseIntro": {
+          "zh": "中文简介：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "en": "Chinese intro: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 2,141 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 2,141 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
         "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 206,325 stars、31,683 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 206,325 stars and 31,683 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 206,331 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 206,331 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -128,6 +184,246 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star NousResearch / hermes-agent The agent that grows with you",
+          "en": "Star NousResearch / hermes-agent The agent that grows with you"
+        },
+        "totalStars": 179877,
+        "language": "Python",
+        "dailyStars": 1735,
+        "chineseIntro": {
+          "zh": "中文简介：Star NousResearch / hermes-agent The agent that grows with you",
+          "en": "Chinese intro: Star NousResearch / hermes-agent The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 1,735 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 1,735 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 179,877 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 179,877 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "nesquena/hermes-webui",
+          "en": "nesquena/hermes-webui"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+          "en": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!"
+        },
+        "totalStars": 13266,
+        "language": "Python",
+        "dailyStars": 719,
+        "chineseIntro": {
+          "zh": "中文简介：Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+          "en": "Chinese intro: Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 719 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 719 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,266 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,266 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/nesquena/hermes-webui"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Open-LLM-VTuber/Open-LLM-VTuber",
+          "en": "Open-LLM-VTuber/Open-LLM-VTuber"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "en": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
+        },
+        "totalStars": 9204,
+        "language": "Python",
+        "dailyStars": 693,
+        "chineseIntro": {
+          "zh": "中文简介：Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "en": "Chinese intro: Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 693 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 693 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,204 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,204 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "supermemoryai/supermemory",
+          "en": "supermemoryai/supermemory"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+          "en": "Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era."
+        },
+        "totalStars": 25374,
+        "language": "TypeScript",
+        "dailyStars": 600,
+        "chineseIntro": {
+          "zh": "中文简介：Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+          "en": "Chinese intro: Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 600 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 600 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 25,374 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 25,374 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/supermemoryai/supermemory"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "opendataloader-project/opendataloader-pdf",
+          "en": "opendataloader-project/opendataloader-pdf"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+          "en": "Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source."
+        },
+        "totalStars": 23543,
+        "language": "Java",
+        "dailyStars": 570,
+        "chineseIntro": {
+          "zh": "中文简介：Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+          "en": "Chinese intro: Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 570 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 570 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,543 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,543 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/opendataloader-project/opendataloader-pdf"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "HKUDS/Vibe-Trading",
+          "en": "HKUDS/Vibe-Trading"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\"",
+          "en": "Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\""
+        },
+        "totalStars": 10378,
+        "language": "Python",
+        "dailyStars": 197,
+        "chineseIntro": {
+          "zh": "中文简介：Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\"",
+          "en": "Chinese intro: Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\""
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 197 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 197 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,378 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,378 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/HKUDS/Vibe-Trading"
           }
         ]
       },
@@ -144,9 +440,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
+        "totalStars": 184743,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "中文简介：AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "en": "Chinese intro: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增待精确统计；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
         "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,743 stars、46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,743 stars and 46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,743 stars、46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,743 stars and 46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -157,35 +464,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/Significant-Gravitas/AutoGPT"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "NousResearch/hermes-agent",
-          "en": "NousResearch/hermes-agent"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "The agent that grows with you",
-          "en": "The agent that grows with you"
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 179,866 stars、30,825 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 179,866 stars and 30,825 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/NousResearch/hermes-agent"
           }
         ]
       },
@@ -202,9 +480,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
+        "totalStars": 173122,
+        "language": "Go",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "中文简介：Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+          "en": "Chinese intro: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增待精确统计；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
         "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,122 stars、16,425 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,122 stars and 16,425 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,122 stars、16,425 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,122 stars and 16,425 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -215,180 +504,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/ollama/ollama"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "f/prompts.chat",
-          "en": "f/prompts.chat"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,286 stars、21,221 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,286 stars and 21,221 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/f/prompts.chat"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "huggingface/transformers",
-          "en": "huggingface/transformers"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-          "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 161,266 stars、33,405 forks，topics: audio, deep-learning, deepseek, gemma, glm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 161,266 stars and 33,405 forks，topics: audio, deep-learning, deepseek, gemma, glm, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/huggingface/transformers"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "langflow-ai/langflow",
-          "en": "langflow-ai/langflow"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
-          "en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 149,210 stars、9,185 forks，topics: agents, chatgpt, generative-ai, large-language-models, multiagent，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 149,210 stars and 9,185 forks，topics: agents, chatgpt, generative-ai, large-language-models, multiagent, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/langflow-ai/langflow"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "langgenius/dify",
-          "en": "langgenius/dify"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Production-ready platform for agentic workflow development.",
-          "en": "Production-ready platform for agentic workflow development."
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 143,800 stars、22,628 forks，topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 143,800 stars and 22,628 forks，topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/langgenius/dify"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "open-webui/open-webui",
-          "en": "open-webui/open-webui"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-          "en": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,950 stars、20,098 forks，topics: ai, llm, llm-ui, llm-webui, llms，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,950 stars and 20,098 forks，topics: ai, llm, llm-ui, llm-webui, llms, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/open-webui/open-webui"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "langchain-ai/langchain",
-          "en": "langchain-ai/langchain"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "The agent engineering platform.",
-          "en": "The agent engineering platform."
-        },
-        "inclusionReason": {
-          "zh": "入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 138,474 stars、22,942 forks，topics: agents, ai, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 138,474 stars and 22,942 forks，topics: agents, ai, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/langchain-ai/langchain"
           }
         ]
       }

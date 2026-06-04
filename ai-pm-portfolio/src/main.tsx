@@ -1487,6 +1487,34 @@ function DailySignalSection({
 
 function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Locale }) {
   const isZh = locale === "zh";
+  const hasGithubBrief = typeof signal.totalStars === "number" || signal.todayHighlight;
+
+  if (hasGithubBrief) {
+    return (
+      <article className="daily-signal-card github-brief-card">
+        <h3>{signal.title[locale]}</h3>
+        <div className="github-brief-meta">
+          <span>☆总Star :{typeof signal.totalStars === "number" ? signal.totalStars.toLocaleString("en-US") : "待统计"}</span>
+          <span>{signal.language ?? "Unknown"}</span>
+        </div>
+        <p className="github-brief-daily">
+          /今日新增:
+          {typeof signal.dailyStars === "number" ? `+${signal.dailyStars.toLocaleString("en-US")}` : "待统计"}
+        </p>
+        <p>{signal.summary[locale]}</p>
+        {signal.chineseIntro ? <p>{signal.chineseIntro[locale]}</p> : null}
+        {signal.todayHighlight ? <p>{signal.todayHighlight[locale]}</p> : null}
+        <div className="source-list" aria-label={isZh ? "来源链接" : "Source links"}>
+          {signal.sources.map((source) => (
+            <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>
+              {source.label}
+              <ArrowUpRight size={14} />
+            </a>
+          ))}
+        </div>
+      </article>
+    );
+  }
 
   return (
     <article className="daily-signal-card">
