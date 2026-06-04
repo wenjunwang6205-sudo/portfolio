@@ -1282,6 +1282,332 @@ h1 span {
   font-weight: 720;
 }
 
+.daily-shell {
+  min-height: 100vh;
+  padding: 0 36px 64px;
+}
+
+.daily-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 42px;
+  border: 1px solid #ede9e1;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.daily-hero {
+  padding-bottom: 42px;
+  border-bottom: 1px solid var(--line);
+}
+
+.daily-hero h1 {
+  max-width: 780px;
+}
+
+.daily-summary {
+  max-width: 790px;
+  margin: 18px 0 0;
+  color: #626262;
+  font-size: 16px;
+  line-height: 1.78;
+}
+
+.daily-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.daily-meta-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid #e4dfd6;
+  border-radius: 999px;
+  background: #fbfaf7;
+  color: #403d38;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.daily-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 34px;
+  padding-top: 36px;
+}
+
+.daily-history {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+.daily-section-head {
+  max-width: 720px;
+  margin-bottom: 18px;
+}
+
+.daily-section-head p {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 8px;
+  color: #8a857d;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.daily-section-head h2 {
+  margin: 0;
+  color: #191919;
+  font-size: clamp(23px, 2.4vw, 32px);
+  line-height: 1.18;
+}
+
+.history-list {
+  display: grid;
+  gap: 10px;
+}
+
+.history-list button {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e7e1d7;
+  border-radius: 8px;
+  background: #fbfaf7;
+  color: #151515;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.history-list button:hover,
+.history-list button.active {
+  transform: translateY(-1px);
+  border-color: #151515;
+  background: #ffffff;
+}
+
+.history-list span {
+  color: #8a857d;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.history-list strong {
+  color: #151515;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.history-list small {
+  color: #666666;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.history-note {
+  margin: 16px 0 0;
+  color: #77736c;
+  font-size: 13px;
+  line-height: 1.68;
+}
+
+.daily-content {
+  display: grid;
+  gap: 34px;
+  min-width: 0;
+}
+
+.daily-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid #e7e1d7;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(247, 244, 237, 0.92)),
+    #fbfaf7;
+}
+
+.daily-overview p {
+  margin: 0;
+}
+
+.daily-overview > div > p {
+  color: #8a857d;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.daily-overview h2 {
+  margin: 9px 0 0;
+  color: #151515;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.12;
+}
+
+.daily-overview span {
+  display: block;
+  margin-top: 14px;
+  color: #68635c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.daily-overview aside {
+  padding: 17px;
+  border: 1px solid #e4dfd6;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.daily-overview aside strong,
+.pm-insight strong {
+  display: block;
+  color: #151515;
+  font-size: 13px;
+  font-weight: 820;
+}
+
+.daily-overview aside p {
+  margin-top: 10px;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.daily-signal-section {
+  display: grid;
+  gap: 0;
+}
+
+.daily-card-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.daily-signal-card {
+  padding: 20px;
+  border: 1px solid #e7e1d7;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.signal-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.signal-card-top span {
+  color: #8a857d;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.impact-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 9px;
+  border: 1px solid #e4dfd6;
+  border-radius: 999px;
+  background: #fbfaf7;
+  color: #4d4943;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.impact-badge.high {
+  border-color: #ffd8c8;
+  background: #fff3ec;
+  color: #b65136;
+}
+
+.impact-badge.medium {
+  border-color: #cfe3ff;
+  background: #eef5ff;
+  color: #2d66af;
+}
+
+.impact-badge.watch {
+  border-color: #dbefcf;
+  background: #f1faeb;
+  color: #4c8842;
+}
+
+.daily-signal-card h3 {
+  margin: 0;
+  color: #151515;
+  font-size: 21px;
+  line-height: 1.32;
+}
+
+.daily-signal-card > p {
+  margin: 12px 0 0;
+  color: #5f5f5f;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.pm-insight {
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid #eee8dd;
+  border-radius: 8px;
+  background: #fbfaf7;
+}
+
+.pm-insight p {
+  margin: 8px 0 0;
+  color: #4d4d4d;
+  font-size: 13px;
+  line-height: 1.68;
+}
+
+.source-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.source-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid #e3ddd3;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3b3935;
+  font-size: 12px;
+  font-weight: 760;
+}
+
+.source-list a:hover {
+  border-color: #151515;
+}
+
 .cms-shell {
   min-height: 100vh;
   padding: 0 36px 64px;
@@ -2131,6 +2457,7 @@ h1 span {
   .placeholder-shell,
   .about-shell,
   .demo-shell,
+  .daily-shell,
   .cms-shell {
     padding: 0 20px 118px;
   }
@@ -2259,6 +2586,22 @@ h1 span {
     grid-template-columns: 1fr;
     gap: 42px;
   }
+
+  .daily-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-history {
+    position: static;
+  }
+
+  .history-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .daily-overview {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 620px) {
@@ -2266,6 +2609,7 @@ h1 span {
   .placeholder-shell,
   .about-shell,
   .demo-shell,
+  .daily-shell,
   .cms-shell {
     padding-inline: 16px;
   }
@@ -2302,6 +2646,35 @@ h1 span {
 
   .about-page {
     padding: 20px;
+  }
+
+  .daily-page {
+    padding: 22px;
+  }
+
+  .daily-hero {
+    padding-bottom: 34px;
+  }
+
+  .daily-hero h1 {
+    font-size: 42px;
+  }
+
+  .daily-summary {
+    font-size: 15px;
+  }
+
+  .daily-layout {
+    padding-top: 28px;
+  }
+
+  .history-list {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-overview,
+  .daily-signal-card {
+    padding: 16px;
   }
 
   .about-hero {

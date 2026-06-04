@@ -4,12 +4,16 @@ import {
   ArrowLeft,
   ArrowUpRight,
   Bot,
+  Building2,
+  CalendarDays,
   Camera,
   Download,
   Eye,
   FileText,
+  Github,
   Image as ImageIcon,
   LayoutDashboard,
+  Link2,
   Mail,
   Megaphone,
   Newspaper,
@@ -20,6 +24,7 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
+import { MOCK_DAILY_BRIEFS, type DailyBrief, type DailySignal } from "./constants/mockData";
 import "./styles.css";
 
 type Locale = "zh" | "en";
@@ -192,6 +197,7 @@ const content = {
       project: "Project",
       about: "About me",
       home: "Home",
+      daily: "每日 AI 日报",
       contact: "联系我",
     },
     contact: {
@@ -508,6 +514,7 @@ const content = {
       project: "Project",
       about: "About me",
       home: "Home",
+      daily: "AI Daily",
       contact: "Contact",
     },
     contact: {
@@ -845,6 +852,10 @@ function App() {
         onToggleLocale={toggleLocale}
       />
     );
+  }
+
+  if (pathname === "/daily") {
+    return <DailyBriefPage copy={copy} locale={locale} onToggleLocale={toggleLocale} />;
   }
 
   const project = projects.find((item) => item.href === pathname);
@@ -1317,6 +1328,190 @@ function AboutPage({
   );
 }
 
+function DailyBriefPage({
+  copy,
+  locale,
+  onToggleLocale,
+}: {
+  copy: (typeof content)[Locale];
+  locale: Locale;
+  onToggleLocale: () => void;
+}) {
+  const [selectedDate, setSelectedDate] = React.useState(MOCK_DAILY_BRIEFS[0].date);
+  const selectedBrief =
+    MOCK_DAILY_BRIEFS.find((brief) => brief.date === selectedDate) ?? MOCK_DAILY_BRIEFS[0];
+  const isZh = locale === "zh";
+
+  return (
+    <main className="daily-shell">
+      <Nav copy={copy} locale={locale} onToggleLocale={onToggleLocale} />
+      <article className="daily-page">
+        <header className="daily-hero">
+          <p className="eyebrow">
+            <Sparkles size={16} />
+            {isZh ? "AI Product Daily" : "AI Product Daily"}
+          </p>
+          <h1>{isZh ? "每日 AI 产品雷达。" : "Daily AI Product Radar."}</h1>
+          <p className="daily-summary">
+            {isZh
+              ? "给关注前沿信息的产品经理看的 AI 日报：不只做新闻摘要，也保留来源、产品判断和可验证机会点。"
+              : "An AI daily brief for product managers: not only summaries, but also sources, product judgment, and verifiable opportunity signals."}
+          </p>
+          <div className="daily-meta-row">
+            <span>
+              <CalendarDays size={15} />
+              {isZh ? "每日自动更新预留" : "Daily automation ready"}
+            </span>
+            <span>
+              <Link2 size={15} />
+              {isZh ? "每条信息可溯源" : "Source links included"}
+            </span>
+          </div>
+        </header>
+
+        <section className="daily-layout">
+          <aside className="daily-history" aria-label={isZh ? "往期日报" : "Brief history"}>
+            <div className="daily-section-head">
+              <p>{isZh ? "History" : "History"}</p>
+              <h2>{isZh ? "往期日报" : "Past briefs"}</h2>
+            </div>
+            <div className="history-list">
+              {MOCK_DAILY_BRIEFS.map((brief) => (
+                <button
+                  type="button"
+                  className={brief.date === selectedBrief.date ? "active" : ""}
+                  key={brief.date}
+                  onClick={() => setSelectedDate(brief.date)}
+                >
+                  <span>{brief.label[locale]}</span>
+                  <strong>{brief.date}</strong>
+                  <small>{brief.title[locale]}</small>
+                </button>
+              ))}
+            </div>
+            <p className="history-note">
+              {isZh
+                ? "正式接入后，每天生成一个独立快照，历史判断不会被新数据覆盖。"
+                : "After automation, each day can be stored as an independent snapshot so past judgment is not overwritten."}
+            </p>
+          </aside>
+
+          <div className="daily-content">
+            <DailyBriefOverview brief={selectedBrief} locale={locale} />
+            <DailySignalSection
+              icon="signal"
+              title={isZh ? "今日最重要信号" : "Key signals"}
+              signals={selectedBrief.signals}
+              locale={locale}
+            />
+            <DailySignalSection
+              icon="github"
+              title={isZh ? "GitHub 上升项目" : "GitHub rising projects"}
+              signals={selectedBrief.githubProjects}
+              locale={locale}
+            />
+            <DailySignalSection
+              icon="company"
+              title={isZh ? "大公司动态" : "Company updates"}
+              signals={selectedBrief.companyUpdates}
+              locale={locale}
+            />
+            <DailySignalSection
+              icon="opportunity"
+              title={isZh ? "产品机会与验证假设" : "Product opportunities"}
+              signals={selectedBrief.opportunities}
+              locale={locale}
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+  );
+}
+
+function DailyBriefOverview({ brief, locale }: { brief: DailyBrief; locale: Locale }) {
+  const isZh = locale === "zh";
+
+  return (
+    <section className="daily-overview">
+      <div>
+        <p>{brief.date}</p>
+        <h2>{brief.title[locale]}</h2>
+        <span>{brief.editorNote[locale]}</span>
+      </div>
+      <aside>
+        <strong>{isZh ? "今日判断" : "Takeaway"}</strong>
+        <p>{brief.keyTakeaway[locale]}</p>
+      </aside>
+    </section>
+  );
+}
+
+function DailySignalSection({
+  icon,
+  title,
+  signals,
+  locale,
+}: {
+  icon: "signal" | "github" | "company" | "opportunity";
+  title: string;
+  signals: DailySignal[];
+  locale: Locale;
+}) {
+  const Icon =
+    icon === "github"
+      ? Github
+      : icon === "company"
+        ? Building2
+        : icon === "opportunity"
+          ? Sparkles
+          : Newspaper;
+
+  return (
+    <section className="daily-signal-section">
+      <div className="daily-section-head">
+        <p>
+          <Icon size={15} />
+          {title}
+        </p>
+        <h2>{title}</h2>
+      </div>
+      <div className="daily-card-grid">
+        {signals.map((signal) => (
+          <DailySignalCard key={`${signal.title.en}-${signal.category.en}`} signal={signal} locale={locale} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Locale }) {
+  const isZh = locale === "zh";
+
+  return (
+    <article className="daily-signal-card">
+      <div className="signal-card-top">
+        <span>{signal.category[locale]}</span>
+        <strong className={`impact-badge ${signal.impact.toLowerCase()}`}>{signal.impact}</strong>
+      </div>
+      <h3>{signal.title[locale]}</h3>
+      <p>{signal.summary[locale]}</p>
+      <section className="pm-insight">
+        <strong>{isZh ? "PM 视角" : "PM lens"}</strong>
+        <p>{signal.pmInsight[locale]}</p>
+      </section>
+      <div className="source-list" aria-label={isZh ? "来源链接" : "Source links"}>
+        {signal.sources.map((source) => (
+          <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>
+            {source.label}
+            <ArrowUpRight size={14} />
+          </a>
+        ))}
+      </div>
+    </article>
+  );
+}
+
 function CmsCasePage({
   copy,
   locale,
@@ -1654,6 +1849,7 @@ function Nav({
       <div className="nav-links">
         <a href={toPath("/")}>{copy.nav.home}</a>
         <a href={toPath("/about")}>{copy.nav.about}</a>
+        <a href={toPath("/daily")}>{copy.nav.daily}</a>
       </div>
 
         <div className="nav-actions">
