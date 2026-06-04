@@ -28,7 +28,7 @@ function formatDate(date) {
   return `${year}-${month}-${day}`;
 }
 
-function getTargetDate() {
+function getBriefDate() {
   if (process.env.TARGET_DATE) {
     return process.env.TARGET_DATE;
   }
@@ -36,6 +36,15 @@ function getTargetDate() {
   const shanghaiNow = new Date(
     new Date().toLocaleString("en-US", { timeZone: "Asia/Shanghai" }),
   );
+  return formatDate(shanghaiNow);
+}
+
+function getSinceDate(briefDate) {
+  if (process.env.SOURCE_SINCE_DATE) {
+    return process.env.SOURCE_SINCE_DATE;
+  }
+
+  const shanghaiNow = new Date(`${briefDate}T00:00:00+08:00`);
   shanghaiNow.setDate(shanghaiNow.getDate() - 1);
   return formatDate(shanghaiNow);
 }
@@ -441,9 +450,10 @@ function assertBriefShape(brief) {
 }
 
 async function main() {
-  const targetDate = getTargetDate();
+  const targetDate = getBriefDate();
+  const sinceDate = getSinceDate(targetDate);
   const [githubProjects, companyUpdates] = await Promise.all([
-    collectGithubProjects(targetDate),
+    collectGithubProjects(sinceDate),
     collectCompanyUpdates(),
   ]);
 
@@ -462,7 +472,9 @@ async function main() {
   const nextBriefs = [
     brief,
     ...existingBriefs.filter((item) => item.date !== targetDate),
-  ].slice(0, 30);
+  ]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 30);
 
   await fs.writeFile(dataFile, renderDataFile(nextBriefs), "utf8");
   console.log(`Updated ${path.relative(repoRoot, dataFile)} with ${targetDate} daily brief.`);
