@@ -1504,6 +1504,7 @@ h1 span {
 }
 
 .daily-overview aside strong,
+.inclusion-reason strong,
 .pm-insight strong {
   display: block;
   color: #151515;
@@ -1595,6 +1596,7 @@ h1 span {
   line-height: 1.72;
 }
 
+.inclusion-reason,
 .pm-insight {
   margin-top: 16px;
   padding: 14px;
@@ -1603,6 +1605,12 @@ h1 span {
   background: #fbfaf7;
 }
 
+.inclusion-reason {
+  border-color: #e3ddd3;
+  background: #fffefa;
+}
+
+.inclusion-reason p,
 .pm-insight p {
   margin: 8px 0 0;
   color: #4d4d4d;

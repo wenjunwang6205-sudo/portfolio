@@ -49,6 +49,14 @@ function getSinceDate(briefDate) {
   return formatDate(shanghaiNow);
 }
 
+function buildGithubReason(repo) {
+  const topicText = repo.topics?.length ? `，topics: ${repo.topics.slice(0, 5).join(", ")}` : "";
+  return {
+    zh: `入选原因：昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 ${repo.stars.toLocaleString("en-US")} stars、${repo.forks.toLocaleString("en-US")} forks${topicText}，可作为开发者采用和技术趋势信号观察。`,
+    en: `Why included: updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around ${repo.stars.toLocaleString("en-US")} stars and ${repo.forks.toLocaleString("en-US")} forks${topicText}, making it a developer adoption and trend signal.`,
+  };
+}
+
 function stripHtml(value) {
   return value
     .replace(/<!\[CDATA\[(.*?)\]\]>/gs, "$1")
@@ -113,7 +121,7 @@ async function collectGithubProjects(targetDate) {
     url.searchParams.set("q", `${query} pushed:>=${targetDate}`);
     url.searchParams.set("sort", "stars");
     url.searchParams.set("order", "desc");
-    url.searchParams.set("per_page", "8");
+    url.searchParams.set("per_page", "15");
 
     try {
       const data = await fetchJson(url, headers);
@@ -138,7 +146,7 @@ async function collectGithubProjects(targetDate) {
 
   return [...byUrl.values()]
     .sort((a, b) => b.stars - a.stars)
-    .slice(0, 12);
+    .slice(0, 30);
 }
 
 async function collectCompanyUpdates() {
@@ -176,7 +184,7 @@ async function collectCompanyUpdates() {
 }
 
 function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
-  const topGithub = githubProjects.slice(0, 3);
+  const topGithub = githubProjects.slice(0, 10);
   const topCompany = companyUpdates.slice(0, 3);
   const topProject = topGithub[0];
   const topUpdate = topCompany[0];
@@ -242,6 +250,7 @@ function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
       title: { zh: repo.name, en: repo.name },
       category: { zh: "GitHub 项目", en: "GitHub project" },
       summary: { zh: repo.description || "暂无描述。", en: repo.description || "No description." },
+      inclusionReason: buildGithubReason(repo),
       pmInsight: {
         zh: "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
         en: "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits.",
@@ -306,6 +315,7 @@ DailySignal = {
   "title": { "zh": string, "en": string },
   "category": { "zh": string, "en": string },
   "summary": { "zh": string, "en": string },
+  "inclusionReason"?: { "zh": string, "en": string },
   "pmInsight": { "zh": string, "en": string },
   "impact": "High" | "Medium" | "Watch",
   "sources": [{ "label": string, "url": string }]
@@ -313,7 +323,7 @@ DailySignal = {
 
 数量建议：
 - signals: 2-3 条
-- githubProjects: 2-4 条
+- githubProjects: 必须 10 条；每条都必须写 inclusionReason，说明它为什么今天被放进来，例如近期更新、AI/LLM/Agent/RAG 方向相关、开发者采用信号、平台趋势信号、可借鉴的产品形态等
 - companyUpdates: 2-4 条
 - opportunities: 1-3 条
 
@@ -415,6 +425,7 @@ export type DailySignal = {
   title: LocalizedText;
   category: LocalizedText;
   summary: LocalizedText;
+  inclusionReason?: LocalizedText;
   pmInsight: LocalizedText;
   impact: "High" | "Medium" | "Watch";
   sources: DailySource[];

@@ -1496,6 +1496,12 @@ function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Loca
       </div>
       <h3>{signal.title[locale]}</h3>
       <p>{signal.summary[locale]}</p>
+      {signal.inclusionReason ? (
+        <section className="inclusion-reason">
+          <strong>{isZh ? "入选原因" : "Why included"}</strong>
+          <p>{signal.inclusionReason[locale]}</p>
+        </section>
+      ) : null}
       <section className="pm-insight">
         <strong>{isZh ? "PM 视角" : "PM lens"}</strong>
         <p>{signal.pmInsight[locale]}</p>
