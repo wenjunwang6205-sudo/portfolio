@@ -120,11 +120,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
           "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
-        "totalStars": 10970,
+        "totalStars": 11086,
         "language": "Python",
         "dailyStars": 3530,
         "chineseIntro": {
-          "zh": "中文简介：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "zh": "中文简介：该项目围绕 chopratejas/headroom 提供 AI 相关能力，原始描述为：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
           "en": "Chinese intro: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
         "todayHighlight": {
@@ -132,8 +132,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 3,530 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,970 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,970 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,086 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,086 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -160,11 +160,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 206331,
+        "totalStars": 206393,
         "language": "JavaScript",
         "dailyStars": 2141,
         "chineseIntro": {
-          "zh": "中文简介：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "zh": "中文简介：该项目围绕 affaan-m/ECC 提供 AI 相关能力，原始描述为：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "en": "Chinese intro: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
@@ -172,8 +172,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 2,141 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 206,331 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 206,331 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 206,393 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 206,393 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -200,11 +200,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Star NousResearch / hermes-agent The agent that grows with you",
           "en": "Star NousResearch / hermes-agent The agent that grows with you"
         },
-        "totalStars": 179877,
+        "totalStars": 179944,
         "language": "Python",
         "dailyStars": 1735,
         "chineseIntro": {
-          "zh": "中文简介：Star NousResearch / hermes-agent The agent that grows with you",
+          "zh": "中文简介：该项目围绕 NousResearch/hermes-agent 提供 AI 相关能力，原始描述为：Star NousResearch / hermes-agent The agent that grows with you",
           "en": "Chinese intro: Star NousResearch / hermes-agent The agent that grows with you"
         },
         "todayHighlight": {
@@ -212,8 +212,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 1,735 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 179,877 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 179,877 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 179,944 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 179,944 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -240,11 +240,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
           "en": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!"
         },
-        "totalStars": 13266,
+        "totalStars": 13284,
         "language": "Python",
         "dailyStars": 719,
         "chineseIntro": {
-          "zh": "中文简介：Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+          "zh": "中文简介：该项目围绕 nesquena/hermes-webui 提供 AI 相关能力，原始描述为：Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
           "en": "Chinese intro: Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!"
         },
         "todayHighlight": {
@@ -252,8 +252,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 719 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,266 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,266 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,284 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,284 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -280,11 +280,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
           "en": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
         },
-        "totalStars": 9204,
+        "totalStars": 9227,
         "language": "Python",
         "dailyStars": 693,
         "chineseIntro": {
-          "zh": "中文简介：Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "zh": "中文简介：该项目围绕 Open-LLM-VTuber/Open-LLM-VTuber 提供 AI 相关能力，原始描述为：Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
           "en": "Chinese intro: Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
         },
         "todayHighlight": {
@@ -292,8 +292,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 693 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,204 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,204 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,227 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,227 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -320,11 +320,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
           "en": "Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era."
         },
-        "totalStars": 25374,
+        "totalStars": 25389,
         "language": "TypeScript",
         "dailyStars": 600,
         "chineseIntro": {
-          "zh": "中文简介：Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
+          "zh": "中文简介：该项目围绕 supermemoryai/supermemory 提供 AI 相关能力，原始描述为：Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era.",
           "en": "Chinese intro: Star supermemoryai / supermemory Memory engine and app that is extremely fast, scalable. The Memory API for the AI era."
         },
         "todayHighlight": {
@@ -332,8 +332,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 600 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 25,374 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 25,374 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 25,389 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 25,389 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -360,11 +360,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
           "en": "Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source."
         },
-        "totalStars": 23543,
+        "totalStars": 23560,
         "language": "Java",
         "dailyStars": 570,
         "chineseIntro": {
-          "zh": "中文简介：Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+          "zh": "中文简介：该项目围绕 opendataloader-project/opendataloader-pdf 提供 AI 相关能力，原始描述为：Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
           "en": "Chinese intro: Star opendataloader-project / opendataloader-pdf PDF Parser for AI-ready data. Automate PDF accessibility. Open-source."
         },
         "todayHighlight": {
@@ -372,8 +372,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 570 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,543 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,543 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,560 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,560 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -400,11 +400,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\"",
           "en": "Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\""
         },
-        "totalStars": 10378,
+        "totalStars": 10422,
         "language": "Python",
         "dailyStars": 197,
         "chineseIntro": {
-          "zh": "中文简介：Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\"",
+          "zh": "中文简介：该项目围绕 HKUDS/Vibe-Trading 提供 AI 相关能力，原始描述为：Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\"",
           "en": "Chinese intro: Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\""
         },
         "todayHighlight": {
@@ -412,8 +412,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增 197 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,378 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,378 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,422 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,422 stars and 0 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -440,11 +440,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 184743,
+        "totalStars": 184745,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "中文简介：AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "zh": "中文简介：该项目围绕 Significant-Gravitas/AutoGPT 提供 AI 相关能力，原始描述为：AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
           "en": "Chinese intro: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
@@ -452,8 +452,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,743 stars、46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,743 stars and 46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,745 stars、46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,745 stars and 46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -480,11 +480,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
-        "totalStars": 173122,
+        "totalStars": 173124,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "中文简介：Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+          "zh": "中文简介：该项目围绕 ollama/ollama 提供 AI 相关能力，原始描述为：Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
           "en": "Chinese intro: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
@@ -492,8 +492,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,122 stars、16,425 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,122 stars and 16,425 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,124 stars、16,427 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,124 stars and 16,427 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
