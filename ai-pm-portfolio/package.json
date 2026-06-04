@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
+    "generate:daily": "node scripts/generate-daily-brief.mjs",
+    "generate:daily:dry-run": "node scripts/generate-daily-brief.mjs --dry-run",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

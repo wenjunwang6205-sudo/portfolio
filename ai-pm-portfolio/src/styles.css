@@ -1335,8 +1335,8 @@ h1 span {
 
 .daily-layout {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 34px;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 42px;
   padding-top: 36px;
 }
 
@@ -1344,6 +1344,8 @@ h1 span {
   position: sticky;
   top: 20px;
   align-self: start;
+  padding-right: 24px;
+  border-right: 1px solid #e8e5de;
 }
 
 .daily-section-head {
@@ -1370,32 +1372,57 @@ h1 span {
 }
 
 .history-list {
+  position: relative;
   display: grid;
-  gap: 10px;
+  gap: 4px;
+  padding-left: 16px;
+}
+
+.history-list::before {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 3px;
+  width: 1px;
+  content: "";
+  background: #e4dfd6;
 }
 
 .history-list button {
+  position: relative;
   display: grid;
-  gap: 6px;
+  gap: 5px;
   width: 100%;
-  padding: 15px;
-  border: 1px solid #e7e1d7;
-  border-radius: 8px;
-  background: #fbfaf7;
+  padding: 10px 0 14px 14px;
+  border: 0;
+  background: transparent;
   color: #151515;
   cursor: pointer;
   text-align: left;
-  transition:
-    transform 180ms ease,
-    border-color 180ms ease,
-    background 180ms ease;
+  opacity: 0.58;
+  transition: opacity 180ms ease;
+}
+
+.history-list button::before {
+  position: absolute;
+  top: 17px;
+  left: -17px;
+  width: 7px;
+  height: 7px;
+  content: "";
+  border: 1px solid #cfc9bd;
+  border-radius: 999px;
+  background: #ffffff;
 }
 
 .history-list button:hover,
 .history-list button.active {
-  transform: translateY(-1px);
+  opacity: 1;
+}
+
+.history-list button.active::before {
   border-color: #151515;
-  background: #ffffff;
+  background: #151515;
 }
 
 .history-list span {
@@ -2593,10 +2620,24 @@ h1 span {
 
   .daily-history {
     position: static;
+    padding-right: 0;
+    padding-bottom: 24px;
+    border-right: 0;
+    border-bottom: 1px solid #e8e5de;
   }
 
   .history-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-left: 0;
+  }
+
+  .history-list::before,
+  .history-list button::before {
+    content: none;
+  }
+
+  .history-list button {
+    padding: 0;
   }
 
   .daily-overview {
@@ -2670,6 +2711,7 @@ h1 span {
 
   .history-list {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .daily-overview,

@@ -1,0 +1,63 @@
+name: Generate AI Daily Brief
+
+on:
+  schedule:
+    # 08:00 Asia/Shanghai. GitHub Actions cron uses UTC.
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: "Date to generate, format YYYY-MM-DD. Defaults to yesterday in Asia/Shanghai."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-daily-brief
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ai-pm-portfolio/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ai-pm-portfolio
+        run: npm ci
+
+      - name: Generate daily brief
+        working-directory: ai-pm-portfolio
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-chat' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          TARGET_DATE: ${{ inputs.target_date }}
+        run: npm run generate:daily
+
+      - name: Commit daily brief
+        run: |
+          if git diff --quiet -- ai-pm-portfolio/src/constants/dailyData.ts; then
+            echo "No daily brief changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ai-pm-portfolio/src/constants/dailyData.ts
+          git commit -m "Update AI daily brief"
+          git push

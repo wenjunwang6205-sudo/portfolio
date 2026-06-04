@@ -24,7 +24,7 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
-import { MOCK_DAILY_BRIEFS, type DailyBrief, type DailySignal } from "./constants/mockData";
+import { DAILY_BRIEFS, type DailyBrief, type DailySignal } from "./constants/dailyData";
 import "./styles.css";
 
 type Locale = "zh" | "en";
@@ -197,7 +197,7 @@ const content = {
       project: "Project",
       about: "About me",
       home: "Home",
-      daily: "每日 AI 日报",
+      daily: "AI Daily",
       contact: "联系我",
     },
     contact: {
@@ -1337,9 +1337,9 @@ function DailyBriefPage({
   locale: Locale;
   onToggleLocale: () => void;
 }) {
-  const [selectedDate, setSelectedDate] = React.useState(MOCK_DAILY_BRIEFS[0].date);
+  const [selectedDate, setSelectedDate] = React.useState(DAILY_BRIEFS[0].date);
   const selectedBrief =
-    MOCK_DAILY_BRIEFS.find((brief) => brief.date === selectedDate) ?? MOCK_DAILY_BRIEFS[0];
+    DAILY_BRIEFS.find((brief) => brief.date === selectedDate) ?? DAILY_BRIEFS[0];
   const isZh = locale === "zh";
 
   return (
@@ -1376,7 +1376,7 @@ function DailyBriefPage({
               <h2>{isZh ? "往期日报" : "Past briefs"}</h2>
             </div>
             <div className="history-list">
-              {MOCK_DAILY_BRIEFS.map((brief) => (
+              {DAILY_BRIEFS.map((brief) => (
                 <button
                   type="button"
                   className={brief.date === selectedBrief.date ? "active" : ""}
