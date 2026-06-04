@@ -456,11 +456,29 @@ function getModelConfig() {
   return null;
 }
 
-async function generateWithModel(payload) {
-  const config = getModelConfig();
-  if (!config) {
-    console.warn("No model API key found. Falling back to source-based brief generation.");
-    return buildFallbackBrief(payload.targetDate, payload.githubProjects, payload.companyUpdates);
+function parseModelJson(text) {
+  const trimmed = text.trim();
+  const withoutFence = trimmed
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```$/i, "")
+    .trim();
+  return JSON.parse(withoutFence);
+}
+
+async function requestModel(config, payload, useJsonMode) {
+  const body = {
+    model: config.model,
+    messages: [
+      {
+        role: "user",
+        content: buildPrompt(payload),
+      },
+    ],
+    temperature: 0.4,
+  };
+
+  if (useJsonMode) {
+    body.response_format = { type: "json_object" };
   }
 
   const response = await fetch(config.url, {
@@ -469,33 +487,44 @@ async function generateWithModel(payload) {
       Authorization: `Bearer ${config.apiKey}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      model: config.model,
-      messages: [
-        {
-          role: "user",
-          content: buildPrompt(payload),
-        },
-      ],
-      temperature: 0.4,
-      response_format: {
-        type: "json_object",
-      },
-    }),
+    body: JSON.stringify(body),
   });
 
+  const responseText = await response.text();
+
   if (!response.ok) {
-    throw new Error(`${config.name} request failed: ${response.status} ${await response.text()}`);
+    throw new Error(`${config.name} request failed: ${response.status} ${responseText}`);
   }
 
-  const data = await response.json();
+  const data = JSON.parse(responseText);
   const text = data.choices?.[0]?.message?.content;
 
   if (!text) {
     throw new Error(`${config.name} response did not include output text.`);
   }
 
-  return JSON.parse(text);
+  return parseModelJson(text);
+}
+
+async function generateWithModel(payload) {
+  const config = getModelConfig();
+  if (!config) {
+    console.warn("No model API key found. Falling back to source-based brief generation.");
+    return buildFallbackBrief(payload.targetDate, payload.githubProjects, payload.companyUpdates);
+  }
+
+  try {
+    return await requestModel(config, payload, true);
+  } catch (error) {
+    console.warn(`${config.name} JSON mode failed, retrying without response_format: ${error.message}`);
+  }
+
+  try {
+    return await requestModel(config, payload, false);
+  } catch (error) {
+    console.warn(`${config.name} generation failed. Falling back to source-based brief: ${error.message}`);
+    return buildFallbackBrief(payload.targetDate, payload.githubProjects, payload.companyUpdates);
+  }
 }
 
 async function readExistingBriefs() {
