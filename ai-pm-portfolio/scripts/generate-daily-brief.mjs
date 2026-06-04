@@ -67,7 +67,7 @@ function cleanGithubDescription(description) {
 function buildChineseIntro(repo) {
   const description = repo.description || "暂无项目描述。";
   return {
-    zh: `中文简介：${description}`,
+    zh: `中文简介：该项目围绕 ${repo.name} 提供 AI 相关能力，原始描述为：${description}`,
     en: `Chinese intro: ${description}`,
   };
 }
@@ -392,7 +392,9 @@ function buildPrompt({ targetDate, githubProjects, companyUpdates }) {
 3. 大公司动态要解释背后的平台策略、产品趋势或竞争格局。
 4. 所有 sources 必须来自输入数据里的 URL，不要编造链接。
 5. 输出必须是严格 JSON，不要 Markdown，不要解释文字。
-6. JSON 必须符合这个 TypeScript 结构：
+6. githubProjects 里的 chineseIntro.zh 必须是中文，不允许直接复制英文描述；用 1 句中文总结“这个项目是做什么的、解决什么问题、典型使用场景是什么”。格式必须以“中文简介:”开头。
+7. githubProjects 里的 todayHighlight.zh 必须是中文，格式必须以“今日亮点:”开头，说明今天为什么值得看。
+8. JSON 必须符合这个 TypeScript 结构：
 {
   "date": string,
   "label": { "zh": string, "en": string },
@@ -421,7 +423,7 @@ DailySignal = {
 
 数量建议：
 - signals: 2-3 条
-- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。todayHighlight 用“今日亮点:”开头，说明它为什么今天被放进来，例如 GitHub Trending 今日新增、近期更新、AI/LLM/Agent/RAG 方向相关、开发者采用信号、平台趋势信号、可借鉴的产品形态等
+- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。chineseIntro.zh 必须是中文总结，不能是英文；todayHighlight 用“今日亮点:”开头，说明它为什么今天被放进来，例如 GitHub Trending 今日新增、近期更新、AI/LLM/Agent/RAG 方向相关、开发者采用信号、平台趋势信号、可借鉴的产品形态等
 - companyUpdates: 2-4 条
 - opportunities: 1-3 条
 
@@ -559,6 +561,12 @@ function assertBriefShape(brief) {
   for (const group of requiredGroups) {
     if (!Array.isArray(brief[group])) {
       throw new Error(`Generated brief is missing ${group}.`);
+    }
+  }
+
+  for (const project of brief.githubProjects) {
+    if (project.chineseIntro?.zh && !/[\u4e00-\u9fff]/.test(project.chineseIntro.zh)) {
+      throw new Error(`GitHub project chineseIntro.zh must be Chinese: ${project.title?.en ?? "unknown"}`);
     }
   }
 }

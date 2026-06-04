@@ -4,10 +4,16 @@ on:
   schedule:
     # 08:00 Asia/Shanghai. GitHub Actions cron uses UTC.
     - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ai-daily-brief.yml"
+      - "ai-pm-portfolio/scripts/generate-daily-brief.mjs"
   workflow_dispatch:
     inputs:
       target_date:
-        description: "Date to generate, format YYYY-MM-DD. Defaults to yesterday in Asia/Shanghai."
+        description: "Brief publish date, format YYYY-MM-DD. Defaults to today in Asia/Shanghai."
         required: false
         type: string
 
