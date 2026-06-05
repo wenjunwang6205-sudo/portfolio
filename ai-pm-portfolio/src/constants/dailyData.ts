@@ -44,63 +44,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI Agent 生态爆发：Token 优化与记忆系统成关键",
-      "en": "AI Agent Ecosystem Boom: Token Optimization and Memory Systems Become Key"
+      "zh": "AI Agent 成本优化与记忆升级：今日主线",
+      "en": "AI Agent Cost Optimization and Memory Upgrade: Today's Theme"
     },
     "editorNote": {
-      "zh": "今日 GitHub 项目与 OpenAI 动态共同指向 AI Agent 生态的快速成熟。Headroom 的病毒式增长印证了 token 成本优化的刚需，而 OpenAI 的 Dreaming 记忆系统则展示了提升用户体验的新方向。产品经理应重点关注 Agent 效率与个性化能力的结合。",
-      "en": "Today's GitHub projects and OpenAI updates collectively point to the rapid maturation of the AI Agent ecosystem. Headroom's viral growth confirms the urgent need for token cost optimization, while OpenAI's Dreaming memory system demonstrates new directions for enhancing user experience. Product managers should focus on combining agent efficiency with personalization."
+      "zh": "今日 GitHub 热点集中在 Agent 成本优化（Headroom）和框架生态（Hermes Agent、ECC），OpenAI 则推出记忆系统“Dreaming”并强化生物领域模型。跨源信号指向 Agent 实用化与垂直深耕。",
+      "en": "Today's GitHub highlights focus on Agent cost optimization (Headroom) and framework ecosystem (Hermes Agent, ECC), while OpenAI launches memory system 'Dreaming' and strengthens bio-domain models. Cross-source signals point to Agent pragmatism and vertical deepening."
     },
     "keyTakeaway": {
-      "zh": "AI Agent 生态进入效率与记忆双轮驱动阶段：Headroom 等 token 优化工具爆发式增长，OpenAI 推出 Dreaming 记忆系统，两者共同指向 Agent 从「能用」到「好用」的关键跃迁。",
-      "en": "The AI Agent ecosystem enters a phase driven by both efficiency and memory: token optimization tools like Headroom are exploding, and OpenAI launches Dreaming memory system, together pointing to the critical leap from 'usable' to 'delightful' agents."
+      "zh": "Agent 生态进入「降本增效」阶段，token 压缩工具 Headroom 爆火，同时 OpenAI 通过记忆升级和垂直模型强化体验与专业性。",
+      "en": "The Agent ecosystem enters a 'cost reduction and efficiency' phase, with token compression tool Headroom exploding, while OpenAI enhances experience and professionalism through memory upgrades and vertical models."
     },
     "signals": [
       {
         "title": {
-          "zh": "Token 优化工具成为 Agent 基础设施新热点",
-          "en": "Token Optimization Tools Become New Hotspot in Agent Infrastructure"
+          "zh": "Agent 成本优化成为刚需",
+          "en": "Agent Cost Optimization Becomes a Must-Have"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "Headroom 单日新增 3142 星，总星数超 1.2 万，其「压缩至原体积 5%-40% 且保持质量」的能力精准击中 AI Agent 和 LLM 应用的 token 成本痛点。同时，ECC 项目（20.7 万星）也聚焦 Agent 性能优化，显示开发者对降低推理成本的强烈需求。",
-          "en": "Headroom gained 3,142 stars in a single day, reaching over 12,000 total stars. Its ability to compress to 5%-40% of original size while maintaining quality precisely hits the token cost pain point of AI agents and LLM applications. Meanwhile, ECC (207k stars) also focuses on agent performance optimization, showing strong developer demand for reducing inference costs."
+          "zh": "Headroom 单日获 3142 星，总星数 1.3 万，其 token 压缩能力（60-95%）精准解决 Agent 高成本痛点。同时，ECC 作为 Agent 原生操作系统也获 1750 星，表明开发者对 Agent 效率工具需求旺盛。",
+          "en": "Headroom gained 3142 stars in a day, total 13k, its token compression (60-95%) precisely addresses Agent high-cost pain points. Meanwhile, ECC as an Agent-native OS also gained 1750 stars, indicating strong developer demand for Agent efficiency tools."
         },
         "pmInsight": {
-          "zh": "产品经理应评估在 Agent 产品中集成 token 压缩或性能优化层，以降低用户使用成本、提升竞争力。可考虑与 Headroom 等开源项目合作或自研类似能力。",
-          "en": "Product managers should evaluate integrating token compression or performance optimization layers into agent products to reduce user costs and enhance competitiveness. Consider partnering with open-source projects like Headroom or developing similar capabilities in-house."
+          "zh": "产品经理应评估在 Agent 产品中集成 token 压缩或成本优化模块，以降低用户使用门槛，尤其适合高频调用场景。",
+          "en": "PMs should consider integrating token compression or cost optimization modules into Agent products to lower user barriers, especially for high-frequency call scenarios."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "Headroom GitHub",
+            "label": "Headroom",
             "url": "https://github.com/chopratejas/headroom"
           },
           {
-            "label": "ECC GitHub",
+            "label": "ECC",
             "url": "https://github.com/affaan-m/ECC"
           }
         ]
       },
       {
         "title": {
-          "zh": "记忆系统升级推动对话式 AI 个性化体验",
-          "en": "Memory System Upgrade Drives Personalized Conversational AI Experience"
+          "zh": "记忆与个性化成为 Agent 竞争焦点",
+          "en": "Memory and Personalization Become Agent Competitive Focus"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "OpenAI 推出 ChatGPT 新记忆系统 Dreaming，能更好记住用户偏好，保持上下文连贯。同时，Hermes Agent（18.1 万星）作为「成长型 Agent」框架，也强调渐进式能力积累。两者均指向 Agent 长期记忆与个性化的重要性。",
-          "en": "OpenAI launched Dreaming, a new memory system for ChatGPT that better remembers user preferences and maintains context coherence. Meanwhile, Hermes Agent (181k stars), a 'growing agent' framework, also emphasizes progressive capability accumulation. Both point to the importance of long-term memory and personalization for agents."
+          "zh": "OpenAI 推出 ChatGPT 新记忆系统“Dreaming”，能更好记住用户偏好；同时 Hermes Agent 以“可成长”叙事持续霸榜，强调 Agent 的长期记忆与适应能力。",
+          "en": "OpenAI launches new memory system 'Dreaming' for ChatGPT, better remembering user preferences; meanwhile Hermes Agent continues to dominate with 'growable' narrative, emphasizing long-term memory and adaptability."
         },
         "pmInsight": {
-          "zh": "产品经理应优先规划 Agent 的记忆功能，包括用户偏好存储、对话历史利用和个性化响应。可参考 Dreaming 的设计思路，或集成 Hermes Agent 等框架。",
-          "en": "Product managers should prioritize planning memory features for agents, including user preference storage, conversation history utilization, and personalized responses. Reference Dreaming's design or integrate frameworks like Hermes Agent."
+          "zh": "产品经理应优先设计用户记忆与个性化机制，如偏好学习、上下文持久化，以提升用户粘性和差异化体验。",
+          "en": "PMs should prioritize designing user memory and personalization mechanisms, such as preference learning and context persistence, to increase user stickiness and differentiated experience."
         },
         "impact": "High",
         "sources": [
@@ -109,41 +109,41 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://openai.com/index/chatgpt-memory-dreaming"
           },
           {
-            "label": "Hermes Agent GitHub",
+            "label": "Hermes Agent",
             "url": "https://github.com/NousResearch/hermes-agent"
           }
         ]
       },
       {
         "title": {
-          "zh": "垂直领域 Agent 能力深化，生物安全与物理 AI 受关注",
-          "en": "Vertical Domain Agent Capabilities Deepen, Biosafety and Physical AI Gain Attention"
+          "zh": "垂直领域 Agent 加速落地",
+          "en": "Vertical Domain Agents Accelerate Deployment"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "OpenAI 发布 GPT-Rosalind 新能力，强化生物学推理、药物化学和基因组学分析，并发布生物防御行动计划。NVIDIA 推出 Cosmos 世界模型平台，聚焦机器人、自动驾驶等物理 AI。两者表明 AI Agent 正从通用向垂直领域深入。",
-          "en": "OpenAI released new capabilities for GPT-Rosalind, enhancing biological reasoning, medicinal chemistry, and genomics analysis, and published a biodefense action plan. NVIDIA launched Cosmos, a world model platform focusing on robotics and autonomous driving. Both indicate AI agents are moving from general to vertical domains."
+          "zh": "OpenAI 增强 GPT-Rosalind 在生物学、药物化学等领域的推理能力，并与 Endava 合作推动 Agent 在软件交付中落地。同时，PaddleOCR 在 RAG 文档解析中焕发第二春。",
+          "en": "OpenAI enhances GPT-Rosalind's reasoning in biology, medicinal chemistry, etc., and partners with Endava to deploy Agents in software delivery. Meanwhile, PaddleOCR sees a resurgence in RAG document parsing."
         },
         "pmInsight": {
-          "zh": "产品经理可探索在生命科学、自动驾驶等垂直领域构建专用 Agent，利用 GPT-Rosalind 或 Cosmos 等平台加速开发。关注政策动向，提前布局合规能力。",
-          "en": "Product managers can explore building specialized agents in vertical domains like life sciences and autonomous driving, leveraging platforms like GPT-Rosalind or Cosmos. Monitor policy trends and plan compliance capabilities early."
+          "zh": "产品经理应关注垂直领域（如生物、法律、金融）的 Agent 机会，结合领域数据与工具（如 OCR）构建专用解决方案。",
+          "en": "PMs should focus on Agent opportunities in vertical domains (e.g., biology, law, finance), combining domain data and tools (e.g., OCR) to build specialized solutions."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI GPT-Rosalind",
+            "label": "GPT-Rosalind",
             "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
           },
           {
-            "label": "OpenAI Biodefense",
-            "url": "https://openai.com/index/biodefense-in-the-intelligence-age"
+            "label": "Endava",
+            "url": "https://openai.com/index/endava-frontiers"
           },
           {
-            "label": "NVIDIA Cosmos GitHub",
-            "url": "https://github.com/NVIDIA/cosmos"
+            "label": "PaddleOCR",
+            "url": "https://github.com/PaddlePaddle/PaddleOCR"
           }
         ]
       }
@@ -151,59 +151,55 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "开发集成 token 压缩与记忆功能的 Agent 中间件",
-          "en": "Develop Agent Middleware Integrating Token Compression and Memory"
+          "zh": "构建 Agent 成本优化中间件",
+          "en": "Build Agent Cost Optimization Middleware"
         },
         "category": {
           "zh": "机会",
           "en": "Opportunity"
         },
         "summary": {
-          "zh": "结合 Headroom 的 token 压缩能力和 Dreaming 的记忆设计，构建一个 Agent 中间件层，为开发者提供「低成本+个性化」的一站式解决方案。假设：该中间件能降低 Agent 推理成本 50% 以上，同时提升用户留存率 30%。",
-          "en": "Combine Headroom's token compression and Dreaming's memory design to build an agent middleware layer that offers a one-stop 'low-cost + personalized' solution for developers. Hypothesis: This middleware can reduce agent inference costs by over 50% while increasing user retention by 30%."
+          "zh": "基于 Headroom 的 token 压缩思路，开发面向企业级 Agent 的中间件，提供动态 token 压缩、缓存和成本监控功能，可验证假设：企业用户愿意为降低 50%+ token 成本而付费。",
+          "en": "Based on Headroom's token compression approach, develop middleware for enterprise Agents offering dynamic token compression, caching, and cost monitoring. Verifiable hypothesis: enterprise users are willing to pay for 50%+ token cost reduction."
         },
         "pmInsight": {
-          "zh": "产品经理可验证该假设：与 3-5 个 Agent 应用开发者合作，集成中间件后测量 token 消耗和用户留存变化。若验证成功，可商业化或开源。",
-          "en": "Product managers can validate this hypothesis by partnering with 3-5 agent app developers, measuring token consumption and user retention changes after integration. If validated, consider commercialization or open-sourcing."
+          "zh": "产品经理可设计 API 或 SDK 形式的产品，集成主流 Agent 框架，按节省的 token 量或固定订阅收费。",
+          "en": "PMs can design API or SDK products integrated with mainstream Agent frameworks, charging based on token savings or fixed subscription."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "Headroom GitHub",
+            "label": "Headroom",
             "url": "https://github.com/chopratejas/headroom"
-          },
-          {
-            "label": "OpenAI Dreaming",
-            "url": "https://openai.com/index/chatgpt-memory-dreaming"
           }
         ]
       },
       {
         "title": {
-          "zh": "打造面向生物安全的 AI Agent 产品",
-          "en": "Build an AI Agent Product for Biosecurity"
+          "zh": "打造垂直领域 Agent 模板（如生物研究助手）",
+          "en": "Create Vertical Domain Agent Templates (e.g., Biology Research Assistant)"
         },
         "category": {
           "zh": "机会",
           "en": "Opportunity"
         },
         "summary": {
-          "zh": "基于 OpenAI 的生物防御行动计划和 GPT-Rosalind 的生物学能力，开发一款面向生物安全领域的 AI Agent，用于威胁检测、疫苗研发辅助或政策合规。假设：该 Agent 能帮助生物安全团队将威胁响应时间缩短 40%。",
-          "en": "Based on OpenAI's biodefense action plan and GPT-Rosalind's biological capabilities, develop an AI agent for biosecurity, used for threat detection, vaccine R&D assistance, or policy compliance. Hypothesis: This agent can help biosecurity teams reduce threat response time by 40%."
+          "zh": "结合 GPT-Rosalind 的生物学能力和 PaddleOCR 的文档解析，开发面向生物研究人员的 Agent 模板，自动提取文献数据并生成分析报告。可验证假设：研究人员使用后文献调研效率提升 3 倍。",
+          "en": "Combine GPT-Rosalind's biology capabilities and PaddleOCR's document parsing to develop Agent templates for biology researchers, automatically extracting literature data and generating analysis reports. Verifiable hypothesis: researchers' literature review efficiency increases 3x."
         },
         "pmInsight": {
-          "zh": "产品经理可与生物安全机构或制药公司合作，进行概念验证。关注 OpenAI 的 API 更新和合规要求，确保产品符合监管。",
-          "en": "Product managers can partner with biosecurity agencies or pharmaceutical companies for a proof of concept. Monitor OpenAI's API updates and compliance requirements to ensure regulatory alignment."
+          "zh": "产品经理可先与高校或药企合作进行试点，验证效率提升后推出 SaaS 产品。",
+          "en": "PMs can pilot with universities or pharma companies to validate efficiency gains, then launch a SaaS product."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI Biodefense",
-            "url": "https://openai.com/index/biodefense-in-the-intelligence-age"
+            "label": "GPT-Rosalind",
+            "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
           },
           {
-            "label": "OpenAI GPT-Rosalind",
-            "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
+            "label": "PaddleOCR",
+            "url": "https://github.com/PaddlePaddle/PaddleOCR"
           }
         ]
       }
@@ -219,26 +215,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个智能上下文压缩工具，能在将日志、文件、RAG 块等数据送入大模型前，自动压缩至原体积的 5%-40%，同时保持回答质量不变。支持作为 Python 库、代理或 MCP 服务器使用，适用于 AI Agent 和 LLM 应用中的 token 优化。",
+          "zh": "一个智能上下文压缩工具，能在将日志、文件、RAG 片段等输入给大模型前，自动压缩掉 60-95% 的 token 数量，同时保持回答质量不变。支持作为 Python 库、代理或 MCP 服务器使用，是 AI Agent 和 LLM 应用的「瘦身」利器。",
           "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
-        "totalStars": 12538,
+        "totalStars": 12856,
         "language": "Python",
         "dailyStars": 3142,
         "chineseIntro": {
-          "zh": "一个智能上下文压缩工具，能在将日志、文件、RAG 块等数据送入大模型前，自动压缩至原体积的 5%-40%，同时保持回答质量不变。支持作为 Python 库、代理或 MCP 服务器使用，适用于 AI Agent 和 LLM 应用中的 token 优化。",
+          "zh": "一个智能上下文压缩工具，能在将日志、文件、RAG 片段等输入给大模型前，自动压缩掉 60-95% 的 token 数量，同时保持回答质量不变。支持作为 Python 库、代理或 MCP 服务器使用，是 AI Agent 和 LLM 应用的「瘦身」利器。",
           "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
         "todayHighlight": {
-          "zh": "今日新增 3142 星，总星数 12538，增速惊人。AI Agent 生态爆发下，token 成本优化成为刚需，该项目精准切入「压缩不减质」的痛点，在开发者社区引发病毒式传播。",
+          "zh": "今日新增 3142 星，总星数 1.3 万，增速惊人。Agent 生态爆发下，开发者对 token 成本敏感度飙升，Headroom 精准切中「省 token 不降质」的刚需，在 Twitter 和 Hacker News 上被多位 AI 工程师推荐。",
           "en": "登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 3,142 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,538 stars、814 forks，topics: agent, ai, anthropic, claude-code, compression，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,538 stars and 814 forks，topics: agent, ai, anthropic, claude-code, compression, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,856 stars、828 forks，topics: agent, ai, anthropic, claude-code, compression，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,856 stars and 828 forks，topics: agent, ai, anthropic, claude-code, compression, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 应用落地中「成本与性能平衡」的产品化思路——如何将底层技术封装为易用的 SDK/代理，降低开发者接入门槛。",
+          "zh": "观察 token 压缩如何成为 AI 应用基础设施的标配，以及它能否像缓存一样成为 LLM 调用的标准中间层。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +255,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个可成长的 AI Agent 框架，支持 Claude、ChatGPT 等多种大模型，提供从简单对话到复杂任务编排的渐进式能力。适合开发者快速构建和迭代智能体应用。",
+          "zh": "一个可成长的 AI Agent 框架，支持 Claude、ChatGPT 等多种大模型，提供从简单对话到复杂任务编排的渐进式能力。适合开发者快速构建和迭代个性化 AI 助手。",
           "en": "Star NousResearch / hermes-agent The agent that grows with you"
         },
-        "totalStars": 181012,
+        "totalStars": 181263,
         "language": "Python",
         "dailyStars": 1913,
         "chineseIntro": {
-          "zh": "一个可成长的 AI Agent 框架，支持 Claude、ChatGPT 等多种大模型，提供从简单对话到复杂任务编排的渐进式能力。适合开发者快速构建和迭代智能体应用。",
+          "zh": "一个可成长的 AI Agent 框架，支持 Claude、ChatGPT 等多种大模型，提供从简单对话到复杂任务编排的渐进式能力。适合开发者快速构建和迭代个性化 AI 助手。",
           "en": "Star NousResearch / hermes-agent The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "今日新增 1913 星，总星数 18.1 万，持续霸榜。作为 Nous Research 的明星项目，凭借「成长型 Agent」的差异化叙事和活跃社区，在 Agent 赛道保持高热度。",
+          "zh": "今日新增 1913 星，总星数 18.1 万，持续霸榜。作为 Nous Research 的旗舰项目，Hermes Agent 凭借「可成长」叙事和活跃的 Discord 社区，在 Agent 框架赛道中保持头部地位。",
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 181k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,913 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 181,012 stars、31,056 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 181,012 stars and 31,056 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 181,263 stars、31,100 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 181,263 stars and 31,100 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「可成长」这一产品定位如何吸引开发者——通过渐进式复杂度设计，让用户从简单用例平滑过渡到高级功能。",
+          "zh": "关注「可成长 Agent」的产品定义——如何让用户从简单开始，逐步解锁高级能力，降低上手门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +295,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个面向 AI Agent 的性能优化系统，为 Claude Code、Cursor 等开发工具提供技能、本能、记忆、安全等增强能力。旨在提升 Agent 在复杂任务中的效率和可靠性。",
+          "zh": "一个面向 Claude Code、Cursor 等 AI 编程工具的「性能优化系统」，提供技能、本能、记忆、安全等模块，帮助开发者更高效地驾驭 Agent 工作流。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 207250,
+        "totalStars": 207425,
         "language": "JavaScript",
         "dailyStars": 1750,
         "chineseIntro": {
-          "zh": "一个面向 AI Agent 的性能优化系统，为 Claude Code、Cursor 等开发工具提供技能、本能、记忆、安全等增强能力。旨在提升 Agent 在复杂任务中的效率和可靠性。",
+          "zh": "一个面向 Claude Code、Cursor 等 AI 编程工具的「性能优化系统」，提供技能、本能、记忆、安全等模块，帮助开发者更高效地驾驭 Agent 工作流。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日新增 1750 星，总星数 20.7 万，排名第三。项目仅 5 个月即获得超 20 万星，凭借「Agent 性能优化」的精准定位和多语言文档，迅速成为开发者工具链中的热门组件。",
+          "zh": "今日新增 1750 星，总星数 20.7 万，排名第三。ECC 以「Agent 原生操作系统」的定位吸引大量 Claude Code 用户，多语言 README 和活跃的社区贡献使其在开发者中快速传播。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 207k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,750 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,250 stars、31,821 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 207,250 stars and 31,821 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,425 stars、31,837 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 207,425 stars and 31,837 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "思考如何将 Agent 开发中的通用痛点（性能、安全、记忆）产品化为可插拔模块，形成生态依赖。",
+          "zh": "观察 Agent 工具链的「操作系统化」趋势——当 Agent 成为开发标配，围绕它的性能、安全、记忆等基础设施需求将爆发。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +335,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个开源的 AI 虚拟主播（VTuber）项目，支持与任意大模型进行免提语音对话、语音打断，并驱动 Live2D 角色实时表情动作。可完全本地运行，兼容 Ollama 等模型。",
+          "zh": "一个开源的 AI 虚拟主播（VTuber）项目，支持与任意大模型进行免提语音对话、语音打断，并搭配 Live2D 形象在本地运行。适合打造个性化 AI 伴侣或直播助手。",
           "en": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
         },
-        "totalStars": 9601,
+        "totalStars": 9697,
         "language": "Python",
         "dailyStars": 581,
         "chineseIntro": {
-          "zh": "一个开源的 AI 虚拟主播（VTuber）项目，支持与任意大模型进行免提语音对话、语音打断，并驱动 Live2D 角色实时表情动作。可完全本地运行，兼容 Ollama 等模型。",
+          "zh": "一个开源的 AI 虚拟主播（VTuber）项目，支持与任意大模型进行免提语音对话、语音打断，并搭配 Live2D 形象在本地运行。适合打造个性化 AI 伴侣或直播助手。",
           "en": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
         },
         "todayHighlight": {
-          "zh": "今日新增 581 星，总星数 9601，排名第八。AI 虚拟主播赛道持续升温，该项目凭借「本地运行+Live2D+语音交互」的完整体验，在二次元和技术社区双圈传播。",
-          "en": "登上 GitHub Trending 日榜第 8 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 581 星."
+          "zh": "今日新增 581 星，总星数 9697，稳步上升。AI VTuber 概念在二次元社区和 AI 爱好者中持续发酵，项目已运行 31 个月，凭借稳定的本地运行能力和活跃的 Discord 社区保持增长。",
+          "en": "登上 GitHub Trending 日榜第 7 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 581 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,601 stars、1,154 forks，topics: ai, ai-companion, ai-vtuber, ai-waifu, chatbots，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,601 stars and 1,154 forks，topics: ai, ai-companion, ai-vtuber, ai-waifu, chatbots, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,697 stars、1,160 forks，topics: ai, ai-companion, ai-vtuber, ai-waifu, chatbots，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,697 stars and 1,160 forks，topics: ai, ai-companion, ai-vtuber, ai-waifu, chatbots, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI+虚拟形象结合的产品形态——如何通过开源降低创作门槛，吸引非技术用户参与定制。",
+          "zh": "关注 AI 虚拟形象在陪伴、直播、教育等场景的落地机会，以及开源社区如何推动个性化 AI 角色的民主化。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +375,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 AI Agent 技能，能自动搜索 Reddit、X、YouTube、Hacker News 等平台，针对任意主题汇总近 30 天的讨论趋势，并生成有据可查的摘要报告。",
+          "zh": "一个 AI Agent 技能，能自动搜索 Reddit、X、YouTube、Hacker News 等平台，针对任意主题汇总近 30 天的讨论并生成有依据的摘要。适合市场调研、趋势分析等场景。",
           "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
-        "totalStars": 27590,
+        "totalStars": 27712,
         "language": "Python",
         "dailyStars": 199,
         "chineseIntro": {
-          "zh": "一个 AI Agent 技能，能自动搜索 Reddit、X、YouTube、Hacker News 等平台，针对任意主题汇总近 30 天的讨论趋势，并生成有据可查的摘要报告。",
+          "zh": "一个 AI Agent 技能，能自动搜索 Reddit、X、YouTube、Hacker News 等平台，针对任意主题汇总近 30 天的讨论并生成有依据的摘要。适合市场调研、趋势分析等场景。",
           "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
         "todayHighlight": {
-          "zh": "今日新增 199 星，总星数 27590，排名第十四。作为「深度研究」类技能，在信息过载时代精准满足用户快速了解热点趋势的需求，被多个开发者社区推荐。",
-          "en": "登上 GitHub Trending 日榜第 14 位, 创建仅约 4 个月便已积累 27k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 199 星."
+          "zh": "今日新增 199 星，总星数 2.8 万，持续在榜。作为「深度研究」类技能的典型代表，它被多位 Claude Code 用户推荐，在社交媒体上以「一键获取全网近30天讨论」的叙事传播。",
+          "en": "登上 GitHub Trending 日榜第 13 位, 创建仅约 4 个月便已积累 27k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 199 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,590 stars、2,346 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,590 stars and 2,346 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,712 stars、2,356 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,712 stars and 2,356 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「信息聚合+AI 摘要」的产品价值——如何通过跨平台数据源和时效性设计，打造差异化研究工具。",
+          "zh": "观察「AI 技能」作为独立产品形态的可行性——用户是否愿意为特定场景的 Agent 技能付费。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +415,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "百度出品的 OCR 工具包，可将 PDF、图片等文档中的文字识别为结构化数据，支持 100+ 语言。广泛应用于文档解析、票据识别、RAG 数据预处理等场景。",
+          "zh": "百度出品的轻量级 OCR 工具包，能将任何 PDF 或图片中的文字提取为结构化数据，支持 100+ 语言，是连接文档与 LLM 的桥梁。广泛应用于文档解析、票据识别、RAG 数据预处理等场景。",
           "en": "Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
         },
-        "totalStars": 79882,
+        "totalStars": 80005,
         "language": "Python",
         "dailyStars": 141,
         "chineseIntro": {
-          "zh": "百度出品的 OCR 工具包，可将 PDF、图片等文档中的文字识别为结构化数据，支持 100+ 语言。广泛应用于文档解析、票据识别、RAG 数据预处理等场景。",
+          "zh": "百度出品的轻量级 OCR 工具包，能将任何 PDF 或图片中的文字提取为结构化数据，支持 100+ 语言，是连接文档与 LLM 的桥梁。广泛应用于文档解析、票据识别、RAG 数据预处理等场景。",
           "en": "Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
         },
         "todayHighlight": {
-          "zh": "今日新增 141 星，总星数 7.9 万，排名第四。作为老牌 OCR 项目，在 RAG 和 AI 文档处理需求激增的背景下，凭借多语言支持和持续更新，保持稳定增长。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 79k+，属于持续在榜的头部 AI 开源项目, RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成, 今日新增 141 星."
+          "zh": "今日新增 141 星，总星数 8 万，排名第四。作为运行 74 个月的老牌项目，PaddleOCR 凭借百度生态和持续迭代（如新增 VL 模型）在 RAG 热潮中焕发第二春，成为文档解析的首选工具之一。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 80k+，属于持续在榜的头部 AI 开源项目, RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成, 今日新增 141 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 79,882 stars、10,602 forks，topics: ai4science, chineseocr, document-parsing, document-translation, kie，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 79,882 stars and 10,602 forks，topics: ai4science, chineseocr, document-parsing, document-translation, kie, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 80,005 stars、10,609 forks，topics: ai4science, chineseocr, document-parsing, document-translation, kie，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 80,005 stars and 10,609 forks，topics: ai4science, chineseocr, document-parsing, document-translation, kie, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "思考成熟开源项目如何在新 AI 浪潮中找到第二增长曲线——从 OCR 工具升级为「文档 AI 引擎」。",
+          "zh": "关注 OCR 在 RAG 和 AI 文档处理中的基础地位，以及百度如何通过开源项目建立技术影响力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -446,46 +442,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/PaddlePaddle/PaddleOCR"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "NVIDIA/cosmos",
-          "en": "NVIDIA/cosmos"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "NVIDIA 推出的世界模型开放平台，提供预训练模型、数据集和工具，帮助开发者构建用于机器人、自动驾驶、智能基础设施等领域的物理 AI 系统。",
-          "en": "Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more."
-        },
-        "totalStars": 9006,
-        "language": "Jupyter Notebook",
-        "dailyStars": 133,
-        "chineseIntro": {
-          "zh": "NVIDIA 推出的世界模型开放平台，提供预训练模型、数据集和工具，帮助开发者构建用于机器人、自动驾驶、智能基础设施等领域的物理 AI 系统。",
-          "en": "Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more."
-        },
-        "todayHighlight": {
-          "zh": "今日新增 133 星，总星数 9006，排名第六。NVIDIA 品牌背书和「世界模型」的前沿概念持续吸引关注，项目虽新但已积累近万星，在物理 AI 赛道具有标杆意义。",
-          "en": "登上 GitHub Trending 日榜第 6 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 133 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,006 stars、581 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,006 stars and 581 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "关注世界模型在物理 AI 中的产品化路径——如何将前沿研究转化为开发者可用的平台工具。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/NVIDIA/cosmos"
           }
         ]
       },
@@ -502,7 +458,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "GitHub 官方推出的多平台 SDK，帮助开发者将 GitHub Copilot Agent 集成到自己的应用和服务中。支持 Java、Python、Go 等多种语言。",
           "en": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
         },
-        "totalStars": 8979,
+        "totalStars": 9022,
         "language": "Java",
         "dailyStars": 38,
         "chineseIntro": {
@@ -510,15 +466,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
         },
         "todayHighlight": {
-          "zh": "今日新增 38 星，总星数 8979，排名第十。作为官方 SDK，虽增速平稳，但凭借 GitHub 生态和 Copilot 的品牌效应，持续吸引企业级开发者关注。",
-          "en": "登上 GitHub Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 38 星."
+          "zh": "今日新增 38 星，总星数 9022，稳定增长。作为 GitHub 官方 SDK，它随着 Copilot Agent 的普及而获得关注，但增速相对平缓，更多是生态内开发者的自然采用。",
+          "en": "登上 GitHub Trending 日榜第 9 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 38 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,979 stars、1,211 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,979 stars and 1,211 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,022 stars、1,214 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,022 stars and 1,214 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察平台型公司如何通过 SDK 开放核心能力，构建开发者生态——从工具到平台的跃迁。",
+          "zh": "观察大厂如何通过 SDK 构建 AI 生态护城河，以及第三方开发者如何利用 Copilot 能力创造新应用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +495,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个标志性的开源 AI Agent 项目，旨在让每个人都能构建、部署和运行自主 AI 代理。支持多种大模型，提供从简单任务到复杂工作流的自动化能力。",
+          "zh": "AI 自主 Agent 的开山之作，提供构建、部署和运行 AI Agent 的完整框架。目标是让每个人都能轻松使用和构建 AI Agent，支持 GPT、Claude、Llama 等多种模型。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 184766,
+        "totalStars": 184769,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个标志性的开源 AI Agent 项目，旨在让每个人都能构建、部署和运行自主 AI 代理。支持多种大模型，提供从简单任务到复杂工作流的自动化能力。",
+          "zh": "AI 自主 Agent 的开山之作，提供构建、部署和运行 AI Agent 的完整框架。目标是让每个人都能轻松使用和构建 AI Agent，支持 GPT、Claude、Llama 等多种模型。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "今日无新增星数数据，总星数 18.5 万，长期在榜。作为 AI Agent 领域的开创性项目，虽增速放缓，但凭借历史地位和社区基础，仍保持高曝光。",
+          "zh": "今日无新增星数数据，总星数 18.5 万，长期在榜。作为运行 39 个月的经典项目，AutoGPT 已进入稳定期，但仍是 Agent 领域的标杆，其生态（如插件、模板）持续吸引新用户。",
           "en": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,766 stars、46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,766 stars and 46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,769 stars、46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,769 stars and 46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "思考先驱项目的生命周期管理——如何在技术快速迭代中维持项目影响力和社区活力。",
+          "zh": "观察经典 Agent 框架如何通过生态和社区维持生命力，以及新一代 Agent 产品如何差异化竞争。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +535,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个让开发者轻松在本地运行大模型的工具，支持 DeepSeek、Qwen、Gemma 等主流开源模型。提供简洁的命令行和 API，是本地 AI 开发的首选基础设施。",
+          "zh": "本地运行大模型的极简工具，支持 Kimi、DeepSeek、Qwen、Gemma 等主流开源模型。一条命令即可下载并运行模型，是 AI 开发者和爱好者的本地推理首选。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
-        "totalStars": 173196,
+        "totalStars": 173201,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个让开发者轻松在本地运行大模型的工具，支持 DeepSeek、Qwen、Gemma 等主流开源模型。提供简洁的命令行和 API，是本地 AI 开发的首选基础设施。",
+          "zh": "本地运行大模型的极简工具，支持 Kimi、DeepSeek、Qwen、Gemma 等主流开源模型。一条命令即可下载并运行模型，是 AI 开发者和爱好者的本地推理首选。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
-          "zh": "今日无新增星数数据，总星数 17.3 万，长期霸榜。作为本地模型运行的事实标准，随着开源模型生态繁荣和隐私需求增长，持续吸引新用户。",
+          "zh": "今日无新增星数数据，总星数 17.3 万，持续在榜。Ollama 凭借「本地运行」的隐私优势和极简体验，在开发者中口碑极佳，随着新模型（如 Kimi-K2.6）的接入保持热度。",
           "en": "总 star 数已达 173k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,196 stars、16,443 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,196 stars and 16,443 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,201 stars、16,447 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,201 stars and 16,447 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「本地化」趋势下的产品机会——如何降低模型部署门槛，成为 AI 时代的「Docker」。",
+          "zh": "关注本地模型运行工具如何成为 AI 应用的「入口」，以及它能否催生新的商业模式（如模型商店）。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -606,6 +562,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/ollama/ollama"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "f/prompts.chat",
+          "en": "f/prompts.chat"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "全球最大的开源提示词（Prompt）库，支持 ChatGPT、Claude、Gemini 等多种模型。用户可以分享、发现和收藏提示词，也可自托管实现完全隐私。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "totalStars": 163304,
+        "language": "HTML",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "全球最大的开源提示词（Prompt）库，支持 ChatGPT、Claude、Gemini 等多种模型。用户可以分享、发现和收藏提示词，也可自托管实现完全隐私。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "todayHighlight": {
+          "zh": "今日无新增星数数据，总星数 16.3 万，长期在榜。作为运行 43 个月的经典项目，它已成为 Prompt 工程领域的「维基百科」，社区持续贡献新提示词，保持长尾增长。",
+          "en": "总 star 数已达 163k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,304 stars、21,224 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,304 stars and 21,224 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 Prompt 库作为 AI 应用「内容生态」的价值，以及它能否通过付费提示词或企业版实现商业化。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/f/prompts.chat"
           }
         ]
       }
@@ -633,11 +629,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
         },
         "todayHighlight": {
-          "zh": "展示 AI 代理在企业级软件交付中的实际落地，为行业提供可复用的 AI 原生文化转型案例。",
-          "en": "展示 AI 代理在企业级软件交付中的实际落地，为行业提供可复用的 AI 原生文化转型案例。"
+          "zh": "展示 AI 代理在企业级软件交付中的实际落地，为其他 IT 服务商提供参考。",
+          "en": "展示 AI 代理在企业级软件交付中的实际落地，为其他 IT 服务商提供参考。"
         },
         "pmInsight": {
-          "zh": "PM 可关注 Endava 如何将 AI 代理嵌入现有开发流程，评估自身团队引入类似工具的 ROI。",
+          "zh": "PM 可关注 AI 代理如何嵌入现有开发流程，评估引入类似工具对团队效率的影响。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -662,19 +658,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更好记住用户偏好，保持对话上下文连贯。",
+          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更好地记住用户偏好，保持对话上下文连贯。",
           "en": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
         },
         "chineseIntro": {
-          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更好记住用户偏好，保持对话上下文连贯。",
+          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更好地记住用户偏好，保持对话上下文连贯。",
           "en": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
         },
         "todayHighlight": {
-          "zh": "记忆能力是对话式 AI 用户体验的关键瓶颈，此更新可能显著提升用户粘性和个性化体验。",
-          "en": "记忆能力是对话式 AI 用户体验的关键瓶颈，此更新可能显著提升用户粘性和个性化体验。"
+          "zh": "记忆能力升级是提升个性化体验的关键，可能拉开与竞品的差距。",
+          "en": "记忆能力升级是提升个性化体验的关键，可能拉开与竞品的差距。"
         },
         "pmInsight": {
-          "zh": "PM 应测试记忆系统在长对话中的表现，并思考如何利用记忆功能设计更智能的个性化交互流程。",
+          "zh": "PM 应测试记忆系统对用户留存的影响，并考虑如何利用记忆数据优化推荐。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -707,11 +703,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "An action plan for AI-powered biological resilience"
         },
         "todayHighlight": {
-          "zh": "AI 在生物安全领域的应用正从理论走向政策层面，OpenAI 此举可能推动行业标准制定。",
-          "en": "AI 在生物安全领域的应用正从理论走向政策层面，OpenAI 此举可能推动行业标准制定。"
+          "zh": "AI 在生物安全领域的政策倡议，可能影响未来监管方向。",
+          "en": "AI 在生物安全领域的政策倡议，可能影响未来监管方向。"
         },
         "pmInsight": {
-          "zh": "PM 需关注 AI 在生物安全领域的合规要求，提前规划产品在敏感场景下的安全边界。",
+          "zh": "PM 需关注 AI 在敏感领域的合规要求，提前规划安全审查流程。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -736,19 +732,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "GPT-Rosalind 新增生物学推理、药物化学、基因组学分析和实验工作流能力，强化生命科学研究支持。",
+          "zh": "GPT-Rosalind 新增生物学推理、药物化学、基因组学分析和实验工作流能力，提升生命科学研究效率。",
           "en": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities."
         },
         "chineseIntro": {
-          "zh": "GPT-Rosalind 新增生物学推理、药物化学、基因组学分析和实验工作流能力，强化生命科学研究支持。",
+          "zh": "GPT-Rosalind 新增生物学推理、药物化学、基因组学分析和实验工作流能力，提升生命科学研究效率。",
           "en": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities."
         },
         "todayHighlight": {
-          "zh": "垂直领域模型能力大幅提升，可能加速 AI 在药物发现和基因组学中的商业化应用。",
-          "en": "垂直领域模型能力大幅提升，可能加速 AI 在药物发现和基因组学中的商业化应用。"
+          "zh": "垂直领域模型能力大幅增强，可能加速 AI 在药物发现等场景的落地。",
+          "en": "垂直领域模型能力大幅增强，可能加速 AI 在药物发现等场景的落地。"
         },
         "pmInsight": {
-          "zh": "PM 可评估 GPT-Rosalind 在自身生物医药产品中的集成潜力，特别是实验工作流自动化场景。",
+          "zh": "PM 可评估 GPT-Rosalind 在自身业务中的适用性，探索与生物信息学工具的结合。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
