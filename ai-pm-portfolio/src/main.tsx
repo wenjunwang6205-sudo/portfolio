@@ -1488,6 +1488,8 @@ function DailySignalSection({
 function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Locale }) {
   const isZh = locale === "zh";
   const hasGithubBrief = typeof signal.totalStars === "number" || signal.todayHighlight;
+  const introText = signal.chineseIntro?.[locale] ?? (isZh ? signal.summary.zh : signal.summary.en);
+  const highlightText = signal.todayHighlight?.[locale];
 
   if (hasGithubBrief) {
     return (
@@ -1501,9 +1503,18 @@ function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Loca
           /今日新增:
           {typeof signal.dailyStars === "number" ? `+${signal.dailyStars.toLocaleString("en-US")}` : "待统计"}
         </p>
-        <p>{signal.summary[locale]}</p>
-        {signal.chineseIntro ? <p>{signal.chineseIntro[locale]}</p> : null}
-        {signal.todayHighlight ? <p>{signal.todayHighlight[locale]}</p> : null}
+        {introText ? (
+          <section className="github-brief-section">
+            <strong>{isZh ? "中文简介" : "Summary"}</strong>
+            <p>{introText}</p>
+          </section>
+        ) : null}
+        {highlightText ? (
+          <section className="github-brief-section github-brief-highlight">
+            <strong>{isZh ? "今日亮点" : "Today's highlight"}</strong>
+            <p>{highlightText}</p>
+          </section>
+        ) : null}
         <div className="source-list" aria-label={isZh ? "来源链接" : "Source links"}>
           {signal.sources.map((source) => (
             <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>

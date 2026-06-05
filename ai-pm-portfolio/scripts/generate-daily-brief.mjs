@@ -64,30 +64,113 @@ function cleanGithubDescription(description) {
     .trim();
 }
 
-function buildChineseIntro(repo) {
-  const description = repo.description || "";
-  const lower = `${repo.name} ${description}`.toLowerCase();
-  let explanation = description
-    ? `这是一个 AI 相关开源项目，主要能力是：${description}`
-    : "这是一个 AI 相关开源项目，建议结合 README 进一步确认具体使用场景。";
+function stripLabelPrefix(text, labels) {
+  if (!text) return "";
+  let result = text.trim();
+  for (const label of labels) {
+    result = result.replace(new RegExp(`^${label}[：:]\\s*`), "");
+  }
+  return result.trim();
+}
 
-  if (lower.includes("compress") && (lower.includes("rag") || lower.includes("token"))) {
-    explanation =
-      "这是一个面向大模型应用的上下文压缩工具，用来在内容进入 LLM 前压缩工具输出、日志、文件和 RAG 检索片段，从而减少 token 消耗并尽量保持回答质量。";
-  } else if (lower.includes("agent")) {
-    explanation =
-      "这是一个 Agent 相关项目，重点帮助开发者构建、运行或优化能够自主执行任务的 AI 工作流，适合关注多步骤任务、工具调用和自动化执行场景。";
-  } else if (lower.includes("rag")) {
-    explanation =
-      "这是一个 RAG 相关项目，主要面向知识检索增强生成场景，帮助大模型更好地利用外部文档、数据或知识库回答问题。";
-  } else if (lower.includes("prompt")) {
-    explanation =
-      "这是一个 Prompt 或大模型调用相关项目，主要帮助开发者组织提示词、控制模型输出或提升 AI 应用的生成稳定性。";
+function normalizeChineseIntro(text) {
+  return stripLabelPrefix(text, ["中文简介", "Chinese intro"]);
+}
+
+function normalizeTodayHighlight(text) {
+  return stripLabelPrefix(text, ["今日亮点", "Today's highlight"]);
+}
+
+function inferPublisher(name) {
+  if (/microsoft/i.test(name)) return "微软出品的";
+  if (/google/i.test(name)) return "Google 出品的";
+  if (/openai/i.test(name)) return "OpenAI 出品的";
+  if (/anthropic/i.test(name)) return "Anthropic 相关的";
+  if (/huggingface/i.test(name)) return "Hugging Face 社区的";
+  return "";
+}
+
+function buildGithubProjectIntro(repo) {
+  const text = `${repo.name} ${repo.description ?? ""} ${repo.readmeSnippet ?? ""} ${(repo.topics ?? []).join(" ")}`;
+  const publisher = inferPublisher(repo.name);
+
+  if (/markitdown|pdf.*markdown|word.*markdown|office.*markdown/i.test(text)) {
+    return `${publisher}${repo.language === "Python" ? "Python " : ""}工具，可将 PDF、Word、Excel、PowerPoint、图片、音频等各类文件与 Office 文档转换为 Markdown 格式，是 AI 应用文档预处理的首选工具链之一。`;
+  }
+  if (/moneyprinter|short.?video|video.*generat|一键.*视频/i.test(text)) {
+    return "利用 AI 大模型，输入主题/关键词即可全自动生成脚本、匹配高清无版权素材、添加字幕配音，最终输出完整短视频。支持 DeepSeek、OpenAI 等多种大模型，适合短视频创作者和营销团队快速出片。";
+  }
+  if (/(claude|codex|cursor).*(skill|ui|ux|design)|frontend.*design|design.*skill/i.test(text)) {
+    return "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。";
+  }
+  if (/compress|headroom|token.*reduc|context.*window/i.test(text)) {
+    return "面向 LLM 应用的上下文压缩工具，在工具输出、日志、文件和 RAG 检索片段进入大模型前进行压缩，通常可减少 60–95% token 消耗并尽量保持回答质量，支持库、代理和 MCP Server 多种接入方式。";
+  }
+  if (/hermes|agent.*grow|autonomous agent|multi.?agent/i.test(text)) {
+    return "面向开发者的 Agent 框架/运行时，帮助构建能自主规划、调用工具并持续执行任务的大模型工作流，适合做多步骤自动化、Coding Agent 和 AI 助手类产品。";
+  }
+  if (/rag|retriev|vector|embedding|knowledge base/i.test(text)) {
+    return "面向 RAG 场景的开源工具，帮助把外部文档、数据库或知识库接入大模型问答链路，提升 AI 应用在垂直领域的检索准确性和可解释性。";
+  }
+  if (/\bmcp\b|model context protocol/i.test(text)) {
+    return "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。";
+  }
+  if (/ollama|local.*llm|llama|inference/i.test(text)) {
+    return "面向本地或私有化部署的大模型运行/推理工具，帮助团队在本地环境快速拉起模型服务，适合关注数据安全、离线能力和推理成本的 AI 产品场景。";
+  }
+  if (/fine.?tun|lora|training/i.test(text)) {
+    return "面向模型微调与训练的开源工具，帮助团队用更小成本定制垂直领域模型，适合 AI 产品从通用能力走向行业化落地的阶段。";
   }
 
+  const description = repo.description?.trim();
+  if (description) {
+    return `${publisher}${repo.language && repo.language !== "Unknown" ? `${repo.language} ` : ""}开源项目，${description.replace(/\.$/, "")}，适合产品经理观察该方向的开发者采用与产品化路径。`;
+  }
+
+  return "AI 相关开源项目，建议结合 README 和近期提交进一步确认其具体能力边界与典型使用场景。";
+}
+
+function buildChineseIntro(repo) {
   return {
-    zh: `中文简介：${explanation}`,
-    en: `Chinese intro: ${description}`,
+    zh: buildGithubProjectIntro(repo),
+    en: repo.description || "No description.",
+  };
+}
+
+function buildGithubProjectSignal(repo, overrides = {}) {
+  const introZh =
+    normalizeChineseIntro(repo.enhancedChineseIntro) ||
+    buildGithubProjectIntro(repo);
+  const highlightZh =
+    normalizeTodayHighlight(repo.enhancedTodayHighlight) ||
+    normalizeTodayHighlight(buildTodayHighlight(repo).zh);
+
+  return {
+    title: { zh: repo.name, en: repo.name },
+    category: { zh: "GitHub 项目", en: "GitHub project" },
+    summary: {
+      zh: introZh,
+      en: repo.description || "No description.",
+    },
+    totalStars: repo.stars,
+    language: repo.language,
+    dailyStars: repo.starsToday,
+    chineseIntro: {
+      zh: introZh,
+      en: repo.description || "No description.",
+    },
+    todayHighlight: {
+      zh: highlightZh,
+      en: normalizeTodayHighlight(buildTodayHighlight(repo).en),
+    },
+    inclusionReason: buildGithubReason(repo),
+    pmInsight: {
+      zh: repo.enhancedPmInsight || "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+      en: "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits.",
+    },
+    impact: "Watch",
+    sources: [{ label: "GitHub Repository", url: repo.url }],
+    ...overrides,
   };
 }
 
@@ -163,8 +246,8 @@ function buildTodayHighlight(repo) {
   }
 
   return {
-    zh: `今日亮点：${segments.filter(Boolean).join("，")}。`,
-    en: `Today's highlight: ${segments.filter(Boolean).join(", ")}.`,
+    zh: `${segments.filter(Boolean).join("，")}。`,
+    en: `${segments.filter(Boolean).join(", ")}.`,
   };
 }
 
@@ -475,33 +558,7 @@ function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
           : [{ label: "OpenAI News", url: "https://openai.com/news/" }],
       },
     ],
-    githubProjects: topGithub.map((repo) => ({
-      title: { zh: repo.name, en: repo.name },
-      category: { zh: "GitHub 项目", en: "GitHub project" },
-      summary: {
-        zh:
-          repo.enhancedSummary ||
-          buildChineseIntro(repo).zh.replace(/^中文简介：/, "") ||
-          "暂无描述。",
-        en: repo.description || "No description.",
-      },
-      totalStars: repo.stars,
-      language: repo.language,
-      dailyStars: repo.starsToday,
-      chineseIntro: repo.enhancedChineseIntro
-        ? { zh: repo.enhancedChineseIntro, en: `Chinese intro: ${repo.description || ""}` }
-        : buildChineseIntro(repo),
-      todayHighlight: repo.enhancedTodayHighlight
-        ? { zh: repo.enhancedTodayHighlight, en: buildTodayHighlight(repo).en }
-        : buildTodayHighlight(repo),
-      inclusionReason: buildGithubReason(repo),
-      pmInsight: {
-        zh: repo.enhancedPmInsight || "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
-        en: "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits.",
-      },
-      impact: "Watch",
-      sources: [{ label: "GitHub Repository", url: repo.url }],
-    })),
+    githubProjects: topGithub.map((repo) => buildGithubProjectSignal(repo)),
     companyUpdates: topCompany.map((item) => ({
       title: { zh: `${item.company}: ${item.title}`, en: `${item.company}: ${item.title}` },
       category: { zh: "公司动态", en: "Company update" },
@@ -543,8 +600,8 @@ function buildPrompt({ targetDate, githubProjects, companyUpdates }) {
 3. 大公司动态要解释背后的平台策略、产品趋势或竞争格局。
 4. 所有 sources 必须来自输入数据里的 URL，不要编造链接。
 5. 输出必须是严格 JSON，不要 Markdown，不要解释文字。
-6. githubProjects 里的 chineseIntro.zh 必须是中文，不允许直接复制英文描述；用 1 句中文总结“这个项目是做什么的、解决什么问题、典型使用场景是什么”。格式必须以“中文简介:”开头。
-7. githubProjects 里的 todayHighlight.zh 必须是中文，格式必须以“今日亮点:”开头。重点解释「为什么今天快速上升或持续在榜」，不要重复项目功能描述。应结合传播叙事、生态位、项目年龄、star 增速等给出判断，并带上今日新增 star 等数据。
+6. githubProjects 只写 chineseIntro.zh，不要再写重复的项目介绍。chineseIntro.zh 必须是 1-2 句中文产品级总结：说明项目做什么、解决什么问题、典型场景/支持能力，不要复制英文，不要写「中文简介:」前缀。
+7. githubProjects 里的 todayHighlight.zh 必须是中文，不要写「今日亮点:」前缀。重点解释「为什么今天快速上升或持续在榜」，不要重复 chineseIntro 的功能描述。
 8. JSON 必须符合这个 TypeScript 结构：
 {
   "date": string,
@@ -574,7 +631,7 @@ DailySignal = {
 
 数量建议：
 - signals: 2-3 条
-- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。chineseIntro.zh 必须是中文总结，不能是英文；todayHighlight 用“今日亮点:”开头，解释为什么今天快速上升或在榜（传播叙事/生态位/项目年龄/star 数据），不要写成项目功能复述
+- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。chineseIntro.zh 是唯一的项目中文总结，不要和 summary 重复；todayHighlight 解释为什么今天快速上升或在榜
 - companyUpdates: 2-4 条
 - opportunities: 1-3 条
 
@@ -699,18 +756,21 @@ async function requestJsonPrompt(config, prompt, useJsonMode) {
 }
 
 function buildGithubEnhancementPrompt(projects) {
-  return `你是给 AI 产品经理写 GitHub 趋势日报的中文编辑。请把下面 GitHub 项目改写成清楚、具体、易懂的中文解释，并写出「为什么今天值得关注」的上升理由。
+  return `你是给 AI 产品经理写 GitHub 趋势日报的中文编辑。请为每个项目写出「中文简介」和「今日亮点」，面向非技术读者，一眼能看懂。
 
 要求：
 1. 必须输出严格 JSON，不要 Markdown。
 2. 每个项目都要保留 name。
-3. summaryZh 用 1 句中文说明项目做什么。
-4. chineseIntroZh 必须以“中文简介:”开头，说明项目做什么、解决什么问题、适合什么场景。不要复制英文。
-5. todayHighlightZh 必须以“今日亮点:”开头，重点解释「为什么今天快速上升或持续在榜」，不要重复项目功能。应结合传播叙事、生态位、项目年龄、star 增速等给出判断，并带上今日新增 star、总 star 等可验证数据。
-6. pmInsightZh 用一句中文说明产品经理应该从这个项目观察什么。
-7. 不要编造输入里没有的社交提及数、榜单名次、用户反馈数量。
-8. 可参考以下写法风格（不要照抄，需结合输入数据）：
-   - 多语言社区同步传播，“一键出片”叙事在短视频创作者圈引爆，今日新增809星
+3. chineseIntroZh 写 1-2 句中文产品级总结：项目做什么、解决什么问题、典型场景/支持能力。不要复制英文，不要写「中文简介:」前缀，不要和 todayHighlight 重复。
+4. todayHighlightZh 写 1-2 句，解释「为什么今天快速上升或持续在榜」。不要重复 chineseIntro 的功能描述，不要写「今日亮点:」前缀。应结合传播叙事、生态位、项目年龄、star 增速，并带上今日新增 star、总 star 等可验证数据。
+5. pmInsightZh 用一句中文说明产品经理应该从这个项目观察什么。
+6. 不要编造输入里没有的社交提及数、榜单名次、用户反馈数量。
+7. chineseIntroZh 可参考以下写法（不要照抄，需结合输入数据）：
+   - 微软出品的 Python 工具，可将 PDF、Word、Excel、PowerPoint、图片、音频等各类文件与 Office 文档转换为 Markdown 格式，是 AI 应用文档预处理的首选工具链。
+   - 利用 AI 大模型，输入主题/关键词即可全自动生成脚本、匹配高清无版权素材、添加字幕配音，最终输出完整短视频。支持 DeepSeek、OpenAI 等多种大模型。
+   - 给 AI 编程助手注入「审美力」的 Claude Skill。安装后能有效阻止 AI 生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位——层级感、留白、排版一步到位。
+8. todayHighlightZh 可参考以下写法（不要照抄）：
+   - 多语言社区同步传播，「一键出片」叙事在短视频创作者圈引爆，今日新增809星
    - 创建仅约两个月便已积累10k+ stars，今日新增265，多名开发者反馈微 SaaS 产品 UI/UX 改造后效果显著
    - 作为 AI Agent 数据管道的重要基础组件，随 Agent 生态爆发持续获得新增关注，今日新增377 stars，总 star 数已近10万
 
@@ -719,7 +779,6 @@ function buildGithubEnhancementPrompt(projects) {
   "projects": [
     {
       "name": string,
-      "summaryZh": string,
       "chineseIntroZh": string,
       "todayHighlightZh": string,
       "pmInsightZh": string
@@ -780,7 +839,6 @@ async function enhanceGithubProjects(projects) {
 
     return {
       ...repo,
-      enhancedSummary: item.summaryZh,
       enhancedChineseIntro: item.chineseIntroZh,
       enhancedTodayHighlight: item.todayHighlightZh,
       enhancedPmInsight: item.pmInsightZh,
@@ -876,8 +934,12 @@ function assertBriefShape(brief) {
   }
 
   for (const project of brief.githubProjects) {
-    if (project.chineseIntro?.zh && !/[\u4e00-\u9fff]/.test(project.chineseIntro.zh)) {
+    const intro = normalizeChineseIntro(project.chineseIntro?.zh);
+    if (intro && !/[\u4e00-\u9fff]/.test(intro)) {
       throw new Error(`GitHub project chineseIntro.zh must be Chinese: ${project.title?.en ?? "unknown"}`);
+    }
+    if (intro && intro.length < 18) {
+      throw new Error(`GitHub project chineseIntro.zh is too short: ${project.title?.en ?? "unknown"}`);
     }
   }
 }
@@ -901,33 +963,28 @@ async function main() {
   const enhancedByName = new Map(enhancedGithubProjects.map((repo) => [repo.name, repo]));
   brief.githubProjects = brief.githubProjects.map((project) => {
     const repo = enhancedByName.get(project.title?.en ?? project.title?.zh);
-    if (!repo) return project;
+    if (!repo) {
+      const introZh = normalizeChineseIntro(project.chineseIntro?.zh) || project.summary?.zh || "";
+      const highlightZh = normalizeTodayHighlight(project.todayHighlight?.zh) || "";
+      return {
+        ...project,
+        summary: { zh: introZh, en: project.summary?.en || "No description." },
+        chineseIntro: { zh: introZh, en: project.chineseIntro?.en || project.summary?.en || "No description." },
+        todayHighlight: { zh: highlightZh, en: project.todayHighlight?.en || "" },
+      };
+    }
 
-    return {
-      ...project,
-      summary: {
-        zh:
-          repo.enhancedSummary ||
-          buildChineseIntro(repo).zh.replace(/^中文简介：/, "") ||
-          project.summary?.zh ||
-          "暂无描述。",
-        en: repo.description || project.summary?.en || "No description.",
-      },
-      totalStars: repo.stars,
-      language: repo.language,
-      dailyStars: repo.starsToday,
-      chineseIntro: repo.enhancedChineseIntro
-        ? { zh: repo.enhancedChineseIntro, en: project.chineseIntro?.en ?? `Chinese intro: ${repo.description || ""}` }
-        : project.chineseIntro ?? buildChineseIntro(repo),
-      todayHighlight: repo.enhancedTodayHighlight
-        ? { zh: repo.enhancedTodayHighlight, en: project.todayHighlight?.en ?? buildTodayHighlight(repo).en }
-        : project.todayHighlight ?? buildTodayHighlight(repo),
+    return buildGithubProjectSignal(repo, {
+      title: project.title,
+      impact: project.impact ?? "Watch",
       inclusionReason: project.inclusionReason ?? buildGithubReason(repo),
-      pmInsight: {
-        zh: repo.enhancedPmInsight || project.pmInsight?.zh || "可作为判断 AI 应用形态和开发者采用方向的早期信号。",
-        en: project.pmInsight?.en || "Use it as an early signal for AI application patterns and developer adoption.",
-      },
-    };
+      pmInsight: project.pmInsight?.zh
+        ? {
+            zh: repo.enhancedPmInsight || normalizeChineseIntro(project.pmInsight.zh) || project.pmInsight.zh,
+            en: project.pmInsight.en,
+          }
+        : undefined,
+    });
   });
 
   assertBriefShape(brief);

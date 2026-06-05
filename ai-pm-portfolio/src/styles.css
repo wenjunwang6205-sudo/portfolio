@@ -1618,6 +1618,37 @@ h1 span {
   font-weight: 820;
 }
 
+.github-brief-section {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid #eee8dd;
+  border-radius: 8px;
+  background: #fffefa;
+}
+
+.github-brief-section strong {
+  display: block;
+  color: #151515;
+  font-size: 13px;
+  font-weight: 820;
+}
+
+.github-brief-section p {
+  margin: 8px 0 0;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.github-brief-highlight {
+  border-color: #eadfce;
+  background: #fbf8f2;
+}
+
+.github-brief-highlight strong {
+  color: #9a4b2d;
+}
+
 .daily-signal-card > p {
   margin: 12px 0 0;
   color: #5f5f5f;
