@@ -1611,42 +1611,24 @@ h1 span {
   font-weight: 760;
 }
 
-.github-brief-daily {
-  margin-top: 8px !important;
-  color: #b65136 !important;
-  font-size: 14px !important;
-  font-weight: 820;
-}
-
-.github-brief-section {
-  margin-top: 14px;
-  padding: 14px;
-  border: 1px solid #eee8dd;
-  border-radius: 8px;
-  background: #fffefa;
-}
-
-.github-brief-section strong {
-  display: block;
+.daily-meta {
+  margin: 10px 0 0;
   color: #151515;
-  font-size: 13px;
-  font-weight: 820;
+  font-size: 14px;
+  font-weight: 760;
 }
 
-.github-brief-section p {
-  margin: 8px 0 0;
-  color: #4d4d4d;
+.daily-line {
+  margin: 10px 0 0;
+  color: #5f5f5f;
   font-size: 14px;
   line-height: 1.72;
 }
 
-.github-brief-highlight {
-  border-color: #eadfce;
-  background: #fbf8f2;
-}
-
-.github-brief-highlight strong {
-  color: #9a4b2d;
+.daily-line strong {
+  margin-right: 6px;
+  color: #151515;
+  font-weight: 760;
 }
 
 .daily-signal-card > p {
@@ -1654,28 +1636,6 @@ h1 span {
   color: #5f5f5f;
   font-size: 14px;
   line-height: 1.72;
-}
-
-.inclusion-reason,
-.pm-insight {
-  margin-top: 16px;
-  padding: 14px;
-  border: 1px solid #eee8dd;
-  border-radius: 8px;
-  background: #fbfaf7;
-}
-
-.inclusion-reason {
-  border-color: #e3ddd3;
-  background: #fffefa;
-}
-
-.inclusion-reason p,
-.pm-insight p {
-  margin: 8px 0 0;
-  color: #4d4d4d;
-  font-size: 13px;
-  line-height: 1.68;
 }
 
 .source-list {

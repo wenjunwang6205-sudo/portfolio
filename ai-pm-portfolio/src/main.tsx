@@ -1485,66 +1485,53 @@ function DailySignalSection({
   );
 }
 
+function DailyLabeledLine({
+  label,
+  text,
+}: {
+  label: string;
+  text?: string | null;
+}) {
+  if (!text) return null;
+  return (
+    <p className="daily-line">
+      <strong>{label}</strong>
+      {text}
+    </p>
+  );
+}
+
 function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Locale }) {
   const isZh = locale === "zh";
-  const hasGithubBrief = typeof signal.totalStars === "number" || signal.todayHighlight;
-  const introText = signal.chineseIntro?.[locale] ?? (isZh ? signal.summary.zh : signal.summary.en);
+  const isGithub = typeof signal.totalStars === "number";
+  const categoryLabel = signal.eventType?.[locale] ?? signal.category[locale];
+  const introText = isZh
+    ? signal.chineseIntro?.zh ?? (isGithub ? signal.summary.zh : null)
+    : signal.chineseIntro?.en ?? signal.summary.en;
   const highlightText = signal.todayHighlight?.[locale];
-
-  if (hasGithubBrief) {
-    return (
-      <article className="daily-signal-card github-brief-card">
-        <h3>{signal.title[locale]}</h3>
-        <div className="github-brief-meta">
-          <span>☆总Star :{typeof signal.totalStars === "number" ? signal.totalStars.toLocaleString("en-US") : "待统计"}</span>
-          <span>{signal.language ?? "Unknown"}</span>
-        </div>
-        <p className="github-brief-daily">
-          /今日新增:
-          {typeof signal.dailyStars === "number" ? `+${signal.dailyStars.toLocaleString("en-US")}` : "待统计"}
-        </p>
-        {introText ? (
-          <section className="github-brief-section">
-            <strong>{isZh ? "中文简介" : "Summary"}</strong>
-            <p>{introText}</p>
-          </section>
-        ) : null}
-        {highlightText ? (
-          <section className="github-brief-section github-brief-highlight">
-            <strong>{isZh ? "今日亮点" : "Today's highlight"}</strong>
-            <p>{highlightText}</p>
-          </section>
-        ) : null}
-        <div className="source-list" aria-label={isZh ? "来源链接" : "Source links"}>
-          {signal.sources.map((source) => (
-            <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>
-              {source.label}
-              <ArrowUpRight size={14} />
-            </a>
-          ))}
-        </div>
-      </article>
-    );
-  }
+  const showSummaryBody = !introText && !isGithub;
 
   return (
     <article className="daily-signal-card">
       <div className="signal-card-top">
-        <span>{signal.category[locale]}</span>
+        <span>{categoryLabel}</span>
         <strong className={`impact-badge ${signal.impact.toLowerCase()}`}>{signal.impact}</strong>
       </div>
       <h3>{signal.title[locale]}</h3>
-      <p>{signal.summary[locale]}</p>
-      {signal.inclusionReason ? (
-        <section className="inclusion-reason">
-          <strong>{isZh ? "入选原因" : "Why included"}</strong>
-          <p>{signal.inclusionReason[locale]}</p>
-        </section>
+      {isGithub ? (
+        <p className="daily-meta">
+          ☆
+          {typeof signal.totalStars === "number" ? signal.totalStars.toLocaleString("en-US") : "—"} ·{" "}
+          {signal.language ?? "Unknown"}
+          {typeof signal.dailyStars === "number"
+            ? ` · /今日新增 +${signal.dailyStars.toLocaleString("en-US")}`
+            : ""}
+        </p>
       ) : null}
-      <section className="pm-insight">
-        <strong>{isZh ? "PM 视角" : "PM lens"}</strong>
-        <p>{signal.pmInsight[locale]}</p>
-      </section>
+      {showSummaryBody ? <p>{signal.summary[locale]}</p> : null}
+      <DailyLabeledLine label={isZh ? "中文简介" : "Summary"} text={introText} />
+      <DailyLabeledLine label={isZh ? "今日亮点" : "Highlight"} text={highlightText} />
+      <DailyLabeledLine label={isZh ? "PM 视角" : "PM lens"} text={signal.pmInsight[locale]} />
       <div className="source-list" aria-label={isZh ? "来源链接" : "Source links"}>
         {signal.sources.map((source) => (
           <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>

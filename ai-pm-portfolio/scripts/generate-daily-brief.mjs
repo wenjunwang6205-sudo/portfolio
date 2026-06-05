@@ -461,6 +461,404 @@ async function enrichGithubProjects(projects) {
   return enriched;
 }
 
+function inferCompanyEventType(item) {
+  const text = `${item.title} ${item.summary ?? ""} ${item.articleSnippet ?? ""}`.toLowerCase();
+
+  if (/pricing|price|api key|rate limit|token limit|quota|billing/i.test(text)) {
+    return { zh: "API/定价", en: "API / pricing" };
+  }
+  if (/model|gpt-|claude|gemini|llama|release|launch|introducing|memory|reasoning/i.test(text)) {
+    return { zh: "新模型/新能力", en: "Model / capability" };
+  }
+  if (/security|safety|policy|regulation|compliance|privacy/i.test(text)) {
+    return { zh: "政策/安全", en: "Policy / safety" };
+  }
+  if (/partner|case study|enterprise|customer|industry|collaborat/i.test(text)) {
+    return { zh: "生态合作", en: "Partnership / case study" };
+  }
+  return { zh: "产品功能", en: "Product feature" };
+}
+
+function inferCompanyImpact(item, eventType) {
+  const text = `${item.title} ${item.summary ?? ""}`.toLowerCase();
+  if (eventType.zh === "新模型/新能力" || eventType.zh === "API/定价") return "High";
+  if (/chatgpt|claude|gemini|openai|anthropic|google/i.test(text) && eventType.zh === "产品功能") {
+    return "Medium";
+  }
+  if (eventType.zh === "政策/安全") return "High";
+  return "Medium";
+}
+
+function buildCompanyUpdateIntro(item) {
+  const snippet = item.articleSnippet || item.summary || "";
+  const shortTitle = item.title.replace(/\s+/g, " ").trim();
+  if (/memory|remember|personal/i.test(shortTitle)) {
+    return `${item.company} 升级 ChatGPT/助手记忆能力，让模型能跨会话保留用户偏好与上下文，强化「个人助手」体验。`;
+  }
+  if (/agent|workflow|automation|delivery/i.test(shortTitle)) {
+    return `${item.company} 发布 Agent/自动化相关更新，强调企业场景下的任务编排、工作流交付与 AI 原生组织实践。`;
+  }
+  if (snippet && /[\u4e00-\u9fff]/.test(snippet)) {
+    return snippet.slice(0, 180);
+  }
+  return `${item.company} 发布「${shortTitle}」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。`;
+}
+
+function buildCompanyUpdateHighlight(item, eventType) {
+  const published = item.publishedAt ? `发布于 ${item.publishedAt}` : "近期发布";
+  return `${published}；属于「${eventType.zh}」类型更新，反映 ${item.company} 在当前 AI 竞争中的重点投入方向。`;
+}
+
+function buildCompanyUpdateSignal(item, overrides = {}) {
+  const eventType = item.enhancedEventType || inferCompanyEventType(item);
+  const introZh = normalizeChineseIntro(item.enhancedChineseIntro) || buildCompanyUpdateIntro(item);
+  const highlightZh =
+    normalizeTodayHighlight(item.enhancedTodayHighlight) ||
+    buildCompanyUpdateHighlight(item, eventType);
+
+  return {
+    title: { zh: `${item.company}: ${item.title}`, en: `${item.company}: ${item.title}` },
+    category: { zh: "公司动态", en: "Company update" },
+    eventType,
+    summary: { zh: introZh, en: item.summary || item.title },
+    chineseIntro: { zh: introZh, en: item.summary || item.title },
+    todayHighlight: { zh: highlightZh, en: highlightZh },
+    pmInsight: {
+      zh: item.enhancedPmInsight || inferCompanyPmInsight(eventType),
+      en: "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives.",
+    },
+    impact: item.enhancedImpact || inferCompanyImpact(item, eventType),
+    sources: [{ label: item.company, url: item.url }],
+    ...overrides,
+  };
+}
+
+function inferCompanyPmInsight(eventType) {
+  const map = {
+    "新模型/新能力": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
+    "API/定价": "评估成本结构、配额策略是否会重塑你的产品定价与毛利模型。",
+    产品功能: "观察该功能是否会成为品类标配，以及你的 MVP 是否需要补齐同类能力。",
+    "生态合作": "从案例发布中提炼可复制行业 SOP，寻找垂直场景切入机会。",
+    "政策/安全": "提前校准隐私、合规、内容安全设计，避免产品路线后期返工。",
+  };
+  return map[eventType.zh] || "跟踪平台公司的能力边界、行业场景和商业化叙事变化。";
+}
+
+function buildFallbackEditorial(targetDate, githubProjects, companyUpdates) {
+  const topGithub = githubProjects[0];
+  const topCompany = companyUpdates[0];
+  const secondGithub = githubProjects[1];
+  const githubTheme = topGithub ? inferTrendingNarrative(topGithub) : "AI 工具链";
+  const companyName = topCompany?.company ?? "平台公司";
+
+  const keyTakeaway = {
+    zh: `今日主线：${githubTheme.replace(/[。；]/g, "")}；同时 ${companyName} 等平台继续推进产品与企业落地，Agent 基础设施与平台能力竞争同步升温。`,
+    en: `Today's through-line: ${githubTheme}; platform players like ${companyName} keep pushing product and enterprise adoption as agent infrastructure competition heats up.`,
+  };
+
+  const signals = [
+    {
+      title: {
+        zh: topGithub ? `${topGithub.name.split("/")[1] ?? topGithub.name} 引领开发者采用信号` : "开发者工具链持续活跃",
+        en: topGithub ? `${topGithub.name} leads developer adoption signals` : "Developer tooling stays active",
+      },
+      category: { zh: "跨源信号", en: "Cross-source signal" },
+      summary: {
+        zh: topGithub
+          ? `事实：${topGithub.name} 今日新增 ${topGithub.starsToday?.toLocaleString("en-US") ?? "—"} 星，总 star ${topGithub.stars?.toLocaleString("en-US") ?? "—"}。判断：${inferTrendingNarrative(topGithub)}`
+          : "GitHub 抓取显示 Agent、LLM 与 AI 工具链仍是高频迭代方向。",
+        en: topGithub
+          ? `Fact: ${topGithub.name} gained ${topGithub.starsToday ?? "—"} stars today. Read: ${inferTrendingNarrative(topGithub)}`
+          : "GitHub collection shows continued iteration in agents, LLMs, and AI tooling.",
+      },
+      pmInsight: {
+        zh: "优先观察任务状态、权限、失败恢复、可追溯输出——这些直接决定 Agent 产品体验上限。",
+        en: "Watch task state, permissions, recovery, and traceability because they define agent UX ceilings.",
+      },
+      impact: topGithub?.starsToday >= 1000 ? "High" : "Medium",
+      sources: topGithub
+        ? [{ label: topGithub.name, url: topGithub.url }]
+        : [{ label: "GitHub Trending", url: "https://github.com/trending" }],
+    },
+    {
+      title: {
+        zh: topCompany ? `${topCompany.company} 释放平台能力信号` : "大公司平台能力持续扩展",
+        en: topCompany ? `${topCompany.company} signals platform expansion` : "Major platforms keep expanding capabilities",
+      },
+      category: { zh: "跨源信号", en: "Cross-source signal" },
+      summary: {
+        zh: topCompany
+          ? `事实：${topCompany.company} 发布「${topCompany.title}」。判断：${inferCompanyEventType(topCompany).zh}方向更新，可能重塑用户对 AI 产品的默认预期。`
+          : "AI 公司动态集中在模型、工具、开发者平台与行业解决方案。",
+        en: topCompany
+          ? `Fact: ${topCompany.company} published "${topCompany.title}". Read: a ${inferCompanyEventType(topCompany).en} move that may reset user expectations.`
+          : "Company updates cluster around models, tools, platforms, and vertical solutions.",
+      },
+      pmInsight: {
+        zh: inferCompanyPmInsight(inferCompanyEventType(topCompany)),
+        en: "Decide which platform defaults you must match versus where vertical SOP creates differentiation.",
+      },
+      impact: topCompany ? inferCompanyImpact(topCompany, inferCompanyEventType(topCompany)) : "Medium",
+      sources: topCompany
+        ? [{ label: topCompany.company, url: topCompany.url }]
+        : [{ label: "OpenAI News", url: "https://openai.com/news/" }],
+    },
+  ];
+
+  if (topGithub && secondGithub) {
+    signals.push({
+      title: { zh: "开源热度向 Agent 基础设施集中", en: "Open-source heat clusters around agent infrastructure" },
+      category: { zh: "跨源信号", en: "Cross-source signal" },
+      summary: {
+        zh: `事实：${topGithub.name} 与 ${secondGithub.name} 同日进入抓取前列。判断：开发者正在优先解决 Agent 运行成本、工具链效率与集成复杂度。`,
+        en: `Fact: ${topGithub.name} and ${secondGithub.name} ranked high today. Read: developers prioritize agent runtime cost, tooling efficiency, and integration complexity.`,
+      },
+      pmInsight: {
+        zh: "若你在做 Agent 产品，建议本周内验证：上下文预算、工具接入标准（如 MCP）、失败回退策略。",
+        en: "If you ship agent products, validate context budgets, tool integration standards like MCP, and failure fallback this week.",
+      },
+      impact: "Medium",
+      sources: [
+        { label: topGithub.name, url: topGithub.url },
+        { label: secondGithub.name, url: secondGithub.url },
+      ],
+    });
+  }
+
+  const opportunities = [
+    {
+      title: {
+        zh: topGithub?.name?.includes("headroom") || /compress|token/i.test(topGithub?.description ?? "")
+          ? "机会：Agent 上下文预算管理控制台"
+          : "机会：从今日信号推导一个可验证产品假设",
+        en: "Opportunity: derive one testable product hypothesis from today's signals",
+      },
+      category: { zh: "产品机会", en: "Product opportunity" },
+      summary: {
+        zh: topGithub
+          ? `基于 ${topGithub.name} 等项目的升温，企业客户可能需要可视化 token 消耗、压缩策略与回答质量 trade-off 的管理层，而不只是开发者自用工具。`
+          : "把今日 GitHub 与公司动态中的重复痛点，转化为一个可讨论、可验证的 MVP 方向。",
+        en: topGithub
+          ? `Heat around ${topGithub.name} suggests enterprise buyers may need visible token budgets and quality trade-offs, not only developer-side utilities.`
+          : "Turn repeated pain points from GitHub and company signals into one discussable MVP direction.",
+      },
+      pmInsight: {
+        zh: "用 1 周时间验证：目标用户是否愿意为「成本可视化 + 质量可控」付费，而不是仅关注模型能力本身。",
+        en: "Spend one week validating whether users pay for cost visibility and quality control, not just raw model capability.",
+      },
+      impact: "Medium",
+      sources: topGithub
+        ? [{ label: topGithub.name, url: topGithub.url }]
+        : [{ label: "GitHub Trending", url: "https://github.com/trending" }],
+    },
+  ];
+
+  return {
+    title: { zh: `${targetDate} AI 产品雷达`, en: `${targetDate} AI product radar` },
+    editorNote: {
+      zh: "基于 GitHub 趋势与大公司 RSS/原文抓取生成，强调跨源判断与 PM 可执行启发。",
+      en: "Built from GitHub trends and company feeds with cross-source judgment and PM-ready implications.",
+    },
+    keyTakeaway,
+    signals: signals.slice(0, 3),
+    opportunities,
+  };
+}
+
+async function fetchArticleSnippet(url) {
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent": "wenjun-ai-daily-brief",
+        Accept: "text/html,application/xhtml+xml",
+      },
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!response.ok) return "";
+    const html = await response.text();
+    return stripHtml(
+      html
+        .replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<nav[\s\S]*?<\/nav>/gi, " ")
+        .replace(/<footer[\s\S]*?<\/footer>/gi, " "),
+    ).slice(0, 1500);
+  } catch {
+    return "";
+  }
+}
+
+async function enrichCompanyUpdates(updates) {
+  const enriched = [];
+  for (const item of updates.slice(0, 6)) {
+    const articleSnippet = await fetchArticleSnippet(item.url);
+    enriched.push({ ...item, articleSnippet });
+  }
+  return enriched;
+}
+
+function buildCompanyEnhancementPrompt(updates) {
+  return `你是 AI 产品经理日报的中文编辑。请为下列大公司动态写出中文总结。
+
+要求：
+1. 严格 JSON，不要 Markdown。
+2. 保留 name 字段（格式：公司名: 文章标题）。
+3. eventTypeZh 从以下选一：新模型/新能力、API/定价、产品功能、生态合作、政策/安全。
+4. chineseIntroZh：1-2 句中文，说明发生了什么、对产品意味着什么。不要复制英文 RSS。
+5. todayHighlightZh：1 句，说明为什么今天值得关注（战略/竞争/行业意义），不要重复 chineseIntroZh。
+6. pmInsightZh：1 句 PM 可执行观察，按 eventType 差异化，不要万能模板。
+7. impact：High（可能改变格局/定价/模型能力）| Medium（值得本周跟进）| Watch（长期趋势）。
+8. 不要写「中文简介:」「今日亮点:」前缀。
+
+输出：
+{
+  "updates": [
+    {
+      "name": string,
+      "eventTypeZh": string,
+      "chineseIntroZh": string,
+      "todayHighlightZh": string,
+      "pmInsightZh": string,
+      "impact": "High" | "Medium" | "Watch"
+    }
+  ]
+}
+
+输入：
+${JSON.stringify(
+  updates.map((item) => ({
+    name: `${item.company}: ${item.title}`,
+    company: item.company,
+    title: item.title,
+    publishedAt: item.publishedAt,
+    rssSummary: item.summary,
+    articleSnippet: item.articleSnippet,
+    url: item.url,
+  })),
+  null,
+  2,
+)}`;
+}
+
+async function enhanceCompanyUpdates(updates) {
+  const config = getModelConfig();
+  if (!config || updates.length === 0) return updates;
+
+  const prompt = buildCompanyEnhancementPrompt(updates);
+  let enhanced;
+  try {
+    enhanced = await requestJsonPrompt(config, prompt, true);
+  } catch (error) {
+    console.warn(`${config.name} company enhancement JSON mode failed: ${error.message}`);
+  }
+  if (!enhanced) {
+    try {
+      enhanced = await requestJsonPrompt(config, prompt, false);
+    } catch (error) {
+      console.warn(`${config.name} company enhancement failed: ${error.message}`);
+      return updates;
+    }
+  }
+
+  const byName = new Map((enhanced.updates ?? []).map((item) => [item.name, item]));
+  return updates.map((item) => {
+    const key = `${item.company}: ${item.title}`;
+    const row = byName.get(key);
+    if (!row) return item;
+    return {
+      ...item,
+      enhancedEventType: { zh: row.eventTypeZh, en: row.eventTypeZh },
+      enhancedChineseIntro: row.chineseIntroZh,
+      enhancedTodayHighlight: row.todayHighlightZh,
+      enhancedPmInsight: row.pmInsightZh,
+      enhancedImpact: row.impact,
+    };
+  });
+}
+
+function buildEditorialPrompt({ targetDate, githubProjects, companyUpdates }) {
+  return `你是 AI 产品经理日报的主编。根据今日 GitHub 项目与公司动态，写 keyTakeaway、跨源 signals、opportunities。
+
+要求：
+1. 严格 JSON。
+2. keyTakeawayZh：1-2 句「今日判断/主线」，不是统计句（禁止写「本次抓取覆盖 X 个」）。
+3. signals：2-3 条跨源综合信号，每条必须包含：事实（引用具体项目/公司）+ 判断（为什么重要）+ PM 行动方向。impact 按标准分级：High=可能改变产品路线/竞争格局；Medium=值得本周跟进；Watch=长期趋势。
+4. opportunities：1-2 条，必须从今日 signals 推导，给出可验证的产品假设，不要 meta 讨论「日报本身」。
+5. 中文为主，补齐 en 字段。
+6. sources 只能来自输入 URL。
+
+输出：
+{
+  "title": { "zh": string, "en": string },
+  "editorNote": { "zh": string, "en": string },
+  "keyTakeaway": { "zh": string, "en": string },
+  "signals": DailySignal[],
+  "opportunities": DailySignal[]
+}
+
+DailySignal = {
+  "title": { "zh": string, "en": string },
+  "category": { "zh": "跨源信号", "en": "Cross-source signal" },
+  "summary": { "zh": string, "en": string },
+  "pmInsight": { "zh": string, "en": string },
+  "impact": "High" | "Medium" | "Watch",
+  "sources": [{ "label": string, "url": string }]
+}
+
+目标日期：${targetDate}
+
+GitHub：
+${JSON.stringify(
+  githubProjects.map((repo) => ({
+    name: repo.name,
+    intro: normalizeChineseIntro(repo.enhancedChineseIntro) || buildGithubProjectIntro(repo),
+    highlight: normalizeTodayHighlight(repo.enhancedTodayHighlight) || buildTodayHighlight(repo).zh,
+    stars: repo.stars,
+    dailyStars: repo.starsToday,
+    url: repo.url,
+  })),
+  null,
+  2,
+)}
+
+公司动态：
+${JSON.stringify(
+  companyUpdates.map((item) => ({
+    name: `${item.company}: ${item.title}`,
+    intro: normalizeChineseIntro(item.enhancedChineseIntro) || buildCompanyUpdateIntro(item),
+    highlight: normalizeTodayHighlight(item.enhancedTodayHighlight),
+    eventType: item.enhancedEventType?.zh || inferCompanyEventType(item).zh,
+    url: item.url,
+  })),
+  null,
+  2,
+)}`;
+}
+
+async function enhanceEditorialBrief(payload) {
+  const config = getModelConfig();
+  const fallback = () =>
+    buildFallbackEditorial(payload.targetDate, payload.githubProjects, payload.companyUpdates);
+
+  if (!config) {
+    console.warn("No model API key found. Using editorial fallback.");
+    return fallback();
+  }
+
+  const prompt = buildEditorialPrompt(payload);
+  try {
+    return await requestJsonPrompt(config, prompt, true);
+  } catch (error) {
+    console.warn(`${config.name} editorial JSON mode failed: ${error.message}`);
+  }
+  try {
+    return await requestJsonPrompt(config, prompt, false);
+  } catch (error) {
+    console.warn(`${config.name} editorial generation failed: ${error.message}`);
+    return fallback();
+  }
+}
+
 async function collectCompanyUpdates() {
   const updates = [];
 
@@ -495,97 +893,65 @@ async function collectCompanyUpdates() {
   return updates.slice(0, 18);
 }
 
-function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
-  const topGithub = githubProjects.slice(0, 10);
-  const topCompany = companyUpdates.slice(0, 3);
-  const topProject = topGithub[0];
-  const topUpdate = topCompany[0];
+function hasSufficientScrapeData(githubProjects, companyUpdates) {
+  return githubProjects.length > 0 || companyUpdates.length > 0;
+}
 
+function isLowQualityGithubIntro(intro) {
+  if (!intro) return true;
+  const text = normalizeChineseIntro(intro);
+  if (text.length < 24) return true;
+  return (
+    text.includes("原始描述为") ||
+    text.includes("该项目围绕") ||
+    /^Compress tool outputs/i.test(text) ||
+    !/[\u4e00-\u9fff]/.test(text)
+  );
+}
+
+function isMockBriefEntry(brief) {
+  const editor = brief.editorNote?.zh ?? "";
+  const title = brief.title?.zh ?? "";
+  const takeaway = brief.keyTakeaway?.zh ?? "";
+
+  if (editor.includes("历史日报可以保留")) return true;
+  if (title.includes("AI 搜索和研究助手")) return true;
+
+  const githubProjects = brief.githubProjects ?? [];
+  if (githubProjects.length === 0) return true;
+
+  const hasScrapeFields = githubProjects.some(
+    (project) => typeof project.totalStars === "number" || project.chineseIntro?.zh,
+  );
+  if (!hasScrapeFields) return true;
+
+  const qualityIntroCount = githubProjects.filter(
+    (project) => !isLowQualityGithubIntro(project.chineseIntro?.zh ?? project.summary?.zh),
+  ).length;
+
+  const hasTemplateSignals = (brief.signals ?? []).some(
+    (signal) => signal.title?.zh === "Agent 与 AI 工具链仍是高频更新方向",
+  );
+  const hasStatsTakeaway = takeaway.includes("本次抓取覆盖");
+  const hasPlaceholderEditor = editor.includes("配置模型 API key 后");
+
+  if (hasTemplateSignals && hasStatsTakeaway && hasPlaceholderEditor && qualityIntroCount < 2) {
+    return true;
+  }
+
+  if (title === "AI 信息源抓取日报" && qualityIntroCount === 0) return true;
+
+  return false;
+}
+
+function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
+  const editorial = buildFallbackEditorial(targetDate, githubProjects.slice(0, 10), companyUpdates);
   return {
     date: targetDate,
     label: { zh: "最新", en: "Latest" },
-    title: {
-      zh: "AI 信息源抓取日报",
-      en: "AI source collection brief",
-    },
-    editorNote: {
-      zh: "这一版由自动化脚本基于真实来源抓取生成。配置模型 API key 后，会进一步生成更完整的产品经理视角总结。",
-      en: "This version is generated from real collected sources. With a model API key configured, it will produce fuller PM-focused analysis.",
-    },
-    keyTakeaway: {
-      zh: `本次抓取覆盖 ${githubProjects.length} 个 GitHub AI 项目和 ${companyUpdates.length} 条 AI 公司动态，优先关注近期仍在活跃更新的 Agent、LLM 与 AI 工具方向。`,
-      en: `This run collected ${githubProjects.length} AI GitHub projects and ${companyUpdates.length} company updates, prioritizing active Agent, LLM, and AI tooling signals.`,
-    },
-    signals: [
-      {
-        title: { zh: "Agent 与 AI 工具链仍是高频更新方向", en: "Agents and AI tooling remain active update areas" },
-        category: { zh: "趋势信号", en: "Trend signal" },
-        summary: {
-          zh: topProject
-            ? `GitHub 抓取中排名靠前的项目包括 ${topProject.name}，说明开发者仍在围绕 Agent 运行时、工作流和 AI 工具效率做密集迭代。`
-            : "GitHub 抓取显示 AI 项目仍集中在 Agent、LLM 应用和工具链方向。",
-          en: topProject
-            ? `The collected GitHub signals include ${topProject.name}, showing continued developer iteration around agent runtimes, workflows, and AI tooling efficiency.`
-            : "Collected GitHub signals continue to cluster around agents, LLM apps, and tooling.",
-        },
-        pmInsight: {
-          zh: "产品经理可以重点观察这些项目如何处理任务状态、权限、失败恢复和可追溯输出，这些会直接影响 Agent 产品体验。",
-          en: "Product managers can watch how these projects handle task state, permissions, recovery, and traceable output because these directly shape agent UX.",
-        },
-        impact: "Medium",
-        sources: topProject
-          ? [{ label: topProject.name, url: topProject.url }]
-          : [{ label: "GitHub Trending", url: "https://github.com/trending" }],
-      },
-      {
-        title: { zh: "大公司更新继续围绕平台能力扩展", en: "Major AI companies keep expanding platform capabilities" },
-        category: { zh: "公司动态", en: "Company signal" },
-        summary: {
-          zh: topUpdate
-            ? `${topUpdate.company} 的最新动态「${topUpdate.title}」值得回看其背后的平台策略和产品能力边界。`
-            : "AI 公司动态仍集中在模型、工具、开发者平台和行业解决方案上。",
-          en: topUpdate
-            ? `${topUpdate.company}'s update "${topUpdate.title}" is worth reading for platform strategy and product capability boundaries.`
-            : "Company updates continue to focus on models, tools, developer platforms, and vertical solutions.",
-        },
-        pmInsight: {
-          zh: "大公司动作通常会改变用户对 AI 产品的默认预期，独立产品更需要寻找垂直任务和行业 SOP 的切入点。",
-          en: "Major company moves often reset user expectations for AI products, so independent products need sharper vertical tasks and industry SOP entry points.",
-        },
-        impact: "Medium",
-        sources: topUpdate
-          ? [{ label: topUpdate.company, url: topUpdate.url }]
-          : [{ label: "OpenAI News", url: "https://openai.com/news/" }],
-      },
-    ],
-    githubProjects: topGithub.map((repo) => buildGithubProjectSignal(repo)),
-    companyUpdates: topCompany.map((item) => ({
-      title: { zh: `${item.company}: ${item.title}`, en: `${item.company}: ${item.title}` },
-      category: { zh: "公司动态", en: "Company update" },
-      summary: { zh: item.summary || "查看原文获取详情。", en: item.summary || "Read the source for details." },
-      pmInsight: {
-        zh: "可从中观察平台公司正在强化的能力边界、行业场景和商业化叙事。",
-        en: "Use this to observe the capability boundaries, vertical scenarios, and commercialization narrative platform companies are emphasizing.",
-      },
-      impact: "Watch",
-      sources: [{ label: item.company, url: item.url }],
-    })),
-    opportunities: [
-      {
-        title: { zh: "机会：把 AI 日报做成可溯源产品雷达", en: "Opportunity: make the AI brief a traceable product radar" },
-        category: { zh: "产品机会", en: "Product opportunity" },
-        summary: {
-          zh: "真实价值不在于列链接，而在于每天把来源、判断、产品启发和历史快照沉淀下来。",
-          en: "The value is not listing links, but preserving sources, judgment, PM implications, and daily snapshots.",
-        },
-        pmInsight: {
-          zh: "下一步可以验证两件事：每天是否 5 分钟读完，以及每周是否能沉淀 1-2 个可讨论的产品机会。",
-          en: "Next, validate whether it can be read in five minutes and whether it surfaces one or two discussable product opportunities each week.",
-        },
-        impact: "Medium",
-        sources: [{ label: "Hugging Face Blog", url: "https://huggingface.co/blog" }],
-      },
-    ],
+    ...editorial,
+    githubProjects: githubProjects.slice(0, 10).map((repo) => buildGithubProjectSignal(repo)),
+    companyUpdates: companyUpdates.slice(0, 4).map((item) => buildCompanyUpdateSignal(item)),
   };
 }
 
@@ -893,6 +1259,7 @@ export type DailySource = {
 export type DailySignal = {
   title: LocalizedText;
   category: LocalizedText;
+  eventType?: LocalizedText;
   summary: LocalizedText;
   totalStars?: number;
   language?: string;
@@ -952,51 +1319,47 @@ async function main() {
     collectCompanyUpdates(),
   ]);
 
+  if (!hasSufficientScrapeData(githubProjects, companyUpdates)) {
+    console.warn("No GitHub or company updates collected. Skipping brief write.");
+    return;
+  }
+
+  const enrichedCompany = await enrichCompanyUpdates(companyUpdates);
   const enhancedGithubProjects = await enhanceGithubProjects(
     await enrichGithubProjects(githubProjects.slice(0, 10)),
   );
-  const brief = await generateWithModel({
+  const enhancedCompanyUpdates = await enhanceCompanyUpdates(enrichedCompany.slice(0, 4));
+  const editorial = await enhanceEditorialBrief({
     targetDate,
     githubProjects: enhancedGithubProjects,
-    companyUpdates,
+    companyUpdates: enhancedCompanyUpdates,
   });
-  const enhancedByName = new Map(enhancedGithubProjects.map((repo) => [repo.name, repo]));
-  brief.githubProjects = brief.githubProjects.map((project) => {
-    const repo = enhancedByName.get(project.title?.en ?? project.title?.zh);
-    if (!repo) {
-      const introZh = normalizeChineseIntro(project.chineseIntro?.zh) || project.summary?.zh || "";
-      const highlightZh = normalizeTodayHighlight(project.todayHighlight?.zh) || "";
-      return {
-        ...project,
-        summary: { zh: introZh, en: project.summary?.en || "No description." },
-        chineseIntro: { zh: introZh, en: project.chineseIntro?.en || project.summary?.en || "No description." },
-        todayHighlight: { zh: highlightZh, en: project.todayHighlight?.en || "" },
-      };
-    }
 
-    return buildGithubProjectSignal(repo, {
-      title: project.title,
-      impact: project.impact ?? "Watch",
-      inclusionReason: project.inclusionReason ?? buildGithubReason(repo),
-      pmInsight: project.pmInsight?.zh
-        ? {
-            zh: repo.enhancedPmInsight || normalizeChineseIntro(project.pmInsight.zh) || project.pmInsight.zh,
-            en: project.pmInsight.en,
-          }
-        : undefined,
-    });
-  });
+  const brief = {
+    date: targetDate,
+    label: { zh: "最新", en: "Latest" },
+    title: editorial.title,
+    editorNote: editorial.editorNote,
+    keyTakeaway: editorial.keyTakeaway,
+    signals: editorial.signals ?? [],
+    opportunities: editorial.opportunities ?? [],
+    githubProjects: enhancedGithubProjects.map((repo) => buildGithubProjectSignal(repo)),
+    companyUpdates: enhancedCompanyUpdates.map((item) => buildCompanyUpdateSignal(item)),
+  };
 
   assertBriefShape(brief);
-  brief.date = targetDate;
-  brief.label = brief.label ?? { zh: "最新", en: "Latest" };
+
+  if (isMockBriefEntry(brief)) {
+    console.warn("Generated brief looks like low-quality template output. Skipping brief write.");
+    return;
+  }
 
   if (dryRun) {
     console.log(JSON.stringify(brief, null, 2));
     return;
   }
 
-  const existingBriefs = await readExistingBriefs();
+  const existingBriefs = (await readExistingBriefs()).filter((item) => !isMockBriefEntry(item));
   const nextBriefs = [
     brief,
     ...existingBriefs.filter((item) => item.date !== targetDate),
