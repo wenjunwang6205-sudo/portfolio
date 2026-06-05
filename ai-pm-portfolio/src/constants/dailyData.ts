@@ -117,26 +117,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "压缩工具输出、日志、文件和RAG块，减少60-95%的token，保持答案不变。提供库、代理和MCP服务器。",
+          "zh": "在 LLM 输入前压缩工具输出、日志、文件和 RAG 块，减少 60-95% 的 token 而不影响答案质量。",
           "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
-        "totalStars": 12426,
+        "totalStars": 12457,
         "language": "Python",
         "dailyStars": 3142,
         "chineseIntro": {
-          "zh": "中文简介:这是一个用于压缩LLM输入数据的工具，可以将工具输出、日志、文件和RAG块压缩60-95%，同时保持答案质量。它支持作为Python库、代理或MCP服务器使用，适合需要降低LLM调用成本的场景，如日志分析、文档处理等。",
+          "zh": "中文简介: Headroom 是一个上下文压缩层，可在 LLM 处理前压缩工具输出、日志、文件和 RAG 块，减少 60-95% 的 token 消耗，同时保持答案质量。支持库、代理和 MCP 服务器三种使用方式，适合需要降低 LLM 调用成本、优化上下文窗口的 AI 应用场景。",
           "en": "Chinese intro: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日获得3142颗星，总星数12426，语言为Python。该项目通过大幅减少token数量来降低LLM使用成本，同时保持输出质量，对于依赖LLM的产品经理来说是一个重要的成本优化工具。",
-          "en": "Today's highlight: 今日新增 3,142 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 3142 星，总星数达 12457，排名 GitHub 趋势第一。项目创建仅 5 个月，凭借“压缩 token 不减答案质量”的强叙事在 AI 开发者社区快速传播，尤其被 Claude Code、Cursor 等工具的用户广泛采用。其多模式（库/代理/MCP）设计降低了集成门槛，叠加 LLM 成本优化刚需，推动增速爆发。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 3,142 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,426 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,426 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,457 stars、808 forks，topics: agent, ai, anthropic, claude-code, compression，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,457 stars and 808 forks，topics: agent, ai, anthropic, claude-code, compression, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注如何通过压缩输入数据来降低LLM的API调用成本，同时保持输出质量。",
+          "zh": "产品经理应关注 token 压缩作为 LLM 应用降本增效的关键基础设施，其多模式集成策略可快速覆盖不同用户场景。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -157,26 +157,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "这是一个 Agent 相关项目，重点帮助开发者构建、运行或优化能够自主执行任务的 AI 工作流，适合关注多步骤任务、工具调用和自动化执行场景。",
+          "zh": "一个与用户共同成长的 AI Agent 框架。",
           "en": "Star NousResearch / hermes-agent The agent that grows with you"
         },
-        "totalStars": 180946,
+        "totalStars": 180962,
         "language": "Python",
         "dailyStars": 1913,
         "chineseIntro": {
-          "zh": "中文简介：这是一个 Agent 相关项目，重点帮助开发者构建、运行或优化能够自主执行任务的 AI 工作流，适合关注多步骤任务、工具调用和自动化执行场景。",
+          "zh": "中文简介: Hermes Agent 是一个 AI Agent 框架，强调“与用户共同成长”，提供可扩展的智能体能力。它支持多种 LLM 后端（如 Claude、ChatGPT），适合需要构建自适应、可进化 AI 助手的开发者和团队。",
           "en": "Chinese intro: Star NousResearch / hermes-agent The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "今日亮点：今日新增 1,913 星；昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 180,946 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Today's highlight: 今日新增 1,913 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 1913 星，总星数达 180962，持续位居趋势榜前列。项目创建已 11 个月，凭借 Nous Research 的品牌效应和“成长型 Agent”的差异化定位，在 AI Agent 赛道中保持高关注度。其活跃的 Discord 社区和持续更新（今日仍有推送）维持了用户粘性，新增星数稳定。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 2 位, 总 star 数已达 180k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,913 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 180,946 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 180,946 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 180,962 stars、31,040 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 180,962 stars and 31,040 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "zh": "产品经理应观察 AI Agent 框架如何通过“成长”叙事建立用户长期依赖，以及社区运营对项目持续增长的作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -197,26 +197,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "这是一个 Agent 相关项目，重点帮助开发者构建、运行或优化能够自主执行任务的 AI 工作流，适合关注多步骤任务、工具调用和自动化执行场景。",
+          "zh": "一个面向 AI Agent 的性能优化系统，涵盖技能、本能、记忆、安全等功能。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 207204,
+        "totalStars": 207216,
         "language": "JavaScript",
         "dailyStars": 1750,
         "chineseIntro": {
-          "zh": "中文简介：这是一个 Agent 相关项目，重点帮助开发者构建、运行或优化能够自主执行任务的 AI 工作流，适合关注多步骤任务、工具调用和自动化执行场景。",
+          "zh": "中文简介: ECC 是一个 Agent 性能优化系统，为 Claude Code、Codex、Cursor 等 AI 编程工具提供技能、本能、记忆、安全等模块化能力。它通过“马具”式架构增强 Agent 的性能和可控性，适合需要深度定制 AI 开发工具的团队。",
           "en": "Chinese intro: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日亮点：今日新增 1,750 星；昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,204 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Today's highlight: 今日新增 1,750 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 1750 星，总星数达 207216，排名趋势第三。项目创建仅 5 个月，凭借多语言文档（含简体中文）和广泛的工具兼容性（Claude Code、Codex、Cursor 等），迅速吸引全球开发者。其“马具原生操作”概念在 Agent 工具链中形成独特生态位，叠加高星数带来的社交证明，持续拉动新增。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 3 位, 总 star 数已达 207k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,750 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,204 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 207,204 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,216 stars、31,812 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 207,216 stars and 31,812 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "zh": "产品经理应关注 Agent 工具链中“性能优化”这一细分需求，以及多语言文档对项目全球化传播的杠杆效应。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -237,26 +237,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "与任何LLM进行免提语音交互，支持语音打断和Live2D角色，本地跨平台运行。",
+          "zh": "一个开源的 AI VTuber 项目，支持与任意 LLM 进行免提语音交互、语音打断和 Live2D 形象。",
           "en": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
         },
-        "totalStars": 9574,
+        "totalStars": 9581,
         "language": "Python",
         "dailyStars": 581,
         "chineseIntro": {
-          "zh": "中文简介:这是一个开源的LLM语音交互项目，允许用户通过语音与任何LLM模型对话，支持语音打断和Live2D虚拟形象，所有处理都在本地完成，跨平台运行。适合构建虚拟助手、聊天机器人或娱乐应用。",
+          "zh": "中文简介: Open-LLM-VTuber 让你能与任意 LLM 进行免提语音对话，支持语音打断和 Live2D 虚拟形象，所有功能本地运行，跨平台兼容。适合 AI 陪伴、虚拟主播、二次元交互等场景，是 Neuro-sama 风格的开源替代。",
           "en": "Chinese intro: Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日获得581颗星，总星数9574，语言为Python。该项目将LLM与语音交互和虚拟形象结合，提供了沉浸式的用户体验，对于AI产品经理来说是一个探索多模态交互的绝佳案例。",
-          "en": "Today's highlight: 今日新增 581 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 581 星，总星数达 9581，排名第八。项目创建已 31 个月，但近期因 AI VTuber 和“AI 伴侣”概念在社交媒体（如 TikTok、Bilibili）上走红而重新获得关注。其本地运行、跨平台、支持 Ollama 等特性降低了使用门槛，叠加 Live2D 视觉吸引力，在二次元开发者社区中持续传播。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 8 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 581 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,574 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,574 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,581 stars、1,152 forks，topics: ai, ai-companion, ai-vtuber, ai-waifu, chatbots，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,581 stars and 1,152 forks，topics: ai, ai-companion, ai-vtuber, ai-waifu, chatbots, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注语音交互与虚拟形象结合的用户体验，以及本地化部署对隐私和延迟的影响。",
+          "zh": "产品经理应关注 AI 陪伴类产品如何通过视觉形象（Live2D）和低门槛交互（语音）吸引非技术用户，以及开源社区对产品迭代的推动作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -277,26 +277,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI代理技能，可研究Reddit、X、YouTube、HN、Polymarket和网络上的任何话题，并生成有依据的摘要。",
+          "zh": "一个 AI Agent 技能，可研究 Reddit、X、YouTube 等平台上的任何话题并生成总结。",
           "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
-        "totalStars": 27557,
+        "totalStars": 27562,
         "language": "Python",
         "dailyStars": 199,
         "chineseIntro": {
-          "zh": "中文简介:这是一个AI代理技能，能够自动搜索Reddit、X、YouTube、Hacker News、Polymarket等多个平台上的最新信息，并综合生成有依据的摘要。适合市场研究、舆情监控或快速了解某个话题的最新动态。",
+          "zh": "中文简介: last30days-skill 是一个 AI Agent 技能，能跨 Reddit、X、YouTube、Hacker News、Polymarket 等平台搜索指定话题，并综合生成一份有依据的摘要。适合市场调研、趋势分析、舆情监控等场景，尤其适合需要快速了解近期热点的产品经理和研究人员。",
           "en": "Chinese intro: Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日获得199颗星，总星数27557，语言为Python。该项目展示了AI代理如何跨平台聚合信息并生成摘要，对于需要实时洞察的产品经理来说是一个强大的工具。",
-          "en": "Today's highlight: 今日新增 199 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 199 星，总星数达 27562，排名第十四。项目创建仅 4 个月，凭借“跨平台趋势研究”的精准定位和“#1 Repository Of The Day”徽章，在 AI 技能市场中快速崛起。其支持多平台（包括 TikTok、Instagram）的广度，以及“深度研究”叙事，吸引了需要实时洞察的开发者。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 14 位, 创建仅约 4 个月便已积累 27k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 199 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,557 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,557 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,562 stars、2,345 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,562 stars and 2,345 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注如何利用AI代理进行跨平台信息聚合，以辅助决策和趋势分析。",
+          "zh": "产品经理应关注 AI Agent 技能如何通过“跨平台数据聚合”解决信息过载痛点，以及“趋势研究”场景的变现潜力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -317,26 +317,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "将任何PDF或图像文档转换为结构化数据，供AI使用。支持100+语言。",
+          "zh": "一个强大的 OCR 工具包，可将任何 PDF 或图片文档转换为结构化数据，支持 100+ 语言。",
           "en": "Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
         },
-        "totalStars": 79843,
+        "totalStars": 79848,
         "language": "Python",
         "dailyStars": 141,
         "chineseIntro": {
-          "zh": "中文简介:这是一个轻量级OCR工具包，能够将PDF和图像文档转换为结构化数据，便于AI处理。支持100多种语言，适合文档数字化、发票识别、表格提取等场景。",
+          "zh": "中文简介: PaddleOCR 是百度飞桨推出的 OCR 工具包，能将 PDF、图片等文档转换为结构化数据，支持 100+ 语言，并内置文档解析、翻译、关键信息提取等功能。适合文档数字化、RAG 数据预处理、多语言 OCR 等场景，是连接图像/PDF 与 LLM 的桥梁。",
           "en": "Chinese intro: Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日获得141颗星，总星数79843，语言为Python。该项目是OCR领域的明星项目，持续更新，对于需要将非结构化文档转化为AI可用数据的场景非常实用。",
-          "en": "Today's highlight: 今日新增 141 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 141 星，总星数达 79848，排名第四。项目创建已 74 个月，作为 OCR 领域的常青树，其持续更新（今日仍有推送）和 RAG 生态的爆发使其重新获得关注。新增的 PDF 解析和 Markdown 转换功能，使其成为 LLM 数据管道的必备组件，长期稳定增长。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 4 位, 总 star 数已达 79k+，属于持续在榜的头部 AI 开源项目, RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成, 今日新增 141 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 79,843 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 79,843 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 79,848 stars、10,598 forks，topics: ai4science, chineseocr, document-parsing, document-translation, kie，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 79,848 stars and 10,598 forks，topics: ai4science, chineseocr, document-parsing, document-translation, kie, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注OCR技术如何与LLM结合，实现文档的自动化处理和信息提取。",
+          "zh": "产品经理应关注 OCR 作为 AI 数据预处理基础设施的长期价值，以及成熟项目如何通过适配新生态（如 RAG）焕发第二春。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -357,26 +357,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "NVIDIA Cosmos是一个开放的世界模型平台，包含数据集和工具，用于开发机器人、自动驾驶等物理AI。",
+          "zh": "NVIDIA 推出的世界模型开放平台，用于构建机器人、自动驾驶等物理 AI。",
           "en": "Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more."
         },
-        "totalStars": 8987,
+        "totalStars": 8990,
         "language": "Jupyter Notebook",
         "dailyStars": 133,
         "chineseIntro": {
-          "zh": "中文简介:这是一个由NVIDIA推出的开放平台，提供世界模型、数据集和工具，帮助开发者构建物理AI，应用于机器人、自动驾驶车辆、智能基础设施等领域。适合需要模拟物理世界交互的AI产品。",
+          "zh": "中文简介: NVIDIA Cosmos 是一个开放的世界模型平台，提供数据集、工具和预训练模型，帮助开发者构建机器人、自动驾驶、智能基础设施等物理 AI 应用。它基于 NVIDIA 的仿真和 AI 技术，适合需要物理世界理解能力的研发团队。",
           "en": "Chinese intro: Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more."
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日获得133颗星，总星数8987，语言为Jupyter Notebook。NVIDIA的背书和物理AI的前景使其备受关注，对于探索AI在物理世界应用的产品经理具有参考价值。",
-          "en": "Today's highlight: 今日新增 133 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 133 星，总星数达 8990，排名第六。项目创建已 17 个月，但近期因 NVIDIA 在 GTC 等大会上的推广以及物理 AI 赛道升温而获得稳定关注。其“开放平台”定位和与 NVIDIA 生态的深度绑定，吸引了机器人、自动驾驶领域的研究者。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 6 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 133 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,987 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,987 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,990 stars、579 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,990 stars and 579 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注世界模型在物理AI中的应用，以及如何利用模拟环境加速产品开发。",
+          "zh": "产品经理应关注世界模型作为物理 AI 基础设施的战略意义，以及 NVIDIA 如何通过开放平台构建开发者生态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -397,26 +397,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "多平台SDK，用于将GitHub Copilot Agent集成到应用和服务中。",
+          "zh": "GitHub 官方推出的多平台 SDK，用于将 Copilot Agent 集成到应用和服务中。",
           "en": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
         },
-        "totalStars": 8961,
+        "totalStars": 8966,
         "language": "Java",
         "dailyStars": 38,
         "chineseIntro": {
-          "zh": "中文简介:这是一个多平台SDK，允许开发者将GitHub Copilot Agent集成到自己的应用和服务中。适合需要为产品添加AI编程助手功能或自定义Copilot行为的场景。",
+          "zh": "中文简介: GitHub Copilot SDK 是官方提供的多平台开发工具包，支持 Java、Python、Go 等语言，帮助开发者将 GitHub Copilot Agent 的能力集成到自己的应用和服务中。适合需要嵌入 AI 编程助手功能的 IDE、代码平台或企业工具。",
           "en": "Chinese intro: Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日获得38颗星，总星数8961，语言为Java。作为GitHub官方推出的SDK，它为集成Copilot提供了标准化接口，对于希望利用AI辅助编程的产品经理来说是一个重要工具。",
-          "en": "Today's highlight: 今日新增 38 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增 38 星，总星数达 8966，排名第十。项目创建仅 5 个月，作为 GitHub 官方项目，其增长稳健而非爆发。今日新增较少，但总星数已接近 9k，表明开发者对 Copilot 生态的扩展能力有持续需求。其多语言 SDK 设计降低了集成门槛。",
+          "en": "Today's highlight: 登上 GitHub Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 38 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,961 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,961 stars and 0 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,966 stars、1,211 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,966 stars and 1,211 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注如何通过SDK将Copilot的能力嵌入到自己的产品中，提升用户开发效率。",
+          "zh": "产品经理应关注官方 SDK 如何推动 Copilot 生态的第三方集成，以及平台型产品通过开放 API 构建护城河的策略。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -437,26 +437,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AutoGPT致力于让AI人人可用，提供工具让用户专注于重要的事情。",
+          "zh": "AutoGPT 是让 AI 人人可用的愿景，提供构建和部署 AI Agent 的工具。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 184765,
+        "totalStars": 184766,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "中文简介:AutoGPT是一个开源项目，旨在提供易于使用的AI代理工具，让每个人都能构建和使用AI代理。它支持多种LLM后端，适合自动化任务、研究、内容生成等场景。",
+          "zh": "中文简介: AutoGPT 是一个开源项目，旨在让 AI 人人可用，提供构建、部署和运行 AI Agent 的工具。它支持多种 LLM 后端（如 GPT、Claude、Llama），适合需要自主 Agent 的开发者、研究者和企业，是 AI Agent 领域的先驱项目。",
           "en": "Chinese intro: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日星数未更新，总星数184765，语言为Python。作为AI代理领域的先驱项目，AutoGPT持续引领自主代理的发展，对于产品经理来说是理解代理架构和能力的标杆。",
-          "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增星数未提供，总星数达 184766，长期位居趋势榜。项目创建已 39 个月，作为 AI Agent 的鼻祖，其影响力持续。虽然今日新增数据缺失，但凭借庞大的社区和持续的更新（今日仍有推送），它仍然是 Agent 生态的标杆项目。",
+          "en": "Today's highlight: 总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,765 stars、46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,765 stars and 46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,766 stars、46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,766 stars and 46,189 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注AutoGPT的代理架构和任务分解能力，思考如何将其应用于自动化工作流。",
+          "zh": "产品经理应关注 AI Agent 先驱项目如何通过社区和品牌效应维持长期影响力，以及“人人可用”的愿景对产品定位的指导意义。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -477,26 +477,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "快速运行Kimi、GLM、DeepSeek、Qwen、Gemma等多种模型。",
+          "zh": "本地运行和体验多种开源大模型的工具，支持 Kimi、GLM、DeepSeek、Qwen 等。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
-        "totalStars": 173192,
+        "totalStars": 173193,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "中文简介:这是一个本地运行大语言模型的工具，支持Kimi、GLM、DeepSeek、Qwen、Gemma等多种模型。用户可以在自己的机器上轻松部署和运行LLM，适合需要本地推理、隐私保护或离线使用的场景。",
+          "zh": "中文简介: Ollama 让你能在本地轻松运行和体验多种开源大模型，包括 Kimi-K2.6、GLM-5.1、MiniMax、DeepSeek、Qwen、Gemma 等。它提供简洁的命令行和 API，适合开发者本地测试、原型开发和个人使用，是本地 LLM 部署的首选工具。",
           "en": "Chinese intro: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
-          "zh": "今日亮点:今日星数未更新，总星数173192，语言为Go。作为最受欢迎的本地LLM运行工具之一，Ollama支持最新模型，对于产品经理来说是一个快速原型验证和本地测试的利器。",
-          "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+          "zh": "今日亮点: 今日新增星数未提供，总星数达 173193，长期位居趋势榜。项目创建已 36 个月，作为本地 LLM 运行的事实标准，其增长稳定。今日新增数据缺失，但持续的支持新模型（如 Kimi、GLM）使其保持新鲜感，社区活跃度极高。",
+          "en": "Today's highlight: 总 star 数已达 173k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,192 stars、16,443 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,192 stars and 16,443 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,193 stars、16,443 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,193 stars and 16,443 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注Ollama如何简化本地模型部署，以及它对产品隐私和成本控制的影响。",
+          "zh": "产品经理应关注本地 LLM 部署工具如何通过支持最新模型维持竞争力，以及“本地优先”趋势对 AI 产品架构的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
