@@ -65,9 +65,28 @@ function cleanGithubDescription(description) {
 }
 
 function buildChineseIntro(repo) {
-  const description = repo.description || "暂无项目描述。";
+  const description = repo.description || "";
+  const lower = `${repo.name} ${description}`.toLowerCase();
+  let explanation = description
+    ? `这是一个 AI 相关开源项目，主要能力是：${description}`
+    : "这是一个 AI 相关开源项目，建议结合 README 进一步确认具体使用场景。";
+
+  if (lower.includes("compress") && (lower.includes("rag") || lower.includes("token"))) {
+    explanation =
+      "这是一个面向大模型应用的上下文压缩工具，用来在内容进入 LLM 前压缩工具输出、日志、文件和 RAG 检索片段，从而减少 token 消耗并尽量保持回答质量。";
+  } else if (lower.includes("agent")) {
+    explanation =
+      "这是一个 Agent 相关项目，重点帮助开发者构建、运行或优化能够自主执行任务的 AI 工作流，适合关注多步骤任务、工具调用和自动化执行场景。";
+  } else if (lower.includes("rag")) {
+    explanation =
+      "这是一个 RAG 相关项目，主要面向知识检索增强生成场景，帮助大模型更好地利用外部文档、数据或知识库回答问题。";
+  } else if (lower.includes("prompt")) {
+    explanation =
+      "这是一个 Prompt 或大模型调用相关项目，主要帮助开发者组织提示词、控制模型输出或提升 AI 应用的生成稳定性。";
+  }
+
   return {
-    zh: `中文简介：该项目围绕 ${repo.name} 提供 AI 相关能力，原始描述为：${description}`,
+    zh: `中文简介：${explanation}`,
     en: `Chinese intro: ${description}`,
   };
 }
@@ -77,8 +96,9 @@ function buildTodayHighlight(repo) {
     typeof repo.starsToday === "number"
       ? `今日新增 ${repo.starsToday.toLocaleString("en-US")} 星`
       : "今日新增待精确统计";
+  const reason = buildGithubReason(repo).zh;
   return {
-    zh: `今日亮点：${starsTodayText}；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。`,
+    zh: `今日亮点：${starsTodayText}；${reason}`,
     en: `Today's highlight: ${starsTodayText}; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today.`,
   };
 }
@@ -337,15 +357,25 @@ function buildFallbackBrief(targetDate, githubProjects, companyUpdates) {
     githubProjects: topGithub.map((repo) => ({
       title: { zh: repo.name, en: repo.name },
       category: { zh: "GitHub 项目", en: "GitHub project" },
-      summary: { zh: repo.description || "暂无描述。", en: repo.description || "No description." },
+      summary: {
+        zh:
+          repo.enhancedSummary ||
+          buildChineseIntro(repo).zh.replace(/^中文简介：/, "") ||
+          "暂无描述。",
+        en: repo.description || "No description.",
+      },
       totalStars: repo.stars,
       language: repo.language,
       dailyStars: repo.starsToday,
-      chineseIntro: buildChineseIntro(repo),
-      todayHighlight: buildTodayHighlight(repo),
+      chineseIntro: repo.enhancedChineseIntro
+        ? { zh: repo.enhancedChineseIntro, en: `Chinese intro: ${repo.description || ""}` }
+        : buildChineseIntro(repo),
+      todayHighlight: repo.enhancedTodayHighlight
+        ? { zh: repo.enhancedTodayHighlight, en: buildTodayHighlight(repo).en }
+        : buildTodayHighlight(repo),
       inclusionReason: buildGithubReason(repo),
       pmInsight: {
-        zh: "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+        zh: repo.enhancedPmInsight || "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
         en: "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits.",
       },
       impact: "Watch",
@@ -506,6 +536,126 @@ async function requestModel(config, payload, useJsonMode) {
   return parseModelJson(text);
 }
 
+async function requestJsonPrompt(config, prompt, useJsonMode) {
+  const body = {
+    model: config.model,
+    messages: [
+      {
+        role: "user",
+        content: prompt,
+      },
+    ],
+    temperature: 0.25,
+  };
+
+  if (useJsonMode) {
+    body.response_format = { type: "json_object" };
+  }
+
+  const response = await fetch(config.url, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${config.apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+
+  const responseText = await response.text();
+
+  if (!response.ok) {
+    throw new Error(`${config.name} request failed: ${response.status} ${responseText}`);
+  }
+
+  const data = JSON.parse(responseText);
+  const text = data.choices?.[0]?.message?.content;
+
+  if (!text) {
+    throw new Error(`${config.name} response did not include output text.`);
+  }
+
+  return parseModelJson(text);
+}
+
+function buildGithubEnhancementPrompt(projects) {
+  return `你是给 AI 产品经理写 GitHub 趋势日报的中文编辑。请把下面 10 个 GitHub 项目的英文描述改写成清楚、具体、易懂的中文解释。
+
+要求：
+1. 必须输出严格 JSON，不要 Markdown。
+2. 每个项目都要保留 name。
+3. chineseIntroZh 必须以“中文简介:”开头，用中文说明这个项目具体做什么、解决什么问题、适合什么场景。不要复制英文。
+4. todayHighlightZh 必须以“今日亮点:”开头，结合 dailyStars、totalStars、language、项目方向说明为什么今天值得关注。
+5. pmInsightZh 用一句中文说明产品经理应该从这个项目观察什么。
+6. 不要夸大，不要编造原始输入里没有的具体社交提及数。
+
+输出结构：
+{
+  "projects": [
+    {
+      "name": string,
+      "summaryZh": string,
+      "chineseIntroZh": string,
+      "todayHighlightZh": string,
+      "pmInsightZh": string
+    }
+  ]
+}
+
+项目输入：
+${JSON.stringify(
+  projects.map((repo) => ({
+    name: repo.name,
+    description: repo.description,
+    totalStars: repo.stars,
+    dailyStars: repo.starsToday,
+    language: repo.language,
+    topics: repo.topics,
+  })),
+  null,
+  2,
+)}`;
+}
+
+async function enhanceGithubProjects(projects) {
+  const config = getModelConfig();
+  if (!config || projects.length === 0) {
+    return projects;
+  }
+
+  const prompt = buildGithubEnhancementPrompt(projects);
+  let enhanced;
+
+  try {
+    enhanced = await requestJsonPrompt(config, prompt, true);
+  } catch (error) {
+    console.warn(`${config.name} GitHub enhancement JSON mode failed, retrying without response_format: ${error.message}`);
+  }
+
+  if (!enhanced) {
+    try {
+      enhanced = await requestJsonPrompt(config, prompt, false);
+    } catch (error) {
+      console.warn(`${config.name} GitHub enhancement failed. Using local Chinese fallback: ${error.message}`);
+      return projects;
+    }
+  }
+
+  const byName = new Map((enhanced.projects ?? []).map((project) => [project.name, project]));
+
+  return projects.map((repo) => {
+    const item = byName.get(repo.name);
+    if (!item) return repo;
+
+    return {
+      ...repo,
+      enhancedSummary: item.summaryZh,
+      enhancedChineseIntro: item.chineseIntroZh,
+      enhancedTodayHighlight: item.todayHighlightZh,
+      enhancedPmInsight: item.pmInsightZh,
+    };
+  });
+}
+
 async function generateWithModel(payload) {
   const config = getModelConfig();
   if (!config) {
@@ -608,7 +758,43 @@ async function main() {
     collectCompanyUpdates(),
   ]);
 
-  const brief = await generateWithModel({ targetDate, githubProjects, companyUpdates });
+  const enhancedGithubProjects = await enhanceGithubProjects(githubProjects.slice(0, 10));
+  const brief = await generateWithModel({
+    targetDate,
+    githubProjects: enhancedGithubProjects,
+    companyUpdates,
+  });
+  const enhancedByName = new Map(enhancedGithubProjects.map((repo) => [repo.name, repo]));
+  brief.githubProjects = brief.githubProjects.map((project) => {
+    const repo = enhancedByName.get(project.title?.en ?? project.title?.zh);
+    if (!repo) return project;
+
+    return {
+      ...project,
+      summary: {
+        zh:
+          repo.enhancedSummary ||
+          buildChineseIntro(repo).zh.replace(/^中文简介：/, "") ||
+          project.summary?.zh ||
+          "暂无描述。",
+        en: repo.description || project.summary?.en || "No description.",
+      },
+      totalStars: repo.stars,
+      language: repo.language,
+      dailyStars: repo.starsToday,
+      chineseIntro: repo.enhancedChineseIntro
+        ? { zh: repo.enhancedChineseIntro, en: project.chineseIntro?.en ?? `Chinese intro: ${repo.description || ""}` }
+        : project.chineseIntro ?? buildChineseIntro(repo),
+      todayHighlight: repo.enhancedTodayHighlight
+        ? { zh: repo.enhancedTodayHighlight, en: project.todayHighlight?.en ?? buildTodayHighlight(repo).en }
+        : project.todayHighlight ?? buildTodayHighlight(repo),
+      inclusionReason: project.inclusionReason ?? buildGithubReason(repo),
+      pmInsight: {
+        zh: repo.enhancedPmInsight || project.pmInsight?.zh || "可作为判断 AI 应用形态和开发者采用方向的早期信号。",
+        en: project.pmInsight?.en || "Use it as an early signal for AI application patterns and developer adoption.",
+      },
+    };
+  });
 
   assertBriefShape(brief);
   brief.date = targetDate;
