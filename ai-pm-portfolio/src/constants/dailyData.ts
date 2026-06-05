@@ -37,6 +37,583 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-05",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI 信息源抓取日报",
+      "en": "AI source collection brief"
+    },
+    "editorNote": {
+      "zh": "这一版由自动化脚本基于真实来源抓取生成。配置模型 API key 后，会进一步生成更完整的产品经理视角总结。",
+      "en": "This version is generated from real collected sources. With a model API key configured, it will produce fuller PM-focused analysis."
+    },
+    "keyTakeaway": {
+      "zh": "本次抓取覆盖 30 个 GitHub AI 项目和 18 条 AI 公司动态，优先关注近期仍在活跃更新的 Agent、LLM 与 AI 工具方向。",
+      "en": "This run collected 30 AI GitHub projects and 18 company updates, prioritizing active Agent, LLM, and AI tooling signals."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "Agent 与 AI 工具链仍是高频更新方向",
+          "en": "Agents and AI tooling remain active update areas"
+        },
+        "category": {
+          "zh": "趋势信号",
+          "en": "Trend signal"
+        },
+        "summary": {
+          "zh": "GitHub 抓取中排名靠前的项目包括 chopratejas/headroom，说明开发者仍在围绕 Agent 运行时、工作流和 AI 工具效率做密集迭代。",
+          "en": "The collected GitHub signals include chopratejas/headroom, showing continued developer iteration around agent runtimes, workflows, and AI tooling efficiency."
+        },
+        "pmInsight": {
+          "zh": "产品经理可以重点观察这些项目如何处理任务状态、权限、失败恢复和可追溯输出，这些会直接影响 Agent 产品体验。",
+          "en": "Product managers can watch how these projects handle task state, permissions, recovery, and traceable output because these directly shape agent UX."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "chopratejas/headroom",
+            "url": "https://github.com/chopratejas/headroom"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "大公司更新继续围绕平台能力扩展",
+          "en": "Major AI companies keep expanding platform capabilities"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company signal"
+        },
+        "summary": {
+          "zh": "OpenAI 的最新动态「How Endava is redesigning software delivery around AI agents」值得回看其背后的平台策略和产品能力边界。",
+          "en": "OpenAI's update \"How Endava is redesigning software delivery around AI agents\" is worth reading for platform strategy and product capability boundaries."
+        },
+        "pmInsight": {
+          "zh": "大公司动作通常会改变用户对 AI 产品的默认预期，独立产品更需要寻找垂直任务和行业 SOP 的切入点。",
+          "en": "Major company moves often reset user expectations for AI products, so independent products need sharper vertical tasks and industry SOP entry points."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/endava-frontiers"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "chopratejas/headroom",
+          "en": "chopratejas/headroom"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
+        },
+        "totalStars": 12418,
+        "language": "Python",
+        "dailyStars": 3139,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 chopratejas/headroom 提供 AI 相关能力，原始描述为：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "en": "Chinese intro: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 3,139 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 3,139 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,418 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,418 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/chopratejas/headroom"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star NousResearch / hermes-agent The agent that grows with you",
+          "en": "Star NousResearch / hermes-agent The agent that grows with you"
+        },
+        "totalStars": 180938,
+        "language": "Python",
+        "dailyStars": 1951,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 NousResearch/hermes-agent 提供 AI 相关能力，原始描述为：Star NousResearch / hermes-agent The agent that grows with you",
+          "en": "Chinese intro: Star NousResearch / hermes-agent The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 1,951 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 1,951 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 180,938 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 180,938 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 207196,
+        "language": "JavaScript",
+        "dailyStars": 1736,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 affaan-m/ECC 提供 AI 相关能力，原始描述为：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "en": "Chinese intro: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 1,736 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 1,736 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,196 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 207,196 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Open-LLM-VTuber/Open-LLM-VTuber",
+          "en": "Open-LLM-VTuber/Open-LLM-VTuber"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "en": "Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
+        },
+        "totalStars": 9570,
+        "language": "Python",
+        "dailyStars": 583,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 Open-LLM-VTuber/Open-LLM-VTuber 提供 AI 相关能力，原始描述为：Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms",
+          "en": "Chinese intro: Star Open-LLM-VTuber / Open-LLM-VTuber Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 583 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 583 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,570 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,570 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NVIDIA/cosmos",
+          "en": "NVIDIA/cosmos"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+          "en": "Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more."
+        },
+        "totalStars": 8985,
+        "language": "Jupyter Notebook",
+        "dailyStars": 244,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 NVIDIA/cosmos 提供 AI 相关能力，原始描述为：Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+          "en": "Chinese intro: Star NVIDIA / cosmos NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 244 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 244 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,985 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,985 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NVIDIA/cosmos"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "mvanhorn/last30days-skill",
+          "en": "mvanhorn/last30days-skill"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
+        },
+        "totalStars": 27552,
+        "language": "Python",
+        "dailyStars": 173,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 mvanhorn/last30days-skill 提供 AI 相关能力，原始描述为：Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "en": "Chinese intro: Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 173 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 173 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,552 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,552 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/mvanhorn/last30days-skill"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "github/copilot-sdk",
+          "en": "github/copilot-sdk"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+          "en": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
+        },
+        "totalStars": 8960,
+        "language": "Java",
+        "dailyStars": 107,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 github/copilot-sdk 提供 AI 相关能力，原始描述为：Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+          "en": "Chinese intro: Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 107 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 107 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,960 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,960 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/github/copilot-sdk"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "PaddlePaddle/PaddleOCR",
+          "en": "PaddlePaddle/PaddleOCR"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+          "en": "Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
+        },
+        "totalStars": 79840,
+        "language": "Python",
+        "dailyStars": 105,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 PaddlePaddle/PaddleOCR 提供 AI 相关能力，原始描述为：Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+          "en": "Chinese intro: Star PaddlePaddle / PaddleOCR Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增 105 星；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增 105 星; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 79,840 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 79,840 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/PaddlePaddle/PaddleOCR"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Significant-Gravitas/AutoGPT",
+          "en": "Significant-Gravitas/AutoGPT"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "totalStars": 184765,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 Significant-Gravitas/AutoGPT 提供 AI 相关能力，原始描述为：AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "en": "Chinese intro: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增待精确统计；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,765 stars、46,190 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,765 stars and 46,190 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ollama/ollama",
+          "en": "ollama/ollama"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "totalStars": 173190,
+        "language": "Go",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "中文简介：该项目围绕 ollama/ollama 提供 AI 相关能力，原始描述为：Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+          "en": "Chinese intro: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "todayHighlight": {
+          "zh": "今日亮点：今日新增待精确统计；项目昨日以来保持活跃更新，方向与 AI/LLM/Agent/RAG 工具链相关，适合作为今天的开发者趋势候选观察。",
+          "en": "Today's highlight: 今日新增待精确统计; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,190 stars、16,442 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,190 stars and 16,442 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ollama/ollama"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: How Endava is redesigning software delivery around AI agents",
+          "en": "OpenAI: How Endava is redesigning software delivery around AI agents"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "summary": {
+          "zh": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+          "en": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
+        },
+        "pmInsight": {
+          "zh": "可从中观察平台公司正在强化的能力边界、行业场景和商业化叙事。",
+          "en": "Use this to observe the capability boundaries, vertical scenarios, and commercialization narrative platform companies are emphasizing."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/endava-frontiers"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "OpenAI: Dreaming: Better memory for a more helpful ChatGPT",
+          "en": "OpenAI: Dreaming: Better memory for a more helpful ChatGPT"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "summary": {
+          "zh": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+          "en": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
+        },
+        "pmInsight": {
+          "zh": "可从中观察平台公司正在强化的能力边界、行业场景和商业化叙事。",
+          "en": "Use this to observe the capability boundaries, vertical scenarios, and commercialization narrative platform companies are emphasizing."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/chatgpt-memory-dreaming"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "OpenAI: Biodefense in the Intelligence Age",
+          "en": "OpenAI: Biodefense in the Intelligence Age"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "summary": {
+          "zh": "An action plan for AI-powered biological resilience",
+          "en": "An action plan for AI-powered biological resilience"
+        },
+        "pmInsight": {
+          "zh": "可从中观察平台公司正在强化的能力边界、行业场景和商业化叙事。",
+          "en": "Use this to observe the capability boundaries, vertical scenarios, and commercialization narrative platform companies are emphasizing."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/biodefense-in-the-intelligence-age"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "机会：把 AI 日报做成可溯源产品雷达",
+          "en": "Opportunity: make the AI brief a traceable product radar"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product opportunity"
+        },
+        "summary": {
+          "zh": "真实价值不在于列链接，而在于每天把来源、判断、产品启发和历史快照沉淀下来。",
+          "en": "The value is not listing links, but preserving sources, judgment, PM implications, and daily snapshots."
+        },
+        "pmInsight": {
+          "zh": "下一步可以验证两件事：每天是否 5 分钟读完，以及每周是否能沉淀 1-2 个可讨论的产品机会。",
+          "en": "Next, validate whether it can be read in five minutes and whether it surfaces one or two discussable product opportunities each week."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hugging Face Blog",
+            "url": "https://huggingface.co/blog"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-04",
     "label": {
       "zh": "最新",
