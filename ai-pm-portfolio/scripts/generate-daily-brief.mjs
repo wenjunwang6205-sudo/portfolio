@@ -91,15 +91,80 @@ function buildChineseIntro(repo) {
   };
 }
 
+function formatStarCount(value) {
+  if (value >= 10000) {
+    return `${Math.floor(value / 1000)}k+`;
+  }
+  return value.toLocaleString("en-US");
+}
+
+function getRepoAgeMonths(createdAt) {
+  if (!createdAt) return null;
+  const days = Math.floor((Date.now() - new Date(createdAt).getTime()) / 86400000);
+  return Math.max(1, Math.round(days / 30));
+}
+
+function inferTrendingNarrative(repo) {
+  const text = `${repo.name} ${repo.description ?? ""} ${(repo.topics ?? []).join(" ")}`;
+
+  if (/video|short.?video|moneyprinter|turbo/i.test(text)) {
+    return "“一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播";
+  }
+  if (/\bui\b|\bux\b|user interface|design system|frontend/i.test(text)) {
+    return "多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温";
+  }
+  if (/agent|autogpt|crewai|langgraph/i.test(text)) {
+    return "作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注";
+  }
+  if (/rag|vector|embedding|retriev/i.test(text)) {
+    return "RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成";
+  }
+  if (/\bmcp\b|model context protocol/i.test(text)) {
+    return "MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散";
+  }
+  if (/compress|token|context window|headroom/i.test(text)) {
+    return "Agent/RAG 场景下 token 成本压力推动“上下文压缩”方案在工程圈快速传播";
+  }
+  if (/skill|workflow|automation|claude code|codex/i.test(text)) {
+    return "面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制";
+  }
+  return "项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显";
+}
+
 function buildTodayHighlight(repo) {
-  const starsTodayText =
-    typeof repo.starsToday === "number"
-      ? `今日新增 ${repo.starsToday.toLocaleString("en-US")} 星`
-      : "今日新增待精确统计";
-  const reason = buildGithubReason(repo).zh;
+  const segments = [];
+  const ageMonths = getRepoAgeMonths(repo.createdAt);
+  const dailyStars = repo.starsToday;
+  const totalStars = repo.stars ?? 0;
+  const narrative = inferTrendingNarrative(repo);
+
+  if (typeof repo.trendingRank === "number" && repo.trendingRank <= 20) {
+    segments.push(`登上 GitHub Trending 日榜第 ${repo.trendingRank} 位`);
+  }
+
+  if (typeof dailyStars === "number" && dailyStars >= 200) {
+    if (ageMonths && ageMonths <= 4 && totalStars >= 5000) {
+      segments.push(`创建仅约 ${ageMonths} 个月便已积累 ${formatStarCount(totalStars)} stars`);
+    } else if (totalStars >= 50000) {
+      segments.push(`总 star 数已达 ${formatStarCount(totalStars)}，持续占据 AI 开源热门榜单`);
+    }
+    segments.push(narrative);
+    segments.push(`今日新增 ${dailyStars.toLocaleString("en-US")} 星`);
+  } else {
+    if (ageMonths && ageMonths <= 4 && totalStars >= 5000) {
+      segments.push(`创建仅约 ${ageMonths} 个月便已积累 ${formatStarCount(totalStars)} stars`);
+    } else if (totalStars >= 50000) {
+      segments.push(`总 star 数已达 ${formatStarCount(totalStars)}，属于持续在榜的头部 AI 开源项目`);
+    }
+    segments.push(narrative);
+    if (typeof dailyStars === "number") {
+      segments.push(`今日新增 ${dailyStars.toLocaleString("en-US")} 星`);
+    }
+  }
+
   return {
-    zh: `今日亮点：${starsTodayText}；${reason}`,
-    en: `Today's highlight: ${starsTodayText}; the project stayed active since yesterday and is relevant to AI/LLM/Agent/RAG tooling, making it a developer trend candidate today.`,
+    zh: `今日亮点：${segments.filter(Boolean).join("，")}。`,
+    en: `Today's highlight: ${segments.filter(Boolean).join(", ")}.`,
   };
 }
 
@@ -122,7 +187,7 @@ async function collectTrendingProjects() {
     const html = await fetchText("https://github.com/trending?since=daily");
     const articles = html.match(/<article[\s\S]*?<\/article>/gi) ?? [];
     return articles
-      .map((article) => {
+      .map((article, index) => {
         const href = article.match(/<h2[\s\S]*?<a[^>]+href="\/([^"]+\/[^"]+)"/i)?.[1]?.trim();
         if (!href) return null;
 
@@ -150,6 +215,7 @@ async function collectTrendingProjects() {
           updatedAt: "",
           topics: [],
           starsToday: starsTodayText ? Number(starsTodayText.replace(/,/g, "")) : null,
+          trendingRank: index + 1,
         };
       })
       .filter(Boolean)
@@ -255,6 +321,61 @@ async function collectGithubProjects(targetDate) {
   return [...byUrl.values()]
     .sort((a, b) => (b.starsToday ?? -1) - (a.starsToday ?? -1) || b.stars - a.stars)
     .slice(0, 30);
+}
+
+async function fetchRepoDetails(name, headers) {
+  const data = await fetchJson(`https://api.github.com/repos/${name}`, headers);
+  return {
+    createdAt: data.created_at,
+    forks: data.forks_count ?? 0,
+    topics: data.topics ?? [],
+    stars: data.stargazers_count ?? 0,
+    pushedAt: data.pushed_at,
+    openIssues: data.open_issues_count ?? 0,
+  };
+}
+
+async function fetchReadmeSnippet(name, headers) {
+  try {
+    const data = await fetchJson(`https://api.github.com/repos/${name}/readme`, headers);
+    const content = Buffer.from(data.content, "base64").toString("utf8");
+    return content
+      .replace(/```[\s\S]*?```/g, " ")
+      .replace(/[#>*_\[\]()!-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 500);
+  } catch {
+    return "";
+  }
+}
+
+async function enrichGithubProjects(projects) {
+  const headers = process.env.GITHUB_TOKEN
+    ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
+    : {};
+  const enriched = [];
+
+  for (const repo of projects) {
+    try {
+      const [details, readmeSnippet] = await Promise.all([
+        fetchRepoDetails(repo.name, headers),
+        fetchReadmeSnippet(repo.name, headers),
+      ]);
+
+      enriched.push({
+        ...repo,
+        ...details,
+        topics: details.topics.length ? details.topics : repo.topics ?? [],
+        readmeSnippet,
+      });
+    } catch (error) {
+      console.warn(`GitHub enrich failed: ${repo.name}: ${error.message}`);
+      enriched.push(repo);
+    }
+  }
+
+  return enriched;
 }
 
 async function collectCompanyUpdates() {
@@ -423,7 +544,7 @@ function buildPrompt({ targetDate, githubProjects, companyUpdates }) {
 4. 所有 sources 必须来自输入数据里的 URL，不要编造链接。
 5. 输出必须是严格 JSON，不要 Markdown，不要解释文字。
 6. githubProjects 里的 chineseIntro.zh 必须是中文，不允许直接复制英文描述；用 1 句中文总结“这个项目是做什么的、解决什么问题、典型使用场景是什么”。格式必须以“中文简介:”开头。
-7. githubProjects 里的 todayHighlight.zh 必须是中文，格式必须以“今日亮点:”开头，说明今天为什么值得看。
+7. githubProjects 里的 todayHighlight.zh 必须是中文，格式必须以“今日亮点:”开头。重点解释「为什么今天快速上升或持续在榜」，不要重复项目功能描述。应结合传播叙事、生态位、项目年龄、star 增速等给出判断，并带上今日新增 star 等数据。
 8. JSON 必须符合这个 TypeScript 结构：
 {
   "date": string,
@@ -453,7 +574,7 @@ DailySignal = {
 
 数量建议：
 - signals: 2-3 条
-- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。chineseIntro.zh 必须是中文总结，不能是英文；todayHighlight 用“今日亮点:”开头，说明它为什么今天被放进来，例如 GitHub Trending 今日新增、近期更新、AI/LLM/Agent/RAG 方向相关、开发者采用信号、平台趋势信号、可借鉴的产品形态等
+- githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。chineseIntro.zh 必须是中文总结，不能是英文；todayHighlight 用“今日亮点:”开头，解释为什么今天快速上升或在榜（传播叙事/生态位/项目年龄/star 数据），不要写成项目功能复述
 - companyUpdates: 2-4 条
 - opportunities: 1-3 条
 
@@ -578,15 +699,20 @@ async function requestJsonPrompt(config, prompt, useJsonMode) {
 }
 
 function buildGithubEnhancementPrompt(projects) {
-  return `你是给 AI 产品经理写 GitHub 趋势日报的中文编辑。请把下面 10 个 GitHub 项目的英文描述改写成清楚、具体、易懂的中文解释。
+  return `你是给 AI 产品经理写 GitHub 趋势日报的中文编辑。请把下面 GitHub 项目改写成清楚、具体、易懂的中文解释，并写出「为什么今天值得关注」的上升理由。
 
 要求：
 1. 必须输出严格 JSON，不要 Markdown。
 2. 每个项目都要保留 name。
-3. chineseIntroZh 必须以“中文简介:”开头，用中文说明这个项目具体做什么、解决什么问题、适合什么场景。不要复制英文。
-4. todayHighlightZh 必须以“今日亮点:”开头，结合 dailyStars、totalStars、language、项目方向说明为什么今天值得关注。
-5. pmInsightZh 用一句中文说明产品经理应该从这个项目观察什么。
-6. 不要夸大，不要编造原始输入里没有的具体社交提及数。
+3. summaryZh 用 1 句中文说明项目做什么。
+4. chineseIntroZh 必须以“中文简介:”开头，说明项目做什么、解决什么问题、适合什么场景。不要复制英文。
+5. todayHighlightZh 必须以“今日亮点:”开头，重点解释「为什么今天快速上升或持续在榜」，不要重复项目功能。应结合传播叙事、生态位、项目年龄、star 增速等给出判断，并带上今日新增 star、总 star 等可验证数据。
+6. pmInsightZh 用一句中文说明产品经理应该从这个项目观察什么。
+7. 不要编造输入里没有的社交提及数、榜单名次、用户反馈数量。
+8. 可参考以下写法风格（不要照抄，需结合输入数据）：
+   - 多语言社区同步传播，“一键出片”叙事在短视频创作者圈引爆，今日新增809星
+   - 创建仅约两个月便已积累10k+ stars，今日新增265，多名开发者反馈微 SaaS 产品 UI/UX 改造后效果显著
+   - 作为 AI Agent 数据管道的重要基础组件，随 Agent 生态爆发持续获得新增关注，今日新增377 stars，总 star 数已近10万
 
 输出结构：
 {
@@ -608,8 +734,14 @@ ${JSON.stringify(
     description: repo.description,
     totalStars: repo.stars,
     dailyStars: repo.starsToday,
+    forks: repo.forks,
     language: repo.language,
     topics: repo.topics,
+    createdAt: repo.createdAt,
+    repoAgeMonths: getRepoAgeMonths(repo.createdAt),
+    trendingRank: repo.trendingRank,
+    pushedAt: repo.pushedAt,
+    readmeSnippet: repo.readmeSnippet,
   })),
   null,
   2,
@@ -758,7 +890,9 @@ async function main() {
     collectCompanyUpdates(),
   ]);
 
-  const enhancedGithubProjects = await enhanceGithubProjects(githubProjects.slice(0, 10));
+  const enhancedGithubProjects = await enhanceGithubProjects(
+    await enrichGithubProjects(githubProjects.slice(0, 10)),
+  );
   const brief = await generateWithModel({
     targetDate,
     githubProjects: enhancedGithubProjects,
