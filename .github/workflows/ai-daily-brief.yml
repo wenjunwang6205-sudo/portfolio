@@ -19,6 +19,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: ai-daily-brief
@@ -27,6 +29,9 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -67,3 +72,19 @@ jobs:
           git add ai-pm-portfolio/src/constants/dailyData.ts
           git commit -m "Update AI daily brief"
           git push
+
+      - name: Build static site
+        working-directory: ai-pm-portfolio
+        run: npm run build
+
+      - name: Add SPA fallback
+        run: cp ai-pm-portfolio/dist/index.html ai-pm-portfolio/dist/404.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./ai-pm-portfolio/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
