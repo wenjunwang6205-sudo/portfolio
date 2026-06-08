@@ -2,8 +2,10 @@ name: Generate AI Daily Brief
 
 on:
   schedule:
-    # 08:00 Asia/Shanghai. GitHub Actions cron uses UTC.
-    - cron: "0 0 * * *"
+    # GitHub Actions cron uses UTC. Avoid the top of the hour because it is often delayed.
+    # 08:17 Asia/Shanghai primary run, 09:17 backup run for missed/delayed schedules.
+    - cron: "17 0 * * *"
+    - cron: "17 1 * * *"
   push:
     branches:
       - main
