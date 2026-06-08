@@ -44,110 +44,118 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI Agent 生态分化：审美力、离线生存与垂直专业成新战场",
-      "en": "AI Agent Ecosystem Diversifies: Aesthetics, Offline Survival, and Vertical Specialization Emerge as New Frontiers"
+      "zh": "AI 代理生态爆发：从工具到伙伴的跨越",
+      "en": "AI Agent Ecosystem Explosion: From Tools to Companions"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势显示，AI Agent 领域正从通用框架向「审美增强」「离线自主」「垂直专业」等细分方向分化。同时，OpenAI 在记忆、生物防御等方向的动作，为产品经理提供了差异化与合规化的双重信号。",
-      "en": "Today's GitHub trends show AI Agent space diversifying from general frameworks into specialized directions like 'aesthetic enhancement', 'offline autonomy', and 'vertical expertise'. Meanwhile, OpenAI's moves on memory and biodefense offer PMs signals for differentiation and compliance."
+      "zh": "今日 GitHub 与 OpenAI 动态共同指向一个趋势：AI 代理正从单一任务执行器进化为具备记忆、审美和自主决策能力的智能体，企业级落地案例与开源组件同步成熟。",
+      "en": "Today's GitHub and OpenAI updates point to a trend: AI agents are evolving from single-task executors to intelligent entities with memory, aesthetics, and autonomous decision-making, with enterprise adoption and open-source components maturing in tandem."
     },
     "keyTakeaway": {
-      "zh": "AI Agent 竞争进入「体验分化」阶段：用户不再满足于功能，开始追求审美、自主性与专业深度。",
-      "en": "AI Agent competition enters 'experience differentiation' phase: users demand aesthetics, autonomy, and domain depth beyond basic functionality."
+      "zh": "AI 代理生态进入「能力整合」阶段：记忆系统（OpenAI Dreaming）、审美技能（taste-skill）、跨平台研究（last30days-skill）等组件化能力涌现，推动代理从工具向伙伴进化。",
+      "en": "The AI agent ecosystem enters a 'capability integration' phase: memory systems (OpenAI Dreaming), aesthetic skills (taste-skill), cross-platform research (last30days-skill) emerge as modular capabilities, driving agents from tools to companions."
     },
     "signals": [
       {
         "title": {
-          "zh": "「反 slop」叙事催生 AI 审美力需求",
-          "en": "'Anti-slop' narrative drives demand for AI aesthetics"
+          "zh": "代理记忆系统成为差异化关键",
+          "en": "Agent Memory Systems Become Key Differentiator"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "taste-skill 项目（3.6 万星）通过注入设计审美阻止 AI 生成低质量界面，社区反响强烈。同时，hermes-agent 等通用框架增长放缓，表明用户从「能用」转向「好用」。",
-          "en": "taste-skill (36k stars) blocks low-quality AI-generated UI by injecting design taste, with strong community response. Meanwhile, general frameworks like hermes-agent show slower growth, indicating user shift from 'functional' to 'delightful'."
+          "zh": "OpenAI 推出 ChatGPT 新记忆系统 'Dreaming'，实现跨会话持久记忆；同时开源项目 ECC（21 万星）提供记忆模块，hermes-agent（18.6 万星）支持进化式代理。",
+          "en": "OpenAI launches ChatGPT new memory system 'Dreaming' for persistent cross-session memory; open-source project ECC (210K stars) offers memory module, hermes-agent (186K stars) supports evolving agents."
         },
         "pmInsight": {
-          "zh": "产品经理应将「审美质量」作为 AI 产品的核心体验指标，考虑集成类似 taste-skill 的审美层，或自研设计规则引擎，以提升用户满意度和留存。",
-          "en": "PMs should treat 'aesthetic quality' as a core UX metric, consider integrating aesthetic layers like taste-skill or building custom design rule engines to boost satisfaction and retention."
+          "zh": "记忆能力是代理从工具升级为伙伴的核心。PM 应优先评估记忆模块的集成方案，在用户留存和个性化体验上建立壁垒。",
+          "en": "Memory is core to upgrading agents from tools to companions. PMs should prioritize evaluating memory module integration to build moats in user retention and personalization."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "taste-skill GitHub",
-            "url": "https://github.com/Leonxlnx/taste-skill"
+            "label": "OpenAI: Dreaming",
+            "url": "https://openai.com/index/chatgpt-memory-dreaming"
           },
           {
-            "label": "hermes-agent GitHub",
+            "label": "ECC on GitHub",
+            "url": "https://github.com/affaan-m/ECC"
+          },
+          {
+            "label": "hermes-agent on GitHub",
             "url": "https://github.com/NousResearch/hermes-agent"
           }
         ]
       },
       {
         "title": {
-          "zh": "离线自主 AI 成为极端场景刚需",
-          "en": "Offline autonomous AI becomes essential for extreme scenarios"
+          "zh": "审美与内容生成技能组件化，降低 AI 应用门槛",
+          "en": "Aesthetic and Content Generation Skills Become Modular, Lowering AI App Barriers"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "project-nomad（2.9 万星）提供离线生存计算机，集成 AI 与工具，在灾难应急等场景受关注。同时，llama.cpp 和 ollama 持续增长，显示本地推理需求旺盛。",
-          "en": "project-nomad (29k stars) offers offline survival computer with AI and tools, gaining traction in disaster scenarios. Meanwhile, llama.cpp and ollama continue growing, indicating strong demand for local inference."
+          "zh": "taste-skill（3.7 万星）为 AI 编程注入审美，last30days-skill（3.2 万星）实现跨平台研究摘要，AiToEarn（1.9 万星）自动生成短视频。三者均以技能/插件形式存在，可即插即用。",
+          "en": "taste-skill (37K stars) injects aesthetics into AI coding, last30days-skill (32K stars) enables cross-platform research summaries, AiToEarn (19K stars) auto-generates short videos. All exist as plug-and-play skills/plugins."
         },
         "pmInsight": {
-          "zh": "产品经理可探索离线 AI 产品形态，如应急助手、野外导航、断网知识库，并考虑与硬件厂商合作，打造「AI 生存套件」类产品。",
-          "en": "PMs can explore offline AI products like emergency assistants, wilderness navigation, or disconnected knowledge bases, and consider partnering with hardware vendors for 'AI survival kits'."
+          "zh": "技能组件化意味着 PM 可以像搭积木一样构建代理能力。建议关注技能市场/商店模式，通过生态激励第三方开发者贡献技能，快速覆盖长尾场景。",
+          "en": "Skill modularization means PMs can build agent capabilities like building blocks. Consider skill marketplace/store models, incentivize third-party developers to contribute skills, quickly cover long-tail scenarios."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "project-nomad GitHub",
-            "url": "https://github.com/Crosstalk-Solutions/project-nomad"
+            "label": "taste-skill on GitHub",
+            "url": "https://github.com/Leonxlnx/taste-skill"
           },
           {
-            "label": "llama.cpp GitHub",
-            "url": "https://github.com/ggml-org/llama.cpp"
+            "label": "last30days-skill on GitHub",
+            "url": "https://github.com/mvanhorn/last30days-skill"
           },
           {
-            "label": "ollama GitHub",
-            "url": "https://github.com/ollama/ollama"
+            "label": "AiToEarn on GitHub",
+            "url": "https://github.com/yikart/AiToEarn"
           }
         ]
       },
       {
         "title": {
-          "zh": "垂直领域 AI 模型加速专业化，生物医药成焦点",
-          "en": "Vertical AI models accelerate specialization, biopharma in focus"
+          "zh": "企业级代理落地加速，垂直领域模型深化",
+          "en": "Enterprise Agent Adoption Accelerates, Vertical Domain Models Deepen"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "OpenAI 发布 GPT-Rosalind 新能力，强化生物推理与药物化学；同时发布生物防御行动计划。GitHub 上 ECC 项目（20.9 万星）提供 Agent 性能优化，跨工具兼容，为垂直 Agent 提供基础设施。",
-          "en": "OpenAI released new GPT-Rosalind capabilities for biological reasoning and drug chemistry, alongside a biodefense plan. On GitHub, ECC (209k stars) offers agent performance optimization and cross-tool compatibility, providing infrastructure for vertical agents."
+          "zh": "OpenAI 发布 Endava 案例（AI 代理重构软件交付）和 GPT-Rosalind 新能力（生物学推理），同时开源项目 goose（4.8 万星）获 Linux 基金会背书，project-nomad（3 万星）聚焦离线生存场景。",
+          "en": "OpenAI publishes Endava case (AI agents redesigning software delivery) and GPT-Rosalind new capabilities (biological reasoning); open-source goose (48K stars) backed by Linux Foundation, project-nomad (30K stars) focuses on offline survival."
         },
         "pmInsight": {
-          "zh": "产品经理应关注垂直领域（如生物医药、法律、金融）的 AI 产品机会，利用 ECC 等基础设施快速构建专业 Agent，同时注意合规与伦理风险。",
-          "en": "PMs should focus on vertical AI product opportunities (e.g., biopharma, legal, finance), leverage infrastructure like ECC to quickly build specialized agents, while monitoring compliance and ethical risks."
+          "zh": "企业级代理需要行业深度定制。PM 应关注垂直领域（如生物、离线）的代理解决方案，与开源基金会合作提升可信度，同时借鉴 Endava 案例设计 AI 原生工作流。",
+          "en": "Enterprise agents require deep industry customization. PMs should focus on vertical solutions (e.g., biotech, offline), collaborate with open-source foundations for credibility, and learn from Endava case to design AI-native workflows."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "OpenAI GPT-Rosalind",
+            "label": "OpenAI: Endava case",
+            "url": "https://openai.com/index/endava-frontiers"
+          },
+          {
+            "label": "OpenAI: GPT-Rosalind",
             "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
           },
           {
-            "label": "OpenAI Biodefense",
-            "url": "https://openai.com/index/biodefense-in-the-intelligence-age"
+            "label": "goose on GitHub",
+            "url": "https://github.com/aaif-goose/goose"
           },
           {
-            "label": "ECC GitHub",
-            "url": "https://github.com/affaan-m/ECC"
+            "label": "project-nomad on GitHub",
+            "url": "https://github.com/Crosstalk-Solutions/project-nomad"
           }
         ]
       }
@@ -155,55 +163,67 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "打造「AI 审美增强」中间件产品",
-          "en": "Build an 'AI aesthetic enhancement' middleware product"
+          "zh": "构建「代理技能商店」平台",
+          "en": "Build an 'Agent Skill Store' Platform"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "基于 taste-skill 的成功，开发一个跨平台的 AI 输出审美增强层，可集成到现有 AI 工具中，自动优化 UI 生成、文案风格、视觉设计等。假设：用户愿意为「更好看的 AI 输出」付费，尤其是设计师和内容创作者。",
-          "en": "Based on taste-skill's success, develop a cross-platform aesthetic enhancement layer for AI outputs, integrating into existing AI tools to auto-optimize UI generation, copy style, visual design. Hypothesis: users will pay for 'better-looking AI output', especially designers and content creators."
+          "zh": "基于 taste-skill、last30days-skill 等组件化技能的成功，可验证假设：一个集中式的技能市场能加速代理生态发展。产品假设：推出技能商店，允许开发者上传/下载技能，平台抽成或订阅收费，初期聚焦编程、内容创作、研究三大类。",
+          "en": "Based on the success of modular skills like taste-skill and last30days-skill, the hypothesis is that a centralized skill marketplace can accelerate agent ecosystem growth. Product hypothesis: launch a skill store allowing developers to upload/download skills, with platform commission or subscription fees, initially focusing on coding, content creation, and research."
         },
         "pmInsight": {
-          "zh": "产品形态可以是插件、API 或独立应用，初期聚焦前端开发者和自媒体创作者，通过免费增值模式验证付费意愿。",
-          "en": "Product could be plugin, API, or standalone app, initially targeting frontend developers and content creators, using freemium to validate willingness to pay."
+          "zh": "PM 可快速验证：与现有代理框架（如 hermes-agent、AutoGPT）集成，提供 SDK 和认证机制，吸引头部技能开发者入驻。",
+          "en": "PMs can quickly validate: integrate with existing agent frameworks (e.g., hermes-agent, AutoGPT), provide SDK and certification mechanisms, attract top skill developers."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "taste-skill GitHub",
+            "label": "taste-skill on GitHub",
             "url": "https://github.com/Leonxlnx/taste-skill"
+          },
+          {
+            "label": "last30days-skill on GitHub",
+            "url": "https://github.com/mvanhorn/last30days-skill"
+          },
+          {
+            "label": "hermes-agent on GitHub",
+            "url": "https://github.com/NousResearch/hermes-agent"
           }
         ]
       },
       {
         "title": {
-          "zh": "开发面向生物医药研发的 AI Agent 平台",
-          "en": "Develop an AI Agent platform for biopharma R&D"
+          "zh": "开发「离线 AI 代理」产品，瞄准应急与偏远场景",
+          "en": "Develop 'Offline AI Agent' Products Targeting Emergency and Remote Scenarios"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "结合 OpenAI GPT-Rosalind 的专业能力和 ECC 的 Agent 优化框架，构建一个专为生物医药研发设计的 AI Agent 平台，支持药物发现、基因组分析、实验自动化。假设：生物医药公司愿意为加速研发流程的 AI 工具支付高额订阅费。",
-          "en": "Combine OpenAI GPT-Rosalind's domain capabilities with ECC's agent optimization framework to build an AI Agent platform for biopharma R&D, supporting drug discovery, genomics, lab automation. Hypothesis: biopharma companies will pay high subscription fees for AI tools that accelerate R&D."
+          "zh": "project-nomad（3 万星）和 llama.cpp（11.5 万星）显示离线 AI 需求真实存在。产品假设：结合 ollama 的本地模型运行能力与 project-nomad 的离线生存设计，打造一款面向户外、应急、军事的离线代理设备，预装知识库和 AI 推理能力。",
+          "en": "project-nomad (30K stars) and llama.cpp (115K stars) show real demand for offline AI. Product hypothesis: combine ollama's local model running capability with project-nomad's offline survival design to create an offline agent device for outdoor, emergency, and military use, pre-loaded with knowledge base and AI inference."
         },
         "pmInsight": {
-          "zh": "产品需与药企、CRO 合作，提供合规的数据处理和安全保障，初期可聚焦于文献挖掘和分子设计等痛点场景。",
-          "en": "Product needs partnerships with pharma companies and CROs, ensure compliance and data security, initially focus on pain points like literature mining and molecular design."
+          "zh": "PM 可先做软件原型：基于 llama.cpp 和 ollama 构建离线代理 App，集成记忆和技能组件，在特定用户群（如野外探险、救援队）中测试。",
+          "en": "PMs can start with a software prototype: build an offline agent app based on llama.cpp and ollama, integrate memory and skill components, test with specific user groups (e.g., outdoor explorers, rescue teams)."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI GPT-Rosalind",
-            "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind"
+            "label": "project-nomad on GitHub",
+            "url": "https://github.com/Crosstalk-Solutions/project-nomad"
           },
           {
-            "label": "ECC GitHub",
-            "url": "https://github.com/affaan-m/ECC"
+            "label": "llama.cpp on GitHub",
+            "url": "https://github.com/ggml-org/llama.cpp"
+          },
+          {
+            "label": "ollama on GitHub",
+            "url": "https://github.com/ollama/ollama"
           }
         ]
       }
@@ -219,26 +239,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个可随用户成长而进化的 AI 智能体框架，支持多种大模型（如 Claude、ChatGPT），适用于构建个性化、可扩展的 AI 助手。",
+          "zh": "一个可随用户成长而进化的 AI 代理框架，支持多种大模型（如 Claude、ChatGPT），适用于构建自主智能体应用。",
           "en": "Star NousResearch / hermes-agent The agent that grows with you"
         },
-        "totalStars": 185946,
+        "totalStars": 186330,
         "language": "Python",
         "dailyStars": 1112,
         "chineseIntro": {
-          "zh": "一个可随用户成长而进化的 AI 智能体框架，支持多种大模型（如 Claude、ChatGPT），适用于构建个性化、可扩展的 AI 助手。",
+          "zh": "一个可随用户成长而进化的 AI 代理框架，支持多种大模型（如 Claude、ChatGPT），适用于构建自主智能体应用。",
           "en": "Star NousResearch / hermes-agent The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "作为老牌 AI Agent 项目，凭借稳定的社区基础和持续的功能迭代，今日新增 1112 星，总星数达 18.6 万，稳居趋势榜前列。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 185k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,112 星."
+          "zh": "作为老牌 AI 代理项目，持续获得社区关注，今日新增 1112 星，总星数达 18.6 万，生态位稳固。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 186k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,112 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,946 stars、31,985 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,946 stars and 31,985 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 186,330 stars、32,055 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 186,330 stars and 32,055 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察其如何通过模块化设计支持不同 LLM 和用户自定义成长路径，这代表了 AI Agent 从工具向伙伴演进的趋势。",
+          "zh": "观察 AI 代理框架如何通过模块化设计降低开发门槛，以及多模型兼容性对用户粘性的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -262,7 +282,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Python 开源项目，Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
-        "totalStars": 31004,
+        "totalStars": 31905,
         "language": "Python",
         "dailyStars": 1111,
         "chineseIntro": {
@@ -274,8 +294,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 1,111 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,004 stars、2,593 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,004 stars and 2,593 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,905 stars、2,660 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,905 stars and 2,660 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -299,26 +319,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "给 AI 编程助手注入「审美力」的 Skill 包，安装后能阻止 AI 生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位——层级感、留白、排版一步到位。",
+          "zh": "给 AI 编程助手注入「审美力」的 Claude Skill，安装后能有效阻止 AI 生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位。",
           "en": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop"
         },
-        "totalStars": 36631,
+        "totalStars": 37269,
         "language": "Shell",
         "dailyStars": 1103,
         "chineseIntro": {
-          "zh": "给 AI 编程助手注入「审美力」的 Skill 包，安装后能阻止 AI 生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位——层级感、留白、排版一步到位。",
+          "zh": "给 AI 编程助手注入「审美力」的 Claude Skill，安装后能有效阻止 AI 生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位。",
           "en": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop"
         },
         "todayHighlight": {
-          "zh": "创建仅 4 个月便积累 3.6 万星，今日新增 1103 星，开发者社区中「反 slop」叙事引发共鸣，多名用户反馈前端质量显著提升。",
-          "en": "登上 GitHub Trending 日榜第 3 位, 创建仅约 4 个月便已积累 36k+ stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 1,103 星."
+          "zh": "创建仅 4 个月便积累 3.7 万星，今日新增 1103 星，开发者社区对「反垃圾」叙事高度共鸣，传播效应显著。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 创建仅约 4 个月便已积累 37k+ stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 1,103 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 36,631 stars、2,642 forks，topics: agent, ai, claude, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 36,631 stars and 2,642 forks，topics: agent, ai, claude, claude-code, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 37,269 stars、2,668 forks，topics: agent, ai, claude, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 37,269 stars and 2,668 forks，topics: agent, ai, claude, claude-code, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程工具如何通过「审美」差异化建立壁垒，这可能是未来 AI 辅助设计产品的关键竞争点。",
+          "zh": "关注 AI 编程工具中「审美」需求如何成为差异化卖点，以及技能插件生态对产品粘性的提升。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +359,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一款开源、可扩展的 AI 智能体，超越代码建议，能安装、执行、编辑和测试，支持任意 LLM，适用于开发工作流自动化。",
+          "zh": "开源、可扩展的 AI 代理，超越代码建议，支持安装、执行、编辑和测试，可与任何大语言模型配合使用。",
           "en": "Star aaif-goose / goose an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
         },
-        "totalStars": 47511,
+        "totalStars": 47659,
         "language": "Rust",
         "dailyStars": 322,
         "chineseIntro": {
-          "zh": "一款开源、可扩展的 AI 智能体，超越代码建议，能安装、执行、编辑和测试，支持任意 LLM，适用于开发工作流自动化。",
+          "zh": "开源、可扩展的 AI 代理，超越代码建议，支持安装、执行、编辑和测试，可与任何大语言模型配合使用。",
           "en": "Star aaif-goose / goose an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
         },
         "todayHighlight": {
-          "zh": "迁移至 Linux 基金会旗下 AAIF 后获得更多企业关注，今日新增 322 星，总星数 4.7 万，生态位从个人工具向企业级 Agent 平台跃迁。",
+          "zh": "已迁移至 Linux 基金会旗下，今日新增 322 星，总星数 4.7 万，组织背书增强可信度。",
           "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注, 今日新增 322 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 47,511 stars、5,014 forks，topics: acp, ai, ai-agents, mcp，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 47,511 stars and 5,014 forks，topics: acp, ai, ai-agents, mcp, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 47,659 stars、5,023 forks，topics: acp, ai, ai-agents, mcp，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 47,659 stars and 5,023 forks，topics: acp, ai, ai-agents, mcp, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察其从个人项目到基金会治理的转型路径，这为开源 AI 产品的商业化提供了参考。",
+          "zh": "观察开源 AI 代理项目通过基金会治理获得长期发展的模式，以及跨模型兼容性对用户采纳的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +399,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个自包含的离线生存计算机，集成了关键工具、知识和 AI，确保在任何地点、任何时间都能保持信息获取和决策能力。",
+          "zh": "一款自包含的离线生存计算机，集成了关键工具、知识和 AI，确保用户在任何时间、任何地点都能保持信息畅通和自主能力。",
           "en": "Star Crosstalk-Solutions / project-nomad Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere."
         },
-        "totalStars": 29723,
+        "totalStars": 29848,
         "language": "TypeScript",
         "dailyStars": 309,
         "chineseIntro": {
-          "zh": "一个自包含的离线生存计算机，集成了关键工具、知识和 AI，确保在任何地点、任何时间都能保持信息获取和决策能力。",
+          "zh": "一款自包含的离线生存计算机，集成了关键工具、知识和 AI，确保用户在任何时间、任何地点都能保持信息畅通和自主能力。",
           "en": "Star Crosstalk-Solutions / project-nomad Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere."
         },
         "todayHighlight": {
-          "zh": "离线 AI 概念在极端场景（如灾难应急、野外探险）中引发关注，今日新增 309 星，总星数 2.9 万，社区讨论集中在自主性和可靠性。",
+          "zh": "今日新增 309 星，总星数近 3 万，离线 AI 概念在应急和偏远场景中引发关注。",
           "en": "登上 GitHub Trending 日榜第 8 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 309 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,723 stars、2,945 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,723 stars and 2,945 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,848 stars、2,959 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,848 stars and 2,959 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注离线 AI 产品的场景化设计，这可能是 AI 从云端走向边缘的重要应用方向。",
+          "zh": "思考离线 AI 设备在特殊场景（如灾难、无网络环境）中的产品机会，以及硬件+软件整合的壁垒。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +439,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向一人公司的 AI 内容营销智能体，支持自动生成并发布到抖音、快手、小红书等平台，实现用 AI 赚钱。",
+          "zh": "面向一人公司的 AI 内容营销智能体，支持自动生成并发布短视频到抖音、快手、小红书等平台，实现 AI 变现。",
           "en": "Star yikart / AiToEarn Let's use AI to Earn!"
         },
-        "totalStars": 18756,
+        "totalStars": 19002,
         "language": "TypeScript",
         "dailyStars": 183,
         "chineseIntro": {
-          "zh": "面向一人公司的 AI 内容营销智能体，支持自动生成并发布到抖音、快手、小红书等平台，实现用 AI 赚钱。",
+          "zh": "面向一人公司的 AI 内容营销智能体，支持自动生成并发布短视频到抖音、快手、小红书等平台，实现 AI 变现。",
           "en": "Star yikart / AiToEarn Let's use AI to Earn!"
         },
         "todayHighlight": {
-          "zh": "中文社区「AI 副业」热潮持续，今日新增 183 星，总星数 1.8 万，多平台自动发布功能切中自媒体创作者的痛点。",
+          "zh": "今日新增 183 星，总星数 1.9 万，持续在中文创作者圈传播，「AI 赚钱」叙事吸引力强。",
           "en": "登上 GitHub Trending 日榜第 6 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 183 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,756 stars、2,909 forks，topics: auto-publish, douyin, douyin-api, electron-app, electron-react，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,756 stars and 2,909 forks，topics: auto-publish, douyin, douyin-api, electron-app, electron-react, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,002 stars、2,936 forks，topics: auto-publish, douyin, douyin-api, electron-app, electron-react，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,002 stars and 2,936 forks，topics: auto-publish, douyin, douyin-api, electron-app, electron-react, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察其如何平衡内容质量与多平台适配，这代表了 AI 在内容营销领域的落地范式。",
+          "zh": "关注 AI 工具如何降低内容创作门槛，以及多平台自动发布对个人创业者的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +479,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "用 C/C++ 实现的高性能 LLM 推理引擎，支持在本地运行多种大模型，是 AI 本地化部署的核心基础设施。",
+          "zh": "用 C/C++ 实现的高性能大语言模型推理引擎，支持在本地设备上运行多种开源模型，是 AI 本地化部署的核心基础设施。",
           "en": "Star ggml-org / llama.cpp LLM inference in C/C++"
         },
-        "totalStars": 115326,
+        "totalStars": 115446,
         "language": "C++",
         "dailyStars": 158,
         "chineseIntro": {
-          "zh": "用 C/C++ 实现的高性能 LLM 推理引擎，支持在本地运行多种大模型，是 AI 本地化部署的核心基础设施。",
+          "zh": "用 C/C++ 实现的高性能大语言模型推理引擎，支持在本地设备上运行多种开源模型，是 AI 本地化部署的核心基础设施。",
           "en": "Star ggml-org / llama.cpp LLM inference in C/C++"
         },
         "todayHighlight": {
-          "zh": "作为持续 40 个月的老牌项目，今日新增 158 星，总星数 11.5 万，凭借稳定性和对新模型的支持，始终是本地推理的首选方案。",
+          "zh": "今日新增 158 星，总星数 11.5 万，作为经典项目持续获得更新，生态地位稳固。",
           "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 115k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 158 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 115,326 stars、19,302 forks，topics: ggml，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 115,326 stars and 19,302 forks，topics: ggml, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 115,446 stars、19,320 forks，topics: ggml，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 115,446 stars and 19,320 forks，topics: ggml, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注其如何通过性能优化和模型兼容性维持长期竞争力，这为基础设施类开源产品提供了长青样本。",
+          "zh": "观察本地推理引擎如何推动 AI 应用从云端走向边缘，以及性能优化对用户体验的关键作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +519,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI 智能体的性能优化系统，提供技能、本能、记忆、安全等功能，兼容 Claude Code、Codex、Cursor 等多种开发工具。",
+          "zh": "AI 代理的性能优化系统，提供技能、本能、记忆、安全等功能，兼容 Claude Code、Codex 等多种开发工具。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 209845,
+        "totalStars": 210070,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "AI 智能体的性能优化系统，提供技能、本能、记忆、安全等功能，兼容 Claude Code、Codex、Cursor 等多种开发工具。",
+          "zh": "AI 代理的性能优化系统，提供技能、本能、记忆、安全等功能，兼容 Claude Code、Codex 等多种开发工具。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "创建仅 5 个月便获得 20.9 万星，今日新增未披露但增速惊人，多语言文档和跨工具兼容性使其迅速成为 Agent 开发者的标配。",
-          "en": "总 star 数已达 209k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注."
+          "zh": "今日新增数据缺失，但总星数高达 21 万，创建仅 5 个月即成为现象级项目，社区传播极快。",
+          "en": "总 star 数已达 210k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 209,845 stars、32,170 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 209,845 stars and 32,170 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 210,070 stars、32,211 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 210,070 stars and 32,211 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察其如何通过「技能+本能」架构定义 Agent 开发范式，这可能是未来 AI 开发工具的标准组件。",
+          "zh": "分析 AI 代理工具链中「性能优化」品类的爆发潜力，以及多工具兼容策略对市场覆盖的推动。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +559,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "实现人人可用的 AI 智能体愿景，提供构建、部署和运行自主 AI 代理的工具，支持多种大模型。",
+          "zh": "实现人人可用的 AI 自主代理，提供构建和部署智能体的工具，让用户专注于核心任务。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 184828,
+        "totalStars": 184832,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "实现人人可用的 AI 智能体愿景，提供构建、部署和运行自主 AI 代理的工具，支持多种大模型。",
+          "zh": "实现人人可用的 AI 自主代理，提供构建和部署智能体的工具，让用户专注于核心任务。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "作为 AI Agent 领域的开创性项目，今日新增未披露，总星数 18.4 万，持续迭代保持影响力，社区生态成熟。",
+          "zh": "今日新增数据缺失，总星数 18.5 万，作为 AI 代理领域的元老项目，持续引领社区讨论。",
           "en": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,828 stars、46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,828 stars and 46,185 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,832 stars、46,187 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,832 stars and 46,187 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注其从实验性项目到平台化产品的演进，这代表了 AI Agent 从概念到落地的完整路径。",
+          "zh": "思考早期 AI 代理项目如何通过持续迭代保持影响力，以及开源社区治理对项目长期发展的作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +599,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "让用户轻松在本地运行 Kimi、DeepSeek、Qwen 等主流开源大模型的工具，支持 macOS、Windows、Linux 和 Docker。",
+          "zh": "一键运行多种开源大模型（如 DeepSeek、Qwen、Gemma 等）的本地工具，让开发者轻松在个人电脑上体验和部署 LLM。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
-        "totalStars": 173500,
+        "totalStars": 173526,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "让用户轻松在本地运行 Kimi、DeepSeek、Qwen 等主流开源大模型的工具，支持 macOS、Windows、Linux 和 Docker。",
+          "zh": "一键运行多种开源大模型（如 DeepSeek、Qwen、Gemma 等）的本地工具，让开发者轻松在个人电脑上体验和部署 LLM。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
-          "zh": "持续 36 个月的热门项目，今日新增未披露，总星数 17.3 万，凭借对新模型的快速支持和易用性，成为本地 LLM 运行的事实标准。",
+          "zh": "今日新增数据缺失，总星数 17.3 万，作为本地模型运行的标准工具，随开源模型爆发持续增长。",
           "en": "总 star 数已达 173k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,500 stars、16,496 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,500 stars and 16,496 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,526 stars、16,501 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,526 stars and 16,501 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察其如何通过「模型市场」策略构建生态，这为 AI 工具的平台化提供了借鉴。",
+          "zh": "关注本地模型运行工具如何成为 AI 开发者的必备基础设施，以及模型兼容性对用户选择的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,19 +645,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "OpenAI 与 Endava 合作，利用 AI 代理、ChatGPT Enterprise 和 Codex 加速软件交付并自动化工作流。",
+          "zh": "Endava 利用 OpenAI 的 AI 代理、ChatGPT Enterprise 和 Codex 重构软件交付流程，实现工作流自动化和 AI 原生文化转型。",
           "en": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
         },
         "chineseIntro": {
-          "zh": "OpenAI 与 Endava 合作，利用 AI 代理、ChatGPT Enterprise 和 Codex 加速软件交付并自动化工作流。",
+          "zh": "Endava 利用 OpenAI 的 AI 代理、ChatGPT Enterprise 和 Codex 重构软件交付流程，实现工作流自动化和 AI 原生文化转型。",
           "en": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
         },
         "todayHighlight": {
-          "zh": "展示 AI 代理在企业级软件交付中的实际落地案例，为 B2B 产品经理提供参考。",
-          "en": "展示 AI 代理在企业级软件交付中的实际落地案例，为 B2B 产品经理提供参考。"
+          "zh": "这是企业级 AI 代理落地的标杆案例，展示了大模型从对话工具到核心开发引擎的跃迁。",
+          "en": "这是企业级 AI 代理落地的标杆案例，展示了大模型从对话工具到核心开发引擎的跃迁。"
         },
         "pmInsight": {
-          "zh": "关注 AI 代理如何嵌入现有开发流程，评估自身产品中引入类似代理的可行性。",
+          "zh": "关注 Endava 如何将 AI 代理嵌入现有开发工具链，可参考其自动化测试与代码审查的实践。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -662,19 +682,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更好记住用户偏好，保持对话上下文连贯。",
+          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更持久地记住用户偏好，保持跨会话的上下文连贯性。",
           "en": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
         },
         "chineseIntro": {
-          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更好记住用户偏好，保持对话上下文连贯。",
+          "zh": "ChatGPT 推出新记忆系统“Dreaming”，能更持久地记住用户偏好，保持跨会话的上下文连贯性。",
           "en": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
         },
         "todayHighlight": {
-          "zh": "记忆能力提升是对话式 AI 产品差异化的关键，直接影响用户粘性和个性化体验。",
-          "en": "记忆能力提升是对话式 AI 产品差异化的关键，直接影响用户粘性和个性化体验。"
+          "zh": "记忆能力是对话式 AI 从“工具”进化为“伙伴”的关键一步，直接影响用户粘性和个性化体验。",
+          "en": "记忆能力是对话式 AI 从“工具”进化为“伙伴”的关键一步，直接影响用户粘性和个性化体验。"
         },
         "pmInsight": {
-          "zh": "评估记忆系统对用户留存的影响，考虑在自家产品中实现类似长期记忆功能。",
+          "zh": "评估记忆功能对用户留存的影响，可设计基于长期记忆的主动推荐场景，如学习计划或购物清单。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -699,19 +719,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 发布 AI 驱动的生物防御行动计划，旨在增强生物安全韧性。",
+          "zh": "OpenAI 发布 AI 驱动的生物防御行动计划，旨在利用 AI 增强生物威胁检测与响应能力。",
           "en": "An action plan for AI-powered biological resilience"
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 AI 驱动的生物防御行动计划，旨在增强生物安全韧性。",
+          "zh": "OpenAI 发布 AI 驱动的生物防御行动计划，旨在利用 AI 增强生物威胁检测与响应能力。",
           "en": "An action plan for AI-powered biological resilience"
         },
         "todayHighlight": {
-          "zh": "AI 在生物安全领域的政策布局，预示未来监管和伦理讨论将加速。",
-          "en": "AI 在生物安全领域的政策布局，预示未来监管和伦理讨论将加速。"
+          "zh": "这是 AI 安全治理的重要政策文件，可能影响未来生物技术领域的 AI 应用监管框架。",
+          "en": "这是 AI 安全治理的重要政策文件，可能影响未来生物技术领域的 AI 应用监管框架。"
         },
         "pmInsight": {
-          "zh": "关注 AI 安全政策动向，提前规划产品合规与伦理审查流程。",
+          "zh": "关注该计划中提出的数据共享与模型评估标准，为合规性设计提供参考。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -736,19 +756,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "GPT-Rosalind 新增生物推理、药物化学、基因组分析和实验工作流能力，强化生命科学研究。",
+          "zh": "GPT-Rosalind 新增生物学推理、药物化学、基因组分析和实验流程能力，强化生命科学研究支持。",
           "en": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities."
         },
         "chineseIntro": {
-          "zh": "GPT-Rosalind 新增生物推理、药物化学、基因组分析和实验工作流能力，强化生命科学研究。",
+          "zh": "GPT-Rosalind 新增生物学推理、药物化学、基因组分析和实验流程能力，强化生命科学研究支持。",
           "en": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities."
         },
         "todayHighlight": {
-          "zh": "垂直领域模型能力大幅提升，可能改变生物医药研发的 AI 应用格局。",
-          "en": "垂直领域模型能力大幅提升，可能改变生物医药研发的 AI 应用格局。"
+          "zh": "这是垂直领域大模型的重要进展，可能加速药物发现和精准医疗的 AI 化进程。",
+          "en": "这是垂直领域大模型的重要进展，可能加速药物发现和精准医疗的 AI 化进程。"
         },
         "pmInsight": {
-          "zh": "探索 GPT-Rosalind 在药物发现或基因组分析中的集成机会，评估与现有工具的互补性。",
+          "zh": "评估 GPT-Rosalind 在内部研发流程中的集成点，优先试点基因组数据分析或文献挖掘场景。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
