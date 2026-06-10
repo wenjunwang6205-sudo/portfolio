@@ -1255,6 +1255,7 @@ h1 span {
   gap: 10px;
   margin: 0;
   padding: 0;
+  border-top: 1px solid #e8e5de;
   list-style: none;
 }
 
