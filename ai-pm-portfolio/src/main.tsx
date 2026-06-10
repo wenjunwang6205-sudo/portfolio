@@ -498,6 +498,8 @@ const content = {
       education: [
         "米兰理工大学 | 景观设计 硕士 | QS 2026 全球 #98 / 意大利 #1 | 2019 - 2022",
         "华东理工大学 | 景观设计 学士 | 2013 - 2017",
+        "Coursera IBM AI 产品经理证书 | 2025.11 - 2026.04",
+        "Coursera 谷歌交互设计证书 | 2024.10 - 2024.12",
       ],
       skills: [
         "Agent 工作流设计",
@@ -787,8 +789,8 @@ const content = {
         skills: "Skills",
       },
       profile: [
-        "I care about the balance between task complexity, model confidence, cost, and business risk, especially where automation should stop and human review should begin.",
-        "I work deeply with Cursor, Dify, Google AI Studio, and Codex to prototype workflows quickly and align complex product logic.",
+        "I start by framing ambiguous problems into goals, workflows, roles, states, and decision points, then decide where AI should take over and where human judgment must stay in the loop.",
+        "Understanding the boundaries of LLMs, RAG, tool use, and AI workflows helps me let AI handle retrieval, synthesis, drafting, and first-pass screening while freeing people for judgment, trade-offs, and business decisions.",
       ],
       experience: [
         {
@@ -816,14 +818,21 @@ const content = {
       education: [
         "Politecnico di Milano | M.Sc. Landscape Design | QS 2026 #98 globally / #1 in Italy | 2019 - 2022",
         "East China University of Science and Technology | B.A. Landscape Design | 2013 - 2017",
+        "Coursera IBM AI Product Manager Certificate | 2025.11 - 2026.04",
+        "Coursera Google UX Design Certificate | 2024.10 - 2024.12",
       ],
       skills: [
-        "Agent workflow design",
-        "Pipeline / Orchestrator orchestration",
-        "RAG / Prompt Engineering",
-        "Multi-model routing & cost optimization",
-        "PRD / Prototyping / Data modeling",
-        "React / TypeScript / Tailwind CSS basics",
+        "AI Product Management",
+        "LLM Application Design",
+        "AI Agent Workflows",
+        "RAG Knowledge Apps",
+        "Prompt Strategy",
+        "AI Evaluation & Governance",
+        "Cost & Quality Optimization",
+        "Human-AI Collaboration",
+        "Business Process Automation",
+        "Data Products",
+        "B2B SaaS",
       ],
     },
   },
@@ -1250,8 +1259,8 @@ function AboutPage({
             <p>{isZh ? "Approach" : "Approach"}</p>
             {(isZh
               ? [
-                  "习惯在信息不完整时先搭建问题框架，将复杂需求拆成流程、状态、边界和异常场景。",
-                  "熟悉 LLM 能力边界、RAG、Prompt Engineering、工具调用、多模型路由与 Token 成本控制，能与工程团队共同定义 Agent Workflow、异常处理机制和人机协同边界。",
+                  "习惯先搭建问题框架，将复杂需求拆成目标、流程、角色、状态和关键决策点，再判断哪些环节适合交给 AI，哪些必须保留人的判断。",
+                  "理解 LLM、RAG、工具调用与 AI 工作流的能力边界，因此更关注让 AI 承担检索、整理、生成、初筛等高频重复任务，把人的精力释放到判断、取舍、决策和业务负责上。",
                 ]
               : copy.about.profile).map((item) => (
                 <span key={item}>{item}</span>
@@ -1298,23 +1307,16 @@ function AboutPage({
             <div className="skill-cloud">
               {(isZh
                 ? [
-                    "LLM",
-                    "AI Agent",
-                    "AI 工作流",
-                    "Agent Workflow",
-                    "RAG",
-                    "Prompt Engineering",
-                    "Orchestrator",
-                    "多模型路由",
-                    "Token 成本优化",
-                    "AI Eval",
-                    "LLM-as-Judge",
-                    "bad case 闭环",
-                    "数据飞轮",
-                    "幻觉治理",
+                    "AI 产品经理",
+                    "LLM 应用设计",
+                    "AI Agent 工作流",
+                    "RAG 知识应用",
+                    "Prompt 策略",
+                    "AI 评估与治理",
+                    "成本与质量优化",
                     "人机协同",
-                    "业务流程再造",
-                    "数据看板",
+                    "业务流程自动化",
+                    "数据产品",
                     "B 端 SaaS",
                   ]
                 : copy.about.skills).map((skill) => (
