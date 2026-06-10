@@ -1333,6 +1333,25 @@ h1 span {
   font-weight: 760;
 }
 
+.owner-mode-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 35px;
+  padding: 0 11px;
+  border: 1px solid #e4dfd6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3b3935;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 780;
+  cursor: pointer;
+}
+
+.owner-mode-chip:hover {
+  border-color: #151515;
+}
+
 .daily-layout {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
@@ -1542,6 +1561,33 @@ h1 span {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 12px;
+}
+
+.signal-card-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.favorite-toggle {
+  min-height: 24px;
+  padding: 0 9px;
+  border: 1px solid #e4dfd6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #6b665f;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.favorite-toggle:hover,
+.favorite-toggle.active {
+  border-color: #b65136;
+  background: #fff3ec;
+  color: #b65136;
 }
 
 .signal-card-top span {

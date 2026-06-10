@@ -79,6 +79,61 @@ const currentPath = () => {
   return basePath && pathname.startsWith(basePath) ? pathname.slice(basePath.length) || "/" : pathname;
 };
 
+const githubFavoritesStorageKey = "ai-daily-github-favorites";
+const ownerModeStorageKey = "ai-daily-owner-mode";
+
+type GithubFavorite = {
+  repoName: string;
+  url: string;
+  language?: string;
+  totalStars?: number;
+  dailyStars?: number | null;
+  chineseIntro?: string;
+  todayHighlight?: string;
+  savedAt: string;
+  lastSeenDate: string;
+};
+
+function safeReadJson<T>(key: string, fallback: T): T {
+  try {
+    const raw = window.localStorage.getItem(key);
+    return raw ? (JSON.parse(raw) as T) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function getGithubSignalKey(signal: DailySignal) {
+  return signal.sources.find((source) => source.url.includes("github.com"))?.url ?? signal.title.en;
+}
+
+function favoriteToSignal(favorite: GithubFavorite): DailySignal {
+  return {
+    title: { zh: favorite.repoName, en: favorite.repoName },
+    category: { zh: "GitHub 收藏", en: "GitHub favorite" },
+    summary: {
+      zh: favorite.chineseIntro ?? "已收藏的 GitHub 项目。",
+      en: favorite.chineseIntro ?? "Saved GitHub project.",
+    },
+    totalStars: favorite.totalStars,
+    language: favorite.language,
+    dailyStars: favorite.dailyStars,
+    chineseIntro: {
+      zh: favorite.chineseIntro ?? "已收藏的 GitHub 项目。",
+      en: favorite.chineseIntro ?? "Saved GitHub project.",
+    },
+    todayHighlight: favorite.todayHighlight
+      ? { zh: favorite.todayHighlight, en: favorite.todayHighlight }
+      : undefined,
+    pmInsight: {
+      zh: `收藏于 ${favorite.savedAt}，最近出现于 ${favorite.lastSeenDate} 日报。`,
+      en: `Saved on ${favorite.savedAt}; last seen in the ${favorite.lastSeenDate} brief.`,
+    },
+    impact: "Watch",
+    sources: [{ label: "GitHub Repository", url: favorite.url }],
+  };
+}
+
 const projects = [
   {
     id: "campaign",
@@ -1340,9 +1395,59 @@ function DailyBriefPage({
   onToggleLocale: () => void;
 }) {
   const [selectedDate, setSelectedDate] = React.useState(DAILY_BRIEFS[0].date);
+  const [favorites, setFavorites] = React.useState<GithubFavorite[]>(() =>
+    safeReadJson<GithubFavorite[]>(githubFavoritesStorageKey, []),
+  );
+  const [isOwnerMode, setIsOwnerMode] = React.useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("owner") === "1" || window.localStorage.getItem(ownerModeStorageKey) === "true";
+  });
   const selectedBrief =
     DAILY_BRIEFS.find((brief) => brief.date === selectedDate) ?? DAILY_BRIEFS[0];
   const isZh = locale === "zh";
+  const favoriteKeys = React.useMemo(
+    () => new Set(favorites.map((favorite) => favorite.url)),
+    [favorites],
+  );
+  const favoriteSignals = React.useMemo(
+    () => favorites.map((favorite) => favoriteToSignal(favorite)),
+    [favorites],
+  );
+
+  React.useEffect(() => {
+    window.localStorage.setItem(githubFavoritesStorageKey, JSON.stringify(favorites));
+  }, [favorites]);
+
+  React.useEffect(() => {
+    window.localStorage.setItem(ownerModeStorageKey, String(isOwnerMode));
+  }, [isOwnerMode]);
+
+  const toggleFavorite = React.useCallback(
+    (signal: DailySignal) => {
+      const url = getGithubSignalKey(signal);
+      setFavorites((current) => {
+        if (current.some((favorite) => favorite.url === url)) {
+          return current.filter((favorite) => favorite.url !== url);
+        }
+
+        return [
+          {
+            repoName: signal.title.en,
+            url,
+            language: signal.language,
+            totalStars: signal.totalStars,
+            dailyStars: signal.dailyStars,
+            chineseIntro: signal.chineseIntro?.zh ?? signal.summary.zh,
+            todayHighlight: signal.todayHighlight?.zh,
+            savedAt: selectedBrief.date,
+            lastSeenDate: selectedBrief.date,
+          },
+          ...current,
+        ];
+      });
+    },
+    [selectedBrief.date],
+  );
 
   return (
     <main className="daily-shell">
@@ -1368,6 +1473,11 @@ function DailyBriefPage({
               <Link2 size={15} />
               {isZh ? "每条信息可溯源" : "Source links included"}
             </span>
+            {isOwnerMode ? (
+              <button type="button" className="owner-mode-chip" onClick={() => setIsOwnerMode(false)}>
+                {isZh ? "收藏模式已开启" : "Favorites mode on"}
+              </button>
+            ) : null}
           </div>
         </header>
 
@@ -1406,11 +1516,23 @@ function DailyBriefPage({
               signals={selectedBrief.signals}
               locale={locale}
             />
+            {isOwnerMode && favoriteSignals.length > 0 ? (
+              <DailySignalSection
+                icon="github"
+                title={isZh ? "我的 GitHub 收藏" : "My GitHub favorites"}
+                signals={favoriteSignals}
+                locale={locale}
+                ownerMode={false}
+              />
+            ) : null}
             <DailySignalSection
               icon="github"
               title={isZh ? "GitHub 上升项目" : "GitHub rising projects"}
               signals={selectedBrief.githubProjects}
               locale={locale}
+              ownerMode={isOwnerMode}
+              favoriteKeys={favoriteKeys}
+              onToggleFavorite={toggleFavorite}
             />
             <DailySignalSection
               icon="company"
@@ -1454,11 +1576,17 @@ function DailySignalSection({
   title,
   signals,
   locale,
+  ownerMode = false,
+  favoriteKeys,
+  onToggleFavorite,
 }: {
   icon: "signal" | "github" | "company" | "opportunity";
   title: string;
   signals: DailySignal[];
   locale: Locale;
+  ownerMode?: boolean;
+  favoriteKeys?: Set<string>;
+  onToggleFavorite?: (signal: DailySignal) => void;
 }) {
   const Icon =
     icon === "github"
@@ -1480,7 +1608,14 @@ function DailySignalSection({
       </div>
       <div className="daily-card-grid">
         {signals.map((signal) => (
-          <DailySignalCard key={`${signal.title.en}-${signal.category.en}`} signal={signal} locale={locale} />
+          <DailySignalCard
+            key={`${signal.title.en}-${signal.category.en}`}
+            signal={signal}
+            locale={locale}
+            ownerMode={ownerMode}
+            isFavorited={favoriteKeys?.has(getGithubSignalKey(signal)) ?? false}
+            onToggleFavorite={onToggleFavorite}
+          />
         ))}
       </div>
     </section>
@@ -1503,7 +1638,19 @@ function DailyLabeledLine({
   );
 }
 
-function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Locale }) {
+function DailySignalCard({
+  signal,
+  locale,
+  ownerMode = false,
+  isFavorited = false,
+  onToggleFavorite,
+}: {
+  signal: DailySignal;
+  locale: Locale;
+  ownerMode?: boolean;
+  isFavorited?: boolean;
+  onToggleFavorite?: (signal: DailySignal) => void;
+}) {
   const isZh = locale === "zh";
   const isGithub = typeof signal.totalStars === "number";
   const categoryLabel = signal.eventType?.[locale] ?? signal.category[locale];
@@ -1517,7 +1664,19 @@ function DailySignalCard({ signal, locale }: { signal: DailySignal; locale: Loca
     <article className="daily-signal-card">
       <div className="signal-card-top">
         <span>{categoryLabel}</span>
-        <strong className={`impact-badge ${signal.impact.toLowerCase()}`}>{signal.impact}</strong>
+        <div className="signal-card-actions">
+          {ownerMode && isGithub && onToggleFavorite ? (
+            <button
+              type="button"
+              className={`favorite-toggle ${isFavorited ? "active" : ""}`}
+              onClick={() => onToggleFavorite(signal)}
+              aria-pressed={isFavorited}
+            >
+              {isFavorited ? (isZh ? "已收藏" : "Saved") : (isZh ? "收藏" : "Save")}
+            </button>
+          ) : null}
+          <strong className={`impact-badge ${signal.impact.toLowerCase()}`}>{signal.impact}</strong>
+        </div>
       </div>
       <h3>{signal.title[locale]}</h3>
       {isGithub ? (
