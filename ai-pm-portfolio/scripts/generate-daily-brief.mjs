@@ -798,12 +798,14 @@ function buildEditorialPrompt({ targetDate, githubProjects, companyUpdates }) {
 
 DailySignal = {
   "title": { "zh": string, "en": string },
-  "category": { "zh": "跨源信号", "en": "Cross-source signal" },
+  "category": { "zh": string, "en": string },
   "summary": { "zh": string, "en": string },
   "pmInsight": { "zh": string, "en": string },
   "impact": "High" | "Medium" | "Watch",
   "sources": [{ "label": string, "url": string }]
 }
+
+signals 和 opportunities 的每条都必须包含 category 和 pmInsight，不能省略。
 
 目标日期：${targetDate}
 
@@ -1288,6 +1290,29 @@ export const DAILY_BRIEFS: DailyBrief[] = ${JSON.stringify(briefs, null, 2)};
 `;
 }
 
+function ensureSignalCategory(signal, fallbackCategory) {
+  if (!signal.category?.zh || !signal.category?.en) {
+    signal.category = fallbackCategory;
+  }
+  return signal;
+}
+
+function normalizeBriefSignals(brief) {
+  brief.signals = (brief.signals ?? []).map((signal) =>
+    ensureSignalCategory(signal, { zh: "跨源信号", en: "Cross-source signal" }),
+  );
+  brief.opportunities = (brief.opportunities ?? []).map((signal) =>
+    ensureSignalCategory(signal, { zh: "产品机会", en: "Product opportunity" }),
+  );
+  brief.githubProjects = (brief.githubProjects ?? []).map((signal) =>
+    ensureSignalCategory(signal, { zh: "GitHub 项目", en: "GitHub project" }),
+  );
+  brief.companyUpdates = (brief.companyUpdates ?? []).map((signal) =>
+    ensureSignalCategory(signal, { zh: "公司动态", en: "Company update" }),
+  );
+  return brief;
+}
+
 function assertBriefShape(brief) {
   const requiredGroups = ["signals", "githubProjects", "companyUpdates", "opportunities"];
   if (!brief?.date || !brief?.title?.zh || !brief?.keyTakeaway?.zh) {
@@ -1297,6 +1322,17 @@ function assertBriefShape(brief) {
   for (const group of requiredGroups) {
     if (!Array.isArray(brief[group])) {
       throw new Error(`Generated brief is missing ${group}.`);
+    }
+  }
+
+  for (const group of requiredGroups) {
+    for (const signal of brief[group]) {
+      if (!signal.category?.zh || !signal.category?.en) {
+        throw new Error(`Generated brief is missing category in ${group}: ${signal.title?.en ?? "unknown"}`);
+      }
+      if (!signal.pmInsight?.zh || !signal.pmInsight?.en) {
+        throw new Error(`Generated brief is missing pmInsight in ${group}: ${signal.title?.en ?? "unknown"}`);
+      }
     }
   }
 
@@ -1347,6 +1383,7 @@ async function main() {
     companyUpdates: enhancedCompanyUpdates.map((item) => buildCompanyUpdateSignal(item)),
   };
 
+  normalizeBriefSignals(brief);
   assertBriefShape(brief);
 
   if (isMockBriefEntry(brief)) {

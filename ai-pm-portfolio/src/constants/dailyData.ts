@@ -94,6 +94,10 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "AI 记忆系统成为 Agent 基础设施关键组件",
           "en": "AI Memory Systems Become Key Infrastructure for Agents"
         },
+        "category": {
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
+        },
         "summary": {
           "zh": "MemPalace 开源 AI 记忆系统今日新增 170 星，总星数 55035，在 LongMemEval 基准上达到 96.6% R@5，定位本地优先、可插拔后端。",
           "en": "MemPalace, an open-source AI memory system, gained 170 stars today with a total of 55,035, achieving 96.6% R@5 on LongMemEval, positioning as local-first with pluggable backends."
@@ -114,6 +118,10 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "title": {
           "zh": "OpenAI 上市与公益愿景并行，行业治理进入新阶段",
           "en": "OpenAI IPO and Public Benefit Vision Parallel, Industry Governance Enters New Phase"
+        },
+        "category": {
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
         },
         "summary": {
           "zh": "OpenAI 秘密提交 S-1 上市文件，同时发布“惠及所有人”愿景计划和经济研究交流平台，强调 AI 可及性与安全性。",
@@ -178,6 +186,10 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "title": {
           "zh": "开发本地优先的 Agent 记忆即服务产品",
           "en": "Develop a Local-First Agent Memory as a Service Product"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product opportunity"
         },
         "summary": {
           "zh": "MemPalace 的高基准和快速增长表明开发者对 Agent 记忆系统的强烈需求。假设：提供一款本地优先、端到端加密的记忆即服务（MaaS）产品，支持主流 Agent 框架集成，可在 3 个月内获得 5000 名付费开发者。",

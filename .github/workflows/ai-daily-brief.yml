@@ -62,6 +62,10 @@ jobs:
           TARGET_DATE: ${{ inputs.target_date }}
         run: npm run generate:daily
 
+      - name: Build static site
+        working-directory: ai-pm-portfolio
+        run: npm run build
+
       - name: Commit daily brief
         run: |
           if git diff --quiet -- ai-pm-portfolio/src/constants/dailyData.ts; then
@@ -74,10 +78,6 @@ jobs:
           git add ai-pm-portfolio/src/constants/dailyData.ts
           git commit -m "Update AI daily brief"
           git push
-
-      - name: Build static site
-        working-directory: ai-pm-portfolio
-        run: npm run build
 
       - name: Add SPA fallback
         run: cp ai-pm-portfolio/dist/index.html ai-pm-portfolio/dist/404.html
