@@ -551,10 +551,10 @@ const content = {
         },
       ],
       education: [
+        "Coursera IBM AI 产品经理证书 | 2025.11 - 2026.04",
+        "Coursera Google 交互设计证书 | 2024.10 - 2024.12",
         "米兰理工大学 | 景观设计 硕士 | QS 2026 全球 #98 / 意大利 #1 | 2019 - 2022",
         "华东理工大学 | 景观设计 学士 | 2013 - 2017",
-        "Coursera IBM AI 产品经理证书 | 2025.11 - 2026.04",
-        "Coursera 谷歌交互设计证书 | 2024.10 - 2024.12",
       ],
       skills: [
         "Agent 工作流设计",
@@ -871,10 +871,10 @@ const content = {
         },
       ],
       education: [
-        "Politecnico di Milano | M.Sc. Landscape Design | QS 2026 #98 globally / #1 in Italy | 2019 - 2022",
-        "East China University of Science and Technology | B.A. Landscape Design | 2013 - 2017",
         "Coursera IBM AI Product Manager Certificate | 2025.11 - 2026.04",
         "Coursera Google UX Design Certificate | 2024.10 - 2024.12",
+        "Politecnico di Milano | M.Sc. Landscape Design | QS 2026 #98 globally / #1 in Italy | 2019 - 2022",
+        "East China University of Science and Technology | B.A. Landscape Design | 2013 - 2017",
       ],
       skills: [
         "AI Product Management",
