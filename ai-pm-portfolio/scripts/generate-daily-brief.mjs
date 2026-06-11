@@ -81,6 +81,32 @@ function normalizeTodayHighlight(text) {
   return stripLabelPrefix(text, ["今日亮点", "Today's highlight"]);
 }
 
+function toneDownHypeText(text) {
+  if (typeof text !== "string") return text;
+  return text
+    .replace(/全面爆发/g, "明显升温")
+    .replace(/生态爆发/g, "生态升温")
+    .replace(/应用爆发/g, "应用普及")
+    .replace(/快速爆发/g, "快速增长")
+    .replace(/爆发/g, "升温")
+    .replace(/引爆/g, "带动关注")
+    .replace(/爆火/g, "快速走红")
+    .replace(/病毒式传播/g, "快速传播")
+    .replace(/增速惊人/g, "增长较快")
+    .replace(/持续霸榜/g, "持续在榜");
+}
+
+function toneDownBriefLanguage(value) {
+  if (typeof value === "string") return toneDownHypeText(value);
+  if (Array.isArray(value)) return value.map((item) => toneDownBriefLanguage(item));
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, toneDownBriefLanguage(item)]),
+    );
+  }
+  return value;
+}
+
 function inferPublisher(name) {
   if (/microsoft/i.test(name)) return "微软出品的";
   if (/google/i.test(name)) return "Google 出品的";
@@ -197,7 +223,7 @@ function inferTrendingNarrative(repo) {
     return "多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温";
   }
   if (/agent|autogpt|crewai|langgraph/i.test(text)) {
-    return "作为 Agent 生态的重要基础组件，随 Agent 应用爆发持续获得新增关注";
+    return "作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注";
   }
   if (/rag|vector|embedding|retriev/i.test(text)) {
     return "RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成";
@@ -786,6 +812,7 @@ function buildEditorialPrompt({ targetDate, githubProjects, companyUpdates }) {
 4. opportunities：1-2 条，必须从今日 signals 推导，给出可验证的产品假设，不要 meta 讨论「日报本身」。
 5. 中文为主，补齐 en 字段。
 6. sources 只能来自输入 URL。
+7. 语气要克制，除非输入中有明确证据（如极高日增、官方重大发布、明确融资/上市/模型发布），不要使用「爆发」「引爆」「现象级」「重塑行业」等夸张词；优先使用「升温」「增长较快」「持续在榜」「值得跟进」。
 
 输出：
 {
@@ -1130,17 +1157,18 @@ function buildGithubEnhancementPrompt(projects) {
 1. 必须输出严格 JSON，不要 Markdown。
 2. 每个项目都要保留 name。
 3. chineseIntroZh 写 1-2 句中文产品级总结：项目做什么、解决什么问题、典型场景/支持能力。不要复制英文，不要写「中文简介:」前缀，不要和 todayHighlight 重复。
-4. todayHighlightZh 写 1-2 句，解释「为什么今天快速上升或持续在榜」。不要重复 chineseIntro 的功能描述，不要写「今日亮点:」前缀。应结合传播叙事、生态位、项目年龄、star 增速，并带上今日新增 star、总 star 等可验证数据。
+4. todayHighlightZh 写 1-2 句，解释「为什么今天上榜、增长较快或持续在榜」。不要重复 chineseIntro 的功能描述，不要写「今日亮点:」前缀。应结合传播叙事、生态位、项目年龄、star 增速，并带上今日新增 star、总 star 等可验证数据。
 5. pmInsightZh 用一句中文说明产品经理应该从这个项目观察什么。
 6. 不要编造输入里没有的社交提及数、榜单名次、用户反馈数量。
-7. chineseIntroZh 可参考以下写法（不要照抄，需结合输入数据）：
+7. 语气要克制，避免无证据使用「爆发」「引爆」「现象级」「病毒式」等夸张词；优先使用「升温」「增长较快」「持续获得关注」「快速传播」。
+8. chineseIntroZh 可参考以下写法（不要照抄，需结合输入数据）：
    - 微软出品的 Python 工具，可将 PDF、Word、Excel、PowerPoint、图片、音频等各类文件与 Office 文档转换为 Markdown 格式，是 AI 应用文档预处理的首选工具链。
    - 利用 AI 大模型，输入主题/关键词即可全自动生成脚本、匹配高清无版权素材、添加字幕配音，最终输出完整短视频。支持 DeepSeek、OpenAI 等多种大模型。
    - 给 AI 编程助手注入「审美力」的 Claude Skill。安装后能有效阻止 AI 生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位——层级感、留白、排版一步到位。
-8. todayHighlightZh 可参考以下写法（不要照抄）：
-   - 多语言社区同步传播，「一键出片」叙事在短视频创作者圈引爆，今日新增809星
+9. todayHighlightZh 可参考以下写法（不要照抄）：
+   - 多语言社区同步传播，「一键出片」叙事在短视频创作者圈带动关注，今日新增809星
    - 创建仅约两个月便已积累10k+ stars，今日新增265，多名开发者反馈微 SaaS 产品 UI/UX 改造后效果显著
-   - 作为 AI Agent 数据管道的重要基础组件，随 Agent 生态爆发持续获得新增关注，今日新增377 stars，总 star 数已近10万
+   - 作为 AI Agent 数据管道的重要基础组件，随 Agent 生态升温持续获得新增关注，今日新增377 stars，总 star 数已近10万
 
 输出结构：
 {
@@ -1383,6 +1411,7 @@ async function main() {
     companyUpdates: enhancedCompanyUpdates.map((item) => buildCompanyUpdateSignal(item)),
   };
 
+  Object.assign(brief, toneDownBriefLanguage(brief));
   normalizeBriefSignals(brief);
   assertBriefShape(brief);
 

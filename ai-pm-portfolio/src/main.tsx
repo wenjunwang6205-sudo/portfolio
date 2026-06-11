@@ -134,6 +134,21 @@ function favoriteToSignal(favorite: GithubFavorite): DailySignal {
   };
 }
 
+function toneDownDailyCopy(text?: string | null) {
+  if (!text) return text;
+  return text
+    .replace(/全面爆发/g, "明显升温")
+    .replace(/生态爆发/g, "生态升温")
+    .replace(/应用爆发/g, "应用普及")
+    .replace(/快速爆发/g, "快速增长")
+    .replace(/爆发/g, "升温")
+    .replace(/引爆/g, "带动关注")
+    .replace(/爆火/g, "快速走红")
+    .replace(/病毒式传播/g, "快速传播")
+    .replace(/增速惊人/g, "增长较快")
+    .replace(/持续霸榜/g, "持续在榜");
+}
+
 const projects = [
   {
     id: "campaign",
@@ -1497,7 +1512,7 @@ function DailyBriefPage({
                 >
                   <span>{brief.label[locale]}</span>
                   <strong>{brief.date}</strong>
-                  <small>{brief.title[locale]}</small>
+                  <small>{toneDownDailyCopy(brief.title[locale])}</small>
                 </button>
               ))}
             </div>
@@ -1560,12 +1575,12 @@ function DailyBriefOverview({ brief, locale }: { brief: DailyBrief; locale: Loca
     <section className="daily-overview">
       <div>
         <p>{brief.date}</p>
-        <h2>{brief.title[locale]}</h2>
-        <span>{brief.editorNote[locale]}</span>
+        <h2>{toneDownDailyCopy(brief.title[locale])}</h2>
+        <span>{toneDownDailyCopy(brief.editorNote[locale])}</span>
       </div>
       <aside>
         <strong>{isZh ? "今日判断" : "Takeaway"}</strong>
-        <p>{brief.keyTakeaway[locale]}</p>
+        <p>{toneDownDailyCopy(brief.keyTakeaway[locale])}</p>
       </aside>
     </section>
   );
@@ -1654,10 +1669,10 @@ function DailySignalCard({
   const isZh = locale === "zh";
   const isGithub = typeof signal.totalStars === "number";
   const categoryLabel = signal.eventType?.[locale] ?? signal.category[locale];
-  const introText = isZh
+  const introText = toneDownDailyCopy(isZh
     ? signal.chineseIntro?.zh ?? (isGithub ? signal.summary.zh : null)
-    : signal.chineseIntro?.en ?? signal.summary.en;
-  const highlightText = signal.todayHighlight?.[locale];
+    : signal.chineseIntro?.en ?? signal.summary.en);
+  const highlightText = toneDownDailyCopy(signal.todayHighlight?.[locale]);
   const showSummaryBody = !introText && !isGithub;
 
   return (
@@ -1678,7 +1693,7 @@ function DailySignalCard({
           <strong className={`impact-badge ${signal.impact.toLowerCase()}`}>{signal.impact}</strong>
         </div>
       </div>
-      <h3>{signal.title[locale]}</h3>
+      <h3>{toneDownDailyCopy(signal.title[locale])}</h3>
       {isGithub ? (
         <p className="daily-meta">
           ☆
@@ -1689,10 +1704,10 @@ function DailySignalCard({
             : ""}
         </p>
       ) : null}
-      {showSummaryBody ? <p>{signal.summary[locale]}</p> : null}
+      {showSummaryBody ? <p>{toneDownDailyCopy(signal.summary[locale])}</p> : null}
       <DailyLabeledLine label={isZh ? "中文简介" : "Summary"} text={introText} />
       <DailyLabeledLine label={isZh ? "今日亮点" : "Highlight"} text={highlightText} />
-      <DailyLabeledLine label={isZh ? "PM 视角" : "PM lens"} text={signal.pmInsight[locale]} />
+      <DailyLabeledLine label={isZh ? "PM 视角" : "PM lens"} text={toneDownDailyCopy(signal.pmInsight[locale])} />
       <div className="source-list" aria-label={isZh ? "来源链接" : "Source links"}>
         {signal.sources.map((source) => (
           <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>
