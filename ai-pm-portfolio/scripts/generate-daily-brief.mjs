@@ -559,6 +559,54 @@ function buildCompanyUpdateSignal(item, overrides = {}) {
   };
 }
 
+function parsePublishedTime(value) {
+  const timestamp = value ? Date.parse(value) : 0;
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
+function getCompanyUpdatePriority(item) {
+  const text = `${item.company} ${item.title} ${item.summary ?? ""} ${item.articleSnippet ?? ""}`.toLowerCase();
+  let score = parsePublishedTime(item.publishedAt);
+
+  if (/fable|mythos|claude|gpt|gemini|model|launch|introduc|release|api|pricing|available/.test(text)) {
+    score += 1000 * 60 * 60 * 24 * 14;
+  }
+
+  if (/anthropic|openai|google|hugging face/.test(text)) {
+    score += 1000 * 60 * 60 * 24;
+  }
+
+  return score;
+}
+
+function selectCompanyUpdates(updates, limit = 4) {
+  const sorted = [...updates].sort((a, b) => getCompanyUpdatePriority(b) - getCompanyUpdatePriority(a));
+  const selected = [];
+  const counts = new Map();
+  const seenUrls = new Set();
+
+  for (const item of sorted) {
+    if (selected.length >= limit) break;
+    if (counts.has(item.company) || seenUrls.has(item.url)) continue;
+
+    selected.push(item);
+    counts.set(item.company, 1);
+    seenUrls.add(item.url);
+  }
+
+  for (const item of sorted) {
+    if (selected.length >= limit) break;
+    if (seenUrls.has(item.url)) continue;
+    if ((counts.get(item.company) ?? 0) >= 2) continue;
+
+    selected.push(item);
+    counts.set(item.company, (counts.get(item.company) ?? 0) + 1);
+    seenUrls.add(item.url);
+  }
+
+  return selected;
+}
+
 function inferCompanyPmInsight(eventType) {
   const map = {
     "新模型/新能力": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
@@ -1392,7 +1440,7 @@ async function main() {
   const enhancedGithubProjects = await enhanceGithubProjects(
     await enrichGithubProjects(githubProjects.slice(0, 10)),
   );
-  const enhancedCompanyUpdates = await enhanceCompanyUpdates(enrichedCompany.slice(0, 4));
+  const enhancedCompanyUpdates = await enhanceCompanyUpdates(selectCompanyUpdates(enrichedCompany, 4));
   const editorial = await enhanceEditorialBrief({
     targetDate,
     githubProjects: enhancedGithubProjects,
