@@ -522,16 +522,16 @@ const content = {
     placeholder: {
       aboutTitle: "About me",
       aboutEyebrow: "Profile",
-      aboutCopy: "这里后续会放你的 AI 产品经理定位、经历摘要、技能地图和简历入口。",
+      aboutCopy: "这里后续会放你的产品经理定位、经历摘要、技能地图和简历入口。",
       projectCopy: "这里后续会接入对话式 mock demo，并补充产品问题、工作流、AI 设计决策和指标复盘。",
       back: "返回首页",
     },
     about: {
       eyebrow: "About me",
       title: "王文君",
-      role: "AI 产品经理 | Agent 工作流与业务流程自动化",
+      role: "产品经理 | Agent 工作流与业务流程自动化",
       summary:
-        "设计学科背景转型 AI 产品经理，专注于 AI 驱动的业务流程自动化、Agent 工作流编排与 AI 辅助原型交付。当前主导游戏行业 AI 产品线，覆盖营销方案生成、舆情报告分析与达人营销 SaaS 等场景。",
+        "设计学科背景转型产品经理，专注于 AI 驱动的业务流程自动化、Agent 工作流编排与 AI 辅助原型交付。当前主导游戏行业 AI 产品线，覆盖营销方案生成、舆情报告分析与达人营销 SaaS 等场景。",
       download: "下载 CV",
       sections: {
         profile: "个人简介",
@@ -546,7 +546,7 @@ const content = {
       experience: [
         {
           company: "上海启竞广告有限公司",
-          role: "AI 产品经理",
+          role: "产品经理",
           period: "2025.04 - 至今",
           detail:
             "负责游戏行业 AI 产品线规划与落地，主导 EasyPromo、DeepInsight 与中游网等产品从 0 到 1 的设计与交付。",
@@ -848,9 +848,9 @@ const content = {
     about: {
       eyebrow: "About me",
       title: "Wenjun Wang",
-      role: "AI Product Manager | Agent Workflows & Business Process Automation",
+      role: "Product Designer | Agent Workflows & Business Process Automation",
       summary:
-        "An AI product manager with a design background, focused on AI-driven workflow automation, agent orchestration, and AI-assisted prototyping. Currently building AI products for marketing planning, public opinion reporting, and creator marketing SaaS.",
+        "A product designer with a design background, focused on AI-driven workflow automation, agent orchestration, and AI-assisted prototyping. Currently building AI products for marketing planning, public opinion reporting, and creator marketing SaaS.",
       download: "Download CV",
       sections: {
         profile: "Profile",
@@ -865,7 +865,7 @@ const content = {
       experience: [
         {
           company: "Shanghai Qijing Advertising Co., Ltd.",
-          role: "AI Product Manager",
+          role: "Product Designer",
           period: "2025.04 - Present",
           detail:
             "Lead planning and delivery for AI products in the gaming industry, including EasyPromo, DeepInsight, and Zhongyou creator marketing SaaS.",
@@ -1245,12 +1245,12 @@ function AboutPage({
       ];
   const compactExperience = isZh
     ? [
-        ["2025.04 - 至今", "上海启竞广告有限公司", "AI 产品经理"],
+        ["2025.04 - 至今", "上海启竞广告有限公司", "产品经理"],
         ["2022.08 - 2024.08", "AND Studio 建筑设计事务所", "景观设计师"],
         ["2017.07 - 2019.07", "C3 设计咨询事务所", "城市设计师"],
       ]
     : [
-        ["2025.04 - Present", "Shanghai Qijing Advertising Co., Ltd.", "AI Product Manager"],
+        ["2025.04 - Present", "Shanghai Qijing Advertising Co., Ltd.", "Product Designer"],
         ["2022.08 - 2024.08", "AND Studio", "Landscape Designer"],
         ["2017.07 - 2019.07", "C3 Design Consulting Office", "Urban Designer"],
       ];
@@ -1265,7 +1265,7 @@ function AboutPage({
             {copy.about.eyebrow}
           </p>
           <h1>{copy.about.title}</h1>
-          <p className="about-role">{isZh ? "AI 产品经理 | LLM / AI Agent / RAG / AI 工作流 / B 端 SaaS" : "AI Product Manager | LLM / AI Agent / RAG / AI Workflows / B2B SaaS"}</p>
+          <p className="about-role">{isZh ? "产品经理 | LLM / AI Agent / RAG / AI 工作流 / B 端 SaaS" : "Product Designer | LLM / AI Agent / RAG / AI Workflows / B2B SaaS"}</p>
           <p className="about-summary">
             {isZh
               ? "我把模糊的 AI 机会，转化为可评测、可交付的产品系统。"
@@ -1377,7 +1377,7 @@ function AboutPage({
             <div className="skill-cloud">
               {(isZh
                 ? [
-                    "AI 产品经理",
+                    "产品经理",
                     "LLM 应用设计",
                     "AI Agent 工作流",
                     "RAG 知识应用",
