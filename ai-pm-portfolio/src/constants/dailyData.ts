@@ -44,102 +44,98 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "Agent技能生态升温，企业级AI部署加速",
-      "en": "Agent Skills Ecosystem Heats Up, Enterprise AI Deployment Accelerates"
+      "zh": "AI Agent 技能生态加速，Claude Fable 5 发布引安全讨论",
+      "en": "AI Agent Skills Ecosystem Accelerates, Claude Fable 5 Launch Sparks Safety Debate"
     },
     "editorNote": {
-      "zh": "今日GitHub项目聚焦Agent技能与工程实践，多个高星项目围绕Agent能力扩展与生产级应用。OpenAI与Oracle合作将模型嵌入企业云，同时发布AI虚假信息报告，凸显安全与合规需求。",
-      "en": "Today's GitHub projects focus on agent skills and engineering practices, with multiple high-star projects around agent capability expansion and production-grade applications. OpenAI's partnership with Oracle embeds models into enterprise cloud, while its report on AI disinformation highlights security and compliance needs."
+      "zh": "今日 GitHub 上 Agent 技能类项目持续升温，Google 官方与社区项目齐头并进；Anthropic 发布 Fable 5 但安全限制引发争议。跨源信号指向 Agent 技能标准化与安全透明化两大主线。",
+      "en": "Today's GitHub sees continued momentum in agent skill projects, with both Google official and community projects advancing; Anthropic's Fable 5 launch but safety restrictions spark debate. Cross-source signals point to two main themes: agent skill standardization and safety transparency."
     },
     "keyTakeaway": {
-      "zh": "Agent技能生态成为今日主线：Google官方与社区项目共同推动Agent技能标准化，同时企业级AI部署因OpenAI-Oracle合作而加速。",
-      "en": "The agent skills ecosystem is the main theme today: official Google and community projects jointly drive standardization, while enterprise AI deployment accelerates due to the OpenAI-Oracle partnership."
+      "zh": "AI Agent 技能生态正从碎片化走向标准化，Google 官方与社区项目共同推动；同时，Claude Fable 5 的安全限制策略引发社区对模型能力释放与透明度的讨论。",
+      "en": "The AI agent skill ecosystem is moving from fragmentation to standardization, driven by both Google official and community projects; meanwhile, Claude Fable 5's safety restrictions spark community discussion on model capability release and transparency."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent技能标准化趋势升温",
-          "en": "Agent Skills Standardization Trend Heats Up"
+          "zh": "Agent 技能标准化加速：Google 官方与社区项目齐发力",
+          "en": "Agent Skill Standardization Accelerates: Google Official and Community Projects Advance"
         },
         "category": {
-          "zh": "技术趋势",
-          "en": "Technology Trend"
+          "zh": "开源与开发者生态",
+          "en": "Open Source & Developer Ecosystem"
         },
         "summary": {
-          "zh": "Google官方发布skills项目（1.33万星），同时社区项目addyosmani/agent-skills（5.2万星）和mvanhorn/last30days-skill（3.9万星）均聚焦Agent技能，今日新增星数领先。",
-          "en": "Google officially released the skills project (13.3k stars), while community projects addyosmani/agent-skills (52k stars) and mvanhorn/last30days-skill (39k stars) focus on agent skills, leading in daily stars."
+          "zh": "Google 发布官方 Agent Skills 集合（google/skills），覆盖 Cloud 和 Gemini API；同时社区项目 addyosmani/agent-skills 日增 821 星，总星数超 5.1 万，由 Google Chrome 团队专家创建。两者均致力于为 AI 代理提供可复用的技能模块。",
+          "en": "Google released official Agent Skills collection (google/skills) covering Cloud and Gemini API; meanwhile community project addyosmani/agent-skills gained 821 stars today, total over 51k, created by Google Chrome team expert. Both aim to provide reusable skill modules for AI agents."
         },
         "pmInsight": {
-          "zh": "Agent技能正从碎片化走向标准化，PM应关注技能生态的互操作性，优先支持开放技能标准，避免锁定在单一平台。",
-          "en": "Agent skills are moving from fragmentation to standardization. PMs should focus on interoperability of the skill ecosystem, prioritize open skill standards, and avoid lock-in to a single platform."
+          "zh": "Agent 技能标准化是降低开发门槛的关键。PM 应关注技能市场的形成，考虑将自身产品功能封装为 Agent 技能，或集成主流技能库以增强代理能力。",
+          "en": "Agent skill standardization is key to lowering development barriers. PMs should monitor the formation of skill marketplaces, consider packaging product features as agent skills, or integrate mainstream skill libraries to enhance agent capabilities."
         },
         "impact": "High",
         "sources": [
-          {
-            "label": "addyosmani/agent-skills",
-            "url": "https://github.com/addyosmani/agent-skills"
-          },
           {
             "label": "google/skills",
             "url": "https://github.com/google/skills"
           },
           {
-            "label": "mvanhorn/last30days-skill",
-            "url": "https://github.com/mvanhorn/last30days-skill"
+            "label": "addyosmani/agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       },
       {
         "title": {
-          "zh": "企业级AI部署通过云合作加速",
-          "en": "Enterprise AI Deployment Accelerates via Cloud Partnership"
+          "zh": "Claude Fable 5 发布但安全限制引发社区争议",
+          "en": "Claude Fable 5 Released but Safety Restrictions Spark Community Controversy"
         },
         "category": {
-          "zh": "生态合作",
-          "en": "Ecosystem Partnership"
+          "zh": "模型平台",
+          "en": "Model Platform"
         },
         "summary": {
-          "zh": "OpenAI与Oracle云达成合作，企业客户可用云承诺额度访问OpenAI模型和Codex，享受企业级安全与治理。",
-          "en": "OpenAI partnered with Oracle Cloud, allowing enterprise customers to use cloud commitments to access OpenAI models and Codex with enterprise-grade security and governance."
+          "zh": "Anthropic 发布 Claude Fable 5，性能 SOTA，但为安全对敏感查询降级到 Opus 4.8；同时推出无限制版 Mythos 5 给网络防御者。社区发现 Fable 5 在被要求开发其他 LLM 时会故意降低能力，引发对安全限制透明度的讨论。",
+          "en": "Anthropic released Claude Fable 5 with SOTA performance, but downgrades sensitive queries to Opus 4.8 for safety; also launched unrestricted Mythos 5 for cyber defenders. Community found Fable 5 deliberately degrades when asked to develop other LLMs, sparking discussion on safety restriction transparency."
         },
         "pmInsight": {
-          "zh": "企业AI采用门槛降低，PM应评估与云厂商的深度集成机会，利用现有云预算快速部署AI能力，同时关注数据主权和合规要求。",
-          "en": "Enterprise AI adoption barriers are lowered. PMs should evaluate deep integration opportunities with cloud providers, leverage existing cloud budgets for rapid AI deployment, while monitoring data sovereignty and compliance requirements."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "OpenAI on Oracle Cloud",
-            "url": "https://openai.com/index/openai-on-oracle-cloud"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "AI安全与虚假信息监管压力上升",
-          "en": "AI Security and Disinformation Regulatory Pressure Rises"
-        },
-        "category": {
-          "zh": "政策/安全",
-          "en": "Policy/Security"
-        },
-        "summary": {
-          "zh": "OpenAI发布报告揭露与中国相关的虚假信息行动利用AI影响美国技术辩论，同时医疗AI项目openmed因隐私合规需求增长较快。",
-          "en": "OpenAI released a report exposing PRC-linked disinformation operations using AI to influence US tech debates, while medical AI project openmed grows fast due to privacy compliance needs."
-        },
-        "pmInsight": {
-          "zh": "AI安全与合规成为产品差异化要素，PM应在产品设计中内置安全机制（如PII脱敏、内容审核），并关注地缘政治风险对市场准入的影响。",
-          "en": "AI security and compliance become product differentiators. PMs should embed safety mechanisms (e.g., PII redaction, content moderation) in product design and monitor geopolitical risks affecting market access."
+          "zh": "安全限制可能影响模型在竞争性 AI 研发中的实用性。PM 需评估模型的安全策略对产品功能的影响，考虑多模型备份方案，并关注 Anthropic 后续对透明度的改进。",
+          "en": "Safety restrictions may affect model utility in competitive AI R&D. PMs should evaluate the impact of model safety policies on product features, consider multi-model backup plans, and monitor Anthropic's subsequent transparency improvements."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI PRC-linked influence operations",
-            "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates"
+            "label": "Anthropic 官方",
+            "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
           },
           {
-            "label": "maziyarpanahi/openmed",
-            "url": "https://github.com/maziyarpanahi/openmed"
+            "label": "Reddit 讨论",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "开源编码智能体模型竞争加剧：Cohere 发布 North Mini Code",
+          "en": "Open-Source Coding Agent Model Competition Intensifies: Cohere Releases North Mini Code"
+        },
+        "category": {
+          "zh": "开源与开发者生态",
+          "en": "Open Source & Developer Ecosystem"
+        },
+        "summary": {
+          "zh": "Cohere 发布 30B 参数 MoE 模型 North Mini Code（3B 活跃参数），专为智能体编程设计，Apache 2.0 开源，在编码基准上超越同类模型。",
+          "en": "Cohere released 30B-parameter MoE model North Mini Code (3B active parameters), designed for agentic coding, Apache 2.0 open-source, outperforming similar models on coding benchmarks."
+        },
+        "pmInsight": {
+          "zh": "开源编码模型为开发者提供更多选择，降低对闭源模型的依赖。PM 可评估 North Mini Code 在代码生成、审查等场景的适用性，并考虑将其集成到开发工具链中。",
+          "en": "Open-source coding models provide developers with more choices, reducing reliance on closed-source models. PMs can evaluate North Mini Code's suitability for code generation, review, etc., and consider integrating it into development toolchains."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hugging Face 博客",
+            "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
           }
         ]
       }
@@ -147,20 +143,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "开发Agent技能市场或平台",
-          "en": "Develop an Agent Skills Marketplace or Platform"
+          "zh": "构建 Agent 技能市场：封装垂直领域技能模块",
+          "en": "Build an Agent Skill Marketplace: Package Vertical Domain Skill Modules"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于Agent技能标准化趋势，构建一个跨平台的技能市场，允许开发者发布、共享和货币化Agent技能，类似App Store模式。",
-          "en": "Based on the agent skills standardization trend, build a cross-platform skills marketplace allowing developers to publish, share, and monetize agent skills, similar to the App Store model."
+          "zh": "基于 Agent 技能标准化趋势，可构建一个技能市场，允许开发者发布和交易针对特定领域（如医疗、金融、法律）的 Agent 技能模块。参考 addyosmani/agent-skills 和 google/skills 的模式，但聚焦垂直场景。",
+          "en": "Based on the agent skill standardization trend, a skill marketplace can be built allowing developers to publish and trade domain-specific agent skill modules (e.g., healthcare, finance, legal). Reference the model of addyosmani/agent-skills and google/skills but focus on vertical scenarios."
         },
         "pmInsight": {
-          "zh": "假设：若推出技能市场，可降低Agent开发门槛，吸引更多第三方开发者，形成网络效应。验证方式：开发MVP，邀请10个社区项目入驻，观察开发者留存和技能复用率。",
-          "en": "Hypothesis: A skills marketplace could lower agent development barriers, attract third-party developers, and create network effects. Validation: Build an MVP, onboard 10 community projects, and track developer retention and skill reuse rates."
+          "zh": "假设：垂直技能市场能降低企业构建 AI Agent 的门槛，加速行业应用落地。验证方法：与 2-3 个行业合作伙伴共创技能模块，观察开发者采用率和任务完成效率。",
+          "en": "Hypothesis: A vertical skill marketplace can lower the barrier for enterprises to build AI agents, accelerating industry application. Validation: Co-create skill modules with 2-3 industry partners, observe developer adoption rate and task completion efficiency."
         },
         "impact": "High",
         "sources": [
@@ -176,30 +172,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "推出企业级AI合规套件",
-          "en": "Launch an Enterprise AI Compliance Suite"
+          "zh": "开发安全透明的模型能力审计工具",
+          "en": "Develop a Safety-Transparent Model Capability Audit Tool"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合医疗AI的隐私需求和企业AI部署的安全要求，开发一套集成PII脱敏、内容审核、审计日志的合规工具包，支持本地部署。",
-          "en": "Combining medical AI privacy needs and enterprise AI security requirements, develop a compliance toolkit integrating PII redaction, content moderation, and audit logs, supporting on-premises deployment."
+          "zh": "针对 Claude Fable 5 安全限制引发的透明度争议，可开发一款模型能力审计工具，帮助开发者检测模型在不同查询下的能力降级情况，并提供可视化报告。",
+          "en": "In response to the transparency controversy sparked by Claude Fable 5's safety restrictions, develop a model capability audit tool to help developers detect capability degradation under different queries and provide visual reports."
         },
         "pmInsight": {
-          "zh": "假设：企业客户愿意为合规功能支付溢价，尤其是受监管行业。验证方式：与3-5家医疗或金融企业进行POC，评估合规功能对采购决策的影响。",
-          "en": "Hypothesis: Enterprise customers are willing to pay a premium for compliance features, especially in regulated industries. Validation: Conduct POCs with 3-5 healthcare or finance enterprises and assess the impact of compliance features on purchasing decisions."
+          "zh": "假设：开发者需要工具来评估模型安全策略对实际任务的影响，以做出更明智的模型选择。验证方法：发布 MVP，邀请社区测试，收集对模型选择决策的帮助程度反馈。",
+          "en": "Hypothesis: Developers need tools to evaluate the impact of model safety policies on real tasks to make more informed model choices. Validation: Release MVP, invite community testing, collect feedback on helpfulness for model selection decisions."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "maziyarpanahi/openmed",
-            "url": "https://github.com/maziyarpanahi/openmed"
+            "label": "Reddit 讨论",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/"
           },
           {
-            "label": "OpenAI on Oracle Cloud",
-            "url": "https://openai.com/index/openai-on-oracle-cloud"
+            "label": "Anthropic 官方",
+            "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
           }
         ]
       }
@@ -218,7 +214,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "AI Agent技能，可跨Reddit、X、YouTube、Hacker News、Polymarket及全网搜索任意话题，并综合生成有据可依的摘要报告。",
           "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
-        "totalStars": 39064,
+        "totalStars": 39132,
         "language": "Python",
         "dailyStars": 2535,
         "chineseIntro": {
@@ -226,15 +222,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Star mvanhorn / last30days-skill AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
         "todayHighlight": {
-          "zh": "今日新增2535星，总星数达3.9万，凭借「一键深度调研」的强叙事在多平台社区快速传播，成为当日增长最快的项目之一。",
+          "zh": "今日新增2535星，总星数近4万，作为「深度研究」类AI技能的代表，在社交媒体趋势分析场景中持续升温。",
           "en": "登上 GitHub Trending 日榜第 4 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,535 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,064 stars、3,156 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,064 stars and 3,156 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,132 stars、3,157 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,132 stars and 3,157 forks，topics: ai-prompts, ai-skill, bluesky, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI Agent如何通过「技能」封装复杂工作流，降低用户获取结构化信息的门槛。",
+          "zh": "观察AI Agent如何通过「技能」封装特定领域知识，降低用户获取结构化信息的门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,26 +251,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "利用AI大模型，输入主题即可全自动生成脚本、匹配素材、添加字幕配音，一键输出高清短视频。",
+          "zh": "利用AI大模型一键生成高清短视频，自动完成脚本、素材、配音和字幕，支持多种大模型。",
           "en": "Star harry0703 / MoneyPrinterTurbo 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM."
         },
-        "totalStars": 85020,
+        "totalStars": 85108,
         "language": "Python",
         "dailyStars": 1389,
         "chineseIntro": {
-          "zh": "利用AI大模型，输入主题即可全自动生成脚本、匹配素材、添加字幕配音，一键输出高清短视频。",
+          "zh": "利用AI大模型一键生成高清短视频，自动完成脚本、素材、配音和字幕，支持多种大模型。",
           "en": "Star harry0703 / MoneyPrinterTurbo 利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM."
         },
         "todayHighlight": {
-          "zh": "今日新增1389星，总星数达8.5万，作为「AI一键出片」赛道的经典项目，持续吸引短视频创作者和自媒体从业者关注。",
+          "zh": "今日新增1389星，总星数超8.5万，在短视频创作者圈持续传播，成为「AI一键出片」的标杆项目。",
           "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 85k+，持续占据 AI 开源热门榜单, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 1,389 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 85,020 stars、12,138 forks，topics: ai, automation, chatgpt, moviepy, python，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 85,020 stars and 12,138 forks，topics: ai, automation, chatgpt, moviepy, python, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 85,108 stars、12,155 forks，topics: ai, automation, chatgpt, moviepy, python，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 85,108 stars and 12,155 forks，topics: ai, automation, chatgpt, moviepy, python, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI内容生成工具如何通过「全自动化」降低创作门槛，以及其在短视频生态中的商业化潜力。",
+          "zh": "关注AI工具如何将复杂创作流程简化为「一键」体验，从而快速占领垂直用户群。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,26 +291,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为AI编程Agent提供生产级工程技能，编码了资深工程师的工作流、质量门禁和最佳实践，让Agent在开发各阶段一致遵循。",
+          "zh": "为AI编码代理提供生产级工程技能，封装资深工程师的工作流、质量门和最佳实践，确保代理在开发各阶段一致执行。",
           "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
         },
-        "totalStars": 51766,
+        "totalStars": 51948,
         "language": "Shell",
         "dailyStars": 821,
         "chineseIntro": {
-          "zh": "为AI编程Agent提供生产级工程技能，编码了资深工程师的工作流、质量门禁和最佳实践，让Agent在开发各阶段一致遵循。",
+          "zh": "为AI编码代理提供生产级工程技能，封装资深工程师的工作流、质量门和最佳实践，确保代理在开发各阶段一致执行。",
           "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
         },
         "todayHighlight": {
-          "zh": "今日新增821星，总星数达5.2万，排名第一，由Google Chrome工程总监创建，凭借「工程最佳实践编码化」的叙事在开发者社区快速升温。",
+          "zh": "今日新增821星，总星数超5.1万，排名第一，由Google Chrome团队专家创建，在AI编码代理生态中快速成为基础设施。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 51k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 821 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 51,766 stars、5,703 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 51,766 stars and 5,703 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 51,948 stars、5,719 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 51,948 stars and 5,719 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI Agent从「辅助编码」向「自主遵循工程规范」演进的产品形态。",
+          "zh": "观察「技能」作为AI Agent标准化模块的商业模式，以及头部开发者如何定义行业规范。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +331,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源医疗AI工具包，支持实体抽取、PII脱敏和1000+专科医疗模型，可在设备端本地运行，无需联网。",
+          "zh": "开源医疗AI工具包，支持在设备端运行实体提取、PII脱敏和1000+医学模型，提供Python和Swift原生接口。",
           "en": "Star maziyarpanahi / openmed open-source healthcare ai"
         },
-        "totalStars": 2280,
+        "totalStars": 2317,
         "language": "Python",
         "dailyStars": 527,
         "chineseIntro": {
-          "zh": "开源医疗AI工具包，支持实体抽取、PII脱敏和1000+专科医疗模型，可在设备端本地运行，无需联网。",
+          "zh": "开源医疗AI工具包，支持在设备端运行实体提取、PII脱敏和1000+医学模型，提供Python和Swift原生接口。",
           "en": "Star maziyarpanahi / openmed open-source healthcare ai"
         },
         "todayHighlight": {
-          "zh": "今日新增527星，总星数2280，增长较快，受益于医疗AI隐私合规需求升温，以及「本地优先」架构在iOS端的落地。",
+          "zh": "今日新增527星，总星数2317，作为本地优先的医疗AI方案，在数据隐私和离线场景需求下增长较快。",
           "en": "登上 GitHub Trending 日榜第 10 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 527 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,280 stars、243 forks，topics: bert, deepseek, healthcare, ios, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,280 stars and 243 forks，topics: bert, deepseek, healthcare, ios, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,317 stars、245 forks，topics: bert, deepseek, healthcare, ios, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,317 stars and 245 forks，topics: bert, deepseek, healthcare, ios, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注医疗AI产品如何平衡模型能力与数据主权，以及「本地化」策略在垂直行业的差异化价值。",
+          "zh": "关注医疗AI的「本地化」趋势，以及开源项目如何切入合规要求高的行业。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +371,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "收集并开源了数十款AI工具（如Cursor、Devin、Perplexity等）的系统提示词、内部工具和模型信息，是AI开发者逆向工程和学习的资源库。",
+          "zh": "收集并开源数十款AI工具（如Cursor、Devin、Copilot等）的系统提示词、内部工具和模型信息，供开发者参考。",
           "en": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models"
         },
-        "totalStars": 139510,
+        "totalStars": 139540,
         "language": "Unknown",
         "dailyStars": 393,
         "chineseIntro": {
-          "zh": "收集并开源了数十款AI工具（如Cursor、Devin、Perplexity等）的系统提示词、内部工具和模型信息，是AI开发者逆向工程和学习的资源库。",
+          "zh": "收集并开源数十款AI工具（如Cursor、Devin、Copilot等）的系统提示词、内部工具和模型信息，供开发者参考。",
           "en": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models"
         },
         "todayHighlight": {
-          "zh": "今日新增393星，总星数达13.95万，作为AI工具提示词领域的「百科全书」，持续吸引开发者关注，长期在榜。",
+          "zh": "今日新增393星，总星数近14万，作为AI工具提示词数据库，随新工具涌现持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 139k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 393 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,510 stars、34,590 forks，topics: ai, bolt, cluely, copilot, cursor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,510 stars and 34,590 forks，topics: ai, bolt, cluely, copilot, cursor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,540 stars、34,593 forks，topics: ai, bolt, cluely, copilot, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,540 stars and 34,593 forks，topics: ai, bolt, cluely, copilot, cursor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI产品如何通过系统提示词设计影响Agent行为，以及开源社区对「黑盒」工具的拆解需求。",
+          "zh": "观察AI产品提示词工程的最佳实践，以及开源社区如何反向推动产品透明度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +411,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "提供从数据下载到文本生成的完整LLM训练教程，步骤清晰，适合开发者快速上手训练自己的大语言模型。",
+          "zh": "提供从数据下载到文本生成的完整LLM训练教程，步骤清晰，适合入门。",
           "en": "Star FareedKhan-dev / train-llm-from-scratch A straightforward method for training your LLM, from downloading data to generating text."
         },
-        "totalStars": 5251,
+        "totalStars": 5281,
         "language": "Python",
         "dailyStars": 247,
         "chineseIntro": {
-          "zh": "提供从数据下载到文本生成的完整LLM训练教程，步骤清晰，适合开发者快速上手训练自己的大语言模型。",
+          "zh": "提供从数据下载到文本生成的完整LLM训练教程，步骤清晰，适合入门。",
           "en": "Star FareedKhan-dev / train-llm-from-scratch A straightforward method for training your LLM, from downloading data to generating text."
         },
         "todayHighlight": {
-          "zh": "今日新增247星，总星数5251，随着「自训练LLM」需求增长，该教程项目持续获得关注，尤其吸引希望深入理解模型训练流程的开发者。",
+          "zh": "今日新增247星，总星数5281，在LLM训练教程类项目中保持稳定增长，受益于开发者自训模型的需求。",
           "en": "登上 GitHub Trending 日榜第 16 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 247 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,251 stars、710 forks，topics: gemini, large-language-models, llm, openai, training，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,251 stars and 710 forks，topics: gemini, large-language-models, llm, openai, training, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,281 stars、714 forks，topics: gemini, large-language-models, llm, openai, training，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,281 stars and 714 forks，topics: gemini, large-language-models, llm, openai, training, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察LLM训练工具链的简化趋势，以及「从零训练」教程对AI人才生态的推动作用。",
+          "zh": "关注低门槛LLM训练教程对AI应用开发者的吸引力，以及教育类开源项目的增长模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +451,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Claude Code的可视化实战指南，从基础概念到高级Agent用法，提供可直接复用的模板，帮助开发者快速上手。",
+          "zh": "Claude Code的可视化示例指南，从基础到高级代理，提供即用模板。",
           "en": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
         },
-        "totalStars": 36527,
+        "totalStars": 36566,
         "language": "Python",
         "dailyStars": 211,
         "chineseIntro": {
-          "zh": "Claude Code的可视化实战指南，从基础概念到高级Agent用法，提供可直接复用的模板，帮助开发者快速上手。",
+          "zh": "Claude Code的可视化示例指南，从基础到高级代理，提供即用模板。",
           "en": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
         },
         "todayHighlight": {
-          "zh": "今日新增211星，总星数达3.65万，作为Claude Code生态的优质教程，随Claude Code用户增长持续获得新增关注。",
+          "zh": "今日新增211星，总星数超3.6万，作为Claude Code的配套教程，随Claude生态扩张持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 11 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 211 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 36,527 stars、4,413 forks，topics: claude-code, guide, tutorial，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 36,527 stars and 4,413 forks，topics: claude-code, guide, tutorial, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 36,566 stars、4,417 forks，topics: claude-code, guide, tutorial，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 36,566 stars and 4,417 forks，topics: claude-code, guide, tutorial, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI编程工具的教程生态如何影响用户采纳率，以及「模板驱动」的学习方式对产品推广的价值。",
+          "zh": "观察AI编程工具的教程类项目如何通过「即用模板」降低用户学习成本，从而推动工具采用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -495,26 +491,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Google官方发布的Agent技能集，涵盖Google Cloud、Gemini API等产品，让AI Agent能直接调用Google技术栈。",
+          "zh": "Google官方发布的Agent Skills集合，覆盖Google Cloud、Gemini API等产品，支持一键安装。",
           "en": "Star google / skills Agent Skills for Google products and technologies"
         },
-        "totalStars": 13287,
+        "totalStars": 13315,
         "language": "Python",
         "dailyStars": 211,
         "chineseIntro": {
-          "zh": "Google官方发布的Agent技能集，涵盖Google Cloud、Gemini API等产品，让AI Agent能直接调用Google技术栈。",
+          "zh": "Google官方发布的Agent Skills集合，覆盖Google Cloud、Gemini API等产品，支持一键安装。",
           "en": "Star google / skills Agent Skills for Google products and technologies"
         },
         "todayHighlight": {
-          "zh": "今日新增211星，总星数1.33万，创建仅2个月，凭借Google品牌效应和Agent技能生态的快速扩张，持续吸引开发者试用。",
+          "zh": "今日新增211星，总星数超1.3万，作为Google官方项目，在AI Agent技能标准化趋势中快速积累关注。",
           "en": "登上 GitHub Trending 日榜第 15 位, 创建仅约 2 个月便已积累 13k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 211 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,287 stars、1,007 forks，topics: google, googlecloud, skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,287 stars and 1,007 forks，topics: google, googlecloud, skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,315 stars、1,008 forks，topics: google, googlecloud, skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,315 stars and 1,008 forks，topics: google, googlecloud, skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察大厂如何通过「技能」标准化Agent与自家产品的集成，以及这对第三方Agent生态的影响。",
+          "zh": "关注大厂如何通过官方技能库抢占AI Agent生态位，以及对企业级用户的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,26 +531,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Agent性能优化系统，提供技能、本能、记忆、安全等模块，支持Claude Code、Codex、Cursor等多种AI编程Agent。",
+          "zh": "AI代理的性能优化系统，提供技能、本能、记忆、安全等功能，支持Claude Code、Codex、Cursor等主流代理。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 212719,
+        "totalStars": 212765,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "Agent性能优化系统，提供技能、本能、记忆、安全等模块，支持Claude Code、Codex、Cursor等多种AI编程Agent。",
+          "zh": "AI代理的性能优化系统，提供技能、本能、记忆、安全等功能，支持Claude Code、Codex、Cursor等主流代理。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总星数达21.3万，长期在榜，作为Agent基础设施项目，随AI编程Agent生态成熟持续获得关注，今日新增星数未公开但排名靠前。",
+          "zh": "总星数超21万，今日新增数据缺失，但长期在榜，作为AI代理基础设施的标杆项目持续获得关注。",
           "en": "总 star 数已达 212k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 212,719 stars、32,674 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 212,719 stars and 32,674 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 212,765 stars、32,679 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 212,765 stars and 32,679 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察Agent「操作系统」层的产品化机会，以及跨平台Agent工具链的标准化趋势。",
+          "zh": "观察AI代理「操作系统」类项目的产品架构，以及如何通过模块化设计满足不同代理的兼容需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,26 +571,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源AI Agent框架，支持多种大模型（Claude、ChatGPT等），提供桌面端应用，强调「与你一同成长」的个性化能力。",
+          "zh": "开源AI代理框架，支持多种大模型，提供桌面端和文档，强调与用户共同成长。",
           "en": "The agent that grows with you"
         },
-        "totalStars": 189953,
+        "totalStars": 190038,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "开源AI Agent框架，支持多种大模型（Claude、ChatGPT等），提供桌面端应用，强调「与你一同成长」的个性化能力。",
+          "zh": "开源AI代理框架，支持多种大模型，提供桌面端和文档，强调与用户共同成长。",
           "en": "The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "总星数达18.99万，长期在榜，由Nous Research团队维护，凭借开源社区活跃度和Agent框架的通用性持续吸引关注。",
-          "en": "总 star 数已达 189k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+          "zh": "总星数超19万，今日新增数据缺失，由知名AI研究机构Nous Research维护，在代理框架中保持高热度。",
+          "en": "总 star 数已达 190k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 189,953 stars、32,905 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 189,953 stars and 32,905 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 190,038 stars、32,924 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 190,038 stars and 32,924 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注开源Agent框架如何通过社区驱动迭代，以及「个性化」作为差异化卖点的产品设计思路。",
+          "zh": "关注研究机构主导的开源代理项目如何平衡学术前沿与产品实用性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,22 +617,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "OpenAI 与 Oracle 云达成合作，企业客户可使用现有云承诺额度访问 OpenAI 模型和 Codex，享受企业级安全与治理。",
+          "zh": "OpenAI 模型和 Codex 现可通过 Oracle 云承诺额度使用，企业可在现有云合同中集成 AI，享受企业级安全与治理。",
           "en": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance."
         },
         "chineseIntro": {
-          "zh": "OpenAI 与 Oracle 云达成合作，企业客户可使用现有云承诺额度访问 OpenAI 模型和 Codex，享受企业级安全与治理。",
+          "zh": "OpenAI 模型和 Codex 现可通过 Oracle 云承诺额度使用，企业可在现有云合同中集成 AI，享受企业级安全与治理。",
           "en": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance."
         },
         "todayHighlight": {
-          "zh": "此举将 OpenAI 模型嵌入 Oracle 云生态，可能加速企业采用，并改变云 AI 服务竞争格局。",
-          "en": "此举将 OpenAI 模型嵌入 Oracle 云生态，可能加速企业采用，并改变云 AI 服务竞争格局。"
+          "zh": "此举降低企业采用 OpenAI 的财务门槛，强化 Oracle 云在 AI 时代的竞争力。",
+          "en": "此举降低企业采用 OpenAI 的财务门槛，强化 Oracle 云在 AI 时代的竞争力。"
         },
         "pmInsight": {
-          "zh": "评估 Oracle 客户是否可借此降低 AI 部署成本，并关注与 AWS/Azure 的差异化优势。",
+          "zh": "评估现有云供应商的 AI 集成选项，可考虑将 AI 支出纳入云合同以优化成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
             "label": "OpenAI",
@@ -646,8 +642,156 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "OpenAI: PRC-linked influence operations are targeting AI debates in the US",
-          "en": "OpenAI: PRC-linked influence operations are targeting AI debates in the US"
+          "zh": "GitHub Changelog: Dedicated security review command now available in Copilot CLI",
+          "en": "GitHub Changelog: Dedicated security review command now available in Copilot CLI"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "GitHub Copilot CLI 新增 /security-review 命令，可在终端对代码变更进行 AI 驱动的安全审查，实验性功能。",
+          "en": "You can now run a security review on your code changes directly from GitHub Copilot CLI. The new /security-review slash command is shipping as an experimental feature in public preview,&#8230; The post Dedicated security review command now available in Copilot CLI appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub Copilot CLI 新增 /security-review 命令，可在终端对代码变更进行 AI 驱动的安全审查，实验性功能。",
+          "en": "You can now run a security review on your code changes directly from GitHub Copilot CLI. The new /security-review slash command is shipping as an experimental feature in public preview,&#8230; The post Dedicated security review command now available in Copilot CLI appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "将安全左移集成到开发者日常 CLI 工作流，提升代码提交前的漏洞检测效率。",
+          "en": "将安全左移集成到开发者日常 CLI 工作流，提升代码提交前的漏洞检测效率。"
+        },
+        "pmInsight": {
+          "zh": "在开发流程中引入 AI 安全审查可减少后期修复成本，建议团队试用并反馈。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Anthropic: Claude Fable 5 and Claude Mythos 5",
+          "en": "Anthropic: Claude Fable 5 and Claude Mythos 5"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Anthropic 发布 Claude Fable 5，性能超越此前所有模型，但为安全对敏感查询降级到 Opus 4.8；同时推出无限制版 Mythos 5 给网络防御者。",
+          "en": "AnnouncementsClaude Fable 5 and Claude Mythos 5Jun 9, 2026Today we`re launching Claude Fable 5: a Mythos-class1 model that we`ve made safe for general use.Fable 5`s capabilities exceed those of any model we`ve ever made generally available. It is state-of-the-art on nearly all tested benchmarks of AI capability, showing exceptional performance in software engineering, knowledge work, vision, scientific research, and "
+        },
+        "chineseIntro": {
+          "zh": "Anthropic 发布 Claude Fable 5，性能超越此前所有模型，但为安全对敏感查询降级到 Opus 4.8；同时推出无限制版 Mythos 5 给网络防御者。",
+          "en": "AnnouncementsClaude Fable 5 and Claude Mythos 5Jun 9, 2026Today we`re launching Claude Fable 5: a Mythos-class1 model that we`ve made safe for general use.Fable 5`s capabilities exceed those of any model we`ve ever made generally available. It is state-of-the-art on nearly all tested benchmarks of AI capability, showing exceptional performance in software engineering, knowledge work, vision, scientific research, and "
+        },
+        "todayHighlight": {
+          "zh": "Fable 5 在多项基准上达到 SOTA，但安全限制策略引发社区对模型能力释放的讨论。",
+          "en": "Fable 5 在多项基准上达到 SOTA，但安全限制策略引发社区对模型能力释放的讨论。"
+        },
+        "pmInsight": {
+          "zh": "评估 Fable 5 在复杂任务上的优势，同时注意其安全限制可能影响某些用例的可用性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Anthropic",
+            "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Introducing North Mini Code: Cohere’s First Model For Developers",
+          "en": "Hugging Face: Introducing North Mini Code: Cohere’s First Model For Developers"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Cohere 发布 30B 参数 MoE 模型 North Mini Code（3B 活跃参数），专为智能体编程设计，Apache 2.0 开源，在编码基准上超越同类模型。",
+          "en": "Introducing North Mini Code: Cohere’s First Model For Developers"
+        },
+        "chineseIntro": {
+          "zh": "Cohere 发布 30B 参数 MoE 模型 North Mini Code（3B 活跃参数），专为智能体编程设计，Apache 2.0 开源，在编码基准上超越同类模型。",
+          "en": "Introducing North Mini Code: Cohere’s First Model For Developers"
+        },
+        "todayHighlight": {
+          "zh": "开源编码智能体模型竞争加剧，North Mini Code 以较小活跃参数实现高性能，适合开发者自部署。",
+          "en": "开源编码智能体模型竞争加剧，North Mini Code 以较小活跃参数实现高性能，适合开发者自部署。"
+        },
+        "pmInsight": {
+          "zh": "考虑将 North Mini Code 集成到内部编码助手或 CI/CD 流程，利用其 agentic 能力提升开发效率。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Show HN: Pacman AI – Generated with Claude Fable 5",
+          "en": "Hacker News AI: Show HN: Pacman AI – Generated with Claude Fable 5"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "开发者用 Claude Fable 5 生成 3D 吃豆人游戏，展示模型在游戏开发中的代码生成能力。",
+          "en": "Article URL: https://pacmanai.com/ Comments URL: https://news.ycombinator.com/item?id=48484627 Points: 4 # Comments: 2"
+        },
+        "chineseIntro": {
+          "zh": "开发者用 Claude Fable 5 生成 3D 吃豆人游戏，展示模型在游戏开发中的代码生成能力。",
+          "en": "Article URL: https://pacmanai.com/ Comments URL: https://news.ycombinator.com/item?id=48484627 Points: 4 # Comments: 2"
+        },
+        "todayHighlight": {
+          "zh": "Fable 5 的代码生成能力在社区得到验证，可能推动更多 AI 生成游戏原型。",
+          "en": "Fable 5 的代码生成能力在社区得到验证，可能推动更多 AI 生成游戏原型。"
+        },
+        "pmInsight": {
+          "zh": "探索使用 Fable 5 快速生成游戏或交互式原型，降低开发试错成本。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://pacmanai.com/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
+          "en": "Reddit LocalLLaMA: Anthropic is intentionally nerfing Fable when asked to develop other LLMs"
         },
         "category": {
           "zh": "公司动态",
@@ -658,26 +802,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 发布报告，揭露与中国相关的虚假信息行动利用 AI 影响美国技术辩论、数据中心叙事和关税讨论。",
-          "en": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT."
+          "zh": "社区发现 Claude Fable 5 在被要求开发其他 LLM 时会故意降低能力，引发对模型安全限制透明度的讨论。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/\"> <img src=\"https://preview.redd.it/h5ieomi9wd6h1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=dfecf649a610e921503b9fa72719ff4501e328b1\" alt=\"Anthropic is intentionally nerfing Fable when asked to develop other LLMs\" title=\"Anthropic is intentionally nerfing Fable when asked to develop ot"
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布报告，揭露与中国相关的虚假信息行动利用 AI 影响美国技术辩论、数据中心叙事和关税讨论。",
-          "en": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT."
+          "zh": "社区发现 Claude Fable 5 在被要求开发其他 LLM 时会故意降低能力，引发对模型安全限制透明度的讨论。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/\"> <img src=\"https://preview.redd.it/h5ieomi9wd6h1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=dfecf649a610e921503b9fa72719ff4501e328b1\" alt=\"Anthropic is intentionally nerfing Fable when asked to develop other LLMs\" title=\"Anthropic is intentionally nerfing Fable when asked to develop ot"
         },
         "todayHighlight": {
-          "zh": "该报告凸显 AI 被用于地缘政治信息战，可能引发更严格的 AI 安全监管和跨国合作。",
-          "en": "该报告凸显 AI 被用于地缘政治信息战，可能引发更严格的 AI 安全监管和跨国合作。"
+          "zh": "安全限制可能影响模型在竞争性 AI 研发中的实用性，需关注 Anthropic 的回应。",
+          "en": "安全限制可能影响模型在竞争性 AI 研发中的实用性，需关注 Anthropic 的回应。"
         },
         "pmInsight": {
-          "zh": "产品需加强内容溯源和虚假信息检测能力，并关注政策变化对模型部署的影响。",
+          "zh": "若依赖 Fable 5 进行 AI 研发，需测试其安全限制对具体任务的影响，并考虑备用方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI",
-            "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates"
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/"
           }
         ]
       }
