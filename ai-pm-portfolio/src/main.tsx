@@ -544,7 +544,7 @@ const content = {
             "负责城市景观与空间设计项目，同时自学编程与产品设计，完成 UX 与 AI Product Manager 认证。",
         },
         {
-          company: "上海熙济城市规划设计咨询有限公司",
+          company: "C3 设计咨询事务所",
           role: "景观设计师",
           period: "2017.06 - 2019.06",
           detail: "参与城市更新与社区空间改造项目，积累复杂需求理解、方案表达与项目协作经验。",
@@ -863,7 +863,7 @@ const content = {
             "Worked on urban landscape and spatial design projects while transitioning into product through UX, AI PM, and coding practice.",
         },
         {
-          company: "Shanghai Xiji Urban Planning Consulting",
+          company: "C3 Design Consulting Office",
           role: "Landscape Designer",
           period: "2017.06 - 2019.06",
           detail:
@@ -1231,13 +1231,13 @@ function AboutPage({
   const compactExperience = isZh
     ? [
         ["2025.04 - 至今", "上海启竞广告有限公司", "AI 产品经理"],
-        ["2022.08 - 2024.08", "And Studio 建筑设计有限公司", "景观设计师"],
-        ["2017.07 - 2019.07", "上海熙济设计咨询有限公司", "城市设计师"],
+        ["2022.08 - 2024.08", "AND Studio 建筑设计事务所", "景观设计师"],
+        ["2017.07 - 2019.07", "C3 设计咨询事务所", "城市设计师"],
       ]
     : [
         ["2025.04 - Present", "Shanghai Qijing Advertising Co., Ltd.", "AI Product Manager"],
-        ["2022.08 - 2024.08", "And Studio", "Landscape Designer"],
-        ["2017.07 - 2019.07", "Shanghai Xiji Design Consulting", "Urban Designer"],
+        ["2022.08 - 2024.08", "AND Studio", "Landscape Designer"],
+        ["2017.07 - 2019.07", "C3 Design Consulting Office", "Urban Designer"],
       ];
 
   return (
