@@ -7,10 +7,31 @@ const dataFile = path.join(repoRoot, "src/constants/dailyData.ts");
 const dryRun = process.argv.includes("--dry-run");
 
 const companyFeeds = [
-  { company: "OpenAI", url: "https://openai.com/news/rss.xml" },
-  { company: "Anthropic", url: "https://openrss.org/feed/www.anthropic.com/news" },
-  { company: "Google AI", url: "https://blog.google/technology/ai/rss/" },
-  { company: "Hugging Face", url: "https://huggingface.co/blog/feed.xml" },
+  // Model platforms and labs
+  { company: "OpenAI", sourceType: "模型平台", region: "global", weight: 10, url: "https://openai.com/news/rss.xml" },
+  { company: "Anthropic", sourceType: "模型平台", region: "global", weight: 10, url: "https://openrss.org/feed/www.anthropic.com/news" },
+  { company: "Google AI", sourceType: "模型平台", region: "global", weight: 9, url: "https://blog.google/technology/ai/rss/" },
+  { company: "Cohere", sourceType: "模型平台", region: "global", weight: 7, url: "https://cohere.com/blog/rss.xml" },
+  { company: "Qwen", sourceType: "模型平台", region: "china", weight: 6, url: "https://qwenlm.github.io/blog/index.xml" },
+
+  // Developer ecosystem
+  { company: "Hugging Face", sourceType: "开源与开发者生态", region: "global", weight: 9, url: "https://huggingface.co/blog/feed.xml" },
+  { company: "GitHub Blog", sourceType: "开源与开发者生态", region: "global", weight: 8, url: "https://github.blog/feed/" },
+  { company: "GitHub Changelog", sourceType: "开源与开发者生态", region: "global", weight: 8, url: "https://github.blog/changelog/feed/" },
+  { company: "LangChain", sourceType: "开源与开发者生态", region: "global", weight: 7, url: "https://blog.langchain.com/rss/" },
+  { company: "Vercel AI", sourceType: "开源与开发者生态", region: "global", weight: 6, url: "https://vercel.com/blog/rss.xml" },
+
+  // Product surfaces and workflow tools
+  { company: "Microsoft AI", sourceType: "AI 产品入口", region: "global", weight: 8, url: "https://blogs.microsoft.com/feed/" },
+
+  // Community and research signals
+  { company: "Product Hunt AI", sourceType: "社区与研究信号", region: "global", weight: 7, url: "https://www.producthunt.com/feed?category=artificial-intelligence" },
+  { company: "Hacker News AI", sourceType: "社区与研究信号", region: "global", weight: 7, url: "https://hnrss.org/newest?q=AI" },
+  { company: "Hacker News LLM", sourceType: "社区与研究信号", region: "global", weight: 7, url: "https://hnrss.org/newest?q=LLM" },
+  { company: "Reddit LocalLLaMA", sourceType: "社区与研究信号", region: "global", weight: 6, url: "https://www.reddit.com/r/LocalLLaMA/.rss" },
+  { company: "Papers with Code", sourceType: "社区与研究信号", region: "global", weight: 6, url: "https://paperswithcode.com/rss" },
+  { company: "arXiv AI", sourceType: "社区与研究信号", region: "global", weight: 5, url: "https://export.arxiv.org/rss/cs.AI" },
+  { company: "arXiv CL", sourceType: "社区与研究信号", region: "global", weight: 5, url: "https://export.arxiv.org/rss/cs.CL" },
 ];
 
 const githubQueries = [
@@ -379,6 +400,7 @@ async function fetchText(url) {
       Accept: "application/rss+xml, application/xml, text/xml, text/html",
       "User-Agent": "wenjun-ai-daily-brief",
     },
+    signal: AbortSignal.timeout(15000),
   });
 
   if (!response.ok) {
@@ -386,6 +408,41 @@ async function fetchText(url) {
   }
 
   return response.text();
+}
+
+async function collectCompanyFeed(feed) {
+  const updates = [];
+
+  try {
+    const xml = await fetchText(feed.url);
+    const items = xml.match(/<item[\s\S]*?<\/item>/gi) ?? xml.match(/<entry[\s\S]*?<\/entry>/gi) ?? [];
+
+    for (const item of items.slice(0, 5)) {
+      const title = extractTag(item, "title");
+      const link = extractTag(item, "link") || item.match(/<link[^>]*href="([^"]+)"/i)?.[1] || feed.url;
+      const publishedAt =
+        extractTag(item, "pubDate") || extractTag(item, "published") || extractTag(item, "updated");
+      const summary =
+        extractTag(item, "description") || extractTag(item, "summary") || extractTag(item, "content");
+
+      if (title) {
+        updates.push({
+          company: feed.company,
+          sourceType: feed.sourceType,
+          region: feed.region,
+          weight: feed.weight,
+          title,
+          url: link,
+          publishedAt,
+          summary: summary.slice(0, 420),
+        });
+      }
+    }
+  } catch (error) {
+    console.warn(`Feed failed: ${feed.company}: ${error.message}`);
+  }
+
+  return updates;
 }
 
 async function collectGithubProjects(targetDate) {
@@ -488,8 +545,11 @@ async function enrichGithubProjects(projects) {
 }
 
 function inferCompanyEventType(item) {
-  const text = `${item.title} ${item.summary ?? ""} ${item.articleSnippet ?? ""}`.toLowerCase();
+  const text = `${item.company} ${item.sourceType ?? ""} ${item.title} ${item.summary ?? ""} ${item.articleSnippet ?? ""}`.toLowerCase();
 
+  if (item.sourceType === "社区与研究信号") {
+    return { zh: "社区/研究信号", en: "Community / research signal" };
+  }
   if (/pricing|price|api key|rate limit|token limit|quota|billing/i.test(text)) {
     return { zh: "API/定价", en: "API / pricing" };
   }
@@ -501,6 +561,9 @@ function inferCompanyEventType(item) {
   }
   if (/partner|case study|enterprise|customer|industry|collaborat/i.test(text)) {
     return { zh: "生态合作", en: "Partnership / case study" };
+  }
+  if (/arxiv|paper|benchmark|research|papers with code|reddit|hacker news|product hunt/i.test(text)) {
+    return { zh: "社区/研究信号", en: "Community / research signal" };
   }
   return { zh: "产品功能", en: "Product feature" };
 }
@@ -566,31 +629,38 @@ function parsePublishedTime(value) {
 
 function getCompanyUpdatePriority(item) {
   const text = `${item.company} ${item.title} ${item.summary ?? ""} ${item.articleSnippet ?? ""}`.toLowerCase();
-  let score = parsePublishedTime(item.publishedAt);
+  let score = parsePublishedTime(item.publishedAt) + (item.weight ?? 0) * 1000 * 60 * 60 * 12;
 
   if (/fable|mythos|claude|gpt|gemini|model|launch|introduc|release|api|pricing|available/.test(text)) {
     score += 1000 * 60 * 60 * 24 * 14;
   }
 
-  if (/anthropic|openai|google|hugging face/.test(text)) {
+  if (/anthropic|openai|google|hugging face|cursor|github|mistral|meta|perplexity|langchain|llamaindex/.test(text)) {
     score += 1000 * 60 * 60 * 24;
+  }
+
+  if (item.region === "global") {
+    score += 1000 * 60 * 60 * 12;
   }
 
   return score;
 }
 
-function selectCompanyUpdates(updates, limit = 4) {
+function selectCompanyUpdates(updates, limit = 6) {
   const sorted = [...updates].sort((a, b) => getCompanyUpdatePriority(b) - getCompanyUpdatePriority(a));
   const selected = [];
   const counts = new Map();
+  const typeCounts = new Map();
   const seenUrls = new Set();
 
   for (const item of sorted) {
     if (selected.length >= limit) break;
     if (counts.has(item.company) || seenUrls.has(item.url)) continue;
+    if ((typeCounts.get(item.sourceType) ?? 0) >= 2) continue;
 
     selected.push(item);
     counts.set(item.company, 1);
+    typeCounts.set(item.sourceType, (typeCounts.get(item.sourceType) ?? 0) + 1);
     seenUrls.add(item.url);
   }
 
@@ -601,6 +671,7 @@ function selectCompanyUpdates(updates, limit = 4) {
 
     selected.push(item);
     counts.set(item.company, (counts.get(item.company) ?? 0) + 1);
+    typeCounts.set(item.sourceType, (typeCounts.get(item.sourceType) ?? 0) + 1);
     seenUrls.add(item.url);
   }
 
@@ -614,6 +685,7 @@ function inferCompanyPmInsight(eventType) {
     产品功能: "观察该功能是否会成为品类标配，以及你的 MVP 是否需要补齐同类能力。",
     "生态合作": "从案例发布中提炼可复制行业 SOP，寻找垂直场景切入机会。",
     "政策/安全": "提前校准隐私、合规、内容安全设计，避免产品路线后期返工。",
+    "社区/研究信号": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
   };
   return map[eventType.zh] || "跟踪平台公司的能力边界、行业场景和商业化叙事变化。";
 }
@@ -777,7 +849,7 @@ function buildCompanyEnhancementPrompt(updates) {
 要求：
 1. 严格 JSON，不要 Markdown。
 2. 保留 name 字段（格式：公司名: 文章标题）。
-3. eventTypeZh 从以下选一：新模型/新能力、API/定价、产品功能、生态合作、政策/安全。
+3. eventTypeZh 从以下选一：新模型/新能力、API/定价、产品功能、生态合作、政策/安全、社区/研究信号。
 4. chineseIntroZh：1-2 句中文，说明发生了什么、对产品意味着什么。不要复制英文 RSS。
 5. todayHighlightZh：1 句，说明为什么今天值得关注（战略/竞争/行业意义），不要重复 chineseIntroZh。
 6. pmInsightZh：1 句 PM 可执行观察，按 eventType 差异化，不要万能模板。
@@ -803,6 +875,8 @@ ${JSON.stringify(
   updates.map((item) => ({
     name: `${item.company}: ${item.title}`,
     company: item.company,
+    sourceType: item.sourceType,
+    region: item.region,
     title: item.title,
     publishedAt: item.publishedAt,
     rssSummary: item.summary,
@@ -905,6 +979,8 @@ ${JSON.stringify(
     intro: normalizeChineseIntro(item.enhancedChineseIntro) || buildCompanyUpdateIntro(item),
     highlight: normalizeTodayHighlight(item.enhancedTodayHighlight),
     eventType: item.enhancedEventType?.zh || inferCompanyEventType(item).zh,
+    sourceType: item.sourceType,
+    region: item.region,
     url: item.url,
   })),
   null,
@@ -937,37 +1013,8 @@ async function enhanceEditorialBrief(payload) {
 }
 
 async function collectCompanyUpdates() {
-  const updates = [];
-
-  for (const feed of companyFeeds) {
-    try {
-      const xml = await fetchText(feed.url);
-      const items = xml.match(/<item[\s\S]*?<\/item>/gi) ?? xml.match(/<entry[\s\S]*?<\/entry>/gi) ?? [];
-
-      for (const item of items.slice(0, 6)) {
-        const title = extractTag(item, "title");
-        const link = extractTag(item, "link") || item.match(/<link[^>]*href="([^"]+)"/i)?.[1] || feed.url;
-        const publishedAt =
-          extractTag(item, "pubDate") || extractTag(item, "published") || extractTag(item, "updated");
-        const summary =
-          extractTag(item, "description") || extractTag(item, "summary") || extractTag(item, "content");
-
-        if (title) {
-          updates.push({
-            company: feed.company,
-            title,
-            url: link,
-            publishedAt,
-            summary: summary.slice(0, 420),
-          });
-        }
-      }
-    } catch (error) {
-      console.warn(`Feed failed: ${feed.company}: ${error.message}`);
-    }
-  }
-
-  return updates.slice(0, 18);
+  const results = await Promise.all(companyFeeds.map((feed) => collectCompanyFeed(feed)));
+  return results.flat().sort((a, b) => getCompanyUpdatePriority(b) - getCompanyUpdatePriority(a)).slice(0, 80);
 }
 
 function hasSufficientScrapeData(githubProjects, companyUpdates) {
@@ -1075,7 +1122,7 @@ DailySignal = {
 数量建议：
 - signals: 2-3 条
 - githubProjects: 必须 10 条；每条都必须写 totalStars、language、dailyStars、chineseIntro、todayHighlight、inclusionReason。chineseIntro.zh 是唯一的项目中文总结，不要和 summary 重复；todayHighlight 解释为什么今天快速上升或在榜
-- companyUpdates: 2-4 条
+- companyUpdates: 4-6 条，需覆盖模型平台、开发者生态、产品入口、社区/研究信号中的多个类型，避免单一公司刷屏
 - opportunities: 1-3 条
 
 GitHub 输入：
@@ -1436,11 +1483,12 @@ async function main() {
     return;
   }
 
-  const enrichedCompany = await enrichCompanyUpdates(companyUpdates);
+  const selectedCompanyUpdates = selectCompanyUpdates(companyUpdates, 6);
+  const enrichedCompany = await enrichCompanyUpdates(selectedCompanyUpdates);
   const enhancedGithubProjects = await enhanceGithubProjects(
     await enrichGithubProjects(githubProjects.slice(0, 10)),
   );
-  const enhancedCompanyUpdates = await enhanceCompanyUpdates(selectCompanyUpdates(enrichedCompany, 4));
+  const enhancedCompanyUpdates = await enhanceCompanyUpdates(selectCompanyUpdates(enrichedCompany, 6));
   const editorial = await enhanceEditorialBrief({
     targetDate,
     githubProjects: enhancedGithubProjects,
