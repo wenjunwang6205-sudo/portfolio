@@ -38,6 +38,759 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-12",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "2026-06-12 AI 产品雷达",
+      "en": "2026-06-12 AI product radar"
+    },
+    "editorNote": {
+      "zh": "基于 GitHub 趋势与大公司 RSS/原文抓取生成，强调跨源判断与 PM 可执行启发。",
+      "en": "Built from GitHub trends and company feeds with cross-source judgment and PM-ready implications."
+    },
+    "keyTakeaway": {
+      "zh": "今日主线：作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注；同时 Google AI 等平台继续推进产品与企业落地，Agent 基础设施与平台能力竞争同步升温。",
+      "en": "Today's through-line: 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注; platform players like Google AI keep pushing product and enterprise adoption as agent infrastructure competition heats up."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "agent-skills 引领开发者采用信号",
+          "en": "addyosmani/agent-skills leads developer adoption signals"
+        },
+        "category": {
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
+        },
+        "summary": {
+          "zh": "事实：addyosmani/agent-skills 今日新增 3,278 星，总 star 54,786。判断：作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注",
+          "en": "Fact: addyosmani/agent-skills gained 3278 stars today. Read: 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注"
+        },
+        "pmInsight": {
+          "zh": "优先观察任务状态、权限、失败恢复、可追溯输出——这些直接决定 Agent 产品体验上限。",
+          "en": "Watch task state, permissions, recovery, and traceability because they define agent UX ceilings."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "addyosmani/agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI 释放平台能力信号",
+          "en": "Google AI signals platform expansion"
+        },
+        "category": {
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
+        },
+        "summary": {
+          "zh": "事实：Google AI 发布「Our new community investments in Virginia support local jobs and expand energy affordability.」。判断：产品功能方向更新，可能重塑用户对 AI 产品的默认预期。",
+          "en": "Fact: Google AI published \"Our new community investments in Virginia support local jobs and expand energy affordability.\". Read: a Product feature move that may reset user expectations."
+        },
+        "pmInsight": {
+          "zh": "观察该功能是否会成为品类标配，以及你的 MVP 是否需要补齐同类能力。",
+          "en": "Decide which platform defaults you must match versus where vertical SOP creates differentiation."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "开源热度向 Agent 基础设施集中",
+          "en": "Open-source heat clusters around agent infrastructure"
+        },
+        "category": {
+          "zh": "跨源信号",
+          "en": "Cross-source signal"
+        },
+        "summary": {
+          "zh": "事实：addyosmani/agent-skills 与 msitarzewski/agency-agents 同日进入抓取前列。判断：开发者正在优先解决 Agent 运行成本、工具链效率与集成复杂度。",
+          "en": "Fact: addyosmani/agent-skills and msitarzewski/agency-agents ranked high today. Read: developers prioritize agent runtime cost, tooling efficiency, and integration complexity."
+        },
+        "pmInsight": {
+          "zh": "若你在做 Agent 产品，建议本周内验证：上下文预算、工具接入标准（如 MCP）、失败回退策略。",
+          "en": "If you ship agent products, validate context budgets, tool integration standards like MCP, and failure fallback this week."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "addyosmani/agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
+          },
+          {
+            "label": "msitarzewski/agency-agents",
+            "url": "https://github.com/msitarzewski/agency-agents"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "机会：从今日信号推导一个可验证产品假设",
+          "en": "Opportunity: derive one testable product hypothesis from today's signals"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product opportunity"
+        },
+        "summary": {
+          "zh": "基于 addyosmani/agent-skills 等项目的升温，企业客户可能需要可视化 token 消耗、压缩策略与回答质量 trade-off 的管理层，而不只是开发者自用工具。",
+          "en": "Heat around addyosmani/agent-skills suggests enterprise buyers may need visible token budgets and quality trade-offs, not only developer-side utilities."
+        },
+        "pmInsight": {
+          "zh": "用 1 周时间验证：目标用户是否愿意为「成本可视化 + 质量可控」付费，而不是仅关注模型能力本身。",
+          "en": "Spend one week validating whether users pay for cost visibility and quality control, not just raw model capability."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "addyosmani/agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "addyosmani/agent-skills",
+          "en": "addyosmani/agent-skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Shell 开源项目，Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
+        },
+        "totalStars": 54786,
+        "language": "Shell",
+        "dailyStars": 3278,
+        "chineseIntro": {
+          "zh": "Shell 开源项目，Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 2 位，总 star 数已达 54k+，持续占据 AI 开源热门榜单，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注，今日新增 3,278 星。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 54k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 3,278 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,786 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,786 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/addyosmani/agent-skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "msitarzewski/agency-agents",
+          "en": "msitarzewski/agency-agents"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Shell 开源项目，A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
+        },
+        "totalStars": 111603,
+        "language": "Shell",
+        "dailyStars": 1599,
+        "chineseIntro": {
+          "zh": "Shell 开源项目，A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 11 位，总 star 数已达 111k+，持续占据 AI 开源热门榜单，多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温，今日新增 1,599 星。",
+          "en": "登上 GitHub Trending 日榜第 11 位, 总 star 数已达 111k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 1,599 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 111,603 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 111,603 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/msitarzewski/agency-agents"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "maziyarpanahi/openmed",
+          "en": "maziyarpanahi/openmed"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Python 开源项目，Star maziyarpanahi / openmed open-source healthcare ai，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star maziyarpanahi / openmed open-source healthcare ai"
+        },
+        "totalStars": 2759,
+        "language": "Python",
+        "dailyStars": 426,
+        "chineseIntro": {
+          "zh": "Python 开源项目，Star maziyarpanahi / openmed open-source healthcare ai，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star maziyarpanahi / openmed open-source healthcare ai"
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 3 位，项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显，今日新增 426 星。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 426 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,759 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,759 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/maziyarpanahi/openmed"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "x1xhlol/system-prompts-and-models-of-ai-tools",
+          "en": "x1xhlol/system-prompts-and-models-of-ai-tools"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "开源项目，FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models"
+        },
+        "totalStars": 139877,
+        "language": "Unknown",
+        "dailyStars": 368,
+        "chineseIntro": {
+          "zh": "开源项目，FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia &amp; v0. (And other Open Sourced) System Prompts, Internal Tools &amp; AI Models"
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 7 位，总 star 数已达 139k+，持续占据 AI 开源热门榜单，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注，今日新增 368 星。",
+          "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 139k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 368 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,877 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,877 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NVIDIA/SkillSpector",
+          "en": "NVIDIA/SkillSpector"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Python 开源项目，Star NVIDIA / SkillSpector Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star NVIDIA / SkillSpector Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks."
+        },
+        "totalStars": 2677,
+        "language": "Python",
+        "dailyStars": 319,
+        "chineseIntro": {
+          "zh": "Python 开源项目，Star NVIDIA / SkillSpector Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star NVIDIA / SkillSpector Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks."
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 5 位，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注，今日新增 319 星。",
+          "en": "登上 GitHub Trending 日榜第 5 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 319 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,677 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,677 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NVIDIA/SkillSpector"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "hexo-ai/sia",
+          "en": "hexo-ai/sia"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Python 开源项目，Star hexo-ai / sia SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star hexo-ai / sia SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task."
+        },
+        "totalStars": 1306,
+        "language": "Python",
+        "dailyStars": 199,
+        "chineseIntro": {
+          "zh": "Python 开源项目，Star hexo-ai / sia SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star hexo-ai / sia SIA is a Self Improving AI framework to autonomously improve the performance of any AI system (Model / Agent) on a benchmark task."
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 17 位，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注，今日新增 199 星。",
+          "en": "登上 GitHub Trending 日榜第 17 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 199 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,306 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,306 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/hexo-ai/sia"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "kenn-io/agentsview",
+          "en": "kenn-io/agentsview"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Go 开源项目，Star kenn-io / agentsview Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star kenn-io / agentsview Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!"
+        },
+        "totalStars": 1650,
+        "language": "Go",
+        "dailyStars": 114,
+        "chineseIntro": {
+          "zh": "Go 开源项目，Star kenn-io / agentsview Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Star kenn-io / agentsview Local-first session intelligence and analytics for coding agents, supporting Claude Code, Codex, and more than 20 other agents. Also: 100x faster replacement for ccusage!"
+        },
+        "todayHighlight": {
+          "zh": "登上 GitHub Trending 日榜第 14 位，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注，今日新增 114 星。",
+          "en": "登上 GitHub Trending 日榜第 14 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 114 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,650 stars、0 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,650 stars and 0 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/kenn-io/agentsview"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 213544,
+        "language": "JavaScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "总 star 数已达 213k+，属于持续在榜的头部 AI 开源项目，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注。",
+          "en": "总 star 数已达 213k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 213,544 stars、32,822 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 213,544 stars and 32,822 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "面向开发者的 Agent 框架/运行时，帮助构建能自主规划、调用工具并持续执行任务的大模型工作流，适合做多步骤自动化、Coding Agent 和 AI 助手类产品。",
+          "en": "The agent that grows with you"
+        },
+        "totalStars": 191034,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "面向开发者的 Agent 框架/运行时，帮助构建能自主规划、调用工具并持续执行任务的大模型工作流，适合做多步骤自动化、Coding Agent 和 AI 助手类产品。",
+          "en": "The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "总 star 数已达 191k+，属于持续在榜的头部 AI 开源项目，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注。",
+          "en": "总 star 数已达 191k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 191,034 stars、33,172 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 191,034 stars and 33,172 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Significant-Gravitas/AutoGPT",
+          "en": "Significant-Gravitas/AutoGPT"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "面向本地或私有化部署的大模型运行/推理工具，帮助团队在本地环境快速拉起模型服务，适合关注数据安全、离线能力和推理成本的 AI 产品场景。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "totalStars": 184890,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "面向本地或私有化部署的大模型运行/推理工具，帮助团队在本地环境快速拉起模型服务，适合关注数据安全、离线能力和推理成本的 AI 产品场景。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "todayHighlight": {
+          "zh": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注。",
+          "en": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,890 stars、46,152 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,890 stars and 46,152 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "Google AI: Our new community investments in Virginia support local jobs and expand energy affordability.",
+          "en": "Google AI: Our new community investments in Virginia support local jobs and expand energy affordability."
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "Product feature"
+        },
+        "summary": {
+          "zh": "Google announces new community investments in Virginia Skip to main content The Keyword Our new community investments in Virginia support local jobs and expand energy affordability",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
+        },
+        "chineseIntro": {
+          "zh": "Google announces new community investments in Virginia Skip to main content The Keyword Our new community investments in Virginia support local jobs and expand energy affordability",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
+        },
+        "todayHighlight": {
+          "zh": "发布于 Thu, 11 Jun 2026 20:00:00 +0000；属于「产品功能」类型更新，反映 Google AI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Thu, 11 Jun 2026 20:00:00 +0000；属于「产品功能」类型更新，反映 Google AI 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "观察该功能是否会成为品类标配，以及你的 MVP 是否需要补齐同类能力。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "OpenAI: BBVA puts AI at the core of banking with OpenAI",
+          "en": "OpenAI: BBVA puts AI at the core of banking with OpenAI"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "生态合作",
+          "en": "Partnership / case study"
+        },
+        "summary": {
+          "zh": "OpenAI 发布「BBVA puts AI at the core of banking with OpenAI」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide."
+        },
+        "chineseIntro": {
+          "zh": "OpenAI 发布「BBVA puts AI at the core of banking with OpenAI」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide."
+        },
+        "todayHighlight": {
+          "zh": "发布于 Thu, 11 Jun 2026 00:00:00 GMT；属于「生态合作」类型更新，反映 OpenAI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Thu, 11 Jun 2026 00:00:00 GMT；属于「生态合作」类型更新，反映 OpenAI 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "从案例发布中提炼可复制行业 SOP，寻找垂直场景切入机会。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/bbva"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: GitHub Enterprise Server 3.21 is now generally available",
+          "en": "GitHub Changelog: GitHub Enterprise Server 3.21 is now generally available"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "Model / capability"
+        },
+        "summary": {
+          "zh": "GitHub Changelog 发布「GitHub Enterprise Server 3.21 is now generally available」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and policy management. Here are a few highlights in the 3.21 release: Organization custom properties are now generally&#8230; The post GitHub Enterprise Server 3.21 is now generally available appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub Changelog 发布「GitHub Enterprise Server 3.21 is now generally available」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and policy management. Here are a few highlights in the 3.21 release: Organization custom properties are now generally&#8230; The post GitHub Enterprise Server 3.21 is now generally available appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "发布于 Thu, 11 Jun 2026 22:46:53 +0000；属于「新模型/新能力」类型更新，反映 GitHub Changelog 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Thu, 11 Jun 2026 22:46:53 +0000；属于「新模型/新能力」类型更新，反映 GitHub Changelog 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-11-github-enterprise-server-3-21-is-now-generally-available"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Show HN: AI Verdict – Run ChatGPT, Claude, Gemini and Perplexity Side-by-Side",
+          "en": "Hacker News AI: Show HN: AI Verdict – Run ChatGPT, Claude, Gemini and Perplexity Side-by-Side"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "Community / research signal"
+        },
+        "summary": {
+          "zh": "Hacker News AI 发布「Show HN: AI Verdict – Run ChatGPT, Claude, Gemini and Perplexity Side-by-Side」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Article URL: https://aiverdict.github.io/ Comments URL: https://news.ycombinator.com/item?id=48498560 Points: 1 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "Hacker News AI 发布「Show HN: AI Verdict – Run ChatGPT, Claude, Gemini and Perplexity Side-by-Side」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Article URL: https://aiverdict.github.io/ Comments URL: https://news.ycombinator.com/item?id=48498560 Points: 1 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "发布于 Fri, 12 Jun 2026 01:05:16 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Fri, 12 Jun 2026 01:05:16 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://aiverdict.github.io/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Introducing North Mini Code: Cohere’s First Model For Developers",
+          "en": "Hugging Face: Introducing North Mini Code: Cohere’s First Model For Developers"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "Model / capability"
+        },
+        "summary": {
+          "zh": "Hugging Face 发布「Introducing North Mini Code: Cohere’s First Model For Developers」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Introducing North Mini Code: Cohere’s First Model For Developers"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face 发布「Introducing North Mini Code: Cohere’s First Model For Developers」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Introducing North Mini Code: Cohere’s First Model For Developers"
+        },
+        "todayHighlight": {
+          "zh": "发布于 Tue, 09 Jun 2026 15:56:23 GMT；属于「新模型/新能力」类型更新，反映 Hugging Face 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Tue, 09 Jun 2026 15:56:23 GMT；属于「新模型/新能力」类型更新，反映 Hugging Face 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!",
+          "en": "Reddit LocalLLaMA: Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "Community / research signal"
+        },
+        "summary": {
+          "zh": "Reddit LocalLLaMA 发布「Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/\"> <img src=\"https://external-preview.redd.it/mnvldNvJmgmvmn6CPV4IIDN9Rl8zxPL2G6K8z2LQrKs.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=4b0357ac10448e828e758c73b710e42a15b66a9f\" alt=\"Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!\" title=\"Gemma 4 Quad"
+        },
+        "chineseIntro": {
+          "zh": "Reddit LocalLLaMA 发布「Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/\"> <img src=\"https://external-preview.redd.it/mnvldNvJmgmvmn6CPV4IIDN9Rl8zxPL2G6K8z2LQrKs.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=4b0357ac10448e828e758c73b710e42a15b66a9f\" alt=\"Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!\" title=\"Gemma 4 Quad"
+        },
+        "todayHighlight": {
+          "zh": "发布于 2026-06-11T23:58:58+00:00；属于「社区/研究信号」类型更新，反映 Reddit LocalLLaMA 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 2026-06-11T23:58:58+00:00；属于「社区/研究信号」类型更新，反映 Reddit LocalLLaMA 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-11",
     "label": {
       "zh": "最新",
