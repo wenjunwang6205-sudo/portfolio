@@ -44,63 +44,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI Agent 工程化与医疗本地化并行升温",
-      "en": "AI Agent Engineering and Medical Localization Heat Up in Parallel"
+      "zh": "AI代理技能标准化与医疗本地化升温，企业培训生态初现",
+      "en": "AI Agent Skills Standardization and Medical Localization Heat Up, Enterprise Training Ecosystem Emerges"
     },
     "editorNote": {
-      "zh": "今日 GitHub 与公司动态显示，AI Agent 正从概念验证走向工程化落地，同时医疗等垂直领域的本地化部署需求增长较快。",
-      "en": "Today's GitHub and company updates show AI Agents moving from proof-of-concept to engineering deployment, while verticals like healthcare see growing demand for local deployment."
+      "zh": "今日GitHub上AI代理技能标准化项目agent-skills日增2656星，医疗本地化工具openmed增长515星，同时OpenAI推出企业技能课程，显示AI从模型能力向工程实践和垂直场景落地转移。",
+      "en": "Today, agent-skills gained 2656 stars, openmed 515 stars, and OpenAI launched enterprise courses, signaling a shift from model capability to engineering practice and vertical deployment."
     },
     "keyTakeaway": {
-      "zh": "AI Agent 工程化工具链（如 agent-skills、ECC）持续升温，开发者社区正从“造 Agent”转向“管 Agent”；同时，医疗等垂直领域的本地化部署需求因隐私合规而快速增长。",
-      "en": "AI Agent engineering toolchains (e.g., agent-skills, ECC) continue to gain traction, as the developer community shifts from building agents to managing them; meanwhile, local deployment in verticals like healthcare grows rapidly due to privacy compliance."
+      "zh": "AI代理技能标准化和医疗本地化部署成为今日主线，OpenAI通过教育生态锁定企业用户，模型评估工具olmo-eval填补持续评估空白。",
+      "en": "AI agent skills standardization and medical local deployment are today's main themes; OpenAI locks enterprise users via education ecosystem, and olmo-eval fills the continuous evaluation gap."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI Agent 工程化工具链需求旺盛",
-          "en": "Strong Demand for AI Agent Engineering Toolchains"
+          "zh": "AI代理技能标准化需求升温",
+          "en": "Rising Demand for AI Agent Skills Standardization"
         },
         "category": {
           "zh": "开发者生态",
           "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "agent-skills 日增 2656 星，总星数达 5.7 万；ECC 总星数 21.4 万，创建仅 5 个月。这些项目聚焦于为 AI Agent 注入专业工作流、记忆、安全等系统化能力，而非单纯构建 Agent。",
-          "en": "agent-skills gained 2,656 stars today, reaching 57k total; ECC has 214k stars in just 5 months. These projects focus on injecting professional workflows, memory, and security into AI Agents, rather than just building agents."
+          "zh": "agent-skills项目日增2656星，总星数达57188，提供7个斜杠命令覆盖开发全生命周期，社区快速采用。",
+          "en": "agent-skills gained 2656 stars (total 57188), offering 7 slash commands covering the full development lifecycle, rapidly adopted by the community."
         },
         "pmInsight": {
-          "zh": "PM 应关注 Agent 的可管理性和可观测性，投资于 Agent 编排、监控和治理工具，而非仅关注 Agent 数量。",
-          "en": "PMs should focus on agent manageability and observability, investing in orchestration, monitoring, and governance tools rather than just agent count."
+          "zh": "AI代理从实验走向生产，技能标准化成为刚需。PM应关注将代理工作流封装为可复用技能包，降低团队采用门槛。",
+          "en": "As AI agents move from experiment to production, skill standardization becomes essential. PMs should focus on packaging agent workflows into reusable skill kits to lower adoption barriers."
         },
         "impact": "High",
         "sources": [
           {
             "label": "agent-skills",
             "url": "https://github.com/addyosmani/agent-skills"
-          },
-          {
-            "label": "ECC",
-            "url": "https://github.com/affaan-m/ECC"
           }
         ]
       },
       {
         "title": {
-          "zh": "医疗 AI 本地化部署因隐私合规需求快速增长",
-          "en": "Medical AI Local Deployment Grows Rapidly Due to Privacy Compliance"
+          "zh": "医疗AI本地化部署加速",
+          "en": "Accelerated Local Deployment of Medical AI"
+        },
+        "summary": {
+          "zh": "openmed项目日增515星，提供本地运行的医疗AI工具，支持实体提取和PII脱敏，无需云端。",
+          "en": "openmed gained 515 stars, offering on-device medical AI for entity extraction and PII redaction, no cloud needed."
         },
         "category": {
           "zh": "垂直行业",
           "en": "Vertical Industry"
         },
-        "summary": {
-          "zh": "openmed 日增 515 星，总星数 3256，主打本地运行医疗 AI，支持实体提取、PII 脱敏和 1000+ 专业模型。医疗行业对数据主权和低延迟的刚性需求推动其增长。",
-          "en": "openmed gained 515 stars today, reaching 3,256 total, focusing on local medical AI with entity extraction, PII redaction, and 1,000+ models. Healthcare's rigid demand for data sovereignty and low latency drives growth."
-        },
         "pmInsight": {
-          "zh": "PM 应探索医疗、金融等强隐私行业的本地化 AI 方案，与合规需求结合，提供设备端推理产品。",
-          "en": "PMs should explore local AI solutions for privacy-sensitive industries like healthcare and finance, combining compliance needs with on-device inference products."
+          "zh": "医疗数据隐私合规驱动本地化需求。PM可探索与医疗IT系统集成，提供离线部署方案，满足医院数据不出院区的合规要求。",
+          "en": "Medical data privacy compliance drives local deployment. PMs can explore integration with hospital IT systems, offering offline solutions to meet compliance requirements."
         },
         "impact": "Medium",
         "sources": [
@@ -112,30 +108,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "模型评估工具链成为开源社区新焦点",
-          "en": "Model Evaluation Toolchains Become New Focus in Open Source Community"
-        },
-        "category": {
-          "zh": "开源与开发者生态",
-          "en": "Open Source & Developer Ecosystem"
+          "zh": "OpenAI通过教育生态锁定企业用户",
+          "en": "OpenAI Locks Enterprise Users via Education Ecosystem"
         },
         "summary": {
-          "zh": "Hugging Face 与 Allen AI 联合发布 olmo-eval，一个专为模型开发循环设计的评估工作台。同时，Reddit 社区讨论建立开源模型的种子网络，以应对中心化平台风险。",
-          "en": "Hugging Face and Allen AI released olmo-eval, an evaluation workbench for model development loops. Meanwhile, Reddit community discusses setting up a torrent network for open source models to mitigate centralized platform risks."
+          "zh": "OpenAI推出三门Academy课程，帮助用户构建AI技能、创建可重复工作流并应用智能体。",
+          "en": "OpenAI launched three Academy courses to help users build AI skills, create repeatable workflows, and apply agents."
+        },
+        "category": {
+          "zh": "模型平台",
+          "en": "Model Platform"
         },
         "pmInsight": {
-          "zh": "PM 应关注模型评估和分发基础设施的去中心化趋势，考虑投资或集成去中心化模型分发与评估工具。",
-          "en": "PMs should monitor the decentralization trend in model evaluation and distribution infrastructure, considering investment or integration of decentralized tools."
+          "zh": "OpenAI从模型能力转向技能培训，意图通过教育生态降低企业采用门槛并锁定用户。PM应关注企业培训需求，考虑将产品与教育内容结合，提升用户粘性。",
+          "en": "OpenAI shifts from model capability to skill training, aiming to lower enterprise adoption barriers and lock in users. PMs should consider integrating education content into products to increase stickiness."
         },
-        "impact": "Watch",
+        "impact": "High",
         "sources": [
           {
-            "label": "olmo-eval",
-            "url": "https://huggingface.co/blog/allenai/olmo-eval"
-          },
-          {
-            "label": "Reddit 讨论",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4gto1/we_should_set_up_a_torrent_network_for_open/"
+            "label": "OpenAI Academy",
+            "url": "https://openai.com/index/academy-courses-applying-ai-at-work"
           }
         ]
       }
@@ -143,59 +135,51 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向医疗行业的本地化 AI Agent 平台",
-          "en": "Localized AI Agent Platform for Healthcare"
+          "zh": "开发面向医疗机构的本地化AI工具包",
+          "en": "Develop Localized AI Toolkit for Healthcare Institutions"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "垂直行业",
+          "en": "Vertical Industry"
         },
         "summary": {
-          "zh": "结合 openmed 的本地医疗 AI 能力和 agent-skills 的工程化工作流，构建一个面向医疗机构的 Agent 平台，支持在设备端运行临床文本处理、诊断辅助等任务，同时满足 HIPAA 等合规要求。",
-          "en": "Combine openmed's local medical AI capabilities with agent-skills' engineering workflows to build an agent platform for healthcare institutions, enabling on-device clinical text processing and diagnostic assistance while meeting HIPAA compliance."
+          "zh": "基于openmed的本地化趋势，可构建集成实体提取、PII脱敏、病历摘要等功能的医疗AI工具包，支持离线部署，满足医院数据隐私合规。",
+          "en": "Based on openmed's local trend, build a medical AI toolkit integrating entity extraction, PII redaction, and clinical summarization, supporting offline deployment to meet privacy compliance."
         },
         "pmInsight": {
-          "zh": "验证假设：医疗机构是否愿意为本地化 AI Agent 平台付费？可通过与一家中型医院合作试点，评估部署效率和合规收益。",
-          "en": "Hypothesis to test: Are healthcare institutions willing to pay for a localized AI agent platform? Pilot with a mid-sized hospital to evaluate deployment efficiency and compliance benefits."
+          "zh": "假设：医院IT部门愿意为满足合规的本地化AI工具付费。验证方式：与2-3家医院IT部门进行POC，评估部署时间和用户满意度。",
+          "en": "Hypothesis: Hospital IT departments are willing to pay for compliant local AI tools. Validation: Conduct POC with 2-3 hospitals, measure deployment time and user satisfaction."
         },
         "impact": "Medium",
         "sources": [
           {
             "label": "openmed",
             "url": "https://github.com/maziyarpanahi/openmed"
-          },
-          {
-            "label": "agent-skills",
-            "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       },
       {
         "title": {
-          "zh": "去中心化模型分发与评估平台",
-          "en": "Decentralized Model Distribution and Evaluation Platform"
+          "zh": "构建AI代理技能市场平台",
+          "en": "Build an AI Agent Skills Marketplace"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "基于 Reddit 社区对去中心化模型分发的讨论和 olmo-eval 的评估能力，构建一个 P2P 模型分发网络，集成自动化评估基准，降低开发者对 Hugging Face 等中心化平台的依赖。",
-          "en": "Based on Reddit community discussions on decentralized model distribution and olmo-eval's evaluation capabilities, build a P2P model distribution network with integrated automated benchmarks, reducing reliance on centralized platforms like Hugging Face."
+          "zh": "借鉴agent-skills的标准化思路，创建平台让开发者发布和共享可复用的AI代理技能包，支持版本管理和企业订阅。",
+          "en": "Inspired by agent-skills standardization, create a platform for developers to publish and share reusable AI agent skill packs, with versioning and enterprise subscriptions."
         },
         "pmInsight": {
-          "zh": "验证假设：开发者是否愿意使用去中心化模型分发平台？可通过在 LocalLLaMA 社区发布 MVP，收集种子下载量和评估使用率。",
-          "en": "Hypothesis to test: Are developers willing to use a decentralized model distribution platform? Release an MVP in the LocalLLaMA community and measure torrent downloads and evaluation usage."
+          "zh": "假设：企业愿意为经过验证的代理技能包付费以加速开发。验证方式：发布MVP，邀请10家企业试用，统计技能包下载量和付费转化率。",
+          "en": "Hypothesis: Enterprises will pay for verified agent skill packs to accelerate development. Validation: Launch MVP, invite 10 enterprises to trial, track downloads and conversion rates."
         },
-        "impact": "Watch",
+        "impact": "High",
         "sources": [
           {
-            "label": "Reddit 讨论",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4gto1/we_should_set_up_a_torrent_network_for_open/"
-          },
-          {
-            "label": "olmo-eval",
-            "url": "https://huggingface.co/blog/allenai/olmo-eval"
+            "label": "agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       }
@@ -211,26 +195,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为AI编程助手注入资深工程师工作流和最佳实践的工具集。通过预置的7个斜杠命令，让Claude Code、Cursor等AI Agent在开发全周期自动遵循代码质量门禁、安全规范等专业流程。",
+          "zh": "为AI编程代理提供生产级工程技能集，包含7个斜杠命令，覆盖开发全生命周期，确保代理遵循资深工程师的工作流和质量门禁。",
           "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
         },
-        "totalStars": 57147,
+        "totalStars": 57188,
         "language": "Shell",
         "dailyStars": 2656,
         "chineseIntro": {
-          "zh": "为AI编程助手注入资深工程师工作流和最佳实践的工具集。通过预置的7个斜杠命令，让Claude Code、Cursor等AI Agent在开发全周期自动遵循代码质量门禁、安全规范等专业流程。",
+          "zh": "为AI编程代理提供生产级工程技能集，包含7个斜杠命令，覆盖开发全生命周期，确保代理遵循资深工程师的工作流和质量门禁。",
           "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
         },
         "todayHighlight": {
-          "zh": "今日新增2656星，总星数达5.7万，在AI Agent工程化领域持续升温。作者Addy Osmani是Chrome团队知名工程师，项目创建仅4个月即获得开发者社区广泛认可。",
+          "zh": "今日新增2656星，总星数达57188，在AI代理技能标准化需求升温的背景下快速传播，开发者社区积极采用。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 57k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,656 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,147 stars、6,173 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,147 stars and 6,173 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,188 stars、6,176 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,188 stars and 6,176 forks，topics: agent-skills, antigravity, antigravity-ide, claude-code, cursor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI编程助手从「生成代码」向「遵循工程规范」演进的趋势，以及顶级工程师个人IP对开源项目的带动效应。",
+          "zh": "观察AI编程代理从工具向“有经验的工程师”演进时，技能集如何成为差异化竞争点。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -251,26 +235,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套即开即用的AI代理团队，包含前端开发、社区运营、创意生成等不同角色的专业Agent。每个Agent都具备独立人格、工作流程和可交付成果，可直接集成到现有工作流中。",
+          "zh": "提供一套完整的AI代理团队，涵盖前端开发、社区运营、创意注入等角色，每个代理都有专属个性、流程和可交付成果。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
-        "totalStars": 112559,
+        "totalStars": 112580,
         "language": "Shell",
         "dailyStars": 1026,
         "chineseIntro": {
-          "zh": "一套即开即用的AI代理团队，包含前端开发、社区运营、创意生成等不同角色的专业Agent。每个Agent都具备独立人格、工作流程和可交付成果，可直接集成到现有工作流中。",
+          "zh": "提供一套完整的AI代理团队，涵盖前端开发、社区运营、创意注入等角色，每个代理都有专属个性、流程和可交付成果。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
         "todayHighlight": {
-          "zh": "总星数突破11.2万，今日新增1026星，持续在AI Agent生态中保持高热度。项目创建8个月，凭借「AI代理即服务」的叙事吸引大量开发者和中小企业关注。",
+          "zh": "今日新增1026星，总星数超11万，作为“AI代理即服务”的典型代表，持续吸引希望快速搭建多代理工作流的用户。",
           "en": "登上 GitHub Trending 日榜第 12 位, 总 star 数已达 112k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 1,026 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 112,559 stars、18,349 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 112,559 stars and 18,349 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 112,580 stars、18,349 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 112,580 stars and 18,349 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI Agent从单一工具向「多角色协作团队」演化的产品形态，以及开源社区对「即用型」Agent的旺盛需求。",
+          "zh": "关注多代理协作模式如何降低企业采用AI的门槛，以及代理角色化对产品设计的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -291,26 +275,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "本地优先的医疗AI工具，支持在设备端运行实体提取、PII脱敏和1000+专业医疗模型。提供Python一行代码调用和原生Swift应用，无需云端即可处理临床文本。",
+          "zh": "本地优先的医疗AI工具，可在设备端运行实体提取、PII脱敏等任务，支持Python一行调用或Swift原生应用，无需云端。",
           "en": "Star maziyarpanahi / openmed open-source healthcare ai"
         },
-        "totalStars": 3256,
+        "totalStars": 3264,
         "language": "Python",
         "dailyStars": 515,
         "chineseIntro": {
-          "zh": "本地优先的医疗AI工具，支持在设备端运行实体提取、PII脱敏和1000+专业医疗模型。提供Python一行代码调用和原生Swift应用，无需云端即可处理临床文本。",
+          "zh": "本地优先的医疗AI工具，可在设备端运行实体提取、PII脱敏等任务，支持Python一行调用或Swift原生应用，无需云端。",
           "en": "Star maziyarpanahi / openmed open-source healthcare ai"
         },
         "todayHighlight": {
-          "zh": "今日新增515星，总星数3256，在医疗AI隐私合规需求推动下快速增长。项目支持Apple MLX和本地部署，契合医疗行业对数据主权和低延迟的刚性需求。",
+          "zh": "今日新增515星，总星数3264，医疗数据隐私合规需求推动升温，本地化部署叙事在医疗IT圈快速传播。",
           "en": "登上 GitHub Trending 日榜第 8 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 515 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,256 stars、309 forks，topics: bert, deepseek, healthcare, ios, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,256 stars and 309 forks，topics: bert, deepseek, healthcare, ios, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,264 stars、310 forks，topics: bert, deepseek, healthcare, ios, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,264 stars and 310 forks，topics: bert, deepseek, healthcare, ios, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察医疗AI从云端向设备端迁移的产品机会，以及开源社区对「主权AI」和隐私保护工具的偏好。",
+          "zh": "观察医疗AI从云端向设备端迁移的趋势，以及隐私合规如何成为产品核心卖点。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -331,26 +315,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为LLM推理加速的KV缓存管理层，通过优化缓存策略显著降低大模型推理延迟。支持vLLM、PyTorch等主流框架，兼容AMD和NVIDIA GPU。",
+          "zh": "为LLM推理提供最快的KV缓存层，显著加速大模型推理速度，支持CUDA、AMD ROCm等多种后端。",
           "en": "Star LMCache / LMCache LMCache: Supercharge Your LLM with the Fastest KV Cache Layer"
         },
-        "totalStars": 8687,
+        "totalStars": 8689,
         "language": "Python",
         "dailyStars": 28,
         "chineseIntro": {
-          "zh": "为LLM推理加速的KV缓存管理层，通过优化缓存策略显著降低大模型推理延迟。支持vLLM、PyTorch等主流框架，兼容AMD和NVIDIA GPU。",
+          "zh": "为LLM推理提供最快的KV缓存层，显著加速大模型推理速度，支持CUDA、AMD ROCm等多种后端。",
           "en": "Star LMCache / LMCache LMCache: Supercharge Your LLM with the Fastest KV Cache Layer"
         },
         "todayHighlight": {
-          "zh": "今日新增28星，总星数8687，作为LLM推理基础设施持续获得关注。项目已运行25个月，在AI推理优化领域保持稳定增长，社区活跃度较高。",
+          "zh": "今日新增28星，总星数8689，作为vLLM生态的关键组件，随大模型推理优化需求持续获得稳定关注。",
           "en": "登上 GitHub Trending 日榜第 9 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 28 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,687 stars、1,290 forks，topics: amd, cuda, fast, inference, kv-cache，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,687 stars and 1,290 forks，topics: amd, cuda, fast, inference, kv-cache, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,689 stars、1,291 forks，topics: amd, cuda, fast, inference, kv-cache，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,689 stars and 1,291 forks，topics: amd, cuda, fast, inference, kv-cache, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注LLM推理优化工具链的成熟度，以及KV缓存技术对降低AI应用部署成本的实际价值。",
+          "zh": "关注KV缓存技术如何成为LLM推理性能瓶颈的突破口，以及其对AI应用成本的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -371,26 +355,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI Agent的「操作系统级」性能优化框架，为Claude Code、Codex、Cursor等编程Agent提供技能、直觉、记忆、安全等系统化能力。支持多语言文档和社区贡献。",
+          "zh": "AI代理的“操作系统”，提供技能、直觉、记忆、安全等能力，兼容Claude Code、Codex、Cursor等多种代理框架。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 214433,
+        "totalStars": 214445,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "AI Agent的「操作系统级」性能优化框架，为Claude Code、Codex、Cursor等编程Agent提供技能、直觉、记忆、安全等系统化能力。支持多语言文档和社区贡献。",
+          "zh": "AI代理的“操作系统”，提供技能、直觉、记忆、安全等能力，兼容Claude Code、Codex、Cursor等多种代理框架。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总星数高达21.4万，今日暂无新增数据，但项目创建仅5个月即跻身顶级开源项目。凭借「Agent操作系统」的定位和广泛的语言支持，在开发者社区快速传播。",
+          "zh": "总星数达214445，今日新增数据未提供，但作为代理框架的底层基础设施，持续受益于AI代理生态的扩张。",
           "en": "总 star 数已达 214k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 214,433 stars、32,950 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 214,433 stars and 32,950 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 214,445 stars、32,951 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 214,445 stars and 32,951 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI Agent从「工具」向「平台」演进的架构思路，以及多语言社区运营对项目全球化的推动作用。",
+          "zh": "观察代理框架标准化趋势，以及“代理操作系统”概念如何重塑开发工具链。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -411,26 +395,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "由Nous Research开发的AI Agent框架，支持Claude、ChatGPT、Codex等多种模型后端。提供桌面应用和文档，强调「随你成长」的个性化能力。",
+          "zh": "一个可成长的AI代理，支持桌面端运行，集成Claude、ChatGPT等多种模型，提供文档和社区支持。",
           "en": "The agent that grows with you"
         },
-        "totalStars": 192158,
+        "totalStars": 192175,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "由Nous Research开发的AI Agent框架，支持Claude、ChatGPT、Codex等多种模型后端。提供桌面应用和文档，强调「随你成长」的个性化能力。",
+          "zh": "一个可成长的AI代理，支持桌面端运行，集成Claude、ChatGPT等多种模型，提供文档和社区支持。",
           "en": "The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "总星数19.2万，今日暂无新增数据，项目创建11个月持续在AI Agent赛道保持头部地位。依托Nous Research在开源AI社区的影响力，获得大量关注。",
+          "zh": "总星数192175，今日新增数据未提供，作为Nous Research的明星项目，凭借品牌效应和持续更新维持高关注度。",
           "en": "总 star 数已达 192k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 192,158 stars、33,501 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 192,158 stars and 33,501 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 192,175 stars、33,504 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 192,175 stars and 33,504 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI Agent框架的「模型无关」设计对用户粘性的影响，以及研究机构开源项目的品牌效应。",
+          "zh": "关注开源AI代理如何通过社区驱动迭代，以及品牌背书对项目传播的杠杆作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -451,18 +435,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI Agent领域的标志性项目，提供构建、部署和运行自主AI代理的平台。支持GPT、Claude、Llama等多种模型，致力于让AI人人可用。",
+          "zh": "AI代理的早期标杆项目，提供构建、部署和运行自主代理的平台，支持多种LLM后端。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "totalStars": 184921,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "AI Agent领域的标志性项目，提供构建、部署和运行自主AI代理的平台。支持GPT、Claude、Llama等多种模型，致力于让AI人人可用。",
+          "zh": "AI代理的早期标杆项目，提供构建、部署和运行自主代理的平台，支持多种LLM后端。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "总星数18.5万，今日暂无新增数据，项目已运行39个月，作为AI Agent先驱持续被引用。虽增速放缓，但在自主AI领域仍具标杆地位。",
+          "zh": "总星数184921，今日新增数据未提供，作为AI代理领域的经典项目，持续吸引新用户探索自主代理能力。",
           "en": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -470,7 +454,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,921 stars and 46,150 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI Agent从概念验证到实用工具的演进路径，以及长期维护开源项目的社区治理策略。",
+          "zh": "观察自主代理从概念验证到实用工具的演进路径，以及早期项目如何维持生命力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -491,26 +475,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "本地运行大语言模型的极简工具，支持Kimi、GLM、DeepSeek、Qwen、Gemma等主流开源模型。提供macOS、Windows、Linux和Docker一键部署。",
+          "zh": "本地运行大模型的一站式工具，支持DeepSeek、Qwen、Gemma等主流开源模型，提供简洁的安装和运行体验。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
-        "totalStars": 173994,
+        "totalStars": 173996,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "本地运行大语言模型的极简工具，支持Kimi、GLM、DeepSeek、Qwen、Gemma等主流开源模型。提供macOS、Windows、Linux和Docker一键部署。",
+          "zh": "本地运行大模型的一站式工具，支持DeepSeek、Qwen、Gemma等主流开源模型，提供简洁的安装和运行体验。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
-          "zh": "总星数17.4万，今日暂无新增数据，项目已运行36个月，是本地LLM部署的事实标准。随着开源模型生态繁荣，持续吸引新用户。",
+          "zh": "总星数173996，今日新增数据未提供，作为本地LLM运行的事实标准，随开源模型生态繁荣持续获得新增用户。",
           "en": "总 star 数已达 173k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,994 stars、16,585 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,994 stars and 16,585 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 173,996 stars、16,585 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 173,996 stars and 16,585 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注本地AI部署工具的产品化设计，以及模型兼容性对用户选择的影响。",
+          "zh": "关注本地模型运行工具如何降低AI应用开发门槛，以及模型兼容性对用户选择的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -531,26 +515,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全球最大的开源AI提示词库，支持ChatGPT、Claude、Gemini等多种模型。提供社区分享、发现和收集提示词的功能，支持私有化部署。",
+          "zh": "全球最大的开源提示词库，支持ChatGPT、Claude、Gemini等多种模型，可自托管保障隐私。",
           "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
         },
-        "totalStars": 163639,
+        "totalStars": 163640,
         "language": "HTML",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "全球最大的开源AI提示词库，支持ChatGPT、Claude、Gemini等多种模型。提供社区分享、发现和收集提示词的功能，支持私有化部署。",
+          "zh": "全球最大的开源提示词库，支持ChatGPT、Claude、Gemini等多种模型，可自托管保障隐私。",
           "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
         },
         "todayHighlight": {
-          "zh": "总星数16.4万，今日暂无新增数据，项目已运行43个月，是提示工程领域的经典项目。随着多模型生态发展，其跨模型提示词库价值持续凸显。",
+          "zh": "总星数163640，今日新增数据未提供，作为提示工程领域的资源聚合平台，持续吸引AI用户发现和分享提示词。",
           "en": "总 star 数已达 163k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,639 stars、21,223 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,639 stars and 21,223 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,640 stars、21,223 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,640 stars and 21,223 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察提示词工程从「技巧」向「产品」演变的趋势，以及社区驱动的内容库如何构建护城河。",
+          "zh": "观察提示词库如何成为AI应用生态的基础设施，以及社区贡献对内容质量的驱动。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -571,26 +555,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Hugging Face推出的模型定义框架，支持文本、视觉、音频和多模态模型的推理与训练。提供数千个预训练模型，是机器学习领域的核心基础设施。",
+          "zh": "Hugging Face推出的模型定义框架，支持文本、视觉、音频等多模态模型的推理和训练，是机器学习领域的标准库。",
           "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
         },
-        "totalStars": 161552,
+        "totalStars": 161553,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "Hugging Face推出的模型定义框架，支持文本、视觉、音频和多模态模型的推理与训练。提供数千个预训练模型，是机器学习领域的核心基础设施。",
+          "zh": "Hugging Face推出的模型定义框架，支持文本、视觉、音频等多模态模型的推理和训练，是机器学习领域的标准库。",
           "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
         },
         "todayHighlight": {
-          "zh": "总星数16.2万，今日暂无新增数据，项目已运行93个月，是AI开源生态的基石。随着新模型不断接入，持续保持高引用和社区活跃。",
+          "zh": "总星数161553，今日新增数据未提供，作为AI基础设施的基石，随新模型发布和社区贡献持续获得稳定增长。",
           "en": "总 star 数已达 161k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 161,552 stars、33,496 forks，topics: audio, deep-learning, deepseek, gemma, glm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 161,552 stars and 33,496 forks，topics: audio, deep-learning, deepseek, gemma, glm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 161,553 stars、33,496 forks，topics: audio, deep-learning, deepseek, gemma, glm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 161,553 stars and 33,496 forks，topics: audio, deep-learning, deepseek, gemma, glm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI基础设施平台如何通过标准化接口降低模型使用门槛，以及开源生态对商业产品的赋能作用。",
+          "zh": "关注模型框架的标准化如何加速AI产品开发，以及生态锁定效应对竞争格局的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -617,19 +601,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "OpenAI 推出三门 Academy 课程，帮助用户构建实用 AI 技能、创建可重复工作流，并在日常工作中应用智能体。",
+          "zh": "OpenAI 推出三门 Academy 课程，帮助用户构建实用 AI 技能、创建可重复工作流并应用智能体。这降低了企业采用 AI 的门槛，加速了 AI 在日常工作中的落地。",
           "en": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work."
         },
         "chineseIntro": {
-          "zh": "OpenAI 推出三门 Academy 课程，帮助用户构建实用 AI 技能、创建可重复工作流，并在日常工作中应用智能体。",
+          "zh": "OpenAI 推出三门 Academy 课程，帮助用户构建实用 AI 技能、创建可重复工作流并应用智能体。这降低了企业采用 AI 的门槛，加速了 AI 在日常工作中的落地。",
           "en": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work."
         },
         "todayHighlight": {
-          "zh": "这是 OpenAI 首次系统化推出面向工作场景的 AI 技能课程，可能推动企业级 AI 培训市场。",
-          "en": "这是 OpenAI 首次系统化推出面向工作场景的 AI 技能课程，可能推动企业级 AI 培训市场。"
+          "zh": "OpenAI 从模型能力转向技能培训，表明其正通过教育生态锁定企业用户，巩固市场地位。",
+          "en": "OpenAI 从模型能力转向技能培训，表明其正通过教育生态锁定企业用户，巩固市场地位。"
         },
         "pmInsight": {
-          "zh": "产品经理可参考课程内容设计内部 AI 培训体系，或将其作为用户 onboarding 的补充材料。",
+          "zh": "可参考其课程设计，将 AI 能力封装为可复用的工作流模板，降低客户部署成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -654,19 +638,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Allen AI 与 Hugging Face 联合发布 olmo-eval，一个专为模型开发循环设计的评估工作台，支持在模型迭代中快速配置和运行基准测试。",
+          "zh": "Allen AI 与 Hugging Face 发布 olmo-eval，一个专为模型开发循环设计的评估工作台，支持在训练过程中持续评估模型。这解决了现有工具无法适应模型快速迭代的痛点。",
           "en": "olmo-eval: An evaluation workbench for the model development loop"
         },
         "chineseIntro": {
-          "zh": "Allen AI 与 Hugging Face 联合发布 olmo-eval，一个专为模型开发循环设计的评估工作台，支持在模型迭代中快速配置和运行基准测试。",
+          "zh": "Allen AI 与 Hugging Face 发布 olmo-eval，一个专为模型开发循环设计的评估工作台，支持在训练过程中持续评估模型。这解决了现有工具无法适应模型快速迭代的痛点。",
           "en": "olmo-eval: An evaluation workbench for the model development loop"
         },
         "todayHighlight": {
-          "zh": "该工具填补了模型开发过程中评估工具链的空白，可能成为开源模型开发的标准组件。",
-          "en": "该工具填补了模型开发过程中评估工具链的空白，可能成为开源模型开发的标准组件。"
+          "zh": "该工具填补了模型开发中持续评估的空白，可能成为开源模型训练的标准组件。",
+          "en": "该工具填补了模型开发中持续评估的空白，可能成为开源模型训练的标准组件。"
         },
         "pmInsight": {
-          "zh": "产品经理可关注该工具对模型迭代效率的提升，评估是否引入内部模型开发流程。",
+          "zh": "若团队自研模型，可集成此类工具加速迭代；若使用闭源模型，则需关注评估标准变化对选型的影响。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -674,43 +658,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Hugging Face",
             "url": "https://huggingface.co/blog/allenai/olmo-eval"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Shepherd's Dog: A Game by the Most Dangerous AI Model",
-          "en": "Hacker News AI: Shepherd's Dog: A Game by the Most Dangerous AI Model"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "开发者使用 Anthropic 的“最危险”模型 Claude Fable 5 一次性生成了完整游戏《Shepherd's Dog》，耗时45分钟、花费20美元。",
-          "en": "Article URL: https://koenvangilst.nl/lab/claude-fable-shepherds-dog Comments URL: https://news.ycombinator.com/item?id=48513728 Points: 9 # Comments: 3"
-        },
-        "chineseIntro": {
-          "zh": "开发者使用 Anthropic 的“最危险”模型 Claude Fable 5 一次性生成了完整游戏《Shepherd's Dog》，耗时45分钟、花费20美元。",
-          "en": "Article URL: https://koenvangilst.nl/lab/claude-fable-shepherds-dog Comments URL: https://news.ycombinator.com/item?id=48513728 Points: 9 # Comments: 3"
-        },
-        "todayHighlight": {
-          "zh": "展示了前沿模型在创意编程上的单次生成能力，可能引发对模型安全性与创造力平衡的讨论。",
-          "en": "展示了前沿模型在创意编程上的单次生成能力，可能引发对模型安全性与创造力平衡的讨论。"
-        },
-        "pmInsight": {
-          "zh": "产品经理可测试类似模型在快速原型开发中的潜力，但需注意成本与输出可控性。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog"
           }
         ]
       },
@@ -728,19 +675,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Google 宣布在弗吉尼亚州投资社区，支持电气培训联盟以培养下一代劳动力，并扩大能源可负担性项目。",
+          "zh": "Google 宣布在弗吉尼亚州投资社区，支持当地电气培训设施和能源项目，以培养下一代劳动力并扩大能源可负担性。这有助于其数据中心扩张获得社区支持。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
         },
         "chineseIntro": {
-          "zh": "Google 宣布在弗吉尼亚州投资社区，支持电气培训联盟以培养下一代劳动力，并扩大能源可负担性项目。",
+          "zh": "Google 宣布在弗吉尼亚州投资社区，支持当地电气培训设施和能源项目，以培养下一代劳动力并扩大能源可负担性。这有助于其数据中心扩张获得社区支持。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
         },
         "todayHighlight": {
-          "zh": "此举强化了 Google 在 AI 基础设施扩张中的本地化社会责任，可能影响其数据中心选址政策。",
-          "en": "此举强化了 Google 在 AI 基础设施扩张中的本地化社会责任，可能影响其数据中心选址政策。"
+          "zh": "Google 通过社区投资缓解数据中心扩张带来的能源和就业压力，为 AI 基础设施长期布局铺路。",
+          "en": "Google 通过社区投资缓解数据中心扩张带来的能源和就业压力，为 AI 基础设施长期布局铺路。"
         },
         "pmInsight": {
-          "zh": "产品经理可关注此类投资对 AI 服务成本与可用性的长期影响，尤其是能源成本。",
+          "zh": "若依赖云服务，需关注 Google 数据中心扩张对服务稳定性和定价的潜在影响。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -765,19 +712,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Reddit 社区讨论建立开源模型的种子网络，以应对 Hugging Face 等中心化平台可能成为单点故障的风险。",
+          "zh": "Reddit 社区提议建立开源模型的种子网络，以应对 Hugging Face 作为单一故障点的风险。这反映了社区对集中式模型分发平台的担忧。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>Was just thinking about this due to recent events. </p> <p>Hugging Face is a US-based company, legally incorporated as Hugging Face, Inc. with its official headquarters located in Brooklyn, New York.</p> <p>It seems like a pretty big single point of failure for local models.</p> <p>Maybe a distributed network mirror of models would be a good backup.. you know.. just in case. </p> <p>"
         },
         "chineseIntro": {
-          "zh": "Reddit 社区讨论建立开源模型的种子网络，以应对 Hugging Face 等中心化平台可能成为单点故障的风险。",
+          "zh": "Reddit 社区提议建立开源模型的种子网络，以应对 Hugging Face 作为单一故障点的风险。这反映了社区对集中式模型分发平台的担忧。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>Was just thinking about this due to recent events. </p> <p>Hugging Face is a US-based company, legally incorporated as Hugging Face, Inc. with its official headquarters located in Brooklyn, New York.</p> <p>It seems like a pretty big single point of failure for local models.</p> <p>Maybe a distributed network mirror of models would be a good backup.. you know.. just in case. </p> <p>"
         },
         "todayHighlight": {
-          "zh": "反映了社区对模型分发去中心化的需求，可能推动开源模型基础设施的变革。",
-          "en": "反映了社区对模型分发去中心化的需求，可能推动开源模型基础设施的变革。"
+          "zh": "该讨论凸显了开源模型分发去中心化的需求，可能催生新的模型分发基础设施。",
+          "en": "该讨论凸显了开源模型分发去中心化的需求，可能催生新的模型分发基础设施。"
         },
         "pmInsight": {
-          "zh": "产品经理需评估模型分发渠道的多样性，考虑自建镜像或参与去中心化网络。",
+          "zh": "若依赖开源模型，可评估多源分发策略，避免单一平台风险。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -802,19 +749,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Enterprise Server 3.21 正式发布，新增组织自定义属性、项目层级视图、REST API 新版本等特性。",
+          "zh": "GitHub Enterprise Server 3.21 正式发布，增强部署效率、监控、代码安全和策略管理，包括组织自定义属性、项目层级视图和 REST API 新版本。",
           "en": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and policy management. Here are a few highlights in the 3.21 release: Organization custom properties are now generally&#8230; The post GitHub Enterprise Server 3.21 is now generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Enterprise Server 3.21 正式发布，新增组织自定义属性、项目层级视图、REST API 新版本等特性。",
+          "zh": "GitHub Enterprise Server 3.21 正式发布，增强部署效率、监控、代码安全和策略管理，包括组织自定义属性、项目层级视图和 REST API 新版本。",
           "en": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and policy management. Here are a few highlights in the 3.21 release: Organization custom properties are now generally&#8230; The post GitHub Enterprise Server 3.21 is now generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "新版本增强了企业级部署效率与安全策略管理，可能吸引更多企业采用自托管方案。",
-          "en": "新版本增强了企业级部署效率与安全策略管理，可能吸引更多企业采用自托管方案。"
+          "zh": "新版本强化了企业级管理能力，尤其组织自定义属性可自动化规则应用，提升大规模团队协作效率。",
+          "en": "新版本强化了企业级管理能力，尤其组织自定义属性可自动化规则应用，提升大规模团队协作效率。"
         },
         "pmInsight": {
-          "zh": "产品经理可评估新特性对内部开发流程的优化，尤其是组织自定义属性和项目层级视图。",
+          "zh": "企业可升级以利用自定义属性简化权限管理，并关注 API 版本更新对集成的影响。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -822,6 +769,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Changelog",
             "url": "https://github.blog/changelog/2026-06-11-github-enterprise-server-3-21-is-now-generally-available"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Estimating No-Cot Task-Completion Time Horizons of Frontier AI Models",
+          "en": "Hacker News AI: Estimating No-Cot Task-Completion Time Horizons of Frontier AI Models"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "研究论文探讨了前沿模型无需思维链即可完成任务的时间范围，发现模型能在无 CoT 情况下完成更长任务，这对安全监控和可解释性构成挑战。",
+          "en": "Article URL: https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier Comments URL: https://news.ycombinator.com/item?id=48514091 Points: 1 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "研究论文探讨了前沿模型无需思维链即可完成任务的时间范围，发现模型能在无 CoT 情况下完成更长任务，这对安全监控和可解释性构成挑战。",
+          "en": "Article URL: https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier Comments URL: https://news.ycombinator.com/item?id=48514091 Points: 1 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "该研究揭示了模型推理能力可能超越人类监控范围，对 AI 安全策略有重要警示。",
+          "en": "该研究揭示了模型推理能力可能超越人类监控范围，对 AI 安全策略有重要警示。"
+        },
+        "pmInsight": {
+          "zh": "若产品依赖模型推理，需评估 CoT 缺失带来的可解释性风险，并考虑增加输出监控。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier"
           }
         ]
       }
