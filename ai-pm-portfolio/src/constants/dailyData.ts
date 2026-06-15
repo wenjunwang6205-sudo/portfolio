@@ -38,6 +38,788 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-15",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI 代理安全与多模型统一接口升温，OpenAI 生态布局加速",
+      "en": "AI Agent Security and Multi-Model Unified Interface Heat Up, OpenAI Ecosystem Accelerates"
+    },
+    "editorNote": {
+      "zh": "今日 GitHub 项目显示 AI 代理安全审查需求强烈，多模型统一接口持续受关注；OpenAI 推出合作伙伴网络，标志其向平台型企业转型。",
+      "en": "Today's GitHub projects show strong demand for AI agent security auditing, and multi-model unified interfaces continue to gain attention; OpenAI launches a partner network, marking its shift to a platform company."
+    },
+    "keyTakeaway": {
+      "zh": "AI 代理从实验走向生产，安全审查与多模型统一接口成为刚需；OpenAI 通过生态合作加速企业级落地。",
+      "en": "AI agents move from experimentation to production, making security auditing and multi-model unified interfaces essential; OpenAI accelerates enterprise adoption through ecosystem partnerships."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "AI 代理安全审查需求激增",
+          "en": "Surge in Demand for AI Agent Security Auditing"
+        },
+        "category": {
+          "zh": "AI 代理安全",
+          "en": "AI Agent Security"
+        },
+        "summary": {
+          "zh": "NVIDIA 的 SkillSpector 今日新增 964 星，总星数达 5560，专注于检测 AI 代理技能中的恶意模式和漏洞。",
+          "en": "NVIDIA's SkillSpector gained 964 stars today, reaching 5,560 total, focusing on detecting malicious patterns and vulnerabilities in AI agent skills."
+        },
+        "pmInsight": {
+          "zh": "AI 代理生态快速扩张，安全审查工具成为关键基础设施。产品经理应优先集成或开发代理安全扫描功能，以降低部署风险。",
+          "en": "As the AI agent ecosystem expands rapidly, security auditing tools become critical infrastructure. PMs should prioritize integrating or developing agent security scanning features to reduce deployment risks."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "NVIDIA/SkillSpector",
+            "url": "https://github.com/NVIDIA/SkillSpector"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "多模型统一接口成为开发者标配",
+          "en": "Multi-Model Unified Interface Becomes Developer Standard"
+        },
+        "category": {
+          "zh": "开发者工具",
+          "en": "Developer Tools"
+        },
+        "summary": {
+          "zh": "Andrew Ng 团队的 aisuite 今日新增 291 星，总星数 14454；SillyTavern 在 Hacker News 上获得关注，均提供统一的多 LLM API 接口。",
+          "en": "Andrew Ng's aisuite gained 291 stars today (14,454 total); SillyTavern gained traction on Hacker News, both offering unified multi-LLM API interfaces."
+        },
+        "pmInsight": {
+          "zh": "多模型切换和集成成本是当前痛点，统一接口工具可降低开发复杂度。产品经理应考虑在应用中内置多模型支持，提升灵活性和用户体验。",
+          "en": "Multi-model switching and integration costs are current pain points; unified interface tools reduce development complexity. PMs should consider building multi-model support into applications to enhance flexibility and user experience."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "andrewyng/aisuite",
+            "url": "https://github.com/andrewyng/aisuite"
+          },
+          {
+            "label": "SillyTavern",
+            "url": "https://github.com/SillyTavern/SillyTavern"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "OpenAI 系统化构建合作伙伴生态",
+          "en": "OpenAI Systematically Builds Partner Ecosystem"
+        },
+        "category": {
+          "zh": "生态合作",
+          "en": "Ecosystem Partnership"
+        },
+        "summary": {
+          "zh": "OpenAI 推出合作伙伴网络，并投入 1.5 亿美元帮助全球伙伴加速企业级 AI 采用。",
+          "en": "OpenAI launches a partner network with $150 million to help global partners accelerate enterprise AI adoption."
+        },
+        "pmInsight": {
+          "zh": "OpenAI 从模型提供商向平台型企业转型，企业级 AI 部署门槛降低。产品经理应关注 OpenAI 合作伙伴计划，探索集成机会以抢占市场。",
+          "en": "OpenAI shifts from model provider to platform company, lowering enterprise AI deployment barriers. PMs should monitor OpenAI's partner program and explore integration opportunities to capture market share."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI Partner Network",
+            "url": "https://openai.com/index/introducing-openai-partner-network"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "开发 AI 代理安全审查 SaaS 产品",
+          "en": "Develop AI Agent Security Auditing SaaS Product"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "基于 SkillSpector 等开源工具，构建面向企业的 AI 代理安全审查 SaaS 平台，提供预部署扫描、持续监控和合规报告。",
+          "en": "Build an enterprise AI agent security auditing SaaS platform based on open-source tools like SkillSpector, offering pre-deployment scanning, continuous monitoring, and compliance reporting."
+        },
+        "pmInsight": {
+          "zh": "假设：企业部署 AI 代理前需要安全审查，但缺乏一站式解决方案。MVP 可集成 SkillSpector 并添加策略管理和告警功能，目标客户为使用 Claude Code、Codex CLI 等代理的团队。",
+          "en": "Hypothesis: Enterprises need security auditing before deploying AI agents but lack one-stop solutions. MVP could integrate SkillSpector with policy management and alerting, targeting teams using agents like Claude Code and Codex CLI."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "NVIDIA/SkillSpector",
+            "url": "https://github.com/NVIDIA/SkillSpector"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "推出企业级多模型管理平台",
+          "en": "Launch Enterprise Multi-Model Management Platform"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "结合 aisuite 和 SillyTavern 的思路，打造面向企业的多模型管理平台，提供统一 API、成本优化、模型切换和监控功能。",
+          "en": "Combine ideas from aisuite and SillyTavern to create an enterprise multi-model management platform with unified API, cost optimization, model switching, and monitoring."
+        },
+        "pmInsight": {
+          "zh": "假设：企业使用多个大模型时面临管理复杂和成本失控问题。平台可提供用量追踪、自动路由到最经济模型等功能，参考 aisuite 的接口设计。",
+          "en": "Hypothesis: Enterprises using multiple LLMs face management complexity and cost overruns. The platform could offer usage tracking and automatic routing to the most cost-effective model, referencing aisuite's interface design."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "andrewyng/aisuite",
+            "url": "https://github.com/andrewyng/aisuite"
+          },
+          {
+            "label": "SillyTavern",
+            "url": "https://github.com/SillyTavern/SillyTavern"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "NVIDIA/SkillSpector",
+          "en": "NVIDIA/SkillSpector"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "NVIDIA 出品的 AI 代理技能安全扫描器，能在安装前检测恶意模式、漏洞和安全风险，支持 Claude Code、Codex CLI 等主流代理技能。",
+          "en": "Star NVIDIA / SkillSpector Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks."
+        },
+        "totalStars": 5560,
+        "language": "Python",
+        "dailyStars": 964,
+        "chineseIntro": {
+          "zh": "NVIDIA 出品的 AI 代理技能安全扫描器，能在安装前检测恶意模式、漏洞和安全风险，支持 Claude Code、Codex CLI 等主流代理技能。",
+          "en": "Star NVIDIA / SkillSpector Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks."
+        },
+        "todayHighlight": {
+          "zh": "AI 代理安全话题升温，今日新增 964 星，总星数达 5560，开发者对代理技能安全审查需求强烈。",
+          "en": "登上 GitHub Trending 日榜第 6 位, 创建仅约 3 个月便已积累 5,560 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 964 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,560 stars、423 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,560 stars and 423 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 代理生态中安全工具如何成为刚需，以及 NVIDIA 在开发者工具链中的布局。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NVIDIA/SkillSpector"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "andrewyng/aisuite",
+          "en": "andrewyng/aisuite"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Andrew Ng 团队推出的统一接口库，让开发者通过一套 API 调用 OpenAI、Anthropic 等多家大模型，简化多模型切换和集成。",
+          "en": "Star andrewyng / aisuite Simple, unified interface to multiple Generative AI providers"
+        },
+        "totalStars": 14454,
+        "language": "Python",
+        "dailyStars": 291,
+        "chineseIntro": {
+          "zh": "Andrew Ng 团队推出的统一接口库，让开发者通过一套 API 调用 OpenAI、Anthropic 等多家大模型，简化多模型切换和集成。",
+          "en": "Star andrewyng / aisuite Simple, unified interface to multiple Generative AI providers"
+        },
+        "todayHighlight": {
+          "zh": "随 OpenCoworker 桌面代理项目发布获得关注，今日新增 291 星，总星数 14454，持续作为多模型接入标准工具。",
+          "en": "登上 GitHub Trending 日榜第 15 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 291 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,454 stars、1,507 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,454 stars and 1,507 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注统一 API 层如何降低多模型管理成本，以及 Andrew Ng 品牌效应带来的社区信任。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/andrewyng/aisuite"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "shiyu-coder/Kronos",
+          "en": "shiyu-coder/Kronos"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "专为金融市场语言设计的基础模型，能够理解和生成金融文本，支持量化分析、报告生成等场景。",
+          "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
+        },
+        "totalStars": 29996,
+        "language": "Python",
+        "dailyStars": 244,
+        "chineseIntro": {
+          "zh": "专为金融市场语言设计的基础模型，能够理解和生成金融文本，支持量化分析、报告生成等场景。",
+          "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
+        },
+        "todayHighlight": {
+          "zh": "金融 AI 垂直领域持续受关注，今日新增 244 星，总星数近 3 万，演示和 Hugging Face 模型推动传播。",
+          "en": "登上 GitHub Trending 日榜第 11 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 244 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,996 stars、5,159 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,996 stars and 5,159 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察垂直领域基础模型如何通过开源获取行业用户，以及金融场景对模型可解释性的要求。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/shiyu-coder/Kronos"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "AI 代理性能优化系统，为 Claude Code、Codex、Cursor 等工具提供技能、本能、记忆、安全等增强能力。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 215627,
+        "language": "JavaScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "AI 代理性能优化系统，为 Claude Code、Codex、Cursor 等工具提供技能、本能、记忆、安全等增强能力。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "作为代理增强工具持续在榜，总星数超 21.5 万，多语言社区支持推动全球传播。",
+          "en": "总 star 数已达 215k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 215,627 stars、33,137 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 215,627 stars and 33,137 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注代理生态中「增强工具」的定位，以及如何通过多语言文档扩大用户基础。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Nous Research 推出的可成长 AI 代理，支持桌面操作、深度研究、任务自动化，集成多种大模型。",
+          "en": "The agent that grows with you"
+        },
+        "totalStars": 193715,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Nous Research 推出的可成长 AI 代理，支持桌面操作、深度研究、任务自动化，集成多种大模型。",
+          "en": "The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "总星数达 19.3 万，作为开源代理代表项目持续获得关注，文档和社区活跃度高。",
+          "en": "总 star 数已达 193k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 193,715 stars、33,899 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 193,715 stars and 33,899 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察开源代理项目如何通过桌面端场景和社区驱动迭代。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Significant-Gravitas/AutoGPT",
+          "en": "Significant-Gravitas/AutoGPT"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "最早的开源自主 AI 代理项目之一，提供构建、部署和运行 AI 代理的完整工具链，支持多种大模型。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "totalStars": 184945,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "最早的开源自主 AI 代理项目之一，提供构建、部署和运行 AI 代理的完整工具链，支持多种大模型。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "todayHighlight": {
+          "zh": "作为代理领域经典项目，总星数 18.4 万，持续更新保持活跃，社区生态成熟。",
+          "en": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,945 stars、46,140 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,945 stars and 46,140 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注早期代理项目如何通过持续迭代维持影响力，以及其生态对后来者的参考价值。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ollama/ollama",
+          "en": "ollama/ollama"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "本地运行大模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等主流开源模型，一键下载和运行。",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "totalStars": 174187,
+        "language": "Go",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "本地运行大模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等主流开源模型，一键下载和运行。",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "todayHighlight": {
+          "zh": "总星数 17.4 万，随新模型支持（如 Kimi-K2.6）持续获得新增关注，本地部署需求稳定。",
+          "en": "总 star 数已达 174k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 174,187 stars、16,620 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 174,187 stars and 16,620 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察本地模型运行工具如何成为 AI 基础设施，以及模型支持广度对用户选择的影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ollama/ollama"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "f/prompts.chat",
+          "en": "f/prompts.chat"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等主流 AI，可自托管部署保护隐私。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "totalStars": 163744,
+        "language": "HTML",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等主流 AI，可自托管部署保护隐私。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "todayHighlight": {
+          "zh": "总星数 16.3 万，作为提示词资源长期在榜，社区持续贡献新提示词。",
+          "en": "总 star 数已达 163k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,744 stars、21,237 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,744 stars and 21,237 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注提示词工程社区化运营模式，以及自托管功能对企业用户的吸引力。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/f/prompts.chat"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "huggingface/transformers",
+          "en": "huggingface/transformers"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Hugging Face 推出的模型定义框架，支持文本、视觉、音频等多模态模型的推理和训练，是 AI 开发的基础库。",
+          "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+        },
+        "totalStars": 161591,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Hugging Face 推出的模型定义框架，支持文本、视觉、音频等多模态模型的推理和训练，是 AI 开发的基础库。",
+          "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+        },
+        "todayHighlight": {
+          "zh": "总星数 16.1 万，作为机器学习基础设施持续更新，新模型支持（如 DeepSeek、GLM）推动日常增长。",
+          "en": "总 star 数已达 161k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 161,591 stars、33,501 forks，topics: audio, deep-learning, deepseek, gemma, glm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 161,591 stars and 33,501 forks，topics: audio, deep-learning, deepseek, gemma, glm, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察开源模型生态基础设施如何通过支持新模型保持不可替代性。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/huggingface/transformers"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "langflow-ai/langflow",
+          "en": "langflow-ai/langflow"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "可视化 AI 代理和工作流构建工具，通过拖拽界面快速搭建多代理协作流程，降低开发门槛。",
+          "en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+        },
+        "totalStars": 149681,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "可视化 AI 代理和工作流构建工具，通过拖拽界面快速搭建多代理协作流程，降低开发门槛。",
+          "en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+        },
+        "todayHighlight": {
+          "zh": "总星数 14.9 万，低代码 AI 开发趋势下持续受关注，React Flow 可视化交互体验受好评。",
+          "en": "总 star 数已达 149k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 149,681 stars、9,272 forks，topics: agents, chatgpt, generative-ai, large-language-models, multiagent，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 149,681 stars and 9,272 forks，topics: agents, chatgpt, generative-ai, large-language-models, multiagent, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注低代码 AI 工具如何降低企业 AI 应用开发门槛，以及可视化编排的市场需求。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/langflow-ai/langflow"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: Introducing the OpenAI Partner Network",
+          "en": "OpenAI: Introducing the OpenAI Partner Network"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "生态合作",
+          "en": "生态合作"
+        },
+        "summary": {
+          "zh": "OpenAI 推出合作伙伴网络，并投入 1.5 亿美元帮助全球伙伴加速企业级 AI 的采用、部署和转型。",
+          "en": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
+        },
+        "chineseIntro": {
+          "zh": "OpenAI 推出合作伙伴网络，并投入 1.5 亿美元帮助全球伙伴加速企业级 AI 的采用、部署和转型。",
+          "en": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
+        },
+        "todayHighlight": {
+          "zh": "这是 OpenAI 首次系统化构建合作伙伴生态，标志着其从模型提供商向平台型企业转型的关键一步。",
+          "en": "这是 OpenAI 首次系统化构建合作伙伴生态，标志着其从模型提供商向平台型企业转型的关键一步。"
+        },
+        "pmInsight": {
+          "zh": "评估自身产品与 OpenAI 生态的集成机会，尤其是面向企业客户的部署和定制化需求。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/introducing-openai-partner-network"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: SillyTavern provides a single unified interface for many LLM APIs",
+          "en": "Hacker News LLM: SillyTavern provides a single unified interface for many LLM APIs"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "SillyTavern 是一个为高级用户设计的 LLM 前端，统一了多个 LLM API 的接口。",
+          "en": "Article URL: https://github.com/SillyTavern/SillyTavern Comments URL: https://news.ycombinator.com/item?id=48532610 Points: 2 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "SillyTavern 是一个为高级用户设计的 LLM 前端，统一了多个 LLM API 的接口。",
+          "en": "Article URL: https://github.com/SillyTavern/SillyTavern Comments URL: https://news.ycombinator.com/item?id=48532610 Points: 2 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "该工具在 Hacker News 上获得关注，反映了开发者对多模型统一管理界面的强烈需求。",
+          "en": "该工具在 Hacker News 上获得关注，反映了开发者对多模型统一管理界面的强烈需求。"
+        },
+        "pmInsight": {
+          "zh": "考虑为用户提供类似的多模型切换能力，以降低模型绑定风险并提升灵活性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://github.com/SillyTavern/SillyTavern"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: AI Agents Don't Need SMS APIs. They Need Infrastructure",
+          "en": "Hacker News AI: AI Agents Don't Need SMS APIs. They Need Infrastructure"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "文章指出 AI Agent 需要的是消息基础设施而非简单的 SMS API，强调从 REST API 向 MCP 等 AI 原生基础设施的转变。",
+          "en": "Article URL: https://blog.bridgexapi.io/from-rest-apis-to-mcp-making-messaging-infrastructure-ai-native Comments URL: https://news.ycombinator.com/item?id=48536724 Points: 2 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "文章指出 AI Agent 需要的是消息基础设施而非简单的 SMS API，强调从 REST API 向 MCP 等 AI 原生基础设施的转变。",
+          "en": "Article URL: https://blog.bridgexapi.io/from-rest-apis-to-mcp-making-messaging-infrastructure-ai-native Comments URL: https://news.ycombinator.com/item?id=48536724 Points: 2 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "该观点挑战了当前 Agent 开发的主流做法，可能推动行业重新思考 Agent 的通信架构。",
+          "en": "该观点挑战了当前 Agent 开发的主流做法，可能推动行业重新思考 Agent 的通信架构。"
+        },
+        "pmInsight": {
+          "zh": "在构建 Agent 时，优先选择支持 MCP 等 AI 原生协议的消息基础设施，而非传统 API。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://blog.bridgexapi.io/from-rest-apis-to-mcp-making-messaging-infrastructure-ai-native"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: olmo-eval: An evaluation workbench for the model development loop",
+          "en": "Hugging Face: olmo-eval: An evaluation workbench for the model development loop"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "Hugging Face 发布 olmo-eval，一个专为模型开发循环设计的评估工作台，支持在模型迭代中快速配置和运行基准测试。",
+          "en": "olmo-eval: An evaluation workbench for the model development loop"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face 发布 olmo-eval，一个专为模型开发循环设计的评估工作台，支持在模型迭代中快速配置和运行基准测试。",
+          "en": "olmo-eval: An evaluation workbench for the model development loop"
+        },
+        "todayHighlight": {
+          "zh": "该工具填补了模型开发过程中持续评估的空白，有望提升开源模型迭代效率。",
+          "en": "该工具填补了模型开发过程中持续评估的空白，有望提升开源模型迭代效率。"
+        },
+        "pmInsight": {
+          "zh": "若团队自研模型，可引入类似工具加速实验迭代；若使用第三方模型，关注其评估方法论以优化选型。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/allenai/olmo-eval"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: Our new community investments in Virginia support local jobs and expand energy affordability.",
+          "en": "Google AI: Our new community investments in Virginia support local jobs and expand energy affordability."
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "Google 宣布在弗吉尼亚州进行新的社区投资，支持当地就业和扩大能源可负担性。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
+        },
+        "chineseIntro": {
+          "zh": "Google 宣布在弗吉尼亚州进行新的社区投资，支持当地就业和扩大能源可负担性。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
+        },
+        "todayHighlight": {
+          "zh": "此举体现了科技巨头在 AI 基础设施扩张中对地方经济和能源问题的关注，可能影响数据中心选址策略。",
+          "en": "此举体现了科技巨头在 AI 基础设施扩张中对地方经济和能源问题的关注，可能影响数据中心选址策略。"
+        },
+        "pmInsight": {
+          "zh": "关注 AI 基础设施的能源和社区影响，提前规划可持续运营方案以应对监管和公众期望。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: GitHub Enterprise Server 3.21 is now generally available",
+          "en": "GitHub Changelog: GitHub Enterprise Server 3.21 is now generally available"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "GitHub Enterprise Server 3.21 正式发布，增强部署效率、监控、代码安全和策略管理，包括组织自定义属性和 REST API 新版本。",
+          "en": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and policy management. Here are a few highlights in the 3.21 release: Organization custom properties are now generally&#8230; The post GitHub Enterprise Server 3.21 is now generally available appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub Enterprise Server 3.21 正式发布，增强部署效率、监控、代码安全和策略管理，包括组织自定义属性和 REST API 新版本。",
+          "en": "GitHub Enterprise Server (GHES) 3.21 enhances deployment efficiency, monitoring capabilities, code security, and policy management. Here are a few highlights in the 3.21 release: Organization custom properties are now generally&#8230; The post GitHub Enterprise Server 3.21 is now generally available appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "新版本引入的 REST API 版本 2026-03-10 包含破坏性变更，现有集成需在 24 个月内迁移。",
+          "en": "新版本引入的 REST API 版本 2026-03-10 包含破坏性变更，现有集成需在 24 个月内迁移。"
+        },
+        "pmInsight": {
+          "zh": "检查现有 CI/CD 和代码管理流程是否依赖旧版 API，制定迁移计划以避免服务中断。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-11-github-enterprise-server-3-21-is-now-generally-available"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-14",
     "label": {
       "zh": "最新",
