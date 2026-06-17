@@ -38,6 +38,820 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-17",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI Agent 基础设施持续升温，模型安全评估转向动态模拟",
+      "en": "AI Agent Infrastructure Heats Up, Model Safety Evaluation Shifts to Dynamic Simulation"
+    },
+    "editorNote": {
+      "zh": "今日 GitHub 榜单显示，AI Agent 相关项目（ECC、Hermes Agent、AutoGPT、Langflow、Dify、LangChain）占据主导，总星数超百万，表明 Agent 基础设施需求旺盛。同时，OpenAI 推出部署模拟方法，GitHub 停止新客户使用 GitHub Models，Mistral 预告新开源模型，Vercel 延长 Sandbox 运行时长，共同指向 AI 开发工具链的整合与安全评估的升级。",
+      "en": "Today's GitHub trending shows AI Agent projects (ECC, Hermes Agent, AutoGPT, Langflow, Dify, LangChain) dominating with over 1M stars, indicating strong demand for Agent infrastructure. Meanwhile, OpenAI introduces deployment simulation, GitHub sunsets GitHub Models for new customers, Mistral teases new open model, and Vercel extends Sandbox runtime, pointing to toolchain consolidation and safety evaluation upgrades."
+    },
+    "keyTakeaway": {
+      "zh": "AI Agent 基础设施项目（如 ECC、LangChain、Dify）持续在榜，表明开发者对 Agent 性能优化、工作流编排和低代码平台的需求旺盛；同时，OpenAI 的部署模拟方法预示模型安全评估将从静态测试转向动态模拟，可能成为行业新标准。",
+      "en": "AI Agent infrastructure projects (ECC, LangChain, Dify) remain trending, indicating strong demand for Agent performance optimization, workflow orchestration, and low-code platforms. Meanwhile, OpenAI's deployment simulation method signals a shift from static testing to dynamic simulation in model safety evaluation, potentially becoming a new industry standard."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "AI Agent 基础设施项目持续在榜，生态成熟度提升",
+          "en": "AI Agent Infrastructure Projects Dominate Trending, Ecosystem Maturity Increases"
+        },
+        "category": {
+          "zh": "开源生态",
+          "en": "Open Source Ecosystem"
+        },
+        "summary": {
+          "zh": "GitHub 榜单中，ECC（21.6万星）、Hermes Agent（19.5万星）、AutoGPT（18.5万星）、Langflow（15万星）、Dify（14.6万星）、LangChain（14万星）等 Agent 相关项目占据多数，总星数超百万，且多为长期在榜项目。",
+          "en": "On GitHub trending, Agent-related projects such as ECC (216k stars), Hermes Agent (195k stars), AutoGPT (185k stars), Langflow (150k stars), Dify (146k stars), and LangChain (140k stars) dominate, with total stars exceeding 1M, many of which are long-term trending."
+        },
+        "pmInsight": {
+          "zh": "Agent 基础设施已从早期探索进入平台化阶段，产品经理应关注 Agent 性能优化（如 ECC 的记忆与安全增强）、低代码工作流（如 Langflow、Dify）以及多模型支持（如 Hermes Agent）等方向，优先集成成熟开源组件以加速产品迭代。",
+          "en": "Agent infrastructure has moved from early exploration to platformization. PMs should focus on Agent performance optimization (e.g., ECC's memory and security enhancements), low-code workflows (e.g., Langflow, Dify), and multi-model support (e.g., Hermes Agent), prioritizing integration of mature open-source components to accelerate product iteration."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "ECC",
+            "url": "https://github.com/affaan-m/ECC"
+          },
+          {
+            "label": "Hermes Agent",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          },
+          {
+            "label": "AutoGPT",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          },
+          {
+            "label": "Langflow",
+            "url": "https://github.com/langflow-ai/langflow"
+          },
+          {
+            "label": "Dify",
+            "url": "https://github.com/langgenius/dify"
+          },
+          {
+            "label": "LangChain",
+            "url": "https://github.com/langchain-ai/langchain"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "模型安全评估从静态测试转向动态模拟，OpenAI 引领新标准",
+          "en": "Model Safety Evaluation Shifts from Static Testing to Dynamic Simulation, OpenAI Leads New Standard"
+        },
+        "category": {
+          "zh": "AI 安全",
+          "en": "AI Safety"
+        },
+        "summary": {
+          "zh": "OpenAI 推出部署模拟方法，利用真实对话数据在发布前预测模型行为，提升安全性和评估准确性。",
+          "en": "OpenAI introduces a deployment simulation method that uses real conversation data to predict model behavior before release, improving safety and evaluation accuracy."
+        },
+        "pmInsight": {
+          "zh": "产品经理应关注模型安全评估的动态化趋势，在模型选型时优先考虑具备动态模拟能力的供应商，并在产品中内置安全监控机制，以应对监管趋严和用户对安全性的更高要求。",
+          "en": "PMs should monitor the trend toward dynamic model safety evaluation, prioritize vendors with dynamic simulation capabilities when selecting models, and build safety monitoring into products to address stricter regulations and higher user expectations for safety."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI: Predicting model behavior before release by simulating deployment",
+            "url": "https://openai.com/index/deployment-simulation"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "开发者工具链整合加速：GitHub 停用 Models，Vercel 延长 Sandbox 时长",
+          "en": "Developer Toolchain Consolidation Accelerates: GitHub Sunsets Models, Vercel Extends Sandbox Runtime"
+        },
+        "category": {
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
+        },
+        "summary": {
+          "zh": "GitHub 宣布停止接受新客户使用 GitHub Models，推荐迁移至 Azure AI Foundry；Vercel 将 Sandbox 运行时长上限从5小时提升至24小时，支持长期 AI 工作流。",
+          "en": "GitHub announced it will no longer accept new customers for GitHub Models, recommending migration to Azure AI Foundry; Vercel increased Sandbox runtime limit from 5 to 24 hours, supporting long-running AI workflows."
+        },
+        "pmInsight": {
+          "zh": "GitHub 的整合表明微软正将 AI 服务集中到 Azure，开发者需评估对 GitHub Models 的依赖并规划迁移；Vercel 的更新则利好需要长时间运行的 AI 代理任务，产品经理可考虑将 Vercel Sandbox 作为原型或轻量级部署环境。",
+          "en": "GitHub's consolidation indicates Microsoft is centralizing AI services into Azure; developers should assess dependency on GitHub Models and plan migration. Vercel's update benefits long-running AI agent tasks; PMs may consider Vercel Sandbox as a prototyping or lightweight deployment environment."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog: GitHub Models is no longer available to new customers",
+            "url": "https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers"
+          },
+          {
+            "label": "Vercel AI: Vercel Sandbox can now run for up to 24 hours",
+            "url": "https://vercel.com/changelog/vercel-sandbox-can-now-run-for-up-to-24-hours"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "面向金融领域的 AI Agent 工具",
+          "en": "AI Agent Tools for Finance"
+        },
+        "category": {
+          "zh": "垂直应用",
+          "en": "Vertical Application"
+        },
+        "summary": {
+          "zh": "FinMind AI 展示了面向华尔街的自动化个人理财工具，类似 Claude Code 但专注金融领域。结合 Agent 基础设施成熟（如 ECC、LangChain），可快速构建金融 Agent 产品。",
+          "en": "FinMind AI demonstrates an automated personal finance tool for Wall Street, similar to Claude Code but focused on finance. With mature Agent infrastructure (e.g., ECC, LangChain), financial Agent products can be built quickly."
+        },
+        "pmInsight": {
+          "zh": "产品经理可验证假设：利用现有 Agent 框架（如 LangChain）和性能优化工具（如 ECC），构建面向个人投资者的智能投顾 Agent，提供市场分析、投资组合管理和风险提示功能，差异化在于金融领域的数据安全和合规性。",
+          "en": "PMs can test the hypothesis: using existing Agent frameworks (e.g., LangChain) and performance optimization tools (e.g., ECC), build an intelligent investment advisor Agent for individual investors, offering market analysis, portfolio management, and risk alerts, with differentiation in financial data security and compliance."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "FinMind AI",
+            "url": "https://finmindai-moneyverse.vercel.app/"
+          },
+          {
+            "label": "ECC",
+            "url": "https://github.com/affaan-m/ECC"
+          },
+          {
+            "label": "LangChain",
+            "url": "https://github.com/langchain-ai/langchain"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "本地 AI 部署与私有化助手方案",
+          "en": "Local AI Deployment and Private Assistant Solutions"
+        },
+        "category": {
+          "zh": "基础设施",
+          "en": "Infrastructure"
+        },
+        "summary": {
+          "zh": "Ollama（17.4万星）和 Open WebUI（14.2万星）持续在榜，Mistral 预告新开源模型，表明本地 AI 部署需求旺盛。Vercel Sandbox 延长运行时长也为本地部署提供了云上补充。",
+          "en": "Ollama (174k stars) and Open WebUI (142k stars) remain trending, and Mistral teases a new open model, indicating strong demand for local AI deployment. Vercel Sandbox's extended runtime also provides a cloud complement for local deployment."
+        },
+        "pmInsight": {
+          "zh": "产品经理可验证假设：结合 Ollama 和 Open WebUI，为企业客户提供私有化 AI 助手解决方案，支持本地模型运行和自定义知识库，满足数据隐私和合规需求。Mistral 新模型发布后，可快速集成以提升性能。",
+          "en": "PMs can test the hypothesis: combine Ollama and Open WebUI to offer a private AI assistant solution for enterprise customers, supporting local model execution and custom knowledge bases to meet data privacy and compliance needs. After Mistral's new model release, quickly integrate to improve performance."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Ollama",
+            "url": "https://github.com/ollama/ollama"
+          },
+          {
+            "label": "Open WebUI",
+            "url": "https://github.com/open-webui/open-webui"
+          },
+          {
+            "label": "Mistral new open-weight models",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july/"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "ECC 是一个 AI Agent 的性能优化系统，为 Claude Code、Codex、Cursor 等主流开发工具提供技能、记忆、安全等增强能力，让 Agent 运行更高效、更智能。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 216839,
+        "language": "JavaScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "ECC 是一个 AI Agent 的性能优化系统，为 Claude Code、Codex、Cursor 等主流开发工具提供技能、记忆、安全等增强能力，让 Agent 运行更高效、更智能。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "作为 Agent 基础设施项目，随 AI 编程助手生态持续升温而获得长期关注，总星数已超 21.6 万，今日新增星数未披露但社区活跃度依然很高。",
+          "en": "总 star 数已达 216k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 216,839 stars、33,298 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 216,839 stars and 33,298 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 Agent 工具链中性能优化层的价值，以及如何通过插件化设计绑定主流开发工具生态。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Hermes Agent 是一个可成长的 AI Agent 框架，支持 Claude、ChatGPT 等多种大模型，提供桌面端和文档，适合个人开发者快速搭建智能助手。",
+          "en": "The agent that grows with you"
+        },
+        "totalStars": 195535,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Hermes Agent 是一个可成长的 AI Agent 框架，支持 Claude、ChatGPT 等多种大模型，提供桌面端和文档，适合个人开发者快速搭建智能助手。",
+          "en": "The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "由 Nous Research 团队维护，创建近 11 个月已积累 19.5 万星，今日新增星数未披露，但凭借持续更新和社区口碑保持稳定增长。",
+          "en": "总 star 数已达 195k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 195,535 stars、34,350 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 195,535 stars and 34,350 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注开源研究机构如何通过 Agent 框架建立开发者信任，以及「可成长」叙事对用户粘性的影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Significant-Gravitas/AutoGPT",
+          "en": "Significant-Gravitas/AutoGPT"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "AutoGPT 是一个让每个人都能构建和运行自主 AI Agent 的平台，支持 GPT、Claude、Llama 等多种模型，致力于降低 AI 代理的使用门槛。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "totalStars": 184988,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "AutoGPT 是一个让每个人都能构建和运行自主 AI Agent 的平台，支持 GPT、Claude、Llama 等多种模型，致力于降低 AI 代理的使用门槛。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "todayHighlight": {
+          "zh": "作为 AI Agent 领域的经典项目，创建超 3 年仍保持 18.5 万星，今日新增星数未披露，但长期在榜说明其作为自主 Agent 标杆的持续影响力。",
+          "en": "总 star 数已达 184k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 184,988 stars、46,138 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 184,988 stars and 46,138 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察早期 Agent 项目如何通过持续迭代和社区运营维持长期生命力。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ollama/ollama",
+          "en": "ollama/ollama"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Ollama 是一个让开发者快速在本地运行大语言模型的工具，支持 DeepSeek、Qwen、Gemma 等主流开源模型，无需复杂配置即可一键启动。",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "totalStars": 174346,
+        "language": "Go",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Ollama 是一个让开发者快速在本地运行大语言模型的工具，支持 DeepSeek、Qwen、Gemma 等主流开源模型，无需复杂配置即可一键启动。",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "todayHighlight": {
+          "zh": "作为本地模型运行的首选工具，随开源模型生态繁荣持续获得关注，总星数达 17.4 万，今日新增星数未披露，但社区活跃度极高。",
+          "en": "总 star 数已达 174k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 174,346 stars、16,656 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 174,346 stars and 16,656 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察本地化 AI 部署工具的市场需求，以及如何通过支持多模型成为生态枢纽。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ollama/ollama"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "f/prompts.chat",
+          "en": "f/prompts.chat"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Prompts.chat 是全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等多种 AI，用户可以分享、发现和收藏提示词，也可私有化部署。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "totalStars": 163829,
+        "language": "HTML",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Prompts.chat 是全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等多种 AI，用户可以分享、发现和收藏提示词，也可私有化部署。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "todayHighlight": {
+          "zh": "作为提示词工程领域的经典资源，创建超 3 年仍保持 16.4 万星，今日新增星数未披露，持续在榜说明提示词需求随 AI 普及而长期存在。",
+          "en": "总 star 数已达 163k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,829 stars、21,248 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,829 stars and 21,248 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察提示词库类产品如何通过社区众包模式形成壁垒，以及私有化部署对企业用户的吸引力。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/f/prompts.chat"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "huggingface/transformers",
+          "en": "huggingface/transformers"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Hugging Face Transformers 是一个支持文本、图像、音频等多模态模型的深度学习框架，提供预训练模型加载、训练和推理的一站式解决方案。",
+          "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+        },
+        "totalStars": 161654,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Hugging Face Transformers 是一个支持文本、图像、音频等多模态模型的深度学习框架，提供预训练模型加载、训练和推理的一站式解决方案。",
+          "en": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+        },
+        "todayHighlight": {
+          "zh": "作为机器学习领域的基石项目，创建超 7 年仍稳居榜单，总星数 16.2 万，今日新增星数未披露，其生态地位无可替代。",
+          "en": "总 star 数已达 161k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 161,654 stars、33,526 forks，topics: audio, deep-learning, deepseek, gemma, glm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 161,654 stars and 33,526 forks，topics: audio, deep-learning, deepseek, gemma, glm, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察开源框架如何通过模型中心化策略构建开发者生态，以及多模态支持对产品扩展性的启示。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/huggingface/transformers"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "langflow-ai/langflow",
+          "en": "langflow-ai/langflow"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Langflow 是一个可视化 AI 工作流构建工具，通过拖拽方式搭建多 Agent 协作流程，支持 ChatGPT 等大模型，适合快速原型开发。",
+          "en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+        },
+        "totalStars": 149773,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Langflow 是一个可视化 AI 工作流构建工具，通过拖拽方式搭建多 Agent 协作流程，支持 ChatGPT 等大模型，适合快速原型开发。",
+          "en": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+        },
+        "todayHighlight": {
+          "zh": "作为低代码 Agent 构建工具，随 Agent 工作流需求增长而持续升温，总星数近 15 万，今日新增星数未披露，社区活跃度较高。",
+          "en": "总 star 数已达 149k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 149,773 stars、9,281 forks，topics: agents, chatgpt, generative-ai, large-language-models, multiagent，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 149,773 stars and 9,281 forks，topics: agents, chatgpt, generative-ai, large-language-models, multiagent, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察可视化 Agent 编排工具如何降低 AI 应用开发门槛，以及其与 LangChain 等框架的差异化定位。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/langflow-ai/langflow"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "langgenius/dify",
+          "en": "langgenius/dify"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Dify 是一个生产级的 AI 工作流开发平台，支持低代码/无代码构建 Agent 应用，集成 RAG、MCP 等能力，适合企业级部署。",
+          "en": "Production-ready platform for agentic workflow development."
+        },
+        "totalStars": 145543,
+        "language": "TypeScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Dify 是一个生产级的 AI 工作流开发平台，支持低代码/无代码构建 Agent 应用，集成 RAG、MCP 等能力，适合企业级部署。",
+          "en": "Production-ready platform for agentic workflow development."
+        },
+        "todayHighlight": {
+          "zh": "作为企业级 Agent 平台，随 AI 工作流落地需求增长而持续在榜，总星数 14.6 万，今日新增星数未披露，社区和商业版双轮驱动。",
+          "en": "总 star 数已达 145k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 145,543 stars、22,893 forks，topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 145,543 stars and 22,893 forks，topics: agent, agentic-ai, agentic-framework, agentic-workflow, ai, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察低代码 Agent 平台如何平衡易用性与企业级需求，以及其商业化路径。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/langgenius/dify"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "open-webui/open-webui",
+          "en": "open-webui/open-webui"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Open WebUI 是一个用户友好的 AI 聊天界面，支持 Ollama、OpenAI 等多种后端，提供自托管方案，适合个人和团队搭建私有 AI 助手。",
+          "en": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+        },
+        "totalStars": 141907,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Open WebUI 是一个用户友好的 AI 聊天界面，支持 Ollama、OpenAI 等多种后端，提供自托管方案，适合个人和团队搭建私有 AI 助手。",
+          "en": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+        },
+        "todayHighlight": {
+          "zh": "作为 Ollama 生态的核心 UI 组件，随本地 AI 部署趋势持续获得关注，总星数 14.2 万，今日新增星数未披露，社区贡献活跃。",
+          "en": "总 star 数已达 141k+，属于持续在榜的头部 AI 开源项目, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 141,907 stars、20,397 forks，topics: ai, llm, llm-ui, llm-webui, llms，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 141,907 stars and 20,397 forks，topics: ai, llm, llm-ui, llm-webui, llms, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察自托管 AI 界面的产品设计要点，以及如何通过插件化支持多后端。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/open-webui/open-webui"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "langchain-ai/langchain",
+          "en": "langchain-ai/langchain"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "LangChain 是一个 Agent 工程平台，提供构建 AI 代理的完整框架，支持多模型、多 Agent 协作、RAG 等能力，是 AI 应用开发的基础设施。",
+          "en": "The agent engineering platform."
+        },
+        "totalStars": 139517,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "LangChain 是一个 Agent 工程平台，提供构建 AI 代理的完整框架，支持多模型、多 Agent 协作、RAG 等能力，是 AI 应用开发的基础设施。",
+          "en": "The agent engineering platform."
+        },
+        "todayHighlight": {
+          "zh": "作为 Agent 框架的标杆项目，创建近 4 年仍保持 14 万星，今日新增星数未披露，其生态位稳固，持续受益于 Agent 开发需求增长。",
+          "en": "总 star 数已达 139k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,517 stars、23,122 forks，topics: agents, ai, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,517 stars and 23,122 forks，topics: agents, ai, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 Agent 框架如何通过模块化设计成为行业标准，以及其商业版与开源版的协同策略。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/langchain-ai/langchain"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: Predicting model behavior before release by simulating deployment",
+          "en": "OpenAI: Predicting model behavior before release by simulating deployment"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "OpenAI 推出部署模拟方法，利用真实对话数据在发布前预测模型行为，提升安全性和评估准确性。",
+          "en": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
+        },
+        "chineseIntro": {
+          "zh": "OpenAI 推出部署模拟方法，利用真实对话数据在发布前预测模型行为，提升安全性和评估准确性。",
+          "en": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
+        },
+        "todayHighlight": {
+          "zh": "这是模型安全评估从静态测试转向动态模拟的关键一步，可能成为行业新标准。",
+          "en": "这是模型安全评估从静态测试转向动态模拟的关键一步，可能成为行业新标准。"
+        },
+        "pmInsight": {
+          "zh": "产品经理可考虑将类似模拟集成到模型上线流程中，以降低部署风险。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/deployment-simulation"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: GitHub Models is no longer available to new customers",
+          "en": "GitHub Changelog: GitHub Models is no longer available to new customers"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "GitHub 宣布停止接受新客户使用 GitHub Models，现有客户不受影响，并推荐迁移至 Azure AI Foundry。",
+          "en": "We are retiring GitHub Models. As a first step, new customers can no longer use it. If your organization or enterprise have not previously used GitHub Models, you won&#8217;t see&#8230; The post GitHub Models is no longer available to new customers appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub 宣布停止接受新客户使用 GitHub Models，现有客户不受影响，并推荐迁移至 Azure AI Foundry。",
+          "en": "We are retiring GitHub Models. As a first step, new customers can no longer use it. If your organization or enterprise have not previously used GitHub Models, you won&#8217;t see&#8230; The post GitHub Models is no longer available to new customers appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "GitHub 整合 AI 服务至 Azure，开发者生态工具链可能面临调整。",
+          "en": "GitHub 整合 AI 服务至 Azure，开发者生态工具链可能面临调整。"
+        },
+        "pmInsight": {
+          "zh": "依赖 GitHub Models 的团队需评估迁移至 Azure AI Foundry 的成本和兼容性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: Mistral - New family of open-weight models @ July",
+          "en": "Reddit LocalLLaMA: Mistral - New family of open-weight models @ July"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "Mistral 计划于7月发布新的开源权重模型系列，引发社区关注。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july/\"> <img src=\"https://preview.redd.it/kxbwrfnglo7h1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=2f83a6b2fbc675be4790406f3c441d84e8b289b4\" alt=\"Mistral - New family of open-weight models @ July\" title=\"Mistral - New family of open-weight models @ July\" /> </a> </td><td> <!-- SC_OFF --><div cl"
+        },
+        "chineseIntro": {
+          "zh": "Mistral 计划于7月发布新的开源权重模型系列，引发社区关注。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july/\"> <img src=\"https://preview.redd.it/kxbwrfnglo7h1.png?width=320&amp;crop=smart&amp;auto=webp&amp;s=2f83a6b2fbc675be4790406f3c441d84e8b289b4\" alt=\"Mistral - New family of open-weight models @ July\" title=\"Mistral - New family of open-weight models @ July\" /> </a> </td><td> <!-- SC_OFF --><div cl"
+        },
+        "todayHighlight": {
+          "zh": "Mistral 持续推出开源模型，可能加剧开源与闭源模型的竞争。",
+          "en": "Mistral 持续推出开源模型，可能加剧开源与闭源模型的竞争。"
+        },
+        "pmInsight": {
+          "zh": "关注 Mistral 新模型的性能基准，评估是否可替代现有闭源方案以降低成本。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u7klvv/mistral_new_family_of_openweight_models_july/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Show HN: FinMind AI – what if Claude Code was built for Wall Street?",
+          "en": "Hacker News AI: Show HN: FinMind AI – what if Claude Code was built for Wall Street?"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "FinMind AI 展示了一款面向华尔街的自动化个人理财与财富智能工具，类似 Claude Code 但专注金融领域。",
+          "en": "Article URL: https://finmindai-moneyverse.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=48565890 Points: 2 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "FinMind AI 展示了一款面向华尔街的自动化个人理财与财富智能工具，类似 Claude Code 但专注金融领域。",
+          "en": "Article URL: https://finmindai-moneyverse.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=48565890 Points: 2 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "AI 在金融领域的垂直应用持续涌现，可能改变个人投资管理方式。",
+          "en": "AI 在金融领域的垂直应用持续涌现，可能改变个人投资管理方式。"
+        },
+        "pmInsight": {
+          "zh": "金融产品经理可探索将 AI 代理嵌入投资决策流程，提升用户粘性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://finmindai-moneyverse.vercel.app/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Vercel AI: Vercel Sandbox can now run for up to 24 hours",
+          "en": "Vercel AI: Vercel Sandbox can now run for up to 24 hours"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "Vercel Sandbox 将运行时长上限从5小时提升至24小时，支持大规模数据处理和长期代理工作流。",
+          "en": "Vercel Sandboxes can run uninterrupted sessions for up to 24 hours (up from 5 hours). This new max duration unlocks workloads that require longer runtimes, such as large-scale data processing, end-to-end testing pipelines, and long-lived agentic workflows.Pair with persistent sandboxes to maintain durable state across extended runs.The 24 hour max duration is available on all Pro and Enterprise plans. Learn more abou"
+        },
+        "chineseIntro": {
+          "zh": "Vercel Sandbox 将运行时长上限从5小时提升至24小时，支持大规模数据处理和长期代理工作流。",
+          "en": "Vercel Sandboxes can run uninterrupted sessions for up to 24 hours (up from 5 hours). This new max duration unlocks workloads that require longer runtimes, such as large-scale data processing, end-to-end testing pipelines, and long-lived agentic workflows.Pair with persistent sandboxes to maintain durable state across extended runs.The 24 hour max duration is available on all Pro and Enterprise plans. Learn more abou"
+        },
+        "todayHighlight": {
+          "zh": "这一更新使 Vercel 更适用于长时间运行的 AI 任务，可能吸引更多 AI 开发者。",
+          "en": "这一更新使 Vercel 更适用于长时间运行的 AI 任务，可能吸引更多 AI 开发者。"
+        },
+        "pmInsight": {
+          "zh": "产品经理可利用此功能构建需要持久状态的 AI 代理，如自动化测试或数据处理管道。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Vercel AI",
+            "url": "https://vercel.com/changelog/vercel-sandbox-can-now-run-for-up-to-24-hours"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: Our new community investments in Virginia support local jobs and expand energy affordability.",
+          "en": "Google AI: Our new community investments in Virginia support local jobs and expand energy affordability."
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "生态合作",
+          "en": "生态合作"
+        },
+        "summary": {
+          "zh": "Google 在弗吉尼亚州投资社区项目，支持电气培训设施和能源可负担性，以培养下一代劳动力。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
+        },
+        "chineseIntro": {
+          "zh": "Google 在弗吉尼亚州投资社区项目，支持电气培训设施和能源可负担性，以培养下一代劳动力。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/VirginiaSocial.max-600x600.format-webp.webp\">We’re helping build the state’s next-generation workforce and investing in energy programs."
+        },
+        "todayHighlight": {
+          "zh": "Google 通过本地投资巩固数据中心和 AI 基础设施的社区支持，确保长期运营。",
+          "en": "Google 通过本地投资巩固数据中心和 AI 基础设施的社区支持，确保长期运营。"
+        },
+        "pmInsight": {
+          "zh": "产品经理应关注 AI 基础设施的能源和人才可持续性，提前规划资源。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-16",
     "label": {
       "zh": "最新",
