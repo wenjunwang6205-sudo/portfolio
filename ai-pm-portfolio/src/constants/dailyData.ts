@@ -44,176 +44,168 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 代理框架升温，企业级成本管控成焦点",
-      "en": "AI Agent Frameworks Heat Up, Enterprise Cost Control Takes Center Stage"
+      "zh": "AI 代理框架升温，企业级部署与成本管理成焦点",
+      "en": "AI Agent Frameworks Gain Traction, Enterprise Deployment and Cost Management in Focus"
     },
     "editorNote": {
-      "zh": "今日 GitHub 上 AI 代理框架项目持续获得高星，同时 OpenAI 推出企业支出管控功能，Google 发布医疗 AI 新研究。跨源信号指向代理框架的实用化与企业级部署的精细化。",
-      "en": "Today, AI agent framework projects continue to gain high stars on GitHub, while OpenAI launches enterprise spend controls and Google publishes new medical AI research. Cross-source signals point to the practicalization of agent frameworks and the refinement of enterprise deployment."
+      "zh": "今日 GitHub 上 AI 代理项目持续活跃，KiloCode 日增超千星，TimesFM 登顶日榜；公司动态方面，OpenAI 强化企业成本控制，Hugging Face 推出代理基准测试，Google 医疗 AI 扩展至疾病管理。跨源信号指向代理框架的实用化与企业级采纳加速。",
+      "en": "Today on GitHub, AI agent projects remain active with KiloCode gaining over 1k stars daily and TimesFM topping the trending list. Company news includes OpenAI enhancing enterprise cost controls, Hugging Face launching agent benchmarks, and Google's medical AI expanding to disease management. Cross-source signals point to the practicalization of agent frameworks and accelerated enterprise adoption."
     },
     "keyTakeaway": {
-      "zh": "AI 代理框架从概念走向工程化，企业级 AI 部署进入成本与效率精细化阶段。",
-      "en": "AI agent frameworks are moving from concept to engineering, and enterprise AI deployment is entering a phase of cost and efficiency refinement."
+      "zh": "AI 代理框架从实验走向实用，企业级部署的成本控制和模型生命周期管理成为产品经理必须关注的核心议题。",
+      "en": "AI agent frameworks are moving from experimentation to practicality, making cost control and model lifecycle management in enterprise deployment core concerns for product managers."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 代理框架项目持续升温，多框架并行发展",
-          "en": "AI Agent Framework Projects Continue to Heat Up, Multiple Frameworks Develop in Parallel"
+          "zh": "AI 编程代理持续升温，开发者采用加速",
+          "en": "AI Coding Agents Continue to Heat Up, Developer Adoption Accelerates"
         },
         "category": {
-          "zh": "开源生态",
-          "en": "Open Source Ecosystem"
+          "zh": "开发者工具",
+          "en": "Developer Tools"
         },
         "summary": {
-          "zh": "KiloCode 日增 1345 星，总星数超 2.2 万；Flue 创建仅 4 个月获 5600 星；ECC、Hermes-Agent、AutoGPT 等长期在榜。代理框架项目密集涌现，开发者关注度持续上升。",
-          "en": "KiloCode gained 1345 stars today, total over 22k; Flue, created only 4 months ago, has 5.6k stars; ECC, Hermes-Agent, AutoGPT remain on the list. Agent framework projects are emerging densely, with developer attention continuing to rise."
+          "zh": "KiloCode 日增 1345 星，总星数达 2.2 万，作为一站式 AI 编程工程平台集成多 IDE 和多模型，在开发者社区快速传播。同时，ECC 和 AutoGPT 等代理项目长期保持高星数。",
+          "en": "KiloCode gained 1345 stars daily, reaching 22k total, as a one-stop AI coding engineering platform integrating multiple IDEs and models, spreading rapidly in the developer community. Meanwhile, projects like ECC and AutoGPT maintain high star counts long-term."
         },
         "pmInsight": {
-          "zh": "代理框架的多样化意味着产品经理在选择技术栈时需评估框架的成熟度、社区活跃度及与自身场景的匹配度。建议关注 KiloCode 的一站式集成能力和 Flue 的 TypeScript 原生优势。",
-          "en": "The diversity of agent frameworks means PMs need to evaluate maturity, community activity, and fit with their scenarios. Consider KiloCode's all-in-one integration and Flue's TypeScript-native advantages."
+          "zh": "AI 编程代理已成为开发者刚需，产品经理应关注如何降低使用门槛、提升多模型兼容性，并探索企业级协作功能。",
+          "en": "AI coding agents have become a necessity for developers. Product managers should focus on lowering the barrier to entry, improving multi-model compatibility, and exploring enterprise collaboration features."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "KiloCode",
+            "label": "KiloCode GitHub",
             "url": "https://github.com/Kilo-Org/kilocode"
           },
           {
-            "label": "Flue",
-            "url": "https://github.com/withastro/flue"
-          },
-          {
-            "label": "ECC",
+            "label": "ECC GitHub",
             "url": "https://github.com/affaan-m/ECC"
           },
           {
-            "label": "Hermes-Agent",
-            "url": "https://github.com/NousResearch/hermes-agent"
-          },
-          {
-            "label": "AutoGPT",
+            "label": "AutoGPT GitHub",
             "url": "https://github.com/Significant-Gravitas/AutoGPT"
           }
         ]
       },
       {
         "title": {
-          "zh": "企业级 AI 部署进入成本与效率精细化阶段",
-          "en": "Enterprise AI Deployment Enters Phase of Cost and Efficiency Refinement"
+          "zh": "企业级 AI 部署成本管理需求凸显",
+          "en": "Enterprise AI Deployment Cost Management Needs Highlighted"
+        },
+        "category": {
+          "zh": "企业服务",
+          "en": "Enterprise Services"
         },
         "summary": {
-          "zh": "OpenAI 推出企业支出管控功能，GitHub 弃用旧模型并建议迁移，Hugging Face 发布代理任务基准测试关注成本。企业客户对 AI 支出透明度和模型效率的需求日益迫切。",
-          "en": "OpenAI launches enterprise spend controls, GitHub deprecates old model and suggests migration, Hugging Face releases agent benchmark focusing on cost. Enterprise demand for AI cost transparency and model efficiency is increasingly urgent."
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出使用分析和支出控制功能，直接回应大型客户对预算可控性的需求。同时，GitHub 宣布弃用 Opus 4.6 模型，提醒开发者关注模型生命周期。",
+          "en": "OpenAI launched usage analytics and spend controls for ChatGPT Enterprise, directly addressing large customers' need for budget controllability. Meanwhile, GitHub announced the deprecation of the Opus 4.6 model, reminding developers to pay attention to model lifecycle."
         },
         "pmInsight": {
-          "zh": "产品经理应优先评估 AI 服务的可观测性和成本控制能力，在代理框架选型中考虑推理成本与性能的平衡。可借鉴 Hugging Face 的基准测试方法，建立内部评估体系。",
-          "en": "PMs should prioritize observability and cost control in AI services, balance inference cost and performance when selecting agent frameworks. Consider adopting Hugging Face's benchmarking approach for internal evaluation."
+          "zh": "企业客户在规模化部署 AI 时，成本可见性和控制能力成为关键决策因素。产品经理应优先提供用量监控、预算告警和模型版本管理功能。",
+          "en": "When enterprises deploy AI at scale, cost visibility and control become key decision factors. Product managers should prioritize providing usage monitoring, budget alerts, and model version management features."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "OpenAI 企业支出管控",
+            "label": "OpenAI Enterprise Spend Controls",
             "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
           },
           {
-            "label": "GitHub 模型弃用",
+            "label": "GitHub Changelog Opus Deprecation",
             "url": "https://github.blog/changelog/2026-06-18-upcoming-deprecation-of-opus-4-6-fast"
-          },
-          {
-            "label": "Hugging Face 代理基准",
-            "url": "https://huggingface.co/blog/is-it-agentic-enough"
           }
-        ],
-        "category": {
-          "zh": "跨源信号",
-          "en": "Cross-source signal"
-        }
+        ]
       },
       {
         "title": {
-          "zh": "医疗 AI 从诊断扩展到慢性病管理，垂直领域应用深化",
-          "en": "Medical AI Expands from Diagnosis to Chronic Disease Management, Vertical Applications Deepen"
+          "zh": "开源模型在代理任务上竞争力增强",
+          "en": "Open-Source Models Gain Competitiveness in Agent Tasks"
+        },
+        "category": {
+          "zh": "模型与基准",
+          "en": "Models & Benchmarks"
         },
         "summary": {
-          "zh": "Google 在《自然》发表研究，AMIE 在慢性病管理方面达到初级保健医生水平。医疗 AI 从单次对话向持续护理跨越。",
-          "en": "Google publishes in Nature that AMIE reaches primary care physician level in chronic disease management. Medical AI moves from single-session dialogue to continuous care."
+          "zh": "Hugging Face 发布新基准测试评估开源模型在代理任务中的表现，强调 API 设计对代理效率的影响。Reddit 社区报告 GLM-5.2 在代理知识工作评估中超越 GPT-5.5。",
+          "en": "Hugging Face released a new benchmark evaluating open-source models on agent tasks, emphasizing the impact of API design on agent efficiency. Reddit community reported that GLM-5.2 surpassed GPT-5.5 in an agentic knowledge work evaluation."
         },
         "pmInsight": {
-          "zh": "医疗 AI 产品经理应关注从诊断到长期管理的产品延伸机会，探索与医疗机构合作开发慢性病管理 AI 助手。同时需注意监管合规和临床验证。",
-          "en": "PMs in healthcare should explore product extension from diagnosis to long-term management, partner with medical institutions for chronic disease AI assistants. Also need to consider regulatory compliance and clinical validation."
+          "zh": "开源模型在代理场景的进步可能降低企业采用成本，产品经理应评估开源模型在自身产品中的可行性，并关注 API 设计对代理性能的影响。",
+          "en": "The progress of open-source models in agent scenarios may reduce enterprise adoption costs. Product managers should evaluate the feasibility of open-source models in their products and pay attention to the impact of API design on agent performance."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Google AMIE 研究",
-            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+            "label": "Hugging Face Agent Benchmark",
+            "url": "https://huggingface.co/blog/is-it-agentic-enough"
+          },
+          {
+            "label": "Reddit GLM-5.2 vs GPT-5.5",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/"
           }
-        ],
-        "category": {
-          "zh": "跨源信号",
-          "en": "Cross-source signal"
-        }
+        ]
       }
     ],
     "opportunities": [
       {
         "title": {
-          "zh": "构建多模型代理工作流平台，满足企业“工具箱”需求",
-          "en": "Build Multi-Model Agent Workflow Platform to Meet Enterprise 'Toolbox' Demand"
+          "zh": "面向企业的 AI 代理成本优化工具",
+          "en": "Enterprise AI Agent Cost Optimization Tool"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合 Hacker News 文章“单一模型无法拯救你”和代理框架升温趋势，企业需要灵活编排多个模型和代理的工具。产品假设：开发一个低代码代理工作流编排平台，支持拖拽式集成不同模型和代理，并提供成本监控仪表盘。",
-          "en": "Combining the Hacker News article 'One Model Won't Save You' and the heating up of agent frameworks, enterprises need flexible orchestration of multiple models and agents. Product hypothesis: develop a low-code agent workflow orchestration platform with drag-and-drop integration of different models and agents, plus cost monitoring dashboard."
+          "zh": "结合 OpenAI 企业支出控制功能的需求和开源代理框架的流行，开发一个跨平台的 AI 代理成本监控与优化 SaaS 产品，帮助企业管理多模型调用成本、代理执行效率，并提供模型版本迁移建议。",
+          "en": "Combining the demand for enterprise spend controls highlighted by OpenAI and the popularity of open-source agent frameworks, develop a cross-platform AI agent cost monitoring and optimization SaaS product that helps enterprises manage multi-model invocation costs, agent execution efficiency, and provides model version migration recommendations."
         },
         "pmInsight": {
-          "zh": "验证点：企业是否愿意为多模型编排付费？可先推出开源版本吸引开发者，再提供企业版高级功能。",
-          "en": "Validation point: Are enterprises willing to pay for multi-model orchestration? Consider launching an open-source version to attract developers, then offer enterprise advanced features."
+          "zh": "产品假设：企业客户愿意为降低 AI 代理使用成本付费。验证方法：与 5-10 家已部署 AI 代理的企业进行访谈，了解其当前成本管理痛点及付费意愿。",
+          "en": "Product hypothesis: Enterprise customers are willing to pay for reducing AI agent usage costs. Validation method: Interview 5-10 enterprises that have deployed AI agents to understand their current cost management pain points and willingness to pay."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "Hacker News 文章",
-            "url": "https://www.xelerate.tech/one-model-wont-save-you/"
+            "label": "OpenAI Enterprise Spend Controls",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
           },
           {
-            "label": "KiloCode",
+            "label": "KiloCode GitHub",
             "url": "https://github.com/Kilo-Org/kilocode"
-          },
-          {
-            "label": "Flue",
-            "url": "https://github.com/withastro/flue"
           }
-        ],
-        "category": {
-          "zh": "产品机会",
-          "en": "Product opportunity"
-        }
+        ]
       },
       {
         "title": {
-          "zh": "开发医疗 AI 慢性病管理助手，聚焦患者长期依从性",
-          "en": "Develop Medical AI Chronic Disease Management Assistant, Focus on Patient Long-term Adherence"
+          "zh": "基于开源模型的垂直领域代理产品",
+          "en": "Vertical Domain Agent Product Based on Open-Source Models"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 Google AMIE 的研究成果，医疗 AI 在慢性病管理领域有明确机会。产品假设：开发一款面向糖尿病或高血压患者的 AI 管理助手，提供个性化饮食运动建议、用药提醒和定期随访，并通过与可穿戴设备集成实现数据闭环。",
-          "en": "Based on Google AMIE research, medical AI has clear opportunities in chronic disease management. Product hypothesis: develop an AI management assistant for diabetes or hypertension patients, offering personalized diet/exercise advice, medication reminders, and regular follow-ups, with data loop via wearable device integration."
+          "zh": "利用开源模型在代理任务上的竞争力（如 GLM-5.2 超越 GPT-5.5），结合 Google 医疗 AI 从诊断扩展到疾病管理的趋势，开发面向慢性病管理的 AI 代理产品，使用开源模型降低部署成本，并通过本地化运行保障数据隐私。",
+          "en": "Leveraging the competitiveness of open-source models in agent tasks (e.g., GLM-5.2 surpassing GPT-5.5) and Google's medical AI expansion from diagnosis to disease management, develop an AI agent product for chronic disease management, using open-source models to reduce deployment costs and ensuring data privacy through local operation."
         },
         "pmInsight": {
-          "zh": "验证点：患者是否信任 AI 的长期管理建议？需与医疗机构合作进行临床试验，并确保符合 HIPAA 等法规。",
-          "en": "Validation point: Do patients trust AI for long-term management? Need to partner with medical institutions for clinical trials and ensure compliance with HIPAA and other regulations."
+          "zh": "产品假设：慢性病患者和医疗机构需要低成本、隐私安全的 AI 辅助管理工具。验证方法：与 3-5 家医疗机构合作进行原型测试，评估模型在真实场景中的准确性和用户接受度。",
+          "en": "Product hypothesis: Chronic disease patients and healthcare institutions need low-cost, privacy-safe AI-assisted management tools. Validation method: Partner with 3-5 healthcare institutions for prototype testing, evaluating model accuracy and user acceptance in real scenarios."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Google AMIE 研究",
+            "label": "Google AMIE Research",
             "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          },
+          {
+            "label": "Reddit GLM-5.2 vs GPT-5.5",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/"
           }
-        ],
-        "category": {
-          "zh": "产品机会",
-          "en": "Product opportunity"
-        }
+        ]
       }
     ],
     "githubProjects": [
@@ -227,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一站式AI编程工程平台，集成了VSCode扩展、CLI和JetBrains插件，支持多种大模型，帮助开发者更高效地构建、部署和迭代代码。",
+          "zh": "一站式AI编程工程平台，集成VSCode、JetBrains等IDE，支持Claude、Gemini等多模型，帮助开发者更快地构建、交付和迭代代码。",
           "en": "Star Kilo-Org / kilocode Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent."
         },
-        "totalStars": 22461,
+        "totalStars": 22492,
         "language": "TypeScript",
         "dailyStars": 1345,
         "chineseIntro": {
-          "zh": "一站式AI编程工程平台，集成了VSCode扩展、CLI和JetBrains插件，支持多种大模型，帮助开发者更高效地构建、部署和迭代代码。",
+          "zh": "一站式AI编程工程平台，集成VSCode、JetBrains等IDE，支持Claude、Gemini等多模型，帮助开发者更快地构建、交付和迭代代码。",
           "en": "Star Kilo-Org / kilocode Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent."
         },
         "todayHighlight": {
-          "zh": "今日新增1345星，总星数超2.2万，作为开源AI编程代理的明星项目，持续吸引开发者关注。",
+          "zh": "今日新增1345星，总星数达2.2万，作为开源AI编程代理的代表项目，在开发者社区持续升温。",
           "en": "登上 GitHub Trending 日榜第 9 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,345 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,461 stars、2,715 forks，topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,461 stars and 2,715 forks，topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,492 stars、2,716 forks，topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,492 stars and 2,716 forks，topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI编程工具如何从单一插件演进为全流程工程平台，以及开源社区对多IDE支持的需求。",
+          "zh": "观察AI编程工具如何从辅助编码向全流程工程平台演进，以及多模型集成策略对用户粘性的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -267,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Google Research 开发的时间序列基础模型，专为时间序列预测设计，提供预训练模型和推理工具。",
+          "zh": "Google 出品的Python 开源项目，Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
         },
-        "totalStars": 23627,
+        "totalStars": 23659,
         "language": "Python",
         "dailyStars": 844,
         "chineseIntro": {
-          "zh": "Google Research 开发的时间序列基础模型，专为时间序列预测设计，提供预训练模型和推理工具。",
+          "zh": "Google 出品的Python 开源项目，Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
         },
         "todayHighlight": {
-          "zh": "今日新增844星，总星数超2.3万，排名第一，因时间序列预测在金融、气象等领域的广泛应用而持续升温。",
+          "zh": "登上 GitHub Trending 日榜第 1 位，项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显，今日新增 844 星。",
           "en": "登上 GitHub Trending 日榜第 1 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 844 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,627 stars、2,242 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,627 stars and 2,242 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,659 stars、2,243 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,659 stars and 2,243 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注基础模型在垂直领域（如时间序列）的落地潜力，以及Google开源策略对AI生态的影响。",
+          "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -307,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个TypeScript代理框架，用于构建自主AI代理和复杂工作流，提供可编程的沙箱环境。",
+          "zh": "可编程的TypeScript代理框架，用于构建自主AI代理和复杂工作流，支持任务级自主决策而非预定义步骤。",
           "en": "The sandbox agent framework."
         },
-        "totalStars": 5600,
+        "totalStars": 5605,
         "language": "TypeScript",
         "dailyStars": 162,
         "chineseIntro": {
-          "zh": "一个TypeScript代理框架，用于构建自主AI代理和复杂工作流，提供可编程的沙箱环境。",
+          "zh": "可编程的TypeScript代理框架，用于构建自主AI代理和复杂工作流，支持任务级自主决策而非预定义步骤。",
           "en": "The sandbox agent framework."
         },
         "todayHighlight": {
-          "zh": "今日新增162星，总星数5600，创建仅4个月，作为新兴代理框架快速获得关注。",
-          "en": "登上 GitHub Trending 日榜第 8 位, 创建仅约 4 个月便已积累 5,600 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 162 星."
+          "zh": "创建仅4个月，今日新增162星，总星数5605，作为新兴代理框架在开发者中快速传播。",
+          "en": "登上 GitHub Trending 日榜第 8 位, 创建仅约 4 个月便已积累 5,605 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 162 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,600 stars、309 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,600 stars and 309 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,605 stars、309 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,605 stars and 309 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI代理框架从SDK向可编程沙箱演进的趋势，以及TypeScript在AI开发中的角色。",
+          "zh": "关注代理框架从SDK向可编程编排演进，以及TypeScript生态在AI代理开发中的优势。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -347,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Lightricks 推出的音频-视频生成模型，支持Python推理和LoRA训练，用于生成式AI内容创作。",
+          "zh": "官方Python推理和LoRA训练包，用于LTX-2音频-视频生成模型，支持生成式AI视频创作。",
           "en": "Star Lightricks / LTX-2 Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model."
         },
-        "totalStars": 7549,
+        "totalStars": 7553,
         "language": "Python",
         "dailyStars": 51,
         "chineseIntro": {
-          "zh": "Lightricks 推出的音频-视频生成模型，支持Python推理和LoRA训练，用于生成式AI内容创作。",
+          "zh": "官方Python推理和LoRA训练包，用于LTX-2音频-视频生成模型，支持生成式AI视频创作。",
           "en": "Star Lightricks / LTX-2 Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model."
         },
         "todayHighlight": {
-          "zh": "今日新增51星，总星数7549，持续在榜，作为视频生成领域的开源模型保持稳定关注。",
+          "zh": "今日新增51星，总星数7553，作为视频生成模型持续获得关注，但增速平稳。",
           "en": "登上 GitHub Trending 日榜第 15 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 51 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,549 stars、1,212 forks，topics: generative-ai, ltx, ltx-2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,549 stars and 1,212 forks，topics: generative-ai, ltx, ltx-2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,553 stars、1,212 forks，topics: generative-ai, ltx, ltx-2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,553 stars and 1,212 forks，topics: generative-ai, ltx, ltx-2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注多模态生成模型（音频+视频）的产品化路径，以及开源社区对创意工具的需求。",
+          "zh": "观察开源视频生成模型的迭代节奏，以及LoRA训练支持对社区定制化需求的满足程度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -387,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "精选AI资源列表，涵盖课程、书籍、视频和论文，帮助开发者系统学习AI工程。",
+          "zh": "精选AI资源列表，涵盖课程、书籍、视频讲座和论文，聚焦AI工程实践如RAG、代理、评估等。",
           "en": "Star owainlewis / awesome-artificial-intelligence A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers."
         },
-        "totalStars": 14526,
+        "totalStars": 14536,
         "language": "Unknown",
         "dailyStars": 40,
         "chineseIntro": {
-          "zh": "精选AI资源列表，涵盖课程、书籍、视频和论文，帮助开发者系统学习AI工程。",
+          "zh": "精选AI资源列表，涵盖课程、书籍、视频讲座和论文，聚焦AI工程实践如RAG、代理、评估等。",
           "en": "Star owainlewis / awesome-artificial-intelligence A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers."
         },
         "todayHighlight": {
-          "zh": "今日新增40星，总星数超1.4万，作为长期维护的经典资源列表，持续吸引新学习者。",
+          "zh": "今日新增40星，总星数1.4万，作为长期维护的awesome列表，持续吸引新读者。",
           "en": "登上 GitHub Trending 日榜第 14 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 40 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,526 stars、2,344 forks，topics: ai, artificial-intelligence, deep-learning, intelligent-machines, intelligent-systems，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,526 stars and 2,344 forks，topics: ai, artificial-intelligence, deep-learning, intelligent-machines, intelligent-systems, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,536 stars、2,345 forks，topics: ai, artificial-intelligence, deep-learning, intelligent-machines, intelligent-systems，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,536 stars and 2,345 forks，topics: ai, artificial-intelligence, deep-learning, intelligent-machines, intelligent-systems, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI教育资源的组织方式，以及社区对系统性学习材料的需求变化。",
+          "zh": "关注AI知识库的持续更新能力，以及如何通过精选资源建立社区影响力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -427,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "代理性能优化系统，为Claude Code、Codex等AI编程工具提供技能、记忆、安全等增强功能。",
+          "zh": "代理性能优化系统，为Claude Code、Codex等AI编程工具提供技能、直觉、记忆和安全增强。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 217916,
+        "totalStars": 217926,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "代理性能优化系统，为Claude Code、Codex等AI编程工具提供技能、记忆、安全等增强功能。",
+          "zh": "代理性能优化系统，为Claude Code、Codex等AI编程工具提供技能、直觉、记忆和安全增强。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总星数超21.7万，今日新增数据缺失，但作为热门项目持续在榜，反映开发者对AI代理工具优化的强烈需求。",
+          "zh": "总星数高达21.8万，今日新增数据缺失，但作为超热门项目持续在榜。",
           "en": "总 star 数已达 217k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 217,916 stars、33,432 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 217,916 stars and 33,432 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 217,926 stars、33,432 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 217,926 stars and 33,432 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI代理工具生态中的性能优化和功能增强需求，以及开源社区对“代理操作系统”概念的接受度。",
+          "zh": "观察AI代理工具链中性能优化层的价值，以及如何通过增强现有工具获得升温式增长。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -467,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个可成长的AI代理框架，支持多种大模型，提供桌面应用和文档，用于构建自主代理。",
+          "zh": "可成长的AI代理框架，支持Claude、ChatGPT等模型，提供桌面端和文档，由Nous Research维护。",
           "en": "The agent that grows with you"
         },
-        "totalStars": 197214,
+        "totalStars": 197233,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个可成长的AI代理框架，支持多种大模型，提供桌面应用和文档，用于构建自主代理。",
+          "zh": "可成长的AI代理框架，支持Claude、ChatGPT等模型，提供桌面端和文档，由Nous Research维护。",
           "en": "The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "总星数超19.7万，今日新增数据缺失，作为Nous Research的明星项目，持续吸引AI代理开发者。",
+          "zh": "总星数19.7万，今日新增数据缺失，作为知名研究机构的代理项目长期受关注。",
           "en": "总 star 数已达 197k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 197,214 stars、34,863 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 197,214 stars and 34,863 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 197,233 stars、34,869 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 197,233 stars and 34,869 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI代理框架如何通过开源社区快速迭代，以及“可成长”概念对用户粘性的影响。",
+          "zh": "关注研究机构开源代理项目的生态建设，以及“可成长”概念对用户吸引力的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -507,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI代理的经典开源项目，提供构建、部署和运行自主代理的工具，致力于让AI人人可用。",
+          "zh": "开源自主AI代理平台，让每个人都能构建、部署和运行AI代理，支持多种LLM。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 185023,
+        "totalStars": 185022,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "AI代理的经典开源项目，提供构建、部署和运行自主代理的工具，致力于让AI人人可用。",
+          "zh": "开源自主AI代理平台，让每个人都能构建、部署和运行AI代理，支持多种LLM。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "总星数超18.5万，今日新增数据缺失，作为AI代理领域的先驱，长期在榜，持续获得新用户关注。",
+          "zh": "总星数18.5万，今日新增数据缺失，作为AI代理领域的先驱项目，持续保持高关注度。",
           "en": "总 star 数已达 185k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,023 stars、46,126 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,023 stars and 46,126 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,022 stars、46,126 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,022 stars and 46,126 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI代理从实验性项目向实用工具的演进，以及开源社区对自主代理的持续热情。",
+          "zh": "观察自主代理平台的演进路径，以及从实验性项目到实用工具的转变。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -547,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "本地运行大模型的工具，支持Kimi、DeepSeek、Qwen等多种模型，简化模型下载和部署。",
+          "zh": "本地运行大语言模型的工具，支持Kimi、DeepSeek、Qwen等多种模型，简化模型下载和部署。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
-        "totalStars": 174498,
+        "totalStars": 174500,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "本地运行大模型的工具，支持Kimi、DeepSeek、Qwen等多种模型，简化模型下载和部署。",
+          "zh": "本地运行大语言模型的工具，支持Kimi、DeepSeek、Qwen等多种模型，简化模型下载和部署。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
-          "zh": "总星数超17.4万，今日新增数据缺失，作为本地AI运行的首选工具，持续受益于开源模型生态的繁荣。",
+          "zh": "总星数17.5万，今日新增数据缺失，作为本地LLM运行的首选工具，持续吸引新用户。",
           "en": "总 star 数已达 174k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 174,498 stars、16,676 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 174,498 stars and 16,676 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 174,500 stars、16,676 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 174,500 stars and 16,676 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察本地AI部署工具的市场需求，以及模型多样性对用户选择的影响。",
+          "zh": "关注本地模型运行工具的生态扩展，以及多模型支持对用户选择的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -587,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全球最大的开源提示词库，支持ChatGPT、Claude、Gemini等多种AI模型，可自托管保护隐私。",
+          "zh": "全球最大的开源AI提示词库，支持ChatGPT、Claude、Gemini等模型，可自托管保护隐私。",
           "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
         },
-        "totalStars": 163908,
+        "totalStars": 163910,
         "language": "HTML",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "全球最大的开源提示词库，支持ChatGPT、Claude、Gemini等多种AI模型，可自托管保护隐私。",
+          "zh": "全球最大的开源AI提示词库，支持ChatGPT、Claude、Gemini等模型，可自托管保护隐私。",
           "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
         },
         "todayHighlight": {
-          "zh": "总星数超16.3万，今日新增数据缺失，作为提示词工程的基础资源，长期在榜，持续吸引AI用户。",
+          "zh": "总星数16.4万，今日新增数据缺失，作为提示词工程领域的经典项目，长期在榜。",
           "en": "总 star 数已达 163k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,908 stars、21,253 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,908 stars and 21,253 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,910 stars、21,254 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,910 stars and 21,254 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注提示词库的商业模式（如自托管、社区贡献），以及提示词工程对AI应用效果的影响。",
+          "zh": "观察提示词库的社区运营模式，以及自托管功能对企业用户的吸引力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -633,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的使用分析和支出控制功能，帮助企业更好地管理成本和规模化使用 AI。",
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的使用分析和支出控制功能，帮助企业管理成本并规模化部署 AI。",
           "en": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
         },
         "chineseIntro": {
-          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的使用分析和支出控制功能，帮助企业更好地管理成本和规模化使用 AI。",
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的使用分析和支出控制功能，帮助企业管理成本并规模化部署 AI。",
           "en": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
         },
         "todayHighlight": {
-          "zh": "这是 OpenAI 在企业级产品上加强可观测性和成本管控的重要举措，直接回应了企业客户对 AI 支出透明度的核心诉求。",
-          "en": "这是 OpenAI 在企业级产品上加强可观测性和成本管控的重要举措，直接回应了企业客户对 AI 支出透明度的核心诉求。"
+          "zh": "企业级 AI 部署的成本管理成为焦点，OpenAI 此举直接回应了大型客户对预算可控性的需求。",
+          "en": "企业级 AI 部署的成本管理成为焦点，OpenAI 此举直接回应了大型客户对预算可控性的需求。"
         },
         "pmInsight": {
-          "zh": "产品经理应评估是否将此类成本控制功能作为企业 AI 平台选型的必备条件，并提前规划预算监控流程。",
+          "zh": "产品经理应评估现有企业客户的成本痛点，考虑是否将类似的使用分析和预算控制功能纳入自己的产品路线图。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -678,11 +670,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "We will deprecate Opus 4.6 (fast) across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions), on June 29th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of Opus 4.6 (fast) appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "模型迭代加速，开发者需关注 Copilot 模型变更对代码补全和聊天体验的影响，及时更新配置。",
-          "en": "模型迭代加速，开发者需关注 Copilot 模型变更对代码补全和聊天体验的影响，及时更新配置。"
+          "zh": "模型迭代加速，开发者需关注依赖模型的版本生命周期，避免服务中断。",
+          "en": "模型迭代加速，开发者需关注依赖模型的版本生命周期，避免服务中断。"
         },
         "pmInsight": {
-          "zh": "产品经理需建立模型版本跟踪机制，在依赖第三方模型的产品中提前测试新模型兼容性，避免服务中断。",
+          "zh": "产品经理应建立模型版本监控机制，提前规划模型升级对用户的影响，并主动通知用户迁移。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -690,43 +682,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Changelog",
             "url": "https://github.blog/changelog/2026-06-18-upcoming-deprecation-of-opus-4-6-fast"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: One Model Won't Save You: How We Built Our AI Stack",
-          "en": "Hacker News AI: One Model Won't Save You: How We Built Our AI Stack"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "技术博客分享实际 AI 技术栈构建经验，指出单一模型无法满足所有需求，应采用多模型工具箱策略。",
-          "en": "Article URL: https://www.xelerate.tech/one-model-wont-save-you/ Comments URL: https://news.ycombinator.com/item?id=48595915 Points: 1 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "技术博客分享实际 AI 技术栈构建经验，指出单一模型无法满足所有需求，应采用多模型工具箱策略。",
-          "en": "Article URL: https://www.xelerate.tech/one-model-wont-save-you/ Comments URL: https://news.ycombinator.com/item?id=48595915 Points: 1 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "该观点挑战了“万能模型”的营销叙事，为产品经理提供了务实的 AI 架构设计思路。",
-          "en": "该观点挑战了“万能模型”的营销叙事，为产品经理提供了务实的 AI 架构设计思路。"
-        },
-        "pmInsight": {
-          "zh": "产品经理应避免绑定单一模型供应商，设计模型抽象层以灵活切换和组合不同模型，平衡成本与效果。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://www.xelerate.tech/one-model-wont-save-you/"
           }
         ]
       },
@@ -744,22 +699,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Hugging Face 发布新基准测试，评估开放模型在代理任务中的表现，不仅关注最终答案，还关注推理过程和成本。",
+          "zh": "Hugging Face 发布新基准测试，评估开源模型在代理任务中的表现，强调 API 设计对代理效率的影响。",
           "en": "Is it agentic enough? Benchmarking open models on your own tooling"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 发布新基准测试，评估开放模型在代理任务中的表现，不仅关注最终答案，还关注推理过程和成本。",
+          "zh": "Hugging Face 发布新基准测试，评估开源模型在代理任务中的表现，强调 API 设计对代理效率的影响。",
           "en": "Is it agentic enough? Benchmarking open models on your own tooling"
         },
         "todayHighlight": {
-          "zh": "该基准测试为选择代理模型提供了更全面的视角，有助于产品经理优化 AI 代理的效率和成本。",
-          "en": "该基准测试为选择代理模型提供了更全面的视角，有助于产品经理优化 AI 代理的效率和成本。"
+          "zh": "代理型 AI 成为趋势，API 设计质量直接影响模型调用成本与成功率，对产品架构有深远影响。",
+          "en": "代理型 AI 成为趋势，API 设计质量直接影响模型调用成本与成功率，对产品架构有深远影响。"
         },
         "pmInsight": {
-          "zh": "产品经理可参考此方法建立自定义评估体系，在选型时不仅看准确率，还要衡量模型在真实工具链中的执行效率。",
+          "zh": "产品经理应关注代理友好型 API 设计原则，优化文档和接口以降低代理调用成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "Hugging Face",
@@ -781,19 +736,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Google Ads 推出 Gemini 驱动的 AI 代理“Ask Ad Manager”，帮助广告主获取洞察并更快做出广告决策。",
+          "zh": "Google Ads 推出 Ask Ad Manager，一个基于 Gemini 的 AI 代理，用于广告洞察和快速决策。",
           "en": "<p> Gemini-powered AI agent for insights & faster ad decisions </p> <p> <a href=\"https://www.producthunt.com/products/ask-ad-manager?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1175497?app_id=339\">Link</a> </p>"
         },
         "chineseIntro": {
-          "zh": "Google Ads 推出 Gemini 驱动的 AI 代理“Ask Ad Manager”，帮助广告主获取洞察并更快做出广告决策。",
+          "zh": "Google Ads 推出 Ask Ad Manager，一个基于 Gemini 的 AI 代理，用于广告洞察和快速决策。",
           "en": "<p> Gemini-powered AI agent for insights & faster ad decisions </p> <p> <a href=\"https://www.producthunt.com/products/ask-ad-manager?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1175497?app_id=339\">Link</a> </p>"
         },
         "todayHighlight": {
-          "zh": "这是 Google 将生成式 AI 直接嵌入广告管理工具的重要一步，可能改变广告优化的工作流程。",
-          "en": "这是 Google 将生成式 AI 直接嵌入广告管理工具的重要一步，可能改变广告优化的工作流程。"
+          "zh": "广告行业迎来 AI 原生交互方式，可能改变广告优化工作流。",
+          "en": "广告行业迎来 AI 原生交互方式，可能改变广告优化工作流。"
         },
         "pmInsight": {
-          "zh": "广告产品经理应关注此类 AI 代理如何降低广告优化门槛，并考虑在自有广告平台中集成类似对话式分析功能。",
+          "zh": "产品经理可探索将 AI 代理嵌入现有广告管理工具，提升用户决策效率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -818,19 +773,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Google 在《自然》杂志发表研究，展示其医疗 AI 系统 AMIE 在慢性病管理方面达到初级保健医生水平。",
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》发表研究，展示其从诊断扩展到长期疾病管理的能力，效果媲美初级保健医生。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
         },
         "chineseIntro": {
-          "zh": "Google 在《自然》杂志发表研究，展示其医疗 AI 系统 AMIE 在慢性病管理方面达到初级保健医生水平。",
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》发表研究，展示其从诊断扩展到长期疾病管理的能力，效果媲美初级保健医生。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
         },
         "todayHighlight": {
-          "zh": "AMIE 从诊断扩展到长期疾病管理，标志着医疗 AI 从单次对话向持续护理的跨越，具有重大临床潜力。",
-          "en": "AMIE 从诊断扩展到长期疾病管理，标志着医疗 AI 从单次对话向持续护理的跨越，具有重大临床潜力。"
+          "zh": "医疗 AI 从单次诊断迈向持续管理，可能重塑慢性病护理模式。",
+          "en": "医疗 AI 从单次诊断迈向持续管理，可能重塑慢性病护理模式。"
         },
         "pmInsight": {
-          "zh": "医疗健康产品经理应评估 AMIE 类技术在患者随访、用药调整等场景的集成可能性，并关注监管路径。",
+          "zh": "产品经理应关注医疗 AI 的纵向能力扩展，探索与现有健康管理产品的整合机会。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -838,6 +793,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Google AI",
             "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: GLM-5.2 is above GPT-5.5 in AA-Briefcase, Artificial Analysis' new agentic knowledge work eval",
+          "en": "Reddit LocalLLaMA: GLM-5.2 is above GPT-5.5 in AA-Briefcase, Artificial Analysis' new agentic knowledge work eval"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "在 Artificial Analysis 的新代理知识工作评估中，GLM-5.2 超越 GPT-5.5，显示开源模型在特定任务上的竞争力。",
+          "en": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/analysis_scaled\"> /u/analysis_scaled </a> <br/> <span><a href=\"https://artificialanalysis.ai/articles/aa-briefcase\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/\">[comments]</a></span>"
+        },
+        "chineseIntro": {
+          "zh": "在 Artificial Analysis 的新代理知识工作评估中，GLM-5.2 超越 GPT-5.5，显示开源模型在特定任务上的竞争力。",
+          "en": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/analysis_scaled\"> /u/analysis_scaled </a> <br/> <span><a href=\"https://artificialanalysis.ai/articles/aa-briefcase\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/\">[comments]</a></span>"
+        },
+        "todayHighlight": {
+          "zh": "开源模型在代理任务上超越闭源模型，可能加速企业采用开源方案。",
+          "en": "开源模型在代理任务上超越闭源模型，可能加速企业采用开源方案。"
+        },
+        "pmInsight": {
+          "zh": "产品经理应持续跟踪开源模型在代理任务上的表现，评估替换闭源模型的可能性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/"
           }
         ]
       }
