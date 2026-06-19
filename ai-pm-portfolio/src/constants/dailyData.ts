@@ -38,6 +38,800 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-19",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI 代理生态持续升温，企业级管控与开源模型竞争加剧",
+      "en": "AI Agent Ecosystem Heats Up, Enterprise Controls and Open-Source Competition Intensify"
+    },
+    "editorNote": {
+      "zh": "今日 GitHub 上编码代理项目 Kilocode 日增超千星，代理框架 flue 快速传播；公司动态方面，OpenAI 强化企业支出管控，Hugging Face 发布代理效率基准，开源模型在代理任务上超越闭源。信号指向代理基础设施成熟与企业采纳加速。",
+      "en": "Today on GitHub, coding agent Kilocode gained over 1k stars, agent framework flue spreads fast; company news: OpenAI strengthens enterprise spend controls, Hugging Face releases agent efficiency benchmark, open-source models surpass closed-source on agent tasks. Signals point to agent infrastructure maturing and enterprise adoption accelerating."
+    },
+    "keyTakeaway": {
+      "zh": "AI 代理从实验走向工程化，编码代理和代理框架成为开发者社区焦点，同时企业级管控和开源模型竞争力提升推动代理应用落地。",
+      "en": "AI agents move from experimentation to engineering, with coding agents and agent frameworks becoming community focus; enterprise controls and open-source model competitiveness drive agent application deployment."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "编码代理与代理框架在开发者社区快速升温",
+          "en": "Coding Agents and Agent Frameworks Rapidly Gain Traction in Developer Community"
+        },
+        "category": {
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
+        },
+        "summary": {
+          "zh": "Kilo-Org/kilocode 今日新增 1345 星，总星数超 2.2 万，作为开源编码代理持续升温；withastro/flue 创建仅 4 个月，日增 162 星，作为代理编排框架快速传播。",
+          "en": "Kilo-Org/kilocode gained 1,345 stars today, total over 22k, as open-source coding agent heats up; withastro/flue, created only 4 months ago, gained 162 stars daily, spreading fast as agent orchestration framework."
+        },
+        "pmInsight": {
+          "zh": "编码代理和代理框架的快速增长表明开发者正在积极采用 AI 辅助编程和自主代理工作流。PM 应关注这些工具如何融入现有开发流程，并考虑在自家产品中集成类似能力。",
+          "en": "Rapid growth of coding agents and agent frameworks indicates developers are actively adopting AI-assisted programming and autonomous agent workflows. PMs should monitor how these tools integrate into existing dev processes and consider embedding similar capabilities in their products."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Kilo-Org/kilocode",
+            "url": "https://github.com/Kilo-Org/kilocode"
+          },
+          {
+            "label": "withastro/flue",
+            "url": "https://github.com/withastro/flue"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "企业级 AI 管控与代理效率评估成为关键需求",
+          "en": "Enterprise AI Governance and Agent Efficiency Evaluation Become Key Needs"
+        },
+        "category": {
+          "zh": "企业服务",
+          "en": "Enterprise Services"
+        },
+        "summary": {
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出使用分析和支出控制功能，回应企业客户对成本透明度的诉求；Hugging Face 发布新基准评估开放模型在代理任务中的效率，首次系统衡量工具使用成本。",
+          "en": "OpenAI launched usage analytics and spend controls for ChatGPT Enterprise, addressing enterprise demand for cost transparency; Hugging Face released a new benchmark evaluating open models' efficiency in agent tasks, first to systematically measure tool usage cost."
+        },
+        "pmInsight": {
+          "zh": "企业客户在规模化部署 AI 时，成本管控和效率评估成为核心痛点。PM 应优先构建可观测性和成本优化功能，并关注代理效率基准以指导模型选型。",
+          "en": "When enterprises scale AI deployment, cost control and efficiency evaluation become core pain points. PMs should prioritize building observability and cost optimization features, and monitor agent efficiency benchmarks to guide model selection."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI Enterprise spend controls",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+          },
+          {
+            "label": "Hugging Face agent efficiency benchmark",
+            "url": "https://huggingface.co/blog/is-it-agentic-enough"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "开源模型在代理任务上展现竞争力，威胁闭源模型地位",
+          "en": "Open-Source Models Show Competitiveness in Agent Tasks, Threatening Closed-Source Dominance"
+        },
+        "category": {
+          "zh": "模型竞争",
+          "en": "Model Competition"
+        },
+        "summary": {
+          "zh": "Reddit 社区报告 GLM-5.2 在 AA-Briefcase 代理知识工作基准上超越 GPT-5.5；同时 GitHub 上多个代理项目（如 AutoGPT、hermes-agent）持续在榜，显示开源代理生态活跃。",
+          "en": "Reddit community reports GLM-5.2 surpasses GPT-5.5 on AA-Briefcase agent knowledge work benchmark; multiple agent projects on GitHub (e.g., AutoGPT, hermes-agent) remain trending, showing active open-source agent ecosystem."
+        },
+        "pmInsight": {
+          "zh": "开源模型在特定代理任务上已能与闭源模型竞争，企业可考虑采用开源方案降低成本和定制化。PM 应评估开源模型在自身场景中的表现，并关注代理基准的演进。",
+          "en": "Open-source models can compete with closed-source on specific agent tasks; enterprises may consider open-source for lower cost and customization. PMs should evaluate open-source models in their scenarios and track agent benchmark evolution."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Reddit GLM-5.2 vs GPT-5.5",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/"
+          },
+          {
+            "label": "Significant-Gravitas/AutoGPT",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "构建面向企业的代理工作流成本优化平台",
+          "en": "Build an Enterprise-Facing Agent Workflow Cost Optimization Platform"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "结合 OpenAI 企业支出控制和 Hugging Face 代理效率基准，企业急需工具来监控和优化代理工作流的成本与效率。可开发一个平台，集成多种模型和代理框架，提供成本分析、效率评分和模型推荐。",
+          "en": "Combining OpenAI's enterprise spend controls and Hugging Face's agent efficiency benchmark, enterprises urgently need tools to monitor and optimize agent workflow cost and efficiency. Develop a platform integrating multiple models and agent frameworks, offering cost analysis, efficiency scoring, and model recommendations."
+        },
+        "pmInsight": {
+          "zh": "假设：企业愿意为代理工作流的可观测性和成本优化付费。验证方法：与 5-10 家正在部署代理的企业进行访谈，了解其当前成本管理痛点及付费意愿。",
+          "en": "Hypothesis: Enterprises are willing to pay for agent workflow observability and cost optimization. Validation: Interview 5-10 enterprises deploying agents to understand current cost management pain points and willingness to pay."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI Enterprise spend controls",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+          },
+          {
+            "label": "Hugging Face agent efficiency benchmark",
+            "url": "https://huggingface.co/blog/is-it-agentic-enough"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "推出基于开源模型的编码代理企业版",
+          "en": "Launch an Enterprise Edition of Open-Source Coding Agent"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "KiloCode 等开源编码代理增长迅速，但缺乏企业级功能（如安全审计、成本控制、团队协作）。可基于开源项目构建企业版，集成模型切换、支出管理和合规功能，满足企业需求。",
+          "en": "Open-source coding agents like KiloCode are growing fast but lack enterprise features (security audit, cost control, team collaboration). Build an enterprise edition based on open-source projects, integrating model switching, spend management, and compliance features to meet enterprise needs."
+        },
+        "pmInsight": {
+          "zh": "假设：企业愿意为编码代理的企业级功能付费。验证方法：在 KiloCode 社区中发起调查，了解企业用户对额外功能的需求和付费意愿。",
+          "en": "Hypothesis: Enterprises are willing to pay for enterprise features of coding agents. Validation: Survey the KiloCode community to understand enterprise users' needs and willingness to pay for additional features."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Kilo-Org/kilocode",
+            "url": "https://github.com/Kilo-Org/kilocode"
+          },
+          {
+            "label": "OpenAI Enterprise spend controls",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "Kilo-Org/kilocode",
+          "en": "Kilo-Org/kilocode"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "一站式智能编程平台，集成 VSCode、JetBrains 等 IDE 插件，支持 Claude、Gemini 等模型，帮助开发者更快地构建、交付和迭代代码。",
+          "en": "Star Kilo-Org / kilocode Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent."
+        },
+        "totalStars": 22303,
+        "language": "TypeScript",
+        "dailyStars": 1345,
+        "chineseIntro": {
+          "zh": "一站式智能编程平台，集成 VSCode、JetBrains 等 IDE 插件，支持 Claude、Gemini 等模型，帮助开发者更快地构建、交付和迭代代码。",
+          "en": "Star Kilo-Org / kilocode Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1345 星，总星数超 2.2 万，作为开源编码代理在开发者社区持续升温，多语言 README 加速全球传播。",
+          "en": "登上 GitHub Trending 日榜第 9 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,345 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,303 stars、2,711 forks，topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,303 stars and 2,711 forks，topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 编程助手如何从单点工具演变为全流程工程平台，以及开源社区对多模型、多 IDE 支持的需求。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Kilo-Org/kilocode"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "google-research/timesfm",
+          "en": "google-research/timesfm"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Google Research 开发的时间序列基础模型，提供预训练模型用于时间序列预测，支持多种预测场景，如金融、气象、运维等。",
+          "en": "Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
+        },
+        "totalStars": 23399,
+        "language": "Python",
+        "dailyStars": 844,
+        "chineseIntro": {
+          "zh": "Google Research 开发的时间序列基础模型，提供预训练模型用于时间序列预测，支持多种预测场景，如金融、气象、运维等。",
+          "en": "Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 844 星，总星数超 2.3 万，排名第一，时间序列预测在 AI 工程化中需求增长，论文被 ICML 2024 收录。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 844 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,399 stars、2,230 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,399 stars and 2,230 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注基础模型在垂直领域（如时序预测）的落地潜力，以及 Google 开源策略对生态的影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/google-research/timesfm"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "withastro/flue",
+          "en": "withastro/flue"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "基于 TypeScript 的智能体编排框架，提供可编程的 harness 机制，用于构建自主 AI 代理和复杂工作流。",
+          "en": "The sandbox agent framework."
+        },
+        "totalStars": 5557,
+        "language": "TypeScript",
+        "dailyStars": 162,
+        "chineseIntro": {
+          "zh": "基于 TypeScript 的智能体编排框架，提供可编程的 harness 机制，用于构建自主 AI 代理和复杂工作流。",
+          "en": "The sandbox agent framework."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 162 星，总星数 5557，创建仅 4 个月，作为新兴代理框架在开发者中快速传播。",
+          "en": "登上 GitHub Trending 日榜第 8 位, 创建仅约 4 个月便已积累 5,557 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 162 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,557 stars、307 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,557 stars and 307 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察代理框架的差异化定位：不提供 SDK，而是强调可编程 harness，可能吸引追求灵活性的开发者。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/withastro/flue"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Lightricks/LTX-2",
+          "en": "Lightricks/LTX-2"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Lightricks 推出的音频-视频生成模型，提供 Python 推理和 LoRA 训练包，支持从音频生成视频内容。",
+          "en": "Star Lightricks / LTX-2 Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model."
+        },
+        "totalStars": 7524,
+        "language": "Python",
+        "dailyStars": 51,
+        "chineseIntro": {
+          "zh": "Lightricks 推出的音频-视频生成模型，提供 Python 推理和 LoRA 训练包，支持从音频生成视频内容。",
+          "en": "Star Lightricks / LTX-2 Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 51 星，总星数 7524，持续在榜，生成式 AI 视频赛道热度不减，LTX-2 作为新模型吸引关注。",
+          "en": "登上 GitHub Trending 日榜第 15 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 51 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,524 stars、1,210 forks，topics: generative-ai, ltx, ltx-2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,524 stars and 1,210 forks，topics: generative-ai, ltx, ltx-2, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注音频驱动视频生成这一细分方向，以及 LoRA 训练能力对创作者生态的赋能。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Lightricks/LTX-2"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "owainlewis/awesome-artificial-intelligence",
+          "en": "owainlewis/awesome-artificial-intelligence"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "精选 AI 资源列表，涵盖课程、书籍、视频讲座和论文，聚焦 AI 工程化（RAG、代理、评估、部署等）。",
+          "en": "Star owainlewis / awesome-artificial-intelligence A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers."
+        },
+        "totalStars": 14458,
+        "language": "Unknown",
+        "dailyStars": 40,
+        "chineseIntro": {
+          "zh": "精选 AI 资源列表，涵盖课程、书籍、视频讲座和论文，聚焦 AI 工程化（RAG、代理、评估、部署等）。",
+          "en": "Star owainlewis / awesome-artificial-intelligence A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 40 星，总星数 1.4 万，作为长期维护的 awesome 列表，持续吸引 AI 学习者和从业者。",
+          "en": "登上 GitHub Trending 日榜第 14 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 40 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,458 stars、2,337 forks，topics: ai, artificial-intelligence, deep-learning, intelligent-machines, intelligent-systems，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,458 stars and 2,337 forks，topics: ai, artificial-intelligence, deep-learning, intelligent-machines, intelligent-systems, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 知识图谱的演进方向，从学术资源转向工程实践，反映行业对落地能力的需求。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/owainlewis/awesome-artificial-intelligence"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "智能体性能优化系统，为 Claude Code、Codex、Cursor 等工具提供技能、本能、记忆、安全等增强能力。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 217851,
+        "language": "JavaScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "智能体性能优化系统，为 Claude Code、Codex、Cursor 等工具提供技能、本能、记忆、安全等增强能力。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "总星数 21.8 万，创建仅 5 个月，增长迅猛，作为代理生态的基础设施组件，随 AI 代理工具普及持续获得关注。",
+          "en": "总 star 数已达 217k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 217,851 stars、33,423 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 217,851 stars and 33,423 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注代理工具链中性能优化层的价值，以及如何通过开源项目建立开发者信任。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Nous Research 开发的 AI 代理，支持 Claude、ChatGPT 等模型，提供桌面端应用，旨在成为陪伴用户成长的智能体。",
+          "en": "The agent that grows with you"
+        },
+        "totalStars": 197109,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Nous Research 开发的 AI 代理，支持 Claude、ChatGPT 等模型，提供桌面端应用，旨在成为陪伴用户成长的智能体。",
+          "en": "The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "总星数 19.7 万，创建 11 个月，持续在榜，作为开源代理项目，受益于 AI 代理生态的快速扩张。",
+          "en": "总 star 数已达 197k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 197,109 stars、34,833 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 197,109 stars and 34,833 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察开源代理如何通过社区驱动迭代，以及「陪伴成长」叙事对用户粘性的影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Significant-Gravitas/AutoGPT",
+          "en": "Significant-Gravitas/AutoGPT"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "开源自主 AI 代理平台，提供构建、部署和运行代理的工具，支持 GPT、Claude、Llama 等多种模型。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "totalStars": 185022,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "开源自主 AI 代理平台，提供构建、部署和运行代理的工具，支持 GPT、Claude、Llama 等多种模型。",
+          "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+        },
+        "todayHighlight": {
+          "zh": "总星数 18.5 万，创建 40 个月，作为自主代理的先驱项目，持续吸引新用户，今日新增数据未显示但长期在榜。",
+          "en": "总 star 数已达 185k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,022 stars、46,126 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,022 stars and 46,126 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察自主代理从概念到工程化平台的演进，以及开源社区对「人人可用 AI」愿景的推动。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ollama/ollama",
+          "en": "ollama/ollama"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "本地运行大语言模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等众多模型，提供简洁的安装和使用体验。",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "totalStars": 174492,
+        "language": "Go",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "本地运行大语言模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等众多模型，提供简洁的安装和使用体验。",
+          "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+        },
+        "todayHighlight": {
+          "zh": "总星数 17.4 万，创建 36 个月，持续在榜，作为本地 LLM 运行的标准工具，随开源模型生态壮大而保持热度。",
+          "en": "总 star 数已达 174k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 174,492 stars、16,675 forks，topics: deepseek, gemma, gemma3, glm, go，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 174,492 stars and 16,675 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注本地化 AI 部署的需求增长，以及 Ollama 如何成为模型分发和运行的事实标准。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ollama/ollama"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "f/prompts.chat",
+          "en": "f/prompts.chat"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等模型，可自托管，帮助用户发现和分享优质提示词。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "totalStars": 163904,
+        "language": "HTML",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等模型，可自托管，帮助用户发现和分享优质提示词。",
+          "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+        },
+        "todayHighlight": {
+          "zh": "总星数 16.4 万，创建 43 个月，长期在榜，提示工程作为 AI 应用的关键环节，持续吸引社区贡献。",
+          "en": "总 star 数已达 163k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 163,904 stars、21,252 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 163,904 stars and 21,252 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察提示词生态的商业模式（如自托管、社区驱动），以及提示词质量对 AI 输出效果的影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/f/prompts.chat"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: New usage analytics and updated spend controls for enterprises",
+          "en": "OpenAI: New usage analytics and updated spend controls for enterprises"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的使用分析和支出控制功能，帮助企业更好地管理成本和规模化使用 AI。",
+          "en": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
+        },
+        "chineseIntro": {
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的使用分析和支出控制功能，帮助企业更好地管理成本和规模化使用 AI。",
+          "en": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
+        },
+        "todayHighlight": {
+          "zh": "这是 OpenAI 在企业级产品中加强可观测性和成本管控的关键一步，直接回应了企业客户对 AI 支出透明度的核心诉求。",
+          "en": "这是 OpenAI 在企业级产品中加强可观测性和成本管控的关键一步，直接回应了企业客户对 AI 支出透明度的核心诉求。"
+        },
+        "pmInsight": {
+          "zh": "产品经理应评估是否需要在自研 AI 应用中嵌入类似的使用量监控和预算告警功能，以提升企业客户的信任和续费率。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: Upcoming deprecation of Opus 4.6 (fast)",
+          "en": "GitHub Changelog: Upcoming deprecation of Opus 4.6 (fast)"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "API/定价",
+          "en": "API/定价"
+        },
+        "summary": {
+          "zh": "GitHub Copilot 将于 2026 年 6 月 29 日弃用 Opus 4.6 (fast) 模型，建议用户迁移至 Opus 4.8 (fast)。",
+          "en": "We will deprecate Opus 4.6 (fast) across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions), on June 29th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of Opus 4.6 (fast) appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub Copilot 将于 2026 年 6 月 29 日弃用 Opus 4.6 (fast) 模型，建议用户迁移至 Opus 4.8 (fast)。",
+          "en": "We will deprecate Opus 4.6 (fast) across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions), on June 29th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of Opus 4.6 (fast) appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "模型迭代加速，开发者需关注 Copilot 模型变更对代码补全和聊天体验的影响，及时调整配置。",
+          "en": "模型迭代加速，开发者需关注 Copilot 模型变更对代码补全和聊天体验的影响，及时调整配置。"
+        },
+        "pmInsight": {
+          "zh": "产品经理应建立模型版本跟踪机制，在依赖第三方模型时提前规划迁移窗口，避免服务中断。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-18-upcoming-deprecation-of-opus-4-6-fast"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: Tutorial: Python MCP Internal API > LLM",
+          "en": "Hacker News LLM: Tutorial: Python MCP Internal API > LLM"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "一篇教程展示了如何使用 FastMCP 在 Python 中构建 MCP 服务器，将内部 REST API 安全地暴露给 LLM。",
+          "en": "Article URL: https://www.devclubhouse.com/a/ship-an-mcp-server-in-python-that-exposes-your-internal-api-to-llms Comments URL: https://news.ycombinator.com/item?id=48594116 Points: 2 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "一篇教程展示了如何使用 FastMCP 在 Python 中构建 MCP 服务器，将内部 REST API 安全地暴露给 LLM。",
+          "en": "Article URL: https://www.devclubhouse.com/a/ship-an-mcp-server-in-python-that-exposes-your-internal-api-to-llms Comments URL: https://news.ycombinator.com/item?id=48594116 Points: 2 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "MCP 协议正在成为连接 LLM 与企业内部系统的标准方式，该教程降低了开发者的上手门槛。",
+          "en": "MCP 协议正在成为连接 LLM 与企业内部系统的标准方式，该教程降低了开发者的上手门槛。"
+        },
+        "pmInsight": {
+          "zh": "产品经理可评估 MCP 作为 AI 插件架构的可行性，以安全、类型安全的方式将现有 API 开放给 AI 代理。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://www.devclubhouse.com/a/ship-an-mcp-server-in-python-that-exposes-your-internal-api-to-llms"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Is it agentic enough? Benchmarking open models on your own tooling",
+          "en": "Hugging Face: Is it agentic enough? Benchmarking open models on your own tooling"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "Hugging Face 发布了一种新的基准测试方法，评估开放模型在代理任务中的效率，而不仅仅是最终答案的正确性。",
+          "en": "Is it agentic enough? Benchmarking open models on your own tooling"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face 发布了一种新的基准测试方法，评估开放模型在代理任务中的效率，而不仅仅是最终答案的正确性。",
+          "en": "Is it agentic enough? Benchmarking open models on your own tooling"
+        },
+        "todayHighlight": {
+          "zh": "该研究首次系统性地衡量模型在工具使用过程中的成本与效率，对选择代理模型具有实际指导意义。",
+          "en": "该研究首次系统性地衡量模型在工具使用过程中的成本与效率，对选择代理模型具有实际指导意义。"
+        },
+        "pmInsight": {
+          "zh": "产品经理在选择模型时，应关注代理任务中的 token 消耗和步骤数，而不仅仅是准确率，以优化成本和用户体验。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/is-it-agentic-enough"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "en": "Google AI: New research shows how AMIE, our medical AI, could help manage health conditions."
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》杂志发表新研究，证明其不仅能诊断，还能管理慢性疾病，效果与初级保健医生相当。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
+        },
+        "chineseIntro": {
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》杂志发表新研究，证明其不仅能诊断，还能管理慢性疾病，效果与初级保健医生相当。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
+        },
+        "todayHighlight": {
+          "zh": "这是医疗 AI 从单次诊断向长期疾病管理的重要跨越，可能改变慢性病护理的交付模式。",
+          "en": "这是医疗 AI 从单次诊断向长期疾病管理的重要跨越，可能改变慢性病护理的交付模式。"
+        },
+        "pmInsight": {
+          "zh": "产品经理可关注 AMIE 的对话式疾病管理能力，探索在健康管理类产品中集成类似 AI 助手的可能性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: GLM-5.2 is above GPT-5.5 in AA-Briefcase, Artificial Analysis' new agentic knowledge work eval",
+          "en": "Reddit LocalLLaMA: GLM-5.2 is above GPT-5.5 in AA-Briefcase, Artificial Analysis' new agentic knowledge work eval"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "在 Artificial Analysis 新发布的代理知识工作基准 AA-Briefcase 中，GLM-5.2 得分超过 GPT-5.5。",
+          "en": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/analysis_scaled\"> /u/analysis_scaled </a> <br/> <span><a href=\"https://artificialanalysis.ai/articles/aa-briefcase\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/\">[comments]</a></span>"
+        },
+        "chineseIntro": {
+          "zh": "在 Artificial Analysis 新发布的代理知识工作基准 AA-Briefcase 中，GLM-5.2 得分超过 GPT-5.5。",
+          "en": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/analysis_scaled\"> /u/analysis_scaled </a> <br/> <span><a href=\"https://artificialanalysis.ai/articles/aa-briefcase\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/\">[comments]</a></span>"
+        },
+        "todayHighlight": {
+          "zh": "这表明开源模型在特定代理任务上已具备与闭源模型竞争的能力，可能加速企业采用开源方案。",
+          "en": "这表明开源模型在特定代理任务上已具备与闭源模型竞争的能力，可能加速企业采用开源方案。"
+        },
+        "pmInsight": {
+          "zh": "产品经理应关注 GLM-5.2 等开源模型在代理任务上的表现，评估其作为 GPT 替代方案的可行性和成本优势。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-18",
     "label": {
       "zh": "最新",
