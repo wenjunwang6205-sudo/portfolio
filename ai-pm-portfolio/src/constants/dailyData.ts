@@ -44,94 +44,102 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI Agent 生态持续升温，企业级治理与效率工具成为新焦点",
-      "en": "AI Agent Ecosystem Heats Up, Enterprise Governance and Efficiency Tools Become New Focus"
+      "zh": "AI 成本治理与代理框架升温，企业级部署进入精细化阶段",
+      "en": "AI Cost Governance and Agent Frameworks Heat Up, Enterprise Deployment Enters Refinement Phase"
     },
     "editorNote": {
-      "zh": "今日 GitHub 上 AI Agent 相关项目表现突出，headroom 日增超 4000 星，同时 OpenAI 和 GitHub 推出企业级用量分析功能，Hugging Face 发布 Agent 效率基准。信号指向 Agent 生态从“能否做”转向“做得好且可控”，产品经理应关注成本优化与治理工具。",
-      "en": "Today's GitHub highlights AI Agent projects, with headroom gaining over 4000 stars. Meanwhile, OpenAI and GitHub launched enterprise usage analytics, and Hugging Face released an Agent efficiency benchmark. Signals indicate the Agent ecosystem is shifting from 'can it be done' to 'done well and controllable'. PMs should focus on cost optimization and governance tools."
+      "zh": "今日 GitHub 与公司动态共同指向一个主线：AI 从「能用」走向「可控、可衡量、可优化」。Headroom 的压缩叙事、OpenAI 与 GitHub 的用量控制功能、以及代理治理研究，都在推动企业更理性地部署 AI。同时，开源代理框架（Flue、Agent Native）和低成本推理方案持续涌现，为开发者提供更多选择。",
+      "en": "Today's GitHub and company dynamics converge on a theme: AI is moving from 'usable' to 'controllable, measurable, and optimizable'. Headroom's compression narrative, OpenAI and GitHub's usage controls, and agent governance research are driving more rational enterprise AI deployment. Meanwhile, open-source agent frameworks (Flue, Agent Native) and low-cost inference solutions continue to emerge, offering developers more choices."
     },
     "keyTakeaway": {
-      "zh": "AI Agent 生态进入效率与治理并重阶段：上下文压缩工具 headroom 日增 4000+ 星，企业级用量分析功能密集上线，Agent 评估标准从任务完成转向过程效率。",
-      "en": "AI Agent ecosystem enters a phase emphasizing both efficiency and governance: context compression tool headroom gains 4000+ stars daily, enterprise usage analytics launch densely, and Agent evaluation standards shift from task completion to process efficiency."
+      "zh": "AI 部署进入「成本精细化」阶段，企业关注点从模型能力转向可观测性与治理；同时，开源代理框架和低成本推理方案加速普及，推动 AI 从云端走向本地。",
+      "en": "AI deployment enters a 'cost refinement' phase, with enterprise focus shifting from model capability to observability and governance; meanwhile, open-source agent frameworks and low-cost inference solutions accelerate adoption, pushing AI from cloud to local."
     },
     "signals": [
       {
         "title": {
-          "zh": "上下文压缩工具 headroom 快速增长，Agent 成本优化需求明确",
-          "en": "Context compression tool headroom grows rapidly, Agent cost optimization demand is clear"
+          "zh": "AI 成本压缩工具 Headroom 日增 4005 星，开发者对 token 消耗敏感度提升",
+          "en": "AI Cost Compression Tool Headroom Gains 4005 Stars Daily, Developer Sensitivity to Token Consumption Rises"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "headroom 今日新增 4005 星，总星数近 4 万，可减少 60-95% 的 token 消耗。",
-          "en": "headroom gained 4005 stars today, total stars nearly 40k, reducing token consumption by 60-95%."
+          "zh": "Headroom 今日新增 4005 星，总星数近 4 万，作为上下文压缩工具可减少 60-95% token 消耗。其增长与 Claude Code、Cursor 等工具的生态位紧密相关，开发者对 API 调用成本的关注度显著提升。",
+          "en": "Headroom gained 4005 stars today, nearing 40k total. As a context compression tool reducing token consumption by 60-95%, its growth is tied to the ecosystem of tools like Claude Code and Cursor, reflecting developers' heightened focus on API call costs."
         },
         "pmInsight": {
-          "zh": "Agent 应用落地中 token 成本是核心痛点，headroom 的快速增长表明市场对低成本 Agent 方案有强烈需求。PM 应评估集成此类压缩工具以降低运营成本，或将其作为产品差异化卖点。",
-          "en": "Token cost is a core pain point in Agent deployment. headroom's rapid growth indicates strong market demand for low-cost Agent solutions. PMs should evaluate integrating such compression tools to reduce operational costs or use it as a product differentiator."
+          "zh": "PM 应关注 AI 产品的成本透明度，将 token 压缩或用量优化作为核心功能之一，尤其是在面向开发者的工具中。可考虑集成类似 Headroom 的压缩能力，或提供用量仪表盘。",
+          "en": "PMs should prioritize cost transparency in AI products, making token compression or usage optimization a core feature, especially in developer tools. Consider integrating compression capabilities like Headroom or providing usage dashboards."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub: headroom",
+            "label": "GitHub: chopratejas/headroom",
             "url": "https://github.com/chopratejas/headroom"
           }
         ]
       },
       {
         "title": {
-          "zh": "企业级 AI 用量分析与治理工具密集上线，平台化竞争加剧",
-          "en": "Enterprise AI usage analytics and governance tools launch intensively, platform competition intensifies"
+          "zh": "OpenAI 与 GitHub 同步推出企业用量控制，AI 支出管理成为刚需",
+          "en": "OpenAI and GitHub Simultaneously Launch Enterprise Usage Controls, AI Spend Management Becomes a Must-Have"
         },
         "category": {
           "zh": "企业服务",
           "en": "Enterprise Services"
         },
         "summary": {
-          "zh": "OpenAI 为 ChatGPT Enterprise 新增用量分析和支出控制，GitHub Copilot 用量指标 API 新增每用户每日 AI 积分消耗数据。",
-          "en": "OpenAI added usage analytics and spend controls for ChatGPT Enterprise; GitHub Copilot usage metrics API now includes per-user daily AI credit consumption."
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出支出控制和用量分析，GitHub Copilot API 新增按用户消耗的 AI 积分字段。两大平台同日动作，表明企业客户对 AI 成本透明度和预算管控的需求已从「可选」变为「必需」。",
+          "en": "OpenAI launched spend controls and usage analytics for ChatGPT Enterprise, while GitHub Copilot API added per-user AI credit consumption. The simultaneous moves from two major platforms indicate that enterprise demand for AI cost transparency and budget control has shifted from 'optional' to 'essential'."
         },
         "pmInsight": {
-          "zh": "AI 平台正从功能竞争转向运营效率竞争，企业客户越来越关注成本透明度和治理能力。PM 应优先构建或集成用量监控、预算控制等企业级功能，以提升产品在 B2B 市场的竞争力。",
-          "en": "AI platforms are shifting from feature competition to operational efficiency competition. Enterprise customers increasingly value cost transparency and governance. PMs should prioritize building or integrating usage monitoring, budget controls, and other enterprise features to enhance B2B competitiveness."
+          "zh": "面向企业的 AI 产品必须内置用量监控和成本控制功能，否则将面临采购阻力。PM 应优先开发可配置的预算上限、用量告警和按用户/部门的成本分摊报告。",
+          "en": "Enterprise AI products must include built-in usage monitoring and cost control features to avoid procurement resistance. PMs should prioritize configurable budget caps, usage alerts, and per-user/department cost allocation reports."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "OpenAI Blog",
+            "label": "OpenAI: New usage analytics and updated spend controls for enterprises",
             "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
           },
           {
-            "label": "GitHub Changelog",
+            "label": "GitHub Changelog: AI credits consumed per user now in the Copilot usage metrics API",
             "url": "https://github.blog/changelog/2026-06-19-ai-credits-consumed-per-user-now-in-the-copilot-usage-metrics-api"
           }
         ]
       },
       {
         "title": {
-          "zh": "Agent 评估标准转向效率与过程成本，Hugging Face 发布新基准",
-          "en": "Agent evaluation standards shift to efficiency and process cost, Hugging Face releases new benchmark"
+          "zh": "开源代理框架与治理研究并行，代理型 AI 进入工程化阶段",
+          "en": "Open-Source Agent Frameworks and Governance Research Advance in Parallel, Agentic AI Enters Engineering Phase"
         },
         "category": {
-          "zh": "社区与研究",
-          "en": "Community & Research"
+          "zh": "AI 代理",
+          "en": "AI Agents"
         },
         "summary": {
-          "zh": "Hugging Face 发布新基准，评估开源模型在代理任务中的效率，关注过程成本而非仅结果。",
-          "en": "Hugging Face released a new benchmark evaluating open models on agentic tasks, focusing on process cost rather than just outcomes."
+          "zh": "Flue（TypeScript Agent 框架）和 Agent Native（BuilderIO 的 Agent 原生应用框架）今日均进入 GitHub 日增榜前十，同时 arXiv 论文提出代理运行时治理的道义策略框架。开源社区在构建代理的同时，也在探索如何安全可控地运行它们。",
+          "en": "Flue (TypeScript agent framework) and Agent Native (BuilderIO's agent-native app framework) both entered the GitHub daily top 10, while an arXiv paper proposed deontic policies for runtime governance of agentic AI. The open-source community is building agents while also exploring how to run them safely and controllably."
         },
         "pmInsight": {
-          "zh": "Agent 评估标准的变化将影响模型选型和产品设计。PM 应关注效率指标，在 Agent 产品中引入成本-效益分析，并考虑采用更高效的模型或压缩技术。",
-          "en": "The shift in Agent evaluation standards will impact model selection and product design. PMs should pay attention to efficiency metrics, introduce cost-benefit analysis in Agent products, and consider adopting more efficient models or compression techniques."
+          "zh": "PM 应关注代理框架的标准化和治理能力，在构建代理产品时预留策略引擎接口，以便未来满足合规要求。同时，可探索将代理框架与现有应用（如视频编辑、情报分析）结合，创造新的交互范式。",
+          "en": "PMs should monitor the standardization and governance capabilities of agent frameworks, leaving policy engine interfaces in agent products for future compliance. Meanwhile, explore combining agent frameworks with existing applications (e.g., video editing, intelligence analysis) to create new interaction paradigms."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hugging Face Blog",
-            "url": "https://huggingface.co/blog/is-it-agentic-enough"
+            "label": "GitHub: withastro/flue",
+            "url": "https://github.com/withastro/flue"
+          },
+          {
+            "label": "GitHub: BuilderIO/agent-native",
+            "url": "https://github.com/BuilderIO/agent-native"
+          },
+          {
+            "label": "arXiv: Deontic Policies for Runtime Governance of Agentic AI Systems",
+            "url": "https://arxiv.org/abs/2606.19464"
           }
         ]
       }
@@ -139,55 +147,71 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "集成上下文压缩的 Agent 平台",
-          "en": "Agent platform with integrated context compression"
+          "zh": "面向中小企业的 AI 成本优化 SaaS 产品",
+          "en": "AI Cost Optimization SaaS for SMBs"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 headroom 等压缩工具，构建内置 token 优化的 Agent 平台，可显著降低用户成本，形成差异化优势。",
-          "en": "Build an Agent platform with built-in token optimization using compression tools like headroom, significantly reducing user costs and creating a competitive advantage."
+          "zh": "结合 Headroom 的压缩技术和 OpenAI/GitHub 的用量数据，可构建一个跨平台的 AI 成本优化 SaaS，自动分析 token 消耗、推荐压缩策略、并提供预算控制面板。假设：中小企业愿意为节省 30% 以上的 API 成本支付月费。",
+          "en": "Combining Headroom's compression technology with OpenAI/GitHub usage data, build a cross-platform AI cost optimization SaaS that automatically analyzes token consumption, recommends compression strategies, and provides budget dashboards. Hypothesis: SMBs are willing to pay a monthly fee for saving over 30% on API costs."
         },
         "pmInsight": {
-          "zh": "假设：集成 headroom 的 Agent 平台相比未集成的竞品，用户留存率提升 20% 以上。验证方法：开发 MVP，对比两组用户的月活跃度和付费转化。",
-          "en": "Hypothesis: An Agent platform integrating headroom will see user retention increase by over 20% compared to competitors without it. Validation: Develop MVP, compare monthly active users and paid conversion between two groups."
+          "zh": "验证假设的关键是找到早期付费客户，可从 Headroom 的 GitHub 社区和 Copilot 用户中招募。MVP 应聚焦于 OpenAI 和 Anthropic API 的用量优化，后续扩展至其他模型。",
+          "en": "Key to validating the hypothesis is finding early paying customers, recruit from Headroom's GitHub community and Copilot users. MVP should focus on usage optimization for OpenAI and Anthropic APIs, then expand to other models."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub: headroom",
+            "label": "GitHub: chopratejas/headroom",
             "url": "https://github.com/chopratejas/headroom"
+          },
+          {
+            "label": "OpenAI: New usage analytics and updated spend controls for enterprises",
+            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+          },
+          {
+            "label": "GitHub Changelog: AI credits consumed per user now in the Copilot usage metrics API",
+            "url": "https://github.blog/changelog/2026-06-19-ai-credits-consumed-per-user-now-in-the-copilot-usage-metrics-api"
           }
         ]
       },
       {
         "title": {
-          "zh": "面向中小企业的 AI 治理仪表盘",
-          "en": "AI governance dashboard for SMBs"
+          "zh": "基于代理框架的垂直行业 AI 助手（如医疗、视频编辑）",
+          "en": "Vertical AI Assistant Based on Agent Frameworks (e.g., Healthcare, Video Editing)"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合 OpenAI 和 GitHub 的企业级用量分析趋势，开发面向中小企业的轻量级 AI 治理仪表盘，提供成本监控、权限管理和合规报告。",
-          "en": "Leveraging the enterprise usage analytics trend from OpenAI and GitHub, develop a lightweight AI governance dashboard for SMBs, offering cost monitoring, permission management, and compliance reports."
+          "zh": "利用 Flue 或 Agent Native 等框架，结合 Google AMIE 的医疗 AI 能力或 Palmier Pro 的视频编辑场景，构建垂直行业的代理型助手。假设：在医疗慢病管理或视频创作领域，代理型助手能比传统 SaaS 提升 2 倍用户效率。",
+          "en": "Using frameworks like Flue or Agent Native, combined with Google AMIE's medical AI capabilities or Palmier Pro's video editing scenarios, build vertical agentic assistants. Hypothesis: In chronic disease management or video creation, agentic assistants can improve user efficiency by 2x over traditional SaaS."
         },
         "pmInsight": {
-          "zh": "假设：中小企业对 AI 治理工具的需求增长，但现有方案过于复杂或昂贵。验证方法：访谈 30 家中小企业 IT 负责人，了解痛点与付费意愿；构建原型并测试订阅转化率。",
-          "en": "Hypothesis: SMBs have growing demand for AI governance tools, but existing solutions are too complex or expensive. Validation: Interview 30 SMB IT leaders to understand pain points and willingness to pay; build prototype and test subscription conversion."
+          "zh": "优先选择数据密集、流程复杂的垂直领域，如医疗慢病管理（AMIE 已验证）或视频后期制作（Palmier Pro 已获关注）。与框架作者合作，确保产品能快速迭代。",
+          "en": "Prioritize data-intensive, complex workflow verticals like chronic disease management (validated by AMIE) or video post-production (Palmier Pro gaining traction). Collaborate with framework authors to ensure rapid iteration."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI Blog",
-            "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+            "label": "GitHub: withastro/flue",
+            "url": "https://github.com/withastro/flue"
           },
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-06-19-ai-credits-consumed-per-user-now-in-the-copilot-usage-metrics-api"
+            "label": "GitHub: BuilderIO/agent-native",
+            "url": "https://github.com/BuilderIO/agent-native"
+          },
+          {
+            "label": "Google AI: AMIE research in Nature",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          },
+          {
+            "label": "GitHub: palmier-io/palmier-pro",
+            "url": "https://github.com/palmier-io/palmier-pro"
           }
         ]
       }
@@ -203,26 +227,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "在将工具输出、日志、文件等发送给大模型之前，自动压缩内容，可减少60-95%的token消耗，同时保持答案质量不变。支持库、代理和MCP服务器三种使用方式。",
+          "zh": "一个上下文压缩工具，可在将工具输出、日志、文件和RAG块发送给大模型前进行压缩，减少60-95%的token消耗，同时保持回答质量。支持作为库、代理或MCP服务器使用。",
           "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
-        "totalStars": 39462,
+        "totalStars": 39536,
         "language": "Python",
         "dailyStars": 4005,
         "chineseIntro": {
-          "zh": "在将工具输出、日志、文件等发送给大模型之前，自动压缩内容，可减少60-95%的token消耗，同时保持答案质量不变。支持库、代理和MCP服务器三种使用方式。",
+          "zh": "一个上下文压缩工具，可在将工具输出、日志、文件和RAG块发送给大模型前进行压缩，减少60-95%的token消耗，同时保持回答质量。支持作为库、代理或MCP服务器使用。",
           "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
         },
         "todayHighlight": {
-          "zh": "今日新增4005星，总星数近4万，作为AI Agent上下文压缩的关键组件，随Agent生态持续升温而快速增长。",
+          "zh": "今日新增4005星，总星数近4万，在AI Agent社区快速传播。其「压缩即省钱」的叙事精准击中开发者痛点，配合Claude Code、Cursor等工具的生态位，增长迅猛。",
           "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 4,005 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,462 stars、2,707 forks，topics: agent, ai, anthropic, claude-code, compression，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,462 stars and 2,707 forks，topics: agent, ai, anthropic, claude-code, compression, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,536 stars、2,710 forks，topics: agent, ai, anthropic, claude-code, compression，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,536 stars and 2,710 forks，topics: agent, ai, anthropic, claude-code, compression, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察token压缩如何降低AI应用成本，以及它是否可能成为LLM调用链中的标准中间件。",
+          "zh": "观察AI基础设施层「降本增效」工具如何通过代理/MCP生态快速获取开发者口碑。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -243,26 +267,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Google Research开发的时间序列基础模型，专为时间序列预测任务预训练，可广泛应用于金融、气象、运维等领域的预测场景。",
+          "zh": "Google Research开发的时间序列基础模型，专为时间序列预测任务设计，提供预训练模型和推理能力。",
           "en": "Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
         },
-        "totalStars": 24169,
+        "totalStars": 24180,
         "language": "Python",
         "dailyStars": 1510,
         "chineseIntro": {
-          "zh": "Google Research开发的时间序列基础模型，专为时间序列预测任务预训练，可广泛应用于金融、气象、运维等领域的预测场景。",
+          "zh": "Google Research开发的时间序列基础模型，专为时间序列预测任务设计，提供预训练模型和推理能力。",
           "en": "Star google-research / timesfm TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting."
         },
         "todayHighlight": {
-          "zh": "今日新增1510星，总星数超2.4万，作为ICML 2024论文的官方实现，在时间序列预测领域持续获得关注。",
+          "zh": "今日新增1510星，总星数超2.4万。作为ICML 2024论文的官方实现，在时序预测领域持续获得关注，今日排名第二。",
           "en": "登上 GitHub Trending 日榜第 2 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 1,510 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 24,169 stars、2,280 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 24,169 stars and 2,280 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 24,180 stars、2,282 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 24,180 stars and 2,282 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注基础模型在垂直领域（如时序预测）的落地潜力，以及Google开源策略对AI产品生态的影响。",
+          "zh": "关注基础模型在垂直领域（如金融、供应链）的落地潜力，以及Google开源策略对生态的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -283,26 +307,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "专为AI设计的macOS视频编辑器，集成Claude、Seedance等AI能力，让视频编辑更智能高效。",
+          "zh": "专为AI打造的macOS视频编辑器，集成Claude、Seedance等AI能力，支持智能剪辑和生成。",
           "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
         },
-        "totalStars": 2091,
+        "totalStars": 2112,
         "language": "Swift",
         "dailyStars": 756,
         "chineseIntro": {
-          "zh": "专为AI设计的macOS视频编辑器，集成Claude、Seedance等AI能力，让视频编辑更智能高效。",
+          "zh": "专为AI打造的macOS视频编辑器，集成Claude、Seedance等AI能力，支持智能剪辑和生成。",
           "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
         },
         "todayHighlight": {
-          "zh": "创建仅2个月已获2091星，今日新增756星，AI视频编辑赛道升温，macOS原生应用吸引大量创作者关注。",
+          "zh": "今日新增756星，总星数2112，创建仅2个月。作为原生AI视频编辑工具，在macOS用户中快速传播，今日排名第三。",
           "en": "登上 GitHub Trending 日榜第 3 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 756 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,091 stars、201 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,091 stars and 201 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,112 stars、202 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,112 stars and 202 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI原生视频编辑工具如何重塑创作流程，以及MCP协议在创意工具中的集成价值。",
+          "zh": "观察AI原生应用如何重新定义传统工具（如视频编辑）的用户体验和交互范式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -323,26 +347,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个可编程的TypeScript Agent框架，用于构建自主AI Agent和复杂工作流，强调Agent的自主性和任务完成能力。",
+          "zh": "一个TypeScript编写的Agent框架，提供可编程的「马具」来构建自主AI代理和工作流，强调灵活性和控制力。",
           "en": "The sandbox agent framework."
         },
-        "totalStars": 5900,
+        "totalStars": 5904,
         "language": "TypeScript",
         "dailyStars": 309,
         "chineseIntro": {
-          "zh": "一个可编程的TypeScript Agent框架，用于构建自主AI Agent和复杂工作流，强调Agent的自主性和任务完成能力。",
+          "zh": "一个TypeScript编写的Agent框架，提供可编程的「马具」来构建自主AI代理和工作流，强调灵活性和控制力。",
           "en": "The sandbox agent framework."
         },
         "todayHighlight": {
-          "zh": "今日新增309星，总星数5900，作为Astro团队推出的Agent框架，在Agent开发工具领域快速传播。",
-          "en": "登上 GitHub Trending 日榜第 10 位, 创建仅约 4 个月便已积累 5,900 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 309 星."
+          "zh": "今日新增309星，总星数5904，创建4个月。作为Astro团队的新项目，在Agent开发社区持续升温，今日排名第十。",
+          "en": "登上 GitHub Trending 日榜第 10 位, 创建仅约 4 个月便已积累 5,904 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 309 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,900 stars、327 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,900 stars and 327 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,904 stars、327 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,904 stars and 327 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注Agent框架的演进方向——从SDK到可编程框架，以及它对AI应用开发效率的影响。",
+          "zh": "关注Agent框架的差异化定位——不提供SDK而是「马具」，观察开发者对控制力与抽象层级的选择。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -363,26 +387,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Lightricks推出的音频-视频生成模型，提供Python推理和LoRA训练包，支持从音频生成视频内容。",
+          "zh": "Lightricks推出的音频-视频生成模型，提供Python推理和LoRA训练包，支持从文本或音频生成视频。",
           "en": "Star Lightricks / LTX-2 Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model."
         },
-        "totalStars": 7712,
+        "totalStars": 7714,
         "language": "Python",
         "dailyStars": 196,
         "chineseIntro": {
-          "zh": "Lightricks推出的音频-视频生成模型，提供Python推理和LoRA训练包，支持从音频生成视频内容。",
+          "zh": "Lightricks推出的音频-视频生成模型，提供Python推理和LoRA训练包，支持从文本或音频生成视频。",
           "en": "Star Lightricks / LTX-2 Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model."
         },
         "todayHighlight": {
-          "zh": "今日新增196星，总星数7712，在AI视频生成赛道持续升温，LoRA训练能力吸引开发者社区。",
+          "zh": "今日新增196星，总星数7714，创建6个月。作为商业公司的开源模型，在视频生成赛道持续获得关注，今日排名第十五。",
           "en": "登上 GitHub Trending 日榜第 15 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 196 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,712 stars、1,224 forks，topics: generative-ai, ltx, ltx-2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,712 stars and 1,224 forks，topics: generative-ai, ltx, ltx-2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,714 stars、1,224 forks，topics: generative-ai, ltx, ltx-2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,714 stars and 1,224 forks，topics: generative-ai, ltx, ltx-2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察多模态生成模型（音频到视频）的产品化路径，以及开源模型与商业应用的结合点。",
+          "zh": "观察开源视频生成模型与闭源产品的竞争格局，以及LoRA训练能力对社区生态的拉动作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -403,26 +427,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "实时全球情报仪表盘，AI驱动的新闻聚合、地缘政治监控和基础设施追踪，提供统一态势感知界面。",
+          "zh": "实时全球情报仪表盘，利用AI聚合新闻、监控地缘政治和基础设施，提供统一态势感知界面。",
           "en": "Star koala73 / worldmonitor Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface"
         },
-        "totalStars": 57427,
+        "totalStars": 57439,
         "language": "TypeScript",
         "dailyStars": 156,
         "chineseIntro": {
-          "zh": "实时全球情报仪表盘，AI驱动的新闻聚合、地缘政治监控和基础设施追踪，提供统一态势感知界面。",
+          "zh": "实时全球情报仪表盘，利用AI聚合新闻、监控地缘政治和基础设施，提供统一态势感知界面。",
           "en": "Star koala73 / worldmonitor Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface"
         },
         "todayHighlight": {
-          "zh": "今日新增156星，总星数超5.7万，作为开源OSINT工具，在情报分析社区持续获得关注。",
+          "zh": "今日新增156星，总星数超5.7万，创建5个月。作为OSINT领域的明星项目，持续在情报分析社区传播，今日排名第四。",
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 57k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 156 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,427 stars、9,151 forks，topics: ai, dashboard, geopolitics, monitoring, news，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,427 stars and 9,151 forks，topics: ai, dashboard, geopolitics, monitoring, news, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,439 stars、9,151 forks，topics: ai, dashboard, geopolitics, monitoring, news，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,439 stars and 9,151 forks，topics: ai, dashboard, geopolitics, monitoring, news, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI+情报分析的产品形态，以及开源项目如何满足专业用户（如分析师、记者）的需求。",
+          "zh": "关注AI+情报分析的产品化路径，以及开源项目如何与商业Palantir类产品竞争。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -443,26 +467,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全球首个开源智能视频制作系统，包含12条流水线、52个工具和500+智能体技能，可将AI编程助手转变为完整的视频制作工作室。",
+          "zh": "全球首个开源智能视频制作系统，包含12条流水线、52个工具和500+智能体技能，可将AI编程助手转变为完整视频工作室。",
           "en": "Star calesthio / OpenMontage World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
         },
-        "totalStars": 6435,
+        "totalStars": 6456,
         "language": "Python",
         "dailyStars": 156,
         "chineseIntro": {
-          "zh": "全球首个开源智能视频制作系统，包含12条流水线、52个工具和500+智能体技能，可将AI编程助手转变为完整的视频制作工作室。",
+          "zh": "全球首个开源智能视频制作系统，包含12条流水线、52个工具和500+智能体技能，可将AI编程助手转变为完整视频工作室。",
           "en": "Star calesthio / OpenMontage World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
         },
         "todayHighlight": {
-          "zh": "今日新增156星，总星数6435，作为开源视频制作系统，在AI视频生成社区快速传播。",
-          "en": "登上 GitHub Trending 日榜第 8 位, 创建仅约 3 个月便已积累 6,435 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 156 星."
+          "zh": "今日新增156星，总星数6456，创建3个月。以「AI编程助手变身视频工作室」的独特叙事吸引关注，今日排名第八。",
+          "en": "登上 GitHub Trending 日榜第 8 位, 创建仅约 3 个月便已积累 6,456 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 156 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,435 stars、1,096 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,435 stars and 1,096 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,456 stars、1,097 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,456 stars and 1,097 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察智能体驱动的视频制作流程如何降低创作门槛，以及开源生态对视频工具创新的推动。",
+          "zh": "观察AI Agent在创意生产领域的应用边界，以及开源视频制作系统的生态构建策略。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -483,26 +507,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "构建智能体原生应用的开源框架，让用户界面和自主Agent深度融合，实现点击和语音指令的双向操作。",
+          "zh": "一个构建「Agent原生」应用的开源框架，让用户界面和AI代理完全连接，实现点击和语音双模交互。",
           "en": "Star BuilderIO / agent-native A framework for building agent-native applications."
         },
-        "totalStars": 1122,
+        "totalStars": 1131,
         "language": "TypeScript",
         "dailyStars": 147,
         "chineseIntro": {
-          "zh": "构建智能体原生应用的开源框架，让用户界面和自主Agent深度融合，实现点击和语音指令的双向操作。",
+          "zh": "一个构建「Agent原生」应用的开源框架，让用户界面和AI代理完全连接，实现点击和语音双模交互。",
           "en": "Star BuilderIO / agent-native A framework for building agent-native applications."
         },
         "todayHighlight": {
-          "zh": "今日新增147星，总星数1122，作为新兴的Agent应用框架，在React开发者社区获得关注。",
+          "zh": "今日新增147星，总星数1131，创建3个月。作为BuilderIO的新框架，在React和AI交叉领域快速获得关注，今日排名第六。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 147 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,122 stars、120 forks，topics: agents, ai, react，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,122 stars and 120 forks，topics: agents, ai, react, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,131 stars、121 forks，topics: agents, ai, react，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,131 stars and 121 forks，topics: agents, ai, react, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注Agent与UI融合的设计模式，以及它如何改变传统应用开发范式。",
+          "zh": "关注「Agent原生」应用的设计理念——UI和Agent平等共生，观察其对传统前端开发范式的冲击。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -523,26 +547,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "生成式AI一站式资源库，汇集研究更新、面试资料、Jupyter Notebook等，适合学习和求职。",
+          "zh": "生成式AI一站式资源指南，汇集研究更新、面试资料、Jupyter Notebook等，覆盖LLM、视觉语言模型等领域。",
           "en": "Star aishwaryanr / awesome-generative-ai-guide A one stop repository for generative AI research updates, interview resources, notebooks and much more!"
         },
-        "totalStars": 27710,
+        "totalStars": 27714,
         "language": "HTML",
         "dailyStars": 107,
         "chineseIntro": {
-          "zh": "生成式AI一站式资源库，汇集研究更新、面试资料、Jupyter Notebook等，适合学习和求职。",
+          "zh": "生成式AI一站式资源指南，汇集研究更新、面试资料、Jupyter Notebook等，覆盖LLM、视觉语言模型等领域。",
           "en": "Star aishwaryanr / awesome-generative-ai-guide A one stop repository for generative AI research updates, interview resources, notebooks and much more!"
         },
         "todayHighlight": {
-          "zh": "今日新增107星，总星数超2.7万，作为长期维护的Awesome列表，持续吸引AI学习者和求职者。",
+          "zh": "今日新增107星，总星数超2.7万，创建29个月。作为长期维护的awesome列表，在AI学习社区持续获得稳定增长，今日排名第五。",
           "en": "登上 GitHub Trending 日榜第 5 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 107 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,710 stars、5,743 forks，topics: awesome, awesome-list, generative-ai, interview-questions, large-language-models，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,710 stars and 5,743 forks，topics: awesome, awesome-list, generative-ai, interview-questions, large-language-models, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,714 stars、5,743 forks，topics: awesome, awesome-list, generative-ai, interview-questions, large-language-models，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,714 stars and 5,743 forks，topics: awesome, awesome-list, generative-ai, interview-questions, large-language-models, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察知识聚合类项目如何通过持续更新保持生命力，以及社区对AI教育资源的需求。",
+          "zh": "观察知识聚合类项目如何通过持续更新和社区贡献保持长期生命力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -563,26 +587,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Agent性能优化系统，提供技能、本能、记忆、安全等功能，专为Claude Code、Codex等AI编程助手设计。",
+          "zh": "一个Agent性能优化系统，提供技能、本能、记忆、安全等功能，专为Claude Code、Codex等AI编程助手设计。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 218376,
+        "totalStars": 218381,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "Agent性能优化系统，提供技能、本能、记忆、安全等功能，专为Claude Code、Codex等AI编程助手设计。",
+          "zh": "一个Agent性能优化系统，提供技能、本能、记忆、安全等功能，专为Claude Code、Codex等AI编程助手设计。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总星数超21.8万，作为AI Agent工具链中的热门项目，持续在开发者社区传播。",
+          "zh": "总星数高达21.8万，创建5个月，是GitHub上增长最快的项目之一。虽今日无新增数据，但长期霸榜，已成为AI Agent基础设施的标杆。",
           "en": "总 star 数已达 218k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 218,376 stars、33,500 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 218,376 stars and 33,500 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 218,381 stars、33,504 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 218,381 stars and 33,504 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注Agent性能优化工具如何提升AI编程助手的实用性和可靠性。",
+          "zh": "关注Agent工具链的「操作系统」化趋势，以及单一项目如何通过生态位占据成为开发者必备。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -609,19 +633,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "OpenAI 为 ChatGPT Enterprise 新增用量分析和支出控制功能，帮助企业更好地管理 AI 使用成本和规模。",
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的支出控制和用量分析功能，帮助企业更精细地管理 AI 成本并规模化部署。",
           "en": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
         },
         "chineseIntro": {
-          "zh": "OpenAI 为 ChatGPT Enterprise 新增用量分析和支出控制功能，帮助企业更好地管理 AI 使用成本和规模。",
+          "zh": "OpenAI 为 ChatGPT Enterprise 推出新的支出控制和用量分析功能，帮助企业更精细地管理 AI 成本并规模化部署。",
           "en": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence."
         },
         "todayHighlight": {
-          "zh": "企业级 AI 治理工具日趋完善，OpenAI 正从模型提供商向企业平台转型。",
-          "en": "企业级 AI 治理工具日趋完善，OpenAI 正从模型提供商向企业平台转型。"
+          "zh": "企业客户对 AI 成本透明度的需求日益迫切，此举直接回应了 CIO 和采购部门的预算管控痛点。",
+          "en": "企业客户对 AI 成本透明度的需求日益迫切，此举直接回应了 CIO 和采购部门的预算管控痛点。"
         },
         "pmInsight": {
-          "zh": "若你的企业正在规模化使用 ChatGPT，可借此功能优化预算分配，并基于用户级数据识别高价值场景。",
+          "zh": "若你负责企业级 AI 产品，可参考此功能设计用量预警和预算仪表盘，提升客户续费意愿。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -629,43 +653,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: China will have a Fable 5-class AI model before next year",
-          "en": "Hacker News AI: China will have a Fable 5-class AI model before next year"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "中国 AI 公司 CEO 向 Elon Musk 表示，中国将在明年之前拥有 Fable 5 级别的 AI 模型，比 Musk 预测的 Q1 更早。",
-          "en": "Article URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long Comments URL: https://news.ycombinator.com/item?id=48606364 Points: 8 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "中国 AI 公司 CEO 向 Elon Musk 表示，中国将在明年之前拥有 Fable 5 级别的 AI 模型，比 Musk 预测的 Q1 更早。",
-          "en": "Article URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long Comments URL: https://news.ycombinator.com/item?id=48606364 Points: 8 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "中美 AI 竞赛加速，中国追赶速度可能超出预期，影响全球模型竞争格局。",
-          "en": "中美 AI 竞赛加速，中国追赶速度可能超出预期，影响全球模型竞争格局。"
-        },
-        "pmInsight": {
-          "zh": "关注中国模型在成本与性能上的突破，评估其对现有模型选型和定价策略的潜在冲击。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-that-china-will-have-a-fable-5-class-ai-model-probably-q1-next-year-ceo-of-chinese-anthropic-rival-says-it-wont-take-that-long"
           }
         ]
       },
@@ -683,22 +670,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot 用量指标 API 新增每用户每日 AI 积分消耗数据，便于企业追踪使用与成本。",
+          "zh": "GitHub Copilot 用量指标 API 新增按用户每日消耗的 AI 积分字段，帮助管理员将消耗与产出关联。",
           "en": "The Copilot usage metrics API now reports how many AI credits each user consumed per day, derived from the same AI credits consumption data used in the usage-based billing API.&#8230; The post AI credits consumed per user now in the Copilot usage metrics API appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 用量指标 API 新增每用户每日 AI 积分消耗数据，便于企业追踪使用与成本。",
+          "zh": "GitHub Copilot 用量指标 API 新增按用户每日消耗的 AI 积分字段，帮助管理员将消耗与产出关联。",
           "en": "The Copilot usage metrics API now reports how many AI credits each user consumed per day, derived from the same AI credits consumption data used in the usage-based billing API.&#8230; The post AI credits consumed per user now in the Copilot usage metrics API appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "AI 编程助手进入精细化成本管理阶段，开发者工具正从功能竞争转向运营效率竞争。",
-          "en": "AI 编程助手进入精细化成本管理阶段，开发者工具正从功能竞争转向运营效率竞争。"
+          "zh": "这是 Copilot 从按席位计费转向按用量计费的关键信号，开发者平台正在重塑 AI 定价模式。",
+          "en": "这是 Copilot 从按席位计费转向按用量计费的关键信号，开发者平台正在重塑 AI 定价模式。"
         },
         "pmInsight": {
-          "zh": "利用该数据识别高消耗用户，评估 Copilot 投资回报率，并优化团队内的 AI 工具分配。",
+          "zh": "若你构建开发者工具，可借鉴此模式设计基于积分的计费与价值分析功能，增强企业采购说服力。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "GitHub Changelog",
@@ -720,22 +707,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Hugging Face 发布新基准，评估开源模型在代理任务中的效率，不仅看结果，还关注过程成本。",
+          "zh": "Hugging Face 发布新基准，评估开源模型在代理任务中的效率，不仅看答案正确性，还关注工具调用路径和成本。",
           "en": "Is it agentic enough? Benchmarking open models on your own tooling"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 发布新基准，评估开源模型在代理任务中的效率，不仅看结果，还关注过程成本。",
+          "zh": "Hugging Face 发布新基准，评估开源模型在代理任务中的效率，不仅看答案正确性，还关注工具调用路径和成本。",
           "en": "Is it agentic enough? Benchmarking open models on your own tooling"
         },
         "todayHighlight": {
-          "zh": "代理型 AI 的评估标准从“能否完成”转向“完成效率”，对模型选型和工具设计有深远影响。",
-          "en": "代理型 AI 的评估标准从“能否完成”转向“完成效率”，对模型选型和工具设计有深远影响。"
+          "zh": "代理型 AI 正在改变库设计范式，API 易用性直接影响模型表现，这对开源生态的竞争格局有深远影响。",
+          "en": "代理型 AI 正在改变库设计范式，API 易用性直接影响模型表现，这对开源生态的竞争格局有深远影响。"
         },
         "pmInsight": {
-          "zh": "若你正在构建 AI 代理，可参考此方法自建评估流程，优先选择 API 友好、文档清晰的模型。",
+          "zh": "若你开发 AI 应用，应优先优化 API 的代理友好性，例如减少冗余参数、提供清晰文档，以降低 agent 调用成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Hugging Face",
@@ -757,26 +744,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Google 医疗 AI 系统 AMIE 在《自然》发表研究，展示其从诊断扩展到长期疾病管理的能力，媲美初级保健医生。",
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》发表研究，证明其不仅能诊断，还能管理慢性病，效果媲美初级保健医生。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
         },
         "chineseIntro": {
-          "zh": "Google 医疗 AI 系统 AMIE 在《自然》发表研究，展示其从诊断扩展到长期疾病管理的能力，媲美初级保健医生。",
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》发表研究，证明其不仅能诊断，还能管理慢性病，效果媲美初级保健医生。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
         },
         "todayHighlight": {
-          "zh": "医疗 AI 从单次诊断走向持续管理，可能重塑慢性病护理模式，监管与临床验证是关键。",
-          "en": "医疗 AI 从单次诊断走向持续管理，可能重塑慢性病护理模式，监管与临床验证是关键。"
+          "zh": "医疗 AI 从辅助诊断迈向全病程管理，可能改变慢病护理的商业模式，对数字健康赛道是重大利好。",
+          "en": "医疗 AI 从辅助诊断迈向全病程管理，可能改变慢病护理的商业模式，对数字健康赛道是重大利好。"
         },
         "pmInsight": {
-          "zh": "关注 AMIE 的对话式管理能力，探索在健康管理应用中集成类似功能的可行性，但需谨慎处理合规风险。",
+          "zh": "若你关注医疗 AI，可探索将 AMIE 的对话式管理能力集成到现有患者管理平台，提升依从性和随访效率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "Google AI",
             "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: $1800 (in GPU cost running with P2P running Qwen/Qwen3.6-27b-FP8 with 262K context and BF16 KV cache at 55 tok/s",
+          "en": "Reddit LocalLLaMA: $1800 (in GPU cost running with P2P running Qwen/Qwen3.6-27b-FP8 with 262K context and BF16 KV cache at 55 tok/s"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "社区用户用 4 张 RTX 5060 Ti 搭建 P2P 推理系统，以 1800 美元硬件成本运行 Qwen3.6-27B 模型，实现 55 tok/s 和 262K 上下文。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Hey peeps, wanted to share what is possible for folks with an <strong>inference only single user</strong> use case with 1700 in GPU cost.</p> <p>Setup: 4x 5060 ti (16GB) with P2P</p> <p>If you are in the US and you keep an eye on facebook marketplace and places like slickdeals you can find some 5060 ti 16 GB models for 425 to 475 used.</p> <p>A giant caveat is this type of configurat"
+        },
+        "chineseIntro": {
+          "zh": "社区用户用 4 张 RTX 5060 Ti 搭建 P2P 推理系统，以 1800 美元硬件成本运行 Qwen3.6-27B 模型，实现 55 tok/s 和 262K 上下文。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Hey peeps, wanted to share what is possible for folks with an <strong>inference only single user</strong> use case with 1700 in GPU cost.</p> <p>Setup: 4x 5060 ti (16GB) with P2P</p> <p>If you are in the US and you keep an eye on facebook marketplace and places like slickdeals you can find some 5060 ti 16 GB models for 425 to 475 used.</p> <p>A giant caveat is this type of configurat"
+        },
+        "todayHighlight": {
+          "zh": "低成本硬件跑大模型成为可能，可能加速本地化 AI 部署，对云推理服务形成竞争压力。",
+          "en": "低成本硬件跑大模型成为可能，可能加速本地化 AI 部署，对云推理服务形成竞争压力。"
+        },
+        "pmInsight": {
+          "zh": "若你面向开发者或中小企业，可考虑推出基于消费级 GPU 的本地推理方案，降低 AI 使用门槛。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uah3oc/1800_in_gpu_cost_running_with_p2p_running/"
           }
         ]
       },
@@ -794,22 +818,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "新论文提出道义策略框架，用于在运行时约束 LLM 驱动的自主代理系统的行为，涵盖权限、义务与豁免。",
+          "zh": "新论文提出道义策略框架，用于在运行时约束 LLM 驱动的自主代理系统，涵盖权限、义务和豁免规则。",
           "en": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of ente"
         },
         "chineseIntro": {
-          "zh": "新论文提出道义策略框架，用于在运行时约束 LLM 驱动的自主代理系统的行为，涵盖权限、义务与豁免。",
+          "zh": "新论文提出道义策略框架，用于在运行时约束 LLM 驱动的自主代理系统，涵盖权限、义务和豁免规则。",
           "en": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of ente"
         },
         "todayHighlight": {
-          "zh": "AI 代理治理从理论走向工程实践，为企业部署自主代理提供了可操作的安全与合规方案。",
-          "en": "AI 代理治理从理论走向工程实践，为企业部署自主代理提供了可操作的安全与合规方案。"
+          "zh": "随着代理型 AI 进入企业，运行时治理成为合规刚需，该研究为安全团队提供了可落地的策略模型。",
+          "en": "随着代理型 AI 进入企业，运行时治理成为合规刚需，该研究为安全团队提供了可落地的策略模型。"
         },
         "pmInsight": {
-          "zh": "若计划上线自主代理，可参考此框架设计策略引擎，确保代理行为符合企业治理要求。",
+          "zh": "若你构建 agent 平台，应尽早集成策略引擎，支持动态权限和审计日志，以应对企业合规审查。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "arXiv AI",
