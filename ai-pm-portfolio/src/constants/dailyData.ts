@@ -38,6 +38,796 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-22",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI Agent 基础设施与规模化落地并行升温",
+      "en": "AI Agent Infrastructure and Enterprise Scaling Heat Up in Parallel"
+    },
+    "editorNote": {
+      "zh": "今日 GitHub 趋势聚焦 AI Agent 上下文压缩、记忆、技能库等基础设施，同时 OpenAI 与三星的全球部署标志着企业 AI 规模化落地加速。跨源信号指向 Agent 生态成熟与编程范式变革。",
+      "en": "Today's GitHub trends focus on AI Agent infrastructure like context compression, memory, and skill libraries, while OpenAI's global deployment with Samsung marks accelerated enterprise AI scaling. Cross-source signals point to Agent ecosystem maturation and programming paradigm shift."
+    },
+    "keyTakeaway": {
+      "zh": "AI Agent 基础设施（上下文压缩、记忆、技能库）持续升温，同时企业级 AI 规模化部署（三星×OpenAI）验证了 ROI 闭环，两者共同推动 Agent 从实验走向生产。",
+      "en": "AI Agent infrastructure (context compression, memory, skill libraries) continues to heat up, while enterprise AI scaling (Samsung×OpenAI) validates ROI, together pushing Agents from experiment to production."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "AI Agent 上下文与记忆基础设施需求激增",
+          "en": "Surge in Demand for AI Agent Context and Memory Infrastructure"
+        },
+        "category": {
+          "zh": "技术趋势",
+          "en": "Technology Trend"
+        },
+        "summary": {
+          "zh": "Headroom（上下文压缩，日增 2624 星）和 Cognee（持久记忆，日增 347 星）等开源项目快速增长，反映 Agent 对 token 效率和长期记忆的刚性需求。",
+          "en": "Open-source projects like Headroom (context compression, +2624 stars/day) and Cognee (persistent memory, +347 stars/day) are growing rapidly, reflecting the rigid demand for token efficiency and long-term memory in Agents."
+        },
+        "pmInsight": {
+          "zh": "产品经理应关注 Agent 的上下文窗口瓶颈，考虑集成压缩或记忆模块以降低用户成本、提升复杂任务连续性。",
+          "en": "PMs should focus on Agent context window bottlenecks, consider integrating compression or memory modules to reduce user costs and improve continuity in complex tasks."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Headroom",
+            "url": "https://github.com/chopratejas/headroom"
+          },
+          {
+            "label": "Cognee",
+            "url": "https://github.com/topoteretes/cognee"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 编程技能库与安全技能库标准化加速",
+          "en": "Standardization of AI Coding and Cybersecurity Skill Libraries Accelerates"
+        },
+        "category": {
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
+        },
+        "summary": {
+          "zh": "Skills（14 万星）和 Anthropic-Cybersecurity-Skills（1.78 万星）作为结构化技能集持续增长，映射到 MITRE ATT&CK 等框架，兼容多平台。",
+          "en": "Skills (140K stars) and Anthropic-Cybersecurity-Skills (17.9K stars) as structured skill sets continue to grow, mapping to frameworks like MITRE ATT&CK and compatible with multiple platforms."
+        },
+        "pmInsight": {
+          "zh": "产品经理可推动产品接入标准化技能库，降低 AI 功能开发成本，同时利用安全技能库增强企业级合规能力。",
+          "en": "PMs can drive product integration with standardized skill libraries to reduce AI feature development cost, and leverage security skill libraries to enhance enterprise compliance."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Skills",
+            "url": "https://github.com/mattpocock/skills"
+          },
+          {
+            "label": "Anthropic-Cybersecurity-Skills",
+            "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "企业 AI 规模化部署与用量追踪成熟",
+          "en": "Enterprise AI Scaling and Usage Tracking Mature"
+        },
+        "category": {
+          "zh": "企业市场",
+          "en": "Enterprise Market"
+        },
+        "summary": {
+          "zh": "三星全球部署 ChatGPT Enterprise 和 Codex，GitHub Copilot 新增每用户 AI credits 用量 API，企业级 AI 从试点走向全员覆盖和精细化管理。",
+          "en": "Samsung globally deploys ChatGPT Enterprise and Codex, GitHub Copilot adds per-user AI credits usage API; enterprise AI moves from pilot to full coverage and fine-grained management."
+        },
+        "pmInsight": {
+          "zh": "产品经理应设计企业级用量监控和成本优化功能，提供 ROI 报告，以应对大规模部署后的管理需求。",
+          "en": "PMs should design enterprise-grade usage monitoring and cost optimization features, provide ROI reports to meet management needs after large-scale deployment."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI: Samsung",
+            "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
+          },
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-19-ai-credits-consumed-per-user-now-in-the-copilot-usage-metrics-api"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "AI 视频制作工具链集成",
+          "en": "AI Video Production Toolchain Integration"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "Palmier Pro（日增 1834 星）和 OpenMontage（日增 987 星）作为 AI 视频编辑和制作的开源方案快速增长，但缺乏与主流 Agent 框架的深度集成。",
+          "en": "Palmier Pro (+1834 stars/day) and OpenMontage (+987 stars/day) as open-source AI video editing and production solutions are growing fast, but lack deep integration with mainstream Agent frameworks."
+        },
+        "pmInsight": {
+          "zh": "产品经理可探索将视频生成工具封装为 Agent 技能或 MCP 服务器，嵌入到 Claude/Cursor 等 IDE 中，让开发者直接在编码工作流中生成演示视频或营销素材。",
+          "en": "PMs can explore packaging video generation tools as Agent skills or MCP servers, embedding them into IDEs like Claude/Cursor, enabling developers to generate demo videos or marketing assets directly in the coding workflow."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Palmier Pro",
+            "url": "https://github.com/palmier-io/palmier-pro"
+          },
+          {
+            "label": "OpenMontage",
+            "url": "https://github.com/calesthio/OpenMontage"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "医疗 AI 从诊断扩展到慢病管理",
+          "en": "Medical AI Expands from Diagnosis to Chronic Disease Management"
+        },
+        "category": {
+          "zh": "行业应用",
+          "en": "Industry Application"
+        },
+        "summary": {
+          "zh": "Google 的 AMIE 在《自然》发表研究，证明其在慢性病管理方面达到初级保健医生水平，从单次诊断转向持续护理。",
+          "en": "Google's AMIE published in Nature, showing it matches primary care physicians in chronic disease management, shifting from single diagnosis to continuous care."
+        },
+        "pmInsight": {
+          "zh": "产品经理可探索将 AMIE 类能力集成到健康管理应用中，提供个性化慢病管理计划、用药提醒和定期随访，与可穿戴设备数据联动。",
+          "en": "PMs can explore integrating AMIE-like capabilities into health management apps, offering personalized chronic disease management plans, medication reminders, and regular follow-ups, linked with wearable data."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Google AI: AMIE",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "chopratejas/headroom",
+          "en": "chopratejas/headroom"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "AI Agent 上下文压缩工具，可将工具输出、日志、文件等压缩 60-95% 的 token 数，同时保持回答质量不变。支持作为库、代理或 MCP 服务器使用，兼容 Claude Code、Cursor、LangChain 等主流 AI 开发框架。",
+          "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
+        },
+        "totalStars": 45038,
+        "language": "Python",
+        "dailyStars": 2624,
+        "chineseIntro": {
+          "zh": "AI Agent 上下文压缩工具，可将工具输出、日志、文件等压缩 60-95% 的 token 数，同时保持回答质量不变。支持作为库、代理或 MCP 服务器使用，兼容 Claude Code、Cursor、LangChain 等主流 AI 开发框架。",
+          "en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 2624 星，总星数突破 4.5 万。随着 AI Agent 生态对上下文窗口优化需求激增，该工具作为 token 节省的关键基础设施持续升温。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,624 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,038 stars、3,141 forks，topics: agent, ai, anthropic, claude-code, compression，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,038 stars and 3,141 forks，topics: agent, ai, anthropic, claude-code, compression, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI Agent 工具链中「成本优化」环节的标准化趋势，以及 MCP 协议如何成为连接层事实标准。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/chopratejas/headroom"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "palmier-io/palmier-pro",
+          "en": "palmier-io/palmier-pro"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "专为 AI 打造的 macOS 视频编辑器，支持 Claude、Seedance 等 AI 模型，可智能生成和编辑视频内容。",
+          "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
+        },
+        "totalStars": 5694,
+        "language": "Swift",
+        "dailyStars": 1834,
+        "chineseIntro": {
+          "zh": "专为 AI 打造的 macOS 视频编辑器，支持 Claude、Seedance 等 AI 模型，可智能生成和编辑视频内容。",
+          "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1834 星，总星数 5694。作为新兴的 AI 原生视频编辑工具，在创作者社区快速传播，排名 GitHub 趋势第一。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 3 个月便已积累 5,694 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 1,834 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,694 stars、422 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,694 stars and 422 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注 AI 原生工具如何重新定义传统软件品类，以及 MCP 集成对产品生态扩展的杠杆作用。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/palmier-io/palmier-pro"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "mattpocock/skills",
+          "en": "mattpocock/skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "从资深开发者 .claude 目录中提取的实用技能集合，可直接用于提升 AI 编程助手（如 Claude Code）的工程能力。",
+          "en": "Skills for Real Engineers. Straight from my .claude directory."
+        },
+        "totalStars": 140177,
+        "language": "Shell",
+        "dailyStars": 1443,
+        "chineseIntro": {
+          "zh": "从资深开发者 .claude 目录中提取的实用技能集合，可直接用于提升 AI 编程助手（如 Claude Code）的工程能力。",
+          "en": "Skills for Real Engineers. Straight from my .claude directory."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1443 星，总星数超 14 万。作为开发者社区自发分享的「最佳实践」合集，持续获得广泛关注，已成为 AI 编程技能的事实标准库。",
+          "en": "登上 GitHub Trending 日榜第 16 位, 总 star 数已达 140k+，持续占据 AI 开源热门榜单, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,443 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 140,177 stars、12,158 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 140,177 stars and 12,158 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 编程助手中「技能」生态的形成，以及社区驱动的内容分发如何影响产品使用深度。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/mattpocock/skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "calesthio/OpenMontage",
+          "en": "calesthio/OpenMontage"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "全球首个开源智能视频制作系统，内置 12 条流水线、52 个工具和 500+ 智能体技能，可将 AI 编程助手转变为完整的视频制作工作室。",
+          "en": "Star calesthio / OpenMontage World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
+        },
+        "totalStars": 9355,
+        "language": "Python",
+        "dailyStars": 987,
+        "chineseIntro": {
+          "zh": "全球首个开源智能视频制作系统，内置 12 条流水线、52 个工具和 500+ 智能体技能，可将 AI 编程助手转变为完整的视频制作工作室。",
+          "en": "Star calesthio / OpenMontage World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 987 星，总星数 9355。作为「AI 视频制作」赛道的新开源方案，凭借丰富的流水线和工具链吸引大量关注，排名趋势第二。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 3 个月便已积累 9,355 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 987 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,355 stars、1,345 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,355 stars and 1,345 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注开源智能体系统如何通过模块化流水线降低视频创作门槛，以及多模型集成策略对产品竞争力的影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/calesthio/OpenMontage"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ZhuLinsen/daily_stock_analysis",
+          "en": "ZhuLinsen/daily_stock_analysis"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "LLM 驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板和自动推送，可零成本定时运行。",
+          "en": "Star ZhuLinsen / daily_stock_analysis LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
+        },
+        "totalStars": 44857,
+        "language": "Python",
+        "dailyStars": 568,
+        "chineseIntro": {
+          "zh": "LLM 驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板和自动推送，可零成本定时运行。",
+          "en": "Star ZhuLinsen / daily_stock_analysis LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 568 星，总星数近 4.5 万。作为量化投资领域的开源热门项目，持续吸引个人投资者和量化爱好者关注，fork 数高达 4.1 万。",
+          "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 568 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,857 stars、41,556 forks，topics: a-stock, ai-agent, aigc, llm, quant，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,857 stars and 41,556 forks，topics: a-stock, ai-agent, aigc, llm, quant, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 LLM 在金融信息聚合与决策辅助中的落地形态，以及开源社区对「AI+量化」工具的需求强度。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "mukul975/Anthropic-Cybersecurity-Skills",
+          "en": "mukul975/Anthropic-Cybersecurity-Skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "最大的开源网络安全技能库，包含 754 个结构化技能，映射到 MITRE ATT&CK、NIST CSF 等 5 个安全框架，兼容 Claude Code、Copilot、Cursor 等 20+ 平台。",
+          "en": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND &amp; NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI &amp; 20+ platforms · 26 security domains · Apache 2.0"
+        },
+        "totalStars": 17876,
+        "language": "Python",
+        "dailyStars": 361,
+        "chineseIntro": {
+          "zh": "最大的开源网络安全技能库，包含 754 个结构化技能，映射到 MITRE ATT&CK、NIST CSF 等 5 个安全框架，兼容 Claude Code、Copilot、Cursor 等 20+ 平台。",
+          "en": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND &amp; NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI &amp; 20+ platforms · 26 security domains · Apache 2.0"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 361 星，总星数 1.78 万。随着 AI Agent 在安全领域的应用加速，该技能库作为标准化安全能力集持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 10 位, 创建仅约 4 个月便已积累 17k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 361 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,876 stars、2,142 forks，topics: ai-agents, claude-code, cloud-security, cybersecurity, devsecops，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,876 stars and 2,142 forks，topics: ai-agents, claude-code, cloud-security, cybersecurity, devsecops, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注 AI Agent 在垂直行业（如网络安全）的技能标准化趋势，以及框架映射对产品合规性的价值。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "topoteretes/cognee",
+          "en": "topoteretes/cognee"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "开源 AI 记忆平台，为智能体提供跨会话的持久长期记忆，基于自托管知识图谱引擎实现上下文管理。",
+          "en": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine."
+        },
+        "totalStars": 18751,
+        "language": "Python",
+        "dailyStars": 347,
+        "chineseIntro": {
+          "zh": "开源 AI 记忆平台，为智能体提供跨会话的持久长期记忆，基于自托管知识图谱引擎实现上下文管理。",
+          "en": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 347 星，总星数 1.87 万。作为 AI Agent 记忆层的代表性开源方案，随 Agent 生态对持久记忆需求的增长而稳步升温。",
+          "en": "登上 GitHub Trending 日榜第 13 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 347 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,751 stars、1,975 forks，topics: agent-memory, agent-skills, ai, ai-agents, ai-memory，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,751 stars and 1,975 forks，topics: agent-memory, agent-skills, ai, ai-agents, ai-memory, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI Agent 记忆层的产品化方向，以及知识图谱 vs 向量数据库在记忆管理中的实际选择。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/topoteretes/cognee"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "asgeirtj/system_prompts_leaks",
+          "en": "asgeirtj/system_prompts_leaks"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "持续更新的 AI 系统提示词泄露集合，收录 Anthropic、OpenAI、Google、xAI 等主流模型的系统指令，用于研究和教育。",
+          "en": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly."
+        },
+        "totalStars": 44608,
+        "language": "JavaScript",
+        "dailyStars": 282,
+        "chineseIntro": {
+          "zh": "持续更新的 AI 系统提示词泄露集合，收录 Anthropic、OpenAI、Google、xAI 等主流模型的系统指令，用于研究和教育。",
+          "en": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 282 星，总星数 4.46 万。作为 AI 透明度运动的标志性项目，持续吸引研究者和开发者关注，被华盛顿邮报等主流媒体报道。",
+          "en": "登上 GitHub Trending 日榜第 15 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 282 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,608 stars、7,356 forks，topics: ai, ai-agents, anthropic, awesome, chatbot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,608 stars and 7,356 forks，topics: ai, ai-agents, anthropic, awesome, chatbot, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注 AI 系统提示词泄露对产品安全设计的影响，以及透明度趋势如何推动行业规范。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/asgeirtj/system_prompts_leaks"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "koala73/worldmonitor",
+          "en": "koala73/worldmonitor"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "实时全球情报仪表盘，利用 AI 进行新闻聚合、地缘政治监控和基础设施追踪，提供统一态势感知界面。",
+          "en": "Star koala73 / worldmonitor Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface"
+        },
+        "totalStars": 58246,
+        "language": "TypeScript",
+        "dailyStars": 163,
+        "chineseIntro": {
+          "zh": "实时全球情报仪表盘，利用 AI 进行新闻聚合、地缘政治监控和基础设施追踪，提供统一态势感知界面。",
+          "en": "Star koala73 / worldmonitor Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 163 星，总星数 5.82 万。作为开源 OSINT 工具的代表，持续获得情报分析、安全研究等领域的关注。",
+          "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 58k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 163 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 58,246 stars、9,214 forks，topics: ai, dashboard, geopolitics, monitoring, news，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 58,246 stars and 9,214 forks，topics: ai, dashboard, geopolitics, monitoring, news, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 驱动的信息聚合产品如何平衡数据广度与决策相关性，以及开源模式对政府/企业级用户的吸引力。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/koala73/worldmonitor"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "AI Agent 性能优化系统，提供技能、本能、记忆、安全等模块，支持 Claude Code、Codex、Cursor 等主流开发工具。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 219438,
+        "language": "JavaScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "AI Agent 性能优化系统，提供技能、本能、记忆、安全等模块，支持 Claude Code、Codex、Cursor 等主流开发工具。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "总星数高达 21.9 万，虽今日新增数据缺失，但作为 Agent 工具链中的热门项目，长期保持高关注度。",
+          "en": "总 star 数已达 219k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 219,438 stars、33,634 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 219,438 stars and 33,634 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI Agent 开发工具中「全能型」平台的产品策略，以及社区生态对项目持续增长的作用。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: Samsung Electronics brings ChatGPT and Codex to employees",
+          "en": "OpenAI: Samsung Electronics brings ChatGPT and Codex to employees"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "生态合作",
+          "en": "生态合作"
+        },
+        "summary": {
+          "zh": "三星电子在全球范围内部署ChatGPT Enterprise和Codex，这是OpenAI迄今最大规模的企业级AI落地之一。",
+          "en": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts."
+        },
+        "chineseIntro": {
+          "zh": "三星电子在全球范围内部署ChatGPT Enterprise和Codex，这是OpenAI迄今最大规模的企业级AI落地之一。",
+          "en": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts."
+        },
+        "todayHighlight": {
+          "zh": "标志企业AI从实验走向全员规模化部署，三星的全球覆盖将验证AI在制造业和科技巨头的实际ROI。",
+          "en": "标志企业AI从实验走向全员规模化部署，三星的全球覆盖将验证AI在制造业和科技巨头的实际ROI。"
+        },
+        "pmInsight": {
+          "zh": "关注企业级AI部署中的合规与数据安全需求，可参考三星案例设计分阶段推广策略。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Ask HN: What will AI coding look like when today's CS freshmen graduate?",
+          "en": "Hacker News AI: Ask HN: What will AI coding look like when today's CS freshmen graduate?"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "HN社区讨论AI编程的进化速度：从ChatGPT 3.5到Claude Code仅三年半，未来四年CS毕业生将面对怎样的AI编程环境。",
+          "en": "ChatGPT 3.5 only came out about three and a half years ago. Claude Code was released in February 2025. In one academic year, LLMs went from barely handling high school math to disproving unit-distance conjecture.Every two months we seems to have a new SOTA now. What do you expect AI coding to look like four years from now?Will it be like Go after AlphaGo, where even Ke Jie could only say \"they no longer knew what the"
+        },
+        "chineseIntro": {
+          "zh": "HN社区讨论AI编程的进化速度：从ChatGPT 3.5到Claude Code仅三年半，未来四年CS毕业生将面对怎样的AI编程环境。",
+          "en": "ChatGPT 3.5 only came out about three and a half years ago. Claude Code was released in February 2025. In one academic year, LLMs went from barely handling high school math to disproving unit-distance conjecture.Every two months we seems to have a new SOTA now. What do you expect AI coding to look like four years from now?Will it be like Go after AlphaGo, where even Ke Jie could only say \"they no longer knew what the"
+        },
+        "todayHighlight": {
+          "zh": "反映开发者对AI编程能力指数级增长的焦虑与期待，预示编程教育和工作模式将根本性变革。",
+          "en": "反映开发者对AI编程能力指数级增长的焦虑与期待，预示编程教育和工作模式将根本性变革。"
+        },
+        "pmInsight": {
+          "zh": "建议产品经理关注AI编程工具的易用性和学习曲线，未来用户对“AI原生”开发体验的期望将快速提升。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://news.ycombinator.com/item?id=48624855"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Product Hunt AI: Cloudback MCP Server",
+          "en": "Product Hunt AI: Cloudback MCP Server"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "Cloudback推出MCP服务器，允许用户在Claude、Cursor和VS Code中直接管理备份。",
+          "en": "<p> Manage your backups from Claude, Cursor, and VS Code </p> <p> <a href=\"https://www.producthunt.com/products/cloudback?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1176945?app_id=339\">Link</a> </p>"
+        },
+        "chineseIntro": {
+          "zh": "Cloudback推出MCP服务器，允许用户在Claude、Cursor和VS Code中直接管理备份。",
+          "en": "<p> Manage your backups from Claude, Cursor, and VS Code </p> <p> <a href=\"https://www.producthunt.com/products/cloudback?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1176945?app_id=339\">Link</a> </p>"
+        },
+        "todayHighlight": {
+          "zh": "MCP协议生态再添实用工具，AI IDE集成备份管理提升开发者工作流效率。",
+          "en": "MCP协议生态再添实用工具，AI IDE集成备份管理提升开发者工作流效率。"
+        },
+        "pmInsight": {
+          "zh": "考虑将MCP协议作为AI工具链的标准化接口，降低用户在不同AI环境间的切换成本。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Product Hunt AI",
+            "url": "https://www.producthunt.com/products/cloudback"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: AI credits consumed per user now in the Copilot usage metrics API",
+          "en": "GitHub Changelog: AI credits consumed per user now in the Copilot usage metrics API"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "API/定价",
+          "en": "API/定价"
+        },
+        "summary": {
+          "zh": "GitHub Copilot用量指标API新增每个用户的AI credits消耗数据，支持按天和28天维度查看。",
+          "en": "The Copilot usage metrics API now reports how many AI credits each user consumed per day, derived from the same AI credits consumption data used in the usage-based billing API.&#8230; The post AI credits consumed per user now in the Copilot usage metrics API appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub Copilot用量指标API新增每个用户的AI credits消耗数据，支持按天和28天维度查看。",
+          "en": "The Copilot usage metrics API now reports how many AI credits each user consumed per day, derived from the same AI credits consumption data used in the usage-based billing API.&#8230; The post AI credits consumed per user now in the Copilot usage metrics API appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "细粒度用量追踪使企业能精准评估AI投资回报，为基于用量的定价模式铺路。",
+          "en": "细粒度用量追踪使企业能精准评估AI投资回报，为基于用量的定价模式铺路。"
+        },
+        "pmInsight": {
+          "zh": "利用该API监控团队AI工具使用效率，优化预算分配并识别高价值用户行为模式。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-19-ai-credits-consumed-per-user-now-in-the-copilot-usage-metrics-api"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Is it agentic enough? Benchmarking open models on your own tooling",
+          "en": "Hugging Face: Is it agentic enough? Benchmarking open models on your own tooling"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "Hugging Face发布新基准，评估开源模型在代理任务中的表现，不仅看最终答案，还关注过程效率。",
+          "en": "Is it agentic enough? Benchmarking open models on your own tooling"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face发布新基准，评估开源模型在代理任务中的表现，不仅看最终答案，还关注过程效率。",
+          "en": "Is it agentic enough? Benchmarking open models on your own tooling"
+        },
+        "todayHighlight": {
+          "zh": "首次将“代理友好度”作为库开发指标，推动AI工具设计从“人用”转向“AI用”。",
+          "en": "首次将“代理友好度”作为库开发指标，推动AI工具设计从“人用”转向“AI用”。"
+        },
+        "pmInsight": {
+          "zh": "设计API和文档时需考虑AI代理的调用习惯，简洁一致的接口将降低代理的推理成本。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/is-it-agentic-enough"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "en": "Google AI: New research shows how AMIE, our medical AI, could help manage health conditions."
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Google在《自然》发表研究，其医疗AI系统AMIE在慢性病管理方面达到初级保健医生水平。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
+        },
+        "chineseIntro": {
+          "zh": "Google在《自然》发表研究，其医疗AI系统AMIE在慢性病管理方面达到初级保健医生水平。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
+        },
+        "todayHighlight": {
+          "zh": "AMIE从诊断扩展到长期疾病管理，证明AI在连续医疗场景的潜力，可能改变慢病护理模式。",
+          "en": "AMIE从诊断扩展到长期疾病管理，证明AI在连续医疗场景的潜力，可能改变慢病护理模式。"
+        },
+        "pmInsight": {
+          "zh": "医疗AI产品可借鉴AMIE的对话式长期管理设计，关注与电子病历系统的集成和临床验证。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-21",
     "label": {
       "zh": "最新",
