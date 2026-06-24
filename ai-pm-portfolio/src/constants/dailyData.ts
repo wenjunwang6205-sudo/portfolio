@@ -38,6 +38,804 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-06-24",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI 视频生成与智能体安全升温，开发者工具链加速整合",
+      "en": "AI Video Generation and Agent Security Heat Up, Developer Toolchain Accelerates Integration"
+    },
+    "editorNote": {
+      "zh": "今日 GitHub 项目显示 AI 视频生成赛道持续升温，OpenMontage 和 palmier-pro 分别以 3592 和 1630 日增星领跑；同时，AI 智能体安全与测试成为社区焦点，RIFT-Bench 基准和 Anthropic 安全技能库获得高关注。公司动态方面，GPT-5 在科研领域的突破和 Google AMIE 的临床进展，进一步验证了 AI 在专业场景的价值。",
+      "en": "Today's GitHub projects show the AI video generation track continues to heat up, with OpenMontage and palmier-pro leading with 3592 and 1630 daily stars respectively. Meanwhile, AI agent security and testing have become community focal points, with the RIFT-Bench benchmark and Anthropic security skills library gaining high attention. On the company front, GPT-5's breakthrough in scientific research and Google AMIE's clinical progress further validate AI's value in professional scenarios."
+    },
+    "keyTakeaway": {
+      "zh": "AI 视频生成从工具向平台演进，同时智能体安全与测试成为开发者刚需，推动工具链整合。",
+      "en": "AI video generation is evolving from tools to platforms, while agent security and testing become developer necessities, driving toolchain integration."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "AI 视频生成赛道升温，开源与原生工具并行发展",
+          "en": "AI Video Generation Track Heats Up, Open Source and Native Tools Develop in Parallel"
+        },
+        "category": {
+          "zh": "产品趋势",
+          "en": "Product Trend"
+        },
+        "summary": {
+          "zh": "OpenMontage（日增 3592 星）作为首个开源智能视频制作系统，集成 12 条流水线和 500+ 智能体技能；palmier-pro（日增 1630 星）作为原生 macOS AI 视频编辑器，集成 Claude 和 Seedance2 等 AI 能力。两者均获得高增长，反映 AI 视频生成从单一工具向平台化、专业化发展。",
+          "en": "OpenMontage (3592 daily stars), the first open-source intelligent video production system, integrates 12 pipelines and 500+ agent skills; palmier-pro (1630 daily stars), a native macOS AI video editor, integrates AI capabilities like Claude and Seedance2. Both show high growth, reflecting AI video generation evolving from single tools to platforms and specialization."
+        },
+        "pmInsight": {
+          "zh": "PM 应关注视频生成领域的平台化机会，考虑集成多模型、多工具的工作流，或针对特定平台（如 macOS）打造原生体验。",
+          "en": "PMs should focus on platformization opportunities in video generation, consider integrating multi-model, multi-tool workflows, or build native experiences for specific platforms like macOS."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenMontage",
+            "url": "https://github.com/calesthio/OpenMontage"
+          },
+          {
+            "label": "palmier-pro",
+            "url": "https://github.com/palmier-io/palmier-pro"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 智能体安全与测试成为社区焦点，评估基准和技能库涌现",
+          "en": "AI Agent Security and Testing Become Community Focus, Evaluation Benchmarks and Skill Libraries Emerge"
+        },
+        "category": {
+          "zh": "安全与治理",
+          "en": "Security & Governance"
+        },
+        "summary": {
+          "zh": "Anthropic-Cybersecurity-Skills（日增 1041 星）提供 817 个结构化网络安全技能，覆盖 MITRE ATT&CK 等框架；RIFT-Bench 提出动态红队方法评估 Agent 安全性。同时，Hacker News 上开发者讨论 AI 生成代码的测试难题，反映测试环节的短板。",
+          "en": "Anthropic-Cybersecurity-Skills (1041 daily stars) provides 817 structured cybersecurity skills covering frameworks like MITRE ATT&CK; RIFT-Bench proposes a dynamic red-teaming method for evaluating agent security. Meanwhile, Hacker News discussions highlight testing challenges for AI-generated code, reflecting gaps in the testing phase."
+        },
+        "pmInsight": {
+          "zh": "PM 应优先为 AI 产品集成安全评估和自动化测试能力，尤其是 Agent 类产品，可参考 RIFT-Bench 等基准设计测试方案，或接入安全技能库增强防御。",
+          "en": "PMs should prioritize integrating security evaluation and automated testing capabilities into AI products, especially for agent-based products. They can design testing plans based on benchmarks like RIFT-Bench or incorporate security skill libraries to enhance defenses."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Anthropic-Cybersecurity-Skills",
+            "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+          },
+          {
+            "label": "RIFT-Bench",
+            "url": "https://arxiv.org/abs/2606.23927"
+          },
+          {
+            "label": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48655020"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 在专业领域（科研、医疗）取得突破，验证垂直场景价值",
+          "en": "AI Achieves Breakthroughs in Professional Fields (Research, Healthcare), Validating Vertical Scenario Value"
+        },
+        "category": {
+          "zh": "行业应用",
+          "en": "Industry Application"
+        },
+        "summary": {
+          "zh": "GPT-5 Pro 帮助免疫学家破解三年未解的 T 细胞谜题，展示其在科研发现中的实际价值；Google AMIE 在《自然》发表研究，证明其在慢性病管理方面与初级保健医生相当。",
+          "en": "GPT-5 Pro helped an immunologist solve a three-year-old T-cell mystery, demonstrating its practical value in scientific discovery; Google AMIE published research in Nature showing its equivalence to primary care physicians in chronic disease management."
+        },
+        "pmInsight": {
+          "zh": "PM 可探索将 AI 能力深度嵌入专业工作流，如科研辅助、医疗管理，但需注意合规和准确性，建议与领域专家合作开发垂直解决方案。",
+          "en": "PMs can explore deeply embedding AI capabilities into professional workflows, such as research assistance and healthcare management, but must ensure compliance and accuracy. Collaboration with domain experts is recommended for developing vertical solutions."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/gpt-5-immunology-mystery"
+          },
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "AI 视频生成平台化：集成多模型工作流与原生体验",
+          "en": "AI Video Generation Platformization: Integrate Multi-Model Workflows and Native Experiences"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "基于 OpenMontage 和 palmier-pro 的增长，可验证假设：用户需要一站式视频生成平台，支持多模型切换、智能体协作和原生性能。产品方向：构建跨平台视频生成工作流引擎，或针对特定操作系统（如 macOS）优化原生体验。",
+          "en": "Based on the growth of OpenMontage and palmier-pro, the hypothesis can be validated: users need a one-stop video generation platform supporting multi-model switching, agent collaboration, and native performance. Product direction: build a cross-platform video generation workflow engine, or optimize native experience for specific operating systems like macOS."
+        },
+        "pmInsight": {
+          "zh": "建议 PM 调研目标用户（创作者、开发者）的痛点，如多工具切换成本高、性能瓶颈，设计集成方案。可先以插件或 API 形式接入现有工具，逐步构建平台。",
+          "en": "PMs are advised to research target users' pain points, such as high switching costs between tools and performance bottlenecks, and design integrated solutions. Start with plugins or APIs to integrate into existing tools, then gradually build a platform."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenMontage",
+            "url": "https://github.com/calesthio/OpenMontage"
+          },
+          {
+            "label": "palmier-pro",
+            "url": "https://github.com/palmier-io/palmier-pro"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 代码测试自动化：填补 Agent 生成代码的测试空白",
+          "en": "AI Code Testing Automation: Fill the Testing Gap for Agent-Generated Code"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "Hacker News 讨论和 RIFT-Bench 基准表明，AI 生成代码的测试是当前短板。可验证假设：开发者需要专门针对 AI 生成代码的自动化测试工具，支持端到端浏览器测试和安全性评估。产品方向：开发 AI 测试代理，或集成测试能力到现有 AI 编码工具。",
+          "en": "Hacker News discussions and the RIFT-Bench benchmark indicate that testing AI-generated code is a current gap. The hypothesis can be validated: developers need automated testing tools specifically for AI-generated code, supporting end-to-end browser testing and security evaluation. Product direction: develop an AI testing agent, or integrate testing capabilities into existing AI coding tools."
+        },
+        "pmInsight": {
+          "zh": "建议 PM 与开发者社区合作，定义测试标准，优先支持主流 AI 编码工具（如 Claude Code、GitHub Copilot）。可参考 RIFT-Bench 的评估方法设计测试用例。",
+          "en": "PMs are advised to collaborate with the developer community to define testing standards, prioritizing support for mainstream AI coding tools like Claude Code and GitHub Copilot. Reference RIFT-Bench's evaluation methods for designing test cases."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News",
+            "url": "https://news.ycombinator.com/item?id=48655020"
+          },
+          {
+            "label": "RIFT-Bench",
+            "url": "https://arxiv.org/abs/2606.23927"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "calesthio/OpenMontage",
+          "en": "calesthio/OpenMontage"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "全球首个开源智能视频制作系统，集成12条流水线、52种工具和500+智能体技能，可将AI编程助手变身为完整的视频制作工作室。",
+          "en": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
+        },
+        "totalStars": 16326,
+        "language": "Python",
+        "dailyStars": 3592,
+        "chineseIntro": {
+          "zh": "全球首个开源智能视频制作系统，集成12条流水线、52种工具和500+智能体技能，可将AI编程助手变身为完整的视频制作工作室。",
+          "en": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
+        },
+        "todayHighlight": {
+          "zh": "今日新增3592星，总星数达16326，作为首个开源智能视频制作系统，在AI视频生成热潮中快速传播，吸引大量开发者和创作者关注。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 3 个月便已积累 16k+ stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 3,592 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 16,326 stars、1,928 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 16,326 stars and 1,928 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察AI视频制作从单点工具向全流程平台演进的趋势，以及开源社区如何构建复杂智能体系统。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/calesthio/OpenMontage"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "palmier-io/palmier-pro",
+          "en": "palmier-io/palmier-pro"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "专为AI打造的macOS视频编辑器，集成Claude、Seedance2等AI能力，支持MCP协议，让视频编辑更智能高效。",
+          "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
+        },
+        "totalStars": 8532,
+        "language": "Swift",
+        "dailyStars": 1630,
+        "chineseIntro": {
+          "zh": "专为AI打造的macOS视频编辑器，集成Claude、Seedance2等AI能力，支持MCP协议，让视频编辑更智能高效。",
+          "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
+        },
+        "todayHighlight": {
+          "zh": "今日新增1630星，总星数8532，作为原生macOS AI视频编辑器，在AI视频工具生态中持续升温，吸引Mac用户和AI创作者。",
+          "en": "登上 GitHub Trending 日榜第 7 位, 创建仅约 3 个月便已积累 8,532 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 1,630 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,532 stars、558 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,532 stars and 558 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注AI视频编辑在桌面端的落地形态，以及原生应用相比Web工具的用户体验优势。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/palmier-io/palmier-pro"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ZhuLinsen/daily_stock_analysis",
+          "en": "ZhuLinsen/daily_stock_analysis"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "LLM驱动的多市场股票智能分析系统，整合多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。",
+          "en": "Star ZhuLinsen / daily_stock_analysis LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
+        },
+        "totalStars": 47385,
+        "language": "Python",
+        "dailyStars": 1119,
+        "chineseIntro": {
+          "zh": "LLM驱动的多市场股票智能分析系统，整合多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。",
+          "en": "Star ZhuLinsen / daily_stock_analysis LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
+        },
+        "todayHighlight": {
+          "zh": "今日新增1119星，总星数47385，fork数达42518，作为量化投资领域的明星项目，持续吸引散户和量化爱好者，社区活跃度极高。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,119 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 47,385 stars、42,518 forks，topics: a-stock, ai-agent, aigc, llm, quant，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 47,385 stars and 42,518 forks，topics: a-stock, ai-agent, aigc, llm, quant, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察LLM在金融分析领域的应用模式，以及开源项目如何通过低门槛工具吸引非技术用户。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "jamiepine/voicebox",
+          "en": "jamiepine/voicebox"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "开源AI语音工作室，支持语音克隆、语音生成和语音输入，可在本地运行完整的语音输入输出流程。",
+          "en": "Star jamiepine / voicebox The open-source AI voice studio. Clone, dictate, create."
+        },
+        "totalStars": 33322,
+        "language": "TypeScript",
+        "dailyStars": 1045,
+        "chineseIntro": {
+          "zh": "开源AI语音工作室，支持语音克隆、语音生成和语音输入，可在本地运行完整的语音输入输出流程。",
+          "en": "Star jamiepine / voicebox The open-source AI voice studio. Clone, dictate, create."
+        },
+        "todayHighlight": {
+          "zh": "今日新增1045星，总星数33322，作为本地化AI语音工具的代表，在隐私意识和离线需求推动下持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 11 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 1,045 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,322 stars、4,022 forks，topics: ai, cuda, mlx, qwen3-tts, qwen3-tts-ui，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,322 stars and 4,022 forks，topics: ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注AI语音工具从云端向本地迁移的趋势，以及开源项目如何平衡功能丰富度和易用性。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/jamiepine/voicebox"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "mukul975/Anthropic-Cybersecurity-Skills",
+          "en": "mukul975/Anthropic-Cybersecurity-Skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "为AI智能体提供817个结构化网络安全技能，覆盖MITRE ATT&CK等6个框架，支持Claude Code、GitHub Copilot等20+平台。",
+          "en": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF &amp; MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI &amp; 20+ platforms · 29 security domains · Apache 2.0"
+        },
+        "totalStars": 19914,
+        "language": "Python",
+        "dailyStars": 1041,
+        "chineseIntro": {
+          "zh": "为AI智能体提供817个结构化网络安全技能，覆盖MITRE ATT&CK等6个框架，支持Claude Code、GitHub Copilot等20+平台。",
+          "en": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&amp;CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF &amp; MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI &amp; 20+ platforms · 29 security domains · Apache 2.0"
+        },
+        "todayHighlight": {
+          "zh": "今日新增1041星，总星数19914，作为AI安全领域最大的开源技能库，在AI Agent安全需求增长中快速传播。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 创建仅约 4 个月便已积累 19k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,041 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,914 stars、2,320 forks，topics: ai-agents, claude-code, cloud-security, cybersecurity, devsecops，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,914 stars and 2,320 forks，topics: ai-agents, claude-code, cloud-security, cybersecurity, devsecops, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察AI Agent在安全领域的标准化技能体系建设，以及开源社区如何推动安全自动化。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "garrytan/gstack",
+          "en": "garrytan/gstack"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Garry Tan的Claude Code配置集合，包含23个工具，可让AI扮演CEO、设计师、工程经理等角色，实现一人团队式开发。",
+          "en": "Star garrytan / gstack Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA"
+        },
+        "totalStars": 114278,
+        "language": "TypeScript",
+        "dailyStars": 1011,
+        "chineseIntro": {
+          "zh": "Garry Tan的Claude Code配置集合，包含23个工具，可让AI扮演CEO、设计师、工程经理等角色，实现一人团队式开发。",
+          "en": "Star garrytan / gstack Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA"
+        },
+        "todayHighlight": {
+          "zh": "今日新增1011星，总星数114278，由知名投资人Garry Tan创建，在AI编程社区持续火爆，成为Claude Code工作流的标杆项目。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 3 个月便已积累 114k+ stars, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,011 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 114,278 stars、16,907 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 114,278 stars and 16,907 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注AI编程从辅助工具向全栈开发伙伴的演进，以及名人效应如何加速项目传播。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/garrytan/gstack"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NousResearch/hermes-agent",
+          "en": "NousResearch/hermes-agent"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "可成长的AI智能体框架，支持多种大模型和平台，提供桌面端应用，让智能体随用户需求不断进化。",
+          "en": "Star NousResearch / hermes-agent The agent that grows with you"
+        },
+        "totalStars": 201147,
+        "language": "Python",
+        "dailyStars": 936,
+        "chineseIntro": {
+          "zh": "可成长的AI智能体框架，支持多种大模型和平台，提供桌面端应用，让智能体随用户需求不断进化。",
+          "en": "Star NousResearch / hermes-agent The agent that grows with you"
+        },
+        "todayHighlight": {
+          "zh": "今日新增936星，总星数201147，由Nous Research维护，作为老牌AI Agent项目，在Agent生态持续升温中保持稳定增长。",
+          "en": "登上 GitHub Trending 日榜第 15 位, 总 star 数已达 201k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 936 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 201,147 stars、35,888 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 201,147 stars and 35,888 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察AI Agent框架的长期发展路径，以及开源社区如何构建可持续的智能体生态。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NousResearch/hermes-agent"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "JCodesMore/ai-website-cloner-template",
+          "en": "JCodesMore/ai-website-cloner-template"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "一键克隆任意网站的AI工具模板，利用AI编程智能体自动完成网站复制，适用于快速原型和逆向工程。",
+          "en": "Star JCodesMore / ai-website-cloner-template Clone any website with one command using AI coding agents"
+        },
+        "totalStars": 18677,
+        "language": "TypeScript",
+        "dailyStars": 826,
+        "chineseIntro": {
+          "zh": "一键克隆任意网站的AI工具模板，利用AI编程智能体自动完成网站复制，适用于快速原型和逆向工程。",
+          "en": "Star JCodesMore / ai-website-cloner-template Clone any website with one command using AI coding agents"
+        },
+        "todayHighlight": {
+          "zh": "今日新增826星，总星数18677，在AI编程社区中因「一键克隆」的实用场景快速传播，吸引大量开发者试用。",
+          "en": "登上 GitHub Trending 日榜第 12 位, 创建仅约 3 个月便已积累 18k+ stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 826 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,677 stars、2,812 forks，topics: ai, ai-agents, ai-tools, automation, boilerplate，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,677 stars and 2,812 forks，topics: ai, ai-agents, ai-tools, automation, boilerplate, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注AI在网站克隆和逆向工程中的应用边界，以及模板化工具如何降低使用门槛。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/JCodesMore/ai-website-cloner-template"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "affaan-m/ECC",
+          "en": "affaan-m/ECC"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "智能体性能优化系统，提供技能、直觉、记忆、安全等功能，支持Claude Code、Codex、Cursor等多种AI编程工具。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "totalStars": 220667,
+        "language": "JavaScript",
+        "dailyStars": 593,
+        "chineseIntro": {
+          "zh": "智能体性能优化系统，提供技能、直觉、记忆、安全等功能，支持Claude Code、Codex、Cursor等多种AI编程工具。",
+          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+        },
+        "todayHighlight": {
+          "zh": "今日新增593星，总星数220667，作为AI Agent基础设施项目，在Agent生态扩张中持续获得关注，社区活跃。",
+          "en": "登上 GitHub Trending 日榜第 16 位, 总 star 数已达 220k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 593 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 220,667 stars、33,793 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 220,667 stars and 33,793 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察AI Agent工具链的标准化趋势，以及性能优化系统在复杂工作流中的价值。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/affaan-m/ECC"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "shanraisshan/claude-code-best-practice",
+          "en": "shanraisshan/claude-code-best-practice"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Claude Code最佳实践指南，涵盖从「氛围编程」到智能体工程的全流程，帮助开发者高效使用Claude Code。",
+          "en": "Star shanraisshan / claude-code-best-practice from vibe coding to agentic engineering - practice makes claude perfect"
+        },
+        "totalStars": 59626,
+        "language": "HTML",
+        "dailyStars": 344,
+        "chineseIntro": {
+          "zh": "Claude Code最佳实践指南，涵盖从「氛围编程」到智能体工程的全流程，帮助开发者高效使用Claude Code。",
+          "en": "Star shanraisshan / claude-code-best-practice from vibe coding to agentic engineering - practice makes claude perfect"
+        },
+        "todayHighlight": {
+          "zh": "今日新增344星，总星数59626，作为Claude Code的权威指南，在AI编程社区中持续被引用和推荐，增长稳健。",
+          "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 59k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 344 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 59,626 stars、5,996 forks，topics: agentic-ai, agentic-coding, agentic-engineering, agentic-workflow, ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 59,626 stars and 5,996 forks，topics: agentic-ai, agentic-coding, agentic-engineering, agentic-workflow, ai, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注AI编程最佳实践的社区化传播，以及文档类项目如何成为生态关键节点。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/shanraisshan/claude-code-best-practice"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+          "en": "OpenAI: How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "GPT-5 Pro 帮助免疫学家破解了长达三年的 T 细胞行为谜题，有望推动癌症和自身免疫疾病研究。",
+          "en": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+        },
+        "chineseIntro": {
+          "zh": "GPT-5 Pro 帮助免疫学家破解了长达三年的 T 细胞行为谜题，有望推动癌症和自身免疫疾病研究。",
+          "en": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+        },
+        "todayHighlight": {
+          "zh": "展示 GPT-5 在专业科学发现中的实际价值，强化其作为科研助手的定位。",
+          "en": "展示 GPT-5 在专业科学发现中的实际价值，强化其作为科研助手的定位。"
+        },
+        "pmInsight": {
+          "zh": "可关注 GPT-5 在垂直科研领域的应用案例，探索与生物医药企业的合作机会。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/gpt-5-immunology-mystery"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: Fetch Code Quality findings via REST API",
+          "en": "GitHub Changelog: Fetch Code Quality findings via REST API"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "API/定价",
+          "en": "API/定价"
+        },
+        "summary": {
+          "zh": "GitHub 公开预览代码质量发现 REST API，支持仓库级查询和过滤，便于集成到工具链和自动化修复流程。",
+          "en": "Repository-level REST APIs for Code Quality findings are now available in public preview, bringing API support closer to the functionality already available in the GitHub UI. Two new read-only endpoints&#8230; The post Fetch Code Quality findings via REST API appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub 公开预览代码质量发现 REST API，支持仓库级查询和过滤，便于集成到工具链和自动化修复流程。",
+          "en": "Repository-level REST APIs for Code Quality findings are now available in public preview, bringing API support closer to the functionality already available in the GitHub UI. Two new read-only endpoints&#8230; The post Fetch Code Quality findings via REST API appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "API 化代码质量能力，降低开发者集成门槛，可能推动更多 AI 代码审查工具接入。",
+          "en": "API 化代码质量能力，降低开发者集成门槛，可能推动更多 AI 代码审查工具接入。"
+        },
+        "pmInsight": {
+          "zh": "评估该 API 与现有 CI/CD 管道的集成成本，可考虑用于构建内部代码质量仪表盘。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-06-23-fetch-code-quality-findings-via-rest-api"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Ask HN: How do you test AI-generated code?",
+          "en": "Hacker News AI: Ask HN: How do you test AI-generated code?"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "开发者讨论 AI 生成代码的测试难题，指出当前 AI 代理在端到端浏览器测试方面表现不佳。",
+          "en": "When AI generates code, I first instruct the model to find, fix, and verify any issues. After that, I start the server and test whether it actually works from the user’s perspective.What I’m looking for is a workflow where issues are received, fixed, tested, and deployed—but it seems that current AI agents aren’t very good at performing browser tests from the user’s perspective.I’ve tried using the built-in browsers "
+        },
+        "chineseIntro": {
+          "zh": "开发者讨论 AI 生成代码的测试难题，指出当前 AI 代理在端到端浏览器测试方面表现不佳。",
+          "en": "When AI generates code, I first instruct the model to find, fix, and verify any issues. After that, I start the server and test whether it actually works from the user’s perspective.What I’m looking for is a workflow where issues are received, fixed, tested, and deployed—but it seems that current AI agents aren’t very good at performing browser tests from the user’s perspective.I’ve tried using the built-in browsers "
+        },
+        "todayHighlight": {
+          "zh": "反映 AI 编码工具在测试环节的短板，提示产品需加强自动化测试能力。",
+          "en": "反映 AI 编码工具在测试环节的短板，提示产品需加强自动化测试能力。"
+        },
+        "pmInsight": {
+          "zh": "可探索集成无头浏览器测试框架，或提供测试用例生成模板来提升 AI 代码可靠性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://news.ycombinator.com/item?id=48655020"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+          "en": "Hugging Face: Experimenting with the proposed Cross-Origin Storage API in Transformers.js"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "Hugging Face 与 Google Chrome 团队合作，在 Transformers.js 中实验跨域存储 API，以优化浏览器端模型缓存。",
+          "en": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face 与 Google Chrome 团队合作，在 Transformers.js 中实验跨域存储 API，以优化浏览器端模型缓存。",
+          "en": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js"
+        },
+        "todayHighlight": {
+          "zh": "解决 Web AI 模型缓存跨域问题，可能推动更多浏览器端 AI 应用落地。",
+          "en": "解决 Web AI 模型缓存跨域问题，可能推动更多浏览器端 AI 应用落地。"
+        },
+        "pmInsight": {
+          "zh": "关注该 API 标准化进展，未来可降低 Web AI 应用的加载延迟和存储成本。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/cross-origin-storage"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "arXiv AI: RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems",
+          "en": "arXiv AI: RIFT-Bench: Dynamic Red-teaming For Agentic AI Systems"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "新基准 RIFT-Bench 提出基于图表示的动态红队方法，用于统一评估不同架构的自主 AI 系统安全性。",
+          "en": "arXiv:2606.23927v1 Announce Type: new Abstract: Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific implementations or domains, limiting unified comparison across heterogeneous systems. To address this gap, we introduce R"
+        },
+        "chineseIntro": {
+          "zh": "新基准 RIFT-Bench 提出基于图表示的动态红队方法，用于统一评估不同架构的自主 AI 系统安全性。",
+          "en": "arXiv:2606.23927v1 Announce Type: new Abstract: Agentic AI systems powered by large language models (LLMs) are rapidly evolving into autonomous decision-making systems, exposing attack vectors beyond those of traditional LLM vulnerabilities. Existing security evaluations are often tied to specific implementations or domains, limiting unified comparison across heterogeneous systems. To address this gap, we introduce R"
+        },
+        "todayHighlight": {
+          "zh": "填补 Agentic AI 安全评估的空白，可能成为行业标准测试工具。",
+          "en": "填补 Agentic AI 安全评估的空白，可能成为行业标准测试工具。"
+        },
+        "pmInsight": {
+          "zh": "可参考其方法论设计内部安全测试流程，尤其适用于多工具编排的 AI 产品。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "arXiv AI",
+            "url": "https://arxiv.org/abs/2606.23927"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "en": "Google AI: New research shows how AMIE, our medical AI, could help manage health conditions."
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》发表研究，证明其在慢性病长期管理方面与初级保健医生相当。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
+        },
+        "chineseIntro": {
+          "zh": "Google 的医疗 AI 系统 AMIE 在《自然》发表研究，证明其在慢性病长期管理方面与初级保健医生相当。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AMIE_Mx_Nature_Social_Visual_Va.max-600x600.format-webp.webp\">Research in “Nature” shows our conversational AI system matches primary care physicians in complex disease management."
+        },
+        "todayHighlight": {
+          "zh": "从诊断扩展到疾病管理，标志医疗 AI 进入更复杂的临床场景。",
+          "en": "从诊断扩展到疾病管理，标志医疗 AI 进入更复杂的临床场景。"
+        },
+        "pmInsight": {
+          "zh": "可探索与医疗机构合作试点，将 AMIE 整合到患者随访和用药调整流程。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-06-23",
     "label": {
       "zh": "最新",
