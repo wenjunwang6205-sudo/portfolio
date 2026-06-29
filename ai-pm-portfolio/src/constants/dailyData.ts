@@ -44,68 +44,68 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 投资研究升温，企业级 Agent 落地加速",
-      "en": "AI Investment Research Heats Up, Enterprise Agent Deployment Accelerates"
+      "zh": "AI 投资与金融工具升温，Agent 生态向垂直场景深化",
+      "en": "AI Investment and Financial Tools Heat Up, Agent Ecosystem Deepens into Vertical Scenarios"
     },
     "editorNote": {
-      "zh": "今日 GitHub 上 AI 投资研究项目 ai-berkshire 日增 1445 星，Vibe-Trading 持续在榜，显示个人投资者对 AI 辅助决策工具需求旺盛。同时，惠普与 OpenAI 深化合作、GitHub Copilot 新增采纳指标，企业级 AI 落地进入量化阶段。信号指向两个方向：个人投资智能体和企业 Agent 效能度量。",
-      "en": "Today on GitHub, AI investment research project ai-berkshire gained 1445 stars, Vibe-Trading remains trending, indicating strong demand from individual investors for AI-assisted decision tools. Meanwhile, HP deepens partnership with OpenAI, GitHub Copilot adds adoption metrics, enterprise AI deployment enters a quantitative phase. Signals point to two directions: personal investment agents and enterprise agent effectiveness measurement."
+      "zh": "今日 GitHub 上 AI 投资研究项目增长迅猛，同时公司动态显示金融科技与 AI 结合加速。跨源信号指向 AI Agent 在金融、安全、DevOps 等垂直领域的落地机会。",
+      "en": "Today's GitHub shows rapid growth in AI investment research projects, while company news indicates accelerated integration of fintech and AI. Cross-source signals point to opportunities for AI agents in vertical domains like finance, security, and DevOps."
     },
     "keyTakeaway": {
-      "zh": "AI 投资研究工具正在从概念验证走向实用化，个人投资者通过多 Agent 框架实现专业级分析成为可能；同时，企业级 AI 部署从功能上线转向效果度量，GitHub Copilot 的采纳指标和惠普的规模化合作是典型标志。",
-      "en": "AI investment research tools are moving from proof-of-concept to practical use, enabling individual investors to achieve professional-grade analysis through multi-agent frameworks; meanwhile, enterprise AI deployment is shifting from feature launch to impact measurement, as evidenced by GitHub Copilot's adoption metrics and HP's scaled partnership."
+      "zh": "AI 投资研究工具成为今日主线，xbtlin/ai-berkshire 日增 1445 星，结合 Google Finance 升级和 OpenAI-HP 合作，表明 AI 正从通用助手向专业金融决策支持演进。",
+      "en": "AI investment research tools are the main theme today, with xbtlin/ai-berkshire gaining 1445 stars. Combined with Google Finance upgrades and OpenAI-HP partnership, AI is evolving from general assistants to specialized financial decision support."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 投资研究工具快速升温",
-          "en": "AI Investment Research Tools Rapidly Gaining Traction"
+          "zh": "AI 投资研究工具升温式增长",
+          "en": "Explosive Growth of AI Investment Research Tools"
         },
         "category": {
-          "zh": "个人投资智能体",
-          "en": "Personal Investment Agent"
+          "zh": "AI 应用",
+          "en": "AI Application"
         },
         "summary": {
-          "zh": "GitHub 项目 ai-berkshire 日增 1445 星，总星数突破 6000，将巴菲特等大师方法论系统化为多 Agent 分析框架；Vibe-Trading 日增 492 星，总星数近 1.5 万，支持算法交易和多智能体协作。两个项目均创建约 3 个月，增长迅速。",
-          "en": "GitHub project ai-berkshire gained 1445 stars daily, total stars exceeding 6000, systematizing Buffett's methodology into a multi-agent analysis framework; Vibe-Trading gained 492 stars daily, total stars nearly 15k, supporting algorithmic trading and multi-agent collaboration. Both projects are about 3 months old and growing rapidly."
+          "zh": "xbtlin/ai-berkshire 日增 1445 星，总星数 6079，增长迅猛；HKUDS/Vibe-Trading 日增 492 星，总星数 14707，持续在榜。两个项目均聚焦 AI 驱动的投资研究或量化交易。",
+          "en": "xbtlin/ai-berkshire gained 1445 stars daily, total 6079, rapid growth; HKUDS/Vibe-Trading gained 492 stars daily, total 14707, consistently trending. Both focus on AI-driven investment research or quantitative trading."
         },
         "pmInsight": {
-          "zh": "个人投资者对 AI 辅助决策工具需求旺盛，产品经理可关注「一人 + AI = 投研团队」的叙事，设计面向非专业用户的低门槛投资分析产品，集成多 Agent 协作和回测功能。",
-          "en": "Strong demand from individual investors for AI-assisted decision tools. PMs can focus on the 'one person + AI = research team' narrative, designing low-barrier investment analysis products for non-professionals, integrating multi-agent collaboration and backtesting."
+          "zh": "AI 投资工具的高增长表明市场对自动化投资决策的强烈需求。PM 可关注将 AI Agent 与金融数据 API 集成，提供可验证的投资建议，并考虑合规性设计。",
+          "en": "High growth of AI investment tools indicates strong market demand for automated investment decisions. PMs should consider integrating AI agents with financial data APIs, providing verifiable investment advice, and incorporating compliance design."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "ai-berkshire",
+            "label": "xbtlin/ai-berkshire",
             "url": "https://github.com/xbtlin/ai-berkshire"
           },
           {
-            "label": "Vibe-Trading",
+            "label": "HKUDS/Vibe-Trading",
             "url": "https://github.com/HKUDS/Vibe-Trading"
           }
         ]
       },
       {
         "title": {
-          "zh": "企业级 AI 部署进入效果量化阶段",
-          "en": "Enterprise AI Deployment Enters Impact Quantification Phase"
+          "zh": "企业级 AI 落地加速，传统 IT 巨头与 AI 平台深度绑定",
+          "en": "Enterprise AI Adoption Accelerates, Traditional IT Giants Deeply Bind with AI Platforms"
         },
         "category": {
-          "zh": "企业 AI 采纳度量",
-          "en": "Enterprise AI Adoption Metrics"
+          "zh": "生态合作",
+          "en": "Ecosystem Partnership"
         },
         "summary": {
-          "zh": "惠普与 OpenAI 扩大 Frontier 合作，将 AI 部署到客户体验、软件开发和运营中；GitHub Copilot 企业报告新增按 AI 采纳阶段统计的合并请求总数，从人均指标扩展到总量指标。",
-          "en": "HP expands Frontier partnership with OpenAI, deploying AI into customer experience, software development, and operations; GitHub Copilot enterprise reports add total merges by adoption phase, expanding from per-user to aggregate metrics."
+          "zh": "惠普与 OpenAI 扩大 Frontier 合作，将 AI 部署到客户体验、软件开发和运营中。同时 GitHub 企业报告新增按 AI 采用阶段统计的合并请求数，帮助量化 AI 对交付效率的影响。",
+          "en": "HP expands Frontier partnership with OpenAI, deploying AI in customer experience, software development, and operations. GitHub enterprise reports now track merges by AI adoption phase, helping quantify AI's impact on delivery efficiency."
         },
         "pmInsight": {
-          "zh": "企业客户不再满足于 AI 功能上线，要求可量化的效率提升。产品经理应设计清晰的采纳阶段和效果指标，如合并请求数、任务完成时间等，帮助客户证明 AI 投资回报。",
-          "en": "Enterprise customers are no longer satisfied with AI feature deployment; they demand quantifiable efficiency gains. PMs should design clear adoption phases and impact metrics (e.g., merge counts, task completion time) to help customers demonstrate AI ROI."
+          "zh": "企业级 AI 落地需要可量化的 ROI 指标。PM 应关注如何将 AI 功能与现有企业工作流深度集成，并提供清晰的效率提升数据，以推动采购决策。",
+          "en": "Enterprise AI adoption requires quantifiable ROI metrics. PMs should focus on deep integration of AI features with existing enterprise workflows and provide clear efficiency improvement data to drive procurement decisions."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "OpenAI: HP partnership",
+            "label": "OpenAI-HP Partnership",
             "url": "https://openai.com/index/hp-frontier-partnership"
           },
           {
@@ -116,30 +116,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "本地模型在游戏和实时场景中展现潜力",
-          "en": "Local Models Show Potential in Gaming and Real-Time Scenarios"
+          "zh": "MCP 协议生态扩展至 DevOps 领域",
+          "en": "MCP Protocol Ecosystem Expands to DevOps"
         },
         "category": {
-          "zh": "边缘 AI 应用",
-          "en": "Edge AI Applications"
+          "zh": "开发者工具",
+          "en": "Developer Tools"
         },
         "summary": {
-          "zh": "Reddit 社区展示用本地模型驱动游戏 NPC 引擎，实现低延迟、隐私保护交互；GitHub 项目 lingbot-map 日增 372 星，实现流式数据实时 3D 重建，适用于机器人、自动驾驶。",
-          "en": "Reddit community showcases local model-driven game NPC engine with low latency and privacy; GitHub project lingbot-map gained 372 stars daily, enabling real-time 3D reconstruction from streaming data for robotics and autonomous driving."
+          "zh": "OctoPerf 推出 MCP 服务器，允许 LLM 通过 OAuth 2.1 直接驱动负载测试，无需 API 密钥。同时 usestrix/strix 作为 AI 驱动的安全测试工具持续在榜。",
+          "en": "OctoPerf launches MCP server allowing LLMs to drive load tests via OAuth 2.1 without API keys. Meanwhile, usestrix/strix, an AI-driven security testing tool, remains trending."
         },
         "pmInsight": {
-          "zh": "本地模型在延迟敏感和隐私敏感场景的优势日益明显。产品经理可探索将本地模型集成到游戏、AR/VR、工业检测等产品中，提供离线或低延迟的 AI 体验。",
-          "en": "Local models are increasingly advantageous in latency-sensitive and privacy-sensitive scenarios. PMs can explore integrating local models into gaming, AR/VR, industrial inspection products to deliver offline or low-latency AI experiences."
+          "zh": "MCP 协议正从聊天工具扩展到 DevOps 工具链，降低 AI 驱动自动化的门槛。PM 可探索将 MCP 集成到 CI/CD 流程中，实现 AI 驱动的测试、部署和监控。",
+          "en": "MCP protocol is expanding from chat tools to DevOps toolchains, lowering the barrier for AI-driven automation. PMs can explore integrating MCP into CI/CD pipelines for AI-driven testing, deployment, and monitoring."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uibt9o/npc_engine_using_local_models/"
+            "label": "OctoPerf MCP",
+            "url": "https://api.octoperf.com/doc/mcp/"
           },
           {
-            "label": "lingbot-map",
-            "url": "https://github.com/Robbyant/lingbot-map"
+            "label": "usestrix/strix",
+            "url": "https://github.com/usestrix/strix"
           }
         ]
       }
@@ -147,59 +147,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向个人投资者的 AI 投资助手产品",
-          "en": "AI Investment Assistant for Individual Investors"
+          "zh": "构建 AI 投资助手产品，集成多源金融数据与可验证策略",
+          "en": "Build AI Investment Assistant Product Integrating Multi-Source Financial Data and Verifiable Strategies"
         },
         "category": {
-          "zh": "个人投资智能体",
-          "en": "Personal Investment Agent"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 ai-berkshire 和 Vibe-Trading 的增长趋势，可开发一款集成多 Agent 分析、回测和实时市场数据的个人投资助手，降低专业投资门槛。假设：提供「一键生成投资报告」功能，目标用户为有股票投资经验但缺乏研究时间的个人，预计可获 10 万用户。",
-          "en": "Based on the growth of ai-berkshire and Vibe-Trading, develop a personal investment assistant integrating multi-agent analysis, backtesting, and real-time market data to lower the barrier to professional investing. Hypothesis: offering a 'one-click investment report' feature targeting experienced individual investors with limited research time, expected to reach 100k users."
+          "zh": "基于 xbtlin/ai-berkshire 和 HKUDS/Vibe-Trading 的高增长，以及 Google Finance 升级，可开发面向个人投资者的 AI 投资助手，提供实时市场分析、投资组合建议和回测功能。",
+          "en": "Based on the high growth of xbtlin/ai-berkshire and HKUDS/Vibe-Trading, along with Google Finance upgrades, develop an AI investment assistant for individual investors offering real-time market analysis, portfolio recommendations, and backtesting."
         },
         "pmInsight": {
-          "zh": "产品应突出「一人 + AI = 投研团队」的价值主张，集成多 Agent 并行分析、回测和风险控制模块，支持自然语言交互。初期可免费提供基础报告，高级功能订阅收费。",
-          "en": "The product should emphasize the 'one person + AI = research team' value proposition, integrate multi-agent parallel analysis, backtesting, and risk control modules, and support natural language interaction. Initially offer free basic reports, with premium features via subscription."
+          "zh": "假设：个人投资者对 AI 驱动的投资建议有强烈需求，但信任度是关键障碍。产品应提供可验证的策略来源（如巴菲特方法论）和透明的回测结果，以建立信任。",
+          "en": "Hypothesis: Individual investors have strong demand for AI-driven investment advice, but trust is a key barrier. The product should provide verifiable strategy sources (e.g., Buffett methodology) and transparent backtesting results to build trust."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "ai-berkshire",
+            "label": "xbtlin/ai-berkshire",
             "url": "https://github.com/xbtlin/ai-berkshire"
           },
           {
-            "label": "Vibe-Trading",
+            "label": "HKUDS/Vibe-Trading",
             "url": "https://github.com/HKUDS/Vibe-Trading"
+          },
+          {
+            "label": "Google Finance",
+            "url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/"
           }
         ]
       },
       {
         "title": {
-          "zh": "企业 AI 采纳效果仪表盘产品",
-          "en": "Enterprise AI Adoption Impact Dashboard"
+          "zh": "开发基于 MCP 协议的 DevOps 智能体，实现 AI 驱动的自动化测试与安全扫描",
+          "en": "Develop DevOps Agent Based on MCP Protocol for AI-Driven Automated Testing and Security Scanning"
         },
         "category": {
-          "zh": "企业 AI 采纳度量",
-          "en": "Enterprise AI Adoption Metrics"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "借鉴 GitHub Copilot 的采纳阶段指标，可开发一个跨平台的企业 AI 采纳效果仪表盘，整合代码合并、任务完成时间、客户满意度等指标，帮助 CTO/CIO 量化 AI 投资回报。假设：提供与 Jira、GitHub、Slack 等工具集成的 SaaS 产品，目标企业客户 100 家，年费 5 万美元。",
-          "en": "Drawing from GitHub Copilot's adoption phase metrics, develop a cross-platform enterprise AI adoption impact dashboard integrating code merges, task completion time, customer satisfaction, etc., to help CTOs/CIOs quantify AI ROI. Hypothesis: a SaaS product integrating with Jira, GitHub, Slack, targeting 100 enterprise customers at $50k annual subscription."
+          "zh": "结合 OctoPerf MCP 和 usestrix/strix 的趋势，可开发一个 DevOps 智能体，通过 MCP 协议集成负载测试、安全扫描和性能监控，实现 CI/CD 流程的 AI 自动化。",
+          "en": "Combining the trends of OctoPerf MCP and usestrix/strix, develop a DevOps agent that integrates load testing, security scanning, and performance monitoring via MCP protocol, enabling AI automation of CI/CD pipelines."
         },
         "pmInsight": {
-          "zh": "产品需定义清晰的采纳阶段（探索、扩展、优化）和对应指标，支持自定义看板和报告。与现有 DevOps 工具深度集成，降低部署摩擦。",
-          "en": "The product needs to define clear adoption phases (exploration, expansion, optimization) and corresponding metrics, support customizable dashboards and reports. Deep integration with existing DevOps tools to reduce deployment friction."
+          "zh": "假设：DevOps 团队希望减少手动测试和配置工作，但现有工具集成复杂。通过 MCP 协议提供统一的 AI 接口，可显著降低自动化门槛。产品应支持主流 CI/CD 平台（如 Jenkins、GitHub Actions）。",
+          "en": "Hypothesis: DevOps teams want to reduce manual testing and configuration, but existing tool integration is complex. Providing a unified AI interface via MCP protocol can significantly lower the automation barrier. The product should support mainstream CI/CD platforms like Jenkins and GitHub Actions."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-06-26-track-total-merges-by-adoption-phase-in-enterprise-and-organization-reports"
+            "label": "OctoPerf MCP",
+            "url": "https://api.octoperf.com/doc/mcp/"
           },
           {
-            "label": "OpenAI: HP partnership",
-            "url": "https://openai.com/index/hp-frontier-partnership"
+            "label": "usestrix/strix",
+            "url": "https://github.com/usestrix/strix"
           }
         ]
       }
@@ -218,7 +222,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "一套基于 Claude Code / Codex 的价值投资研究框架，将巴菲特、芒格、段永平、李录四位大师的方法论系统化，通过多 Agent 并行分析实现专业级投资研究。",
           "en": "Star xbtlin / ai-berkshire AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis."
         },
-        "totalStars": 6002,
+        "totalStars": 6079,
         "language": "Python",
         "dailyStars": 1445,
         "chineseIntro": {
@@ -226,15 +230,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Star xbtlin / ai-berkshire AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis."
         },
         "todayHighlight": {
-          "zh": "今日新增 1445 星，总星数突破 6000，在 AI 投资研究赛道快速升温。项目创建仅 3 个月，凭借「一人 + AI = 投研团队」的叙事吸引大量个人投资者关注。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 3 个月便已积累 6,002 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,445 星."
+          "zh": "今日新增 1445 星，总星数 6079，增长迅猛。项目创建仅约 3 个月，凭借「AI 投资研究」叙事在金融科技和 AI Agent 社区快速传播，多位开发者分享实盘收益验证效果。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 3 个月便已积累 6,079 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,445 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,002 stars、792 forks，topics: ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,002 stars and 792 forks，topics: ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,079 stars、801 forks，topics: ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,079 stars and 801 forks，topics: ai, ai-agent, anthropic, berkshire-hathaway, charlie-munger, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI Agent 如何将顶级投资方法论产品化，以及个人投资者对 AI 辅助决策工具的付费意愿。",
+          "zh": "观察 AI Agent 在垂直领域（如金融投资）如何通过方法论结构化降低专业门槛，以及实盘收益数据对产品信任建立的杠杆作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个个人交易智能体，支持算法交易、回测和多智能体协作，通过一条命令即可赋予 AI 全面的交易能力。",
+          "zh": "一个个人交易智能体，通过一条命令即可让 AI 具备全面的量化交易能力，支持回测、多智能体协作和 MCP 协议。",
           "en": "Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\""
         },
-        "totalStars": 14667,
+        "totalStars": 14707,
         "language": "Python",
         "dailyStars": 492,
         "chineseIntro": {
-          "zh": "一个个人交易智能体，支持算法交易、回测和多智能体协作，通过一条命令即可赋予 AI 全面的交易能力。",
+          "zh": "一个个人交易智能体，通过一条命令即可让 AI 具备全面的量化交易能力，支持回测、多智能体协作和 MCP 协议。",
           "en": "Star HKUDS / Vibe-Trading \"Vibe-Trading: Your Personal Trading Agent\""
         },
         "todayHighlight": {
-          "zh": "今日新增 492 星，总星数近 1.5 万，持续在榜。项目创建仅 3 个月，多语言社区（中、日、韩、阿拉伯）同步传播，在量化交易爱好者中增长稳定。",
+          "zh": "今日新增 492 星，总星数 14707，持续在榜。项目创建约 3 个月，凭借「一键交易智能体」的易用性叙事在量化交易和 AI Agent 社区获得稳定关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 创建仅约 3 个月便已积累 14k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 492 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,667 stars、2,656 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,667 stars and 2,656 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,707 stars、2,657 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,707 stars and 2,657 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 交易工具从「研究辅助」向「执行代理」演进的趋势，以及多语言社区运营对开源项目增长的拉动作用。",
+          "zh": "关注 AI Agent 在量化交易场景中如何平衡易用性与专业性，以及多语言文档对全球社区传播的推动作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源文档解析工具，能将 PDF、Office 文档等复杂文件转换为 LLM 可用的 Markdown/JSON 格式，是 AI 工作流中文档预处理的核心组件。",
+          "zh": "将 PDF、Office 文档等复杂文件转换为 LLM 可用的 Markdown/JSON 格式，是 AI Agent 工作流中文档预处理的核心工具。",
           "en": "Star opendatalab / MinerU Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows."
         },
-        "totalStars": 71993,
+        "totalStars": 72046,
         "language": "Python",
         "dailyStars": 380,
         "chineseIntro": {
-          "zh": "开源文档解析工具，能将 PDF、Office 文档等复杂文件转换为 LLM 可用的 Markdown/JSON 格式，是 AI 工作流中文档预处理的核心组件。",
+          "zh": "将 PDF、Office 文档等复杂文件转换为 LLM 可用的 Markdown/JSON 格式，是 AI Agent 工作流中文档预处理的核心工具。",
           "en": "Star opendatalab / MinerU Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows."
         },
         "todayHighlight": {
-          "zh": "今日新增 380 星，总星数超 7.1 万，作为 AI Agent 数据管道的基础设施持续获得关注。项目已运行 28 个月，生态位稳固，随 Agent 工作流普及而稳步增长。",
-          "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 71k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 380 星."
+          "zh": "今日新增 380 星，总星数 72046，持续在榜。作为文档解析领域的成熟项目（创建约 28 个月），随 AI Agent 生态对高质量数据管道的需求升温，长期保持稳定增长。",
+          "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 72k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 380 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 71,993 stars、6,038 forks，topics: ai4science, document-analysis, docx, extract-data, layout-analysis，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 71,993 stars and 6,038 forks，topics: ai4science, document-analysis, docx, extract-data, layout-analysis, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 72,046 stars、6,039 forks，topics: ai4science, document-analysis, docx, extract-data, layout-analysis，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 72,046 stars and 6,039 forks，topics: ai4science, document-analysis, docx, extract-data, layout-analysis, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察文档解析在 RAG 和 Agent 工作流中的刚需程度，以及开源工具如何通过标准化输出格式成为生态基础设施。",
+          "zh": "观察文档预处理工具在 AI 应用链路中的刚需地位，以及长期维护和生态兼容性对项目生命周期的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个前馈式 3D 基础模型，能从流式数据中实时重建场景，适用于机器人、自动驾驶等需要动态 3D 感知的场景。",
+          "zh": "一个前馈式 3D 基础模型，能够从流式数据中实时重建场景，适用于机器人、自动驾驶等需要动态 3D 感知的场景。",
           "en": "Star Robbyant / lingbot-map A feed-forward 3D foundation model for reconstructing scenes from streaming data"
         },
-        "totalStars": 8417,
+        "totalStars": 8445,
         "language": "Python",
         "dailyStars": 372,
         "chineseIntro": {
-          "zh": "一个前馈式 3D 基础模型，能从流式数据中实时重建场景，适用于机器人、自动驾驶等需要动态 3D 感知的场景。",
+          "zh": "一个前馈式 3D 基础模型，能够从流式数据中实时重建场景，适用于机器人、自动驾驶等需要动态 3D 感知的场景。",
           "en": "Star Robbyant / lingbot-map A feed-forward 3D foundation model for reconstructing scenes from streaming data"
         },
         "todayHighlight": {
-          "zh": "今日新增 372 星，总星数超 8400，项目创建仅 2 个月，凭借流式 3D 重建的差异化定位在学术和工程圈快速传播。",
-          "en": "登上 GitHub Trending 日榜第 5 位, 创建仅约 2 个月便已积累 8,417 stars, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 372 星."
+          "zh": "今日新增 372 星，总星数 8445，增长较快。项目创建仅约 2 个月，凭借「流式 3D 重建」的技术亮点在计算机视觉和机器人社区快速传播。",
+          "en": "登上 GitHub Trending 日榜第 5 位, 创建仅约 2 个月便已积累 8,445 stars, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 372 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,417 stars、815 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,417 stars and 815 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,445 stars、820 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,445 stars and 820 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 3D 基础模型从离线处理向实时流式处理的演进，以及该技术对机器人、AR/VR 等场景的产品化潜力。",
+          "zh": "关注 3D 基础模型在实时场景重建中的产品化潜力，以及学术项目向工程化落地的关键路径。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源 AI 黑客工具，能自动发现并修复应用的安全漏洞，适用于渗透测试、漏洞赏金和安全自动化场景。",
+          "zh": "开源 AI 黑客工具，能够自动发现并修复应用中的安全漏洞，支持渗透测试、红队演练等场景。",
           "en": "Star usestrix / strix Open-source AI hackers to find and fix your app’s vulnerabilities."
         },
-        "totalStars": 27018,
+        "totalStars": 27050,
         "language": "Python",
         "dailyStars": 122,
         "chineseIntro": {
-          "zh": "开源 AI 黑客工具，能自动发现并修复应用的安全漏洞，适用于渗透测试、漏洞赏金和安全自动化场景。",
+          "zh": "开源 AI 黑客工具，能够自动发现并修复应用中的安全漏洞，支持渗透测试、红队演练等场景。",
           "en": "Star usestrix / strix Open-source AI hackers to find and fix your app’s vulnerabilities."
         },
         "todayHighlight": {
-          "zh": "今日新增 122 星，总星数超 2.7 万，项目已运行 11 个月，在 AI 安全领域持续获得关注。随着 AI 应用安全需求升温，作为 AI 驱动的渗透测试工具增长稳健。",
+          "zh": "今日新增 122 星，总星数 27050，持续在榜。项目创建约 11 个月，凭借「AI 驱动的安全测试」叙事在网络安全社区获得稳定关注，近期可能因安全事件或新版本发布带动增长。",
           "en": "登上 GitHub Trending 日榜第 12 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 122 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,018 stars、3,002 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,018 stars and 3,002 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,050 stars、3,002 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,050 stars and 3,002 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 安全工具从人工渗透测试向自动化 AI 黑客演进的趋势，以及开源安全工具如何建立开发者信任。",
+          "zh": "观察 AI 在网络安全领域的自动化渗透测试如何降低安全门槛，以及开源安全工具的商业化路径。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 AI Agent 性能优化系统，提供技能、直觉、记忆、安全等模块，兼容 Claude Code、Codex 等多种开发工具。",
+          "zh": "一个智能体性能优化系统，为 Claude Code、Codex 等 AI 编程助手提供技能、直觉、记忆、安全等增强能力。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 223208,
+        "totalStars": 223232,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 AI Agent 性能优化系统，提供技能、直觉、记忆、安全等模块，兼容 Claude Code、Codex 等多种开发工具。",
+          "zh": "一个智能体性能优化系统，为 Claude Code、Codex 等 AI 编程助手提供技能、直觉、记忆、安全等增强能力。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总星数超 22.3 万，创建仅 5 个月，已成为 AI Agent 开发工具中的明星项目。多语言社区（中、日、韩、德等）持续贡献，今日虽无新增数据但长期在榜。",
+          "zh": "总星数 223232，今日新增数据缺失，但持续在榜。项目创建约 5 个月，凭借「AI Agent 操作系统」的定位在开发者社区获得极高关注，多语言文档和活跃社区推动全球传播。",
           "en": "总 star 数已达 223k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 223,208 stars、34,173 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 223,208 stars and 34,173 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 223,232 stars、34,175 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 223,232 stars and 34,175 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 Agent 开发框架如何通过模块化设计降低使用门槛，以及多语言社区运营对项目生态的放大效应。",
+          "zh": "关注 AI Agent 基础设施层的产品化机会，以及如何通过模块化设计满足不同编程助手的兼容需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个可成长的 AI Agent 框架，由 Nous Research 出品，支持多种大模型，提供桌面端和文档。",
+          "zh": "一个可成长的 AI 智能体，支持多种大模型，提供桌面端和文档，适用于个人助手和自动化任务。",
           "en": "The agent that grows with you"
         },
-        "totalStars": 205263,
+        "totalStars": 205296,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个可成长的 AI Agent 框架，由 Nous Research 出品，支持多种大模型，提供桌面端和文档。",
+          "zh": "一个可成长的 AI 智能体，支持多种大模型，提供桌面端和文档，适用于个人助手和自动化任务。",
           "en": "The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "总星数超 20.5 万，项目已运行 11 个月，作为知名研究机构的开源 Agent 项目持续获得关注。今日虽无新增数据，但长期在榜表明其社区活跃度稳定。",
+          "zh": "总星数 205296，今日新增数据缺失，持续在榜。项目创建约 11 个月，凭借 Nous Research 的品牌效应和「可成长智能体」叙事在 AI 社区持续获得关注。",
           "en": "总 star 数已达 205k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 205,263 stars、37,026 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 205,263 stars and 37,026 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 205,296 stars、37,037 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 205,296 stars and 37,037 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注研究机构如何通过开源 Agent 框架建立品牌影响力，以及「可成长」概念对用户粘性的提升作用。",
+          "zh": "观察 AI 智能体如何通过持续学习和用户适配实现「成长」特性，以及研究机构开源项目的产品化策略。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -495,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI Agent 领域的先驱项目，提供构建、部署和运行自主 AI Agent 的工具，目标是让 AI 人人可用。",
+          "zh": "一个自主 AI 智能体框架，让每个人都能构建、部署和运行 AI Agent，支持多种大模型和工具集成。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 185203,
+        "totalStars": 185204,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "AI Agent 领域的先驱项目，提供构建、部署和运行自主 AI Agent 的工具，目标是让 AI 人人可用。",
+          "zh": "一个自主 AI 智能体框架，让每个人都能构建、部署和运行 AI Agent，支持多种大模型和工具集成。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "总星数超 18.5 万，项目已运行 40 个月，作为 AI Agent 概念的奠基者持续在榜。今日虽无新增数据，但长期影响力使其始终是行业标杆。",
+          "zh": "总星数 185204，今日新增数据缺失，持续在榜。作为 AI Agent 领域的开创性项目（创建约 40 个月），虽增速放缓，但凭借历史地位和持续更新保持长期在榜。",
           "en": "总 star 数已达 185k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,203 stars、46,122 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,203 stars and 46,122 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,204 stars、46,123 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,204 stars and 46,123 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI Agent 从概念验证到实用工具的演进路径，以及先驱项目如何通过持续迭代保持竞争力。",
+          "zh": "观察早期 AI Agent 项目的生态演变，以及从实验性项目到企业级产品的演进路径。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,18 +539,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "本地运行大模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等主流开源模型，一键下载和运行。",
+          "zh": "本地运行大模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等多种开源模型，一键下载和运行。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "totalStars": 175109,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "本地运行大模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等主流开源模型，一键下载和运行。",
+          "zh": "本地运行大模型的工具，支持 Kimi、DeepSeek、Qwen、Gemma 等多种开源模型，一键下载和运行。",
           "en": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
         },
         "todayHighlight": {
-          "zh": "总星数超 17.5 万，项目已运行 37 个月，作为本地模型运行的标准工具持续在榜。今日虽无新增数据，但随开源模型生态扩大而保持稳定增长。",
+          "zh": "总星数 175109，今日新增数据缺失，持续在榜。作为本地 LLM 运行的标准工具（创建约 37 个月），随开源模型生态繁荣持续获得新增用户，近期新增模型支持可能带动增长。",
           "en": "总 star 数已达 175k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
@@ -554,7 +558,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 175,109 stars and 16,756 forks，topics: deepseek, gemma, gemma3, glm, go, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察本地模型运行工具如何成为 AI 基础设施的关键一环，以及模型支持广度对用户选择的影响。",
+          "zh": "观察本地模型运行工具如何成为 AI 基础设施的关键入口，以及模型兼容性和易用性对用户粘性的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等多种模型，可自托管部署。",
+          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等多种 AI，用户可以分享、发现和收集提示词。",
           "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
         },
-        "totalStars": 164507,
+        "totalStars": 164509,
         "language": "HTML",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等多种模型，可自托管部署。",
+          "zh": "全球最大的开源提示词库，支持 ChatGPT、Claude、Gemini 等多种 AI，用户可以分享、发现和收集提示词。",
           "en": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
         },
         "todayHighlight": {
-          "zh": "总星数超 16.4 万，项目已运行 43 个月，作为提示词工程领域的经典项目持续在榜。今日虽无新增数据，但随 AI 应用普及而保持稳定关注。",
+          "zh": "总星数 164509，今日新增数据缺失，持续在榜。作为提示词工程领域的经典项目（创建约 43 个月），凭借社区贡献和持续更新保持长期在榜，近期可能因新模型支持或功能更新获得关注。",
           "en": "总 star 数已达 164k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 164,507 stars、21,289 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 164,507 stars and 21,289 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 164,509 stars、21,289 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 164,509 stars and 21,289 forks，topics: ai, artificial-intelligence, awesome-list, chatgpt, chatgpt-prompts, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察提示词库如何从社区资源演变为企业级工具，以及自托管功能对组织用户的吸引力。",
+          "zh": "观察提示词库作为 AI 应用生态的基础设施价值，以及社区驱动的内容管理机制如何维持长期活跃。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "惠普与OpenAI扩大Frontier合作，将AI部署到客户体验、软件开发和运营中。",
+          "zh": "惠普扩大与OpenAI的Frontier合作，将AI部署到客户体验、软件开发和运营中。",
           "en": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations."
         },
         "chineseIntro": {
-          "zh": "惠普与OpenAI扩大Frontier合作，将AI部署到客户体验、软件开发和运营中。",
+          "zh": "惠普扩大与OpenAI的Frontier合作，将AI部署到客户体验、软件开发和运营中。",
           "en": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations."
         },
         "todayHighlight": {
-          "zh": "传统IT巨头与AI平台深度绑定，企业级AI落地进入规模化阶段。",
-          "en": "传统IT巨头与AI平台深度绑定，企业级AI落地进入规模化阶段。"
+          "zh": "传统IT巨头与AI平台深度绑定，可能加速企业级AI落地。",
+          "en": "传统IT巨头与AI平台深度绑定，可能加速企业级AI落地。"
         },
         "pmInsight": {
-          "zh": "评估惠普的行业客户资源能否为OpenAI带来企业级数据飞轮，关注联合解决方案的定价模式。",
+          "zh": "关注合作中API调用量及行业定制方案，评估对竞品生态的挤压效应。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -646,8 +650,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Reddit LocalLLaMA: NPC Engine Using Local Models",
-          "en": "Reddit LocalLLaMA: NPC Engine Using Local Models"
+          "zh": "Hacker News LLM: OctoPerf MCP – drive load tests from any LLM (OAuth 2.1, no API key)",
+          "en": "Hacker News LLM: OctoPerf MCP – drive load tests from any LLM (OAuth 2.1, no API key)"
         },
         "category": {
           "zh": "公司动态",
@@ -658,26 +662,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "社区开发者展示用本地模型驱动游戏NPC引擎，实现低延迟、隐私保护的交互。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1uibt9o/npc_engine_using_local_models/\"> <img src=\"https://external-preview.redd.it/NGhjbzV2eTV2M2FoMR39urnPMo6T-MiGC-QPCASn2GUn86M8b-WEdDXlceeB.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=128933186e241cc9ba1b736837b461f331d18753\" alt=\"NPC Engine Using Local Models\" title=\"NPC Engine Using Local Models\" /> </a> </td><td> <!-- SC_OFF --><div c"
+          "zh": "OctoPerf推出MCP服务器，允许LLM通过OAuth 2.1直接驱动负载测试，无需API密钥。",
+          "en": "Article URL: https://api.octoperf.com/doc/mcp/ Comments URL: https://news.ycombinator.com/item?id=48716592 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "社区开发者展示用本地模型驱动游戏NPC引擎，实现低延迟、隐私保护的交互。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1uibt9o/npc_engine_using_local_models/\"> <img src=\"https://external-preview.redd.it/NGhjbzV2eTV2M2FoMR39urnPMo6T-MiGC-QPCASn2GUn86M8b-WEdDXlceeB.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=128933186e241cc9ba1b736837b461f331d18753\" alt=\"NPC Engine Using Local Models\" title=\"NPC Engine Using Local Models\" /> </a> </td><td> <!-- SC_OFF --><div c"
+          "zh": "OctoPerf推出MCP服务器，允许LLM通过OAuth 2.1直接驱动负载测试，无需API密钥。",
+          "en": "Article URL: https://api.octoperf.com/doc/mcp/ Comments URL: https://news.ycombinator.com/item?id=48716592 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "本地模型在游戏领域的创新应用，预示边缘AI的潜力。",
-          "en": "本地模型在游戏领域的创新应用，预示边缘AI的潜力。"
+          "zh": "MCP协议生态扩展至性能测试领域，降低AI驱动DevOps门槛。",
+          "en": "MCP协议生态扩展至性能测试领域，降低AI驱动DevOps门槛。"
         },
         "pmInsight": {
-          "zh": "探索将本地模型集成到现有游戏引擎的可行性，关注性能与体验的平衡。",
+          "zh": "评估MCP集成对现有测试工具链的替代可能性，关注安全认证标准化。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uibt9o/npc_engine_using_local_models/"
+            "label": "Hacker News LLM",
+            "url": "https://api.octoperf.com/doc/mcp/"
           }
         ]
       },
@@ -695,19 +699,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot企业报告新增按AI采纳阶段统计的合并请求总数，帮助衡量AI对交付的影响。",
+          "zh": "GitHub企业报告新增按AI采用阶段统计的总合并请求数，可计算各阶段贡献比例。",
           "en": "Building on the AI adoption phase cohorts added to the Copilot usage metrics API, organization and enterprise reports now report the total number of pull requests merged by each adoption&#8230; The post Track total merges by adoption phase in enterprise and organization reports appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot企业报告新增按AI采纳阶段统计的合并请求总数，帮助衡量AI对交付的影响。",
+          "zh": "GitHub企业报告新增按AI采用阶段统计的总合并请求数，可计算各阶段贡献比例。",
           "en": "Building on the AI adoption phase cohorts added to the Copilot usage metrics API, organization and enterprise reports now report the total number of pull requests merged by each adoption&#8230; The post Track total merges by adoption phase in enterprise and organization reports appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "从人均指标扩展到总量指标，企业可量化AI采纳对开发效率的真实贡献。",
-          "en": "从人均指标扩展到总量指标，企业可量化AI采纳对开发效率的真实贡献。"
+          "zh": "提供量化AI对交付效率影响的指标，推动Copilot投资回报论证。",
+          "en": "提供量化AI对交付效率影响的指标，推动Copilot投资回报论证。"
         },
         "pmInsight": {
-          "zh": "利用该数据识别高采纳团队的最佳实践，推广至低采纳阶段团队。",
+          "zh": "利用该指标向管理层展示AI工具对团队吞吐量的实际提升，优化推广策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -732,19 +736,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "论文提出AI模型网络概念，旨在通过模型间协作降低训练和部署成本。",
+          "zh": "论文提出AI模型网络概念，探讨轻量级、私有化、领域专用模型的互联与协作。",
           "en": "arXiv:2606.27382v1 Announce Type: new Abstract: While the primary function of computers lies in computation and processing, the core value of the Internet is rooted in sharing and collaboration. Computers create the Internet, and the Internet empowers the value of computers. The rapid development of the Internet, cloud computing, and big data is pushing artificial intelligence into the era of large models (LMs). Howe"
         },
         "chineseIntro": {
-          "zh": "论文提出AI模型网络概念，旨在通过模型间协作降低训练和部署成本。",
+          "zh": "论文提出AI模型网络概念，探讨轻量级、私有化、领域专用模型的互联与协作。",
           "en": "arXiv:2606.27382v1 Announce Type: new Abstract: While the primary function of computers lies in computation and processing, the core value of the Internet is rooted in sharing and collaboration. Computers create the Internet, and the Internet empowers the value of computers. The rapid development of the Internet, cloud computing, and big data is pushing artificial intelligence into the era of large models (LMs). Howe"
         },
         "todayHighlight": {
-          "zh": "为模型互联互通提供理论框架，可能影响未来AI基础设施架构。",
-          "en": "为模型互联互通提供理论框架，可能影响未来AI基础设施架构。"
+          "zh": "预示AI从单体大模型向分布式模型网络演进，可能改变部署范式。",
+          "en": "预示AI从单体大模型向分布式模型网络演进，可能改变部署范式。"
         },
         "pmInsight": {
-          "zh": "关注模型网络标准进展，提前布局多模型编排能力。",
+          "zh": "关注模型网络标准与互操作性，提前布局多模型编排架构。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -769,22 +773,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "AI2对比混合模型与Transformer在token级预测差异，发现混合模型在特定token上更优。",
+          "zh": "AI2对比混合模型与Transformer在token级别预测差异，发现混合模型在特定token上优势明显。",
           "en": "Which tokens does a hybrid model predict better?"
         },
         "chineseIntro": {
-          "zh": "AI2对比混合模型与Transformer在token级预测差异，发现混合模型在特定token上更优。",
+          "zh": "AI2对比混合模型与Transformer在token级别预测差异，发现混合模型在特定token上优势明显。",
           "en": "Which tokens does a hybrid model predict better?"
         },
         "todayHighlight": {
-          "zh": "揭示混合架构的细粒度优势，为模型选型提供新视角。",
-          "en": "揭示混合架构的细粒度优势，为模型选型提供新视角。"
+          "zh": "为混合架构选型提供细粒度依据，可能影响下一代模型设计。",
+          "en": "为混合架构选型提供细粒度依据，可能影响下一代模型设计。"
         },
         "pmInsight": {
-          "zh": "根据应用场景的token分布特征，评估混合模型是否更适合你的任务。",
+          "zh": "根据应用场景的token分布特征，评估混合模型是否更匹配业务需求。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "Hugging Face",
@@ -814,11 +818,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Finance_blog_image_June_.max-600x600.format-webp.webp\">The new Google Finance is coming out of beta and launching a new Android app."
         },
         "todayHighlight": {
-          "zh": "AI驱动的金融信息产品升级，强化个人投资决策工具。",
-          "en": "AI驱动的金融信息产品升级，强化个人投资决策工具。"
+          "zh": "AI驱动的金融信息产品升级，强化个人投资决策辅助能力。",
+          "en": "AI驱动的金融信息产品升级，强化个人投资决策辅助能力。"
         },
         "pmInsight": {
-          "zh": "关注其AI功能（如智能摘要）是否提升用户粘性，可借鉴到金融类产品。",
+          "zh": "观察AI在金融数据聚合与个性化推荐中的实际应用，探索类似功能集成。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
