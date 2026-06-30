@@ -38,8 +38,21 @@ const githubQueries = [
   "topic:artificial-intelligence",
   "topic:llm",
   "topic:ai-agent",
+  "topic:ai-agents",
+  "topic:agent-skills",
+  "topic:claude-code",
   "topic:rag",
   "topic:generative-ai",
+  "topic:mcp",
+  "topic:prompt-engineering",
+];
+
+const githubRisingTopics = ["llm", "ai-agents", "agent-skills", "claude-code", "ai-agent", "mcp"];
+
+const githubSearchPerPage = 25;
+const githubTrendingUrls = [
+  { board: "global", url: "https://github.com/trending?since=daily" },
+  { board: "zh", url: "https://github.com/trending?spoken_language_code=zh&since=daily" },
 ];
 
 function formatDate(date) {
@@ -68,6 +81,52 @@ function getSinceDate(briefDate) {
   const shanghaiNow = new Date(`${briefDate}T00:00:00+08:00`);
   shanghaiNow.setDate(shanghaiNow.getDate() - 1);
   return formatDate(shanghaiNow);
+}
+
+function getRisingSinceDate(briefDate, days = 3) {
+  const date = new Date(`${briefDate}T00:00:00+08:00`);
+  date.setDate(date.getDate() - days);
+  return formatDate(date);
+}
+
+function mapSearchRepo(repo, extras = {}) {
+  return {
+    name: repo.full_name,
+    description: cleanGithubDescription(repo.description ?? ""),
+    url: repo.html_url,
+    stars: repo.stargazers_count ?? 0,
+    forks: repo.forks_count ?? 0,
+    language: repo.language ?? "Unknown",
+    updatedAt: repo.updated_at,
+    createdAt: repo.created_at,
+    topics: repo.topics ?? [],
+    starsToday: extras.starsToday ?? null,
+    trendingRank: extras.trendingRank,
+    trendingBoard: extras.trendingBoard,
+    discoverySource: extras.discoverySource ?? "search",
+  };
+}
+
+function mergeGithubCandidate(byUrl, repo) {
+  const existing = byUrl.get(repo.url);
+  if (!existing) {
+    byUrl.set(repo.url, repo);
+    return;
+  }
+
+  byUrl.set(repo.url, {
+    ...existing,
+    ...repo,
+    starsToday: repo.starsToday ?? existing.starsToday ?? null,
+    trendingRank: repo.trendingRank ?? existing.trendingRank,
+    trendingBoard: repo.trendingBoard ?? existing.trendingBoard,
+    discoverySource:
+      existing.discoverySource === "rising" || repo.discoverySource === "rising"
+        ? "rising"
+        : repo.discoverySource ?? existing.discoverySource,
+    topics: repo.topics?.length ? repo.topics : existing.topics ?? [],
+    createdAt: repo.createdAt ?? existing.createdAt,
+  });
 }
 
 function buildGithubReason(repo) {
@@ -269,7 +328,15 @@ function buildTodayHighlight(repo) {
   const narrative = inferTrendingNarrative(repo);
 
   if (typeof repo.trendingRank === "number" && repo.trendingRank <= 20) {
-    segments.push(`登上 GitHub Trending 日榜第 ${repo.trendingRank} 位`);
+    if (repo.trendingBoard === "zh") {
+      segments.push(`登上 GitHub 中文 Trending 日榜第 ${repo.trendingRank} 位`);
+    } else {
+      segments.push(`登上 GitHub Trending 日榜第 ${repo.trendingRank} 位`);
+    }
+  }
+
+  if (repo.discoverySource === "rising" && ageMonths && ageMonths <= 3) {
+    segments.push(`近 ${Math.max(ageMonths, 1)} 个月内新建，属于近期快速走红的 AI 新项目`);
   }
 
   if (typeof dailyStars === "number" && dailyStars >= 200) {
@@ -307,53 +374,64 @@ function isAiRelevant(repo) {
   ]
     .join(" ")
     .toLowerCase();
-  return /\b(ai|agent|llm|rag|gpt|claude|ollama|model|prompt|diffusion|machine-learning|deep-learning|generative)\b/.test(
+  return /\b(ai|agent|llm|rag|gpt|claude|ollama|model|prompt|diffusion|machine-learning|deep-learning|generative|mcp|codex|cursor|skill)\b/.test(
     haystack,
   );
 }
 
+function parseTrendingHtml(html, board) {
+  const articles = html.match(/<article[\s\S]*?<\/article>/gi) ?? [];
+  return articles
+    .map((article, index) => {
+      const href = article.match(/<h2[\s\S]*?<a[^>]+href="\/([^"]+\/[^"]+)"/i)?.[1]?.trim();
+      if (!href) return null;
+
+      const name = href.replace(/\s+/g, "");
+      const description = stripHtml(article.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1] ?? "");
+      const language = stripHtml(
+        article.match(/<span[^>]*itemprop="programmingLanguage"[^>]*>([\s\S]*?)<\/span>/i)?.[1] ?? "",
+      );
+      const starsText = stripHtml(
+        article.match(/href="\/[^"]+\/stargazers"[^>]*>([\s\S]*?)<\/a>/i)?.[1] ?? "0",
+      );
+      const starsTodayText = stripHtml(article.match(/([0-9,]+)\s+stars?\s+today/i)?.[1] ?? "");
+
+      return {
+        name,
+        description: cleanGithubDescription(description),
+        url: `https://github.com/${name}`,
+        stars: Number(starsText.replace(/,/g, "")) || 0,
+        forks: 0,
+        language: language || "Unknown",
+        updatedAt: "",
+        topics: [],
+        starsToday: starsTodayText ? Number(starsTodayText.replace(/,/g, "")) : null,
+        trendingRank: index + 1,
+        trendingBoard: board,
+        discoverySource: "trending",
+      };
+    })
+    .filter(Boolean)
+    .filter(isAiRelevant);
+}
+
 async function collectTrendingProjects() {
-  try {
-    const html = await fetchText("https://github.com/trending?since=daily");
-    const articles = html.match(/<article[\s\S]*?<\/article>/gi) ?? [];
-    return articles
-      .map((article, index) => {
-        const href = article.match(/<h2[\s\S]*?<a[^>]+href="\/([^"]+\/[^"]+)"/i)?.[1]?.trim();
-        if (!href) return null;
+  const byUrl = new Map();
 
-        const name = href.replace(/\s+/g, "");
-        const description = stripHtml(
-          article.match(/<p[^>]*>([\s\S]*?)<\/p>/i)?.[1] ?? "",
-        );
-        const language = stripHtml(
-          article.match(/<span[^>]*itemprop="programmingLanguage"[^>]*>([\s\S]*?)<\/span>/i)?.[1] ?? "",
-        );
-        const starsText = stripHtml(
-          article.match(/href="\/[^"]+\/stargazers"[^>]*>([\s\S]*?)<\/a>/i)?.[1] ?? "0",
-        );
-        const starsTodayText = stripHtml(
-          article.match(/([0-9,]+)\s+stars?\s+today/i)?.[1] ?? "",
-        );
-
-        return {
-          name,
-          description: cleanGithubDescription(description),
-          url: `https://github.com/${name}`,
-          stars: Number(starsText.replace(/,/g, "")) || 0,
-          forks: 0,
-          language: language || "Unknown",
-          updatedAt: "",
-          topics: [],
-          starsToday: starsTodayText ? Number(starsTodayText.replace(/,/g, "")) : null,
-          trendingRank: index + 1,
-        };
-      })
-      .filter(Boolean)
-      .filter(isAiRelevant);
-  } catch (error) {
-    console.warn(`GitHub trending failed: ${error.message}`);
-    return [];
+  for (const { board, url } of githubTrendingUrls) {
+    try {
+      const html = await fetchText(url);
+      for (const repo of parseTrendingHtml(html, board)) {
+        mergeGithubCandidate(byUrl, repo);
+      }
+    } catch (error) {
+      console.warn(`GitHub trending failed (${board}): ${error.message}`);
+    }
   }
+
+  return [...byUrl.values()].sort(
+    (a, b) => (a.trendingRank ?? 999) - (b.trendingRank ?? 999) || (b.starsToday ?? 0) - (a.starsToday ?? 0),
+  );
 }
 
 function stripHtml(value) {
@@ -445,48 +523,137 @@ async function collectCompanyFeed(feed) {
   return updates;
 }
 
-async function collectGithubProjects(targetDate) {
+async function searchGithubRepositories(query, headers, extras = {}) {
+  const url = new URL("https://api.github.com/search/repositories");
+  url.searchParams.set("q", query);
+  url.searchParams.set("sort", extras.sort ?? "stars");
+  url.searchParams.set("order", extras.order ?? "desc");
+  url.searchParams.set("per_page", String(extras.perPage ?? githubSearchPerPage));
+
+  const data = await fetchJson(url, headers);
+  return data.items ?? [];
+}
+
+async function collectRisingGithubProjects(briefDate, headers) {
+  const risingSinceDate = getRisingSinceDate(briefDate, 3);
+  const repos = [];
+
+  for (const topic of githubRisingTopics) {
+    try {
+      const items = await searchGithubRepositories(
+        `topic:${topic} created:>=${risingSinceDate}`,
+        headers,
+        { sort: "stars", perPage: githubSearchPerPage },
+      );
+      for (const repo of items) {
+        repos.push(mapSearchRepo(repo, { discoverySource: "rising" }));
+      }
+    } catch (error) {
+      console.warn(`GitHub rising query failed: ${topic}: ${error.message}`);
+    }
+  }
+
+  try {
+    const items = await searchGithubRepositories(
+      `(topic:llm OR topic:ai-agents OR topic:agent-skills OR topic:claude-code) stars:>=500 created:>=${risingSinceDate}`,
+      headers,
+      { sort: "stars", perPage: githubSearchPerPage },
+    );
+    for (const repo of items) {
+      repos.push(mapSearchRepo(repo, { discoverySource: "rising" }));
+    }
+  } catch (error) {
+    console.warn(`GitHub rising aggregate query failed: ${error.message}`);
+  }
+
+  return repos;
+}
+
+function getGithubDiscoveryScore(repo) {
+  let score = 0;
+
+  if (typeof repo.starsToday === "number") {
+    score += repo.starsToday * 12;
+  }
+
+  if (typeof repo.trendingRank === "number") {
+    score += Math.max(0, 26 - repo.trendingRank) * 80;
+  }
+
+  if (repo.trendingBoard === "zh") {
+    score += 180;
+  }
+
+  if (repo.discoverySource === "rising") {
+    score += 700;
+  }
+
+  const ageMonths = getRepoAgeMonths(repo.createdAt);
+  if (ageMonths && ageMonths <= 1 && repo.stars >= 1000) {
+    score += 1200;
+  } else if (ageMonths && ageMonths <= 3 && repo.stars >= 5000) {
+    score += 600;
+  }
+
+  score += Math.min(repo.stars ?? 0, 150000) / 120;
+  return score;
+}
+
+function isRisingGithubProject(repo) {
+  if (repo.discoverySource === "rising") return true;
+  const ageMonths = getRepoAgeMonths(repo.createdAt);
+  return Boolean(ageMonths && ageMonths <= 1 && repo.stars >= 500);
+}
+
+function selectGithubProjects(candidates, limit = 30) {
+  const sorted = [...candidates].sort((a, b) => getGithubDiscoveryScore(b) - getGithubDiscoveryScore(a));
+  const selected = [];
+  const seen = new Set();
+
+  for (const repo of sorted.filter(isRisingGithubProject)) {
+    if (selected.length >= limit) break;
+    if (seen.has(repo.url)) continue;
+    selected.push(repo);
+    seen.add(repo.url);
+    if (selected.filter(isRisingGithubProject).length >= 3) break;
+  }
+
+  for (const repo of sorted) {
+    if (selected.length >= limit) break;
+    if (seen.has(repo.url)) continue;
+    selected.push(repo);
+    seen.add(repo.url);
+  }
+
+  return selected;
+}
+
+async function collectGithubProjects(targetDate, briefDate = targetDate) {
   const headers = process.env.GITHUB_TOKEN
     ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` }
     : {};
   const byUrl = new Map();
 
   for (const repo of await collectTrendingProjects()) {
-    byUrl.set(repo.url, repo);
+    mergeGithubCandidate(byUrl, repo);
+  }
+
+  for (const repo of await collectRisingGithubProjects(briefDate, headers)) {
+    mergeGithubCandidate(byUrl, repo);
   }
 
   for (const query of githubQueries) {
-    const url = new URL("https://api.github.com/search/repositories");
-    url.searchParams.set("q", `${query} pushed:>=${targetDate}`);
-    url.searchParams.set("sort", "stars");
-    url.searchParams.set("order", "desc");
-    url.searchParams.set("per_page", "15");
-
     try {
-      const data = await fetchJson(url, headers);
-      for (const repo of data.items ?? []) {
-        if (!byUrl.has(repo.html_url)) {
-          byUrl.set(repo.html_url, {
-            name: repo.full_name,
-            description: cleanGithubDescription(repo.description ?? ""),
-            url: repo.html_url,
-            stars: repo.stargazers_count ?? 0,
-            forks: repo.forks_count ?? 0,
-            language: repo.language ?? "Unknown",
-            updatedAt: repo.updated_at,
-            topics: repo.topics ?? [],
-            starsToday: byUrl.get(repo.html_url)?.starsToday ?? null,
-          });
-        }
+      const items = await searchGithubRepositories(`${query} pushed:>=${targetDate}`, headers);
+      for (const repo of items) {
+        mergeGithubCandidate(byUrl, mapSearchRepo(repo, { discoverySource: "search" }));
       }
     } catch (error) {
       console.warn(`GitHub query failed: ${query}: ${error.message}`);
     }
   }
 
-  return [...byUrl.values()]
-    .sort((a, b) => (b.starsToday ?? -1) - (a.starsToday ?? -1) || b.stars - a.stars)
-    .slice(0, 30);
+  return selectGithubProjects([...byUrl.values()], 40);
 }
 
 async function fetchRepoDetails(name, headers) {
@@ -1290,6 +1457,8 @@ ${JSON.stringify(
     createdAt: repo.createdAt,
     repoAgeMonths: getRepoAgeMonths(repo.createdAt),
     trendingRank: repo.trendingRank,
+    trendingBoard: repo.trendingBoard,
+    discoverySource: repo.discoverySource,
     pushedAt: repo.pushedAt,
     readmeSnippet: repo.readmeSnippet,
   })),
@@ -1474,7 +1643,7 @@ async function main() {
   const targetDate = getBriefDate();
   const sinceDate = getSinceDate(targetDate);
   const [githubProjects, companyUpdates] = await Promise.all([
-    collectGithubProjects(sinceDate),
+    collectGithubProjects(sinceDate, targetDate),
     collectCompanyUpdates(),
   ]);
 
@@ -1486,8 +1655,8 @@ async function main() {
   const selectedCompanyUpdates = selectCompanyUpdates(companyUpdates, 6);
   const enrichedCompany = await enrichCompanyUpdates(selectedCompanyUpdates);
   const enhancedGithubProjects = await enhanceGithubProjects(
-    await enrichGithubProjects(githubProjects.slice(0, 10)),
-  );
+    await enrichGithubProjects(githubProjects.slice(0, 12)),
+  ).then((projects) => projects.slice(0, 10));
   const enhancedCompanyUpdates = await enhanceCompanyUpdates(selectCompanyUpdates(enrichedCompany, 6));
   const editorial = await enhanceEditorialBrief({
     targetDate,
