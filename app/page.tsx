@@ -64,6 +64,41 @@ const ITEMS: CrateItem[] = [
     ],
   },
   {
+    id: "contentbrief-chat",
+    title: "CONTENTBRIEF CHAT",
+    type: "FMCG Enterprise Conversational Assistant",
+    tag: "AI.RAG_TASK_LOOP",
+    content:
+      "面向饮料快消内容团队的企业级对话助手演示。覆盖品牌知识问答与活动 Content Brief 任务闭环，具备引用溯源、多轮追问补全、人工确认导出与内容质量评测体系；API 经 Serverless 代理部署，知识库与 PRD 同仓可审阅。",
+    details: [
+      {
+        heading: "[ SYSTEM OVERVIEW ] 系统概述",
+        body: "以虚构品牌「澄澈饮力」验证企业智能助手范式：从「回答问题」到「完成可交付 Brief」，适配内容/品牌团队日常提效场景。",
+      },
+      {
+        heading: "[ ARCHITECTURE ] 核心能力",
+        points: [
+          {
+            label: "双模式对话",
+            text: "知识问答（RAG + 引用）与 Brief 任务（槽位追问 → 结构化生成 → 确认导出）。",
+          },
+          {
+            label: "质量与合规",
+            text: "8 维内容评测 rubric、badcase 回归；价格幻觉拦截与绝对化用语 guardrail。",
+          },
+          {
+            label: "部署",
+            text: "GitHub Pages 前端 + Vercel API；Key 仅存服务端，公网限流保护。",
+          },
+        ],
+      },
+      {
+        heading: "[ LINKS ] 体验与文档",
+        body: "在线 Demo 与完整 PRD 见仓库：github.com/wenjunwang6205-sudo/content-brief-chat",
+      },
+    ],
+  },
+  {
     id: "deepinsight",
     title: "DEEPINSIGHT",
     type: "Game Industry Sentiment & PR Analysis Agent",
@@ -276,13 +311,23 @@ export default function Page() {
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
               WENJUN / Product Portfolio
             </p>
-            <button
-              type="button"
-              onClick={() => setIsAboutOpen(true)}
-              className="flex h-8 items-center gap-2 border border-zinc-800 px-3 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 transition-colors hover:border-zinc-700 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
-            >
-              <span>[ About ]</span>
-            </button>
+            <div className="flex items-center gap-2">
+              <a
+                href="https://wenjunwang6205-sudo.github.io/content-brief-chat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:flex h-8 items-center gap-2 border border-zinc-800 px-3 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 transition-colors hover:border-zinc-700 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
+              >
+                <span>[ Brief Chat ]</span>
+              </a>
+              <button
+                type="button"
+                onClick={() => setIsAboutOpen(true)}
+                className="flex h-8 items-center gap-2 border border-zinc-800 px-3 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 transition-colors hover:border-zinc-700 hover:text-zinc-50 focus:outline-none focus:ring-1 focus:ring-zinc-500"
+              >
+                <span>[ About ]</span>
+              </button>
+            </div>
           </header>
 
           <AnimatePresence>

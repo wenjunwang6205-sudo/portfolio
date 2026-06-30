@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+
+  /* Brand */
+  --accent: 158 64% 42%;
+  --accent-foreground: 0 0% 100%;
+  --accent-muted: 158 40% 94%;
+
+  /* Surfaces */
+  --background: 0 0% 100%;
+  --foreground: 240 6% 10%;
+  --surface: 0 0% 100%;
+  --surface-elevated: 0 0% 100%;
+  --surface-muted: 240 5% 96%;
+  --surface-hover: 240 5% 94%;
+
+  /* Text */
+  --text-primary: 240 6% 10%;
+  --text-secondary: 240 4% 46%;
+  --text-tertiary: 240 4% 58%;
+  --text-inverse: 0 0% 100%;
+
+  /* Border & ring */
+  --border: 240 6% 90%;
+  --border-subtle: 240 5% 94%;
+  --ring: 158 64% 42%;
+
+  /* Semantic */
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 142 71% 35%;
+  --warning: 38 92% 50%;
+  --info: 217 91% 60%;
+
+  /* Component tokens */
+  --card: 0 0% 100%;
+  --card-foreground: 240 6% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 6% 10%;
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 4% 46%;
+  --input: 240 6% 90%;
+  --radius: 0.75rem;
+
+  /* Chat-specific */
+  --chat-user: 240 5% 96%;
+  --chat-assistant: 0 0% 100%;
+  --composer-bg: 0 0% 100%;
+  --composer-border: 240 6% 88%;
+  --sidebar-bg: 240 5% 98%;
+  --sidebar-border: 240 6% 92%;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 12px 32px -8px rgb(0 0 0 / 0.12);
+  --shadow-composer: 0 0 0 1px hsl(var(--composer-border)), 0 8px 24px -4px rgb(0 0 0 / 0.08);
+}
+
+.dark {
+  color-scheme: dark;
+
+  --accent: 158 55% 48%;
+  --accent-foreground: 0 0% 100%;
+  --accent-muted: 158 30% 14%;
+
+  --background: 0 0% 7%;
+  --foreground: 0 0% 93%;
+  --surface: 0 0% 10%;
+  --surface-elevated: 0 0% 12%;
+  --surface-muted: 0 0% 14%;
+  --surface-hover: 0 0% 16%;
+
+  --text-primary: 0 0% 93%;
+  --text-secondary: 0 0% 62%;
+  --text-tertiary: 0 0% 48%;
+  --text-inverse: 0 0% 7%;
+
+  --border: 0 0% 18%;
+  --border-subtle: 0 0% 14%;
+  --ring: 158 55% 48%;
+
+  --destructive: 0 62% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 142 60% 45%;
+  --warning: 38 85% 55%;
+  --info: 217 85% 65%;
+
+  --card: 0 0% 10%;
+  --card-foreground: 0 0% 93%;
+  --popover: 0 0% 12%;
+  --popover-foreground: 0 0% 93%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 62%;
+  --input: 0 0% 18%;
+
+  --chat-user: 0 0% 14%;
+  --chat-assistant: 0 0% 10%;
+  --composer-bg: 0 0% 12%;
+  --composer-border: 0 0% 20%;
+  --sidebar-bg: 0 0% 5%;
+  --sidebar-border: 0 0% 14%;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.24);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 12px 32px -8px rgb(0 0 0 / 0.5);
+  --shadow-composer: 0 0 0 1px hsl(var(--composer-border)), 0 8px 24px -4px rgb(0 0 0 / 0.4);
+}

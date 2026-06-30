@@ -1,0 +1,16 @@
+---
+description: AI Design System 规范 — 生成 UI 前必读 DESIGN.md
+globs:
+  - "**/*.tsx"
+  - "**/*.css"
+---
+
+生成或修改 UI 代码前，先阅读 `DESIGN.md` 和 `src/tokens/theme.css`。
+
+规则：
+- 组件从 `@/components` 引入（ui + patterns）
+- 颜色/背景/边框只用语义 class：`bg-background`、`text-muted-foreground`、`border-border`、`bg-accent` 等
+- AI 产品页面优先使用 AppShell、ChatMessage、Composer、ToolResultCard、PageHeader
+- 禁止内联 style；禁止硬编码 gray/zinc/slate 色阶
+- 禁止重新实现 Button、Card、Input 等已有组件
+- 新页面应在 Playground / Patterns 已有模式上组合，而非从零设计

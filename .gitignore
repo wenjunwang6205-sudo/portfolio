@@ -7,3 +7,24 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# ---------------------------------------------------------------------------
+# Local-only assets — never commit (Plan A: public repo, public Pages only).
+# Put interview prep, JD tools, and personal notes under private/ or paths below.
+# ---------------------------------------------------------------------------
+private/
+
+# Interview / 面经 / 题库 / 答题思路（勿公开）
+app/interview/
+docs/ai_pm_interview_qa_knowledge_base.md
+docs/external_ai_pm_interview_questions_answers.md
+docs/**/*interview*
+docs/**/*面经*
+docs/**/*题库*
+docs/**/*.docx
+
+# Personal tools (e.g. jd-matcher) — not part of the portfolio site
+app/tools/
+
+# Personal resume drafts with contact info — keep local only
+docs/wang_wenjun_ecommerce_pm_resume.md
