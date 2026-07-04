@@ -44,98 +44,110 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI Agent 生态加速：从单点工具到协作网络",
-      "en": "AI Agent Ecosystem Accelerates: From Single Tools to Collaborative Networks"
+      "zh": "AI Agent 协作与安全工具升温，Meta 与 OpenAI 加速生态布局",
+      "en": "AI Agent Collaboration and Security Tools Gain Traction, Meta and OpenAI Accelerate Ecosystem"
     },
     "editorNote": {
-      "zh": "今日 GitHub 与公司动态显示，AI Agent 正从独立工具向协作网络演进，多 Agent 管理、跨平台集成、去中心化算力成为热点。同时，模型层竞争加剧，Meta、Mistral 等追赶 OpenAI，为产品选择提供更多可能。",
-      "en": "Today's GitHub and company updates show AI Agents evolving from standalone tools to collaborative networks, with multi-agent management, cross-platform integration, and decentralized compute gaining traction. Meanwhile, model competition intensifies as Meta and Mistral catch up to OpenAI, offering more options for product decisions."
+      "zh": "今日 GitHub 趋势显示，AI Agent 协作工具（如 herdr、codex-plugin-cc）和安全工具（如 strix）增长较快，同时 Meta 开源设计系统 astryx 和 OpenAI 的 Codex 插件进一步推动 Agent 生态。公司动态方面，Meta 声称其 LLM 已追上 OpenAI，Mistral 发布新模型，Google 和 Vercel 也有更新。",
+      "en": "Today's GitHub trends show rapid growth in AI Agent collaboration tools (e.g., herdr, codex-plugin-cc) and security tools (e.g., strix), while Meta's open-source design system astryx and OpenAI's Codex plugin further drive the Agent ecosystem. On the company side, Meta claims its LLM has caught up with OpenAI, Mistral released a new model, and Google and Vercel also announced updates."
     },
     "keyTakeaway": {
-      "zh": "AI Agent 生态进入协作与基础设施阶段：多 Agent 管理工具（herdr）、跨平台插件（codex-plugin-cc）、浏览器控制（chrome-devtools-mcp）等项目快速增长，表明开发者正从构建单个 Agent 转向构建 Agent 网络。",
-      "en": "AI Agent ecosystem enters collaboration and infrastructure phase: multi-agent management tools (herdr), cross-platform plugins (codex-plugin-cc), browser control (chrome-devtools-mcp) are growing fast, indicating developers are shifting from building single agents to building agent networks."
+      "zh": "AI Agent 从单点工具走向多 Agent 协作与安全自动化，平台方（Meta、OpenAI）加速生态建设，开发者对 Agent 管理、调试和安全的需求持续升温。",
+      "en": "AI Agents are evolving from single-point tools to multi-agent collaboration and security automation. Platform players (Meta, OpenAI) are accelerating ecosystem building, and developer demand for Agent management, debugging, and security continues to rise."
     },
     "signals": [
       {
         "title": {
-          "zh": "多 Agent 协作工具需求升温",
-          "en": "Rising Demand for Multi-Agent Collaboration Tools"
+          "zh": "多 Agent 协作工具需求旺盛，跨平台互操作成为焦点",
+          "en": "High Demand for Multi-Agent Collaboration Tools, Cross-Platform Interoperability in Focus"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "herdr（终端多 Agent 多路复用器）今日新增 478 星，总星数近 1.1 万；同时 OpenAI 发布 codex-plugin-cc 插件，让 Claude Code 调用 Codex，实现两大编程 Agent 协同。",
-          "en": "herdr (terminal multi-agent multiplexer) gained 478 stars today, total ~10.9k; OpenAI released codex-plugin-cc plugin enabling Claude Code to invoke Codex for collaboration between two coding agents."
+          "zh": "今日 GitHub 趋势中，herdr（终端 Agent 多路复用器，日增 478 星）、openai/codex-plugin-cc（OpenAI 官方插件，日增 634 星）和 Chrome DevTools MCP（日增 405 星）均表现突出。这些工具帮助开发者同时管理多个 AI 编程助手，实现跨平台 Agent 协作。",
+          "en": "In today's GitHub trends, herdr (terminal Agent multiplexer, +478 stars), openai/codex-plugin-cc (OpenAI official plugin, +634 stars), and Chrome DevTools MCP (+405 stars) stand out. These tools help developers manage multiple AI coding assistants simultaneously and enable cross-platform Agent collaboration."
         },
         "pmInsight": {
-          "zh": "多 Agent 协作正从概念走向实用工具，PM 应关注 Agent 编排、任务分配、状态同步等产品需求，可探索 Agent 工作流平台或集成市场。",
-          "en": "Multi-agent collaboration is moving from concept to practical tools. PMs should focus on agent orchestration, task allocation, and state synchronization, and explore agent workflow platforms or integration marketplaces."
+          "zh": "多 Agent 工作流正在成为主流开发模式，产品经理应关注 Agent 编排、任务分配和结果聚合的体验设计，考虑集成类似 herdr 的复用器或 MCP 协议以降低用户切换成本。",
+          "en": "Multi-agent workflows are becoming mainstream. PMs should focus on experience design for Agent orchestration, task assignment, and result aggregation, and consider integrating multiplexers like herdr or MCP protocols to reduce user switching costs."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "herdr GitHub",
+            "label": "herdr",
             "url": "https://github.com/ogulcancelik/herdr"
           },
           {
-            "label": "codex-plugin-cc GitHub",
+            "label": "openai/codex-plugin-cc",
             "url": "https://github.com/openai/codex-plugin-cc"
+          },
+          {
+            "label": "Chrome DevTools MCP",
+            "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI 安全自动化工具持续增长",
-          "en": "AI Security Automation Tools Continue to Grow"
+          "zh": "AI 安全自动化工具升温，渗透测试与漏洞修复需求增长",
+          "en": "AI Security Automation Tools Gain Traction, Demand for Penetration Testing and Vulnerability Fixing Rises"
         },
         "category": {
           "zh": "安全",
           "en": "Security"
         },
         "summary": {
-          "zh": "开源 AI 渗透测试工具 strix 今日新增 2803 星，总星数近 3.5 万，AI 安全赛道持续升温。",
-          "en": "Open-source AI penetration testing tool strix gained 2803 stars today, total ~34.9k, indicating growing interest in AI security automation."
+          "zh": "开源 AI 渗透测试工具 strix 今日新增 2803 星，位居 GitHub 全球趋势榜第 1。该工具可自动发现并修复应用安全漏洞，适用于红队和漏洞赏金场景。同时，caveman（日增 2863 星）通过减少 Token 输出间接提升安全审计效率。",
+          "en": "Open-source AI penetration testing tool strix gained 2,803 stars today, ranking #1 on GitHub global trending. It automatically discovers and fixes security vulnerabilities, suitable for red teams and bug bounty. Meanwhile, caveman (+2,863 stars) indirectly improves security audit efficiency by reducing token output."
         },
         "pmInsight": {
-          "zh": "AI 安全自动化需求旺盛，PM 可考虑将安全测试集成到 CI/CD 流程，或开发面向企业的 AI 安全审计产品。",
-          "en": "Demand for AI security automation is strong. PMs could consider integrating security testing into CI/CD pipelines or developing enterprise AI security audit products."
+          "zh": "AI 安全自动化正从概念走向实用，产品经理可探索将类似 strix 的能力集成到 CI/CD 流水线或安全运维平台，提供持续漏洞扫描与修复功能，满足企业安全合规需求。",
+          "en": "AI security automation is moving from concept to practice. PMs can explore integrating capabilities like strix into CI/CD pipelines or security operations platforms to provide continuous vulnerability scanning and remediation, meeting enterprise compliance needs."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "strix GitHub",
+            "label": "strix",
             "url": "https://github.com/usestrix/strix"
+          },
+          {
+            "label": "caveman",
+            "url": "https://github.com/JuliusBrussee/caveman"
           }
         ]
       },
       {
         "title": {
-          "zh": "模型层竞争加剧，开源模型追赶闭源",
-          "en": "Model Competition Intensifies: Open-Source Catching Up to Closed-Source"
+          "zh": "Meta 与 OpenAI 加速 Agent 生态布局，开源与插件策略并行",
+          "en": "Meta and OpenAI Accelerate Agent Ecosystem with Open Source and Plugin Strategies"
         },
         "category": {
-          "zh": "模型平台",
-          "en": "Model Platforms"
+          "zh": "平台生态",
+          "en": "Platform Ecosystem"
         },
         "summary": {
-          "zh": "Meta AI 声称其即将发布的 LLM 已追上 OpenAI 旗舰模型；Mistral 发布 Leanstral-1.5-119B-A6B 混合专家模型。",
-          "en": "Meta AI claims its upcoming LLM has caught up with OpenAI's flagship; Mistral released Leanstral-1.5-119B-A6B MoE model."
+          "zh": "Meta 开源设计系统 astryx（日增 885 星），专为 AI Agent 协作优化；OpenAI 发布 codex-plugin-cc 插件，让 Claude Code 用户调用 Codex。同时，Meta AI 负责人声称其即将发布的 LLM 已追上 OpenAI 旗舰模型。",
+          "en": "Meta open-sourced design system astryx (+885 stars), optimized for AI Agent collaboration; OpenAI released codex-plugin-cc plugin enabling Claude Code users to invoke Codex. Meanwhile, Meta AI chief claims their upcoming LLM has caught up with OpenAI's flagship model."
         },
         "pmInsight": {
-          "zh": "模型选择增多且性能趋同，PM 应关注模型性价比、部署便利性和生态兼容性，可考虑多模型策略以降低依赖风险。",
-          "en": "With more model options and converging performance, PMs should focus on cost-effectiveness, deployment ease, and ecosystem compatibility, and consider multi-model strategies to reduce dependency risk."
+          "zh": "平台方通过开源和插件策略争夺 Agent 生态话语权，产品经理应关注跨平台 Agent 兼容性，优先支持主流协议（如 MCP）和开放标准，避免锁定单一平台。",
+          "en": "Platform players are competing for Agent ecosystem influence through open source and plugins. PMs should prioritize cross-platform Agent compatibility, support mainstream protocols (e.g., MCP) and open standards to avoid vendor lock-in."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "Business Insider: Meta AI catches up to OpenAI",
-            "url": "https://www.businessinsider.com/meta-ai-model-catches-up-openai-gpt-5-says-2026-7"
+            "label": "facebook/astryx",
+            "url": "https://github.com/facebook/astryx"
           },
           {
-            "label": "Reddit: Mistral Leanstral-1.5",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b/"
+            "label": "openai/codex-plugin-cc",
+            "url": "https://github.com/openai/codex-plugin-cc"
+          },
+          {
+            "label": "Meta AI LLM",
+            "url": "https://www.businessinsider.com/meta-ai-model-catches-up-openai-gpt-5-says-2026-7"
           }
         ]
       }
@@ -143,59 +155,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建 Agent 工作流编排平台",
-          "en": "Build an Agent Workflow Orchestration Platform"
+          "zh": "构建统一的多 Agent 管理平台，集成编排、监控与安全能力",
+          "en": "Build a Unified Multi-Agent Management Platform Integrating Orchestration, Monitoring, and Security"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于多 Agent 协作工具（herdr、codex-plugin-cc）的升温，以及 Vercel 推出 Agent Runs，市场需要统一的 Agent 工作流编排平台，支持跨模型、跨工具的 Agent 任务定义、调度与监控。",
-          "en": "Given the rising multi-agent collaboration tools (herdr, codex-plugin-cc) and Vercel's Agent Runs, the market needs a unified agent workflow orchestration platform supporting cross-model, cross-tool agent task definition, scheduling, and monitoring."
+          "zh": "基于 herdr 和 codex-plugin-cc 等工具的流行，以及 strix 在安全自动化方面的增长，存在机会打造一个面向企业的多 Agent 管理平台，提供任务编排、性能监控、安全审计和成本控制等功能。可验证假设：企业用户愿意为统一管理多个 Agent 支付订阅费用。",
+          "en": "Given the popularity of tools like herdr and codex-plugin-cc, and the growth of strix in security automation, there is an opportunity to build an enterprise-oriented multi-agent management platform offering task orchestration, performance monitoring, security auditing, and cost control. Testable hypothesis: enterprise users are willing to pay a subscription for unified management of multiple agents."
         },
         "pmInsight": {
-          "zh": "假设：企业用户愿意为 Agent 工作流编排付费，尤其是需要将多个专业 Agent（如编码、测试、部署）串联成自动化流水线的场景。可验证 MVP：集成 Claude Code、Codex 和浏览器调试 Agent 的简单流水线，观察用户留存。",
-          "en": "Hypothesis: Enterprise users are willing to pay for agent workflow orchestration, especially for chaining multiple specialized agents (coding, testing, deployment) into automated pipelines. Validate MVP: a simple pipeline integrating Claude Code, Codex, and browser debugging agent, measure user retention."
+          "zh": "产品经理可设计 MVP 聚焦于 Agent 注册、任务分发和日志聚合，先服务中小型开发团队，再扩展至企业级安全合规需求。",
+          "en": "PMs can design an MVP focusing on agent registration, task distribution, and log aggregation, first serving small to medium development teams, then expanding to enterprise security and compliance needs."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "herdr GitHub",
+            "label": "herdr",
             "url": "https://github.com/ogulcancelik/herdr"
           },
           {
-            "label": "codex-plugin-cc GitHub",
-            "url": "https://github.com/openai/codex-plugin-cc"
+            "label": "strix",
+            "url": "https://github.com/usestrix/strix"
           },
           {
-            "label": "Vercel Agent Runs",
-            "url": "https://vercel.com/changelog/agent-runs-vercel-mcp-cli"
+            "label": "openai/codex-plugin-cc",
+            "url": "https://github.com/openai/codex-plugin-cc"
           }
         ]
       },
       {
         "title": {
-          "zh": "开发去中心化 AI 算力市场应用",
-          "en": "Develop Decentralized AI Compute Marketplace Application"
+          "zh": "开发 Agent 友好的 UI 组件库，降低多 Agent 交互界面的开发成本",
+          "en": "Develop Agent-Friendly UI Component Library to Reduce Development Cost of Multi-Agent Interaction Interfaces"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "Talos 项目（分布式 GPU 算力共享）增长较快，结合模型层开源趋势，去中心化算力需求可能上升。",
-          "en": "Talos (distributed GPU compute sharing) is growing fast; combined with open-source model trends, demand for decentralized compute may rise."
+          "zh": "Meta 开源 astryx 设计系统，专为 Agent 协作优化，表明 Agent 交互界面需要新的设计范式。同时，caveman 通过减少 Token 输出提升效率，暗示 Agent 输出格式优化也是机会。可验证假设：使用 Agent 优化组件的应用，用户任务完成效率提升 20% 以上。",
+          "en": "Meta's open-source astryx design system, optimized for Agent collaboration, indicates that Agent interaction interfaces need a new design paradigm. Meanwhile, caveman improves efficiency by reducing token output, suggesting output format optimization is also an opportunity. Testable hypothesis: apps using Agent-optimized components see a 20%+ improvement in user task completion efficiency."
         },
         "pmInsight": {
-          "zh": "假设：中小开发者和企业需要低成本、去中心化的推理算力。可验证：构建一个基于 Talos 网络的推理 API 市场，允许用户按需购买算力运行开源模型，对比 AWS 等云服务的成本与延迟。",
-          "en": "Hypothesis: Small developers and enterprises need low-cost, decentralized inference compute. Validate: build an inference API marketplace on Talos network, allowing users to buy compute on-demand for open-source models, compare cost and latency with cloud services like AWS."
+          "zh": "产品经理可考虑推出基于 astryx 的 Agent UI 组件库，支持对话流、任务进度、Agent 状态可视化等，降低开发者构建多 Agent 界面的门槛。",
+          "en": "PMs can consider launching an Agent UI component library based on astryx, supporting conversation flows, task progress, and Agent status visualization, lowering the barrier for developers to build multi-agent interfaces."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "Talos GitHub",
-            "url": "https://github.com/jmerelnyc/Talos"
+            "label": "facebook/astryx",
+            "url": "https://github.com/facebook/astryx"
+          },
+          {
+            "label": "caveman",
+            "url": "https://github.com/JuliusBrussee/caveman"
           }
         ]
       }
@@ -211,26 +227,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "构建自主、协作且具备社交智能的数字人，让AI Agent能思考、记忆、建立关系并在世界中行动。",
+          "zh": "构建自主、协作且具备社交智能的数字人——让AI Agent像真人一样思考、记忆、建立关系并行动。",
           "en": "Build digital human beings — autonomous, collaborative, and socially intelligent agents. FNzgGxU31RWiDgLr3GvxxSa42nRntvZNSG6aBMQ1pump"
         },
-        "totalStars": 520,
+        "totalStars": 521,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "构建自主、协作且具备社交智能的数字人，让AI Agent能思考、记忆、建立关系并在世界中行动。",
+          "zh": "构建自主、协作且具备社交智能的数字人——让AI Agent像真人一样思考、记忆、建立关系并行动。",
           "en": "Build digital human beings — autonomous, collaborative, and socially intelligent agents. FNzgGxU31RWiDgLr3GvxxSa42nRntvZNSG6aBMQ1pump"
         },
         "todayHighlight": {
-          "zh": "创建仅1个月即获520星，今日新增数据暂缺，但作为新兴数字人项目在AI Agent社区持续升温。",
+          "zh": "创建仅1个月即获521星，今日新增星数未披露，但作为新兴数字人Agent项目，在AI Agent社区持续升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 520 stars、52 forks，topics: ai, ai-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 520 stars and 52 forks，topics: ai, ai-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 521 stars、52 forks，topics: ai, ai-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 521 stars and 52 forks，topics: ai, ai-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注数字人Agent从对话工具向社交智能体的演进方向，以及其与区块链结合的潜在商业模式。",
+          "zh": "观察数字人Agent从对话工具向社交智能体演进的趋势，以及用户对「类人关系」功能的需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -251,26 +267,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为自托管Hermes AI Agent打造的iPhone原生应用，让你通过手机直接控制自己的Agent，无需中间服务器。",
+          "zh": "一款原生iPhone应用，让你在手机上控制自托管的Hermes AI Agent，无需中间服务器。",
           "en": "Native iPhone app for your Hermes agent"
         },
-        "totalStars": 460,
+        "totalStars": 463,
         "language": "Swift",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为自托管Hermes AI Agent打造的iPhone原生应用，让你通过手机直接控制自己的Agent，无需中间服务器。",
+          "zh": "一款原生iPhone应用，让你在手机上控制自托管的Hermes AI Agent，无需中间服务器。",
           "en": "Native iPhone app for your Hermes agent"
         },
         "todayHighlight": {
-          "zh": "创建仅1个月获460星，作为Hermes生态的移动端入口，随自托管Agent趋势增长。",
+          "zh": "创建1个月获463星，今日新增星数未披露，但作为Hermes Agent的移动端伴侣，在自托管AI社区快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 460 stars、52 forks，topics: hermes, hermes-agent, hermex, ios, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 460 stars and 52 forks，topics: hermes, hermes-agent, hermex, ios, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 463 stars、53 forks，topics: hermes, hermes-agent, hermex, ios, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 463 stars and 53 forks，topics: hermes, hermes-agent, hermex, ios, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察自托管AI Agent的移动端需求，以及如何通过原生App降低用户使用门槛。",
+          "zh": "关注自托管AI Agent的移动端入口需求，以及用户对隐私和去中心化控制的偏好。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -291,26 +307,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "GPU工作节点客户端，连接Talos网络，通过本地Ollama运行开源模型推理任务，根据在线时长获得收益。",
+          "zh": "GPU工作节点客户端，连接Talos网络，通过本地Ollama提供开源模型推理服务，并报告在线时长获得收益。",
           "en": "GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts."
         },
-        "totalStars": 355,
+        "totalStars": 377,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "GPU工作节点客户端，连接Talos网络，通过本地Ollama运行开源模型推理任务，根据在线时长获得收益。",
+          "zh": "GPU工作节点客户端，连接Talos网络，通过本地Ollama提供开源模型推理服务，并报告在线时长获得收益。",
           "en": "GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts."
         },
         "todayHighlight": {
-          "zh": "创建1个月获355星，分布式GPU算力共享叙事在去中心化AI社区快速传播。",
+          "zh": "创建1个月获377星，今日新增星数未披露，但作为去中心化GPU算力共享网络的一部分，随AI推理需求增长而升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 355 stars、12 forks，topics: ai, distributed-computing, gpu, llm, ollama，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 355 stars and 12 forks，topics: ai, distributed-computing, gpu, llm, ollama, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 377 stars、12 forks，topics: ai, distributed-computing, gpu, llm, ollama，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 377 stars and 12 forks，topics: ai, distributed-computing, gpu, llm, ollama, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注去中心化算力市场的商业模式，以及如何激励用户贡献闲置GPU资源。",
+          "zh": "观察去中心化算力市场如何通过代币激励吸引GPU提供者，以及对企业级推理成本的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -331,26 +347,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Claude Code的搞笑技能，让AI用原始人风格说话，可减少65%输出Token，节省成本且保持回答质量。",
+          "zh": "一个Claude Code技能，让AI用「原始人」风格说话，减少65%的输出Token，同时保持答案质量。",
           "en": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
         },
-        "totalStars": 83094,
+        "totalStars": 83116,
         "language": "JavaScript",
         "dailyStars": 2863,
         "chineseIntro": {
-          "zh": "Claude Code的搞笑技能，让AI用原始人风格说话，可减少65%输出Token，节省成本且保持回答质量。",
+          "zh": "一个Claude Code技能，让AI用「原始人」风格说话，减少65%的输出Token，同时保持答案质量。",
           "en": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman"
         },
         "todayHighlight": {
-          "zh": "今日新增2863星，总星数超8.3万，凭借快速传播和Token节省的实用价值持续在榜。",
+          "zh": "今日新增2863星，总星数达8.3万，在GitHub全球趋势榜排名第3，因「Token节省」叙事在开发者圈快速传播。",
           "en": "登上 GitHub Trending 日榜第 3 位, 创建仅约 3 个月便已积累 83k+ stars, Agent/RAG 场景下 token 成本压力推动“上下文压缩”方案在工程圈快速传播, 今日新增 2,863 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 83,094 stars、4,635 forks，topics: ai, anthropic, caveman, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 83,094 stars and 4,635 forks，topics: ai, anthropic, caveman, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 83,116 stars、4,638 forks，topics: ai, anthropic, caveman, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 83,116 stars and 4,638 forks，topics: ai, anthropic, caveman, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI编程工具的生态扩展能力，以及趣味性功能如何成为传播爆点。",
+          "zh": "观察Prompt工程如何通过风格化压缩Token成本，以及用户对「低成本高质量」AI交互的接受度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -371,26 +387,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源AI渗透测试工具，自动发现并修复应用安全漏洞，支持红队演练和漏洞赏金。",
+          "zh": "开源AI渗透测试工具，自动发现并修复应用安全漏洞，适用于红队、漏洞赏金和安全自动化场景。",
           "en": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities."
         },
-        "totalStars": 34867,
+        "totalStars": 34937,
         "language": "Python",
         "dailyStars": 2803,
         "chineseIntro": {
-          "zh": "开源AI渗透测试工具，自动发现并修复应用安全漏洞，支持红队演练和漏洞赏金。",
+          "zh": "开源AI渗透测试工具，自动发现并修复应用安全漏洞，适用于红队、漏洞赏金和安全自动化场景。",
           "en": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities."
         },
         "todayHighlight": {
-          "zh": "今日新增2803星，总星数近3.5万，AI安全赛道持续升温，开发者对自动化安全测试需求旺盛。",
+          "zh": "今日新增2803星，总星数3.5万，位居GitHub全球趋势榜第1，因AI安全需求升温和社区对自动化渗透测试的追捧。",
           "en": "登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,803 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,867 stars、3,566 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,867 stars and 3,566 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,937 stars、3,572 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,937 stars and 3,572 forks，topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI在网络安全领域的应用落地，以及开源安全工具如何降低企业安全测试成本。",
+          "zh": "关注AI在安全领域的落地路径，以及开源工具如何降低企业安全测试门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -411,26 +427,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一站式AI Agent集合，包含前端开发、社区运营、创意注入等各类专业Agent，每个都有独特个性和交付能力。",
+          "zh": "一套「AI代理机构」——包含前端专家、Reddit运营、创意注入等各类专业Agent，每个都有独特个性和交付流程。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
-        "totalStars": 126605,
+        "totalStars": 126639,
         "language": "Shell",
         "dailyStars": 1208,
         "chineseIntro": {
-          "zh": "一站式AI Agent集合，包含前端开发、社区运营、创意注入等各类专业Agent，每个都有独特个性和交付能力。",
+          "zh": "一套「AI代理机构」——包含前端专家、Reddit运营、创意注入等各类专业Agent，每个都有独特个性和交付流程。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
         "todayHighlight": {
-          "zh": "今日新增1208星，总星数超12.6万，作为AI Agent生态的标杆项目持续吸引关注。",
+          "zh": "今日新增1208星，总星数12.7万，持续在榜，因「AI代理即服务」概念吸引大量开发者尝试多Agent协作。",
           "en": "登上 GitHub Trending 日榜第 19 位, 总 star 数已达 126k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 1,208 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 126,605 stars、20,544 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 126,605 stars and 20,544 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 126,639 stars、20,549 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 126,639 stars and 20,549 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI Agent的标准化和模块化趋势，以及如何通过角色化设计提升用户粘性。",
+          "zh": "观察多Agent编排的标准化模式，以及「角色化Agent」在自动化工作流中的实际效果。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -451,26 +467,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Meta开源的设计系统，基于React和StyleX，支持完全自定义且为AI Agent协作优化，已在内部支撑13000+应用。",
+          "zh": "Meta开源的设计系统，基于React和StyleX，支持完全自定义且为AI Agent协作而优化，已驱动Meta内部13000+应用。",
           "en": "Star facebook / astryx An open source design system that's fully customizable and agent ready"
         },
-        "totalStars": 4793,
+        "totalStars": 4834,
         "language": "TypeScript",
         "dailyStars": 885,
         "chineseIntro": {
-          "zh": "Meta开源的设计系统，基于React和StyleX，支持完全自定义且为AI Agent协作优化，已在内部支撑13000+应用。",
+          "zh": "Meta开源的设计系统，基于React和StyleX，支持完全自定义且为AI Agent协作而优化，已驱动Meta内部13000+应用。",
           "en": "Star facebook / astryx An open source design system that's fully customizable and agent ready"
         },
         "todayHighlight": {
-          "zh": "今日新增885星，总星数近4800，Meta背书和Agent-ready特性使其在开发者社区快速传播。",
+          "zh": "今日新增885星，总星数4834，排名全球趋势第8，因Meta背书和「Agent就绪」设计理念吸引前端社区。",
           "en": "登上 GitHub Trending 日榜第 8 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 885 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,793 stars、284 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,793 stars and 284 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,834 stars、283 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,834 stars and 283 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注大厂设计系统如何适应AI协作场景，以及开源设计系统对前端生态的影响。",
+          "zh": "关注大厂设计系统如何为AI Agent时代重构，以及标准化组件对AI生成UI的兼容性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -491,26 +507,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "OpenAI官方插件，让Claude Code用户可以直接调用Codex进行代码审查或任务委派，实现两大AI编程工具协同。",
+          "zh": "OpenAI官方插件，让Claude Code用户可以直接调用Codex进行代码审查或任务委派，实现多Agent协作。",
           "en": "Star openai / codex-plugin-cc Use Codex from Claude Code to review code or delegate tasks."
         },
-        "totalStars": 23351,
+        "totalStars": 23378,
         "language": "JavaScript",
         "dailyStars": 634,
         "chineseIntro": {
-          "zh": "OpenAI官方插件，让Claude Code用户可以直接调用Codex进行代码审查或任务委派，实现两大AI编程工具协同。",
+          "zh": "OpenAI官方插件，让Claude Code用户可以直接调用Codex进行代码审查或任务委派，实现多Agent协作。",
           "en": "Star openai / codex-plugin-cc Use Codex from Claude Code to review code or delegate tasks."
         },
         "todayHighlight": {
-          "zh": "今日新增634星，总星数超2.3万，作为OpenAI与Anthropic生态的桥梁持续获得关注。",
+          "zh": "今日新增634星，总星数2.3万，排名全球趋势第2，因跨平台Agent协作需求旺盛，且OpenAI背书带来信任。",
           "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 3 个月便已积累 23k+ stars, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 634 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,351 stars、1,419 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,351 stars and 1,419 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,378 stars、1,428 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,378 stars and 1,428 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI编程工具之间的互操作性需求，以及插件生态如何提升工具价值。",
+          "zh": "观察不同AI编程工具之间的互操作生态，以及插件化如何成为Agent能力扩展的主流方式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -531,26 +547,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Chrome DevTools的MCP服务器，让AI编程助手（如Claude、Cursor）能直接控制浏览器进行调试和自动化测试。",
+          "zh": "Chrome DevTools的MCP服务器，让AI编程助手（如Claude、Cursor）直接控制浏览器进行调试和自动化测试。",
           "en": "Chrome DevTools for coding agents"
         },
-        "totalStars": 45537,
+        "totalStars": 45544,
         "language": "TypeScript",
         "dailyStars": 405,
         "chineseIntro": {
-          "zh": "Chrome DevTools的MCP服务器，让AI编程助手（如Claude、Cursor）能直接控制浏览器进行调试和自动化测试。",
+          "zh": "Chrome DevTools的MCP服务器，让AI编程助手（如Claude、Cursor）直接控制浏览器进行调试和自动化测试。",
           "en": "Chrome DevTools for coding agents"
         },
         "todayHighlight": {
-          "zh": "今日新增405星，总星数超4.5万，作为AI Agent与浏览器交互的基础设施持续增长。",
+          "zh": "今日新增405星，总星数4.6万，排名全球趋势第6，作为MCP生态基础设施，随Agent调试需求增长持续获星。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 405 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,537 stars、2,961 forks，topics: browser, chrome, chrome-devtools, debugging, devtools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,537 stars and 2,961 forks，topics: browser, chrome, chrome-devtools, debugging, devtools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,544 stars、2,962 forks，topics: browser, chrome, chrome-devtools, debugging, devtools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,544 stars and 2,962 forks，topics: browser, chrome, chrome-devtools, debugging, devtools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注MCP协议如何打通AI与开发工具链，以及浏览器自动化在AI测试中的应用前景。",
+          "zh": "关注MCP协议如何打通AI与浏览器调试工具，以及这对前端开发工作流的变革潜力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -571,26 +587,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "终端里的AI Agent多路复用器，让你同时管理多个编码Agent（如Claude Code、Codex），类似tmux但专为Agent设计。",
+          "zh": "终端里的Agent多路复用器，让你同时管理多个AI编程助手（如Claude Code、Codex），类似tmux但专为Agent设计。",
           "en": "agent multiplexer that lives in your terminal."
         },
-        "totalStars": 10897,
+        "totalStars": 10914,
         "language": "Rust",
         "dailyStars": 478,
         "chineseIntro": {
-          "zh": "终端里的AI Agent多路复用器，让你同时管理多个编码Agent（如Claude Code、Codex），类似tmux但专为Agent设计。",
+          "zh": "终端里的Agent多路复用器，让你同时管理多个AI编程助手（如Claude Code、Codex），类似tmux但专为Agent设计。",
           "en": "agent multiplexer that lives in your terminal."
         },
         "todayHighlight": {
-          "zh": "今日新增478星，总星数近1.1万，随多Agent协作需求增长而快速传播。",
+          "zh": "今日新增478星，总星数1.1万，排名全球趋势第14，因多Agent并行工作流需求上升，开发者寻求统一管理工具。",
           "en": "登上 GitHub Trending 日榜第 14 位, 创建仅约 3 个月便已积累 10k+ stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 478 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,897 stars、643 forks，topics: agent, agent-orchestration, ai, ai-agents, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,897 stars and 643 forks，topics: agent, agent-orchestration, ai, ai-agents, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,914 stars、643 forks，topics: agent, agent-orchestration, ai, ai-agents, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,914 stars and 643 forks，topics: agent, agent-orchestration, ai, ai-agents, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察多Agent编排工具的市场需求，以及终端UI在开发者工具中的创新空间。",
+          "zh": "观察Agent编排工具从单一助手向多Agent管理演进，以及终端UI在开发者工具中的复兴。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -802,19 +818,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "OpenAI 发布 ChatGPT 采用数据，显示全球用户使用频率、功能探索深度及区域语言覆盖持续增长。",
+          "zh": "OpenAI 发布 Signals 数据，显示 ChatGPT 全球采用率增长，用户使用频率和功能探索深度均提升。",
           "en": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 ChatGPT 采用数据，显示全球用户使用频率、功能探索深度及区域语言覆盖持续增长。",
+          "zh": "OpenAI 发布 Signals 数据，显示 ChatGPT 全球采用率增长，用户使用频率和功能探索深度均提升。",
           "en": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages."
         },
         "todayHighlight": {
-          "zh": "数据证实 ChatGPT 正从尝鲜走向深度使用，为产品功能迭代提供方向。",
-          "en": "数据证实 ChatGPT 正从尝鲜走向深度使用，为产品功能迭代提供方向。"
+          "zh": "数据证实 ChatGPT 正从尝鲜走向深度使用，对竞品和生态伙伴具有战略参考价值。",
+          "en": "数据证实 ChatGPT 正从尝鲜走向深度使用，对竞品和生态伙伴具有战略参考价值。"
         },
         "pmInsight": {
-          "zh": "参考 OpenAI 的增长指标，可设计用户留存漏斗，针对高频功能优化体验。",
+          "zh": "分析用户增长最快的地区和功能，可指导本地化策略和产品路线图优先级。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
