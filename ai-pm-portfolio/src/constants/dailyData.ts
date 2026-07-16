@@ -44,172 +44,172 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 编程 Agent 技能生态升温，安全与效率成新焦点",
-      "en": "AI Coding Agent Skill Ecosystem Booms, Security and Efficiency Become New Focus"
+      "zh": "AI 编程技能生态升温，安全与成本成为代理系统关键挑战",
+      "en": "AI Coding Skills Ecosystem Booms; Safety and Cost Become Key Challenges for Agent Systems"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势显示，AI 编程 Agent 的技能包（Skills）生态持续升温，多个项目日增千星以上，同时安全、模型路由等基础设施问题也获得关注。",
-      "en": "Today's GitHub trends show the AI coding agent skill ecosystem heating up, with multiple projects gaining over 1k stars daily, while infrastructure issues like security and model routing also gain attention."
+      "zh": "今日 GitHub 趋势显示，AI 编程技能包（如 ponytail、hallmark、skills）持续在榜，开发者对“少即是多”和高质量输出需求强烈。同时，OpenAI 发布 GPT-Red 自动化红队测试，Hugging Face 揭示模型路由成本陷阱，安全与成本成为代理系统落地的核心议题。",
+      "en": "Today's GitHub trends show AI coding skill packs (e.g., ponytail, hallmark, skills) dominating the charts, with strong developer demand for 'less is more' and high-quality output. Meanwhile, OpenAI released GPT-Red for automated red-teaming, and Hugging Face revealed cost pitfalls in model routing, making safety and cost core issues for agent system deployment."
     },
     "keyTakeaway": {
-      "zh": "AI 编程 Agent 的技能包生态进入升温期，开发者从「用 Agent」转向「教 Agent」，同时安全与效率成为产品差异化关键。",
-      "en": "The AI coding agent skill ecosystem enters a boom phase, with developers shifting from 'using agents' to 'teaching agents,' while security and efficiency become key differentiators."
+      "zh": "AI 编程技能生态快速成熟，开发者从追求“能写代码”转向“写好代码”，同时安全自动化和成本优化成为代理系统落地的关键瓶颈。",
+      "en": "The AI coding skills ecosystem is maturing rapidly, with developers shifting from 'can write code' to 'write good code', while safety automation and cost optimization become key bottlenecks for agent system deployment."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 编程 Agent 技能包生态升温，开发者从「用」到「教」",
-          "en": "AI Coding Agent Skill Ecosystem Explodes, Developers Shift from 'Using' to 'Teaching'"
+          "zh": "AI 编程技能包升温，开发者追求“少即是多”与审美输出",
+          "en": "AI Coding Skill Packs Explode; Developers Seek 'Less is More' and Aesthetic Output"
         },
         "category": {
-          "zh": "开发者生态",
-          "en": "Developer Ecosystem"
+          "zh": "开发者工具",
+          "en": "Developer Tools"
         },
         "summary": {
-          "zh": "mattpocock/skills 日增 2130 星，总星数 172k+；Nutlope/hallmark 日增 1277 星；coreyhaines31/marketingskills 日增 340 星。多个技能包项目持续在榜，覆盖设计、营销、编程等场景。",
-          "en": "mattpocock/skills gained 2130 stars daily (172k+ total); Nutlope/hallmark gained 1277 stars; coreyhaines31/marketingskills gained 340 stars. Multiple skill projects consistently trending, covering design, marketing, coding."
+          "zh": "ponytail（8.4万星，1个月）、hallmark（9209星，日增1277）、skills（17.3万星，日增2130）等技能包项目持续在榜，强调减少冗余、提升代码质量和设计品位。",
+          "en": "Skill pack projects like ponytail (84k stars, 1 month), hallmark (9.2k stars, +1.3k daily), and skills (173k stars, +2.1k daily) dominate charts, emphasizing reducing redundancy and improving code quality and design taste."
         },
         "pmInsight": {
-          "zh": "技能包生态的升温意味着 AI 编程助手正从通用工具向可定制平台演进。PM 应关注技能包市场/商店的构建，支持第三方开发者创建和分发技能，形成网络效应。",
-          "en": "The skill ecosystem boom indicates AI coding assistants are evolving from general tools to customizable platforms. PMs should focus on building skill marketplaces/stores, enabling third-party developers to create and distribute skills, creating network effects."
+          "zh": "AI 编程助手正从“生成代码”向“生成好代码”演进，产品经理应关注技能包生态，将“质量优先”理念融入产品设计，例如提供可定制的输出风格和审美规则。",
+          "en": "AI coding assistants are evolving from 'generating code' to 'generating good code'. PMs should focus on the skill pack ecosystem and integrate 'quality-first' principles into product design, e.g., customizable output styles and aesthetic rules."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "mattpocock/skills",
-            "url": "https://github.com/mattpocock/skills"
+            "label": "ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
           },
           {
-            "label": "Nutlope/hallmark",
+            "label": "hallmark",
             "url": "https://github.com/Nutlope/hallmark"
           },
           {
-            "label": "coreyhaines31/marketingskills",
-            "url": "https://github.com/coreyhaines31/marketingskills"
+            "label": "skills",
+            "url": "https://github.com/mattpocock/skills"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI Agent 安全与数据溯源需求升温",
-          "en": "AI Agent Security and Data Provenance Demand Heats Up"
+          "zh": "安全自动化与成本透明化成为代理系统落地的关键挑战",
+          "en": "Safety Automation and Cost Transparency Become Key Challenges for Agent System Deployment"
+        },
+        "category": {
+          "zh": "AI 安全与基础设施",
+          "en": "AI Safety & Infrastructure"
         },
         "summary": {
-          "zh": "OpenAI 发布 GPT-Red 自动化红队测试系统；clodex-ide 以「本地优先+零信任」定位 3 天获 812 星；OriginBlame 研究提出训练数据溯源方案。",
-          "en": "OpenAI released GPT-Red automated red-teaming; clodex-ide gained 812 stars in 3 days with 'local-first + zero-trust' positioning; OriginBlame research proposed training data provenance."
+          "zh": "OpenAI 发布 GPT-Red 实现自动化红队测试，Hugging Face 指出模型路由实际成本受缓存等因素影响与标价差异显著。",
+          "en": "OpenAI released GPT-Red for automated red-teaming; Hugging Face noted that actual model routing costs differ significantly from list prices due to factors like caching."
         },
         "pmInsight": {
-          "zh": "安全与数据溯源成为 Agent 产品的重要竞争维度。PM 应考虑集成自动化安全测试、本地优先架构、数据溯源功能，以赢得企业客户信任。",
-          "en": "Security and data provenance become key competitive dimensions for agent products. PMs should consider integrating automated security testing, local-first architecture, and data provenance features to win enterprise trust."
+          "zh": "产品经理需在代理系统中内置安全测试机制（如自动化红队）和成本监控工具，避免因安全漏洞或成本失控导致产品失败。可考虑集成类似 GPT-Red 的自动化安全评估，并采用透明化成本路由方案。",
+          "en": "PMs should embed safety testing mechanisms (e.g., automated red-teaming) and cost monitoring tools in agent systems to avoid failures due to security vulnerabilities or cost overruns. Consider integrating automated safety evaluation like GPT-Red and adopting transparent cost routing."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "OpenAI GPT-Red",
             "url": "https://openai.com/index/unlocking-self-improvement-gpt-red"
           },
           {
-            "label": "clodex-ide",
-            "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide"
-          },
-          {
-            "label": "OriginBlame",
-            "url": "https://arxiv.org/abs/2607.13037"
+            "label": "Hugging Face Model Routing",
+            "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
           }
-        ],
-        "category": {
-          "zh": "跨源信号",
-          "en": "Cross-source signal"
-        }
+        ]
       },
       {
         "title": {
-          "zh": "模型路由与成本优化成为 Agent 产品基础设施关键",
-          "en": "Model Routing and Cost Optimization Become Key Infrastructure for Agent Products"
+          "zh": "AI 代理技能生态向营销、金融等垂直领域扩展",
+          "en": "AI Agent Skill Ecosystem Expands to Vertical Domains like Marketing and Finance"
+        },
+        "category": {
+          "zh": "AI 应用",
+          "en": "AI Applications"
         },
         "summary": {
-          "zh": "Hugging Face 与 IBM 发文揭示模型路由的复杂性；openinterpreter 因低成本模型优化定位持续在榜（日增 299 星）。",
-          "en": "Hugging Face and IBM published on model routing complexity; openinterpreter stays trending due to low-cost model optimization (299 stars daily)."
+          "zh": "marketingskills（4万星，日增340）专注营销自动化，Vibe-Trading（2.4万星，日增915）专注量化交易，AI 代理技能正从编程向营销、金融等垂直场景渗透。",
+          "en": "marketingskills (40k stars, +340 daily) focuses on marketing automation; Vibe-Trading (24k stars, +915 daily) focuses on quantitative trading. AI agent skills are penetrating verticals like marketing and finance."
         },
         "pmInsight": {
-          "zh": "模型路由直接影响 Agent 产品的成本与性能。PM 应评估路由策略，考虑缓存、推理步骤等因素，并探索低成本模型组合方案以降低用户门槛。",
-          "en": "Model routing directly impacts agent product cost and performance. PMs should evaluate routing strategies, consider caching and inference steps, and explore low-cost model combinations to lower user barriers."
+          "zh": "产品经理应关注垂直领域技能包的快速增长，探索将 AI 代理能力封装为行业专用工具，例如为营销团队提供自动化文案和 SEO 优化代理，或为交易员提供回测和实时决策支持。",
+          "en": "PMs should monitor the rapid growth of vertical skill packs and explore packaging AI agent capabilities into industry-specific tools, e.g., automated copywriting and SEO optimization agents for marketing teams, or backtesting and real-time decision support for traders."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hugging Face Blog",
-            "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+            "label": "marketingskills",
+            "url": "https://github.com/coreyhaines31/marketingskills"
           },
           {
-            "label": "openinterpreter",
-            "url": "https://github.com/openinterpreter/openinterpreter"
+            "label": "Vibe-Trading",
+            "url": "https://github.com/HKUDS/Vibe-Trading"
           }
-        ],
-        "category": {
-          "zh": "跨源信号",
-          "en": "Cross-source signal"
-        }
+        ]
       }
     ],
     "opportunities": [
       {
         "title": {
-          "zh": "构建 AI 编程 Agent 技能市场，抢占生态位",
-          "en": "Build an AI Coding Agent Skill Marketplace to Capture Ecosystem Niche"
+          "zh": "构建“质量优先”的 AI 编程助手技能市场",
+          "en": "Build a 'Quality-First' AI Coding Assistant Skill Marketplace"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于技能包生态升温趋势，可构建一个技能市场平台，支持开发者上传、发现、评分技能，并提供技能组合推荐。假设：技能市场能提升用户粘性 30% 以上，并吸引第三方开发者贡献内容。",
-          "en": "Based on the skill ecosystem boom, build a skill marketplace platform supporting upload, discovery, rating, and combo recommendations. Hypothesis: A skill marketplace can increase user retention by 30%+ and attract third-party developers."
+          "zh": "基于 ponytail、hallmark 等技能包的高增长，可验证假设：开发者愿意为高质量、可定制的 AI 编程输出付费。产品方向：创建一个技能市场，允许开发者上传、分享和发现针对不同场景（如代码简洁性、UI 审美、性能优化）的技能包，并提供质量评分和社区反馈机制。",
+          "en": "Based on the high growth of skill packs like ponytail and hallmark, the hypothesis is that developers are willing to pay for high-quality, customizable AI coding output. Product direction: create a skill marketplace where developers can upload, share, and discover skill packs for different scenarios (e.g., code conciseness, UI aesthetics, performance optimization), with quality ratings and community feedback."
         },
         "pmInsight": {
-          "zh": "PM 应优先设计技能 API 和沙箱测试环境，降低技能开发门槛，并通过激励机制（如分成、认证）吸引高质量技能创作者。",
-          "en": "PMs should prioritize designing skill APIs and sandbox testing environments to lower development barriers, and use incentives (e.g., revenue sharing, certification) to attract high-quality skill creators."
+          "zh": "产品经理可验证：技能包能否成为 AI 编程助手的核心差异化功能？建议先通过集成现有热门技能包（如 ponytail、hallmark）到产品中，观察用户留存和付费转化，再决定是否自建市场。",
+          "en": "PMs can verify: can skill packs become a core differentiator for AI coding assistants? Suggest first integrating popular skill packs (e.g., ponytail, hallmark) into the product to observe user retention and paid conversion, then decide whether to build a marketplace."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "mattpocock/skills",
-            "url": "https://github.com/mattpocock/skills"
+            "label": "ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
           },
           {
-            "label": "Nutlope/hallmark",
+            "label": "hallmark",
             "url": "https://github.com/Nutlope/hallmark"
           }
         ]
       },
       {
         "title": {
-          "zh": "推出「本地优先+零信任」Agent IDE 产品，切入企业安全市场",
-          "en": "Launch a 'Local-First + Zero-Trust' Agent IDE to Tap Enterprise Security Market"
+          "zh": "开发面向 AI 代理的成本优化与安全审计工具",
+          "en": "Develop Cost Optimization and Security Audit Tools for AI Agents"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "clodex-ide 的快速增长表明市场对安全 Agent IDE 有强烈需求。可开发一款面向企业的 Agent IDE，强调数据本地处理、零信任架构和审计能力。假设：企业客户愿意为安全 Agent IDE 支付 2-3 倍溢价。",
-          "en": "clodex-ide's rapid growth indicates strong demand for secure agent IDEs. Develop an enterprise-focused agent IDE emphasizing local data processing, zero-trust architecture, and audit capabilities. Hypothesis: Enterprise customers are willing to pay 2-3x premium for a secure agent IDE."
+          "zh": "结合 GPT-Red 自动化红队和模型路由成本分析，可验证假设：企业在部署 AI 代理时面临安全与成本双重痛点。产品方向：提供一站式代理运维平台，集成自动化安全测试（如红队模拟）、实时成本监控与路由优化、数据溯源（如 OriginBlame）等功能。",
+          "en": "Combining GPT-Red automated red-teaming and model routing cost analysis, the hypothesis is that enterprises face dual pain points of security and cost when deploying AI agents. Product direction: provide a one-stop agent operations platform integrating automated security testing (e.g., red-teaming simulation), real-time cost monitoring and routing optimization, and data provenance (e.g., OriginBlame)."
         },
         "pmInsight": {
-          "zh": "PM 应聚焦合规需求，集成 GPT-Red 等自动化安全测试，并提供详细审计日志。同时与云服务商合作，提供混合部署选项。",
-          "en": "PMs should focus on compliance needs, integrate automated security testing like GPT-Red, and provide detailed audit logs. Partner with cloud providers for hybrid deployment options."
+          "zh": "产品经理可验证：企业是否愿意为代理运维工具付费？建议先针对中小型 AI 代理团队推出轻量级成本监控插件，验证需求后再扩展安全审计功能。",
+          "en": "PMs can verify: are enterprises willing to pay for agent operations tools? Suggest first launching a lightweight cost monitoring plugin for small and medium-sized AI agent teams to validate demand, then expand to security audit features."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "clodex-ide",
-            "url": "https://github.com/mereyabdenbekuly-ctrl/clodex-ide"
-          },
-          {
             "label": "OpenAI GPT-Red",
             "url": "https://openai.com/index/unlocking-self-improvement-gpt-red"
+          },
+          {
+            "label": "Hugging Face Model Routing",
+            "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+          },
+          {
+            "label": "OriginBlame",
+            "url": "https://arxiv.org/abs/2607.13037"
           }
-        ],
-        "category": {
-          "zh": "产品机会",
-          "en": "Product opportunity"
-        }
+        ]
       }
     ],
     "githubProjects": [
@@ -223,26 +223,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程助手注入「懒人哲学」的 Agent Skill，让 AI 像资深程序员一样只写最必要的代码，避免过度工程。",
+          "zh": "为AI编程助手注入「懒人哲学」的Claude技能包，让AI像资深工程师一样只写最必要的代码，减少冗余输出。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
-        "totalStars": 84158,
+        "totalStars": 84177,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 AI 编程助手注入「懒人哲学」的 Agent Skill，让 AI 像资深程序员一样只写最必要的代码，避免过度工程。",
+          "zh": "为AI编程助手注入「懒人哲学」的Claude技能包，让AI像资深工程师一样只写最必要的代码，减少冗余输出。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
         "todayHighlight": {
-          "zh": "创建仅一个月即获 84k+ stars，今日新增约 2000 stars，在开发者社区快速传播，成为 Claude Code 生态中「少即是多」理念的代表项目。",
+          "zh": "创建仅一个月即获8.4万星，今日新增星数未公开但持续升温，开发者社区对「少即是多」的编程理念反响强烈。",
           "en": "创建仅约 1 个月便已积累 84k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 84,158 stars、4,584 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 84,158 stars and 4,584 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 84,177 stars、4,585 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 84,177 stars and 4,585 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开发者对 AI 生成代码「质量 vs 数量」的偏好转变，以及 Agent Skill 模式如何降低 AI 编程的认知负担。",
+          "zh": "观察AI编程工具如何通过「反内卷」定位差异化竞争，以及开发者对代码质量的真实诉求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,26 +263,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套面向 AI 编程 Agent 的实用模式与 CLI 工具，帮助开发者设计能编排多个 Agent 的循环工程系统，包含审计、初始化、成本追踪等能力。",
+          "zh": "一套面向AI编码代理的工程化工具集，提供循环审计、初始化、成本计算等CLI工具，帮助开发者设计和编排多代理系统。",
           "en": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
         },
-        "totalStars": 8022,
+        "totalStars": 8025,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套面向 AI 编程 Agent 的实用模式与 CLI 工具，帮助开发者设计能编排多个 Agent 的循环工程系统，包含审计、初始化、成本追踪等能力。",
+          "zh": "一套面向AI编码代理的工程化工具集，提供循环审计、初始化、成本计算等CLI工具，帮助开发者设计和编排多代理系统。",
           "en": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
         },
         "todayHighlight": {
-          "zh": "创建约一个月即获 8k+ stars，今日新增约 500 stars，随 Agent 编排需求升温而持续获得关注，成为 Agent 工作流设计的重要参考。",
-          "en": "创建仅约 1 个月便已积累 8,022 stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
+          "zh": "创建约一个月即获8k星，今日新增星数未公开但持续增长，受益于AI代理编排话题的热度。",
+          "en": "创建仅约 1 个月便已积累 8,025 stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,022 stars、1,046 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,022 stars and 1,046 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,025 stars、1,047 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,025 stars and 1,047 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「循环工程」这一新范式如何影响 AI Agent 的协作效率与成本控制，以及其与 MCP 协议的整合潜力。",
+          "zh": "关注AI编码从单代理到多代理协作的工程化趋势，以及开发者对可观测性和成本控制的需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -303,26 +303,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一款本地优先、零信任架构的 Agent IDE，专为可验证的自主软件开发设计，强调安全性与可控性。",
+          "zh": "一款本地优先、零信任架构的AI代理IDE，支持可验证的自主软件开发，强调安全性和隐私。",
           "en": "Local-first, zero-trust agentic IDE for verifiable autonomous software development."
         },
-        "totalStars": 812,
+        "totalStars": 813,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一款本地优先、零信任架构的 Agent IDE，专为可验证的自主软件开发设计，强调安全性与可控性。",
+          "zh": "一款本地优先、零信任架构的AI代理IDE，支持可验证的自主软件开发，强调安全性和隐私。",
           "en": "Local-first, zero-trust agentic IDE for verifiable autonomous software development."
         },
         "todayHighlight": {
-          "zh": "今日新晋上升榜，创建仅 3 天即获 812 stars，在开发者中快速传播，因其「本地优先+零信任」定位填补了 Agent IDE 的安全空白。",
+          "zh": "创建仅几天即进入上升榜单，今日新增星数未公开但增长较快，零信任+本地优先的定位在AI IDE赛道中脱颖而出。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 812 stars、148 forks，topics: agentic-ai, agentic-ide, ai-agents, developer-tools, electron，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 812 stars and 148 forks，topics: agentic-ai, agentic-ide, ai-agents, developer-tools, electron, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 813 stars、148 forks，topics: agentic-ai, agentic-ide, ai-agents, developer-tools, electron，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 813 stars and 148 forks，topics: agentic-ai, agentic-ide, ai-agents, developer-tools, electron, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开发者对「可验证自主开发」的需求，以及本地优先架构在 AI 编程工具中的差异化竞争力。",
+          "zh": "观察AI IDE在安全与隐私方面的差异化机会，以及开发者对「可验证自主开发」的接受度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -343,26 +343,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "知名 TypeScript 专家 Matt Pocock 开源的 Claude Code Skill 集合，将其实战经验封装为可直接复用的技能包，提升 AI 编程质量。",
+          "zh": "知名开发者Matt Pocock开源的Claude技能集合，将其实战经验封装成可直接复用的AI编程技能。",
           "en": "Skills for Real Engineers. Straight from my .claude directory."
         },
-        "totalStars": 172680,
+        "totalStars": 172737,
         "language": "Shell",
         "dailyStars": 2130,
         "chineseIntro": {
-          "zh": "知名 TypeScript 专家 Matt Pocock 开源的 Claude Code Skill 集合，将其实战经验封装为可直接复用的技能包，提升 AI 编程质量。",
+          "zh": "知名开发者Matt Pocock开源的Claude技能集合，将其实战经验封装成可直接复用的AI编程技能。",
           "en": "Skills for Real Engineers. Straight from my .claude directory."
         },
         "todayHighlight": {
-          "zh": "持续在榜全球趋势榜第 3 位，今日新增 2130 stars，总星数达 172k+，凭借作者个人品牌和高质量技能内容长期获得开发者追捧。",
+          "zh": "今日新增2130星，总星数达17.3万，持续位居全球趋势榜第三，个人品牌效应与高质量技能内容驱动增长。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 172k+，持续占据 AI 开源热门榜单, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 2,130 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 172,680 stars、14,825 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 172,680 stars and 14,825 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 172,737 stars、14,832 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 172,737 stars and 14,832 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注个人品牌如何驱动开源项目增长，以及「专家技能包」模式在 AI 编程生态中的商业价值。",
+          "zh": "观察个人开发者如何通过开源技能包建立影响力，以及AI编程技能市场的生态化机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +383,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "给 AI 编程助手注入「审美力」的设计 Skill，安装后能有效阻止 AI 生成千篇一律的「AI 感」界面，让前端代码具有真正的设计品位。",
+          "zh": "给AI编程助手注入「审美力」的Claude技能，安装后能有效阻止AI生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位。",
           "en": "Star Nutlope / hallmark Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
         },
-        "totalStars": 9122,
+        "totalStars": 9209,
         "language": "CSS",
         "dailyStars": 1277,
         "chineseIntro": {
-          "zh": "给 AI 编程助手注入「审美力」的设计 Skill，安装后能有效阻止 AI 生成千篇一律的「AI 感」界面，让前端代码具有真正的设计品位。",
+          "zh": "给AI编程助手注入「审美力」的Claude技能，安装后能有效阻止AI生成千篇一律的「垃圾」界面，让生成的前端代码具有真正的设计品位。",
           "en": "Star Nutlope / hallmark Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
         },
         "todayHighlight": {
-          "zh": "今日新增 1277 stars，总星数达 9k+，在设计师和开发者圈层快速传播，因其「反 AI 感」叙事切中用户对 AI 生成内容同质化的痛点。",
-          "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 3 个月便已积累 9,122 stars, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,277 星."
+          "zh": "今日新增1277星，总星数达9209，全球趋势榜第二，反AI同质化叙事在设计师和开发者圈快速传播。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 3 个月便已积累 9,209 stars, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,277 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,122 stars、465 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,122 stars and 465 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,209 stars、468 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,209 stars and 468 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察「AI 生成内容审美」这一新兴需求，以及设计 Skill 如何成为 AI 编程工具的差异化卖点。",
+          "zh": "关注AI生成内容的质量控制需求，以及「反AI slop」作为产品卖点的可行性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +423,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "收录 100+ 可运行的 AI Agent 与 RAG 应用模板，覆盖多种模型和场景，开发者可一键克隆、定制并部署。",
+          "zh": "100+个可实际运行的AI Agent和RAG应用合集，覆盖多种模型，支持克隆、定制和部署，是AI应用开发的实用参考库。",
           "en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship."
         },
-        "totalStars": 122090,
+        "totalStars": 122122,
         "language": "Python",
         "dailyStars": 1236,
         "chineseIntro": {
-          "zh": "收录 100+ 可运行的 AI Agent 与 RAG 应用模板，覆盖多种模型和场景，开发者可一键克隆、定制并部署。",
+          "zh": "100+个可实际运行的AI Agent和RAG应用合集，覆盖多种模型，支持克隆、定制和部署，是AI应用开发的实用参考库。",
           "en": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship."
         },
         "todayHighlight": {
-          "zh": "今日新增 1236 stars，总星数达 122k+，长期位列趋势榜，凭借丰富的可运行示例和持续更新，成为 LLM 应用开发者的首选资源库。",
+          "zh": "今日新增1236星，总星数达12.2万，长期在榜，作为AI应用模板库持续吸引新开发者。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 122k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,236 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 122,090 stars、18,019 forks，topics: agents, llms, python, rag，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 122,090 stars and 18,019 forks，topics: agents, llms, python, rag, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 122,122 stars、18,020 forks，topics: agents, llms, python, rag，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 122,122 stars and 18,020 forks，topics: agents, llms, python, rag, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「可运行模板」模式如何降低 AI 应用开发门槛，以及其作为生态入口的潜在商业价值。",
+          "zh": "观察AI应用模板化、可复用的趋势，以及社区驱动的内容聚合对产品推广的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -463,26 +463,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于 AI Agent 的个人交易助手，支持多 Agent 协作、回测和实时交易，覆盖量化金融全流程。",
+          "zh": "个人交易AI代理，支持多模型、多代理协作，提供回测和实时交易能力，让AI辅助量化交易决策。",
           "en": "\"Vibe-Trading: Your Personal Trading Agent\""
         },
-        "totalStars": 23855,
+        "totalStars": 23881,
         "language": "Python",
         "dailyStars": 915,
         "chineseIntro": {
-          "zh": "基于 AI Agent 的个人交易助手，支持多 Agent 协作、回测和实时交易，覆盖量化金融全流程。",
+          "zh": "个人交易AI代理，支持多模型、多代理协作，提供回测和实时交易能力，让AI辅助量化交易决策。",
           "en": "\"Vibe-Trading: Your Personal Trading Agent\""
         },
         "todayHighlight": {
-          "zh": "今日新增 915 stars，总星数达 23.8k+，在金融科技圈持续升温，因其「一句话启动交易 Agent」的易用性吸引大量散户和量化爱好者。",
+          "zh": "今日新增915星，总星数达2.4万，全球趋势榜第六，AI+金融叙事持续吸引关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 创建仅约 4 个月便已积累 23k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 915 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,855 stars、4,057 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,855 stars and 4,057 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,881 stars、4,057 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,881 stars and 4,057 forks，topics: ai-agent, algorithmic-trading, backtesting, fintech, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI Agent 在金融交易领域的落地路径，以及「低门槛量化」对传统交易工具的市场冲击。",
+          "zh": "关注AI在金融垂直领域的应用落地，以及多代理系统在交易场景中的实际效果。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -503,26 +503,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一本面向 AI/ML 研究工程师的开放式教科书，覆盖数学、计算机科学和人工智能核心知识，强调直觉理解而非公式堆砌。",
+          "zh": "一本面向AI/ML研究工程师的开放式教科书，覆盖数学、计算机科学和人工智能核心知识，强调直觉理解而非公式堆砌。",
           "en": "Become a cracked AI/ML Research Engineer"
         },
-        "totalStars": 6022,
+        "totalStars": 6038,
         "language": "TypeScript",
         "dailyStars": 725,
         "chineseIntro": {
-          "zh": "一本面向 AI/ML 研究工程师的开放式教科书，覆盖数学、计算机科学和人工智能核心知识，强调直觉理解而非公式堆砌。",
+          "zh": "一本面向AI/ML研究工程师的开放式教科书，覆盖数学、计算机科学和人工智能核心知识，强调直觉理解而非公式堆砌。",
           "en": "Become a cracked AI/ML Research Engineer"
         },
         "todayHighlight": {
-          "zh": "今日新增 725 stars，总星数达 6k+，在 AI 学习社区快速传播，因其「去教材化」的叙事和交互式阅读体验获得学生和从业者好评。",
+          "zh": "今日新增725星，总星数达6038，全球趋势榜第九，AI学习资源需求旺盛，教科书式项目获得持续关注。",
           "en": "登上 GitHub Trending 日榜第 9 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 725 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,022 stars、748 forks，topics: ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,022 stars and 748 forks，topics: ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,038 stars、751 forks，topics: ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,038 stars and 751 forks，topics: ai-textbook, algorithms, artificial-intelligence, computer-science, computer-vision, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「开放式教科书」模式如何满足 AI 从业者的持续学习需求，以及其与在线教育平台的竞争关系。",
+          "zh": "观察AI教育领域的内容需求，以及开放式教科书如何通过社区协作保持更新。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -543,26 +543,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个为低成本模型优化的编码 Agent，支持 DeepSeek、Qwen 等模型，可自然语言驱动代码执行。",
+          "zh": "一个针对低成本模型优化的编码代理，支持DeepSeek、Qwen等模型，让AI在低算力环境下也能高效编程。",
           "en": "Star openinterpreter / openinterpreter A coding agent for low-cost models"
         },
-        "totalStars": 65601,
+        "totalStars": 65616,
         "language": "Rust",
         "dailyStars": 299,
         "chineseIntro": {
-          "zh": "一个为低成本模型优化的编码 Agent，支持 DeepSeek、Qwen 等模型，可自然语言驱动代码执行。",
+          "zh": "一个针对低成本模型优化的编码代理，支持DeepSeek、Qwen等模型，让AI在低算力环境下也能高效编程。",
           "en": "Star openinterpreter / openinterpreter A coding agent for low-cost models"
         },
         "todayHighlight": {
-          "zh": "今日新增 299 stars，总星数达 65.6k+，长期在榜，因其对低成本模型的优化定位，在模型价格战背景下持续获得关注。",
+          "zh": "今日新增299星，总星数达6.6万，全球趋势榜第七，作为老牌项目持续迭代，低模型成本定位契合开发者降本需求。",
           "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 65k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 299 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 65,601 stars、5,659 forks，topics: acp, coding-agent, deepseek, kimi, qwen，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 65,601 stars and 5,659 forks，topics: acp, coding-agent, deepseek, kimi, qwen, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 65,616 stars、5,659 forks，topics: acp, coding-agent, deepseek, kimi, qwen，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 65,616 stars and 5,659 forks，topics: acp, coding-agent, deepseek, kimi, qwen, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察「低成本模型优先」策略如何影响 AI 编程工具的定价和用户群，以及 Rust 重写带来的性能优势。",
+          "zh": "关注AI编程工具对模型成本的敏感度，以及开源项目如何通过优化适配不同模型生态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -583,26 +583,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 等 AI Agent 打造的营销技能包，涵盖 CRO、文案、SEO、分析和增长工程，帮助技术型创始人自动化营销任务。",
+          "zh": "面向Claude Code等AI代理的营销技能包，涵盖转化率优化、文案、SEO、分析和增长工程，帮助技术营销人员自动化营销任务。",
           "en": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering."
         },
-        "totalStars": 39894,
+        "totalStars": 39917,
         "language": "JavaScript",
         "dailyStars": 340,
         "chineseIntro": {
-          "zh": "为 Claude Code 等 AI Agent 打造的营销技能包，涵盖 CRO、文案、SEO、分析和增长工程，帮助技术型创始人自动化营销任务。",
+          "zh": "面向Claude Code等AI代理的营销技能包，涵盖转化率优化、文案、SEO、分析和增长工程，帮助技术营销人员自动化营销任务。",
           "en": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering."
         },
         "todayHighlight": {
-          "zh": "今日新增 340 stars，总星数达 39.9k+，在独立开发者和小团队中持续传播，因其「AI 营销自动化」叙事切中资源有限者的痛点。",
+          "zh": "今日新增340星，总星数达4万，全球趋势榜第十一，AI代理技能生态持续扩展，营销场景需求旺盛。",
           "en": "登上 GitHub Trending 日榜第 11 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 340 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,894 stars、6,327 forks，topics: claude, codex, marketing，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,894 stars and 6,327 forks，topics: claude, codex, marketing, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,917 stars、6,328 forks，topics: claude, codex, marketing，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,917 stars and 6,328 forks，topics: claude, codex, marketing, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI Agent 在垂直业务场景（如营销）的渗透，以及「技能包」模式如何扩展 Agent 的能力边界。",
+          "zh": "观察AI代理在垂直业务场景（如营销）的渗透，以及技能包模式如何降低AI应用门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,23 +625,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
+          "zh": "政策/安全",
+          "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 发布 GPT-Red，一种通过自我对弈实现自动化红队测试的系统，旨在提升 AI 安全性和对提示注入的鲁棒性。",
+          "zh": "OpenAI 发布 GPT-Red，一种通过自我对弈实现自动化红队测试的系统，旨在提升 AI 安全性、对齐能力和提示注入鲁棒性。",
           "en": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 GPT-Red，一种通过自我对弈实现自动化红队测试的系统，旨在提升 AI 安全性和对提示注入的鲁棒性。",
+          "zh": "OpenAI 发布 GPT-Red，一种通过自我对弈实现自动化红队测试的系统，旨在提升 AI 安全性、对齐能力和提示注入鲁棒性。",
           "en": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness."
         },
         "todayHighlight": {
-          "zh": "这是 OpenAI 在 AI 安全领域的重要进展，可能为模型自我改进和防御能力树立新标准。",
-          "en": "这是 OpenAI 在 AI 安全领域的重要进展，可能为模型自我改进和防御能力树立新标准。"
+          "zh": "这是 OpenAI 在 AI 安全自动化方面的重要进展，可能降低人工红队成本并加速安全迭代。",
+          "en": "这是 OpenAI 在 AI 安全自动化方面的重要进展，可能降低人工红队成本并加速安全迭代。"
         },
         "pmInsight": {
-          "zh": "PM 可关注该技术如何降低安全测试成本，并评估将其集成到产品安全流程中的可行性。",
+          "zh": "产品经理可评估 GPT-Red 集成到自身安全测试流程的可行性，以提升模型对抗性鲁棒性。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -666,19 +666,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Hugging Face 与 IBM 研究团队分享模型路由的实际挑战，指出成本不仅取决于定价，还受缓存、推理步骤等因素影响。",
+          "zh": "Hugging Face 与 IBM 研究团队分享模型路由的复杂性，指出实际成本受缓存等因素影响，与标价差异显著。",
           "en": "Model Routing Is Simple. Until It Isn’t."
         },
         "chineseIntro": {
-          "zh": "Hugging Face 与 IBM 研究团队分享模型路由的实际挑战，指出成本不仅取决于定价，还受缓存、推理步骤等因素影响。",
+          "zh": "Hugging Face 与 IBM 研究团队分享模型路由的复杂性，指出实际成本受缓存等因素影响，与标价差异显著。",
           "en": "Model Routing Is Simple. Until It Isn’t."
         },
         "todayHighlight": {
-          "zh": "该文章揭示了模型路由系统的复杂性，对构建高效 AI 代理的产品团队具有重要参考价值。",
-          "en": "该文章揭示了模型路由系统的复杂性，对构建高效 AI 代理的产品团队具有重要参考价值。"
+          "zh": "该分析揭示了模型路由在真实场景中的成本陷阱，对构建经济高效的 AI 代理系统具有重要参考价值。",
+          "en": "该分析揭示了模型路由在真实场景中的成本陷阱，对构建经济高效的 AI 代理系统具有重要参考价值。"
         },
         "pmInsight": {
-          "zh": "PM 在设计模型路由时应考虑实际成本因素（如缓存命中率），而非仅依赖标价。",
+          "zh": "产品经理在设计路由策略时，应基于实际任务测试而非仅依赖标价，并考虑缓存等系统级优化。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -703,19 +703,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 增强密钥扫描功能，新增 Resend 合作伙伴、新密钥类型检测，并改进公开监控面板。",
+          "zh": "GitHub 更新秘密扫描功能，新增 Resend 合作伙伴、更多秘密类型检测，并改进公共监控告警面板。",
           "en": "This week, we&#8217;re rolling out several improvements to secret scanning and public monitoring: Resend is now a GitHub secret scanning partner. Secret scanning now detects new secret types from APIclub&#8230; The post Improvements to secret scanning and public monitoring appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 增强密钥扫描功能，新增 Resend 合作伙伴、新密钥类型检测，并改进公开监控面板。",
+          "zh": "GitHub 更新秘密扫描功能，新增 Resend 合作伙伴、更多秘密类型检测，并改进公共监控告警面板。",
           "en": "This week, we&#8217;re rolling out several improvements to secret scanning and public monitoring: Resend is now a GitHub secret scanning partner. Secret scanning now detects new secret types from APIclub&#8230; The post Improvements to secret scanning and public monitoring appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "这些更新提升了开发者安全防护能力，尤其对使用 GitHub 的企业用户至关重要。",
-          "en": "这些更新提升了开发者安全防护能力，尤其对使用 GitHub 的企业用户至关重要。"
+          "zh": "这些更新增强了开发者安全防护能力，尤其对使用 VolcEngine 和 APIclub 的团队有直接影响。",
+          "en": "这些更新增强了开发者安全防护能力，尤其对使用 VolcEngine 和 APIclub 的团队有直接影响。"
         },
         "pmInsight": {
-          "zh": "PM 应确保团队启用这些新扫描规则，并利用监控面板跟踪密钥泄露风险。",
+          "zh": "产品经理应确保团队启用最新秘密扫描规则，并利用新的 webhook 字段优化安全响应流程。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -740,19 +740,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Google 庆祝 Google 图片搜索 25 周年，回顾视觉搜索里程碑并推出新的视觉内容探索与创作方式。",
+          "zh": "Google Images 迎来 25 周年，回顾视觉搜索里程碑并推出新的探索和创作方式。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp\">Google Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content."
         },
         "chineseIntro": {
-          "zh": "Google 庆祝 Google 图片搜索 25 周年，回顾视觉搜索里程碑并推出新的视觉内容探索与创作方式。",
+          "zh": "Google Images 迎来 25 周年，回顾视觉搜索里程碑并推出新的探索和创作方式。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Images_25th_hero.max-600x600.format-webp.webp\">Google Images is turning 25. Here’s a look back at some major milestones — and new ways to explore and create visual content."
         },
         "todayHighlight": {
-          "zh": "这标志着 Google 在视觉搜索领域的持续创新，可能影响未来多模态 AI 产品的方向。",
-          "en": "这标志着 Google 在视觉搜索领域的持续创新，可能影响未来多模态 AI 产品的方向。"
+          "zh": "作为视觉搜索的先驱，Google 持续创新可能影响多模态 AI 产品的用户体验设计。",
+          "en": "作为视觉搜索的先驱，Google 持续创新可能影响多模态 AI 产品的用户体验设计。"
         },
         "pmInsight": {
-          "zh": "PM 可关注 Google 视觉搜索的新功能，思考如何将其整合到自身产品中以提升用户体验。",
+          "zh": "产品经理可关注 Google 在视觉搜索上的新功能，思考如何将类似能力融入自身产品。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -773,8 +773,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "新模型/新能力",
-          "en": "新模型/新能力"
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
         },
         "summary": {
           "zh": "Thinking Machines 发布首个开源权重模型“Inkling”，引发社区关注。",
@@ -785,14 +785,14 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1uxdv34/thinking_machines_releases_first_openweight_model/\"> <img src=\"https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f56cf81af181e41f80e2963533db6f6e5408fad2\" alt=\"Thinking Machines releases first open-weight model “Inkling”\" title=\"Thinking Machines releases first open-weight model “Inkling”\" /> </a> </td"
         },
         "todayHighlight": {
-          "zh": "这是新兴 AI 公司进入开源模型领域的重要信号，可能加剧开源模型竞争。",
-          "en": "这是新兴 AI 公司进入开源模型领域的重要信号，可能加剧开源模型竞争。"
+          "zh": "新开源模型的发布可能丰富开源生态，为开发者提供更多选择。",
+          "en": "新开源模型的发布可能丰富开源生态，为开发者提供更多选择。"
         },
         "pmInsight": {
-          "zh": "PM 应评估 Inkling 的性能和许可，考虑是否将其作为替代或补充模型集成到产品中。",
+          "zh": "产品经理可评估 Inkling 的性能和许可，考虑是否适合作为私有部署的替代方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "High",
+        "impact": "Watch",
         "sources": [
           {
             "label": "Reddit LocalLLaMA",
@@ -814,19 +814,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "新研究提出 OriginBlame，一种记录和令牌级别的数据溯源系统，可精确定位训练数据来源，减少过度删除。",
+          "zh": "新研究 OriginBlame 提出记录级和 token 级数据溯源系统，可精确定位训练数据来源，减少删除时的过度删除。",
           "en": "arXiv:2607.13037v1 Announce Type: new Abstract: When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training records belong to a given author. Existing provenance systems operate at file or dataset level, forcing catastrophic over-deletion. We present ob, a record- and token-level data provenance system that propagates"
         },
         "chineseIntro": {
-          "zh": "新研究提出 OriginBlame，一种记录和令牌级别的数据溯源系统，可精确定位训练数据来源，减少过度删除。",
+          "zh": "新研究 OriginBlame 提出记录级和 token 级数据溯源系统，可精确定位训练数据来源，减少删除时的过度删除。",
           "en": "arXiv:2607.13037v1 Announce Type: new Abstract: When a data contributor requests removal, model trainers face a practical gap: unlearning algorithms require a forget set, yet no tool can locate which training records belong to a given author. Existing provenance systems operate at file or dataset level, forcing catastrophic over-deletion. We present ob, a record- and token-level data provenance system that propagates"
         },
         "todayHighlight": {
-          "zh": "该研究解决了 AI 训练数据删除中的关键难题，对数据合规和模型遗忘有重要意义。",
-          "en": "该研究解决了 AI 训练数据删除中的关键难题，对数据合规和模型遗忘有重要意义。"
+          "zh": "该技术有望解决 AI 训练数据合规中的关键难题，对数据删除和遗忘请求处理有重要意义。",
+          "en": "该技术有望解决 AI 训练数据合规中的关键难题，对数据删除和遗忘请求处理有重要意义。"
         },
         "pmInsight": {
-          "zh": "PM 可关注该技术如何帮助满足数据删除请求，并评估其集成到数据管道的成本。",
+          "zh": "产品经理应关注数据溯源工具的发展，以便在合规要求下更精准地管理训练数据。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
