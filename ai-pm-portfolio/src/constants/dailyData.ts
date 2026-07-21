@@ -44,106 +44,118 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 代理工具链持续升温，代码质量与边缘部署成为新焦点",
-      "en": "AI Agent Toolchain Heats Up, Code Quality and Edge Deployment Emerge as New Foci"
+      "zh": "AI 代理工程化与成本优化双主线，边缘模型与代码质量工具升温",
+      "en": "AI Agent Engineering and Cost Optimization as Dual Themes, Edge Models and Code Quality Tools Gain Traction"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势榜被 AI 编码代理工具占据，同时 OpenAI 发布长周期模型安全经验、NVIDIA 推出边缘世界模型、GitHub 上线代码质量功能，共同指向代理工程从“生成”向“可靠、低成本、可落地”演进。",
-      "en": "Today's GitHub trending is dominated by AI coding agent tools, while OpenAI shares safety insights on long-horizon models, NVIDIA launches an edge world model, and GitHub releases code quality features, collectively signaling a shift from generation to reliability, cost-efficiency, and deployability in agent engineering."
+      "zh": "今日 GitHub 趋势聚焦 AI 代理工程化工具（编排、路由、知识图谱）和成本优化方案，公司动态方面 OpenAI 发布长周期模型安全经验、NVIDIA 推出边缘世界模型、GitHub 正式发布代码质量产品。跨源信号显示 AI 代理生态从单一模型向多代理协作演进，成本控制成为企业落地关键。",
+      "en": "Today's GitHub trends focus on AI agent engineering tools (orchestration, routing, knowledge graphs) and cost optimization. Company updates include OpenAI's safety insights for long-horizon models, NVIDIA's edge world model, and GitHub's code quality GA. Cross-source signals indicate AI agent ecosystem evolving from single models to multi-agent collaboration, with cost control becoming key for enterprise adoption."
     },
     "keyTakeaway": {
-      "zh": "AI 编码代理工具链进入“降本增效”阶段，开发者对 Token 消耗、模型路由、本地优先的诉求强烈；同时，代码质量保障和边缘部署成为下一波产品机会。",
-      "en": "The AI coding agent toolchain enters a cost-reduction phase, with strong developer demand for token savings, model routing, and local-first approaches; meanwhile, code quality assurance and edge deployment emerge as next-wave product opportunities."
+      "zh": "AI 代理从实验走向工程化，多代理编排与成本优化成为今日主线；边缘 AI 和代码质量保障是值得跟进的新方向。",
+      "en": "AI agents are moving from experimentation to engineering, with multi-agent orchestration and cost optimization as today's main themes; edge AI and code quality assurance are emerging directions worth following."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 编码代理工具链“降本”叙事主导趋势榜",
-          "en": "Cost-Reduction Narrative Dominates AI Coding Agent Toolchain Trending"
+          "zh": "AI 代理工程化工具链持续升温，多代理编排与知识图谱成焦点",
+          "en": "AI Agent Engineering Toolchain Heats Up, Multi-Agent Orchestration and Knowledge Graphs in Focus"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "AI 代理",
+          "en": "AI Agent"
         },
         "summary": {
-          "zh": "今日 GitHub 趋势榜前五中有三个项目聚焦降低 AI 编码成本：code-review-graph（节省 Token，日增 1833 星）、OmniRoute（免费多模型网关，日增 1107 星）、wigolo（零成本本地搜索，日增 689 星）。",
-          "en": "Three of the top five GitHub trending projects today focus on reducing AI coding costs: code-review-graph (token savings, +1833 stars), OmniRoute (free multi-model gateway, +1107 stars), and wigolo (zero-cost local search, +689 stars)."
+          "zh": "GitHub 上多个 AI 代理工程化项目表现突出：loop-engineering（9k 星，多代理编排工具）、code-review-graph（日增 1833 星，代码知识图谱）、agency-agents（13.5 万星，AI 代理机构）。同时，KlaatCode 和 jcode 等终端代理工具也快速增长。",
+          "en": "Multiple AI agent engineering projects stand out on GitHub: loop-engineering (9k stars, multi-agent orchestration), code-review-graph (1,833 daily stars, code knowledge graph), agency-agents (135k stars, AI agent agency). Terminal agent tools like KlaatCode and jcode also grow rapidly."
         },
         "pmInsight": {
-          "zh": "开发者对 AI 编码工具的采纳已从“能否生成代码”转向“能否低成本、高质量地生成代码”。产品经理应优先优化 Token 消耗和模型路由，提供成本透明度和控制能力。",
-          "en": "Developer adoption of AI coding tools has shifted from 'can it generate code' to 'can it generate code cost-effectively and with quality.' PMs should prioritize token optimization and model routing, offering cost transparency and control."
+          "zh": "AI 代理正从单一模型调用转向多代理协作，产品经理应关注代理编排、知识图谱和成本路由等基础设施层机会，考虑在现有产品中集成或构建类似能力。",
+          "en": "AI agents are shifting from single model calls to multi-agent collaboration. PMs should focus on infrastructure opportunities like agent orchestration, knowledge graphs, and cost routing, and consider integrating or building similar capabilities into existing products."
         },
         "impact": "High",
         "sources": [
           {
+            "label": "loop-engineering",
+            "url": "https://github.com/cobusgreyling/loop-engineering"
+          },
+          {
             "label": "code-review-graph",
             "url": "https://github.com/tirth8205/code-review-graph"
+          },
+          {
+            "label": "agency-agents",
+            "url": "https://github.com/msitarzewski/agency-agents"
+          },
+          {
+            "label": "KlaatCode",
+            "url": "https://github.com/KlaatAI/klaatcode"
+          },
+          {
+            "label": "jcode",
+            "url": "https://github.com/1jehuang/jcode"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 成本优化成为企业刚需，模型路由与开源网关方案涌现",
+          "en": "AI Cost Optimization Becomes Enterprise Necessity, Model Routing and Open-Source Gateways Emerge"
+        },
+        "category": {
+          "zh": "成本优化",
+          "en": "Cost Optimization"
+        },
+        "summary": {
+          "zh": "Ramp 开源 AI 模型路由器，声称内部 LLM 成本降低 30%；OmniRoute（日增 1107 星）提供免费开源 AI 网关，支持 268+ 供应商和智能回退；KlaatCode 以「智能路由降本 10 倍」为卖点快速增长。",
+          "en": "Ramp open-sources an AI model router claiming 30% cost reduction; OmniRoute (1,107 daily stars) offers a free open-source AI gateway with 268+ providers and smart fallback; KlaatCode grows fast with '10x cost reduction via intelligent routing'."
+        },
+        "pmInsight": {
+          "zh": "企业 AI 部署中成本控制是关键痛点，产品经理可评估引入模型路由或 AI 网关来优化成本，同时关注开源方案（如 OmniRoute）的成熟度，考虑将其作为内部基础设施或对外服务。",
+          "en": "Cost control is a key pain point in enterprise AI deployment. PMs should evaluate introducing model routing or AI gateways to optimize costs, and monitor the maturity of open-source solutions like OmniRoute for potential internal infrastructure or external service."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Ramp 模型路由器",
+            "url": "https://runtimewire.com/article/ramp-router-ai-model-gateway-llm-costs"
           },
           {
             "label": "OmniRoute",
             "url": "https://github.com/diegosouzapw/OmniRoute"
           },
           {
-            "label": "wigolo",
-            "url": "https://github.com/KnockOutEZ/wigolo"
+            "label": "KlaatCode",
+            "url": "https://github.com/KlaatAI/klaatcode"
           }
         ]
       },
       {
         "title": {
-          "zh": "代码质量保障成为 AI 加速后的刚需",
-          "en": "Code Quality Assurance Becomes a Must-Have After AI Acceleration"
+          "zh": "边缘 AI 与代码质量保障成为新增长点",
+          "en": "Edge AI and Code Quality Assurance Emerge as New Growth Points"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "基础设施",
+          "en": "Infrastructure"
         },
         "summary": {
-          "zh": "GitHub 正式上线 Code Quality 功能，结合 CodeQL 和 AI 提供自动修复建议；同时 code-review-graph 项目通过代码图谱减少上下文消耗，日增 1833 星。",
-          "en": "GitHub launched Code Quality GA, combining CodeQL and AI for auto-fix suggestions; meanwhile, code-review-graph reduces context consumption via code graphs, gaining 1833 stars in a day."
+          "zh": "NVIDIA 在 Hugging Face 发布 Cosmos 3 Edge（4B 参数世界模型），专为边缘设备设计；GitHub Code Quality 正式发布，结合 CodeQL 和 AI 检测代码问题并提供自动修复。",
+          "en": "NVIDIA releases Cosmos 3 Edge (4B parameter world model) on Hugging Face for edge devices; GitHub Code Quality GA combines CodeQL and AI to detect code issues and provide auto-fixes."
         },
         "pmInsight": {
-          "zh": "AI 生成代码量激增后，质量保障工具成为新瓶颈。产品经理可考虑集成代码审查、自动修复和成本优化功能，打造“生成-审查-修复”闭环。",
-          "en": "As AI-generated code volume surges, quality assurance tools become a new bottleneck. PMs could integrate code review, auto-fix, and cost optimization into a 'generate-review-fix' loop."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "GitHub Code Quality GA",
-            "url": "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available"
-          },
-          {
-            "label": "code-review-graph",
-            "url": "https://github.com/tirth8205/code-review-graph"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "边缘 AI 模型取得突破，物理 AI 落地加速",
-          "en": "Edge AI Model Breakthrough Accelerates Physical AI Deployment"
-        },
-        "category": {
-          "zh": "模型与基础设施",
-          "en": "Models & Infrastructure"
-        },
-        "summary": {
-          "zh": "NVIDIA 发布 4B 参数世界模型 Cosmos 3 Edge，可在边缘设备实时推理；同时微软与 AMD 合作扩展 Azure AI 基础设施，增加 AMD 芯片。",
-          "en": "NVIDIA released Cosmos 3 Edge, a 4B-parameter world model for real-time edge inference; Microsoft expanded Azure AI infrastructure with AMD chips."
-        },
-        "pmInsight": {
-          "zh": "边缘 AI 能力提升使机器人、自动驾驶等物理 AI 场景更可行。产品经理应关注边缘部署的模型压缩和实时性优化，探索与硬件厂商的合作。",
-          "en": "Enhanced edge AI makes physical AI scenarios like robotics and autonomous driving more viable. PMs should focus on model compression and real-time optimization for edge deployment, and explore partnerships with hardware vendors."
+          "zh": "边缘 AI 模型参数规模与性能取得突破，产品经理可探索在 IoT、机器人等场景集成边缘推理；GitHub 将 AI 代码质量检测产品化，提示 AI 辅助开发中质量保障的重要性，可考虑在开发工具链中引入类似能力。",
+          "en": "Breakthroughs in edge AI model size and performance enable integration in IoT and robotics. PMs should explore edge inference scenarios. GitHub's AI code quality product highlights the importance of quality assurance in AI-assisted development; consider introducing similar capabilities in dev toolchains."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "NVIDIA Cosmos 3 Edge",
+            "label": "Cosmos 3 Edge",
             "url": "https://huggingface.co/blog/nvidia/cosmos3edge"
           },
           {
-            "label": "Microsoft Azure AI with AMD",
-            "url": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+            "label": "GitHub Code Quality",
+            "url": "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available"
           }
         ]
       }
@@ -151,63 +163,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建“成本感知”的 AI 编码代理平台",
-          "en": "Build a Cost-Aware AI Coding Agent Platform"
+          "zh": "构建面向中小企业的 AI 代理成本优化平台",
+          "en": "Build an AI Agent Cost Optimization Platform for SMBs"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合 code-review-graph 的 Token 节省、OmniRoute 的模型路由和 wigolo 的零成本搜索，打造一个统一平台，让开发者能透明地控制每次编码任务的成本，并自动选择最优模型。",
-          "en": "Combine token savings from code-review-graph, model routing from OmniRoute, and zero-cost search from wigolo into a unified platform that gives developers transparent cost control per coding task and auto-selects the best model."
+          "zh": "基于 Ramp 模型路由器和 OmniRoute 等开源方案，可开发面向中小企业的 AI 代理成本管理 SaaS，提供模型选择、路由优化、成本追踪和自动回退功能，帮助企业在多模型环境中降低 LLM 使用成本。",
+          "en": "Leveraging open-source solutions like Ramp's model router and OmniRoute, develop an AI agent cost management SaaS for SMBs, offering model selection, routing optimization, cost tracking, and automatic fallback to reduce LLM costs in multi-model environments."
         },
         "pmInsight": {
-          "zh": "假设：如果提供一个“成本仪表盘”实时显示每次 AI 调用的 Token 消耗和费用，并允许设置预算上限，开发者付费意愿将提升。验证方式：在现有编码代理工具中嵌入成本追踪功能，观察用户留存和付费转化。",
-          "en": "Hypothesis: If a 'cost dashboard' shows real-time token usage and fees per AI call with budget caps, developer willingness to pay will increase. Validation: Embed cost tracking in existing coding agent tools and monitor retention and conversion."
+          "zh": "验证假设：中小企业对 LLM 成本敏感但缺乏专业优化工具，通过提供简单易用的成本管理平台，可快速获取用户。建议 MVP 集成 5-10 个主流模型，突出成本节省效果。",
+          "en": "Hypothesis: SMBs are cost-sensitive about LLMs but lack professional optimization tools. A user-friendly cost management platform could quickly acquire users. MVP should integrate 5-10 mainstream models and highlight cost savings."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "code-review-graph",
-            "url": "https://github.com/tirth8205/code-review-graph"
+            "label": "Ramp 模型路由器",
+            "url": "https://runtimewire.com/article/ramp-router-ai-model-gateway-llm-costs"
           },
           {
             "label": "OmniRoute",
             "url": "https://github.com/diegosouzapw/OmniRoute"
-          },
-          {
-            "label": "wigolo",
-            "url": "https://github.com/KnockOutEZ/wigolo"
           }
         ]
       },
       {
         "title": {
-          "zh": "推出“AI 代码质量即服务”产品",
-          "en": "Launch an 'AI Code Quality as a Service' Product"
+          "zh": "开发垂直场景的 AI 代理编排工具（如设计奖申报代理）",
+          "en": "Develop Vertical-Specific AI Agent Orchestration Tools (e.g., Design Award Submission Agent)"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 GitHub Code Quality 的趋势和 code-review-graph 的图谱技术，开发一个独立于平台的代码质量服务，支持多语言、多框架，并提供自动修复建议和成本优化。",
-          "en": "Leveraging the GitHub Code Quality trend and code-review-graph's graph technology, develop a platform-agnostic code quality service supporting multiple languages and frameworks, with auto-fix suggestions and cost optimization."
+          "zh": "受 design-judge-skills（3 天 151 星）启发，可针对设计奖申报、法律文书、医疗报告等垂直场景，开发专用 AI 代理编排工具，集成检索、评价、生成、检查等子代理，提供端到端自动化。",
+          "en": "Inspired by design-judge-skills (151 stars in 3 days), develop vertical-specific AI agent orchestration tools for scenarios like design award submission, legal documents, or medical reports, integrating sub-agents for retrieval, evaluation, generation, and checking to provide end-to-end automation."
         },
         "pmInsight": {
-          "zh": "假设：如果提供一个 SaaS 服务，在 CI/CD 管道中自动审查 AI 生成代码并给出修复建议，同时估算每次审查的 Token 成本，将吸引使用多种 AI 编码工具的企业团队。验证方式：与 3-5 个企业团队试点，测量代码缺陷率和审查时间。",
-          "en": "Hypothesis: A SaaS service that auto-reviews AI-generated code in CI/CD pipelines, suggests fixes, and estimates token costs will attract enterprise teams using multiple AI coding tools. Validation: Pilot with 3-5 enterprise teams, measuring defect rate and review time."
+          "zh": "验证假设：垂直场景用户（如设计师、律师）对 AI 代理有明确需求但通用工具难以满足，通过提供开箱即用的专业代理套件可快速切入。建议与行业专家合作定义工作流。",
+          "en": "Hypothesis: Users in vertical scenarios (e.g., designers, lawyers) have clear needs for AI agents but generic tools fall short. An out-of-the-box professional agent suite could quickly penetrate. Collaborate with domain experts to define workflows."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Code Quality GA",
-            "url": "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available"
+            "label": "design-judge-skills",
+            "url": "https://github.com/SeanJ1ang/design-judge-skills"
           },
           {
-            "label": "code-review-graph",
-            "url": "https://github.com/tirth8205/code-review-graph"
+            "label": "agency-agents",
+            "url": "https://github.com/msitarzewski/agency-agents"
           }
         ]
       }
@@ -223,26 +231,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套面向AI编码代理的工程模式与CLI工具集，帮助开发者设计能够提示和编排代理的系统，包含审计、初始化、成本估算等实用工具。",
+          "zh": "一套面向AI编程代理的工程化工具和模式，帮助开发者设计系统来提示和编排多个代理协同工作，包含审计、初始化、成本估算等实用CLI工具。",
           "en": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
         },
-        "totalStars": 8859,
+        "totalStars": 8869,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套面向AI编码代理的工程模式与CLI工具集，帮助开发者设计能够提示和编排代理的系统，包含审计、初始化、成本估算等实用工具。",
+          "zh": "一套面向AI编程代理的工程化工具和模式，帮助开发者设计系统来提示和编排多个代理协同工作，包含审计、初始化、成本估算等实用CLI工具。",
           "en": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
         },
         "todayHighlight": {
-          "zh": "创建仅约1个月，凭借「代理工程」新概念在开发者社区快速传播，今日新增约200星，总星数近9000。",
-          "en": "创建仅约 1 个月便已积累 8,859 stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
+          "zh": "创建仅约1个月即获得近9k星，随着AI代理编程生态升温，开发者对编排多个代理的工程化方案需求增长，今日新增星数未披露但持续在榜。",
+          "en": "创建仅约 1 个月便已积累 8,869 stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,859 stars、1,192 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,859 stars and 1,192 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,869 stars、1,193 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,869 stars and 1,193 forks，topics: agentic-ai, ai-agents, ai-coding, anthropic, automation, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI编码代理从单点工具向系统化工程模式演进的趋势，以及开发者对代理编排标准化工具的需求。",
+          "zh": "观察AI编程从单代理向多代理协作演进时，工程化工具链的标准化机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,18 +271,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的终端AI编码代理，通过智能模型路由为每个任务选择最合适的AI模型，可将成本降低10倍，支持Claude、GPT、Gemini、DeepSeek等多种模型。",
+          "zh": "开源终端AI编程代理，通过智能模型路由为每个任务选择最合适的AI模型，支持Claude、GPT、Gemini、DeepSeek等多种模型，成本降低10倍。",
           "en": "Open-source AI coding agent for the terminal. Claude Code-grade accuracy with smart model routing — uses the right AI model for each task, cutting costs 10x. Supports Claude, GPT, Gemini, DeepSeek & more."
         },
         "totalStars": 174,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "开源的终端AI编码代理，通过智能模型路由为每个任务选择最合适的AI模型，可将成本降低10倍，支持Claude、GPT、Gemini、DeepSeek等多种模型。",
+          "zh": "开源终端AI编程代理，通过智能模型路由为每个任务选择最合适的AI模型，支持Claude、GPT、Gemini、DeepSeek等多种模型，成本降低10倍。",
           "en": "Open-source AI coding agent for the terminal. Claude Code-grade accuracy with smart model routing — uses the right AI model for each task, cutting costs 10x. Supports Claude, GPT, Gemini, DeepSeek & more."
         },
         "todayHighlight": {
-          "zh": "创建仅数日即进入上升榜，凭借「10倍降本」叙事吸引早期采用者，今日新增约50星，总星数174。",
+          "zh": "刚创建4天即进入上升榜，凭借「智能路由降本10倍」的差异化叙事快速吸引关注，今日新增星数未披露但增速显著。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -282,7 +290,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 174 stars and 46 forks，topics: agentic-ai, ai, ai-agents, ai-coding, ai-model, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI编码代理领域「模型路由」策略的差异化竞争，以及开源项目如何通过成本优势快速获取用户。",
+          "zh": "关注AI编程工具中模型路由策略对成本和体验的差异化价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -303,26 +311,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向设计奖全流程的AI代理技能集，支持获奖案例检索、设计评价、奖项匹配、申报材料撰写与提交检查，帮助设计师高效备战各类设计奖项。",
+          "zh": "面向设计奖全流程的AI代理技能包，支持获奖案例检索、设计评价、奖项匹配、申报文案撰写和提交检查，帮助设计师高效准备设计奖项申报。",
           "en": "Evidence-driven Agent Skills for design award research, evaluation, award matching, entry writing, and submission readiness."
         },
-        "totalStars": 150,
+        "totalStars": 151,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向设计奖全流程的AI代理技能集，支持获奖案例检索、设计评价、奖项匹配、申报材料撰写与提交检查，帮助设计师高效备战各类设计奖项。",
+          "zh": "面向设计奖全流程的AI代理技能包，支持获奖案例检索、设计评价、奖项匹配、申报文案撰写和提交检查，帮助设计师高效准备设计奖项申报。",
           "en": "Evidence-driven Agent Skills for design award research, evaluation, award matching, entry writing, and submission readiness."
         },
         "todayHighlight": {
-          "zh": "创建仅数日即进入上升榜，精准切入设计奖申报这一垂直场景，今日新增约30星，总星数150。",
+          "zh": "创建仅3天即进入上升榜，精准切入设计奖申报这一垂直场景，在设计师社区快速传播，今日新增星数未披露但增速较快。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 150 stars、11 forks，topics: agent-skills, claude-code, codex, design-awards, design-evaluation，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 150 stars and 11 forks，topics: agent-skills, claude-code, codex, design-awards, design-evaluation, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 151 stars、11 forks，topics: agent-skills, claude-code, codex, design-awards, design-evaluation，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 151 stars and 11 forks，topics: agent-skills, claude-code, codex, design-awards, design-evaluation, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI代理技能（Agent Skills）在垂直专业领域的落地潜力，以及「证据驱动」设计评价方法的产品化机会。",
+          "zh": "观察AI代理在垂直专业领域（如设计奖申报）的落地机会和技能化产品形态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -343,26 +351,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "本地优先的代码智能图谱工具，为AI编码工具构建持久化的代码库地图，仅读取相关代码，经基准测试可大幅减少代码审查和大型仓库工作流中的上下文消耗。",
+          "zh": "本地优先的代码知识图谱工具，为AI编程工具构建持久化的代码库地图，让AI只读取相关代码，在代码审查和大型仓库场景中显著减少上下文消耗。",
           "en": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows."
         },
-        "totalStars": 23494,
+        "totalStars": 23569,
         "language": "Python",
         "dailyStars": 1833,
         "chineseIntro": {
-          "zh": "本地优先的代码智能图谱工具，为AI编码工具构建持久化的代码库地图，仅读取相关代码，经基准测试可大幅减少代码审查和大型仓库工作流中的上下文消耗。",
+          "zh": "本地优先的代码知识图谱工具，为AI编程工具构建持久化的代码库地图，让AI只读取相关代码，在代码审查和大型仓库场景中显著减少上下文消耗。",
           "en": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows."
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第一，单日新增1833星，总星数超2.3万，凭借「节省Token」的硬核价值在AI编码社区持续升温。",
+          "zh": "今日新增1833星，总星数达2.3万，位居GitHub全球趋势榜第一，多语言社区同步传播，开发者反馈在代码审查中token节省效果显著。",
           "en": "登上 GitHub Trending 日榜第 1 位, RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成, 今日新增 1,833 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,494 stars、2,287 forks，topics: ai-coding, claude, claude-code, code-review, graphrag，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,494 stars and 2,287 forks，topics: ai-coding, claude, claude-code, code-review, graphrag, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,569 stars、2,289 forks，topics: ai-coding, claude, claude-code, code-review, graphrag，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,569 stars and 2,289 forks，topics: ai-coding, claude, claude-code, code-review, graphrag, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI编码工具中「上下文管理」这一核心痛点，以及本地优先架构在隐私和效率上的产品优势。",
+          "zh": "关注AI编程中上下文优化工具的产品化路径，以及知识图谱在代码理解中的实际价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +391,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "免费开源的AI网关，一个端点接入268+提供商（含50+免费）、500+模型，支持Claude Code、Codex、Cursor等主流工具，具备配额感知自动回退和Token压缩功能。",
+          "zh": "免费开源的AI网关，一个端点接入268+家供应商（其中50+免费）、500+模型，支持Claude Code、Codex、Cursor等工具，具备智能自动回退和token压缩功能。",
           "en": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Claude, GPT, Gemini, Kimi K3, GLM, DeepSeek. Works with Claude Code, Codex, Cursor, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, multimodal, Desktop/PWA. Built by 500+ contributors."
         },
-        "totalStars": 22091,
+        "totalStars": 22145,
         "language": "TypeScript",
         "dailyStars": 1107,
         "chineseIntro": {
-          "zh": "免费开源的AI网关，一个端点接入268+提供商（含50+免费）、500+模型，支持Claude Code、Codex、Cursor等主流工具，具备配额感知自动回退和Token压缩功能。",
+          "zh": "免费开源的AI网关，一个端点接入268+家供应商（其中50+免费）、500+模型，支持Claude Code、Codex、Cursor等工具，具备智能自动回退和token压缩功能。",
           "en": "Never stop coding. Free MIT AI gateway: one endpoint, 268+ providers (50+ free), 500+ models — Claude, GPT, Gemini, Kimi K3, GLM, DeepSeek. Works with Claude Code, Codex, Cursor, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, multimodal, Desktop/PWA. Built by 500+ contributors."
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第三，单日新增1107星，总星数超2.2万，凭借「免费+多模型」的强吸引力在开发者中快速传播。",
+          "zh": "今日新增1107星，总星数2.2万，位居全球趋势榜第三，由500+贡献者共建，凭借「免费+多模型+自动回退」的强叙事持续吸引开发者。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,107 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,091 stars、2,984 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,091 stars and 2,984 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,145 stars、2,993 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,145 stars and 2,993 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI网关作为基础设施层的产品形态，以及「免费增值」模式在AI工具链中的获客效果。",
+          "zh": "观察AI网关作为基础设施层的产品形态，以及免费策略如何驱动社区增长。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +431,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套完整的AI代理集合，涵盖前端开发、社区运营、创意注入、质量检查等各类专业角色，每个代理都具备个性、流程和可交付成果。",
+          "zh": "一个完整的AI代理机构，包含从前端开发到社区运营等各类专业代理，每个代理都有独特个性和可交付成果，可直接集成到工作流中。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
-        "totalStars": 134845,
+        "totalStars": 134874,
         "language": "Shell",
         "dailyStars": 862,
         "chineseIntro": {
-          "zh": "一套完整的AI代理集合，涵盖前端开发、社区运营、创意注入、质量检查等各类专业角色，每个代理都具备个性、流程和可交付成果。",
+          "zh": "一个完整的AI代理机构，包含从前端开发到社区运营等各类专业代理，每个代理都有独特个性和可交付成果，可直接集成到工作流中。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第五，单日新增862星，总星数超13.4万，作为AI代理领域的标杆项目持续获得关注。",
+          "zh": "今日新增862星，总星数达13.5万，长期位居趋势榜，凭借「AI代理即服务」的创意概念和丰富代理种类持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 134k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 862 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 134,845 stars、21,982 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 134,845 stars and 21,982 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 134,874 stars、21,983 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 134,874 stars and 21,983 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI代理「角色化」和「专业化」的产品设计思路，以及如何通过代理组合满足多样化工作流需求。",
+          "zh": "观察AI代理作为可组合服务的产品模式，以及角色化代理对用户吸引力的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -463,26 +471,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "从零开始学习AI工程的系统教程，涵盖代理、计算机视觉、深度学习、生成式AI、LLM、强化学习等主题，包含500+课程和实战项目。",
+          "zh": "从零开始学习AI工程的系统教程，涵盖代理、计算机视觉、深度学习、生成式AI、LLM、MCP等20个阶段、503节课，适合自学和教学。",
           "en": "Learn it. Build it. Ship it for others."
         },
-        "totalStars": 40685,
+        "totalStars": 40725,
         "language": "Python",
         "dailyStars": 823,
         "chineseIntro": {
-          "zh": "从零开始学习AI工程的系统教程，涵盖代理、计算机视觉、深度学习、生成式AI、LLM、强化学习等主题，包含500+课程和实战项目。",
+          "zh": "从零开始学习AI工程的系统教程，涵盖代理、计算机视觉、深度学习、生成式AI、LLM、MCP等20个阶段、503节课，适合自学和教学。",
           "en": "Learn it. Build it. Ship it for others."
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第四，单日新增823星，总星数超4万，作为高质量学习资源在AI教育领域持续升温。",
+          "zh": "今日新增823星，总星数4万，位居趋势榜第四，作为系统性AI工程教程，在AI学习热潮中持续吸引初学者和进阶开发者。",
           "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 4 个月便已积累 40k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 823 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 40,685 stars、6,746 forks，topics: agents, ai, ai-agents, ai-engineering, computer-vision，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 40,685 stars and 6,746 forks，topics: agents, ai, ai-agents, ai-engineering, computer-vision, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 40,725 stars、6,752 forks，topics: agents, ai, ai-agents, ai-engineering, computer-vision，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 40,725 stars and 6,752 forks，topics: agents, ai, ai-agents, ai-engineering, computer-vision, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI工程化教育的市场需求，以及「从零开始」系列教程如何构建品牌认知和用户粘性。",
+          "zh": "关注AI教育产品的结构化课程设计，以及从零到一的学习路径对用户粘性的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -503,26 +511,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源AI语音工作室，支持语音克隆、语音生成、听写输入，可在本地运行，实现完整的语音输入输出栈。",
+          "zh": "开源AI语音工作室，支持语音克隆、语音生成、听写输入，可本地运行，让用户拥有自己的语音AI，兼容CUDA和MLX。",
           "en": "Star jamiepine / voicebox The open-source AI voice studio. Clone, dictate, create."
         },
-        "totalStars": 44311,
+        "totalStars": 44349,
         "language": "TypeScript",
         "dailyStars": 821,
         "chineseIntro": {
-          "zh": "开源AI语音工作室，支持语音克隆、语音生成、听写输入，可在本地运行，实现完整的语音输入输出栈。",
+          "zh": "开源AI语音工作室，支持语音克隆、语音生成、听写输入，可本地运行，让用户拥有自己的语音AI，兼容CUDA和MLX。",
           "en": "Star jamiepine / voicebox The open-source AI voice studio. Clone, dictate, create."
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第七，单日新增821星，总星数超4.4万，凭借「本地语音AI」的隐私优势持续吸引用户。",
+          "zh": "今日新增821星，总星数4.4万，位居趋势榜第七，语音克隆和本地运行的双重卖点在创作者和隐私敏感用户中持续升温。",
           "en": "登上 GitHub Trending 日榜第 7 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 821 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,311 stars、5,384 forks，topics: ai, cuda, mlx, qwen3-tts, qwen3-tts-ui，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,311 stars and 5,384 forks，topics: ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,349 stars、5,398 forks，topics: ai, cuda, mlx, qwen3-tts, qwen3-tts-ui，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,349 stars and 5,398 forks，topics: ai, cuda, mlx, qwen3-tts, qwen3-tts-ui, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI语音工具从云端向本地迁移的趋势，以及「语音克隆」在个性化场景中的产品机会。",
+          "zh": "观察AI语音工具从云端到本地的迁移趋势，以及语音克隆在个人化场景中的产品机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -543,26 +551,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为AI编码代理打造的本地优先网络搜索工具，支持搜索、抓取、爬取和研究，通过MCP协议集成，无需API密钥，零成本使用。",
+          "zh": "为AI编程代理打造的本地优先网络搜索工具，支持搜索、抓取、爬取和研究，通过MCP协议集成，无需API密钥和云服务，完全免费。",
           "en": "Star KnockOutEZ / wigolo The go-to web for your AI coding agent — local-first search, fetch, crawl &amp; research over MCP. No API keys, no cloud, $0/query. Public beta."
         },
-        "totalStars": 2635,
+        "totalStars": 2661,
         "language": "TypeScript",
         "dailyStars": 689,
         "chineseIntro": {
-          "zh": "为AI编码代理打造的本地优先网络搜索工具，支持搜索、抓取、爬取和研究，通过MCP协议集成，无需API密钥，零成本使用。",
+          "zh": "为AI编程代理打造的本地优先网络搜索工具，支持搜索、抓取、爬取和研究，通过MCP协议集成，无需API密钥和云服务，完全免费。",
           "en": "Star KnockOutEZ / wigolo The go-to web for your AI coding agent — local-first search, fetch, crawl &amp; research over MCP. No API keys, no cloud, $0/query. Public beta."
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第十四，单日新增689星，总星数超2600，凭借「零成本、本地优先」的差异化定位在AI代理工具链中快速崛起。",
+          "zh": "今日新增689星，总星数2661，位居趋势榜第十四，凭借「本地优先、零成本」的差异化定位在AI代理工具生态中快速崛起。",
           "en": "登上 GitHub Trending 日榜第 14 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 689 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,635 stars、155 forks，topics: agent, ai, ai-agent, claude, cli，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,635 stars and 155 forks，topics: agent, ai, ai-agent, claude, cli, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,661 stars、160 forks，topics: agent, ai, ai-agent, claude, cli，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,661 stars and 160 forks，topics: agent, ai, ai-agent, claude, cli, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI代理对网络数据获取的需求，以及「本地优先」架构在成本和隐私上的产品优势。",
+          "zh": "关注AI代理工具链中本地化数据获取组件的产品机会，以及免费策略对早期用户获取的推动。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -583,26 +591,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "用Rust编写的终端AI编码代理，号称「最智能的代理工具」，支持多种LLM，提供TUI界面，专注于代码生成和辅助。",
+          "zh": "用Rust编写的终端AI编程代理，号称最智能的代码代理工具，支持多种LLM和MCP协议，提供TUI界面，跨平台运行。",
           "en": "Star 1jehuang / jcode The most intelligent agent harness for code"
         },
-        "totalStars": 9751,
+        "totalStars": 9777,
         "language": "Rust",
         "dailyStars": 568,
         "chineseIntro": {
-          "zh": "用Rust编写的终端AI编码代理，号称「最智能的代理工具」，支持多种LLM，提供TUI界面，专注于代码生成和辅助。",
+          "zh": "用Rust编写的终端AI编程代理，号称最智能的代码代理工具，支持多种LLM和MCP协议，提供TUI界面，跨平台运行。",
           "en": "Star 1jehuang / jcode The most intelligent agent harness for code"
         },
         "todayHighlight": {
-          "zh": "今日GitHub全球趋势榜第二，单日新增568星，总星数近1万，凭借Rust高性能和「智能代理」定位在开发者中持续升温。",
+          "zh": "今日新增568星，总星数9777，位居全球趋势榜第二，凭借Rust高性能和「智能代理」定位在AI编程工具竞争中持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 568 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,751 stars、1,087 forks，topics: ai, ai-agent, ai-coding-agent, claude, cli，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,751 stars and 1,087 forks，topics: ai, ai-agent, ai-coding-agent, claude, cli, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,777 stars、1,090 forks，topics: ai, ai-agent, ai-coding-agent, claude, cli，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,777 stars and 1,090 forks，topics: ai, ai-agent, ai-coding-agent, claude, cli, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注AI编码代理的性能竞争，以及Rust语言在工具链产品中的技术选型优势。",
+          "zh": "观察Rust在AI编程工具中的应用趋势，以及终端TUI界面在开发者工具中的用户体验优势。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -629,19 +637,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 分享了部署长时间运行 AI 模型的安全经验，指出新风险并改进了防护措施。这对产品意味着需要更关注长期任务的可靠性。",
+          "zh": "OpenAI 分享了部署长时间运行 AI 模型的安全经验，揭示了新的风险和改进的防护措施。这对产品意味着需要更严格的监控和迭代部署策略。",
           "en": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
         },
         "chineseIntro": {
-          "zh": "OpenAI 分享了部署长时间运行 AI 模型的安全经验，指出新风险并改进了防护措施。这对产品意味着需要更关注长期任务的可靠性。",
+          "zh": "OpenAI 分享了部署长时间运行 AI 模型的安全经验，揭示了新的风险和改进的防护措施。这对产品意味着需要更严格的监控和迭代部署策略。",
           "en": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
         },
         "todayHighlight": {
-          "zh": "首次系统总结长周期模型的安全挑战，为行业提供参考。",
-          "en": "首次系统总结长周期模型的安全挑战，为行业提供参考。"
+          "zh": "OpenAI 首次系统总结长周期模型的安全挑战，可能推动行业安全标准升级。",
+          "en": "OpenAI 首次系统总结长周期模型的安全挑战，可能推动行业安全标准升级。"
         },
         "pmInsight": {
-          "zh": "评估你的 AI 产品是否涉及长周期任务，并考虑引入类似的安全监控机制。",
+          "zh": "产品经理应评估现有模型的长周期运行风险，并建立持续监控和回滚机制。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -666,22 +674,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "NVIDIA 发布 4B 参数的世界模型 Cosmos 3 Edge，可在边缘设备上实时推理，支持机器人控制。",
+          "zh": "NVIDIA 在 Hugging Face 上发布 Cosmos 3 Edge，一个 4B 参数的世界模型，专为边缘设备上的机器人和视觉 AI 设计。产品可借此在边缘实现实时推理和动作生成。",
           "en": "Introducing Cosmos 3 Edge"
         },
         "chineseIntro": {
-          "zh": "NVIDIA 发布 4B 参数的世界模型 Cosmos 3 Edge，可在边缘设备上实时推理，支持机器人控制。",
+          "zh": "NVIDIA 在 Hugging Face 上发布 Cosmos 3 Edge，一个 4B 参数的世界模型，专为边缘设备上的机器人和视觉 AI 设计。产品可借此在边缘实现实时推理和动作生成。",
           "en": "Introducing Cosmos 3 Edge"
         },
         "todayHighlight": {
-          "zh": "边缘 AI 模型参数规模与实时性取得突破，加速物理 AI 落地。",
-          "en": "边缘 AI 模型参数规模与实时性取得突破，加速物理 AI 落地。"
+          "zh": "边缘 AI 模型参数规模与性能平衡取得突破，加速物理 AI 落地。",
+          "en": "边缘 AI 模型参数规模与性能平衡取得突破，加速物理 AI 落地。"
         },
         "pmInsight": {
-          "zh": "考虑将 Cosmos 3 Edge 集成到边缘机器人或视觉 AI 产品中，以降低延迟和成本。",
+          "zh": "产品经理可探索将 Cosmos 3 Edge 集成到机器人或边缘视觉产品中，以降低延迟和成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Hugging Face",
@@ -703,19 +711,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Code Quality 正式上线，结合 CodeQL 和 AI 检测代码质量，并提供自动修复建议。",
+          "zh": "GitHub Code Quality 正式发布，结合 CodeQL 和 AI 检测代码可维护性与可靠性问题，并提供自动修复建议。这帮助团队在 AI 加速编码时保证代码质量。",
           "en": "GitHub Code Quality is now generally available on GitHub Enterprise Cloud and GitHub Team. It solves an emerging challenge for software development: AI accelerates code output, and Code Quality helps&#8230; The post GitHub Code Quality is now generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Code Quality 正式上线，结合 CodeQL 和 AI 检测代码质量，并提供自动修复建议。",
+          "zh": "GitHub Code Quality 正式发布，结合 CodeQL 和 AI 检测代码可维护性与可靠性问题，并提供自动修复建议。这帮助团队在 AI 加速编码时保证代码质量。",
           "en": "GitHub Code Quality is now generally available on GitHub Enterprise Cloud and GitHub Team. It solves an emerging challenge for software development: AI accelerates code output, and Code Quality helps&#8230; The post GitHub Code Quality is now generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "AI 加速代码产出后，质量保障工具成为刚需，GitHub 率先推出集成方案。",
-          "en": "AI 加速代码产出后，质量保障工具成为刚需，GitHub 率先推出集成方案。"
+          "zh": "GitHub 将 AI 代码质量检测作为独立产品推出，可能改变开发工作流中的质量保障方式。",
+          "en": "GitHub 将 AI 代码质量检测作为独立产品推出，可能改变开发工作流中的质量保障方式。"
         },
         "pmInsight": {
-          "zh": "在开发流程中启用 Code Quality，可减少 AI 生成代码的维护成本。",
+          "zh": "产品经理可考虑将 Code Quality 集成到 CI/CD 流程中，以提升代码质量和团队效率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -740,19 +748,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "社区讨论 OpenAI 是否还会发布开源模型，自 gpt-oss 发布已 350 天。",
+          "zh": "社区讨论 OpenAI 发布 gpt-oss 已 350 天，质疑其是否会再次开源模型权重。这反映了开源社区对 OpenAI 开放策略的担忧。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1v258lo/openai_released_gptoss_350_days_ago_will_we_ever/\"> <img src=\"https://preview.redd.it/g19479ksxgeh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=035b69fccee52d67cb517d594f9872fe051eeaf5\" alt=\"OpenAI released gpt-oss 350 days ago. Will we ever see another open-weight model from them?\" title=\"OpenAI released gpt-oss 350 days ago. Will we"
         },
         "chineseIntro": {
-          "zh": "社区讨论 OpenAI 是否还会发布开源模型，自 gpt-oss 发布已 350 天。",
+          "zh": "社区讨论 OpenAI 发布 gpt-oss 已 350 天，质疑其是否会再次开源模型权重。这反映了开源社区对 OpenAI 开放策略的担忧。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1v258lo/openai_released_gptoss_350_days_ago_will_we_ever/\"> <img src=\"https://preview.redd.it/g19479ksxgeh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=035b69fccee52d67cb517d594f9872fe051eeaf5\" alt=\"OpenAI released gpt-oss 350 days ago. Will we ever see another open-weight model from them?\" title=\"OpenAI released gpt-oss 350 days ago. Will we"
         },
         "todayHighlight": {
-          "zh": "反映开源社区对 OpenAI 开放策略的担忧，可能影响开发者生态。",
-          "en": "反映开源社区对 OpenAI 开放策略的担忧，可能影响开发者生态。"
+          "zh": "OpenAI 开源节奏放缓引发社区焦虑，可能影响开发者生态和信任。",
+          "en": "OpenAI 开源节奏放缓引发社区焦虑，可能影响开发者生态和信任。"
         },
         "pmInsight": {
-          "zh": "关注 OpenAI 后续开源动态，若转向闭源需调整依赖开源模型的策略。",
+          "zh": "产品经理应关注开源模型可用性变化，并考虑多模型供应商策略以降低风险。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -777,22 +785,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "微软与 AMD 合作扩展 Azure AI 和 HPC 基础设施，增加 AMD 最新 AI 芯片。",
+          "zh": "微软宣布与 AMD 合作扩展 Azure AI 和 HPC 基础设施，以应对 AI 工作负载的多样化需求。这将增强 Azure 的算力供给和性价比。",
           "en": "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing... The post Microsoft expands Azure"
         },
         "chineseIntro": {
-          "zh": "微软与 AMD 合作扩展 Azure AI 和 HPC 基础设施，增加 AMD 最新 AI 芯片。",
+          "zh": "微软宣布与 AMD 合作扩展 Azure AI 和 HPC 基础设施，以应对 AI 工作负载的多样化需求。这将增强 Azure 的算力供给和性价比。",
           "en": "AI workloads are scaling faster than any single infrastructure approach can support — with more models, new agent-driven workloads and surging compute demand driving the need for greater specialization across the stack. To meet this need, Microsoft continues to evolve Azure’s infrastructure, including expanding its AI fleet with AMD’s most advanced AI and high-performance computing... The post Microsoft expands Azure"
         },
         "todayHighlight": {
-          "zh": "云巨头加速芯片多元化，降低对单一供应商依赖，可能影响定价。",
-          "en": "云巨头加速芯片多元化，降低对单一供应商依赖，可能影响定价。"
+          "zh": "微软引入 AMD 作为 AI 算力新伙伴，可能打破 NVIDIA 的垄断格局。",
+          "en": "微软引入 AMD 作为 AI 算力新伙伴，可能打破 NVIDIA 的垄断格局。"
         },
         "pmInsight": {
-          "zh": "评估 Azure 上 AMD 实例的性价比，用于训练或推理工作负载。",
+          "zh": "产品经理可评估 Azure 上 AMD 实例的成本效益，优化模型推理和训练预算。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "Microsoft AI",
@@ -802,38 +810,38 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "arXiv AI: GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis",
-          "en": "arXiv AI: GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis"
+          "zh": "Hacker News LLM: Ramp opens AI model router, says it cut internal LLM costs 30%",
+          "en": "Hacker News LLM: Ramp opens AI model router, says it cut internal LLM costs 30%"
         },
         "category": {
           "zh": "公司动态",
           "en": "Company update"
         },
         "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
+          "zh": "API/定价",
+          "en": "API/定价"
         },
         "summary": {
-          "zh": "新研究提出 GraphDx 框架，用多智能体结合知识图谱实现成本敏感的序贯诊断。",
-          "en": "arXiv:2607.15280v1 Announce Type: new Abstract: Sequential diagnosis requires balancing diagnostic accuracy against resource costs through iterative information gathering. Existing Large Language Model (LLM) approaches exhibit a critical knowledge-reasoning gap: despite encoding extensive medical knowledge, they struggle to reason systematically under cost constraints, often resorting to excessive testing. We propose"
+          "zh": "Ramp 开源其 AI 模型路由器，通过智能路由将内部 LLM 成本降低 30%。该工具提供单网关管理和按请求成本追踪。",
+          "en": "Article URL: https://runtimewire.com/article/ramp-router-ai-model-gateway-llm-costs Comments URL: https://news.ycombinator.com/item?id=48984923 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "新研究提出 GraphDx 框架，用多智能体结合知识图谱实现成本敏感的序贯诊断。",
-          "en": "arXiv:2607.15280v1 Announce Type: new Abstract: Sequential diagnosis requires balancing diagnostic accuracy against resource costs through iterative information gathering. Existing Large Language Model (LLM) approaches exhibit a critical knowledge-reasoning gap: despite encoding extensive medical knowledge, they struggle to reason systematically under cost constraints, often resorting to excessive testing. We propose"
+          "zh": "Ramp 开源其 AI 模型路由器，通过智能路由将内部 LLM 成本降低 30%。该工具提供单网关管理和按请求成本追踪。",
+          "en": "Article URL: https://runtimewire.com/article/ramp-router-ai-model-gateway-llm-costs Comments URL: https://news.ycombinator.com/item?id=48984923 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "展示 AI 在医疗诊断中平衡准确性与成本的新思路。",
-          "en": "展示 AI 在医疗诊断中平衡准确性与成本的新思路。"
+          "zh": "Ramp 将内部成本优化工具产品化，可能推动企业级 LLM 成本管理标准化。",
+          "en": "Ramp 将内部成本优化工具产品化，可能推动企业级 LLM 成本管理标准化。"
         },
         "pmInsight": {
-          "zh": "探索将类似成本感知多智能体框架用于你的诊断或决策产品。",
+          "zh": "产品经理可参考 Ramp 的路由策略，为多模型调用场景设计成本优化方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "arXiv AI",
-            "url": "https://arxiv.org/abs/2607.15280"
+            "label": "Hacker News LLM",
+            "url": "https://runtimewire.com/article/ramp-router-ai-model-gateway-llm-costs"
           }
         ]
       }
