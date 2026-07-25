@@ -52,8 +52,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Built from GitHub trends and company feeds with cross-source judgment and PM-ready implications."
     },
     "keyTakeaway": {
-      "zh": "今日主线：作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注；同时 GitHub Changelog 等平台继续推进产品与企业落地，Agent 基础设施与平台能力竞争同步升温。",
-      "en": "Today's through-line: 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注; platform players like GitHub Changelog keep pushing product and enterprise adoption as agent infrastructure competition heats up."
+      "zh": "今日主线：作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注；同时 Anthropic 等平台继续推进产品与企业落地，Agent 基础设施与平台能力竞争同步升温。",
+      "en": "Today's through-line: 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注; platform players like Anthropic keep pushing product and enterprise adoption as agent infrastructure competition heats up."
     },
     "signals": [
       {
@@ -66,7 +66,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "事实：finna/Finn-loop 今日新增 — 星，总 star 186。判断：作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注",
+          "zh": "事实：finna/Finn-loop 今日新增 — 星，总 star 187。判断：作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注",
           "en": "Fact: finna/Finn-loop gained — stars today. Read: 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注"
         },
         "pmInsight": {
@@ -83,16 +83,16 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "GitHub Changelog 释放平台能力信号",
-          "en": "GitHub Changelog signals platform expansion"
+          "zh": "Anthropic 释放平台能力信号",
+          "en": "Anthropic signals platform expansion"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "事实：GitHub Changelog 发布「Claude Opus 5 is now available in GitHub Copilot」。判断：API/定价方向更新，可能重塑用户对 AI 产品的默认预期。",
-          "en": "Fact: GitHub Changelog published \"Claude Opus 5 is now available in GitHub Copilot\". Read: a API / pricing move that may reset user expectations."
+          "zh": "事实：Anthropic 发布「Introducing Claude Opus 5」。判断：API/定价方向更新，可能重塑用户对 AI 产品的默认预期。",
+          "en": "Fact: Anthropic published \"Introducing Claude Opus 5\". Read: a API / pricing move that may reset user expectations."
         },
         "pmInsight": {
           "zh": "评估成本结构、配额策略是否会重塑你的产品定价与毛利模型。",
@@ -101,8 +101,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
+            "label": "Anthropic",
+            "url": "https://www.anthropic.com/news/claude-opus-5"
           }
         ]
       },
@@ -177,7 +177,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "The Finn-loop: a 3-skill AI software factory for Claude Code — spec, build, review. Humans merge."
         },
-        "totalStars": 186,
+        "totalStars": 187,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
@@ -189,8 +189,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 186 stars、29 forks，topics: agentic-workflows, ai-agents, claude-code, github, linear，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 186 stars and 29 forks，topics: agentic-workflows, ai-agents, claude-code, github, linear, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 187 stars、29 forks，topics: agentic-workflows, ai-agents, claude-code, github, linear，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 187 stars and 29 forks，topics: agentic-workflows, ai-agents, claude-code, github, linear, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -297,7 +297,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
           "en": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface"
         },
-        "totalStars": 73487,
+        "totalStars": 73518,
         "language": "TypeScript",
         "dailyStars": 2184,
         "chineseIntro": {
@@ -309,8 +309,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 73k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,184 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 73,487 stars、11,025 forks，topics: agent, ai, dashboard, geopolitics, mcp，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 73,487 stars and 11,025 forks，topics: agent, ai, dashboard, geopolitics, mcp, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 73,518 stars、11,025 forks，topics: agent, ai, dashboard, geopolitics, mcp，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 73,518 stars and 11,025 forks，topics: agent, ai, dashboard, geopolitics, mcp, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -337,7 +337,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors"
         },
-        "totalStars": 29098,
+        "totalStars": 29141,
         "language": "TypeScript",
         "dailyStars": 1841,
         "chineseIntro": {
@@ -349,8 +349,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 15 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,841 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,098 stars、3,804 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,098 stars and 3,804 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,141 stars、3,806 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,141 stars and 3,806 forks，topics: a2a, ai-agents, ai-gateway, anthropic, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -377,7 +377,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "Star citrolabs / ego-lite The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config."
         },
-        "totalStars": 2778,
+        "totalStars": 2803,
         "language": "JavaScript",
         "dailyStars": 880,
         "chineseIntro": {
@@ -389,8 +389,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 880 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,778 stars、134 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,778 stars and 134 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,803 stars、135 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,803 stars and 135 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -417,7 +417,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
         },
-        "totalStars": 70174,
+        "totalStars": 70188,
         "language": "Python",
         "dailyStars": 663,
         "chineseIntro": {
@@ -429,8 +429,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 70k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 663 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,174 stars、7,911 forks，topics: agent-skills, ai-agents, antigravity, automation, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,174 stars and 7,911 forks，topics: agent-skills, ai-agents, antigravity, automation, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,188 stars、7,911 forks，topics: agent-skills, ai-agents, antigravity, automation, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,188 stars and 7,911 forks，topics: agent-skills, ai-agents, antigravity, automation, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -457,7 +457,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Python 开源项目，Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
         },
-        "totalStars": 33552,
+        "totalStars": 33562,
         "language": "Python",
         "dailyStars": 499,
         "chineseIntro": {
@@ -469,8 +469,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 5 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 499 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,552 stars、5,682 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,552 stars and 5,682 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,562 stars、5,683 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,562 stars and 5,683 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -537,7 +537,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Jupyter Notebook 开源项目，Star Infrasys-AI / AISystem AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star Infrasys-AI / AISystem AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术"
         },
-        "totalStars": 17271,
+        "totalStars": 17272,
         "language": "Jupyter Notebook",
         "dailyStars": 15,
         "chineseIntro": {
@@ -549,8 +549,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub 中文 Trending 日榜第 3 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 15 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,271 stars、2,423 forks，topics: ai, aiinfra, aisys, dlsys, mlsys，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,271 stars and 2,423 forks，topics: ai, aiinfra, aisys, dlsys, mlsys, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,272 stars、2,423 forks，topics: ai, aiinfra, aisys, dlsys, mlsys，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,272 stars and 2,423 forks，topics: ai, aiinfra, aisys, dlsys, mlsys, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -566,6 +566,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       }
     ],
     "companyUpdates": [
+      {
+        "title": {
+          "zh": "Anthropic: Introducing Claude Opus 5",
+          "en": "Anthropic: Introducing Claude Opus 5"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "API/定价",
+          "en": "API / pricing"
+        },
+        "summary": {
+          "zh": "Anthropic 发布「Introducing Claude Opus 5」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "ProductAnnouncementsIntroducing Claude Opus 5Jul 24, 2026Claude Opus 5 is available today. It`s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA, Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks.Opus 5 is designed to be used every day:"
+        },
+        "chineseIntro": {
+          "zh": "Anthropic 发布「Introducing Claude Opus 5」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "ProductAnnouncementsIntroducing Claude Opus 5Jul 24, 2026Claude Opus 5 is available today. It`s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA, Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks.Opus 5 is designed to be used every day:"
+        },
+        "todayHighlight": {
+          "zh": "发布于 Fri, 24 Jul 2026 04:00:00 GMT；属于「API/定价」类型更新，反映 Anthropic 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Fri, 24 Jul 2026 04:00:00 GMT；属于「API/定价」类型更新，反映 Anthropic 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "评估成本结构、配额策略是否会重塑你的产品定价与毛利模型。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Anthropic",
+            "url": "https://www.anthropic.com/news/claude-opus-5"
+          }
+        ]
+      },
       {
         "title": {
           "zh": "GitHub Changelog: Claude Opus 5 is now available in GitHub Copilot",
@@ -748,43 +785,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Reddit LocalLLaMA",
             "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v5c3vt/more_than_20_companies_including_nvidia_meta/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Google AI: 3 Google updates from Galaxy Unpacked 2026",
-          "en": "Google AI: 3 Google updates from Galaxy Unpacked 2026"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "新模型/新能力",
-          "en": "Model / capability"
-        },
-        "summary": {
-          "zh": "Google AI 发布「3 Google updates from Galaxy Unpacked 2026」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Unpacked_hero.max-600x600.format-webp.webp\">We shared how Samsung users can boost productivity and get time back on new foldables, watches, and glasses coming soon."
-        },
-        "chineseIntro": {
-          "zh": "Google AI 发布「3 Google updates from Galaxy Unpacked 2026」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Unpacked_hero.max-600x600.format-webp.webp\">We shared how Samsung users can boost productivity and get time back on new foldables, watches, and glasses coming soon."
-        },
-        "todayHighlight": {
-          "zh": "发布于 Wed, 22 Jul 2026 13:00:00 +0000；属于「新模型/新能力」类型更新，反映 Google AI 在当前 AI 竞争中的重点投入方向。",
-          "en": "发布于 Wed, 22 Jul 2026 13:00:00 +0000；属于「新模型/新能力」类型更新，反映 Google AI 在当前 AI 竞争中的重点投入方向。"
-        },
-        "pmInsight": {
-          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Google AI",
-            "url": "https://blog.google/products-and-platforms/platforms/android/galaxy-unpacked-2026/"
           }
         ]
       }
