@@ -66,7 +66,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "事实：danilo-znamerovszkij/draw-your-font 今日新增 — 星，总 star 257。判断：面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制",
+          "zh": "事实：danilo-znamerovszkij/draw-your-font 今日新增 — 星，总 star 259。判断：面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制",
           "en": "Fact: danilo-znamerovszkij/draw-your-font gained — stars today. Read: 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制"
         },
         "pmInsight": {
@@ -177,7 +177,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "Turn a photo of your handwriting into a real font (TTF/WOFF/WOFF2) - free, open source, no uploads. Node CLI + Claude Code skill."
         },
-        "totalStars": 257,
+        "totalStars": 259,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
@@ -189,8 +189,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 257 stars、27 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 257 stars and 27 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 259 stars、27 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 259 stars and 27 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -246,31 +246,31 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "cporter202/coreclaw-api-directory",
-          "en": "cporter202/coreclaw-api-directory"
+          "zh": "makecindy/cindy",
+          "en": "makecindy/cindy"
         },
         "category": {
           "zh": "GitHub 项目",
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
-          "en": "An unofficial, categorized directory of 118 CoreClaw Worker APIs for web scraping, automation, lead generation, e-commerce, social data, and more."
+          "zh": "TypeScript 开源项目，Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
         },
-        "totalStars": 88,
-        "language": "Python",
+        "totalStars": 101,
+        "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
-          "en": "An unofficial, categorized directory of 118 CoreClaw Worker APIs for web scraping, automation, lead generation, e-commerce, social data, and more."
+          "zh": "TypeScript 开源项目，Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。，适合产品经理观察该方向的开发者采用与产品化路径。",
+          "en": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
         },
         "todayHighlight": {
-          "zh": "近 1 个月内新建，属于近期快速走红的 AI 新项目，MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散."
+          "zh": "近 1 个月内新建，属于近期快速走红的 AI 新项目，作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 88 stars、26 forks，topics: api-directory, api-list, automation, awesome-list, coreclaw，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 88 stars and 26 forks，topics: api-directory, api-list, automation, awesome-list, coreclaw, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 101 stars、16 forks，topics: agent, ai-agent, ai-assistant, android, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 101 stars and 16 forks，topics: agent, ai-agent, ai-assistant, android, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -280,7 +280,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "sources": [
           {
             "label": "GitHub Repository",
-            "url": "https://github.com/cporter202/coreclaw-api-directory"
+            "url": "https://github.com/makecindy/cindy"
           }
         ]
       },
@@ -297,7 +297,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "Star citrolabs / ego-lite The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config."
         },
-        "totalStars": 3767,
+        "totalStars": 3796,
         "language": "JavaScript",
         "dailyStars": 986,
         "chineseIntro": {
@@ -309,8 +309,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 986 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,767 stars、188 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,767 stars and 188 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,796 stars、189 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,796 stars and 189 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -337,7 +337,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
         },
-        "totalStars": 70703,
+        "totalStars": 70724,
         "language": "Python",
         "dailyStars": 577,
         "chineseIntro": {
@@ -349,8 +349,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 70k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 577 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,703 stars、7,949 forks，topics: agent-skills, ai-agents, antigravity, automation, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,703 stars and 7,949 forks，topics: agent-skills, ai-agents, antigravity, automation, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,724 stars、7,950 forks，topics: agent-skills, ai-agents, antigravity, automation, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,724 stars and 7,950 forks，topics: agent-skills, ai-agents, antigravity, automation, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -377,7 +377,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "面向模型微调与训练的开源工具，帮助团队用更小成本定制垂直领域模型，适合 AI 产品从通用能力走向行业化落地的阶段。",
           "en": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
         },
-        "totalStars": 13145,
+        "totalStars": 13170,
         "language": "Go",
         "dailyStars": 431,
         "chineseIntro": {
@@ -389,8 +389,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 2 个月便已积累 13k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 431 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,145 stars、894 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,145 stars and 894 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,170 stars、895 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,170 stars and 895 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -417,7 +417,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 233405,
+        "totalStars": 233416,
         "language": "JavaScript",
         "dailyStars": 377,
         "chineseIntro": {
@@ -429,8 +429,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 18 位, 总 star 数已达 233k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 377 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 233,405 stars、35,587 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 233,405 stars and 35,587 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 233,416 stars、35,592 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 233,416 stars and 35,592 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -457,7 +457,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
           "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
         },
-        "totalStars": 12297,
+        "totalStars": 12314,
         "language": "Swift",
         "dailyStars": 412,
         "chineseIntro": {
@@ -469,8 +469,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 12 位, 创建仅约 4 个月便已积累 12k+ stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 412 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,297 stars、897 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,297 stars and 897 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,314 stars、897 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,314 stars and 897 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -497,7 +497,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Python 开源项目，Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
         },
-        "totalStars": 33864,
+        "totalStars": 33877,
         "language": "Python",
         "dailyStars": 319,
         "chineseIntro": {
@@ -509,8 +509,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 7 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 319 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,864 stars、5,714 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,864 stars and 5,714 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,877 stars、5,718 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,877 stars and 5,718 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -537,7 +537,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Java 开源项目，Star OtterMind / Chat2DB 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star OtterMind / Chat2DB 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more."
         },
-        "totalStars": 26771,
+        "totalStars": 26790,
         "language": "Java",
         "dailyStars": 360,
         "chineseIntro": {
@@ -549,8 +549,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 16 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 360 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 26,771 stars、2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 26,771 stars and 2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 26,790 stars、2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 26,790 stars and 2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
