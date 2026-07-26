@@ -52,8 +52,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Built from GitHub trends and company feeds with cross-source judgment and PM-ready implications."
     },
     "keyTakeaway": {
-      "zh": "今日主线：面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制；同时 Hacker News LLM 等平台继续推进产品与企业落地，Agent 基础设施与平台能力竞争同步升温。",
-      "en": "Today's through-line: 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制; platform players like Hacker News LLM keep pushing product and enterprise adoption as agent infrastructure competition heats up."
+      "zh": "今日主线：面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制；同时 Hacker News AI 等平台继续推进产品与企业落地，Agent 基础设施与平台能力竞争同步升温。",
+      "en": "Today's through-line: 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制; platform players like Hacker News AI keep pushing product and enterprise adoption as agent infrastructure competition heats up."
     },
     "signals": [
       {
@@ -66,7 +66,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "事实：danilo-znamerovszkij/draw-your-font 今日新增 — 星，总 star 255。判断：面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制",
+          "zh": "事实：danilo-znamerovszkij/draw-your-font 今日新增 — 星，总 star 257。判断：面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制",
           "en": "Fact: danilo-znamerovszkij/draw-your-font gained — stars today. Read: 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制"
         },
         "pmInsight": {
@@ -83,16 +83,16 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Hacker News LLM 释放平台能力信号",
-          "en": "Hacker News LLM signals platform expansion"
+          "zh": "Hacker News AI 释放平台能力信号",
+          "en": "Hacker News AI signals platform expansion"
         },
         "category": {
           "zh": "跨源信号",
           "en": "Cross-source signal"
         },
         "summary": {
-          "zh": "事实：Hacker News LLM 发布「Introduction to LLM Inference」。判断：社区/研究信号方向更新，可能重塑用户对 AI 产品的默认预期。",
-          "en": "Fact: Hacker News LLM published \"Introduction to LLM Inference\". Read: a Community / research signal move that may reset user expectations."
+          "zh": "事实：Hacker News AI 发布「Microsoft launches new in-house AI models. Cuts costs up to 89% versus OpenAI」。判断：社区/研究信号方向更新，可能重塑用户对 AI 产品的默认预期。",
+          "en": "Fact: Hacker News AI published \"Microsoft launches new in-house AI models. Cuts costs up to 89% versus OpenAI\". Read: a Community / research signal move that may reset user expectations."
         },
         "pmInsight": {
           "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
@@ -101,8 +101,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hacker News LLM",
-            "url": "https://kraghavan.ca/llm-infrastructure/inference/2026/04/14/re-introduction-to-inference.html"
+            "label": "Hacker News AI",
+            "url": "https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai"
           }
         ]
       },
@@ -177,7 +177,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "Turn a photo of your handwriting into a real font (TTF/WOFF/WOFF2) - free, open source, no uploads. Node CLI + Claude Code skill."
         },
-        "totalStars": 255,
+        "totalStars": 257,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
@@ -189,8 +189,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 255 stars、26 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 255 stars and 26 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 257 stars、27 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 257 stars and 27 forks，topics: claude-code, claude-skill, font, handwriting, handwriting-font, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -297,7 +297,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "Star citrolabs / ego-lite The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config."
         },
-        "totalStars": 3746,
+        "totalStars": 3767,
         "language": "JavaScript",
         "dailyStars": 986,
         "chineseIntro": {
@@ -309,8 +309,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 986 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,746 stars、187 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,746 stars and 187 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,767 stars、188 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,767 stars and 188 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -337,7 +337,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "给 AI 编程助手注入「审美力」的 Claude Skill。安装后有助于避免 AI 生成千篇一律的界面，让前端代码更具设计品位——层级、留白、排版更到位。",
           "en": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
         },
-        "totalStars": 70687,
+        "totalStars": 70703,
         "language": "Python",
         "dailyStars": 577,
         "chineseIntro": {
@@ -349,8 +349,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 70k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 577 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,687 stars、7,947 forks，topics: agent-skills, ai-agents, antigravity, automation, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,687 stars and 7,947 forks，topics: agent-skills, ai-agents, antigravity, automation, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,703 stars、7,949 forks，topics: agent-skills, ai-agents, antigravity, automation, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,703 stars and 7,949 forks，topics: agent-skills, ai-agents, antigravity, automation, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -377,7 +377,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "面向模型微调与训练的开源工具，帮助团队用更小成本定制垂直领域模型，适合 AI 产品从通用能力走向行业化落地的阶段。",
           "en": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
         },
-        "totalStars": 13122,
+        "totalStars": 13145,
         "language": "Go",
         "dailyStars": 431,
         "chineseIntro": {
@@ -389,8 +389,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 2 个月便已积累 13k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 431 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,122 stars、892 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,122 stars and 892 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,145 stars、894 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,145 stars and 894 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -417,7 +417,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 233395,
+        "totalStars": 233405,
         "language": "JavaScript",
         "dailyStars": 377,
         "chineseIntro": {
@@ -429,8 +429,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 18 位, 总 star 数已达 233k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 377 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 233,395 stars、35,582 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 233,395 stars and 35,582 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 233,405 stars、35,587 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 233,405 stars and 35,587 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -457,7 +457,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "基于 MCP 协议的工具/server 项目，帮助 AI Agent 以标准方式连接外部数据源与工具，降低 Agent 产品集成第三方能力的工程成本。",
           "en": "Star palmier-io / palmier-pro macOS video editor built for AI"
         },
-        "totalStars": 12281,
+        "totalStars": 12297,
         "language": "Swift",
         "dailyStars": 412,
         "chineseIntro": {
@@ -469,8 +469,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 12 位, 创建仅约 4 个月便已积累 12k+ stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 412 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,281 stars、896 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,281 stars and 896 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,297 stars、897 forks，topics: ai-video, claude, macos, mcp, seedance2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,297 stars and 897 forks，topics: ai-video, claude, macos, mcp, seedance2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -497,7 +497,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Python 开源项目，Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
         },
-        "totalStars": 33858,
+        "totalStars": 33864,
         "language": "Python",
         "dailyStars": 319,
         "chineseIntro": {
@@ -509,8 +509,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 7 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 319 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,858 stars、5,714 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,858 stars and 5,714 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 33,864 stars、5,714 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 33,864 stars and 5,714 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -537,7 +537,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Java 开源项目，Star OtterMind / Chat2DB 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more，适合产品经理观察该方向的开发者采用与产品化路径。",
           "en": "Star OtterMind / Chat2DB 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more."
         },
-        "totalStars": 26750,
+        "totalStars": 26771,
         "language": "Java",
         "dailyStars": 360,
         "chineseIntro": {
@@ -549,8 +549,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "登上 GitHub Trending 日榜第 16 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 360 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 26,750 stars、2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 26,750 stars and 2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 26,771 stars、2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 26,771 stars and 2,919 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "可作为判断 AI 应用形态和开发者采用方向的早期信号，建议打开原项目看 README、示例场景和近期提交。",
@@ -568,6 +568,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "companyUpdates": [
       {
         "title": {
+          "zh": "Hacker News AI: Microsoft launches new in-house AI models. Cuts costs up to 89% versus OpenAI",
+          "en": "Hacker News AI: Microsoft launches new in-house AI models. Cuts costs up to 89% versus OpenAI"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "Community / research signal"
+        },
+        "summary": {
+          "zh": "Hacker News AI 发布「Microsoft launches new in-house AI models. Cuts costs up to 89% versus OpenAI」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Article URL: https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai Comments URL: https://news.ycombinator.com/item?id=49055188 Points: 2 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "Hacker News AI 发布「Microsoft launches new in-house AI models. Cuts costs up to 89% versus OpenAI」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Article URL: https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai Comments URL: https://news.ycombinator.com/item?id=49055188 Points: 2 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "发布于 Sun, 26 Jul 2026 05:59:36 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Sun, 26 Jul 2026 05:59:36 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai"
+          }
+        ]
+      },
+      {
+        "title": {
           "zh": "Hacker News LLM: Introduction to LLM Inference",
           "en": "Hacker News LLM: Introduction to LLM Inference"
         },
@@ -581,11 +618,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         },
         "summary": {
           "zh": "Hacker News LLM 发布「Introduction to LLM Inference」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "Article URL: https://kraghavan.ca/llm-infrastructure/inference/2026/04/14/re-introduction-to-inference.html Comments URL: https://news.ycombinator.com/item?id=49054962 Points: 2 # Comments: 0"
+          "en": "Article URL: https://kraghavan.ca/llm-infrastructure/inference/2026/04/14/re-introduction-to-inference.html Comments URL: https://news.ycombinator.com/item?id=49054962 Points: 2 # Comments: 1"
         },
         "chineseIntro": {
           "zh": "Hacker News LLM 发布「Introduction to LLM Inference」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "Article URL: https://kraghavan.ca/llm-infrastructure/inference/2026/04/14/re-introduction-to-inference.html Comments URL: https://news.ycombinator.com/item?id=49054962 Points: 2 # Comments: 0"
+          "en": "Article URL: https://kraghavan.ca/llm-infrastructure/inference/2026/04/14/re-introduction-to-inference.html Comments URL: https://news.ycombinator.com/item?id=49054962 Points: 2 # Comments: 1"
         },
         "todayHighlight": {
           "zh": "发布于 Sun, 26 Jul 2026 05:18:42 +0000；属于「社区/研究信号」类型更新，反映 Hacker News LLM 在当前 AI 竞争中的重点投入方向。",
@@ -600,43 +637,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Hacker News LLM",
             "url": "https://kraghavan.ca/llm-infrastructure/inference/2026/04/14/re-introduction-to-inference.html"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Show HN: Rules that stop AI coding agents from breaking working code",
-          "en": "Hacker News AI: Show HN: Rules that stop AI coding agents from breaking working code"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "Community / research signal"
-        },
-        "summary": {
-          "zh": "Hacker News AI 发布 Agent/自动化相关更新，强调企业场景下的任务编排、工作流交付与 AI 原生组织实践。",
-          "en": "Article URL: https://github.com/avenna01-ceo/claude-code-survival-kr Comments URL: https://news.ycombinator.com/item?id=49054070 Points: 2 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "Hacker News AI 发布 Agent/自动化相关更新，强调企业场景下的任务编排、工作流交付与 AI 原生组织实践。",
-          "en": "Article URL: https://github.com/avenna01-ceo/claude-code-survival-kr Comments URL: https://news.ycombinator.com/item?id=49054070 Points: 2 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "发布于 Sun, 26 Jul 2026 02:30:44 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。",
-          "en": "发布于 Sun, 26 Jul 2026 02:30:44 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。"
-        },
-        "pmInsight": {
-          "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://github.com/avenna01-ceo/claude-code-survival-kr"
           }
         ]
       },
