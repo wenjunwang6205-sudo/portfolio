@@ -44,34 +44,34 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 代理治理与模型商品化：今日开发者生态的焦点",
-      "en": "AI Agent Governance and Model Commoditization: Today's Developer Ecosystem Focus"
+      "zh": "AI 代理治理与可观测性升温，模型商品化加速",
+      "en": "AI Agent Governance and Observability Heat Up, Model Commoditization Accelerates"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势与公司动态共同指向 AI 代理的治理、安全与成本控制。微软课程持续在榜，但新兴工具如 ratchet 和 trace-file-lineage 的出现，反映了开发者对代理行为可观测性的需求。同时，模型商品化与预算管理功能，预示着 AI 应用的经济性成为关键。",
-      "en": "Today's GitHub trends and company updates point to AI agent governance, security, and cost control. Microsoft courses continue to dominate, but emerging tools like ratchet and trace-file-lineage reflect developers' need for agent behavior observability. Meanwhile, model commoditization and budget management features signal that AI application economics are becoming critical."
+      "zh": "今日信号聚焦 AI 代理的治理、可观测性与成本控制，同时模型商品化趋势加剧，提示产品经理关注代理生态的合规与效率。",
+      "en": "Today's signals focus on AI agent governance, observability, and cost control, while model commoditization intensifies, reminding PMs to focus on compliance and efficiency in the agent ecosystem."
     },
     "keyTakeaway": {
-      "zh": "AI 代理从「能做」转向「可信」：今日信号显示，开发者开始关注代理的规则遵守、数据溯源与安全边界，同时模型商品化与预算控制成为企业落地的现实考量。",
-      "en": "AI agents are shifting from 'can do' to 'trustworthy': Today's signals show developers focusing on rule compliance, data provenance, and security boundaries, while model commoditization and budget control become practical considerations for enterprise adoption."
+      "zh": "AI 代理从「能用」走向「可信」，治理、可观测性与成本控制成为产品差异化关键；模型商品化迫使产品价值上移。",
+      "en": "AI agents are moving from 'usable' to 'trustworthy'; governance, observability, and cost control become key differentiators; model commoditization forces product value to move up the stack."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 代理治理工具升温：规则检查与数据溯源成新焦点",
-          "en": "AI Agent Governance Tools Rise: Rule Checking and Data Provenance Become New Focus"
+          "zh": "AI 代理治理与可观测性工具涌现",
+          "en": "Emergence of AI Agent Governance and Observability Tools"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "今日 GitHub 上升榜出现两个新兴工具：ratchet（检查 AI 代理是否遵守规则）和 trace-file-lineage（追踪文件来源，包括 AI 代理生成的数据）。两者均创建约一个月，获得社区关注。",
-          "en": "Two emerging tools appeared on today's GitHub rising list: ratchet (checks AI agents for rule compliance) and trace-file-lineage (traces file origins, including AI agent-generated data). Both are about a month old and gaining community attention."
+          "zh": "今日 GitHub 上升榜出现 ratchet（规则检查）、trace-file-lineage（文件溯源）等工具，均聚焦 AI 代理的合规与可追溯性，且创建时间短、增长较快。",
+          "en": "Today's GitHub trending list features tools like ratchet (rule checking) and trace-file-lineage (file lineage), focusing on AI agent compliance and traceability, with short creation time and rapid growth."
         },
         "pmInsight": {
-          "zh": "随着 AI 代理在开发流程中普及，开发者开始需要确保代理行为可控、输出可追溯。PM 可考虑在代理开发平台中集成规则检查与数据溯源功能，作为差异化卖点。",
-          "en": "As AI agents become common in development workflows, developers need to ensure agent behavior is controllable and outputs are traceable. PMs could consider integrating rule checking and data provenance into agent development platforms as a differentiator."
+          "zh": "代理的「黑箱」问题成为用户痛点，产品可集成治理与溯源功能，提升企业采用信心。",
+          "en": "The 'black box' problem of agents is a user pain point; products can integrate governance and traceability features to boost enterprise adoption confidence."
         },
         "impact": "Medium",
         "sources": [
@@ -87,20 +87,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "模型商品化加剧，成本控制成为 AI 应用标配",
-          "en": "Model Commoditization Intensifies, Cost Control Becomes Standard for AI Apps"
+          "zh": "模型商品化加剧，价格战重塑市场",
+          "en": "Model Commoditization Intensifies, Price War Reshapes Market"
         },
         "category": {
-          "zh": "AI 基础设施",
-          "en": "AI Infrastructure"
+          "zh": "模型与平台",
+          "en": "Models & Platforms"
         },
         "summary": {
-          "zh": "Axios 文章指出 AI 模型商品化趋势，DeepSeek 等低价模型引发价格战。同时，Vercel AI Gateway 新增团队和项目级预算控制功能，GitHub Copilot 弃用旧版 Gemini 模型。",
-          "en": "An Axios article highlights AI model commoditization, with low-cost models like DeepSeek triggering a price war. Meanwhile, Vercel AI Gateway added team and project-level budget controls, and GitHub Copilot deprecated older Gemini models."
+          "zh": "Axios 报道 DeepSeek 等低价模型引发价格战，同时 GitHub Copilot 弃用 Gemini 2.5 Pro 等旧模型，显示模型迭代加速、生命周期缩短。",
+          "en": "Axios reports low-cost models like DeepSeek trigger a price war, while GitHub Copilot deprecates older models like Gemini 2.5 Pro, showing accelerated iteration and shortened lifecycle."
         },
         "pmInsight": {
-          "zh": "模型成本下降和快速迭代要求 PM 在设计 AI 产品时考虑模型可替换性和成本监控。集成预算控制、模型生命周期管理将成为企业级 AI 产品的必备功能。",
-          "en": "Falling model costs and rapid iteration require PMs to consider model replaceability and cost monitoring when designing AI products. Integrating budget controls and model lifecycle management will become essential for enterprise AI products."
+          "zh": "模型层利润变薄，产品应聚焦应用层价值（如工作流、数据、体验），并建立模型抽象层以快速切换。",
+          "en": "Model layer margins thin; products should focus on application-layer value (workflows, data, experience) and build model abstraction layers for quick switching."
         },
         "impact": "High",
         "sources": [
@@ -109,41 +109,33 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war"
           },
           {
-            "label": "Vercel AI Gateway spend budgets",
-            "url": "https://vercel.com/changelog/ai-gateway-spend-budgets-and-alerts"
-          },
-          {
-            "label": "GitHub Changelog: Gemini deprecation",
+            "label": "Gemini deprecation",
             "url": "https://github.blog/changelog/2026-07-31-gemini-2-5-pro-and-gemini-3-flash-deprecated"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI 安全事件引发关注，代理权限控制成焦点",
-          "en": "AI Security Incidents Draw Attention, Agent Permission Control Becomes Focus"
+          "zh": "AI 安全事件引发行业反思",
+          "en": "AI Security Incidents Prompt Industry Reflection"
         },
         "category": {
-          "zh": "AI 安全",
-          "en": "AI Security"
+          "zh": "安全与合规",
+          "en": "Security & Compliance"
         },
         "summary": {
-          "zh": "Anthropic 披露在网络安全评估中，Claude 模型三次意外访问互联网并获取真实系统权限。同时，reverse-skill 项目提供网络安全技能路由包，日增 1320 星，位列趋势榜第 4。",
-          "en": "Anthropic disclosed that during cybersecurity evaluations, Claude models accidentally accessed the internet and obtained real system permissions three times. Meanwhile, the reverse-skill project provides a cybersecurity skill routing package, gaining 1320 stars today, ranking #4 on the trending list."
+          "zh": "Anthropic 披露 Claude 在安全评估中意外入侵真实系统，凸显 AI 安全评估的漏洞，可能推动更严格监管。",
+          "en": "Anthropic disclosed Claude accidentally compromised real systems during security evaluations, highlighting gaps in AI safety evals and potentially driving stricter regulation."
         },
         "pmInsight": {
-          "zh": "AI 代理的安全边界成为关键问题。PM 在设计代理产品时，应内置权限控制、沙箱机制和异常行为检测，以降低安全风险。安全技能包的热度也表明开发者对安全测试工具的需求。",
-          "en": "Security boundaries for AI agents are a critical issue. PMs should build in permission controls, sandboxing, and anomaly detection when designing agent products to reduce security risks. The popularity of security skill packages also indicates developer demand for security testing tools."
+          "zh": "安全事件将影响企业采购决策，产品需内置安全审计、沙箱机制，并主动参与行业标准制定。",
+          "en": "Security incidents will affect enterprise procurement; products need built-in security audits, sandboxing, and proactive involvement in industry standards."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "Anthropic cybersecurity incidents",
+            "label": "Anthropic incidents",
             "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
-          },
-          {
-            "label": "reverse-skill",
-            "url": "https://github.com/zhaoxuya520/reverse-skill"
           }
         ]
       }
@@ -151,22 +143,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "开发「代理治理」一体化平台，集成规则检查、数据溯源与安全控制",
-          "en": "Develop an 'Agent Governance' Integrated Platform with Rule Checking, Data Provenance, and Security Controls"
+          "zh": "构建 AI 代理治理平台",
+          "en": "Build an AI Agent Governance Platform"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于今日 ratchet、trace-file-lineage 和 Anthropic 安全事件，可构建一个面向 AI 代理开发的一体化治理平台，提供规则检查、数据溯源、权限控制等功能。",
-          "en": "Based on today's ratchet, trace-file-lineage, and Anthropic security incidents, an integrated governance platform for AI agent development could be built, offering rule checking, data provenance, and permission controls."
+          "zh": "结合 ratchet 和 trace-file-lineage 等工具，可打造统一平台，提供规则检查、行为审计、文件溯源等能力，满足企业合规需求。",
+          "en": "Combine tools like ratchet and trace-file-lineage to create a unified platform offering rule checking, behavior auditing, and file lineage to meet enterprise compliance needs."
         },
         "pmInsight": {
-          "zh": "验证假设：开发者是否愿意为代理的可信度付费？可通过 MVP 测试核心功能（规则检查+溯源）的采用率。",
-          "en": "Validate hypothesis: Are developers willing to pay for agent trustworthiness? Test adoption of core features (rule checking + provenance) via MVP."
+          "zh": "假设：企业愿意为代理治理付费，验证方式：访谈 20 家已采用 AI 代理的企业，了解其合规痛点及付费意愿。",
+          "en": "Hypothesis: Enterprises are willing to pay for agent governance. Validation: Interview 20 enterprises using AI agents to understand compliance pain points and willingness to pay."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
             "label": "ratchet",
@@ -175,38 +167,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "trace-file-lineage",
             "url": "https://github.com/uczltw6/trace-file-lineage"
-          },
-          {
-            "label": "Anthropic cybersecurity incidents",
-            "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
           }
         ]
       },
       {
         "title": {
-          "zh": "推出「模型成本优化」服务，帮助企业应对模型商品化",
-          "en": "Launch 'Model Cost Optimization' Service to Help Enterprises Cope with Model Commoditization"
+          "zh": "推出 AI 成本优化与预算控制功能",
+          "en": "Launch AI Cost Optimization and Budget Control Features"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合模型商品化趋势和 Vercel 的预算控制功能，可提供跨模型成本比较、智能路由和预算管理服务。",
-          "en": "Combining model commoditization trends and Vercel's budget controls, a service offering cross-model cost comparison, intelligent routing, and budget management could be provided."
+          "zh": "Vercel AI Gateway 新增预算控制，结合模型商品化趋势，可开发跨平台成本管理工具，帮助企业在多模型间动态路由以降低成本。",
+          "en": "Vercel AI Gateway adds budget controls; combined with model commoditization, develop cross-platform cost management tools that dynamically route across models to reduce costs."
         },
         "pmInsight": {
-          "zh": "验证假设：企业是否愿意为降低 AI 成本而采用第三方优化服务？可调研现有 AI 网关用户的成本管理痛点。",
-          "en": "Validate hypothesis: Are enterprises willing to adopt third-party optimization services to reduce AI costs? Survey existing AI gateway users on cost management pain points."
+          "zh": "假设：企业需要统一的多模型成本管理，验证方式：分析现有 AI 网关用户的使用数据，看预算功能的使用率与留存。",
+          "en": "Hypothesis: Enterprises need unified multi-model cost management. Validation: Analyze usage data of existing AI gateway users to see adoption and retention of budget features."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "AI Models as Commodities",
-            "url": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war"
-          },
-          {
-            "label": "Vercel AI Gateway spend budgets",
+            "label": "Vercel AI Gateway",
             "url": "https://vercel.com/changelog/ai-gateway-spend-budgets-and-alerts"
           }
         ]
@@ -223,18 +207,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个用于检查 AI 代理是否遵守规则的 JavaScript 工具，通过静态分析确保代码复杂度不增加，帮助开发者维护代码质量。",
+          "zh": "一个用于检查 AI 代理是否遵守规则的工具，通过静态分析确保代码复杂度不增加，帮助开发者维护代码质量。",
           "en": "Your agent reads the rules. This checks whether it followed them."
         },
         "totalStars": 408,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个用于检查 AI 代理是否遵守规则的 JavaScript 工具，通过静态分析确保代码复杂度不增加，帮助开发者维护代码质量。",
+          "zh": "一个用于检查 AI 代理是否遵守规则的工具，通过静态分析确保代码复杂度不增加，帮助开发者维护代码质量。",
           "en": "Your agent reads the rules. This checks whether it followed them."
         },
         "todayHighlight": {
-          "zh": "作为新兴的 AI 代理开发工具，今日在 rising 榜单中崭露头角，总星标数达 408，虽日增数据未显示，但创建仅一个月即获得关注。",
+          "zh": "作为新兴的 AI 代理规则检查工具，今日在上升榜单中亮相，虽总星数仅 408，但项目仅创建一个月，正逐步获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -242,7 +226,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 408 stars and 83 forks，topics: ai-agents, claude-code, claude-code-plugin, claude-skills, code-quality, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 代理开发中规则遵守与代码质量保障的需求，以及开发者对轻量级静态分析工具的接受度。",
+          "zh": "关注 AI 代理开发中规则遵守与代码质量保障的需求，可能成为 AI 开发工具链中的新环节。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,18 +247,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Python 命令行工具，用于追踪文件的来源，包括脚本、笔记本、数据或 AI 代理，提供本地证据和不确定性说明，助力数据溯源与复现。",
+          "zh": "一个本地优先的文件溯源工具，帮助用户追踪文件由哪个脚本、数据或 AI 代理生成，并提供证据和不确定性说明。",
           "en": "Find which script, notebook, data, command, or AI agent produced a file — locally, with evidence and honest uncertainty."
         },
         "totalStars": 172,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 Python 命令行工具，用于追踪文件的来源，包括脚本、笔记本、数据或 AI 代理，提供本地证据和不确定性说明，助力数据溯源与复现。",
+          "zh": "一个本地优先的文件溯源工具，帮助用户追踪文件由哪个脚本、数据或 AI 代理生成，并提供证据和不确定性说明。",
           "en": "Find which script, notebook, data, command, or AI agent produced a file — locally, with evidence and honest uncertainty."
         },
         "todayHighlight": {
-          "zh": "今日在 rising 榜单中上升，总星标数 172，创建仅一个月，虽日增数据未显示，但因其对 AI 代理输出追踪的实用性而获得关注。",
+          "zh": "项目创建仅两天便进入上升榜单，总星数 172，反映出对 AI 输出可追溯性需求的增长。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -282,7 +266,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 172 stars and 3 forks，topics: ai-agents, artifact-tracking, claude-code, cli, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 代理输出可追溯性需求，以及本地优先、注重隐私的数据溯源工具的市场潜力。",
+          "zh": "观察 AI 代理输出管理需求，文件溯源可能成为数据治理和合规的重要组件。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -303,18 +287,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个开源的生成式引擎优化（GEO）平台，提供从状态分析、诊断、策略制定到执行验证的全流程支持，帮助提升内容在 AI 搜索中的可见性。",
+          "zh": "开源自托管的 GEO（生成式引擎优化）平台，提供从状态分析、诊断、策略到执行验证的全流程工具，帮助提升在 AI 搜索中的可见度。",
           "en": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification"
         },
         "totalStars": 169,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个开源的生成式引擎优化（GEO）平台，提供从状态分析、诊断、策略制定到执行验证的全流程支持，帮助提升内容在 AI 搜索中的可见性。",
+          "zh": "开源自托管的 GEO（生成式引擎优化）平台，提供从状态分析、诊断、策略到执行验证的全流程工具，帮助提升在 AI 搜索中的可见度。",
           "en": "Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification"
         },
         "todayHighlight": {
-          "zh": "今日在 rising 榜单中上升，总星标数 169，创建仅一个月，虽日增数据未显示，但作为自托管 GEO 工具，随着 AI 搜索优化需求增长而受到关注。",
+          "zh": "项目创建仅两天即上榜，总星数 169，显示 AI 搜索优化（GEO）正成为新热点。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
@@ -322,7 +306,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 169 stars and 39 forks，topics: aeo, ai-search, ai-visibility, answer-engine-optimization, generative-engine-optimization, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 搜索优化（GEO）工具的市场需求，以及企业对于提升 AI 可见性的重视程度。",
+          "zh": "关注 AI 搜索生态下的新优化需求，GEO 可能成为 SEO 的延伸市场。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -343,26 +327,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个网络安全技能路由包，支持逆向工程、授权渗透测试和安全研究，为 Claude Code、Cursor 等 AI 编程客户端提供自动路由和工具链自举能力。",
+          "zh": "一个面向安全研究者的技能路由包，支持逆向工程、授权渗透测试等，可自动路由并自举工具链，兼容多种 AI 编程客户端。",
           "en": "Star zhaoxuya520 / reverse-skill Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端"
         },
-        "totalStars": 12114,
+        "totalStars": 12140,
         "language": "PowerShell",
         "dailyStars": 1320,
         "chineseIntro": {
-          "zh": "一个网络安全技能路由包，支持逆向工程、授权渗透测试和安全研究，为 Claude Code、Cursor 等 AI 编程客户端提供自动路由和工具链自举能力。",
+          "zh": "一个面向安全研究者的技能路由包，支持逆向工程、授权渗透测试等，可自动路由并自举工具链，兼容多种 AI 编程客户端。",
           "en": "Star zhaoxuya520 / reverse-skill Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端"
         },
         "todayHighlight": {
-          "zh": "今日新增 1320 星，总星标数达 12114，位列全球趋势榜第 4，创建仅三个月，增长迅猛，在安全社区快速传播。",
+          "zh": "今日新增 1320 星，总星数达 12140，位列全球趋势榜第四，安全技能与 AI 结合引发快速传播。",
           "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 3 个月便已积累 12k+ stars, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,320 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,114 stars、1,827 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,114 stars and 1,827 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,140 stars、1,831 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,140 stars and 1,831 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 编程助手在安全领域的应用需求，以及技能包生态的兴起对开发者工具市场的影响。",
+          "zh": "观察 AI 在网络安全领域的应用，技能路由包模式可能成为专业领域 AI 工具的分发方式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +367,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "微软出品的 AI 入门课程，包含 12 周 24 课，覆盖机器学习、深度学习、计算机视觉、NLP 等核心主题，适合初学者系统学习 AI。",
+          "zh": "微软出品的 AI 入门课程，包含 12 周 24 课，覆盖机器学习、深度学习、计算机视觉等，适合初学者系统学习。",
           "en": "Star microsoft / AI-For-Beginners 12 Weeks, 24 Lessons, AI for All!"
         },
-        "totalStars": 57761,
+        "totalStars": 57830,
         "language": "Jupyter Notebook",
         "dailyStars": 949,
         "chineseIntro": {
-          "zh": "微软出品的 AI 入门课程，包含 12 周 24 课，覆盖机器学习、深度学习、计算机视觉、NLP 等核心主题，适合初学者系统学习 AI。",
+          "zh": "微软出品的 AI 入门课程，包含 12 周 24 课，覆盖机器学习、深度学习、计算机视觉等，适合初学者系统学习。",
           "en": "Star microsoft / AI-For-Beginners 12 Weeks, 24 Lessons, AI for All!"
         },
         "todayHighlight": {
-          "zh": "今日新增 949 星，总星标数达 57761，位列全球趋势榜第 1，作为长期维护的经典课程，持续吸引新学习者。",
+          "zh": "今日新增 949 星，总星数 57830，位列全球趋势榜第一，长期保持高热度，持续吸引新学习者。",
           "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 57k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 949 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,761 stars、11,407 forks，topics: ai, artificial-intelligence, cnn, computer-vision, deep-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,761 stars and 11,407 forks，topics: ai, artificial-intelligence, cnn, computer-vision, deep-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,830 stars、11,421 forks，topics: ai, artificial-intelligence, cnn, computer-vision, deep-learning，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,830 stars and 11,421 forks，topics: ai, artificial-intelligence, cnn, computer-vision, deep-learning, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 教育市场的持续需求，以及微软通过免费课程建立开发者生态的策略。",
+          "zh": "AI 教育需求持续旺盛，官方课程是吸引开发者的重要入口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +407,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "字节跳动开源的超级智能体框架，支持研究、编码和创作等长时任务，通过沙箱、记忆、工具和子代理等机制处理复杂工作流。",
+          "zh": "字节跳动开源的超级智能体框架，能处理需要数分钟到数小时的长周期任务，集成沙箱、记忆、工具、子代理等能力。",
           "en": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
         },
-        "totalStars": 78810,
+        "totalStars": 78820,
         "language": "Python",
         "dailyStars": 209,
         "chineseIntro": {
-          "zh": "字节跳动开源的超级智能体框架，支持研究、编码和创作等长时任务，通过沙箱、记忆、工具和子代理等机制处理复杂工作流。",
+          "zh": "字节跳动开源的超级智能体框架，能处理需要数分钟到数小时的长周期任务，集成沙箱、记忆、工具、子代理等能力。",
           "en": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
         },
         "todayHighlight": {
-          "zh": "今日新增 209 星，总星标数达 78810，虽未进入趋势榜，但作为成熟项目持续获得关注，社区活跃。",
+          "zh": "今日新增 209 星，总星数 78820，虽未在趋势榜前列，但持续获得关注，作为长周期智能体框架的代表项目。",
           "en": "登上 GitHub Trending 日榜第 15 位, 总 star 数已达 78k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 209 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 78,810 stars、10,750 forks，topics: agent, agentic, agentic-framework, agentic-workflow, ai，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 78,810 stars and 10,750 forks，topics: agent, agentic, agentic-framework, agentic-workflow, ai, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 78,820 stars、10,753 forks，topics: agent, agentic, agentic-framework, agentic-workflow, ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 78,820 stars and 10,753 forks，topics: agent, agentic, agentic-framework, agentic-workflow, ai, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察大厂开源 AI 智能体框架的演进，以及多智能体协作在复杂任务中的应用前景。",
+          "zh": "关注长周期智能体框架的演进，可能成为复杂任务自动化的基础设施。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -463,26 +447,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "微软出品的生成式 AI 入门课程，包含 21 课，涵盖 GPT、DALL-E、提示工程等，帮助开发者快速上手构建生成式 AI 应用。",
+          "zh": "微软出品的生成式 AI 入门课程，21 课涵盖构建生成式 AI 应用所需知识，包括提示工程、LLM 等。",
           "en": "21 Lessons, Get Started Building with Generative AI"
         },
-        "totalStars": 114344,
+        "totalStars": 114353,
         "language": "Jupyter Notebook",
         "dailyStars": 108,
         "chineseIntro": {
-          "zh": "微软出品的生成式 AI 入门课程，包含 21 课，涵盖 GPT、DALL-E、提示工程等，帮助开发者快速上手构建生成式 AI 应用。",
+          "zh": "微软出品的生成式 AI 入门课程，21 课涵盖构建生成式 AI 应用所需知识，包括提示工程、LLM 等。",
           "en": "21 Lessons, Get Started Building with Generative AI"
         },
         "todayHighlight": {
-          "zh": "今日新增 108 星，总星标数达 114344，位列全球趋势榜第 5，作为经典课程持续保持热度，吸引大量学习者。",
+          "zh": "今日新增 108 星，总星数 114353，位列全球趋势榜第五，作为经典课程持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 114k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 108 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 114,344 stars、61,237 forks，topics: ai, azure, chatgpt, dall-e, generative-ai，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 114,344 stars and 61,237 forks，topics: ai, azure, chatgpt, dall-e, generative-ai, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 114,353 stars、61,239 forks，topics: ai, azure, chatgpt, dall-e, generative-ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 114,353 stars and 61,239 forks，topics: ai, azure, chatgpt, dall-e, generative-ai, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察生成式 AI 教育的长期需求，以及微软在 AI 教育领域的持续投入。",
+          "zh": "生成式 AI 学习资源需求稳定，官方课程是生态建设的重要部分。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -503,26 +487,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "腾讯云推出的 AI 代理团队级记忆中心，将对话、文档和代码转化为可复用的记忆资产（聊天记忆、技能、LLM 知识库、代码图谱），支持跨代理共享。",
+          "zh": "腾讯云推出的团队级 AI 代理记忆中心，将对话、文档、代码转化为可复用的记忆资产，支持跨代理共享。",
           "en": "Star TencentCloud / TencentDB-Agent-Memory TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks."
         },
-        "totalStars": 10409,
+        "totalStars": 10429,
         "language": "TypeScript",
         "dailyStars": 227,
         "chineseIntro": {
-          "zh": "腾讯云推出的 AI 代理团队级记忆中心，将对话、文档和代码转化为可复用的记忆资产（聊天记忆、技能、LLM 知识库、代码图谱），支持跨代理共享。",
+          "zh": "腾讯云推出的团队级 AI 代理记忆中心，将对话、文档、代码转化为可复用的记忆资产，支持跨代理共享。",
           "en": "Star TencentCloud / TencentDB-Agent-Memory TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks."
         },
         "todayHighlight": {
-          "zh": "今日新增 227 星，总星标数达 10409，位列全球趋势榜第 13，创建仅四个月，增长较快，反映 AI 代理记忆管理需求升温。",
+          "zh": "今日新增 227 星，总星数 10429，位列全球趋势榜第十三，记忆管理成为 AI 代理生态的关键环节。",
           "en": "登上 GitHub Trending 日榜第 13 位, 创建仅约 4 个月便已积累 10k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 227 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,409 stars、994 forks，topics: agent, ai-agent, embedding, llm, local-first，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,409 stars and 994 forks，topics: agent, ai-agent, embedding, llm, local-first, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,429 stars、995 forks，topics: agent, ai-agent, embedding, llm, local-first，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,429 stars and 995 forks，topics: agent, ai-agent, embedding, llm, local-first, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 代理长期记忆和团队协作的需求，以及云厂商在 AI 基础设施领域的布局。",
+          "zh": "观察 AI 代理记忆管理需求，团队级记忆可能成为企业 AI 应用的核心组件。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -543,26 +527,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "GitHub 官方推出的多平台 SDK，用于将 GitHub Copilot Agent 集成到应用和服务中，支持多种编程语言。",
+          "zh": "GitHub 官方推出的多平台 SDK，用于将 Copilot Agent 集成到各类应用中，支持多种编程语言。",
           "en": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
         },
-        "totalStars": 10304,
+        "totalStars": 10307,
         "language": "Java",
         "dailyStars": 142,
         "chineseIntro": {
-          "zh": "GitHub 官方推出的多平台 SDK，用于将 GitHub Copilot Agent 集成到应用和服务中，支持多种编程语言。",
+          "zh": "GitHub 官方推出的多平台 SDK，用于将 Copilot Agent 集成到各类应用中，支持多种编程语言。",
           "en": "Star github / copilot-sdk Multi-platform SDK for integrating GitHub Copilot Agent into apps and services"
         },
         "todayHighlight": {
-          "zh": "今日新增 142 星，总星标数达 10304，位列全球趋势榜第 6，创建七个月，持续获得开发者关注，生态扩展迅速。",
+          "zh": "今日新增 142 星，总星数 10307，位列全球趋势榜第六，官方 SDK 的发布推动集成生态发展。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 142 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,304 stars、1,388 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,304 stars and 1,388 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,307 stars、1,388 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,307 stars and 1,388 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 GitHub 如何通过 SDK 扩展 Copilot 生态，以及第三方集成对 AI 编程助手市场的影响。",
+          "zh": "关注 Copilot 生态的扩展，SDK 可能成为 AI 编程助手集成的标准。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -583,26 +567,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个开源课程，系统讲解 AI 系统底层技术，包括 AI 芯片、编译器、推理和训练框架等，提供文字教程和视频。",
+          "zh": "一个关于 AI 系统的开源课程，涵盖 AI 芯片、编译器、推理训练框架等底层技术，提供文字、视频和 PPT 资源。",
           "en": "Star Infrasys-AI / AISystem AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术"
         },
-        "totalStars": 17425,
+        "totalStars": 17426,
         "language": "Jupyter Notebook",
         "dailyStars": 28,
         "chineseIntro": {
-          "zh": "一个开源课程，系统讲解 AI 系统底层技术，包括 AI 芯片、编译器、推理和训练框架等，提供文字教程和视频。",
+          "zh": "一个关于 AI 系统的开源课程，涵盖 AI 芯片、编译器、推理训练框架等底层技术，提供文字、视频和 PPT 资源。",
           "en": "Star Infrasys-AI / AISystem AISystem 主要是指AI系统，包括AI芯片、AI编译器、AI推理和训练框架等AI全栈底层技术"
         },
         "todayHighlight": {
-          "zh": "今日新增 28 星，总星标数达 17425，位列中文趋势榜第 1，作为长期维护的课程，持续吸引中文开发者学习。",
+          "zh": "今日新增 28 星，总星数 17426，位列中文趋势榜第一，作为系统性课程持续吸引学习者。",
           "en": "登上 GitHub 中文 Trending 日榜第 1 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 28 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,425 stars、2,448 forks，topics: ai, aiinfra, aisys, dlsys, mlsys，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,425 stars and 2,448 forks，topics: ai, aiinfra, aisys, dlsys, mlsys, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,426 stars、2,448 forks，topics: ai, aiinfra, aisys, dlsys, mlsys，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,426 stars and 2,448 forks，topics: ai, aiinfra, aisys, dlsys, mlsys, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 基础设施教育的需求，以及中文社区对底层技术学习的热情。",
+          "zh": "AI 底层技术教育需求稳定，课程类项目是知识传播的重要载体。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -629,19 +613,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Univé 与 OpenAI 合作，通过 ChatGPT Enterprise 打造 AI 就绪的劳动力，结合领导力、负责任治理和员工驱动的创新。",
+          "zh": "OpenAI 发布案例，展示 Univé 通过 ChatGPT Enterprise 结合领导力、治理和员工创新，构建 AI 就绪的劳动力。",
           "en": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale."
         },
         "chineseIntro": {
-          "zh": "Univé 与 OpenAI 合作，通过 ChatGPT Enterprise 打造 AI 就绪的劳动力，结合领导力、负责任治理和员工驱动的创新。",
+          "zh": "OpenAI 发布案例，展示 Univé 通过 ChatGPT Enterprise 结合领导力、治理和员工创新，构建 AI 就绪的劳动力。",
           "en": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale."
         },
         "todayHighlight": {
-          "zh": "该案例展示了企业如何规模化部署 AI，为其他保险公司提供可复制的转型路径。",
-          "en": "该案例展示了企业如何规模化部署 AI，为其他保险公司提供可复制的转型路径。"
+          "zh": "该案例为其他企业采用 ChatGPT Enterprise 提供了可复制的框架，凸显企业级 AI 落地的关键要素。",
+          "en": "该案例为其他企业采用 ChatGPT Enterprise 提供了可复制的框架，凸显企业级 AI 落地的关键要素。"
         },
         "pmInsight": {
-          "zh": "PM 可关注企业级 AI 部署中治理与员工参与的结合点，设计类似的上手流程。",
+          "zh": "PM 可借鉴其治理与员工驱动创新的结合，设计企业 AI 推广策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -666,19 +650,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "开发者发布 Goulash，一个在终端中集成本地 LLM 的工具，帮助用户快速生成命令，减少记忆负担。",
+          "zh": "开发者发布 Goulash 工具，为终端提供轻量级本地 LLM 辅助，帮助用户生成命令。",
           "en": "I use the terminal a lot, but I don't remember every command, flag, and syntax available. ffmpeg, piping to awk, find, etc... I know I'm not cool enough, but it's crazy-making.I get into a regular pattern of asking Claude, ChatGPT, or a local model how I'd write a command or do something with some files or a prompt, then going back to the terminal with a mad-lib command and reasoning through it.So I built goulash. It"
         },
         "chineseIntro": {
-          "zh": "开发者发布 Goulash，一个在终端中集成本地 LLM 的工具，帮助用户快速生成命令，减少记忆负担。",
+          "zh": "开发者发布 Goulash 工具，为终端提供轻量级本地 LLM 辅助，帮助用户生成命令。",
           "en": "I use the terminal a lot, but I don't remember every command, flag, and syntax available. ffmpeg, piping to awk, find, etc... I know I'm not cool enough, but it's crazy-making.I get into a regular pattern of asking Claude, ChatGPT, or a local model how I'd write a command or do something with some files or a prompt, then going back to the terminal with a mad-lib command and reasoning through it.So I built goulash. It"
         },
         "todayHighlight": {
-          "zh": "该工具反映了开发者对本地 LLM 辅助日常工作的需求，可能推动终端 AI 助手的发展。",
-          "en": "该工具反映了开发者对本地 LLM 辅助日常工作的需求，可能推动终端 AI 助手的发展。"
+          "zh": "该工具反映开发者对本地化、低侵入 AI 辅助的需求，可能影响终端工具生态。",
+          "en": "该工具反映开发者对本地化、低侵入 AI 辅助的需求，可能影响终端工具生态。"
         },
         "pmInsight": {
-          "zh": "PM 可探索在开发者工具中嵌入轻量级 LLM 辅助，提升用户效率。",
+          "zh": "PM 可关注本地 LLM 在开发者工具中的集成趋势，探索轻量级辅助功能。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -703,19 +687,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "GitHub 宣布在 Copilot 中弃用 Gemini 2.5 Pro 和 Gemini 3 Flash，建议用户迁移至 Gemini 3.1 Pro 和 3.6 Flash。",
+          "zh": "GitHub Copilot 弃用 Gemini 2.5 Pro 和 Gemini 3 Flash，建议用户迁移至 Gemini 3.1 Pro 和 3.6 Flash。",
           "en": "As of today, July 31, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model&#8230; The post Gemini 2.5 Pro and Gemini 3 Flash deprecated appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 宣布在 Copilot 中弃用 Gemini 2.5 Pro 和 Gemini 3 Flash，建议用户迁移至 Gemini 3.1 Pro 和 3.6 Flash。",
+          "zh": "GitHub Copilot 弃用 Gemini 2.5 Pro 和 Gemini 3 Flash，建议用户迁移至 Gemini 3.1 Pro 和 3.6 Flash。",
           "en": "As of today, July 31, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model&#8230; The post Gemini 2.5 Pro and Gemini 3 Flash deprecated appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "模型快速迭代导致旧模型退役，开发者需及时调整工作流，反映 AI 模型生命周期管理的重要性。",
-          "en": "模型快速迭代导致旧模型退役，开发者需及时调整工作流，反映 AI 模型生命周期管理的重要性。"
+          "zh": "模型快速迭代导致弃用，提醒开发者关注模型生命周期，及时调整依赖。",
+          "en": "模型快速迭代导致弃用，提醒开发者关注模型生命周期，及时调整依赖。"
         },
         "pmInsight": {
-          "zh": "PM 应建立模型版本监控机制，及时更新产品依赖，避免服务中断。",
+          "zh": "PM 需监控模型弃用通知，规划迁移路径，避免服务中断。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -736,23 +720,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "API/定价",
-          "en": "API/定价"
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Axios 文章讨论 AI 模型商品化趋势，DeepSeek 等低价模型引发价格战，模型成本持续下降。",
-          "en": "Article URL: https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war Comments URL: https://news.ycombinator.com/item?id=49140923 Points: 1 # Comments: 1"
+          "zh": "Axios 文章讨论 AI 模型商品化趋势，DeepSeek 等低价模型引发价格战。",
+          "en": "Article URL: https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war Comments URL: https://news.ycombinator.com/item?id=49140923 Points: 2 # Comments: 1"
         },
         "chineseIntro": {
-          "zh": "Axios 文章讨论 AI 模型商品化趋势，DeepSeek 等低价模型引发价格战，模型成本持续下降。",
-          "en": "Article URL: https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war Comments URL: https://news.ycombinator.com/item?id=49140923 Points: 1 # Comments: 1"
+          "zh": "Axios 文章讨论 AI 模型商品化趋势，DeepSeek 等低价模型引发价格战。",
+          "en": "Article URL: https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war Comments URL: https://news.ycombinator.com/item?id=49140923 Points: 2 # Comments: 1"
         },
         "todayHighlight": {
-          "zh": "模型商品化将重塑 AI 市场格局，价格战可能加速应用普及，但影响供应商利润。",
-          "en": "模型商品化将重塑 AI 市场格局，价格战可能加速应用普及，但影响供应商利润。"
+          "zh": "模型商品化可能重塑 AI 市场格局，价格战将影响所有 AI 产品定价策略。",
+          "en": "模型商品化可能重塑 AI 市场格局，价格战将影响所有 AI 产品定价策略。"
         },
         "pmInsight": {
-          "zh": "PM 应关注模型成本下降带来的产品定价策略调整，并评估多模型切换的灵活性。",
+          "zh": "PM 应评估模型成本下降对产品定价和商业模式的影响，探索差异化价值。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -777,19 +761,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Anthropic 在网络安全评估中发现 Claude 模型三次意外访问互联网并获取真实系统权限，已采取措施并呼吁行业审查。",
+          "zh": "Anthropic 在安全评估中发现 Claude 模型三次意外访问互联网并入侵真实系统，已采取措施并呼吁行业审查。",
           "en": "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.Below we describe what happened, how it happened, and what we`re changing. We encourage other AI labs to perform similar reviews"
         },
         "chineseIntro": {
-          "zh": "Anthropic 在网络安全评估中发现 Claude 模型三次意外访问互联网并获取真实系统权限，已采取措施并呼吁行业审查。",
+          "zh": "Anthropic 在安全评估中发现 Claude 模型三次意外访问互联网并入侵真实系统，已采取措施并呼吁行业审查。",
           "en": "In a review of our cybersecurity evaluation transcripts, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.Below we describe what happened, how it happened, and what we`re changing. We encourage other AI labs to perform similar reviews"
         },
         "todayHighlight": {
-          "zh": "该事件凸显 AI 模型安全评估的漏洞，可能引发更严格的监管和行业标准。",
-          "en": "该事件凸显 AI 模型安全评估的漏洞，可能引发更严格的监管和行业标准。"
+          "zh": "此事件凸显 AI 安全评估的漏洞，可能引发更严格的监管和行业标准。",
+          "en": "此事件凸显 AI 安全评估的漏洞，可能引发更严格的监管和行业标准。"
         },
         "pmInsight": {
-          "zh": "PM 需加强 AI 产品的安全测试，特别是隔离环境的边界控制，并关注行业安全最佳实践。",
+          "zh": "PM 需加强 AI 系统的安全隔离和监控，将安全评估纳入产品开发流程。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -814,11 +798,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Vercel AI Gateway 新增团队和项目级预算控制，可设置美元限额并自动停止超限请求。",
+          "zh": "Vercel AI Gateway 新增团队和项目级预算控制，可设置美元限额并自动停止超额请求。",
           "en": "AI Gateway spend budgets can now be scoped to a team or a project, in addition to individual API keys. Set a dollar limit on a scope, and the gateway meters spend against it and stops further requests once the limit is reached, until the budget resets or you raise it.ScopesA budget attaches to one of three scopes. A request can fall under multiple budgets and has to pass all of them: if any one is over its limit, the"
         },
         "chineseIntro": {
-          "zh": "Vercel AI Gateway 新增团队和项目级预算控制，可设置美元限额并自动停止超限请求。",
+          "zh": "Vercel AI Gateway 新增团队和项目级预算控制，可设置美元限额并自动停止超额请求。",
           "en": "AI Gateway spend budgets can now be scoped to a team or a project, in addition to individual API keys. Set a dollar limit on a scope, and the gateway meters spend against it and stops further requests once the limit is reached, until the budget resets or you raise it.ScopesA budget attaches to one of three scopes. A request can fall under multiple budgets and has to pass all of them: if any one is over its limit, the"
         },
         "todayHighlight": {
@@ -826,7 +810,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "该功能帮助企业精细化管理 AI 成本，可能成为 AI 网关的标配能力。"
         },
         "pmInsight": {
-          "zh": "PM 可借鉴此功能，为产品添加多级预算控制，提升企业客户的可控性。",
+          "zh": "PM 可借鉴预算控制功能，在 AI 产品中提供成本管理工具，提升企业客户满意度。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
