@@ -44,106 +44,114 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品日报：Agent 技能生态升温，多模型竞争加剧",
-      "en": "AI Product Daily: Agent Skills Ecosystem Heats Up, Multi-Model Competition Intensifies"
+      "zh": "AI 产品经理日报：2026-08-14",
+      "en": "AI PM Daily: 2026-08-14"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势与公司动态共同指向 Agent 技能生态的快速发展和多模型竞争的深化。开发者对可复用、可组合的 AI 组件需求旺盛，同时模型选择多样化正在重塑开发工具链。",
-      "en": "Today's GitHub trends and company updates point to the rapid development of the Agent skills ecosystem and the deepening of multi-model competition. Developers' demand for reusable, composable AI components is strong, while model diversity is reshaping development toolchains."
+      "zh": "今日 AI 领域动态密集：OpenAI 发布 GPT-5.6 构建者指南，Google 推出 Sheets Canvas，GitHub 集成 Gemini 3.7 Flash，同时多个开源项目在趋势榜上表现亮眼。核心主线是 AI 能力向开发者工具和办公场景的深度渗透，以及边缘 AI 和可问责 AI 的升温。",
+      "en": "Today's AI landscape is dynamic: OpenAI released GPT-5.6 builder guide, Google launched Sheets Canvas, GitHub integrated Gemini 3.7 Flash, and several open-source projects shine on trending lists. The core theme is AI's deep penetration into developer tools and office scenarios, along with the rise of edge AI and accountable AI."
     },
     "keyTakeaway": {
-      "zh": "Agent 技能生态正在成为 AI 应用开发的新焦点，开发者通过可复用的技能包和工具链提升效率；同时，多模型支持成为开发平台的标配，竞争从模型能力延伸到生态整合。",
-      "en": "The Agent skills ecosystem is becoming a new focus in AI application development, with developers leveraging reusable skill packs and toolchains to improve efficiency; meanwhile, multi-model support is becoming standard for development platforms, with competition extending from model capability to ecosystem integration."
+      "zh": "今日主线：AI 能力正从模型层向工具层和应用层快速渗透，开发者工具与办公套件的 AI 集成成为竞争焦点，同时边缘 AI 和可问责 AI 作为新兴方向持续升温。",
+      "en": "Today's key takeaway: AI capabilities are rapidly penetrating from model layer to tool and application layers, with AI integration in developer tools and office suites becoming a competitive focus, while edge AI and accountable AI are emerging trends."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 技能生成与设计工具快速升温",
-          "en": "Agent Skill Generation and Design Tools Rapidly Gaining Traction"
+          "zh": "AI 编程助手生态竞争加剧",
+          "en": "Intensifying competition in AI coding assistant ecosystem"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "book-to-skill 将技术书籍转化为 Claude Code 技能，一个月获千星；diagram-design 提供 29 种编辑级图表设计，今日新增 4475 星，登顶趋势榜。",
-          "en": "book-to-skill converts technical books into Claude Code skills, gaining 1k stars in a month; diagram-design offers 29 editor-level chart designs, adding 4,475 stars today, topping the trend list."
+          "zh": "GitHub 将 Gemini 3.7 Flash 集成到 Copilot，同时 OpenAI 发布 GPT-5.6 构建者指南，强调构建 AI 代理。多个开源项目如 book-to-skill、anti-slop、dsh-TUI 等围绕 Claude Code 生态涌现，提升开发体验。",
+          "en": "GitHub integrated Gemini 3.7 Flash into Copilot, while OpenAI released GPT-5.6 builder guide emphasizing AI agents. Multiple open-source projects like book-to-skill, anti-slop, dsh-TUI are emerging around Claude Code ecosystem, enhancing dev experience."
         },
         "pmInsight": {
-          "zh": "开发者渴望将知识沉淀为可复用的 Agent 技能，并追求更专业的 AI 输出。PM 可关注技能市场的机会，或为 AI 生成内容提供设计规范。",
-          "en": "Developers are eager to distill knowledge into reusable Agent skills and seek more professional AI outputs. PMs can explore opportunities in skill marketplaces or provide design guidelines for AI-generated content."
+          "zh": "AI 编程助手正从单一模型竞争转向生态竞争，集成多模型、提供可定制技能和工具成为关键。PM 应关注开发者对模型选择、技能扩展和代码质量的需求，打造开放平台。",
+          "en": "AI coding assistants are shifting from single-model competition to ecosystem competition; integrating multiple models and offering customizable skills/tools are key. PMs should focus on developers' needs for model choice, skill extensibility, and code quality, building open platforms."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "book-to-skill",
-            "url": "https://github.com/Leutenegger/book-to-skill"
-          },
-          {
-            "label": "diagram-design",
-            "url": "https://github.com/cathrynlavery/diagram-design"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "多模型支持成为开发平台标配，竞争加剧",
-          "en": "Multi-Model Support Becomes Standard for Development Platforms, Intensifying Competition"
-        },
-        "category": {
-          "zh": "AI 平台",
-          "en": "AI Platforms"
-        },
-        "summary": {
-          "zh": "GitHub Copilot 集成 Gemini 3.7 Flash，OpenAI 发布 GPT-5.6 构建者指南，苹果与阿里合作训练中国 AI 模型，多模型生态加速形成。",
-          "en": "GitHub Copilot integrates Gemini 3.7 Flash, OpenAI releases GPT-5.6 builder guide, Apple partners with Alibaba for China AI model, accelerating multi-model ecosystem."
-        },
-        "pmInsight": {
-          "zh": "开发平台需支持多模型以吸引用户，PM 应评估模型切换成本，提供灵活的模型选择，并关注本地化需求。",
-          "en": "Development platforms need to support multiple models to attract users. PMs should evaluate model switching costs, offer flexible model choices, and pay attention to localization needs."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Gemini 3.7 Flash in Copilot",
+            "label": "GitHub Changelog: Gemini 3.7 Flash in Copilot",
             "url": "https://github.blog/changelog/2026-08-13-gemini-3-7-flash-is-now-available-in-github-copilot"
           },
           {
-            "label": "GPT-5.6 Builder Guide",
+            "label": "OpenAI: The builder’s guide to GPT‑5.6",
             "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
           },
           {
-            "label": "Apple-Alibaba AI",
-            "url": "https://www.reuters.com/business/retail-consumer/apple-trains-its-own-ai-model-china-market-with-alibabas-support-sources-say-2026-08-14/"
+            "label": "Leutenegger/book-to-skill",
+            "url": "https://github.com/Leutenegger/book-to-skill"
+          },
+          {
+            "label": "dmmulroy/anti-slop",
+            "url": "https://github.com/dmmulroy/anti-slop"
+          },
+          {
+            "label": "ccch1mneyyy/dsh-TUI",
+            "url": "https://github.com/ccch1mneyyy/dsh-TUI"
           }
         ]
       },
       {
         "title": {
-          "zh": "轻量级与边缘 AI 模型受关注",
-          "en": "Lightweight and Edge AI Models Gain Attention"
+          "zh": "办公套件 AI 集成加速，数据分析平民化",
+          "en": "Office suite AI integration accelerates, democratizing data analysis"
         },
         "category": {
-          "zh": "模型技术",
-          "en": "Model Technology"
+          "zh": "办公效率",
+          "en": "Office Productivity"
         },
         "summary": {
-          "zh": "cactus-compute/needle 推出 14MB 基础模型，面向小型设备，今日新增 769 星；同时，Hacker News 展示训练 harness 而非模型的新思路。",
-          "en": "cactus-compute/needle releases a 14MB foundation model for small devices, adding 769 stars today; meanwhile, Hacker News showcases a new approach of training the harness rather than the model."
+          "zh": "Google 在 Sheets 中推出 Canvas 功能，用户可通过自然语言生成交互式仪表盘。同时，macro-inc/macro 作为一体化工作空间，整合邮件、聊天、文档等，并引入共享 AI 记忆，今日新增 1239 星。",
+          "en": "Google launched Canvas in Sheets, allowing users to generate interactive dashboards via natural language. Meanwhile, macro-inc/macro, an all-in-one workspace integrating email, chat, docs, etc., with shared AI memory, gained 1239 stars today."
         },
         "pmInsight": {
-          "zh": "边缘 AI 和低成本优化成为趋势，PM 可探索在资源受限场景下的 AI 应用，或利用 harness 训练提升现有模型性能。",
-          "en": "Edge AI and cost-effective optimization are trends. PMs can explore AI applications in resource-constrained scenarios or leverage harness training to improve existing model performance."
+          "zh": "AI 正在降低数据分析的门槛，非技术用户也能通过自然语言创建可视化。PM 应关注如何将 AI 能力无缝嵌入现有工作流，提供模板和引导，同时考虑数据安全和隐私。",
+          "en": "AI is lowering the barrier to data analysis, enabling non-technical users to create visualizations via natural language. PMs should focus on seamlessly embedding AI into existing workflows, providing templates and guidance, while considering data security and privacy."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "needle",
+            "label": "Google AI: Sheets canvas",
+            "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/"
+          },
+          {
+            "label": "macro-inc/macro",
+            "url": "https://github.com/macro-inc/macro"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "边缘 AI 与可问责 AI 升温",
+          "en": "Edge AI and accountable AI gaining traction"
+        },
+        "category": {
+          "zh": "AI 基础设施",
+          "en": "AI Infrastructure"
+        },
+        "summary": {
+          "zh": "cactus-compute/needle 提供 14MB 基础模型，适合小型设备，今日新增 769 星；semantica-agi/semantica 基于图的基础设施，增强 AI 可解释性，今日新增 713 星。两者均位列趋势榜前列。",
+          "en": "cactus-compute/needle offers a 14MB base model for small devices, gaining 769 stars today; semantica-agi/semantica provides graph-based infrastructure for AI explainability, gaining 713 stars. Both rank high on trending lists."
+        },
+        "pmInsight": {
+          "zh": "边缘 AI 和可问责 AI 是长期趋势，PM 应关注模型压缩技术、可解释性需求，探索在资源受限设备和合规场景中的应用。",
+          "en": "Edge AI and accountable AI are long-term trends. PMs should focus on model compression techniques and explainability requirements, exploring applications in resource-constrained devices and compliance scenarios."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "cactus-compute/needle",
             "url": "https://github.com/cactus-compute/needle"
           },
           {
-            "label": "Harness Training",
-            "url": "https://github.com/workofart/harness-training"
+            "label": "semantica-agi/semantica",
+            "url": "https://github.com/semantica-agi/semantica"
           }
         ]
       }
@@ -151,59 +159,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建 Agent 技能市场或技能生成工具",
-          "en": "Build an Agent Skill Marketplace or Skill Generation Tool"
+          "zh": "开发面向开发者的 AI 技能市场",
+          "en": "Develop an AI skills marketplace for developers"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "开发者工具",
+          "en": "Developer Tools"
         },
         "summary": {
-          "zh": "基于 book-to-skill 和 diagram-design 的热度，开发者对可复用技能和高质量输出有强烈需求。",
-          "en": "Based on the popularity of book-to-skill and diagram-design, developers have a strong demand for reusable skills and high-quality outputs."
+          "zh": "基于 Anthropic 官方 skills 仓库和 book-to-skill 等项目的热度，开发者对可复用、可定制的 AI 技能需求增长。可构建一个平台，让开发者分享、发现和组合技能，类似 npm 但针对 AI 代理。",
+          "en": "Based on the popularity of Anthropic's official skills repo and projects like book-to-skill, developers' demand for reusable, customizable AI skills is growing. A platform could be built for developers to share, discover, and compose skills, like npm but for AI agents."
         },
         "pmInsight": {
-          "zh": "假设：提供一个技能市场，允许开发者分享和发现 Agent 技能，可加速生态发展。验证方式：创建 MVP，观察开发者上传和下载技能的数量及留存。",
-          "en": "Hypothesis: Providing a skill marketplace where developers can share and discover Agent skills could accelerate ecosystem growth. Validation: Create an MVP and observe the number of uploads/downloads and retention."
+          "zh": "验证假设：开发者是否愿意为高质量技能付费或贡献？可通过 MVP 测试技能下载量、贡献者数量和用户留存。",
+          "en": "Hypothesis to validate: Are developers willing to pay for or contribute high-quality skills? Test via MVP measuring skill downloads, contributor count, and user retention."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "book-to-skill",
-            "url": "https://github.com/Leutenegger/book-to-skill"
+            "label": "anthropics/skills",
+            "url": "https://github.com/anthropics/skills"
           },
           {
-            "label": "diagram-design",
-            "url": "https://github.com/cathrynlavery/diagram-design"
+            "label": "Leutenegger/book-to-skill",
+            "url": "https://github.com/Leutenegger/book-to-skill"
           }
         ]
       },
       {
         "title": {
-          "zh": "开发多模型切换的中间层工具",
-          "en": "Develop Middleware Tools for Multi-Model Switching"
+          "zh": "打造面向非技术用户的 AI 数据分析助手",
+          "en": "Build an AI data analysis assistant for non-technical users"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "办公效率",
+          "en": "Office Productivity"
         },
         "summary": {
-          "zh": "多模型成为标配，但切换成本高，开发者需要统一接口和评估工具。",
-          "en": "Multi-model is becoming standard, but switching costs are high; developers need unified interfaces and evaluation tools."
+          "zh": "Google Sheets Canvas 和 macro 等产品表明，用户希望用自然语言处理数据。可开发一个独立工具，连接多种数据源，提供对话式分析和可视化，并支持导出到常用办公软件。",
+          "en": "Products like Google Sheets Canvas and macro show users want to handle data via natural language. A standalone tool could be developed that connects to multiple data sources, offers conversational analysis and visualization, and supports export to common office software."
         },
         "pmInsight": {
-          "zh": "假设：提供统一 API 网关和模型评估工具，可降低多模型使用门槛。验证方式：调研开发者痛点，构建原型并测试使用意愿。",
-          "en": "Hypothesis: Providing a unified API gateway and model evaluation tools could lower the barrier to multi-model usage. Validation: Survey developer pain points, build a prototype, and test willingness to use."
+          "zh": "验证假设：非技术用户是否愿意采用新的数据分析工具？可通过原型测试任务完成率和用户满意度。",
+          "en": "Hypothesis to validate: Are non-technical users willing to adopt a new data analysis tool? Test via prototype measuring task completion rate and user satisfaction."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Gemini 3.7 Flash in Copilot",
-            "url": "https://github.blog/changelog/2026-08-13-gemini-3-7-flash-is-now-available-in-github-copilot"
+            "label": "Google AI: Sheets canvas",
+            "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/"
           },
           {
-            "label": "GPT-5.6 Builder Guide",
-            "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
+            "label": "macro-inc/macro",
+            "url": "https://github.com/macro-inc/macro"
           }
         ]
       }
@@ -219,26 +227,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "将技术书籍 PDF 转化为 Claude Code 技能，方便在编程时随时查阅和引用，提升学习与工作效率。",
+          "zh": "将技术书籍 PDF 一键转化为 Claude Code 技能，便于在编程时随时查阅和调用，提升学习与工作效率。",
           "en": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work."
         },
-        "totalStars": 1039,
+        "totalStars": 1040,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "将技术书籍 PDF 转化为 Claude Code 技能，方便在编程时随时查阅和引用，提升学习与工作效率。",
+          "zh": "将技术书籍 PDF 一键转化为 Claude Code 技能，便于在编程时随时查阅和调用，提升学习与工作效率。",
           "en": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work."
         },
         "todayHighlight": {
-          "zh": "创建仅一个月即获千星，今日新增约 100 星，作为新兴的 Agent 技能生成工具，正快速获得开发者关注。",
+          "zh": "项目创建仅一个月即获得超千星，今日新增星数未披露，但持续在上升榜单中，受到 AI 编程助手用户的关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,039 stars、132 forks，topics: agent, agent-memory, agent-skill, agent-skills, agentic，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,039 stars and 132 forks，topics: agent, agent-memory, agent-skill, agent-skills, agentic, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,040 stars、132 forks，topics: agent, agent-memory, agent-skill, agent-skills, agentic，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,040 stars and 132 forks，topics: agent, agent-memory, agent-skill, agent-skills, agentic, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注如何将静态知识转化为可交互的 AI 技能，这可能是未来知识管理的新范式。",
+          "zh": "观察如何将静态知识转化为可交互的 AI 技能，满足开发者对高效学习工具的需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +267,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "提供一套 Oxlint 规则，用于检测并拒绝低质量、低信息量的 TypeScript/JavaScript 代码模式，帮助团队维护代码标准。",
+          "zh": "提供一套 Oxlint 规则，用于拒绝低质量、低信息量的 TypeScript 和 JavaScript 代码模式，帮助团队维护代码标准。",
           "en": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns"
         },
-        "totalStars": 614,
+        "totalStars": 617,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "提供一套 Oxlint 规则，用于检测并拒绝低质量、低信息量的 TypeScript/JavaScript 代码模式，帮助团队维护代码标准。",
+          "zh": "提供一套 Oxlint 规则，用于拒绝低质量、低信息量的 TypeScript 和 JavaScript 代码模式，帮助团队维护代码标准。",
           "en": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns"
         },
         "todayHighlight": {
-          "zh": "创建一个月内获得 614 星，今日新增约 60 星，作为反低质量代码的实用工具，在开发者社区中快速升温。",
+          "zh": "项目创建仅一个月，今日新增星数未披露，但作为新兴的代码质量工具，在开发者社区中快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 614 stars、9 forks，topics: agent-skills, linting, oxlint, typescript，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 614 stars and 9 forks，topics: agent-skills, linting, oxlint, typescript, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 617 stars、9 forks，topics: agent-skills, linting, oxlint, typescript，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 617 stars and 9 forks，topics: agent-skills, linting, oxlint, typescript, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开发者对代码质量工具的需求，以及如何通过规则集提升 AI 生成代码的可维护性。",
+          "zh": "关注代码质量工具如何与 AI 编程助手结合，提升生成代码的可靠性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +307,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 DeepSeek Harness 提供终端 TUI 插件，以 Claude Code 风格的全屏交互界面，增强命令行使用体验。",
+          "zh": "为 DeepSeek Harness 提供终端 TUI 插件，采用 Claude Code 风格的全屏交互界面，支持实时状态显示、思考流式展开等功能，满足 CLI 用户需求。",
           "en": "解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。"
         },
-        "totalStars": 513,
+        "totalStars": 545,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 DeepSeek Harness 提供终端 TUI 插件，以 Claude Code 风格的全屏交互界面，增强命令行使用体验。",
+          "zh": "为 DeepSeek Harness 提供终端 TUI 插件，采用 Claude Code 风格的全屏交互界面，支持实时状态显示、思考流式展开等功能，满足 CLI 用户需求。",
           "en": "解决DSH 官方尚无终端 TUI 痛点的补位之作，献给偏爱cli的各位极客：Claude Code 风格全屏交互终端插件——像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条 + TPS 仪表。npm 一键安装。"
         },
         "todayHighlight": {
-          "zh": "创建一个月内获 513 星，今日新增约 50 星，填补官方 TUI 空白，吸引 CLI 爱好者关注。",
+          "zh": "项目创建仅一个月，今日新增星数未披露，但因其填补官方 TUI 空白，在开发者社区中快速获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 513 stars、19 forks，topics: claude-code, coding-agent, deepseek, deepseek-harness, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 513 stars and 19 forks，topics: claude-code, coding-agent, deepseek, deepseek-harness, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 545 stars、20 forks，topics: claude-code, coding-agent, deepseek, deepseek-harness, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 545 stars and 20 forks，topics: claude-code, coding-agent, deepseek, deepseek-harness, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注开发者对终端工具美学的追求，以及插件生态对核心产品的价值。",
+          "zh": "观察终端用户对 AI 工具交互体验的需求，以及插件生态的补位机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +347,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 提供 29 种编辑级图表设计，采用纯 HTML+SVG，无阴影、无 Mermaid 风格，让 AI 生成的图表更专业。",
+          "zh": "为 Claude Code 提供 29 种编辑级图表类型，基于 HTML 和 SVG，无需阴影或 Mermaid 依赖，帮助生成设计友好的图表。",
           "en": "Star cathrynlavery / diagram-design 29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop."
         },
-        "totalStars": 15235,
+        "totalStars": 15340,
         "language": "HTML",
         "dailyStars": 4475,
         "chineseIntro": {
-          "zh": "为 Claude Code 提供 29 种编辑级图表设计，采用纯 HTML+SVG，无阴影、无 Mermaid 风格，让 AI 生成的图表更专业。",
+          "zh": "为 Claude Code 提供 29 种编辑级图表类型，基于 HTML 和 SVG，无需阴影或 Mermaid 依赖，帮助生成设计友好的图表。",
           "en": "Star cathrynlavery / diagram-design 29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop."
         },
         "todayHighlight": {
-          "zh": "今日新增 4475 星，总星数达 1.5 万，登顶全球趋势榜，成为设计驱动 AI 输出的热门项目。",
+          "zh": "今日新增 4475 星，总星数达 15340，位列全球趋势榜第一，因其提升 AI 生成图表的设计质量而广受好评。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 15k+ stars, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 4,475 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,235 stars、917 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,235 stars and 917 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,340 stars、924 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,340 stars and 924 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 生成内容的设计质量，以及如何通过设计规范提升 AI 输出的专业感。",
+          "zh": "关注 AI 生成内容的设计质量如何成为差异化优势，以及用户对美观输出的强烈需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +387,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向团队的一体化工作空间，整合邮件、聊天、文档、任务、代理、通话和 CRM，通过 @ 链接和共享 AI 记忆协同。",
+          "zh": "面向团队的一体化工作空间，整合邮件、聊天、文档、任务、代理、通话和 CRM，并通过共享 AI 记忆实现 @ 链接，提升协作效率。",
           "en": "Star macro-inc / macro Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory."
         },
-        "totalStars": 2688,
+        "totalStars": 2707,
         "language": "Rust",
         "dailyStars": 1239,
         "chineseIntro": {
-          "zh": "面向团队的一体化工作空间，整合邮件、聊天、文档、任务、代理、通话和 CRM，通过 @ 链接和共享 AI 记忆协同。",
+          "zh": "面向团队的一体化工作空间，整合邮件、聊天、文档、任务、代理、通话和 CRM，并通过共享 AI 记忆实现 @ 链接，提升协作效率。",
           "en": "Star macro-inc / macro Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory."
         },
         "todayHighlight": {
-          "zh": "今日新增 1239 星，总星数 2688，进入全球趋势榜，作为 Rust 编写的全能型工具，正吸引团队协作领域关注。",
+          "zh": "今日新增 1239 星，总星数达 2707，位列全球趋势榜第七，作为新兴的团队协作工具，正在快速吸引用户。",
           "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,239 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,688 stars、281 forks，topics: agent, ai, ai-agents, all-in-one, crm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,688 stars and 281 forks，topics: agent, ai, ai-agents, all-in-one, crm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,707 stars、281 forks，topics: agent, ai, ai-agents, all-in-one, crm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,707 stars and 281 forks，topics: agent, ai, ai-agents, all-in-one, crm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察一体化工作空间对团队效率的影响，以及 AI 记忆如何重塑协作流程。",
+          "zh": "观察一体化工作空间如何利用 AI 记忆增强团队协作，以及其与现有工具的竞争关系。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +427,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "提供一套完整的 AI 代理集合，涵盖前端开发、社区管理、创意注入等角色，每个代理都有独特个性和流程，可立即用于工作流。",
+          "zh": "提供一套完整的 AI 代理集合，涵盖前端开发、社区管理、创意生成等角色，每个代理都有独特个性和流程，可直接用于工作流。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
-        "totalStars": 145275,
+        "totalStars": 145291,
         "language": "Shell",
         "dailyStars": 778,
         "chineseIntro": {
-          "zh": "提供一套完整的 AI 代理集合，涵盖前端开发、社区管理、创意注入等角色，每个代理都有独特个性和流程，可立即用于工作流。",
+          "zh": "提供一套完整的 AI 代理集合，涵盖前端开发、社区管理、创意生成等角色，每个代理都有独特个性和流程，可直接用于工作流。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
         "todayHighlight": {
-          "zh": "今日新增 778 星，总星数达 14.5 万，持续在榜，作为 AI 代理生态的成熟项目，长期受到开发者青睐。",
+          "zh": "今日新增 778 星，总星数高达 145291，持续在趋势榜上，因其丰富的代理类型和实用性，长期受到开发者青睐。",
           "en": "登上 GitHub Trending 日榜第 14 位, 总 star 数已达 145k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 778 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 145,275 stars、23,500 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 145,275 stars and 23,500 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 145,291 stars、23,504 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 145,291 stars and 23,504 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 代理的多样性和可组合性，以及如何通过角色化设计提升任务完成质量。",
+          "zh": "观察 AI 代理的模块化设计如何满足多样化需求，以及社区对代理生态的接受度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +467,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为手机、可穿戴设备、智能家居和机器人等小型设备设计的 14MB 基础模型，支持工具调用、设备使用和结构化提取。",
+          "zh": "为手机、可穿戴设备、智能家居和机器人等小型设备设计的 14MB 基础模型，支持工具调用、设备使用和结构化提取，内存占用约 28MB。",
           "en": "Star cactus-compute / needle 14MB foundation model for tiny devices; phones, wearables, smart home, and robots."
         },
-        "totalStars": 5076,
+        "totalStars": 5092,
         "language": "Python",
         "dailyStars": 769,
         "chineseIntro": {
-          "zh": "为手机、可穿戴设备、智能家居和机器人等小型设备设计的 14MB 基础模型，支持工具调用、设备使用和结构化提取。",
+          "zh": "为手机、可穿戴设备、智能家居和机器人等小型设备设计的 14MB 基础模型，支持工具调用、设备使用和结构化提取，内存占用约 28MB。",
           "en": "Star cactus-compute / needle 14MB foundation model for tiny devices; phones, wearables, smart home, and robots."
         },
         "todayHighlight": {
-          "zh": "今日新增 769 星，总星数 5076，进入全球趋势榜，作为超轻量级模型，在边缘 AI 领域引发关注。",
+          "zh": "今日新增 769 星，总星数达 5092，位列全球趋势榜第四，因其极小的模型体积和高效性能，在边缘 AI 领域快速升温。",
           "en": "登上 GitHub Trending 日榜第 4 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 769 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,076 stars、335 forks，topics: cactus, gemini, gemma, llm, on-device-ai，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,076 stars and 335 forks，topics: cactus, gemini, gemma, llm, on-device-ai, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,092 stars、336 forks，topics: cactus, gemini, gemma, llm, on-device-ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,092 stars and 336 forks，topics: cactus, gemini, gemma, llm, on-device-ai, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注端侧 AI 的可行性，以及小模型在资源受限设备上的应用潜力。",
+          "zh": "关注端侧 AI 模型的轻量化趋势，以及其对设备智能化的潜在影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +507,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 系统提供基于图的基础设施，支持上下文管理、知识图谱和可解释性，增强 AI 的问责能力。",
+          "zh": "基于图的基础设施，为 AI 系统提供上下文管理和可问责性，支持知识图谱、语义搜索等功能，增强 AI 的可解释性。",
           "en": "Graph-Native Infrastructure for Context and Accountable AI Systems"
         },
-        "totalStars": 6897,
+        "totalStars": 6935,
         "language": "Python",
         "dailyStars": 713,
         "chineseIntro": {
-          "zh": "为 AI 系统提供基于图的基础设施，支持上下文管理、知识图谱和可解释性，增强 AI 的问责能力。",
+          "zh": "基于图的基础设施，为 AI 系统提供上下文管理和可问责性，支持知识图谱、语义搜索等功能，增强 AI 的可解释性。",
           "en": "Graph-Native Infrastructure for Context and Accountable AI Systems"
         },
         "todayHighlight": {
-          "zh": "今日新增 713 星，总星数 6897，全球趋势榜第二，作为 AI 基础设施项目，持续获得关注。",
+          "zh": "今日新增 713 星，总星数达 6935，位列全球趋势榜第二，作为 AI 基础设施项目，随着可问责 AI 需求增长而持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 713 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,897 stars、724 forks，topics: agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,897 stars and 724 forks，topics: agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,935 stars、725 forks，topics: agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,935 stars and 725 forks，topics: agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 系统的可解释性和治理需求，以及图技术如何提升 AI 的可靠性。",
+          "zh": "观察 AI 治理和上下文工程如何成为企业级 AI 部署的关键，以及图数据库在其中的作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +547,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "领先的开源 RAG 引擎，结合检索增强生成与代理能力，为 LLM 提供高质量上下文层。",
+          "zh": "领先的开源 RAG 引擎，结合检索增强生成与代理能力，为 LLM 提供优质的上下文层，支持知识库问答等场景。",
           "en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
         },
-        "totalStars": 88114,
+        "totalStars": 88131,
         "language": "Go",
         "dailyStars": 465,
         "chineseIntro": {
-          "zh": "领先的开源 RAG 引擎，结合检索增强生成与代理能力，为 LLM 提供高质量上下文层。",
+          "zh": "领先的开源 RAG 引擎，结合检索增强生成与代理能力，为 LLM 提供优质的上下文层，支持知识库问答等场景。",
           "en": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
         },
         "todayHighlight": {
-          "zh": "今日新增 465 星，总星数 8.8 万，作为成熟项目持续在榜，是 RAG 领域的标杆。",
+          "zh": "今日新增 465 星，总星数达 88131，作为成熟项目持续在榜，因其在 RAG 领域的领先地位和活跃社区，长期保持增长。",
           "en": "登上 GitHub Trending 日榜第 17 位, 总 star 数已达 88k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 465 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 88,114 stars、10,361 forks，topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 88,114 stars and 10,361 forks，topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 88,131 stars、10,362 forks，topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 88,131 stars and 10,362 forks，topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 RAG 技术的演进，以及如何通过上下文工程提升 LLM 应用的准确性。",
+          "zh": "关注 RAG 技术如何演进以提升 LLM 应用的准确性，以及开源生态的竞争格局。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +587,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方发布的 Agent Skills 公共仓库，包含技能实现和标准，帮助 Claude 动态加载指令和资源以提升任务表现。",
+          "zh": "Anthropic 官方发布的 Agent Skills 公共仓库，包含技能文件夹，让 Claude 动态加载指令和资源以提升特定任务表现。",
           "en": "Public repository for Agent Skills"
         },
-        "totalStars": 169151,
+        "totalStars": 169177,
         "language": "Python",
         "dailyStars": 312,
         "chineseIntro": {
-          "zh": "Anthropic 官方发布的 Agent Skills 公共仓库，包含技能实现和标准，帮助 Claude 动态加载指令和资源以提升任务表现。",
+          "zh": "Anthropic 官方发布的 Agent Skills 公共仓库，包含技能文件夹，让 Claude 动态加载指令和资源以提升特定任务表现。",
           "en": "Public repository for Agent Skills"
         },
         "todayHighlight": {
-          "zh": "今日新增 312 星，总星数 16.9 万，作为官方仓库，持续吸引开发者关注，是 Agent 技能生态的核心。",
+          "zh": "今日新增 312 星，总星数达 169177，位列全球趋势榜第三，作为官方技能库，持续吸引开发者贡献和采用。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 169k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 312 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 169,151 stars、20,139 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 169,151 stars and 20,139 forks，topics: agent-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 169,177 stars、20,139 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 169,177 stars and 20,139 forks，topics: agent-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 Agent 技能标准的发展，以及官方生态对第三方开发者的影响。",
+          "zh": "观察官方技能标准如何塑造 AI 代理生态，以及第三方技能的创新方向。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,11 +633,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "OpenAI 发布 GPT-5.6 构建者指南，介绍如何利用新 Responses API 和更智能的模型选择，构建更快、更具成本效益的 AI 代理。",
+          "zh": "OpenAI 发布 GPT-5.6 构建者指南，介绍如何利用新模型和 Responses API 构建更快速、更具成本效益的 AI 代理。",
           "en": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 GPT-5.6 构建者指南，介绍如何利用新 Responses API 和更智能的模型选择，构建更快、更具成本效益的 AI 代理。",
+          "zh": "OpenAI 发布 GPT-5.6 构建者指南，介绍如何利用新模型和 Responses API 构建更快速、更具成本效益的 AI 代理。",
           "en": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities."
         },
         "todayHighlight": {
@@ -637,7 +645,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GPT-5.6 的发布可能重新定义 AI 代理的开发范式，对开发者生态产生深远影响。"
         },
         "pmInsight": {
-          "zh": "产品经理应评估 GPT-5.6 的模型选择策略，优化成本与性能的平衡，并探索新 API 在代理场景中的应用。",
+          "zh": "产品经理应评估 GPT-5.6 在成本与性能上的平衡，考虑将其集成到现有 AI 产品中，以提升竞争力。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -662,19 +670,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Google 在 Sheets 中推出 Canvas 功能，用户可通过简单提示将数据转化为交互式仪表盘、学习追踪器等迷你应用。",
+          "zh": "Google 在 Sheets 中推出 Canvas 功能，用户可通过简单提示将数据转化为交互式仪表盘和自定义应用。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Sheets_canvas-blog-header-2784x.max-600x600.format-webp.webp\">Sheets canvas turns data into interactive dashboards, custom study trackers, seating charts, and more, all with a simple prompt."
         },
         "chineseIntro": {
-          "zh": "Google 在 Sheets 中推出 Canvas 功能，用户可通过简单提示将数据转化为交互式仪表盘、学习追踪器等迷你应用。",
+          "zh": "Google 在 Sheets 中推出 Canvas 功能，用户可通过简单提示将数据转化为交互式仪表盘和自定义应用。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Sheets_canvas-blog-header-2784x.max-600x600.format-webp.webp\">Sheets canvas turns data into interactive dashboards, custom study trackers, seating charts, and more, all with a simple prompt."
         },
         "todayHighlight": {
-          "zh": "Sheets Canvas 将 AI 能力融入日常办公工具，可能改变用户处理数据的方式，提升生产力。",
-          "en": "Sheets Canvas 将 AI 能力融入日常办公工具，可能改变用户处理数据的方式，提升生产力。"
+          "zh": "该功能将 AI 能力直接嵌入办公套件，可能改变数据分析的交互方式，提升非技术用户的数据处理能力。",
+          "en": "该功能将 AI 能力直接嵌入办公套件，可能改变数据分析的交互方式，提升非技术用户的数据处理能力。"
         },
         "pmInsight": {
-          "zh": "产品经理可关注 AI 驱动的数据可视化趋势，探索将类似功能集成到自身产品中，以增强用户体验。",
+          "zh": "产品经理可关注如何将类似 AI 驱动的可视化功能整合到自身产品中，以降低用户的数据分析门槛。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -699,19 +707,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "GitHub Universe 2026 会议日程公布，涵盖 AI 驱动开发、企业级 AI 测量、MCP 服务器安全等主题，早鸟注册可省 300 美元。",
+          "zh": "GitHub Universe 2026 会议日程公布，涵盖 AI 驱动开发、企业级 AI 应用等主题，早鸟注册可节省 300 美元。",
           "en": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300. The post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Universe 2026 会议日程公布，涵盖 AI 驱动开发、企业级 AI 测量、MCP 服务器安全等主题，早鸟注册可省 300 美元。",
+          "zh": "GitHub Universe 2026 会议日程公布，涵盖 AI 驱动开发、企业级 AI 应用等主题，早鸟注册可节省 300 美元。",
           "en": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300. The post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "GitHub Universe 是开发者生态的风向标，其议程反映了 AI 编程工具的最新趋势和行业焦点。",
-          "en": "GitHub Universe 是开发者生态的风向标，其议程反映了 AI 编程工具的最新趋势和行业焦点。"
+          "zh": "作为开发者生态的重要风向标，GitHub Universe 将展示 AI 编程的最新趋势，值得关注。",
+          "en": "作为开发者生态的重要风向标，GitHub Universe 将展示 AI 编程的最新趋势，值得关注。"
         },
         "pmInsight": {
-          "zh": "产品经理可关注会议议题，了解 AI 开发工具的前沿方向，为产品路线图提供参考。",
+          "zh": "产品经理可借此机会了解 AI 开发工具的前沿动态，为产品路线图提供参考。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -736,19 +744,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Google 的 Gemini 3.7 Flash 模型已集成到 GitHub Copilot，提升 Web 开发、代理编码等场景的性能，并支持按使用量计费。",
+          "zh": "Google 的 Gemini 3.7 Flash 模型已集成到 GitHub Copilot，提升 Web 开发、代理式编码等场景的性能。",
           "en": "Gemini 3.7 Flash, Google&#8217;s latest Flash model, is now rolling out in GitHub Copilot. From our early testing, the model has made improvements in web and app development and agentic&#8230; The post Gemini 3.7 Flash is now available in GitHub Copilot appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "Google 的 Gemini 3.7 Flash 模型已集成到 GitHub Copilot，提升 Web 开发、代理编码等场景的性能，并支持按使用量计费。",
+          "zh": "Google 的 Gemini 3.7 Flash 模型已集成到 GitHub Copilot，提升 Web 开发、代理式编码等场景的性能。",
           "en": "Gemini 3.7 Flash, Google&#8217;s latest Flash model, is now rolling out in GitHub Copilot. From our early testing, the model has made improvements in web and app development and agentic&#8230; The post Gemini 3.7 Flash is now available in GitHub Copilot appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "Gemini 3.7 Flash 进入 Copilot 标志着多模型生态的深化，开发者将拥有更多选择，竞争加剧。",
-          "en": "Gemini 3.7 Flash 进入 Copilot 标志着多模型生态的深化，开发者将拥有更多选择，竞争加剧。"
+          "zh": "该合作加强了 Google 在开发者工具生态中的影响力，可能影响 AI 编程助手的竞争格局。",
+          "en": "该合作加强了 Google 在开发者工具生态中的影响力，可能影响 AI 编程助手的竞争格局。"
         },
         "pmInsight": {
-          "zh": "产品经理应关注多模型策略，评估不同模型在特定任务上的表现，以优化产品性能和成本。",
+          "zh": "产品经理可评估 Gemini 3.7 Flash 在编码任务中的表现，考虑将其作为备选模型以优化成本或性能。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -773,19 +781,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Hacker News 上展示了一个开源项目，通过训练 LLM 的“harness”（包括提示、上下文管理、工具等）而非模型本身，实现跨模型、跨基准的性能提升。",
+          "zh": "Hacker News 上展示了一个开源项目，通过训练 LLM 的“harness”（提示、上下文管理等）而非模型本身，实现跨模型、跨基准的性能提升。",
           "en": "Article URL: https://github.com/workofart/harness-training Comments URL: https://news.ycombinator.com/item?id=49293267 Points: 4 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "Hacker News 上展示了一个开源项目，通过训练 LLM 的“harness”（包括提示、上下文管理、工具等）而非模型本身，实现跨模型、跨基准的性能提升。",
+          "zh": "Hacker News 上展示了一个开源项目，通过训练 LLM 的“harness”（提示、上下文管理等）而非模型本身，实现跨模型、跨基准的性能提升。",
           "en": "Article URL: https://github.com/workofart/harness-training Comments URL: https://news.ycombinator.com/item?id=49293267 Points: 4 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "该研究可能颠覆传统微调思路，为提升 LLM 应用性能提供低成本新路径，值得关注。",
-          "en": "该研究可能颠覆传统微调思路，为提升 LLM 应用性能提供低成本新路径，值得关注。"
+          "zh": "该研究可能开辟 AI 优化的新方向，即通过改进外部框架而非模型权重来提升性能，对行业具有启发意义。",
+          "en": "该研究可能开辟 AI 优化的新方向，即通过改进外部框架而非模型权重来提升性能，对行业具有启发意义。"
         },
         "pmInsight": {
-          "zh": "产品经理可探索“harness 训练”方法，优化现有 LLM 应用的提示和工具链，以提升效果而不增加模型成本。",
+          "zh": "产品经理可关注此类“harness 训练”方法，探索在不更换模型的情况下提升产品 AI 能力的可能性。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -810,19 +818,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "据路透社报道，苹果正与阿里巴巴合作，为中国市场训练自有 AI 模型，以适应当地监管和用户需求。",
-          "en": "Article URL: https://www.reuters.com/business/retail-consumer/apple-trains-its-own-ai-model-china-market-with-alibabas-support-sources-say-2026-08-14/ Comments URL: https://news.ycombinator.com/item?id=49294844 Points: 2 # Comments: 0"
+          "zh": "据路透社报道，苹果正在阿里巴巴的支持下为中国市场训练自有 AI 模型，以满足本地化需求。",
+          "en": "Article URL: https://www.reuters.com/business/retail-consumer/apple-trains-its-own-ai-model-china-market-with-alibabas-support-sources-say-2026-08-14/ Comments URL: https://news.ycombinator.com/item?id=49294844 Points: 6 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "据路透社报道，苹果正与阿里巴巴合作，为中国市场训练自有 AI 模型，以适应当地监管和用户需求。",
-          "en": "Article URL: https://www.reuters.com/business/retail-consumer/apple-trains-its-own-ai-model-china-market-with-alibabas-support-sources-say-2026-08-14/ Comments URL: https://news.ycombinator.com/item?id=49294844 Points: 2 # Comments: 0"
+          "zh": "据路透社报道，苹果正在阿里巴巴的支持下为中国市场训练自有 AI 模型，以满足本地化需求。",
+          "en": "Article URL: https://www.reuters.com/business/retail-consumer/apple-trains-its-own-ai-model-china-market-with-alibabas-support-sources-say-2026-08-14/ Comments URL: https://news.ycombinator.com/item?id=49294844 Points: 6 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "苹果此举凸显跨国科技公司在中国 AI 市场的本地化策略，可能影响全球 AI 竞争格局。",
-          "en": "苹果此举凸显跨国科技公司在中国 AI 市场的本地化策略，可能影响全球 AI 竞争格局。"
+          "zh": "苹果此举旨在应对中国市场的监管和竞争，可能影响其 AI 战略的全球布局。",
+          "en": "苹果此举旨在应对中国市场的监管和竞争，可能影响其 AI 战略的全球布局。"
         },
         "pmInsight": {
-          "zh": "产品经理应关注本地化 AI 模型的需求，考虑与本地伙伴合作，以满足特定市场的合规和体验要求。",
+          "zh": "产品经理应关注苹果与阿里巴巴的合作模式，思考如何通过本地化合作满足特定市场需求。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
