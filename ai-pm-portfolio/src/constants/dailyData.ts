@@ -44,92 +44,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报 2026-08-23",
-      "en": "AI PM Daily 2026-08-23"
+      "zh": "AI 产品经理日报：DeepSeek Harness 生态升温，OpenAI 降价与 AI Futures 引关注",
+      "en": "AI PM Daily: DeepSeek Harness Ecosystem Heats Up, OpenAI Price Cut and AI Futures Attract Attention"
     },
     "editorNote": {
-      "zh": "今日焦点：DeepSeek Harness 生态快速扩张，开源模型竞争力增强，AI 编码代理与本地化工具持续升温。",
-      "en": "Today's focus: DeepSeek Harness ecosystem expands rapidly, open-source models gain competitiveness, AI coding agents and local tools continue to heat up."
+      "zh": "今日 GitHub 趋势聚焦 AI Agent 开发框架与工具链，DeepSeek Harness 及其生态插件表现亮眼，OpenAI Codex 持续领跑。公司动态方面，OpenAI 推出 AI Futures 栏目并下调 GPT-5.6 Sol 价格，行业领袖对 AI 伦理的批评也值得关注。",
+      "en": "Today's GitHub trends focus on AI agent development frameworks and toolchains, with DeepSeek Harness and its ecosystem plugins standing out, while OpenAI Codex continues to lead. On the company front, OpenAI launched the AI Futures column and cut GPT-5.6 Sol pricing, and industry leaders' criticism of AI ethics is also noteworthy."
     },
     "keyTakeaway": {
-      "zh": "今日主线：开源 AI 生态加速繁荣，DeepSeek Harness 以插件架构快速构建生态，同时开源模型性能提升对闭源厂商形成压力，AI 编码代理与本地化工具成为开发者关注热点。",
-      "en": "Today's main line: Open-source AI ecosystem is booming. DeepSeek Harness builds its ecosystem rapidly with plugin architecture, while open-source models' performance puts pressure on closed-source vendors. AI coding agents and local tools are hot topics among developers."
+      "zh": "AI Agent 开发框架进入生态竞争期，DeepSeek Harness 以插件架构快速崛起，OpenAI 则通过降价与思想领导力巩固地位。",
+      "en": "AI agent development frameworks are entering an ecosystem competition phase, with DeepSeek Harness rising rapidly through its plugin architecture, while OpenAI consolidates its position through price cuts and thought leadership."
     },
     "signals": [
       {
         "title": {
-          "zh": "DeepSeek Harness 生态快速扩张",
-          "en": "DeepSeek Harness ecosystem expands rapidly"
+          "zh": "DeepSeek Harness 生态快速扩张，插件模式成为 Agent 框架竞争关键",
+          "en": "DeepSeek Harness ecosystem expands rapidly, plugin model becomes key in agent framework competition"
         },
         "category": {
           "zh": "开源生态",
           "en": "Open Source Ecosystem"
         },
         "summary": {
-          "zh": "DeepSeek Harness 发布一个月即获 18.5 万星标，今日其 iOS 模拟器插件 dsh-ios 上榜，两天获 209 星，显示生态正在快速形成。",
-          "en": "DeepSeek Harness gained 185k stars within a month of release, and today its iOS simulator plugin dsh-ios appeared on the trending list with 209 stars in two days, indicating rapid ecosystem formation."
+          "zh": "DeepSeek Harness 官方框架一个月获 18.5 万星，其 iOS 插件 dsh-ios 也获 210 星，显示插件生态正在形成。",
+          "en": "DeepSeek Harness official framework gained 185k stars in a month, and its iOS plugin dsh-ios also got 210 stars, indicating a plugin ecosystem is forming."
         },
         "pmInsight": {
-          "zh": "插件化架构能快速吸引第三方开发者，PM 可关注此类生态平台，考虑通过插件市场拓展产品边界。",
-          "en": "Plugin architecture can quickly attract third-party developers. PMs should watch such ecosystem platforms and consider expanding product boundaries via plugin marketplaces."
+          "zh": "Agent 框架的竞争已从核心能力转向生态丰富度，PM 应关注插件市场的培育，通过提供 SDK 和激励计划吸引第三方开发者。",
+          "en": "Competition in agent frameworks has shifted from core capabilities to ecosystem richness. PMs should focus on nurturing plugin marketplaces by providing SDKs and incentive programs to attract third-party developers."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "deepseek-harness",
+            "label": "deepseek-ai/deepseek-harness",
             "url": "https://github.com/deepseek-ai/deepseek-harness"
           },
           {
-            "label": "dsh-ios",
+            "label": "ZSeven-W/dsh-ios",
             "url": "https://github.com/ZSeven-W/dsh-ios"
           }
         ]
       },
       {
         "title": {
-          "zh": "开源模型竞争力增强，闭源厂商承压",
-          "en": "Open-source models gain competitiveness, closed-source vendors under pressure"
-        },
-        "category": {
-          "zh": "模型竞争",
-          "en": "Model Competition"
-        },
-        "summary": {
-          "zh": "Reddit 社区讨论指出 Qwen 3.8 27B 等开源模型性能优异，导致闭源 AI 厂商宣传沉默；同时 OpenAI 推出 AI Futures 博客，主动引导 AI 未来叙事。",
-          "en": "Reddit community discusses that open-source models like Qwen 3.8 27B perform well, causing closed-source vendors to stay quiet; meanwhile OpenAI launched AI Futures blog to proactively shape AI narrative."
-        },
-        "pmInsight": {
-          "zh": "开源模型性能提升可能改变市场格局，PM 应评估基于开源模型的产品可行性，并关注闭源厂商的应对策略（如降价、叙事引导）。",
-          "en": "Improved open-source model performance may change market dynamics. PMs should evaluate product feasibility based on open-source models and watch closed-source vendors' responses (e.g., price cuts, narrative shaping)."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vvt7lo/closed_ai_has_been_real_quiet_since_qwen_38_27b/"
-          },
-          {
-            "label": "OpenAI AI Futures",
-            "url": "https://openai.com/index/introducing-ai-futures"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "AI 编码代理与本地化工具持续升温",
-          "en": "AI coding agents and local tools continue to heat up"
+          "zh": "AI 编码工具链持续升温，Codex 与 ECC 等生态组件受追捧",
+          "en": "AI coding toolchain continues to heat up, Codex and ECC ecosystem components are sought after"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "OpenAI Codex 今日新增 1544 星，全球趋势第一；ECC 和 Karpathy Skills 等增强工具也上榜；同时本地语音听写工具 Dictata 出现，反映隐私需求。",
-          "en": "OpenAI Codex gained 1544 stars today, ranking first globally; enhancement tools like ECC and Karpathy Skills also trended; local dictation tool Dictata emerged, reflecting privacy needs."
+          "zh": "OpenAI Codex 日增 1544 星，ECC 为编码代理提供增强功能，日增 411 星，Karpathy 技能指南也获 315 星，显示 AI 编码工具链需求旺盛。",
+          "en": "OpenAI Codex gained 1,544 stars daily, ECC provides enhancements for coding agents with 411 daily stars, and Karpathy skills guide got 315 stars, indicating strong demand for AI coding toolchains."
         },
         "pmInsight": {
-          "zh": "开发者对 AI 编码代理的接受度提高，PM 可考虑集成或开发类似工具；本地化 AI 工具满足隐私需求，是差异化机会。",
-          "en": "Developers' acceptance of AI coding agents is rising. PMs may consider integrating or developing similar tools; local AI tools address privacy needs, offering differentiation opportunities."
+          "zh": "AI 编码工具正从单一模型走向完整工具链，PM 可考虑集成类似 ECC 的增强组件，或开发针对特定场景的技能包，提升开发者体验。",
+          "en": "AI coding tools are moving from single models to complete toolchains. PMs can consider integrating enhancement components like ECC or developing skill packs for specific scenarios to improve developer experience."
         },
         "impact": "Medium",
         "sources": [
@@ -144,10 +115,31 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "multica-ai/andrej-karpathy-skills",
             "url": "https://github.com/multica-ai/andrej-karpathy-skills"
-          },
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 内容溯源与隐私工具升温，水印移除工具引争议",
+          "en": "AI content provenance and privacy tools heat up, watermark remover sparks controversy"
+        },
+        "category": {
+          "zh": "AI 治理与安全",
+          "en": "AI Governance & Safety"
+        },
+        "summary": {
+          "zh": "watermarks-remover 工具可移除 AI 内容水印，今日在趋势榜快速上升，引发对 AI 内容溯源与隐私的讨论。",
+          "en": "The watermarks-remover tool can remove watermarks from AI content, rising quickly on trending today, sparking discussions on AI content provenance and privacy."
+        },
+        "pmInsight": {
+          "zh": "AI 内容溯源成为焦点，PM 在构建生成式 AI 产品时需考虑水印等溯源机制，同时关注用户隐私需求，平衡合规与体验。",
+          "en": "AI content provenance is becoming a focus. PMs building generative AI products should consider watermarking and provenance mechanisms, while addressing user privacy needs and balancing compliance with experience."
+        },
+        "impact": "Medium",
+        "sources": [
           {
-            "label": "Dictata",
-            "url": "https://github.com/AntoineChatry/Dictata"
+            "label": "Leutenegger/watermarks-remover",
+            "url": "https://github.com/Leutenegger/watermarks-remover"
           }
         ]
       }
@@ -155,59 +147,51 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "开发 DeepSeek Harness 插件市场",
-          "en": "Develop a plugin marketplace for DeepSeek Harness"
+          "zh": "基于 DeepSeek Harness 生态开发垂直行业插件",
+          "en": "Develop vertical industry plugins based on DeepSeek Harness ecosystem"
         },
         "category": {
-          "zh": "生态平台",
-          "en": "Ecosystem Platform"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 DeepSeek Harness 的插件生态快速成长，可构建官方插件市场，提供发现、安装、管理功能，并支持第三方开发者分发。",
-          "en": "Based on the rapid growth of DeepSeek Harness plugin ecosystem, an official plugin marketplace can be built, offering discovery, installation, management, and third-party distribution."
+          "zh": "DeepSeek Harness 插件架构快速崛起，但现有插件多为通用型，垂直行业（如医疗、金融）插件尚缺。",
+          "en": "DeepSeek Harness's plugin architecture is rising rapidly, but existing plugins are mostly general-purpose; vertical industry (e.g., healthcare, finance) plugins are lacking."
         },
         "pmInsight": {
-          "zh": "验证假设：插件市场能提升生态粘性，吸引更多开发者，形成网络效应。可先推出 MVP，观察插件数量和开发者活跃度。",
-          "en": "Hypothesis: A plugin marketplace can increase ecosystem stickiness, attract more developers, and create network effects. Start with an MVP and monitor plugin count and developer activity."
+          "zh": "可验证假设：开发面向特定行业的 DeepSeek Harness 插件，能快速获取早期用户。建议先调研行业痛点，设计插件原型，在开发者社区验证需求。",
+          "en": "Testable hypothesis: Developing DeepSeek Harness plugins for specific industries can quickly acquire early users. Suggest researching industry pain points, designing plugin prototypes, and validating demand in developer communities."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "deepseek-harness",
+            "label": "deepseek-ai/deepseek-harness",
             "url": "https://github.com/deepseek-ai/deepseek-harness"
-          },
-          {
-            "label": "dsh-ios",
-            "url": "https://github.com/ZSeven-W/dsh-ios"
           }
         ]
       },
       {
         "title": {
-          "zh": "推出本地优先的 AI 编码助手",
-          "en": "Launch a local-first AI coding assistant"
+          "zh": "利用 GPT-5.6 Sol 降价，优化 AI 应用成本结构",
+          "en": "Leverage GPT-5.6 Sol price cut to optimize AI application cost structure"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "成本优化",
+          "en": "Cost Optimization"
         },
         "summary": {
-          "zh": "结合本地语音听写工具 Dictata 的隐私优势和 AI 编码代理的流行，可开发本地运行的编码助手，支持离线使用，保护代码隐私。",
-          "en": "Combining the privacy advantage of local dictation tool Dictata and the popularity of AI coding agents, a locally-run coding assistant can be developed, supporting offline use and protecting code privacy."
+          "zh": "OpenAI 下调 GPT-5.6 Sol 价格，输入降 20%，输出降 33%，Vercel 提供 50% 折扣，应用成本显著降低。",
+          "en": "OpenAI cut GPT-5.6 Sol prices, with 20% input and 33% output reductions, and Vercel offers 50% discount, significantly lowering application costs."
         },
         "pmInsight": {
-          "zh": "验证假设：企业开发者对代码隐私敏感，本地编码助手有市场需求。可通过原型测试用户对离线能力和隐私保护的付费意愿。",
-          "en": "Hypothesis: Enterprise developers are sensitive about code privacy, and there is market demand for local coding assistants. Test user willingness to pay for offline capability and privacy protection via a prototype."
+          "zh": "可验证假设：将依赖 GPT-5.6 的应用迁移至新定价，可降低 20-30% 成本。建议评估现有模型使用量，重新核算成本，并考虑将节省的成本用于提升用户体验或扩展功能。",
+          "en": "Testable hypothesis: Migrating applications relying on GPT-5.6 to new pricing can reduce costs by 20-30%. Suggest evaluating current model usage, recalculating costs, and considering using savings to improve user experience or expand features."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Dictata",
-            "url": "https://github.com/AntoineChatry/Dictata"
-          },
-          {
-            "label": "openai/codex",
-            "url": "https://github.com/openai/codex"
+            "label": "Vercel AI: GPT-5.6 Sol is now 50% off a lower price",
+            "url": "https://vercel.com/changelog/gpt-5-6-sol-is-now-50-percent-off-a-lower-price"
           }
         ]
       }
@@ -223,26 +207,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 推出的开源 AI Agent 开发框架，采用“一切皆插件”的架构，基于 Cordis 构建，旨在提供灵活、可组合的智能体运行环境。",
+          "zh": "DeepSeek 推出的开源 AI Agent 开发框架，采用“一切皆插件”的架构，基于 Cordis 构建，支持快速扩展和定制，适合构建复杂的智能体应用。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 185508,
+        "totalStars": 185612,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 推出的开源 AI Agent 开发框架，采用“一切皆插件”的架构，基于 Cordis 构建，旨在提供灵活、可组合的智能体运行环境。",
+          "zh": "DeepSeek 推出的开源 AI Agent 开发框架，采用“一切皆插件”的架构，基于 Cordis 构建，支持快速扩展和定制，适合构建复杂的智能体应用。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "作为 DeepSeek 官方项目，发布仅一个月即获得 18.5 万星标，今日新增星标数据暂缺，但持续保持高热度，开发者社区关注度极高。",
+          "zh": "作为 DeepSeek 官方项目，创建仅一个月便获得 18.5 万星标，今日新增星标数未披露，但增速迅猛，开发者预览版迭代频繁，引发社区广泛关注。",
           "en": "创建仅约 1 个月便已积累 185k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,508 stars、20,539 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,508 stars and 20,539 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,612 stars、20,555 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,612 stars and 20,555 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方如何通过插件化架构构建生态，以及开发者对官方框架的接受度。",
+          "zh": "观察官方如何通过插件化架构构建生态，以及开发者预览策略对早期社区吸引力的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,18 +247,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个用于移除 AI 生成内容水印的工具，支持 Unicode 文本清理、统计重写技术以及从多种文件格式中剥离 C2PA 元数据，帮助用户处理 AI 痕迹。",
+          "zh": "一个 Python 工具，用于移除多种 AI 生成内容的水印痕迹，包括 Unicode 文本清理、统计重写技术以及从 PNG、JPEG、PDF 等文件中剥离 C2PA 元数据。",
           "en": "Remove multi-vendor AI provenance traces: Unicode text sanitization, statistical rewriting techniques, and C2PA/metadata stripping from PNG/JPEG/SVG/PDF/DOCX/HTML/MD files"
         },
         "totalStars": 936,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个用于移除 AI 生成内容水印的工具，支持 Unicode 文本清理、统计重写技术以及从多种文件格式中剥离 C2PA 元数据，帮助用户处理 AI 痕迹。",
+          "zh": "一个 Python 工具，用于移除多种 AI 生成内容的水印痕迹，包括 Unicode 文本清理、统计重写技术以及从 PNG、JPEG、PDF 等文件中剥离 C2PA 元数据。",
           "en": "Remove multi-vendor AI provenance traces: Unicode text sanitization, statistical rewriting techniques, and C2PA/metadata stripping from PNG/JPEG/SVG/PDF/DOCX/HTML/MD files"
         },
         "todayHighlight": {
-          "zh": "今日上榜，创建仅一天即获得 936 星，增长迅速，可能因 AI 水印话题引发关注。",
+          "zh": "今日在 GitHub 趋势榜上快速上升，创建仅一个月已获 936 星，因涉及 AI 内容溯源与隐私话题，引发开发者讨论。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
@@ -282,7 +266,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 936 stars and 95 forks，topics: claude, claude-code, claude-skills, codex, codex-cli, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 内容溯源与隐私的平衡，以及此类工具对 AI 内容生态的影响。",
+          "zh": "关注 AI 内容溯源与反溯源的技术博弈，以及此类工具对内容审核和版权管理的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -303,26 +287,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek Harness 的 iOS 模拟器插件，可在对话中实时操作 iOS 模拟器或真机，提供 22 个代理工具，支持 UI 自动化测试和交互。",
+          "zh": "DeepSeek Harness 的 iOS 插件，可在对话中实时操控 iOS 模拟器或 USB 连接的 iPhone，提供 22 个代理工具，支持 UI 自动化、OCR 文本识别和侧边栏交互。",
           "en": "DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22 agent tools for booting, building, driving the UI by accessibility identity, OCR text or list rows, plus a streaming sidebar panel you can tap and drag on."
         },
-        "totalStars": 209,
+        "totalStars": 210,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek Harness 的 iOS 模拟器插件，可在对话中实时操作 iOS 模拟器或真机，提供 22 个代理工具，支持 UI 自动化测试和交互。",
+          "zh": "DeepSeek Harness 的 iOS 插件，可在对话中实时操控 iOS 模拟器或 USB 连接的 iPhone，提供 22 个代理工具，支持 UI 自动化、OCR 文本识别和侧边栏交互。",
           "en": "DeepSeek Harness (DSH) plugin: a live iOS Simulator — and a USB-connected iPhone — inside the conversation. 22 agent tools for booting, building, driving the UI by accessibility identity, OCR text or list rows, plus a streaming sidebar panel you can tap and drag on."
         },
         "todayHighlight": {
-          "zh": "今日上榜，创建两天即获 209 星，作为 DeepSeek Harness 生态的插件，随主项目热度快速传播。",
+          "zh": "作为 DeepSeek Harness 生态的插件，创建仅一个月即获 210 星，今日在趋势榜上升，得益于移动端自动化需求的增长。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 209 stars、21 forks，topics: accessibility, ai-agents, coding-agent, deepseek-harness, dsh，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 209 stars and 21 forks，topics: accessibility, ai-agents, coding-agent, deepseek-harness, dsh, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 210 stars、21 forks，topics: accessibility, ai-agents, coding-agent, deepseek-harness, dsh，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 210 stars and 21 forks，topics: accessibility, ai-agents, coding-agent, deepseek-harness, dsh, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察插件生态如何丰富主平台能力，以及移动端自动化在 AI Agent 中的应用前景。",
+          "zh": "观察插件生态如何为 Agent 框架扩展移动端能力，以及开发者对跨平台自动化工具的兴趣。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -343,26 +327,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "OpenAI 推出的轻量级终端编码代理，可理解代码库并执行常规任务，支持自然语言交互，提升开发效率。",
+          "zh": "OpenAI 推出的轻量级编码代理，运行在终端中，可帮助开发者通过自然语言完成编码任务，支持 IDE 集成和桌面应用。",
           "en": "Star openai / codex Lightweight coding agent that runs in your terminal"
         },
-        "totalStars": 113738,
+        "totalStars": 113830,
         "language": "Rust",
         "dailyStars": 1544,
         "chineseIntro": {
-          "zh": "OpenAI 推出的轻量级终端编码代理，可理解代码库并执行常规任务，支持自然语言交互，提升开发效率。",
+          "zh": "OpenAI 推出的轻量级编码代理，运行在终端中，可帮助开发者通过自然语言完成编码任务，支持 IDE 集成和桌面应用。",
           "en": "Star openai / codex Lightweight coding agent that runs in your terminal"
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第一，单日新增 1544 星，总星数达 11.3 万，持续获得开发者关注。",
+          "zh": "今日新增 1544 星，总星数达 11.4 万，持续位居全球趋势榜首位，作为 OpenAI 官方工具，其迭代速度和社区关注度保持高位。",
           "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 113k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,544 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 113,738 stars、17,400 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 113,738 stars and 17,400 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 113,830 stars、17,411 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 113,830 stars and 17,411 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编码代理的竞争格局，以及 OpenAI 在开发者工具领域的布局。",
+          "zh": "关注官方编码代理与第三方工具的竞争格局，以及终端型 AI 助手对开发者工作流的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +367,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Agent 性能优化系统，为 Claude Code、Codex 等编码代理提供技能、记忆、安全等增强功能，支持多种工具。",
+          "zh": "一个 Agent 性能优化系统，为 Claude Code、Codex 等编码代理提供技能、记忆、安全等增强功能，支持多种开发工具。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 242223,
+        "totalStars": 242233,
         "language": "JavaScript",
         "dailyStars": 411,
         "chineseIntro": {
-          "zh": "一个 Agent 性能优化系统，为 Claude Code、Codex 等编码代理提供技能、记忆、安全等增强功能，支持多种工具。",
+          "zh": "一个 Agent 性能优化系统，为 Claude Code、Codex 等编码代理提供技能、记忆、安全等增强功能，支持多种开发工具。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第三，单日新增 411 星，总星数达 24.2 万，作为热门项目持续升温。",
+          "zh": "今日新增 411 星，总星数达 24.2 万，持续在趋势榜前列，作为 Agent 生态的基础组件，随 AI 编码工具普及而升温。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 242k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 411 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 242,223 stars、36,702 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 242,223 stars and 36,702 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 242,233 stars、36,706 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 242,233 stars and 36,706 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开发者对 Agent 增强工具的需求，以及此类系统如何提升 AI 编程效率。",
+          "zh": "观察 Agent 增强工具如何提升开发效率，以及跨平台兼容性对用户采纳的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +407,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个基于 Andrej Karpathy 对 LLM 编码陷阱观察的 CLAUDE.md 文件，用于改善 Claude Code 的行为，提升代码质量。",
+          "zh": "一个基于 Andrej Karpathy 对 LLM 编码陷阱观察的 CLAUDE.md 文件，用于改善 Claude Code 的行为，提升代码生成质量。",
           "en": "Star multica-ai / andrej-karpathy-skills A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
         },
-        "totalStars": 205380,
+        "totalStars": 205394,
         "language": "Unknown",
         "dailyStars": 315,
         "chineseIntro": {
-          "zh": "一个基于 Andrej Karpathy 对 LLM 编码陷阱观察的 CLAUDE.md 文件，用于改善 Claude Code 的行为，提升代码质量。",
+          "zh": "一个基于 Andrej Karpathy 对 LLM 编码陷阱观察的 CLAUDE.md 文件，用于改善 Claude Code 的行为，提升代码生成质量。",
           "en": "Star multica-ai / andrej-karpathy-skills A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第十一，单日新增 315 星，总星数达 20.5 万，因名人效应和实用价值持续获得关注。",
+          "zh": "今日新增 315 星，总星数达 20.5 万，因 Karpathy 的行业影响力，该指南在开发者中快速传播，持续在趋势榜上。",
           "en": "登上 GitHub Trending 日榜第 11 位, 总 star 数已达 205k+，持续占据 AI 开源热门榜单, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 315 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 205,380 stars、21,010 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 205,380 stars and 21,010 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 205,394 stars、21,012 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 205,394 stars and 21,012 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 KOL 对 AI 工具使用的影响，以及社区对最佳实践的传播。",
+          "zh": "关注意见领袖对 AI 编码工具使用习惯的影响，以及社区对最佳实践的渴求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -466,7 +450,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "一站式开源中转服务，将 Claude、OpenAI、Gemini 等订阅统一接入 API，支持拼车共享，降低使用成本，兼容原生工具。",
           "en": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。"
         },
-        "totalStars": 38833,
+        "totalStars": 38842,
         "language": "Go",
         "dailyStars": 278,
         "chineseIntro": {
@@ -474,15 +458,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。"
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第五，单日新增 278 星，总星数达 3.8 万，因降低 AI 使用成本而受到关注。",
+          "zh": "今日新增 278 星，总星数达 3.9 万，因 AI 订阅费用高昂，共享模式吸引用户，持续在趋势榜上。",
           "en": "登上 GitHub Trending 日榜第 5 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 278 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,833 stars、8,041 forks，topics: 2api, antigravity2api, cc2api, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,833 stars and 8,041 forks，topics: 2api, antigravity2api, cc2api, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,842 stars、8,041 forks，topics: 2api, antigravity2api, cc2api, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,842 stars and 8,041 forks，topics: 2api, antigravity2api, cc2api, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 服务聚合与共享模式的市场需求，以及成本敏感型用户的增长。",
+          "zh": "观察 AI 服务共享经济模式，以及成本敏感型用户的需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -503,26 +487,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个公平代码的工作流自动化平台，支持可视化构建 AI 代理和工作流，可自托管或云服务，集成 400+ 应用。",
+          "zh": "一个公平代码的工作流自动化平台，具备原生 AI 能力，支持可视化构建与自定义代码，可自托管或云部署，集成 400+ 应用。",
           "en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
         },
-        "totalStars": 201883,
+        "totalStars": 201895,
         "language": "TypeScript",
         "dailyStars": 149,
         "chineseIntro": {
-          "zh": "一个公平代码的工作流自动化平台，支持可视化构建 AI 代理和工作流，可自托管或云服务，集成 400+ 应用。",
+          "zh": "一个公平代码的工作流自动化平台，具备原生 AI 能力，支持可视化构建与自定义代码，可自托管或云部署，集成 400+ 应用。",
           "en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第七，单日新增 149 星，总星数达 20.1 万，作为老牌自动化平台持续稳定增长。",
+          "zh": "今日新增 149 星，总星数达 20.2 万，作为老牌自动化平台，持续获得关注，得益于 AI Agent 工作流需求的增长。",
           "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 201k+，属于持续在榜的头部 AI 开源项目, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散, 今日新增 149 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 201,883 stars、60,308 forks，topics: ai, apis, automation, cli, data-flow，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 201,883 stars and 60,308 forks，topics: ai, apis, automation, cli, data-flow, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 201,895 stars、60,309 forks，topics: ai, apis, automation, cli, data-flow，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 201,895 stars and 60,309 forks，topics: ai, apis, automation, cli, data-flow, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察低代码/无代码平台在 AI 时代的演进，以及企业自动化需求的变化。",
+          "zh": "观察低代码平台如何融入 AI 能力，以及自托管需求对企业用户的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -543,26 +527,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "领先的产品分析平台，提供 AI 可观测性、分析、会话回放、功能开关、实验、错误跟踪等功能，帮助团队构建自驱型产品。",
+          "zh": "领先的产品分析平台，提供 AI 可观测性、分析、会话回放、功能开关、实验、错误跟踪等工具，帮助构建自驱型产品。",
           "en": "Star PostHog / posthog 🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP."
         },
-        "totalStars": 38658,
+        "totalStars": 38667,
         "language": "Python",
         "dailyStars": 286,
         "chineseIntro": {
-          "zh": "领先的产品分析平台，提供 AI 可观测性、分析、会话回放、功能开关、实验、错误跟踪等功能，帮助团队构建自驱型产品。",
+          "zh": "领先的产品分析平台，提供 AI 可观测性、分析、会话回放、功能开关、实验、错误跟踪等工具，帮助构建自驱型产品。",
           "en": "Star PostHog / posthog 🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP."
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第十六，单日新增 286 星，总星数达 3.8 万，因 AI 可观测性需求增长而升温。",
+          "zh": "今日新增 286 星，总星数达 3.9 万，因 AI 产品需要深度分析，PostHog 持续在趋势榜上，受到开发者青睐。",
           "en": "登上 GitHub Trending 日榜第 16 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 286 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,658 stars、3,247 forks，topics: ab-testing, ai-analytics, analytics, cdp, data-warehouse，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,658 stars and 3,247 forks，topics: ab-testing, ai-analytics, analytics, cdp, data-warehouse, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,667 stars、3,247 forks，topics: ab-testing, ai-analytics, analytics, cdp, data-warehouse，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,667 stars and 3,247 forks，topics: ab-testing, ai-analytics, analytics, cdp, data-warehouse, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 产品的可观测性需求，以及数据分析工具如何适应 AI 时代。",
+          "zh": "关注 AI 产品分析工具如何帮助团队诊断问题、优化产品，以及开源与商业化的平衡。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -583,26 +567,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Cursor 编辑器的官方插件规范及插件集合，为开发者提供教学、持续学习等实用插件，扩展编辑器功能。",
+          "zh": "Cursor 官方插件规范及插件集合，为开发者工具、框架和 SaaS 产品提供标准化插件，支持教学、持续学习等场景。",
           "en": "Star cursor / plugins Cursor plugin specification and official plugins"
         },
-        "totalStars": 4689,
+        "totalStars": 4696,
         "language": "TypeScript",
         "dailyStars": 286,
         "chineseIntro": {
-          "zh": "Cursor 编辑器的官方插件规范及插件集合，为开发者提供教学、持续学习等实用插件，扩展编辑器功能。",
+          "zh": "Cursor 官方插件规范及插件集合，为开发者工具、框架和 SaaS 产品提供标准化插件，支持教学、持续学习等场景。",
           "en": "Star cursor / plugins Cursor plugin specification and official plugins"
         },
         "todayHighlight": {
-          "zh": "今日全球趋势榜第十五，单日新增 286 星，总星数达 4689，因官方生态建设而快速获得关注。",
+          "zh": "今日新增 286 星，总星数达 4696，作为 Cursor 官方项目，随 AI 编程助手生态扩展而升温，持续在趋势榜上。",
           "en": "登上 GitHub Trending 日榜第 15 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 286 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,689 stars、382 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,689 stars and 382 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,696 stars、383 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,696 stars and 383 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 编辑器如何通过插件生态增强竞争力，以及开发者对官方插件的接受度。",
+          "zh": "观察官方插件生态如何增强 IDE 的 AI 能力，以及插件规范对第三方开发者的吸引力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -617,43 +601,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "companyUpdates": [
       {
         "title": {
-          "zh": "Hacker News LLM: Show HN: Dictata – Local Whisper dictation with LLM cleanup",
-          "en": "Hacker News LLM: Show HN: Dictata – Local Whisper dictation with LLM cleanup"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "Dictata 是一个基于 Rust 的本地语音听写工具，支持多种后端模型，强调数据不出设备。该工具为需要隐私保护的语音输入场景提供了新选择。",
-          "en": "Article URL: https://github.com/AntoineChatry/Dictata Comments URL: https://news.ycombinator.com/item?id=49405912 Points: 1 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "Dictata 是一个基于 Rust 的本地语音听写工具，支持多种后端模型，强调数据不出设备。该工具为需要隐私保护的语音输入场景提供了新选择。",
-          "en": "Article URL: https://github.com/AntoineChatry/Dictata Comments URL: https://news.ycombinator.com/item?id=49405912 Points: 1 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "本地化 AI 工具持续涌现，反映用户对数据隐私和离线能力的强烈需求。",
-          "en": "本地化 AI 工具持续涌现，反映用户对数据隐私和离线能力的强烈需求。"
-        },
-        "pmInsight": {
-          "zh": "可关注本地语音方案的准确率和延迟，评估是否适合集成到隐私敏感型产品中。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News LLM",
-            "url": "https://github.com/AntoineChatry/Dictata"
-          }
-        ]
-      },
-      {
-        "title": {
           "zh": "OpenAI: Introducing AI Futures",
           "en": "OpenAI: Introducing AI Futures"
         },
@@ -666,63 +613,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "OpenAI 推出新博客 AI Futures，探讨变革性 AI 对权力、治理、经济和自由的影响。这标志着 OpenAI 在 AI 社会影响方面的主动发声。",
+          "zh": "OpenAI 推出新博客栏目 AI Futures，探讨变革性 AI 如何重塑权力、治理、经济和个人自由。",
           "en": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
         },
         "chineseIntro": {
-          "zh": "OpenAI 推出新博客 AI Futures，探讨变革性 AI 对权力、治理、经济和自由的影响。这标志着 OpenAI 在 AI 社会影响方面的主动发声。",
+          "zh": "OpenAI 推出新博客栏目 AI Futures，探讨变革性 AI 如何重塑权力、治理、经济和个人自由。",
           "en": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
         },
         "todayHighlight": {
-          "zh": "OpenAI 开始主导 AI 未来叙事，可能影响政策制定和公众认知。",
-          "en": "OpenAI 开始主导 AI 未来叙事，可能影响政策制定和公众认知。"
+          "zh": "这是 OpenAI 首次系统性地讨论 AI 的社会影响，可能预示其未来战略方向。",
+          "en": "这是 OpenAI 首次系统性地讨论 AI 的社会影响，可能预示其未来战略方向。"
         },
         "pmInsight": {
-          "zh": "关注该博客内容，可预判监管趋势，提前调整产品合规策略。",
+          "zh": "关注该博客内容，可提前预判 OpenAI 的产品伦理与合规走向。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/introducing-ai-futures"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Reddit LocalLLaMA: Closed AI has been real quiet since Qwen 3.8 27B dropped.",
-          "en": "Reddit LocalLLaMA: Closed AI has been real quiet since Qwen 3.8 27B dropped."
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "社区讨论指出，Qwen 3.8 27B 等开源模型性能优异，导致闭源 AI 厂商在宣传上趋于沉默，开源模型可能正在削弱闭源模型的商业价值。",
-          "en": "<!-- SC_OFF --><div class=\"md\"><p>This is something I've noticed. Back when GLM 5.2 and Kimi K3 launched, there was a media push on pushing how dangerous open source models are. </p> <p>We know why they were doing this; these open models are good enough to devalue paid closed models. I think the fear mongering was to protect their IPOs. Honestly, it backlashed. </p> <p>3.8 27B is the truly dangerous model for their p"
-        },
-        "chineseIntro": {
-          "zh": "社区讨论指出，Qwen 3.8 27B 等开源模型性能优异，导致闭源 AI 厂商在宣传上趋于沉默，开源模型可能正在削弱闭源模型的商业价值。",
-          "en": "<!-- SC_OFF --><div class=\"md\"><p>This is something I've noticed. Back when GLM 5.2 and Kimi K3 launched, there was a media push on pushing how dangerous open source models are. </p> <p>We know why they were doing this; these open models are good enough to devalue paid closed models. I think the fear mongering was to protect their IPOs. Honestly, it backlashed. </p> <p>3.8 27B is the truly dangerous model for their p"
-        },
-        "todayHighlight": {
-          "zh": "开源模型竞争力增强，可能改变 AI 市场竞争格局，对闭源厂商构成压力。",
-          "en": "开源模型竞争力增强，可能改变 AI 市场竞争格局，对闭源厂商构成压力。"
-        },
-        "pmInsight": {
-          "zh": "评估开源模型能力，考虑在成本敏感场景中替代闭源 API，降低运营成本。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vvt7lo/closed_ai_has_been_real_quiet_since_qwen_38_27b/"
           }
         ]
       },
@@ -740,26 +650,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 正式推出将已保存视图固定到仓库 issues 侧边栏的功能，并新增多项 issues 改进，如反应头像、密度调整等。",
+          "zh": "GitHub 正式推出将已保存视图固定到仓库 issues 侧边栏的功能，并新增了反应头像显示、仪表盘密度调整等改进。",
           "en": "Pinning saved views to the repository issues sidebar You can now pin saved views&#8288; to the repository issues sidebar, making the views you use most just one click away, even&#8230; The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 正式推出将已保存视图固定到仓库 issues 侧边栏的功能，并新增多项 issues 改进，如反应头像、密度调整等。",
+          "zh": "GitHub 正式推出将已保存视图固定到仓库 issues 侧边栏的功能，并新增了反应头像显示、仪表盘密度调整等改进。",
           "en": "Pinning saved views to the repository issues sidebar You can now pin saved views&#8288; to the repository issues sidebar, making the views you use most just one click away, even&#8230; The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "GitHub 持续优化开发者工作流，提升 issues 管理效率。",
-          "en": "GitHub 持续优化开发者工作流，提升 issues 管理效率。"
+          "zh": "这些更新提升了开发者日常管理 issues 的效率，尤其对大型项目协作有实际价值。",
+          "en": "这些更新提升了开发者日常管理 issues 的效率，尤其对大型项目协作有实际价值。"
         },
         "pmInsight": {
-          "zh": "可引导团队使用固定视图功能，提高 issue 处理效率。",
+          "zh": "若你的产品面向开发者，可借鉴其“固定视图”设计，减少用户操作步骤。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: New 100B Liquid AI model coming soon",
+          "en": "Reddit LocalLLaMA: New 100B Liquid AI model coming soon"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "Reddit 社区透露 Liquid AI 即将发布 100B 参数的新模型，引发开源社区关注。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1vvmxls/new_100b_liquid_ai_model_coming_soon/\"> <img src=\"https://preview.redd.it/cifbnspmjzkh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=efd72aa7bf1000ccdcbfb40b0616ef7a6057e6b5\" alt=\"New 100B Liquid AI model coming soon\" title=\"New 100B Liquid AI model coming soon\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Liquid AI currently po"
+        },
+        "chineseIntro": {
+          "zh": "Reddit 社区透露 Liquid AI 即将发布 100B 参数的新模型，引发开源社区关注。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1vvmxls/new_100b_liquid_ai_model_coming_soon/\"> <img src=\"https://preview.redd.it/cifbnspmjzkh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=efd72aa7bf1000ccdcbfb40b0616ef7a6057e6b5\" alt=\"New 100B Liquid AI model coming soon\" title=\"New 100B Liquid AI model coming soon\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>Liquid AI currently po"
+        },
+        "todayHighlight": {
+          "zh": "Liquid AI 的模型架构独特，新模型可能为开源社区带来新的性能标杆。",
+          "en": "Liquid AI 的模型架构独特，新模型可能为开源社区带来新的性能标杆。"
+        },
+        "pmInsight": {
+          "zh": "关注该模型的架构和性能，评估其是否适合集成到你的产品中。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar"
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vvmxls/new_100b_liquid_ai_model_coming_soon/"
           }
         ]
       },
@@ -785,11 +732,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2_JwwDb02.max-600x600.format-webp.webp\">Here’s how you can use Google Search tools to study for classes and standardized tests."
         },
         "todayHighlight": {
-          "zh": "Google 将 AI 深度整合进搜索，强化教育场景，可能改变在线学习方式。",
-          "en": "Google 将 AI 深度整合进搜索，强化教育场景，可能改变在线学习方式。"
+          "zh": "Google 将 AI 能力深度整合进搜索，强化其在教育场景的竞争力。",
+          "en": "Google 将 AI 能力深度整合进搜索，强化其在教育场景的竞争力。"
         },
         "pmInsight": {
-          "zh": "教育类产品可借鉴其交互设计，探索 AI 辅助学习的新功能。",
+          "zh": "教育类产品可参考其 AI 辅助学习功能，提升用户学习效率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -814,19 +761,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "OpenAI 降低 GPT-5.6 Sol 的官方定价，Vercel AI Gateway 在此基础上再提供 50% 折扣，输入降价 20%，输出降价三分之一。",
+          "zh": "OpenAI 下调 GPT-5.6 Sol 的列表价格，Vercel AI Gateway 的 50% 折扣适用于新低价，输入降价 20%，输出降价 33%。",
           "en": "OpenAI lowered list pricing for GPT-5.6 Sol, and the 50% AI Gateway discount now applies to the new, lower price through September 18. Input drops 20%, output drops a third. The discount applies on every OpenAI service tier:Service tierYou pay now (input / output)New list price (input / output)You paid before (input / output)Default$2.00 / $10.00$4.00 / $20.00$2.50 / $15.00Flex$1.00 / $5.00$2.00 / $10.00$1.25 / $7.50"
         },
         "chineseIntro": {
-          "zh": "OpenAI 降低 GPT-5.6 Sol 的官方定价，Vercel AI Gateway 在此基础上再提供 50% 折扣，输入降价 20%，输出降价三分之一。",
+          "zh": "OpenAI 下调 GPT-5.6 Sol 的列表价格，Vercel AI Gateway 的 50% 折扣适用于新低价，输入降价 20%，输出降价 33%。",
           "en": "OpenAI lowered list pricing for GPT-5.6 Sol, and the 50% AI Gateway discount now applies to the new, lower price through September 18. Input drops 20%, output drops a third. The discount applies on every OpenAI service tier:Service tierYou pay now (input / output)New list price (input / output)You paid before (input / output)Default$2.00 / $10.00$4.00 / $20.00$2.50 / $15.00Flex$1.00 / $5.00$2.00 / $10.00$1.25 / $7.50"
         },
         "todayHighlight": {
-          "zh": "模型降价可能引发连锁反应，促使其他厂商调整定价，降低 AI 应用成本。",
-          "en": "模型降价可能引发连锁反应，促使其他厂商调整定价，降低 AI 应用成本。"
+          "zh": "模型降价将直接影响依赖 GPT-5.6 的 AI 应用成本，可能引发行业价格战。",
+          "en": "模型降价将直接影响依赖 GPT-5.6 的 AI 应用成本，可能引发行业价格战。"
         },
         "pmInsight": {
-          "zh": "利用降价窗口，重新评估模型成本，优化产品定价策略。",
+          "zh": "若你的产品使用 GPT-5.6，应重新评估成本结构，并考虑调整定价策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -834,6 +781,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Vercel AI",
             "url": "https://vercel.com/changelog/gpt-5-6-sol-is-now-50-percent-off-a-lower-price"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Palantir's Karp – frontier AI labs that are 'trying to drug addict us'",
+          "en": "Hacker News AI: Palantir's Karp – frontier AI labs that are 'trying to drug addict us'"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "Palantir CEO Alex Karp 再次批评前沿 AI 实验室，称其试图让用户上瘾，引发对 AI 伦理的讨论。",
+          "en": "Article URL: https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html Comments URL: https://news.ycombinator.com/item?id=49405966 Points: 6 # Comments: 1"
+        },
+        "chineseIntro": {
+          "zh": "Palantir CEO Alex Karp 再次批评前沿 AI 实验室，称其试图让用户上瘾，引发对 AI 伦理的讨论。",
+          "en": "Article URL: https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html Comments URL: https://news.ycombinator.com/item?id=49405966 Points: 6 # Comments: 1"
+        },
+        "todayHighlight": {
+          "zh": "行业领袖的批评可能影响公众对 AI 的信任，并促使监管机构关注。",
+          "en": "行业领袖的批评可能影响公众对 AI 的信任，并促使监管机构关注。"
+        },
+        "pmInsight": {
+          "zh": "产品设计应避免过度依赖成瘾机制，注重用户福祉以应对潜在监管。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html"
           }
         ]
       }
