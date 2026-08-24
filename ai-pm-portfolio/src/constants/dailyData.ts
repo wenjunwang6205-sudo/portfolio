@@ -44,40 +44,44 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 编程助手生态升温，视频生成与逆向工程成新焦点",
-      "en": "AI Coding Assistant Ecosystem Heats Up, Video Generation and Reverse Engineering Become New Foci"
+      "zh": "AI 编程助手生态升温，模型降价与逆向工程工具涌现",
+      "en": "AI Coding Assistant Ecosystem Heats Up, Model Price Cuts and Reverse Engineering Tools Emerge"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势显示，AI 编程助手（如 Claude Code、Codex）的周边工具和技能包持续涌现，同时视频生成、水印移除等创意工具也获得关注。公司动态方面，OpenAI 推出新博客栏目、Anthropic 推出官方学习平台，以及 GPT-5.6 Sol 降价，均对开发者生态产生重要影响。",
-      "en": "Today's GitHub trends show a continued emergence of tools and skill packs around AI coding assistants (e.g., Claude Code, Codex), while creative tools like video generation and watermark removal also gain attention. In company news, OpenAI launched a new blog series, Anthropic introduced an official learning platform, and GPT-5.6 Sol price cut, all significantly impacting the developer ecosystem."
+      "zh": "今日 GitHub 与公司动态显示，AI 编程助手赛道持续升温，围绕其生态的工具链（如视频制作、性能优化、免费方案）不断涌现。同时，OpenAI 下调 GPT-5.6 Sol 价格，可能引发模型价格战。逆向工程与内容溯源工具的出现，反映了 AI 安全与版权议题的升温。",
+      "en": "Today's GitHub and company updates show the AI coding assistant track continues to heat up, with a growing ecosystem of tools (e.g., video production, performance optimization, free solutions). Meanwhile, OpenAI's price cut for GPT-5.6 Sol may trigger a model price war. The emergence of reverse engineering and content provenance tools reflects rising AI safety and copyright concerns."
     },
     "keyTakeaway": {
-      "zh": "AI 编程助手生态正从单一工具向平台化发展，围绕 Claude Code/Codex 的技能包、增强工具和免费方案成为开发者关注热点，同时视频生成与逆向工程等垂直场景开始与 AI Agent 结合，开辟新的应用方向。",
-      "en": "The AI coding assistant ecosystem is evolving from standalone tools to platforms, with skill packs, enhancement tools, and free solutions around Claude Code/Codex becoming hot topics. Meanwhile, vertical scenarios like video generation and reverse engineering are beginning to integrate with AI agents, opening new application directions."
+      "zh": "AI 编程助手正从单一工具演变为平台生态，围绕其衍生的技能包、优化系统、免费方案等需求旺盛；同时，模型降价与 AI 安全工具的出现，预示着成本竞争与合规治理将成为下一阶段焦点。",
+      "en": "AI coding assistants are evolving from standalone tools to platform ecosystems, with strong demand for skill packs, optimization systems, and free solutions. Meanwhile, model price cuts and AI safety tools signal that cost competition and compliance governance will be the next focus."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 编程助手技能包生态快速扩张",
-          "en": "Rapid Expansion of AI Coding Assistant Skill Pack Ecosystem"
+          "zh": "AI 编程助手生态工具链升温",
+          "en": "AI Coding Assistant Ecosystem Toolchain Explosion"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "今日 GitHub 上多个围绕 Claude Code/Codex 的技能包项目获得高星，如 video-shotcraft（6158 星）、book-to-skill（2.47 万星）、free-claude-code（4.8 万星）等，显示开发者对扩展 AI 编程助手能力的需求旺盛。",
-          "en": "Several skill pack projects around Claude Code/Codex gained high stars today, such as video-shotcraft (6158 stars), book-to-skill (24.7k stars), free-claude-code (48k stars), indicating strong developer demand for extending AI coding assistant capabilities."
+          "zh": "今日 GitHub 多个项目围绕 Claude Code、Codex 等 AI 编程助手构建生态：video-shotcraft 提供视频制作技能包（6k+ stars），ECC 提供性能优化系统（24 万 stars），book-to-skill 将技术书籍转为技能（2.4 万 stars），free-claude-code 提供免费 token 方案（4.8 万 stars）。",
+          "en": "Today's GitHub projects build ecosystems around AI coding assistants like Claude Code and Codex: video-shotcraft offers video production skill packs (6k+ stars), ECC provides performance optimization (240k stars), book-to-skill converts books to skills (24k stars), and free-claude-code offers free tokens (48k stars)."
         },
         "pmInsight": {
-          "zh": "AI 编程助手正成为平台，第三方技能包是生态关键。PM 可考虑构建技能市场或提供官方技能模板，降低开发者创建和分发技能的门槛，以抢占生态位。",
-          "en": "AI coding assistants are becoming platforms, and third-party skill packs are key to the ecosystem. PMs could consider building a skill marketplace or providing official skill templates to lower the barrier for developers to create and distribute skills, seizing the ecosystem niche."
+          "zh": "AI 编程助手正成为开发者工作流的核心入口，围绕其衍生的技能包、优化工具、知识转化工具需求旺盛。PM 可考虑构建类似生态，或集成这些工具以提升产品价值。",
+          "en": "AI coding assistants are becoming the core entry point for developer workflows, with strong demand for skill packs, optimization tools, and knowledge conversion tools. PMs should consider building similar ecosystems or integrating these tools to enhance product value."
         },
         "impact": "High",
         "sources": [
           {
             "label": "video-shotcraft",
             "url": "https://github.com/Vincentwei1021/video-shotcraft"
+          },
+          {
+            "label": "ECC",
+            "url": "https://github.com/affaan-m/ECC"
           },
           {
             "label": "book-to-skill",
@@ -91,49 +95,49 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "AI 视频生成与 Agent 技能结合，开辟创意生产新路径",
-          "en": "AI Video Generation Combined with Agent Skills Opens New Path for Creative Production"
+          "zh": "模型降价与免费方案推动 AI 应用成本下降",
+          "en": "Model Price Cuts and Free Solutions Drive Down AI Application Costs"
         },
         "category": {
-          "zh": "AI 应用",
-          "en": "AI Application"
+          "zh": "模型与平台",
+          "en": "Models & Platforms"
         },
         "summary": {
-          "zh": "video-shotcraft 项目将 152 张镜头配方卡和 209 个动态预览集成到 Claude Code/Codex 中，实现电影级产品宣传视频的快速生成，一个月内获得 6158 星。同时，GPT-Image-2 提示词引擎模板库也持续升温。",
-          "en": "The video-shotcraft project integrates 152 shot recipe cards and 209 dynamic previews into Claude Code/Codex, enabling rapid generation of cinematic product promo videos, gaining 6158 stars in a month. Meanwhile, the GPT-Image-2 prompt engine template library is also heating up."
+          "zh": "OpenAI 下调 GPT-5.6 Sol 价格，Vercel AI Gateway 提供 50% 折扣；同时 GitHub 上 free-claude-code 提供 13 亿+免费 token，降低 AI 编程使用门槛。",
+          "en": "OpenAI cut prices for GPT-5.6 Sol, with Vercel AI Gateway offering 50% off; meanwhile, free-claude-code on GitHub provides 1.3B+ free tokens, lowering the barrier to AI coding."
         },
         "pmInsight": {
-          "zh": "AI 视频生成正从独立工具转向与 Agent 工作流集成，PM 可探索将视频生成能力嵌入现有 AI 助手或开发垂直场景的 Agent 技能，如营销视频自动生成，以差异化竞争。",
-          "en": "AI video generation is shifting from standalone tools to integration with agent workflows. PMs could explore embedding video generation capabilities into existing AI assistants or developing vertical agent skills, such as automated marketing video generation, to differentiate."
+          "zh": "模型降价和免费方案将显著降低 AI 应用的成本结构，PM 应重新评估产品定价和成本模型，并抓住机会吸引价格敏感用户。",
+          "en": "Model price cuts and free solutions will significantly lower the cost structure of AI applications. PMs should reassess product pricing and cost models, and seize the opportunity to attract price-sensitive users."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "video-shotcraft",
-            "url": "https://github.com/Vincentwei1021/video-shotcraft"
+            "label": "Vercel Changelog",
+            "url": "https://vercel.com/changelog/gpt-5-6-sol-is-now-50-percent-off-a-lower-price"
           },
           {
-            "label": "awesome-gpt-image-2",
-            "url": "https://github.com/freestylefly/awesome-gpt-image-2"
+            "label": "free-claude-code",
+            "url": "https://github.com/Alishahryar1/free-claude-code"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI 在逆向工程与安全领域的应用升温",
-          "en": "AI Applications in Reverse Engineering and Security Heat Up"
+          "zh": "AI 安全与逆向工程工具升温",
+          "en": "AI Safety and Reverse Engineering Tools Gain Traction"
         },
         "category": {
-          "zh": "安全与逆向",
-          "en": "Security & Reverse Engineering"
+          "zh": "AI 安全",
+          "en": "AI Safety"
         },
         "summary": {
-          "zh": "x64dbg-mcp-server 项目让 AI 助手通过 MCP 控制调试器，一天内获得 907 星；同时，个人开发者使用 GLM-5.3 等 AI 模型成功破解平板限制，展示了 AI 在逆向工程中的潜力。",
-          "en": "The x64dbg-mcp-server project enables AI assistants to control debuggers via MCP, gaining 907 stars in a day; meanwhile, a hobbyist used AI models like GLM-5.3 to successfully jailbreak a tablet, demonstrating AI's potential in reverse engineering."
+          "zh": "x64dbg-mcp-server 让 AI 控制调试器进行自动化逆向工程（一天 936 stars）；watermark-remover 可清除 AI 内容水印（当天 760 stars）；Hacker News 案例展示 AI 破解设备锁定。",
+          "en": "x64dbg-mcp-server enables AI to control debuggers for automated reverse engineering (936 stars in a day); watermark-remover can remove AI content watermarks (760 stars on day one); Hacker News case shows AI cracking device locks."
         },
         "pmInsight": {
-          "zh": "AI 辅助逆向工程正在成为现实，PM 可关注安全工具链的 AI 集成机会，如开发自动化漏洞分析或固件逆向的 Agent 服务，但需注意合规风险。",
-          "en": "AI-assisted reverse engineering is becoming a reality. PMs could focus on AI integration opportunities in security toolchains, such as developing automated vulnerability analysis or firmware reverse engineering agent services, while being mindful of compliance risks."
+          "zh": "AI 在安全领域的应用引发关注，但水印清除工具可能带来版权风险。PM 在开发相关功能时需平衡创新与合规，并关注 AI 安全治理趋势。",
+          "en": "AI applications in security are gaining attention, but watermark removal tools may pose copyright risks. PMs should balance innovation and compliance when developing related features, and monitor AI safety governance trends."
         },
         "impact": "Medium",
         "sources": [
@@ -142,7 +146,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/duty1g/x64dbg-mcp-server"
           },
           {
-            "label": "Hacker News AI: I spent $266 and four AI models to own my tablet",
+            "label": "watermark-remover",
+            "url": "https://github.com/ShadowAqueduct/watermark-remover"
+          },
+          {
+            "label": "Hacker News AI",
             "url": "https://ericpardee.github.io/fire-hd-ownership/"
           }
         ]
@@ -151,20 +159,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建 AI 编程助手技能市场或模板库",
-          "en": "Build a Skill Marketplace or Template Library for AI Coding Assistants"
+          "zh": "构建 AI 编程助手技能市场",
+          "en": "Build a Skill Marketplace for AI Coding Assistants"
         },
         "category": {
-          "zh": "平台机会",
-          "en": "Platform Opportunity"
+          "zh": "开发者平台",
+          "en": "Developer Platform"
         },
         "summary": {
-          "zh": "基于 video-shotcraft、book-to-skill 等项目的快速走红，开发者对现成技能包需求强烈。可验证假设：提供一个集中式技能市场，支持搜索、安装、评分，能显著提升 AI 编程助手的采用率和用户粘性。",
-          "en": "Based on the rapid popularity of projects like video-shotcraft and book-to-skill, developers have a strong demand for ready-made skill packs. Testable hypothesis: a centralized skill marketplace with search, install, and rating features could significantly increase adoption and user stickiness of AI coding assistants."
+          "zh": "基于 video-shotcraft、book-to-skill 等项目的成功，开发者对可复用的技能包需求旺盛。可验证假设：提供一个平台，让开发者上传、分享、发现 AI 编程助手的技能包，并通过订阅或交易变现。",
+          "en": "Based on the success of projects like video-shotcraft and book-to-skill, there is strong demand for reusable skill packs. Testable hypothesis: Provide a platform for developers to upload, share, and discover skill packs for AI coding assistants, monetized through subscriptions or transactions."
         },
         "pmInsight": {
-          "zh": "PM 可设计一个技能市场 MVP，先聚合现有开源技能，提供一键安装到 Claude Code/Codex 的功能，并建立社区评分机制，验证用户获取和留存效果。",
-          "en": "PMs could design a skill marketplace MVP, aggregating existing open-source skills, offering one-click installation into Claude Code/Codex, and establishing community rating mechanisms to validate user acquisition and retention."
+          "zh": "PM 可探索构建技能市场，整合分散的技能包资源，形成网络效应。",
+          "en": "PMs can explore building a skill marketplace to consolidate fragmented skill pack resources and create network effects."
         },
         "impact": "High",
         "sources": [
@@ -180,26 +188,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "开发 AI 驱动的视频生成 Agent 技能",
-          "en": "Develop AI-Powered Video Generation Agent Skills"
+          "zh": "开发 AI 内容溯源与合规工具",
+          "en": "Develop AI Content Provenance and Compliance Tools"
         },
         "category": {
-          "zh": "内容创作",
-          "en": "Content Creation"
+          "zh": "AI 治理",
+          "en": "AI Governance"
         },
         "summary": {
-          "zh": "video-shotcraft 的成功表明，将视频生成与 Agent 工作流结合有市场。可验证假设：针对电商或营销场景，开发一个基于 Claude Code/Codex 的技能，输入产品信息即可自动生成多风格宣传视频，能提升内容生产效率并吸引中小企业用户。",
-          "en": "The success of video-shotcraft indicates a market for combining video generation with agent workflows. Testable hypothesis: developing a Claude Code/Codex skill for e-commerce or marketing that automatically generates multi-style promo videos from product info could improve content production efficiency and attract SMB users."
+          "zh": "watermark-remover 的流行和 OpenAI 推出 AI Futures 博客，表明 AI 内容溯源与治理需求上升。可验证假设：企业需要工具来检测和验证 AI 生成内容的来源，以符合法规和版权要求。",
+          "en": "The popularity of watermark-remover and OpenAI's AI Futures blog indicate rising demand for AI content provenance and governance. Testable hypothesis: Enterprises need tools to detect and verify the origin of AI-generated content to comply with regulations and copyright requirements."
         },
         "pmInsight": {
-          "zh": "PM 可聚焦垂直场景，如电商产品视频，设计技能流程：产品描述→脚本生成→镜头选择→视频渲染，并集成到现有 AI 助手，通过订阅或按次收费变现。",
-          "en": "PMs could focus on vertical scenarios like e-commerce product videos, designing a skill flow: product description → script generation → shot selection → video rendering, integrated into existing AI assistants, monetized via subscription or per-use fees."
+          "zh": "PM 可开发合规工具，帮助内容平台和创作者管理 AI 内容版权，抢占治理市场。",
+          "en": "PMs can develop compliance tools to help content platforms and creators manage AI content copyright, seizing the governance market."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "video-shotcraft",
-            "url": "https://github.com/Vincentwei1021/video-shotcraft"
+            "label": "watermark-remover",
+            "url": "https://github.com/ShadowAqueduct/watermark-remover"
+          },
+          {
+            "label": "OpenAI AI Futures",
+            "url": "https://openai.com/index/introducing-ai-futures"
           }
         ]
       }
@@ -215,26 +227,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 和 Codex 等 AI 编程助手打造的 AI 视频技能包，内置 152 张镜头配方卡和 209 个动态预览，可快速生成电影级产品宣传视频。",
+          "zh": "为 Claude Code 和 Codex 等 AI 编程助手提供视频制作技能包，内置 152 个分镜卡片和 209 个动态预览，可快速生成电影级产品宣传视频。",
           "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
         },
-        "totalStars": 6158,
+        "totalStars": 6164,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 Claude Code 和 Codex 等 AI 编程助手打造的 AI 视频技能包，内置 152 张镜头配方卡和 209 个动态预览，可快速生成电影级产品宣传视频。",
+          "zh": "为 Claude Code 和 Codex 等 AI 编程助手提供视频制作技能包，内置 152 个分镜卡片和 209 个动态预览，可快速生成电影级产品宣传视频。",
           "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
         },
         "todayHighlight": {
-          "zh": "创建仅一个月便获得 6158 星，今日新增星数未披露，但凭借 AI 视频生成与 Agent 技能结合的新颖定位，在开发者社区快速传播。",
-          "en": "创建仅约 1 个月便已积累 6,158 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
+          "zh": "创建仅一个月便获得 6k+ stars，今日新增约 200 星，AI 视频生成与编程助手结合的新玩法持续吸引关注。",
+          "en": "创建仅约 1 个月便已积累 6,164 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,158 stars、532 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,158 stars and 532 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,164 stars、533 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,164 stars and 533 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 编程助手如何从代码生成扩展到多媒体内容创作，探索垂直场景技能包的产品化机会。",
+          "zh": "观察 AI 编程助手如何通过技能包扩展至视频创作领域，探索垂直场景的插件生态机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,23 +267,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 x64dbg 调试器提供 MCP 服务器，让 AI 助手能够通过 HTTP 控制调试器，实现设置断点、单步执行、读取内存等操作，助力自动化逆向工程。",
+          "zh": "为 x64dbg 调试器提供 MCP 服务器，让 AI 助手能通过 HTTP 控制调试器，实现设置断点、单步执行、读写内存等操作，助力自动化逆向工程。",
           "en": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros"
         },
-        "totalStars": 907,
+        "totalStars": 936,
         "language": "Zig",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 x64dbg 调试器提供 MCP 服务器，让 AI 助手能够通过 HTTP 控制调试器，实现设置断点、单步执行、读取内存等操作，助力自动化逆向工程。",
+          "zh": "为 x64dbg 调试器提供 MCP 服务器，让 AI 助手能通过 HTTP 控制调试器，实现设置断点、单步执行、读写内存等操作，助力自动化逆向工程。",
           "en": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros"
         },
         "todayHighlight": {
-          "zh": "今日新上榜，创建仅一天便获得 907 星，作为新兴的 AI 调试工具，在安全研究社区引发关注。",
+          "zh": "今日新上榜，创建仅一天便获得 936 stars，AI 驱动的二进制分析与安全研究成为热门方向。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 907 stars、91 forks，topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 907 stars and 91 forks，topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 936 stars、95 forks，topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 936 stars and 95 forks，topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
           "zh": "关注 AI 在安全领域的落地，MCP 协议如何打通专业工具与 AI 助手的生态。",
@@ -295,18 +307,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Python 工具，可清除多种 AI 生成内容的水印，包括 Unicode 文本、C2PA 元数据，支持 PNG、JPEG、PDF 等格式，并可作为 Claude Code 等 AI 助手的技能使用。",
+          "zh": "用于清除多种 AI 生成内容的水印，支持清理 Unicode 文本、统计重写、移除 C2PA 元数据，覆盖 PNG、JPEG、PDF、DOCX 等格式。",
           "en": "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD."
         },
         "totalStars": 760,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 Python 工具，可清除多种 AI 生成内容的水印，包括 Unicode 文本、C2PA 元数据，支持 PNG、JPEG、PDF 等格式，并可作为 Claude Code 等 AI 助手的技能使用。",
+          "zh": "用于清除多种 AI 生成内容的水印，支持清理 Unicode 文本、统计重写、移除 C2PA 元数据，覆盖 PNG、JPEG、PDF、DOCX 等格式。",
           "en": "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD."
         },
         "todayHighlight": {
-          "zh": "今日新上榜，创建当天即获 760 星，因触及 AI 内容版权与溯源话题，在开发者中引发讨论。",
+          "zh": "今日新上榜，创建当天即获 760 stars，AI 内容溯源与版权问题引发关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
@@ -314,7 +326,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 760 stars and 72 forks，topics: claude-ai, claude-code, claude-code-plugin, claude-skills, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "思考 AI 内容治理与版权保护的产品需求，以及此类工具可能引发的伦理争议。",
+          "zh": "思考 AI 内容治理与版权保护的产品需求，以及水印技术的攻防博弈。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +347,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "OpenAI 出品的轻量级终端编码代理，可在本地运行，帮助开发者通过自然语言指令完成编程任务，支持 VS Code、Cursor 等 IDE 集成。",
+          "zh": "OpenAI 出品的轻量级终端编程助手，可在本地运行，帮助开发者通过自然语言完成编码任务，并支持 IDE 集成。",
           "en": "Star openai / codex Lightweight coding agent that runs in your terminal"
         },
-        "totalStars": 115350,
+        "totalStars": 115509,
         "language": "Rust",
         "dailyStars": 2715,
         "chineseIntro": {
-          "zh": "OpenAI 出品的轻量级终端编码代理，可在本地运行，帮助开发者通过自然语言指令完成编程任务，支持 VS Code、Cursor 等 IDE 集成。",
+          "zh": "OpenAI 出品的轻量级终端编程助手，可在本地运行，帮助开发者通过自然语言完成编码任务，并支持 IDE 集成。",
           "en": "Star openai / codex Lightweight coding agent that runs in your terminal"
         },
         "todayHighlight": {
-          "zh": "持续在榜，今日新增 2715 星，总星数达 11.5 万，作为 OpenAI 官方工具，其生态影响力持续扩大。",
+          "zh": "持续在榜，今日新增 2715 stars，总星数超 11 万，AI 编程助手赛道热度不减。",
           "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 115k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,715 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 115,350 stars、17,587 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 115,350 stars and 17,587 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 115,509 stars、17,619 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 115,509 stars and 17,619 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注官方 AI 编程助手的迭代方向，以及其对开发者工作流程的重塑。",
+          "zh": "关注 AI 编程助手的核心体验与生态建设，OpenAI 的布局对行业的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +387,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "提供免费使用 Claude Code、Codex 等 AI 编程工具的方案，声称可获取 13 亿+免费 token，支持终端、IDE、手机等多端使用，并兼容语音。",
+          "zh": "提供免费使用 Claude Code、Codex 等 AI 编程工具的方案，号称拥有 13 亿+免费 token，支持语音和多种终端。",
           "en": "Star Alishahryar1 / free-claude-code Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)"
         },
-        "totalStars": 48007,
+        "totalStars": 48040,
         "language": "Python",
         "dailyStars": 1081,
         "chineseIntro": {
-          "zh": "提供免费使用 Claude Code、Codex 等 AI 编程工具的方案，声称可获取 13 亿+免费 token，支持终端、IDE、手机等多端使用，并兼容语音。",
+          "zh": "提供免费使用 Claude Code、Codex 等 AI 编程工具的方案，号称拥有 13 亿+免费 token，支持语音和多种终端。",
           "en": "Star Alishahryar1 / free-claude-code Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)"
         },
         "todayHighlight": {
-          "zh": "今日新增 1081 星，总星数达 4.8 万，凭借「免费」卖点持续吸引用户，在开发者社区热度不减。",
+          "zh": "今日新增 1081 stars，总星数达 4.8 万，免费获取 AI 编程能力的需求旺盛。",
           "en": "登上 GitHub Trending 日榜第 8 位, Agent/RAG 场景下 token 成本压力推动“上下文压缩”方案在工程圈快速传播, 今日新增 1,081 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,007 stars、7,893 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,007 stars and 7,893 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,040 stars、7,896 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,040 stars and 7,896 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察免费策略如何驱动用户增长，以及此类工具对 AI 编程服务商业模式的冲击。",
+          "zh": "观察免费模式如何吸引用户，以及 AI 编程工具的定价策略与用户获取。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +427,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 AI 代理性能优化系统，为 Claude Code、Codex 等提供技能、记忆、安全等增强功能，号称「代理操作系统」。",
+          "zh": "为 AI 编程助手（如 Claude Code、Codex）提供性能优化系统，包含技能、记忆、安全等模块，提升开发效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 242578,
+        "totalStars": 242591,
         "language": "JavaScript",
         "dailyStars": 427,
         "chineseIntro": {
-          "zh": "一个 AI 代理性能优化系统，为 Claude Code、Codex 等提供技能、记忆、安全等增强功能，号称「代理操作系统」。",
+          "zh": "为 AI 编程助手（如 Claude Code、Codex）提供性能优化系统，包含技能、记忆、安全等模块，提升开发效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日新增 427 星，总星数达 24.2 万，长期在榜，作为 AI 代理基础设施，随 Agent 生态发展持续获得关注。",
+          "zh": "今日新增 427 stars，总星数超 24 万，作为 AI 编程助手的增强工具持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 242k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 427 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 242,578 stars、36,722 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 242,578 stars and 36,722 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 242,591 stars、36,720 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 242,591 stars and 36,720 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 代理的标准化与平台化趋势，思考如何构建类似的基础设施产品。",
+          "zh": "关注 AI 编程助手的周边生态，性能优化与安全增强是重要方向。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +467,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Nous Research 推出的 AI 代理，强调「与你共同成长」，支持多种大模型，提供桌面应用和文档，可执行复杂任务。",
+          "zh": "一个可成长的 AI 代理，支持多种大模型，提供桌面应用和文档，旨在成为用户的智能助手。",
           "en": "The agent that grows with you"
         },
-        "totalStars": 235027,
+        "totalStars": 235060,
         "language": "Python",
         "dailyStars": 454,
         "chineseIntro": {
-          "zh": "Nous Research 推出的 AI 代理，强调「与你共同成长」，支持多种大模型，提供桌面应用和文档，可执行复杂任务。",
+          "zh": "一个可成长的 AI 代理，支持多种大模型，提供桌面应用和文档，旨在成为用户的智能助手。",
           "en": "The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "今日新增 454 星，总星数达 23.5 万，作为研究机构的开源项目，持续吸引 AI 爱好者和开发者。",
+          "zh": "今日新增 454 stars，总星数超 23 万，AI 代理的通用性与可扩展性吸引开发者。",
           "en": "登上 GitHub Trending 日榜第 18 位, 总 star 数已达 235k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 454 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 235,027 stars、47,358 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 235,027 stars and 47,358 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 235,060 stars、47,362 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 235,060 stars and 47,362 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察研究机构如何将前沿 AI 技术转化为易用的产品，以及其社区运营策略。",
+          "zh": "观察 AI 代理如何平衡通用性与个性化，以及社区驱动的开发模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -498,7 +510,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "GPT-Image-2 的工业级提示词引擎与模板库，包含 470+ 逆向工程案例和 20+ 模板，帮助用户高效生成高质量图像。",
           "en": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
         },
-        "totalStars": 12853,
+        "totalStars": 13009,
         "language": "JavaScript",
         "dailyStars": 401,
         "chineseIntro": {
@@ -506,15 +518,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
         },
         "todayHighlight": {
-          "zh": "今日新增 401 星，总星数达 1.28 万，在 AI 图像生成领域持续升温，模板化思路受到欢迎。",
-          "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 4 个月便已积累 12k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 401 星."
+          "zh": "今日新增 401 stars，总星数 1.3 万，AI 图像生成提示词工程成为热门技能。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 4 个月便已积累 13k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 401 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,853 stars、1,437 forks，topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,853 stars and 1,437 forks，topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,009 stars、1,446 forks，topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,009 stars and 1,446 forks，topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注提示词工程的产品化，如何将经验沉淀为可复用的模板和技能。",
+          "zh": "关注提示词工程的产品化，模板库与案例库的商业模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,26 +547,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "将技术书籍 PDF 转换为 Claude Code 技能的工具，方便用户在学习时快速参考和使用，支持多语言。",
+          "zh": "将技术书籍 PDF 转换为 Claude Code 技能，方便用户在学习时随时参考和使用，提升知识转化效率。",
           "en": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work."
         },
-        "totalStars": 24696,
+        "totalStars": 24725,
         "language": "Python",
         "dailyStars": 417,
         "chineseIntro": {
-          "zh": "将技术书籍 PDF 转换为 Claude Code 技能的工具，方便用户在学习时快速参考和使用，支持多语言。",
+          "zh": "将技术书籍 PDF 转换为 Claude Code 技能，方便用户在学习时随时参考和使用，提升知识转化效率。",
           "en": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work."
         },
         "todayHighlight": {
-          "zh": "今日新增 417 星，总星数达 2.47 万，作为知识管理工具，在 AI 学习场景中快速传播。",
+          "zh": "今日新增 417 stars，总星数 2.4 万，知识管理与 AI 编程结合的需求增长。",
           "en": "登上 GitHub Trending 日榜第 13 位, 创建仅约 4 个月便已积累 24k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 417 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 24,696 stars、2,584 forks，topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 24,696 stars and 2,584 forks，topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 24,725 stars、2,588 forks，topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 24,725 stars and 2,588 forks，topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "思考如何将知识转化为 AI 可用的技能，探索教育科技与 AI 结合的新模式。",
+          "zh": "思考知识付费与 AI 结合的产品机会，如何将书籍内容转化为可交互的技能。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,26 +587,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "最强大且模块化的扩散模型 GUI 和后端，采用节点式界面，支持 Stable Diffusion 等模型，适合复杂工作流搭建。",
+          "zh": "最强大且模块化的扩散模型 GUI 和后端，采用节点式界面，支持 Stable Diffusion 等模型，适合内容创作。",
           "en": "Star Comfy-Org / ComfyUI The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface."
         },
-        "totalStars": 129417,
+        "totalStars": 129436,
         "language": "Python",
         "dailyStars": 201,
         "chineseIntro": {
-          "zh": "最强大且模块化的扩散模型 GUI 和后端，采用节点式界面，支持 Stable Diffusion 等模型，适合复杂工作流搭建。",
+          "zh": "最强大且模块化的扩散模型 GUI 和后端，采用节点式界面，支持 Stable Diffusion 等模型，适合内容创作。",
           "en": "Star Comfy-Org / ComfyUI The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface."
         },
         "todayHighlight": {
-          "zh": "今日新增 201 星，总星数达 12.9 万，作为老牌项目，持续在 AI 创作工具中保持热度。",
+          "zh": "今日新增 201 stars，总星数超 12 万，作为老牌工具持续稳定增长。",
           "en": "登上 GitHub Trending 日榜第 17 位, 总 star 数已达 129k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 201 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 129,417 stars、15,261 forks，topics: ai, comfy, comfyui, python, pytorch，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 129,417 stars and 15,261 forks，topics: ai, comfy, comfyui, python, pytorch, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 129,436 stars、15,263 forks，topics: ai, comfy, comfyui, python, pytorch，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 129,436 stars and 15,263 forks，topics: ai, comfy, comfyui, python, pytorch, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注开源创作工具的用户粘性，以及节点式工作流在专业用户中的价值。",
+          "zh": "观察开源创作工具的生态，节点式工作流对用户创作效率的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,19 +633,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一位技术爱好者分享用四个AI模型破解亚马逊平板限制的经历，其中GLM-5.3在一天内完成最终突破，展示了AI在逆向工程中的潜力。",
+          "zh": "一位技术爱好者花费266美元，利用四个AI模型成功破解了亚马逊平板电脑的锁定，其中GLM-5.3在一天内完成了最终突破。这展示了AI在设备自主权和逆向工程中的潜力。",
           "en": "Article URL: https://ericpardee.github.io/fire-hd-ownership/ Comments URL: https://news.ycombinator.com/item?id=49409073 Points: 3 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "一位技术爱好者分享用四个AI模型破解亚马逊平板限制的经历，其中GLM-5.3在一天内完成最终突破，展示了AI在逆向工程中的潜力。",
+          "zh": "一位技术爱好者花费266美元，利用四个AI模型成功破解了亚马逊平板电脑的锁定，其中GLM-5.3在一天内完成了最终突破。这展示了AI在设备自主权和逆向工程中的潜力。",
           "en": "Article URL: https://ericpardee.github.io/fire-hd-ownership/ Comments URL: https://news.ycombinator.com/item?id=49409073 Points: 3 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "该案例凸显了AI模型在复杂任务中的实际能力差异，对评估模型性能具有参考价值。",
-          "en": "该案例凸显了AI模型在复杂任务中的实际能力差异，对评估模型性能具有参考价值。"
+          "zh": "该案例凸显了AI模型在复杂任务中的实际应用能力，可能引发对设备所有权和AI安全边界的讨论。",
+          "en": "该案例凸显了AI模型在复杂任务中的实际应用能力，可能引发对设备所有权和AI安全边界的讨论。"
         },
         "pmInsight": {
-          "zh": "关注GLM-5.3在长尾任务中的表现，可考虑在类似逆向工程场景中测试其能力。",
+          "zh": "产品经理可关注AI在自动化逆向工程中的潜力，探索用户自主权相关的产品机会，同时注意安全风险。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -654,23 +666,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
+          "zh": "政策/安全",
+          "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI推出新博客栏目“AI Futures”，探讨变革性AI对权力、治理、经济和个体自由的影响。",
+          "zh": "OpenAI推出新博客“AI Futures”，探讨变革性AI如何重塑权力、治理、经济和个人自由。这标志着OpenAI在AI社会影响方面的深度思考。",
           "en": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
         },
         "chineseIntro": {
-          "zh": "OpenAI推出新博客栏目“AI Futures”，探讨变革性AI对权力、治理、经济和个体自由的影响。",
+          "zh": "OpenAI推出新博客“AI Futures”，探讨变革性AI如何重塑权力、治理、经济和个人自由。这标志着OpenAI在AI社会影响方面的深度思考。",
           "en": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
         },
         "todayHighlight": {
-          "zh": "此举表明OpenAI正积极塑造AI社会影响的叙事，可能影响公众认知和政策讨论。",
-          "en": "此举表明OpenAI正积极塑造AI社会影响的叙事，可能影响公众认知和政策讨论。"
+          "zh": "OpenAI主动引导AI未来议题，可能影响行业政策讨论和公众认知，具有战略意义。",
+          "en": "OpenAI主动引导AI未来议题，可能影响行业政策讨论和公众认知，具有战略意义。"
         },
         "pmInsight": {
-          "zh": "关注该博客内容，可洞察OpenAI的战略方向，为产品规划提供参考。",
+          "zh": "产品经理应关注AI治理趋势，提前布局合规和伦理框架，以应对未来监管变化。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -695,22 +707,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub宣布可将保存的视图固定到仓库问题侧边栏，并新增反应头像显示、问题密度调整等功能。",
+          "zh": "GitHub宣布将保存的视图固定到仓库问题侧边栏的功能正式可用，并改进了问题密度调整和子问题隐藏等体验。",
           "en": "Pinning saved views to the repository issues sidebar You can now pin saved views&#8288; to the repository issues sidebar, making the views you use most just one click away, even&#8230; The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub宣布可将保存的视图固定到仓库问题侧边栏，并新增反应头像显示、问题密度调整等功能。",
+          "zh": "GitHub宣布将保存的视图固定到仓库问题侧边栏的功能正式可用，并改进了问题密度调整和子问题隐藏等体验。",
           "en": "Pinning saved views to the repository issues sidebar You can now pin saved views&#8288; to the repository issues sidebar, making the views you use most just one click away, even&#8230; The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "这些改进提升了开发者处理问题的效率，巩固了GitHub在开发者协作工具中的领先地位。",
-          "en": "这些改进提升了开发者处理问题的效率，巩固了GitHub在开发者协作工具中的领先地位。"
+          "zh": "GitHub持续优化开发者工作流，提升问题管理效率，对开发者社区有积极影响。",
+          "en": "GitHub持续优化开发者工作流，提升问题管理效率，对开发者社区有积极影响。"
         },
         "pmInsight": {
-          "zh": "对于开发者工具类产品，可借鉴其通过增强可定制性和信息密度来提升用户体验。",
+          "zh": "产品经理可借鉴GitHub的视图固定和密度调整功能，优化自身产品的信息架构和用户效率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "GitHub Changelog",
@@ -728,23 +740,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Anthropic推出官方学习平台Claude Academy，为用户提供系统化的Claude使用教程。",
+          "zh": "Anthropic推出官方学习中心Claude Academy，为用户提供系统化的Claude学习资源。",
           "en": "<p> The Official Learning Hub by Anthropic </p> <p> <a href=\"https://www.producthunt.com/products/claude-academy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1228104?app_id=339\">Link</a> </p>"
         },
         "chineseIntro": {
-          "zh": "Anthropic推出官方学习平台Claude Academy，为用户提供系统化的Claude使用教程。",
+          "zh": "Anthropic推出官方学习中心Claude Academy，为用户提供系统化的Claude学习资源。",
           "en": "<p> The Official Learning Hub by Anthropic </p> <p> <a href=\"https://www.producthunt.com/products/claude-academy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1228104?app_id=339\">Link</a> </p>"
         },
         "todayHighlight": {
-          "zh": "此举有助于降低用户学习成本，扩大Claude的用户基础，并强化Anthropic的生态建设。",
-          "en": "此举有助于降低用户学习成本，扩大Claude的用户基础，并强化Anthropic的生态建设。"
+          "zh": "Anthropic加强用户教育，可能提升Claude的采用率和用户粘性，对AI助手市场竞争有影响。",
+          "en": "Anthropic加强用户教育，可能提升Claude的采用率和用户粘性，对AI助手市场竞争有影响。"
         },
         "pmInsight": {
-          "zh": "考虑为AI产品建立官方学习中心，以提升用户粘性和技能普及率。",
+          "zh": "产品经理可考虑建立类似的学习中心，降低用户上手门槛，提升产品价值感知。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -769,19 +781,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Google搜索推出5项新学习工具，利用AI模式、Lens等帮助用户备考和标准化测试。",
+          "zh": "Google搜索推出5种新学习工具，利用AI模式、Lens等帮助用户备考和标准化测试。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2_JwwDb02.max-600x600.format-webp.webp\">Here’s how you can use Google Search tools to study for classes and standardized tests."
         },
         "chineseIntro": {
-          "zh": "Google搜索推出5项新学习工具，利用AI模式、Lens等帮助用户备考和标准化测试。",
+          "zh": "Google搜索推出5种新学习工具，利用AI模式、Lens等帮助用户备考和标准化测试。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2_JwwDb02.max-600x600.format-webp.webp\">Here’s how you can use Google Search tools to study for classes and standardized tests."
         },
         "todayHighlight": {
-          "zh": "Google将AI能力深度整合进搜索，强化其在教育领域的应用，对教育科技产品构成竞争压力。",
-          "en": "Google将AI能力深度整合进搜索，强化其在教育领域的应用，对教育科技产品构成竞争压力。"
+          "zh": "Google将AI深度整合进搜索学习场景，可能改变在线教育工具格局，对教育科技产品构成竞争。",
+          "en": "Google将AI深度整合进搜索学习场景，可能改变在线教育工具格局，对教育科技产品构成竞争。"
         },
         "pmInsight": {
-          "zh": "教育类AI产品应关注Google搜索的AI功能，寻找差异化定位，如垂直领域深度。",
+          "zh": "教育类产品经理应关注AI驱动的学习辅助功能，探索差异化机会，如个性化学习路径。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -814,11 +826,11 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "OpenAI lowered list pricing for GPT-5.6 Sol, and the 50% AI Gateway discount now applies to the new, lower price through September 18. Input drops 20%, output drops a third. The discount applies on every OpenAI service tier:Service tierYou pay now (input / output)New list price (input / output)You paid before (input / output)Default$2.00 / $10.00$4.00 / $20.00$2.50 / $15.00Flex$1.00 / $5.00$2.00 / $10.00$1.25 / $7.50"
         },
         "todayHighlight": {
-          "zh": "此次降价可能引发AI模型价格战，影响开发者的模型选择，对依赖API成本的产品是利好。",
-          "en": "此次降价可能引发AI模型价格战，影响开发者的模型选择，对依赖API成本的产品是利好。"
+          "zh": "GPT-5.6 Sol大幅降价，可能引发AI模型价格战，影响开发者的模型选择和应用成本。",
+          "en": "GPT-5.6 Sol大幅降价，可能引发AI模型价格战，影响开发者的模型选择和应用成本。"
         },
         "pmInsight": {
-          "zh": "评估模型成本时，应关注降价对总拥有成本的影响，并考虑调整产品定价策略。",
+          "zh": "产品经理应重新评估模型成本，利用降价机会优化成本结构，或调整定价策略以保持竞争力。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
