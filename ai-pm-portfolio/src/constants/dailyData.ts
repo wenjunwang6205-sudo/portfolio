@@ -38,6 +38,796 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-08-26",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI 产品经理日报：2026-08-26",
+      "en": "AI PM Daily: 2026-08-26"
+    },
+    "editorNote": {
+      "zh": "今日 AI 领域聚焦于 AI 代理的实用化与效率优化，从逆向工程、视频创作到求职自动化，开发者正将 AI 能力深度嵌入具体工作流。同时，OpenAI 的全栈战略与 Hugging Face 的模型压缩研究，预示着 AI 基础设施的竞争与优化进入新阶段。",
+      "en": "Today's AI landscape highlights the practical application and efficiency optimization of AI agents, from reverse engineering and video creation to job search automation. Meanwhile, OpenAI's full-stack strategy and Hugging Face's model compression research signal a new phase in AI infrastructure competition and optimization."
+    },
+    "keyTakeaway": {
+      "zh": "AI 代理正从通用助手转向垂直场景的深度定制，通过技能包、模板和规则集提升专业任务效率，同时模型压缩与成本优化成为商业化关键。",
+      "en": "AI agents are shifting from general assistants to deeply customized vertical solutions, using skill packs, templates, and rule sets to boost efficiency in specialized tasks, while model compression and cost optimization become key to commercialization."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "AI 代理技能包生态兴起",
+          "en": "Rise of AI Agent Skill Pack Ecosystem"
+        },
+        "category": {
+          "zh": "开发者工具",
+          "en": "Developer Tools"
+        },
+        "summary": {
+          "zh": "video-shotcraft（6345 星）和 scroll-craft（913 星）等技能包项目快速获得关注，前者提供 152 张分镜卡片和 209 个动态预览模板，后者通过截图验证设计质量，均针对特定创作场景提供开箱即用的解决方案。",
+          "en": "Skill pack projects like video-shotcraft (6,345 stars) and scroll-craft (913 stars) are gaining rapid traction, offering ready-to-use solutions for specific creative scenarios, such as 152 storyboard cards and 209 dynamic preview templates, and screenshot-based design verification."
+        },
+        "pmInsight": {
+          "zh": "AI 代理的竞争力正从模型能力转向场景化技能包，产品经理可考虑构建技能包市场或提供定制化技能包服务，以满足垂直领域用户的深度需求。",
+          "en": "The competitiveness of AI agents is shifting from model capability to scenario-specific skill packs. PMs should consider building a skill pack marketplace or offering customized skill pack services to meet deep vertical needs."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "video-shotcraft",
+            "url": "https://github.com/Vincentwei1021/video-shotcraft"
+          },
+          {
+            "label": "scroll-craft",
+            "url": "https://github.com/nateherkai/scroll-craft"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 驱动的逆向工程与安全分析升温",
+          "en": "AI-Driven Reverse Engineering and Security Analysis Heating Up"
+        },
+        "category": {
+          "zh": "安全",
+          "en": "Security"
+        },
+        "summary": {
+          "zh": "x64dbg-mcp-server 项目创建一个月即获 1386 星，通过 MCP 协议让 AI 控制调试器，实现断点设置、内存读取等操作，在安全研究社区快速传播。",
+          "en": "The x64dbg-mcp-server project gained 1,386 stars within a month of creation, enabling AI to control a debugger via MCP for breakpoints and memory reads, spreading rapidly in the security research community."
+        },
+        "pmInsight": {
+          "zh": "AI 辅助逆向工程工具需求增长，产品经理可探索将 AI 代理集成到安全分析工作流中，提供自动化恶意软件分析或漏洞挖掘功能，但需注意安全性和伦理边界。",
+          "en": "Demand for AI-assisted reverse engineering tools is growing. PMs can explore integrating AI agents into security analysis workflows, offering automated malware analysis or vulnerability discovery, while addressing safety and ethical boundaries."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "x64dbg-mcp-server",
+            "url": "https://github.com/duty1g/x64dbg-mcp-server"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "模型压缩技术突破成本与性能权衡",
+          "en": "Model Compression Breakthrough Balances Cost and Performance"
+        },
+        "category": {
+          "zh": "模型优化",
+          "en": "Model Optimization"
+        },
+        "summary": {
+          "zh": "Hugging Face 发布量化感知修复技术，使 4-bit 压缩模型性能超越原版全精度模型，同时社区出现 Slash-tokens 工具，可在请求前估算 LLM 成本，反映市场对高效模型和成本控制的强烈需求。",
+          "en": "Hugging Face released quantization-aware healing, enabling 4-bit compressed models to outperform full-precision originals. Meanwhile, the community tool Slash-tokens estimates LLM costs before requests, reflecting strong demand for efficient models and cost control."
+        },
+        "pmInsight": {
+          "zh": "模型压缩技术将降低 AI 应用部署成本，产品经理可关注边缘计算和成本敏感型场景，探索基于压缩模型的轻量级产品，同时成本估算工具可集成到开发流程中提升用户体验。",
+          "en": "Model compression will lower deployment costs. PMs should watch edge computing and cost-sensitive scenarios, explore lightweight products based on compressed models, and integrate cost estimation tools into development workflows."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Hugging Face Blog",
+            "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+          },
+          {
+            "label": "Slash-tokens",
+            "url": "https://github.com/Wolfe-Jam/slash-tokens"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "构建 AI 代理技能包市场",
+          "en": "Build a Marketplace for AI Agent Skill Packs"
+        },
+        "category": {
+          "zh": "平台机会",
+          "en": "Platform Opportunity"
+        },
+        "summary": {
+          "zh": "基于 video-shotcraft 和 scroll-craft 等技能包项目的快速增长，可验证开发者对即插即用技能包的需求。假设：一个集中化的技能包市场，支持发现、安装和版本管理，能加速 AI 代理的生态发展。",
+          "en": "Based on the rapid growth of skill pack projects like video-shotcraft and scroll-craft, there is a validated demand for plug-and-play skill packs. Hypothesis: a centralized marketplace for skill packs, supporting discovery, installation, and versioning, could accelerate the AI agent ecosystem."
+        },
+        "pmInsight": {
+          "zh": "产品经理可设计一个技能包市场，提供标准化接口和审核机制，吸引开发者贡献技能包，同时为企业用户提供定制化技能包服务，形成双边网络效应。",
+          "en": "PMs can design a skill pack marketplace with standardized interfaces and review mechanisms, attracting developers to contribute, while offering customized skill packs for enterprise users, creating a two-sided network effect."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "video-shotcraft",
+            "url": "https://github.com/Vincentwei1021/video-shotcraft"
+          },
+          {
+            "label": "scroll-craft",
+            "url": "https://github.com/nateherkai/scroll-craft"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "开发 AI 成本优化与预测工具",
+          "en": "Develop AI Cost Optimization and Prediction Tools"
+        },
+        "category": {
+          "zh": "工具机会",
+          "en": "Tool Opportunity"
+        },
+        "summary": {
+          "zh": "Slash-tokens 和 Hugging Face 的压缩技术表明，开发者对 LLM 成本控制有迫切需求。假设：一个集成成本预测、模型选择和压缩建议的 SDK，能帮助开发者在不牺牲性能的前提下降低 AI 应用成本。",
+          "en": "Slash-tokens and Hugging Face's compression techniques indicate an urgent need for LLM cost control. Hypothesis: an SDK that integrates cost prediction, model selection, and compression recommendations could help developers reduce AI application costs without sacrificing performance."
+        },
+        "pmInsight": {
+          "zh": "产品经理可开发一个成本优化 SDK，提供实时成本估算、模型对比和自动压缩建议，嵌入开发流程，帮助团队在预算内最大化模型性能。",
+          "en": "PMs can develop a cost optimization SDK offering real-time cost estimation, model comparison, and automatic compression suggestions, embedded in the development workflow to help teams maximize model performance within budget."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Slash-tokens",
+            "url": "https://github.com/Wolfe-Jam/slash-tokens"
+          },
+          {
+            "label": "Hugging Face Blog",
+            "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "duty1g/x64dbg-mcp-server",
+          "en": "duty1g/x64dbg-mcp-server"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "为逆向工程调试器 x64dbg 提供原生 MCP 插件，让 AI 助手能通过 HTTP 控制调试器，实现设置断点、单步执行、读取内存等操作，助力恶意软件分析与二进制研究。",
+          "en": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros"
+        },
+        "totalStars": 1386,
+        "language": "Zig",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "为逆向工程调试器 x64dbg 提供原生 MCP 插件，让 AI 助手能通过 HTTP 控制调试器，实现设置断点、单步执行、读取内存等操作，助力恶意软件分析与二进制研究。",
+          "en": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig — zero dependencies, single-binary output, cros"
+        },
+        "todayHighlight": {
+          "zh": "创建仅一个月便获得 1386 星，作为 AI 辅助逆向工程的新工具，在安全研究社区快速传播，今日新增星数暂未统计。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,386 stars、135 forks，topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,386 stars and 135 forks，topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI Agent 如何通过 MCP 协议与传统专业工具深度集成，拓展 AI 在安全领域的应用边界。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/duty1g/x64dbg-mcp-server"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Vincentwei1021/video-shotcraft",
+          "en": "Vincentwei1021/video-shotcraft"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "为 Claude Code 和 Codex 打造的 AI 视频技能包，内置 152 张分镜卡片和 209 个动态预览模板，可快速生成电影级产品宣传视频。",
+          "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
+        },
+        "totalStars": 6345,
+        "language": "TypeScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "为 Claude Code 和 Codex 打造的 AI 视频技能包，内置 152 张分镜卡片和 209 个动态预览模板，可快速生成电影级产品宣传视频。",
+          "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
+        },
+        "todayHighlight": {
+          "zh": "上线一个月即收获 6345 星，凭借丰富的模板库和 Remotion 集成，在 AI 视频创作社区持续升温，今日新增星数暂未统计。",
+          "en": "创建仅约 1 个月便已积累 6,345 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,345 stars、557 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,345 stars and 557 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注 AI 技能包如何通过标准化模板降低视频创作门槛，为产品营销内容生产提供新思路。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/Vincentwei1021/video-shotcraft"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "nateherkai/scroll-craft",
+          "en": "nateherkai/scroll-craft"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Claude Code 技能，用于构建高端滚动驱动网站，将滚动视为时间线，并通过截图验证设计质量，避免 AI 生成平庸或过度花哨的页面。",
+          "en": "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll."
+        },
+        "totalStars": 913,
+        "language": "JavaScript",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "Claude Code 技能，用于构建高端滚动驱动网站，将滚动视为时间线，并通过截图验证设计质量，避免 AI 生成平庸或过度花哨的页面。",
+          "en": "Claude Code skill for premium scroll-driven websites. Scroll becomes the timeline, on a real design floor, verified by screenshotting its own scroll."
+        },
+        "todayHighlight": {
+          "zh": "创建仅一天便获得 913 星，凭借对 AI 网页设计痛点的精准解决，在开发者社区快速传播，今日新增星数暂未统计。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 913 stars、148 forks，topics: accessibility, agent-skills, ai-web-design, anthropic, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 913 stars and 148 forks，topics: accessibility, agent-skills, ai-web-design, anthropic, claude-code, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 设计工具如何通过自我验证机制提升输出质量，为追求高品质用户体验的产品提供参考。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/nateherkai/scroll-craft"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "freestylefly/awesome-gpt-image-2",
+          "en": "freestylefly/awesome-gpt-image-2"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "GPT-Image2 工业级提示词引擎与模板库，包含 530+ 逆向工程案例和 20+ 套模板，支持将提示词作为代码管理，持续更新中。",
+          "en": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
+        },
+        "totalStars": 18113,
+        "language": "JavaScript",
+        "dailyStars": 1698,
+        "chineseIntro": {
+          "zh": "GPT-Image2 工业级提示词引擎与模板库，包含 530+ 逆向工程案例和 20+ 套模板，支持将提示词作为代码管理，持续更新中。",
+          "en": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1698 星，总星数达 18113，位列全球趋势榜第一，AI 图像生成提示词工程需求旺盛，社区贡献活跃。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 18k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,698 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,113 stars、1,866 forks，topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,113 stars and 1,866 forks，topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注提示词工程化趋势，思考如何将 AI 生成能力产品化，为用户提供可复用的模板和工具。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/freestylefly/awesome-gpt-image-2"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "MadsLorentzen/ai-job-search",
+          "en": "MadsLorentzen/ai-job-search"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "基于 Claude Code 的 AI 求职框架，可自动评估职位、定制简历、撰写求职信、准备面试，所有操作在本地运行，用户可自由 fork 定制。",
+          "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
+        },
+        "totalStars": 35346,
+        "language": "Python",
+        "dailyStars": 1265,
+        "chineseIntro": {
+          "zh": "基于 Claude Code 的 AI 求职框架，可自动评估职位、定制简历、撰写求职信、准备面试，所有操作在本地运行，用户可自由 fork 定制。",
+          "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1265 星，总星数达 35346，位列全球趋势榜第三，AI 求职自动化需求持续升温，社区 fork 数超 1.2 万。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,265 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 35,346 stars、12,149 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 35,346 stars and 12,149 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 如何重塑求职流程，为人力资源和职业发展类产品提供创新方向。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/MadsLorentzen/ai-job-search"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "openai/codex",
+          "en": "openai/codex"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "OpenAI 出品的轻量级编码代理，运行在终端中，可帮助开发者自动完成编码任务，支持 IDE 集成和桌面应用。",
+          "en": "Star openai / codex Lightweight coding agent that runs in your terminal"
+        },
+        "totalStars": 118157,
+        "language": "Rust",
+        "dailyStars": 1181,
+        "chineseIntro": {
+          "zh": "OpenAI 出品的轻量级编码代理，运行在终端中，可帮助开发者自动完成编码任务，支持 IDE 集成和桌面应用。",
+          "en": "Star openai / codex Lightweight coding agent that runs in your terminal"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1181 星，总星数达 118157，作为 OpenAI 官方工具持续获得关注，位列全球趋势榜第 12 位。",
+          "en": "登上 GitHub Trending 日榜第 12 位, 总 star 数已达 118k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,181 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 118,157 stars、18,003 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 118,157 stars and 18,003 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注官方 AI 编码工具的发展，其功能迭代可能影响开发者工具生态。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/openai/codex"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "DietrichGebert/ponytail",
+          "en": "DietrichGebert/ponytail"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "让 AI 代理像资深懒程序员一样思考，强调“最好的代码是没写的代码”，通过规则和提示词减少不必要的代码生成。",
+          "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
+        },
+        "totalStars": 111104,
+        "language": "JavaScript",
+        "dailyStars": 982,
+        "chineseIntro": {
+          "zh": "让 AI 代理像资深懒程序员一样思考，强调“最好的代码是没写的代码”，通过规则和提示词减少不必要的代码生成。",
+          "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 982 星，总星数达 111104，位列全球趋势榜第 14 位，其“极简主义”理念在开发者中引发共鸣。",
+          "en": "登上 GitHub Trending 日榜第 14 位, 创建仅约 3 个月便已积累 111k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 982 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 111,104 stars、6,105 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 111,104 stars and 6,105 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 编程工具如何平衡代码质量与开发效率，引导 AI 生成更精简的代码。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/DietrichGebert/ponytail"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "multica-ai/andrej-karpathy-skills",
+          "en": "multica-ai/andrej-karpathy-skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "基于 Andrej Karpathy 对 LLM 编码陷阱的观察，提炼出单个 CLAUDE.md 文件，用于改进 Claude Code 的行为，提升编码质量。",
+          "en": "Star multica-ai / andrej-karpathy-skills A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
+        },
+        "totalStars": 207245,
+        "language": "Unknown",
+        "dailyStars": 830,
+        "chineseIntro": {
+          "zh": "基于 Andrej Karpathy 对 LLM 编码陷阱的观察，提炼出单个 CLAUDE.md 文件，用于改进 Claude Code 的行为，提升编码质量。",
+          "en": "Star multica-ai / andrej-karpathy-skills A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 830 星，总星数达 207245，位列全球趋势榜第 11 位，Karpathy 的影响力持续带动项目增长。",
+          "en": "登上 GitHub Trending 日榜第 11 位, 总 star 数已达 207k+，持续占据 AI 开源热门榜单, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 830 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 207,245 stars、21,146 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 207,245 stars and 21,146 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注 AI 编码规范的最佳实践，如何将专家经验转化为可执行的配置。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/multica-ai/andrej-karpathy-skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AgriciDaniel/claude-obsidian",
+          "en": "AgriciDaniel/claude-obsidian"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "为 Obsidian 和 Claude Code 打造的自组织 AI 第二大脑，可自动读取、链接和归档任何来源的内容，形成个人知识图谱，替代 Notion 的开源方案。",
+          "en": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern."
+        },
+        "totalStars": 12762,
+        "language": "Python",
+        "dailyStars": 813,
+        "chineseIntro": {
+          "zh": "为 Obsidian 和 Claude Code 打造的自组织 AI 第二大脑，可自动读取、链接和归档任何来源的内容，形成个人知识图谱，替代 Notion 的开源方案。",
+          "en": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 813 星，总星数达 12762，位列全球趋势榜第 6 位，基于 Karpathy 的 LLM Wiki 模式，在知识管理社区快速传播。",
+          "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 813 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 12,762 stars、1,381 forks，topics: agent-skills, ai-note-taking, ai-second-brain, claude-code, claude-code-skill，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 12,762 stars and 1,381 forks，topics: agent-skills, ai-note-taking, ai-second-brain, claude-code, claude-code-skill, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "观察 AI 如何改变个人知识管理，为知识型产品提供智能化升级方向。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/AgriciDaniel/claude-obsidian"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "rohitg00/ai-engineering-from-scratch",
+          "en": "rohitg00/ai-engineering-from-scratch"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "从零开始学习 AI 工程的参考手册，涵盖代理、深度学习、生成式 AI、LLM 等主题，提供多语言教程，适合系统学习。",
+          "en": "Learn it. Build it. Ship it for others."
+        },
+        "totalStars": 49031,
+        "language": "Python",
+        "dailyStars": 569,
+        "chineseIntro": {
+          "zh": "从零开始学习 AI 工程的参考手册，涵盖代理、深度学习、生成式 AI、LLM 等主题，提供多语言教程，适合系统学习。",
+          "en": "Learn it. Build it. Ship it for others."
+        },
+        "todayHighlight": {
+          "zh": "今日新增 569 星，总星数达 49031，位列全球趋势榜第 7 位，作为学习资源持续获得关注，社区贡献活跃。",
+          "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 569 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 49,031 stars、8,570 forks，topics: agents, ai, ai-agents, ai-engineering, computer-vision，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 49,031 stars and 8,570 forks，topics: agents, ai, ai-agents, ai-engineering, computer-vision, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "关注 AI 教育内容的需求，为在线教育产品提供课程设计参考。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: The full stack behind abundant intelligence",
+          "en": "OpenAI: The full stack behind abundant intelligence"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "OpenAI CFO Sarah Friar 撰文阐述芯片、算力、模型与产品如何协同演进，以更低成本提供更强大的智能。",
+          "en": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost."
+        },
+        "chineseIntro": {
+          "zh": "OpenAI CFO Sarah Friar 撰文阐述芯片、算力、模型与产品如何协同演进，以更低成本提供更强大的智能。",
+          "en": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost."
+        },
+        "todayHighlight": {
+          "zh": "OpenAI 首次系统阐述其全栈战略，暗示未来模型能力提升与成本下降的路径，对行业竞争格局有重要影响。",
+          "en": "OpenAI 首次系统阐述其全栈战略，暗示未来模型能力提升与成本下降的路径，对行业竞争格局有重要影响。"
+        },
+        "pmInsight": {
+          "zh": "关注 OpenAI 全栈优化带来的成本下降趋势，评估其对自身 AI 应用定价策略的影响。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: 5 ways to upgrade your home decor with Google Search",
+          "en": "Google AI: 5 ways to upgrade your home decor with Google Search"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "Google 搜索推出 5 种家居装饰新玩法，利用 AI 帮助用户获取灵感、购物和 DIY。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Home_Decor.max-600x600.format-webp.webp\">Learn how to use Google Search tools to find home decor inspiration, shop for furniture, and tackle DIY projects."
+        },
+        "chineseIntro": {
+          "zh": "Google 搜索推出 5 种家居装饰新玩法，利用 AI 帮助用户获取灵感、购物和 DIY。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Home_Decor.max-600x600.format-webp.webp\">Learn how to use Google Search tools to find home decor inspiration, shop for furniture, and tackle DIY projects."
+        },
+        "todayHighlight": {
+          "zh": "Google 将 AI 能力融入日常搜索场景，提升用户粘性，巩固其搜索入口地位。",
+          "en": "Google 将 AI 能力融入日常搜索场景，提升用户粘性，巩固其搜索入口地位。"
+        },
+        "pmInsight": {
+          "zh": "探索将 AI 功能嵌入现有产品流程，以提升用户体验和功能发现率。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+          "en": "Hugging Face: Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "Hugging Face 发布新研究，提出量化感知修复技术，使 4-bit 压缩模型性能超越原版全精度模型。",
+          "en": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face 发布新研究，提出量化感知修复技术，使 4-bit 压缩模型性能超越原版全精度模型。",
+          "en": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
+        },
+        "todayHighlight": {
+          "zh": "该技术有望打破压缩与性能的权衡，推动高效模型部署，对边缘计算和成本敏感型应用意义重大。",
+          "en": "该技术有望打破压缩与性能的权衡，推动高效模型部署，对边缘计算和成本敏感型应用意义重大。"
+        },
+        "pmInsight": {
+          "zh": "关注量化感知修复技术，评估其能否降低模型部署成本，提升产品响应速度。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: Rule insights dashboard generally available",
+          "en": "GitHub Changelog: Rule insights dashboard generally available"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "GitHub 规则洞察仪表盘正式全面可用，支持仓库和组织级视图，可视化规则执行情况。",
+          "en": "The rule insights dashboard is now generally available at both the repository and organization levels. You get a visual, high-level view of how GitHub evaluates and enforces your GitHub repository&#8230; The post Rule insights dashboard generally available appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub 规则洞察仪表盘正式全面可用，支持仓库和组织级视图，可视化规则执行情况。",
+          "en": "The rule insights dashboard is now generally available at both the repository and organization levels. You get a visual, high-level view of how GitHub evaluates and enforces your GitHub repository&#8230; The post Rule insights dashboard generally available appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "该功能简化了治理与合规报告流程，提升 GitHub 在企业级市场的竞争力。",
+          "en": "该功能简化了治理与合规报告流程，提升 GitHub 在企业级市场的竞争力。"
+        },
+        "pmInsight": {
+          "zh": "利用规则洞察仪表盘优化代码审查流程，提升团队合规效率。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-08-25-rule-insights-dashboard-generally-available"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: Show HN: Slash-tokens – know LLM cost before the call leaves your machine",
+          "en": "Hacker News LLM: Show HN: Slash-tokens – know LLM cost before the call leaves your machine"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "开发者发布 Slash-tokens，一个 4.8KB 的 WASM 工具，可在请求发出前快速估算 LLM 调用成本，并支持切换更便宜的模型。",
+          "en": "I kept finding out what a call cost after I had already paid, so I built /Slash -- slash-tokens is a 4.8KB WASM that estimates tokens FAST and can block a wasted trip, or switch to cheaper same-provider model before the request leaves your machine. Try it MIT, no account needed: bunx slash-tokensOr install the SDK: npm install slash-tokens Comments URL: https://news.ycombinator.com/item?id=49441725 Points: 2 # Commen"
+        },
+        "chineseIntro": {
+          "zh": "开发者发布 Slash-tokens，一个 4.8KB 的 WASM 工具，可在请求发出前快速估算 LLM 调用成本，并支持切换更便宜的模型。",
+          "en": "I kept finding out what a call cost after I had already paid, so I built /Slash -- slash-tokens is a 4.8KB WASM that estimates tokens FAST and can block a wasted trip, or switch to cheaper same-provider model before the request leaves your machine. Try it MIT, no account needed: bunx slash-tokensOr install the SDK: npm install slash-tokens Comments URL: https://news.ycombinator.com/item?id=49441725 Points: 2 # Commen"
+        },
+        "todayHighlight": {
+          "zh": "该工具直击 LLM 成本不可控的痛点，可能推动成本优化工具链的发展。",
+          "en": "该工具直击 LLM 成本不可控的痛点，可能推动成本优化工具链的发展。"
+        },
+        "pmInsight": {
+          "zh": "考虑集成此类成本预估工具，帮助用户控制预算，提升产品透明度。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://github.com/Wolfe-Jam/slash-tokens"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: AI Realist Radar:GPT‑5.6 Sol Pricing, Stripe's OpenRouter Deal",
+          "en": "Hacker News AI: AI Realist Radar:GPT‑5.6 Sol Pricing, Stripe's OpenRouter Deal"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "API/定价",
+          "en": "API/定价"
+        },
+        "summary": {
+          "zh": "社区讨论 GPT-5.6 Sol 的定价策略以及 Stripe 与 OpenRouter 的合作，反映市场对模型定价和分发渠道的关注。",
+          "en": "Article URL: https://msukhareva.substack.com/p/ai-realist-radar-gpt56-sol-pricing Comments URL: https://news.ycombinator.com/item?id=49442514 Points: 1 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "社区讨论 GPT-5.6 Sol 的定价策略以及 Stripe 与 OpenRouter 的合作，反映市场对模型定价和分发渠道的关注。",
+          "en": "Article URL: https://msukhareva.substack.com/p/ai-realist-radar-gpt56-sol-pricing Comments URL: https://news.ycombinator.com/item?id=49442514 Points: 1 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "定价与渠道合作成为 AI 商业化焦点，可能影响模型提供商的竞争策略。",
+          "en": "定价与渠道合作成为 AI 商业化焦点，可能影响模型提供商的竞争策略。"
+        },
+        "pmInsight": {
+          "zh": "关注模型定价变化和渠道合作，及时调整自身产品的成本结构和分销策略。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://msukhareva.substack.com/p/ai-realist-radar-gpt56-sol-pricing"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-25",
     "label": {
       "zh": "最新",
@@ -23046,808 +23836,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Vercel AI",
             "url": "https://vercel.com/blog/deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-07-27",
-    "label": {
-      "zh": "最新",
-      "en": "Latest"
-    },
-    "title": {
-      "zh": "AI 编码代理升温，Anthropic 发布 Opus 5 重塑模型定价",
-      "en": "AI Coding Agents Heat Up, Anthropic Launches Opus 5 Reshaping Model Pricing"
-    },
-    "editorNote": {
-      "zh": "今日 GitHub 上 AI 编码代理与设计辅助工具持续升温，同时 Anthropic 发布 Opus 5 以半价提供接近前沿的智能，并集成至 GitHub Copilot，加剧模型竞争。OpenAI 进入健康领域，AI 应用边界进一步扩展。",
-      "en": "Today on GitHub, AI coding agents and design assistance tools continue to gain traction. Meanwhile, Anthropic released Opus 5 offering near-frontier intelligence at half the price and integrated it into GitHub Copilot, intensifying model competition. OpenAI entered the health domain, further expanding AI application boundaries."
-    },
-    "keyTakeaway": {
-      "zh": "AI 编码代理与设计辅助工具持续升温，Anthropic 以 Opus 5 半价策略重塑高端模型市场，并借 Copilot 生态扩大影响。",
-      "en": "AI coding agents and design assistance tools continue to heat up. Anthropic's Opus 5, at half the price, reshapes the high-end model market and expands influence via the Copilot ecosystem."
-    },
-    "signals": [
-      {
-        "title": {
-          "zh": "AI 编码代理工具生态快速扩张",
-          "en": "Rapid Expansion of AI Coding Agent Ecosystem"
-        },
-        "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
-        },
-        "summary": {
-          "zh": "GitHub 上多个 AI 编码代理项目增长较快：ego-lite（日增 900 星）为代理提供极速浏览器；openclaude-improved（175 星）支持多模型；impeccable（5 万星）提供设计指导。同时，Anthropic 将 Opus 5 集成至 GitHub Copilot。",
-          "en": "Multiple AI coding agent projects on GitHub are growing rapidly: ego-lite (+900 stars/day) provides a fast browser for agents; openclaude-improved (175 stars) supports multiple models; impeccable (50k stars) offers design guidance. Meanwhile, Anthropic integrated Opus 5 into GitHub Copilot."
-        },
-        "pmInsight": {
-          "zh": "AI 编码代理正从单一代码生成向全流程工具链演进，产品经理应关注代理与浏览器、设计系统、代码审查等工具的集成，打造闭环体验。",
-          "en": "AI coding agents are evolving from single code generation to full workflow toolchains. PMs should focus on integrating agents with browsers, design systems, code review tools, etc., to create a closed-loop experience."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "ego-lite",
-            "url": "https://github.com/citrolabs/ego-lite"
-          },
-          {
-            "label": "openclaude-improved",
-            "url": "https://github.com/0xwilliamortiz/openclaude-improved"
-          },
-          {
-            "label": "impeccable",
-            "url": "https://github.com/pbakaus/impeccable"
-          },
-          {
-            "label": "GitHub Copilot + Opus 5",
-            "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Anthropic Opus 5 以半价策略冲击高端模型市场",
-          "en": "Anthropic Opus 5 Disrupts High-End Model Market with Half-Price Strategy"
-        },
-        "category": {
-          "zh": "模型平台",
-          "en": "Model Platform"
-        },
-        "summary": {
-          "zh": "Anthropic 发布 Claude Opus 5，性能接近旗舰 Fable 5 但价格减半，并集成至 GitHub Copilot。同时，Hacker News 上出现 Shepherd Model Gateway，支持多模型路由与 KV 缓存感知。",
-          "en": "Anthropic released Claude Opus 5 with performance close to flagship Fable 5 at half the price, and integrated it into GitHub Copilot. Meanwhile, Shepherd Model Gateway appeared on Hacker News, supporting multi-model routing and KV cache awareness."
-        },
-        "pmInsight": {
-          "zh": "Opus 5 的定价策略可能迫使其他模型降价，产品经理应重新评估模型选型成本，并关注多模型网关工具以灵活切换供应商。",
-          "en": "Opus 5's pricing strategy may force other models to lower prices. PMs should reassess model selection costs and consider multi-model gateway tools for flexible vendor switching."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Anthropic Opus 5",
-            "url": "https://www.anthropic.com/news/claude-opus-5"
-          },
-          {
-            "label": "Shepherd Model Gateway",
-            "url": "https://github.com/lightseekorg/smg"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "AI 进入健康领域，个人助手场景拓展",
-          "en": "AI Enters Health Domain, Personal Assistant Scenarios Expand"
-        },
-        "category": {
-          "zh": "产品功能",
-          "en": "Product Feature"
-        },
-        "summary": {
-          "zh": "OpenAI 在 ChatGPT 中推出健康功能，允许美国用户连接医疗记录和 Apple Health 数据，提供个性化健康洞察。",
-          "en": "OpenAI launched health features in ChatGPT, allowing US users to connect medical records and Apple Health data for personalized health insights."
-        },
-        "pmInsight": {
-          "zh": "AI 个人健康助手市场开启，产品经理应关注数据隐私合规、与医疗系统集成，以及如何通过对话式交互提供可信的健康建议。",
-          "en": "The AI personal health assistant market is opening. PMs should focus on data privacy compliance, integration with healthcare systems, and delivering trustworthy health advice through conversational interaction."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "OpenAI Health",
-            "url": "https://openai.com/index/health-in-chatgpt"
-          }
-        ]
-      }
-    ],
-    "opportunities": [
-      {
-        "title": {
-          "zh": "构建 AI 编码代理全流程工具链",
-          "en": "Build a Full-Stack AI Coding Agent Toolchain"
-        },
-        "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
-        },
-        "summary": {
-          "zh": "结合 ego-lite（代理浏览器）、impeccable（设计指导）、alibaba/open-code-review（代码审查）等工具，打造从设计到部署的 AI 编码代理闭环，提升开发者效率。",
-          "en": "Combine ego-lite (agent browser), impeccable (design guidance), alibaba/open-code-review (code review), etc., to create a closed-loop AI coding agent from design to deployment, boosting developer productivity."
-        },
-        "pmInsight": {
-          "zh": "假设：集成代理浏览器、设计指导和代码审查的端到端工具，相比单一功能工具，开发者采纳率提升 3 倍。验证方式：构建 MVP 并在 GitHub 上开源，观察星数和社区反馈。",
-          "en": "Hypothesis: An end-to-end tool integrating agent browser, design guidance, and code review will achieve 3x higher adoption than single-function tools. Validation: Build an MVP, open-source on GitHub, and monitor stars and community feedback."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "ego-lite",
-            "url": "https://github.com/citrolabs/ego-lite"
-          },
-          {
-            "label": "impeccable",
-            "url": "https://github.com/pbakaus/impeccable"
-          },
-          {
-            "label": "alibaba/open-code-review",
-            "url": "https://github.com/alibaba/open-code-review"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "开发多模型路由网关服务",
-          "en": "Develop Multi-Model Routing Gateway Service"
-        },
-        "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
-        },
-        "summary": {
-          "zh": "基于 Shepherd Model Gateway 的思路，结合 Opus 5 降价趋势，构建支持成本感知、KV 缓存路由的 LLM 网关，帮助企业动态选择最优模型。",
-          "en": "Based on Shepherd Model Gateway's concept and Opus 5's price reduction, build an LLM gateway with cost-aware and KV cache routing to help enterprises dynamically select the best model."
-        },
-        "pmInsight": {
-          "zh": "假设：企业使用多模型网关后，LLM 调用成本降低 30% 以上。验证方式：与 5 家 SaaS 企业合作试点，对比使用前后的成本与响应质量。",
-          "en": "Hypothesis: Enterprises using a multi-model gateway will reduce LLM call costs by over 30%. Validation: Pilot with 5 SaaS companies, comparing cost and response quality before and after."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Shepherd Model Gateway",
-            "url": "https://github.com/lightseekorg/smg"
-          },
-          {
-            "label": "Anthropic Opus 5",
-            "url": "https://www.anthropic.com/news/claude-opus-5"
-          }
-        ]
-      }
-    ],
-    "githubProjects": [
-      {
-        "title": {
-          "zh": "0xwilliamortiz/openclaude-improved",
-          "en": "0xwilliamortiz/openclaude-improved"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "一个开源的命令行编码代理，支持多种云API、网关和本地模型，使用相同的工具和流程，让AI编码更加灵活。",
-          "en": "runs anywhere. uses anything"
-        },
-        "totalStars": 175,
-        "language": "TypeScript",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "一个开源的命令行编码代理，支持多种云API、网关和本地模型，使用相同的工具和流程，让AI编码更加灵活。",
-          "en": "runs anywhere. uses anything"
-        },
-        "todayHighlight": {
-          "zh": "作为新兴的AI编码代理工具，今日在GitHub上快速升温，吸引开发者关注，总星数175。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 175 stars、26 forks，topics: agentic-ai, ai, ai-agent, ai-coding, ai-coding-agent，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 175 stars and 26 forks，topics: agentic-ai, ai, ai-agent, ai-coding, ai-coding-agent, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "观察开源编码代理如何通过多模型兼容性降低开发者切换成本。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/0xwilliamortiz/openclaude-improved"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "deerwork-ai/deer-workflow",
-          "en": "deerwork-ai/deer-workflow"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "一个开源动态工作流运行时，将编排逻辑保留在TypeScript中，并将语义工作委托给可替换的Agent运行时。",
-          "en": "An open-source Dynamic Workflow runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable Agent runtimes."
-        },
-        "totalStars": 147,
-        "language": "TypeScript",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "一个开源动态工作流运行时，将编排逻辑保留在TypeScript中，并将语义工作委托给可替换的Agent运行时。",
-          "en": "An open-source Dynamic Workflow runtime that keeps orchestration in TypeScript and delegates semantic work to replaceable Agent runtimes."
-        },
-        "todayHighlight": {
-          "zh": "今日新晋上升趋势榜，作为动态工作流工具，在AI Agent生态中快速获得关注，总星数147。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 147 stars、15 forks，topics: agent, ai, ai-agent, ai-agents, ai-coding，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 147 stars and 15 forks，topics: agent, ai, ai-agent, ai-agents, ai-coding, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "关注动态工作流如何提升AI Agent的灵活性和可维护性。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/deerwork-ai/deer-workflow"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting",
-          "en": "0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "DeepSeek创始人梁文锋四小时投资人会议的文字实录，因微信无法查看而上传至GitHub。",
-          "en": "梁文锋四小时投资人会议实录，因原文在微信上无法查看，特传一份github"
-        },
-        "totalStars": 126,
-        "language": "Unknown",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "DeepSeek创始人梁文锋四小时投资人会议的文字实录，因微信无法查看而上传至GitHub。",
-          "en": "梁文锋四小时投资人会议实录，因原文在微信上无法查看，特传一份github"
-        },
-        "todayHighlight": {
-          "zh": "因内容稀缺性在中文社区快速传播，今日上升趋势榜，总星数126，fork数54。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 126 stars、54 forks，topics: agi, deepseek, liang-wenfeng, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 126 stars and 54 forks，topics: agi, deepseek, liang-wenfeng, llm, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "观察AI创始人公开分享对社区影响力的直接拉动作用。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/0xtresser/Transcript-of-Liang-Wenfengs-DeepSeek-Founder-4-Hour-Investor-Meeting"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "citrolabs/ego-lite",
-          "en": "citrolabs/ego-lite"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "专为AI代理设计的极速浏览器，可共享登录状态给Codex或Claude Code等代理，零成本零配置。",
-          "en": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config."
-        },
-        "totalStars": 5083,
-        "language": "JavaScript",
-        "dailyStars": 900,
-        "chineseIntro": {
-          "zh": "专为AI代理设计的极速浏览器，可共享登录状态给Codex或Claude Code等代理，零成本零配置。",
-          "en": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config."
-        },
-        "todayHighlight": {
-          "zh": "今日新增约900星，总星数超5000，作为AI代理浏览器工具，在自动化社区持续升温。",
-          "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 3 个月便已积累 5,083 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 900 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,083 stars、242 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,083 stars and 242 forks，topics: agent-skills, ai-agent, browser, skills, skills-sh, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "关注AI代理专用浏览器如何简化自动化流程并提升效率。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/citrolabs/ego-lite"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "alibaba/open-code-review",
-          "en": "alibaba/open-code-review"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "阿里巴巴开源的代码审查工具，采用混合架构（确定性管道+LLM Agent），支持精确的行级评论和内置规则集。",
-          "en": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
-        },
-        "totalStars": 14212,
-        "language": "Go",
-        "dailyStars": 832,
-        "chineseIntro": {
-          "zh": "阿里巴巴开源的代码审查工具，采用混合架构（确定性管道+LLM Agent），支持精确的行级评论和内置规则集。",
-          "en": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
-        },
-        "todayHighlight": {
-          "zh": "今日新增832星，总星数超1.4万，在代码审查领域持续获得关注，尤其受企业开发者欢迎。",
-          "en": "登上 GitHub Trending 日榜第 11 位, 创建仅约 2 个月便已积累 14k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 832 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,212 stars、961 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,212 stars and 961 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "观察AI代码审查工具如何平衡自动化与人工审查的准确性。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/alibaba/open-code-review"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "pbakaus/impeccable",
-          "en": "pbakaus/impeccable"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "为AI编码代理提供设计指导的工具，包含23条命令、实时浏览器迭代和60条确定性检测规则，提升AI生成前端的设计质量。",
-          "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
-        },
-        "totalStars": 50952,
-        "language": "JavaScript",
-        "dailyStars": 413,
-        "chineseIntro": {
-          "zh": "为AI编码代理提供设计指导的工具，包含23条命令、实时浏览器迭代和60条确定性检测规则，提升AI生成前端的设计质量。",
-          "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
-        },
-        "todayHighlight": {
-          "zh": "今日新增413星，总星数超5万，作为AI设计辅助工具，在开发者社区持续流行。",
-          "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 50k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 413 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 50,952 stars、3,005 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 50,952 stars and 3,005 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "关注AI编码代理如何通过设计规则提升输出质量，减少人工修正。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/pbakaus/impeccable"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "OtterMind/Chat2DB",
-          "en": "OtterMind/Chat2DB"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "AI驱动的数据库工具和SQL客户端，支持MySQL、Oracle、PostgreSQL等多种数据库，提供智能查询和可视化操作。",
-          "en": "Star OtterMind / Chat2DB 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more."
-        },
-        "totalStars": 27307,
-        "language": "Java",
-        "dailyStars": 398,
-        "chineseIntro": {
-          "zh": "AI驱动的数据库工具和SQL客户端，支持MySQL、Oracle、PostgreSQL等多种数据库，提供智能查询和可视化操作。",
-          "en": "Star OtterMind / Chat2DB 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more."
-        },
-        "todayHighlight": {
-          "zh": "今日新增398星，总星数超2.7万，作为成熟的AI数据库工具，持续在开发者中保持热度。",
-          "en": "登上 GitHub Trending 日榜第 8 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 398 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 27,307 stars、2,949 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 27,307 stars and 2,949 forks，topics: ai, bi, chatgpt, clickhouse, clickhouse-client, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "观察AI如何简化数据库管理，降低数据分析门槛。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/OtterMind/Chat2DB"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "anthropics/claude-cookbooks",
-          "en": "anthropics/claude-cookbooks"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Anthropic官方提供的Claude API使用示例和教程集合，帮助开发者快速上手构建应用。",
-          "en": "Star anthropics / claude-cookbooks A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
-        },
-        "totalStars": 50388,
-        "language": "Jupyter Notebook",
-        "dailyStars": 379,
-        "chineseIntro": {
-          "zh": "Anthropic官方提供的Claude API使用示例和教程集合，帮助开发者快速上手构建应用。",
-          "en": "Star anthropics / claude-cookbooks A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
-        },
-        "todayHighlight": {
-          "zh": "今日新增379星，总星数超5万，作为官方资源，随Claude生态扩大持续获得关注。",
-          "en": "登上 GitHub Trending 日榜第 13 位, 总 star 数已达 50k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 379 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 50,388 stars、5,935 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 50,388 stars and 5,935 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "关注官方教程如何推动开发者生态和API采用率。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/anthropics/claude-cookbooks"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "shiyu-coder/Kronos",
-          "en": "shiyu-coder/Kronos"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "一个专注于金融市场的语言基础模型，旨在理解和生成金融领域的语言。",
-          "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
-        },
-        "totalStars": 34304,
-        "language": "Python",
-        "dailyStars": 321,
-        "chineseIntro": {
-          "zh": "一个专注于金融市场的语言基础模型，旨在理解和生成金融领域的语言。",
-          "en": "Star shiyu-coder / Kronos Kronos: A Foundation Model for the Language of Financial Markets"
-        },
-        "todayHighlight": {
-          "zh": "今日新增321星，总星数超3.4万，作为金融AI模型，在量化投资社区持续升温。",
-          "en": "登上 GitHub Trending 日榜第 10 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 321 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,304 stars、5,773 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,304 stars and 5,773 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "观察垂直领域基础模型如何满足金融行业的特定需求。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/shiyu-coder/Kronos"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "andrewyng/aisuite",
-          "en": "andrewyng/aisuite"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "提供统一接口，简化多个生成式AI提供商的调用，支持OpenAI、Anthropic、Google等。",
-          "en": "Star andrewyng / aisuite Simple, unified interface to multiple Generative AI providers"
-        },
-        "totalStars": 15472,
-        "language": "Python",
-        "dailyStars": 187,
-        "chineseIntro": {
-          "zh": "提供统一接口，简化多个生成式AI提供商的调用，支持OpenAI、Anthropic、Google等。",
-          "en": "Star andrewyng / aisuite Simple, unified interface to multiple Generative AI providers"
-        },
-        "todayHighlight": {
-          "zh": "今日新增187星，总星数超1.5万，作为Andrew Ng的项目，持续吸引AI开发者关注。",
-          "en": "登上 GitHub Trending 日榜第 12 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 187 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,472 stars、1,638 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,472 stars and 1,638 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "关注统一API层如何降低多模型集成的复杂性。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/andrewyng/aisuite"
-          }
-        ]
-      }
-    ],
-    "companyUpdates": [
-      {
-        "title": {
-          "zh": "Hacker News LLM: Shepherd Model Gateway – Model-routing gateway for LLM deployments",
-          "en": "Hacker News LLM: Shepherd Model Gateway – Model-routing gateway for LLM deployments"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "开源项目 Shepherd Model Gateway 发布，这是一个用 Rust 编写的引擎无关 LLM 网关，支持 OpenAI、Anthropic 等 API 兼容，并具备 KV 缓存感知路由、WASM 插件等特性。",
-          "en": "Article URL: https://github.com/lightseekorg/smg Comments URL: https://news.ycombinator.com/item?id=49063132 Points: 2 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "开源项目 Shepherd Model Gateway 发布，这是一个用 Rust 编写的引擎无关 LLM 网关，支持 OpenAI、Anthropic 等 API 兼容，并具备 KV 缓存感知路由、WASM 插件等特性。",
-          "en": "Article URL: https://github.com/lightseekorg/smg Comments URL: https://news.ycombinator.com/item?id=49063132 Points: 2 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "该网关首次实现 gRPC 管道与多模型路由，可能成为 LLM 部署基础设施的关键组件。",
-          "en": "该网关首次实现 gRPC 管道与多模型路由，可能成为 LLM 部署基础设施的关键组件。"
-        },
-        "pmInsight": {
-          "zh": "评估是否可将此网关集成到现有 LLM 服务栈，以降低多模型切换的工程成本。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Hacker News LLM",
-            "url": "https://github.com/lightseekorg/smg"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Show HN: Watch 14-Byte AI \"brains\" attempt to solve a 2D maze (Its hard)",
-          "en": "Hacker News AI: Show HN: Watch 14-Byte AI \"brains\" attempt to solve a 2D maze (Its hard)"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "开发者展示了一个仅 14 字节的微型神经网络，在未见过的迷宫中达到 96.5% 的解决率，探索极致轻量级 AI 的可能性。",
-          "en": "Hey HackerNews,I built this project over the last few weeks as a palette cleanser from a failed game launch.I wanted to learn a bit about AI/Neural-Networks and naively thought I could build a tiny maze-solving AI in a weekend with a 100% solve rate.Well - I couldn't, but I got pretty close. 14 Bytes total model size, and a 96.5% solve rate on unseen mazes. Trained across 46 phases experimenting with different ideas "
-        },
-        "chineseIntro": {
-          "zh": "开发者展示了一个仅 14 字节的微型神经网络，在未见过的迷宫中达到 96.5% 的解决率，探索极致轻量级 AI 的可能性。",
-          "en": "Hey HackerNews,I built this project over the last few weeks as a palette cleanser from a failed game launch.I wanted to learn a bit about AI/Neural-Networks and naively thought I could build a tiny maze-solving AI in a weekend with a 100% solve rate.Well - I couldn't, but I got pretty close. 14 Bytes total model size, and a 96.5% solve rate on unseen mazes. Trained across 46 phases experimenting with different ideas "
-        },
-        "todayHighlight": {
-          "zh": "展示了在极端资源约束下实现有效 AI 推理的潜力，对边缘设备部署有启发意义。",
-          "en": "展示了在极端资源约束下实现有效 AI 推理的潜力，对边缘设备部署有启发意义。"
-        },
-        "pmInsight": {
-          "zh": "关注此类微型模型在 IoT 或移动端场景的应用可能，但需评估实际任务复杂度。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://con-dog.github.io/MINIMIO-PUBLIC-FRONTEND/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Anthropic: Introducing Claude Opus 5",
-          "en": "Anthropic: Introducing Claude Opus 5"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "新模型/新能力",
-          "en": "新模型/新能力"
-        },
-        "summary": {
-          "zh": "Anthropic 发布 Claude Opus 5，在编码和知识工作基准上达到新 SOTA，性能接近旗舰模型 Fable 5 但价格减半。",
-          "en": "ProductAnnouncementsIntroducing Claude Opus 5Jul 24, 2026Claude Opus 5 is available today. It`s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA, Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks.Opus 5 is designed to be used every day:"
-        },
-        "chineseIntro": {
-          "zh": "Anthropic 发布 Claude Opus 5，在编码和知识工作基准上达到新 SOTA，性能接近旗舰模型 Fable 5 但价格减半。",
-          "en": "ProductAnnouncementsIntroducing Claude Opus 5Jul 24, 2026Claude Opus 5 is available today. It`s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.On coding and knowledge work evaluations like Frontier-Bench and GDPval-AA, Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks.Opus 5 is designed to be used every day:"
-        },
-        "todayHighlight": {
-          "zh": "Opus 5 以一半价格提供接近前沿的智能，可能重塑高端模型定价格局。",
-          "en": "Opus 5 以一半价格提供接近前沿的智能，可能重塑高端模型定价格局。"
-        },
-        "pmInsight": {
-          "zh": "立即测试 Opus 5 在现有工作流中的成本效益比，考虑将其作为主力模型替换。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Anthropic",
-            "url": "https://www.anthropic.com/news/claude-opus-5"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "GitHub Changelog: Claude Opus 5 is now available in GitHub Copilot",
-          "en": "GitHub Changelog: Claude Opus 5 is now available in GitHub Copilot"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "生态合作",
-          "en": "生态合作"
-        },
-        "summary": {
-          "zh": "Claude Opus 5 集成至 GitHub Copilot，支持复杂多步骤编码任务，并增强安全防护。",
-          "en": "Claude Opus 5, Anthropic&#8217;s newest Opus model, is now available in GitHub Copilot. It is designed for complex, long-running coding tasks that require careful reasoning, effective tool use, and reliable&#8230; The post Claude Opus 5 is now available in GitHub Copilot appeared first on The GitHub Blog."
-        },
-        "chineseIntro": {
-          "zh": "Claude Opus 5 集成至 GitHub Copilot，支持复杂多步骤编码任务，并增强安全防护。",
-          "en": "Claude Opus 5, Anthropic&#8217;s newest Opus model, is now available in GitHub Copilot. It is designed for complex, long-running coding tasks that require careful reasoning, effective tool use, and reliable&#8230; The post Claude Opus 5 is now available in GitHub Copilot appeared first on The GitHub Blog."
-        },
-        "todayHighlight": {
-          "zh": "Anthropic 模型进入微软开发者生态，加剧 Copilot 模型竞争。",
-          "en": "Anthropic 模型进入微软开发者生态，加剧 Copilot 模型竞争。"
-        },
-        "pmInsight": {
-          "zh": "评估 Opus 5 在 Copilot 中的实际编码效率提升，对比现有模型选择。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "OpenAI: Launching Health in ChatGPT",
-          "en": "OpenAI: Launching Health in ChatGPT"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
-        },
-        "summary": {
-          "zh": "ChatGPT 推出健康功能，允许美国用户安全连接医疗记录和 Apple Health 数据，获取个性化健康洞察。",
-          "en": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health."
-        },
-        "chineseIntro": {
-          "zh": "ChatGPT 推出健康功能，允许美国用户安全连接医疗记录和 Apple Health 数据，获取个性化健康洞察。",
-          "en": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health."
-        },
-        "todayHighlight": {
-          "zh": "OpenAI 进入健康领域，可能开辟 AI 个人健康助手新市场。",
-          "en": "OpenAI 进入健康领域，可能开辟 AI 个人健康助手新市场。"
-        },
-        "pmInsight": {
-          "zh": "关注健康数据隐私合规要求，探索类似功能在医疗咨询场景的落地机会。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "OpenAI",
-            "url": "https://openai.com/index/health-in-chatgpt"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "GitHub Blog: The case for a cooldown: Why Dependabot now waits before issuing version updates",
-          "en": "GitHub Blog: The case for a cooldown: Why Dependabot now waits before issuing version updates"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "政策/安全",
-          "en": "政策/安全"
-        },
-        "summary": {
-          "zh": "GitHub Dependabot 引入默认三天冷却期，延迟版本更新拉取请求，以防范供应链攻击。",
-          "en": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code. The post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog."
-        },
-        "chineseIntro": {
-          "zh": "GitHub Dependabot 引入默认三天冷却期，延迟版本更新拉取请求，以防范供应链攻击。",
-          "en": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code. The post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog."
-        },
-        "todayHighlight": {
-          "zh": "此举针对自动化工具被恶意利用的漏洞，提升软件供应链安全基线。",
-          "en": "此举针对自动化工具被恶意利用的漏洞，提升软件供应链安全基线。"
-        },
-        "pmInsight": {
-          "zh": "检查团队依赖更新策略，考虑引入类似冷却期以降低被投毒风险。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub Blog",
-            "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/"
           }
         ]
       }
