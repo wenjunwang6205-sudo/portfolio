@@ -44,110 +44,98 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：AI 编程助手生态升温，多智能体与硬件标准成新焦点",
-      "en": "AI PM Daily: AI Coding Assistant Ecosystem Heats Up, Multi-Agent and Hardware Standards Emerge as New Focus"
+      "zh": "AI 产品经理日报：2026-08-30",
+      "en": "AI PM Daily: 2026-08-30"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势显示 AI 编程助手技能生态持续升温，archify 日增近 4k 星领跑；公司动态中 OpenAI 与 Cursor 的决裂、Anthropic 的硬件标准预览，均指向 AI 代理从数字向物理世界延伸的趋势。",
-      "en": "Today's GitHub trends show the AI coding assistant skill ecosystem continues to heat up, with archify leading at nearly 4k daily stars; company news including OpenAI's split with Cursor and Anthropic's hardware standard preview point to AI agents extending from digital to physical worlds."
+      "zh": "今日 GitHub 趋势显示 AI 编程助手生态持续升温，archify 以架构图生成技能登顶，科学技能库与视频制作技能包热度不减。公司动态方面，OpenAI 对 Cursor 被 SpaceX 收购的决策、Anthropic 的模型硬件标准预览等事件值得关注。",
+      "en": "Today's GitHub trends show the AI coding assistant ecosystem continues to heat up, with archify topping the charts for architecture diagram generation skills, and scientific skills libraries and video production skill packs remain popular. On the company side, OpenAI's decision on Cursor following its acquisition by SpaceX and Anthropic's Model Hardware Standard preview are noteworthy."
     },
     "keyTakeaway": {
-      "zh": "AI 编程助手正从单一工具演变为可扩展的技能平台，同时模型供应商与下游工具的关系出现裂痕，代理的物理世界操作能力成为新的竞争高地。",
-      "en": "AI coding assistants are evolving from single tools into extensible skill platforms, while tensions between model providers and downstream tools emerge, and agents' physical world operation capabilities become a new competitive frontier."
+      "zh": "AI 编程助手正从代码生成向全流程技能化演进，架构图、视频制作、科学实验等垂直场景成为新战场，同时模型路由与硬件标准开始成为降本增效的关键。",
+      "en": "AI coding assistants are evolving from code generation to full-process skill-based workflows, with vertical scenarios like architecture diagrams, video production, and scientific experiments becoming new battlegrounds, while model routing and hardware standards are becoming key to cost reduction and efficiency."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 编程助手技能生态持续升温，archify 日增近 4k 星",
-          "en": "AI Coding Assistant Skill Ecosystem Heats Up, archify Gains Nearly 4k Stars Daily"
+          "zh": "archify 日增 3902 星登顶，架构图生成成为 AI 编程助手刚需",
+          "en": "archify tops with 3,902 daily stars, architecture diagram generation becomes a must-have for AI coding assistants"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "GitHub 趋势榜中，archify 以日增 3902 星位列第一，总星数达 31649；同时 video-shotcraft、sepia、OpenMontage 等技能项目也表现强劲，显示 AI 编程助手技能市场正在快速扩张。",
-          "en": "On GitHub trending, archify ranks first with 3,902 daily stars and 31,649 total; meanwhile, skill projects like video-shotcraft, sepia, and OpenMontage also perform strongly, indicating the AI coding assistant skill market is expanding rapidly."
+          "zh": "archify 今日新增 3902 星，总星标达 3.2 万，位列全球趋势榜第一。该项目为 AI 编程助手生成架构图、流程图等，输出自包含 HTML，支持动画。",
+          "en": "archify gained 3,902 stars today, reaching 31,872 total, ranking #1 on global trending. It generates architecture diagrams, flowcharts, etc. for AI coding assistants, outputting self-contained HTML with animation support."
         },
         "pmInsight": {
-          "zh": "技能生态的繁荣意味着开发者对 AI 编程助手的定制化需求旺盛，产品经理可考虑构建技能市场或插件平台，以生态锁定用户。",
-          "en": "The thriving skill ecosystem indicates strong demand for customization of AI coding assistants; PMs may consider building a skill marketplace or plugin platform to lock in users via ecosystem."
+          "zh": "架构图是开发者理解和沟通复杂系统的关键，AI 编程助手若能自动生成可验证的架构图，将显著提升开发效率。PM 可考虑在 AI 编程工具中集成类似能力，或开发独立插件。",
+          "en": "Architecture diagrams are key for developers to understand and communicate complex systems. If AI coding assistants can automatically generate verifiable diagrams, it will significantly boost productivity. PMs could consider integrating similar capabilities into AI coding tools or developing standalone plugins."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "archify",
+            "label": "archify GitHub",
             "url": "https://github.com/tt-a1i/archify"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "科学技能库与视频制作技能包持续升温，AI 技能生态垂直化加速",
+          "en": "Scientific skills library and video production skill packs continue to heat up, verticalization of AI skill ecosystem accelerates"
+        },
+        "category": {
+          "zh": "AI 技能生态",
+          "en": "AI Skill Ecosystem"
+        },
+        "summary": {
+          "zh": "K-Dense-AI/scientific-agent-skills 日增 1587 星，总星标 3.8 万；calesthio/OpenMontage 日增 806 星，总星标 5.4 万。两者分别面向科学研究和视频制作，提供大量技能文件和工具。",
+          "en": "K-Dense-AI/scientific-agent-skills gained 1,587 stars today (38,134 total); calesthio/OpenMontage gained 806 stars (54,231 total). They target scientific research and video production respectively, offering extensive skill files and tools."
+        },
+        "pmInsight": {
+          "zh": "AI 技能不再局限于编程，正向科学、创意等垂直领域渗透。PM 应关注特定行业的技能包开发，与领域专家合作，打造深度解决方案，而非通用工具。",
+          "en": "AI skills are no longer limited to coding, but penetrating vertical fields like science and creativity. PMs should focus on developing skill packs for specific industries, collaborating with domain experts to create deep solutions rather than generic tools."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "scientific-agent-skills GitHub",
+            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
           },
           {
-            "label": "video-shotcraft",
-            "url": "https://github.com/Vincentwei1021/video-shotcraft"
-          },
-          {
-            "label": "sepia",
-            "url": "https://github.com/Nanako0129/sepia"
-          },
-          {
-            "label": "OpenMontage",
+            "label": "OpenMontage GitHub",
             "url": "https://github.com/calesthio/OpenMontage"
           }
         ]
       },
       {
         "title": {
-          "zh": "OpenAI 终止与 Cursor 合作，模型供应商与下游工具关系紧张",
-          "en": "OpenAI Ends Partnership with Cursor, Tensions Rise Between Model Providers and Downstream Tools"
+          "zh": "模型路由器与硬件标准出现，AI 基础设施降本增效成为焦点",
+          "en": "Model router and hardware standard emerge, cost reduction and efficiency in AI infrastructure become focus"
         },
         "category": {
-          "zh": "生态合作",
-          "en": "Ecosystem Collaboration"
+          "zh": "AI 基础设施",
+          "en": "AI Infrastructure"
         },
         "summary": {
-          "zh": "OpenAI 宣布因 Cursor 被 SpaceX 收购而终止向其提供模型服务，同时 Vercel AI SDK 新增 Cursor 适配器，显示工具层正在寻求多模型/多代理的灵活性以降低依赖风险。",
-          "en": "OpenAI announced it would stop providing model services to Cursor due to its acquisition by SpaceX; meanwhile, Vercel AI SDK added a Cursor adapter, showing tooling is seeking multi-model/multi-agent flexibility to reduce dependency risk."
+          "zh": "workweave/router 日增 284 星，提供模型路由，可降低 40-70% 成本；Anthropic 发布模型硬件标准预览，旨在统一 AI 硬件接口。",
+          "en": "workweave/router gained 284 stars today, offering model routing that can reduce costs by 40-70%; Anthropic previewed the Model Hardware Standard to unify AI hardware interfaces."
         },
         "pmInsight": {
-          "zh": "模型供应商的决策可能影响下游工具的产品路线，产品经理应避免单一模型锁定，通过抽象层支持多模型切换，以增强抗风险能力。",
-          "en": "Model providers' decisions can impact downstream tools' product roadmap; PMs should avoid single-model lock-in by using abstraction layers to support multi-model switching, enhancing resilience."
+          "zh": "随着 AI 应用规模化，成本控制成为关键。PM 应关注模型路由、硬件标准化等基础设施层创新，以优化成本结构，提升产品竞争力。",
+          "en": "As AI applications scale, cost control becomes critical. PMs should pay attention to infrastructure innovations like model routing and hardware standardization to optimize cost structures and enhance product competitiveness."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI decision on Cursor",
-            "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex"
+            "label": "workweave/router GitHub",
+            "url": "https://github.com/workweave/router"
           },
           {
-            "label": "Vercel AI SDK Cursor adapter",
-            "url": "https://vercel.com/changelog/cursor-ai-sdk-harness-adapter"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Anthropic 发布模型硬件标准，AI 代理迈向物理世界",
-          "en": "Anthropic Releases Model Hardware Standard, AI Agents Move into Physical World"
-        },
-        "category": {
-          "zh": "新模型/新能力",
-          "en": "New Model/New Capability"
-        },
-        "summary": {
-          "zh": "Anthropic 预览模型硬件标准（MHS），旨在让 AI 代理安全操作物理设备，将集成时间从数周缩短至数分钟；同时科学技能库 scientific-agent-skills 持续增长，显示 AI 在科学实验等物理场景的应用加速。",
-          "en": "Anthropic previews the Model Hardware Standard (MHS) to enable AI agents to safely operate physical devices, reducing integration time from weeks to minutes; meanwhile, the scientific-agent-skills library continues to grow, showing accelerated AI application in physical scenarios like scientific experiments."
-        },
-        "pmInsight": {
-          "zh": "AI 代理操作物理设备的能力将开启新的产品类别，如自动化实验、智能制造等，产品经理可关注硬件接口标准化带来的集成机会。",
-          "en": "AI agents' ability to operate physical devices will open new product categories like automated experiments and smart manufacturing; PMs should watch integration opportunities from hardware interface standardization."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Anthropic MHS preview",
+            "label": "Anthropic Model Hardware Standard",
             "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
-          },
-          {
-            "label": "scientific-agent-skills",
-            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
           }
         ]
       }
@@ -155,59 +143,55 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建多模型代理抽象层，降低供应商锁定风险",
-          "en": "Build Multi-Model Agent Abstraction Layer to Reduce Vendor Lock-in Risk"
+          "zh": "开发面向垂直行业的 AI 技能包市场",
+          "en": "Develop a marketplace for vertical industry AI skill packs"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 OpenAI 与 Cursor 的决裂，以及 Vercel AI SDK 的适配器模式，产品机会在于提供统一的代理接口，支持多种模型和编码代理的无缝切换，帮助企业规避单一供应商风险。",
-          "en": "Based on the OpenAI-Cursor split and Vercel AI SDK's adapter pattern, a product opportunity lies in providing a unified agent interface that supports seamless switching between multiple models and coding agents, helping enterprises avoid single-vendor risk."
+          "zh": "基于科学技能库和视频制作技能包的热度，可构建一个技能包交易平台，让开发者上传和销售针对特定行业的技能，如法律、医疗、教育等。",
+          "en": "Based on the popularity of scientific skills library and video production skill packs, a marketplace for skill packs could be built, allowing developers to upload and sell skills for specific industries like law, healthcare, education, etc."
         },
         "pmInsight": {
-          "zh": "可验证假设：企业用户愿意为多模型切换的灵活性付费，尤其是依赖 AI 编程工具的开发团队。产品可提供插件化架构，集成主流模型和代理，并强调成本优化和稳定性。",
-          "en": "Testable hypothesis: enterprise users are willing to pay for multi-model switching flexibility, especially development teams relying on AI coding tools. Products can offer a plugin architecture integrating mainstream models and agents, emphasizing cost optimization and stability."
+          "zh": "验证假设：垂直技能包的需求是否足够大？可通过调研目标行业用户，或先推出一个细分领域的技能包（如法律文书生成）测试市场反应。",
+          "en": "Validate hypothesis: Is the demand for vertical skill packs large enough? Conduct surveys with target industry users, or launch a niche skill pack (e.g., legal document generation) to test market response."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI decision on Cursor",
-            "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex"
+            "label": "scientific-agent-skills GitHub",
+            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
           },
           {
-            "label": "Vercel AI SDK Cursor adapter",
-            "url": "https://vercel.com/changelog/cursor-ai-sdk-harness-adapter"
+            "label": "OpenMontage GitHub",
+            "url": "https://github.com/calesthio/OpenMontage"
           }
         ]
       },
       {
         "title": {
-          "zh": "开发 AI 物理操作技能库，抢占硬件集成先机",
-          "en": "Develop AI Physical Operation Skill Libraries to Seize Hardware Integration Opportunities"
+          "zh": "集成模型路由功能，打造成本优化的 AI 应用",
+          "en": "Integrate model routing for cost-optimized AI applications"
         },
         "category": {
-          "zh": "新模型/新能力",
-          "en": "New Model/New Capability"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "Anthropic 的 MHS 标准降低了 AI 代理与硬件集成的门槛，结合 scientific-agent-skills 的快速增长，产品机会在于为特定行业（如科研、制造）开发预置的硬件操作技能包，加速 AI 代理在物理世界的落地。",
-          "en": "Anthropic's MHS standard lowers the barrier for AI-agent hardware integration; combined with the rapid growth of scientific-agent-skills, a product opportunity exists in developing pre-built hardware operation skill packs for specific industries (e.g., research, manufacturing) to accelerate AI agent deployment in the physical world."
+          "zh": "workweave/router 展示了模型路由的降本潜力，可将其集成到 AI 应用开发框架中，自动为不同任务选择最合适的模型，降低 API 成本。",
+          "en": "workweave/router demonstrates the cost-saving potential of model routing. It could be integrated into AI application development frameworks to automatically select the most suitable model for different tasks, reducing API costs."
         },
         "pmInsight": {
-          "zh": "可验证假设：科研机构和制造企业愿意为即插即用的 AI 硬件操作技能付费。产品可提供技能市场，支持用户上传和分享技能，并建立质量验证机制。",
-          "en": "Testable hypothesis: research institutions and manufacturers are willing to pay for plug-and-play AI hardware operation skills. Products can offer a skill marketplace, allowing users to upload and share skills, with quality verification mechanisms."
+          "zh": "验证假设：开发者是否愿意为成本优化付费？可提供免费试用，对比使用前后的成本节省，并收集反馈。",
+          "en": "Validate hypothesis: Are developers willing to pay for cost optimization? Offer free trials, compare cost savings before and after use, and collect feedback."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Anthropic MHS preview",
-            "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
-          },
-          {
-            "label": "scientific-agent-skills",
-            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+            "label": "workweave/router GitHub",
+            "url": "https://github.com/workweave/router"
           }
         ]
       }
@@ -223,26 +207,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "将 ChatGPT 网页版作为规划大脑，Codex 只负责执行编码任务，无需 API Key 即可利用已订阅的 ChatGPT 额度，降低编码成本。",
+          "zh": "这是一个巧妙的桥接工具，让 ChatGPT 网页版负责思考和规划，而 Codex 只负责执行编码，从而充分利用已订阅的 ChatGPT 额度，节省 API 费用。",
           "en": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness."
         },
-        "totalStars": 1002,
+        "totalStars": 1020,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "将 ChatGPT 网页版作为规划大脑，Codex 只负责执行编码任务，无需 API Key 即可利用已订阅的 ChatGPT 额度，降低编码成本。",
+          "zh": "这是一个巧妙的桥接工具，让 ChatGPT 网页版负责思考和规划，而 Codex 只负责执行编码，从而充分利用已订阅的 ChatGPT 额度，节省 API 费用。",
           "en": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness."
         },
         "todayHighlight": {
-          "zh": "项目创建仅一个月即获得 1002 星，今日新增星数未提供，但因其创新的资源利用方式在开发者社区快速传播。",
+          "zh": "项目创建仅一个月，今日新增星标数未披露，但总星标已破千，凭借“零 API Key、官方网页桥接”的独特思路在开发者社区快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,002 stars、113 forks，topics: ai-agents, chatgpt, codex, mcp, model-context-protocol，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,002 stars and 113 forks，topics: ai-agents, chatgpt, codex, mcp, model-context-protocol, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,020 stars、119 forks，topics: ai-agents, chatgpt, codex, mcp, model-context-protocol，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,020 stars and 119 forks，topics: ai-agents, chatgpt, codex, mcp, model-context-protocol, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察如何通过桥接现有订阅服务来优化 AI 工具成本结构，可能启发产品设计中的资源整合策略。",
+          "zh": "观察如何通过工具链整合优化 AI 成本结构，以及用户对“物尽其用”的诉求如何驱动创新。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,26 +247,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 和 Codex 提供 AI 视频生成技能，内置 152 个镜头配方和 209 个动态预览，可快速制作电影级产品视频。",
+          "zh": "这是一个为 Claude Code 和 Codex 等 AI 编程助手设计的视频制作技能包，内置 152 个镜头配方和 209 个动态预览，可快速生成电影感产品视频。",
           "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
         },
-        "totalStars": 6693,
+        "totalStars": 6699,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 Claude Code 和 Codex 提供 AI 视频生成技能，内置 152 个镜头配方和 209 个动态预览，可快速制作电影级产品视频。",
+          "zh": "这是一个为 Claude Code 和 Codex 等 AI 编程助手设计的视频制作技能包，内置 152 个镜头配方和 209 个动态预览，可快速生成电影感产品视频。",
           "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
         },
         "todayHighlight": {
-          "zh": "创建一个月即获得 6693 星，今日新增星数未提供，凭借丰富的模板和 Remotion 集成在 AI 视频创作领域快速获得关注。",
-          "en": "创建仅约 1 个月便已积累 6,693 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
+          "zh": "项目创建约一个月，总星标近 6700，凭借“AI 生成电影级视频”的叙事在创作者圈层持续升温，今日新增星标未披露。",
+          "en": "创建仅约 1 个月便已积累 6,699 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,693 stars、595 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,693 stars and 595 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,699 stars、595 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,699 stars and 595 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注如何通过标准化技能包降低视频制作门槛，可能为内容创作工具提供新思路。",
+          "zh": "关注 AI 技能包如何降低专业视频制作门槛，以及模板化创作对内容生产流程的重塑。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -303,26 +287,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code、Codex 等 AI 编程助手提供去 AI 化写作技能，修复小说叙事结构，并为专业文档匹配场景化规则，提升文本自然度。",
+          "zh": "这是一个“去 AI 味”的写作技能，针对小说和职业文档分别修复叙事结构和匹配场景规则，让 AI 生成的内容更自然、更符合文体要求。",
           "en": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136)."
         },
-        "totalStars": 707,
+        "totalStars": 741,
         "language": "Unknown",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 Claude Code、Codex 等 AI 编程助手提供去 AI 化写作技能，修复小说叙事结构，并为专业文档匹配场景化规则，提升文本自然度。",
+          "zh": "这是一个“去 AI 味”的写作技能，针对小说和职业文档分别修复叙事结构和匹配场景规则，让 AI 生成的内容更自然、更符合文体要求。",
           "en": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136)."
         },
         "todayHighlight": {
-          "zh": "创建仅两天即获得 707 星，今日新增星数未提供，因其精准解决 AI 文本识别问题而迅速升温。",
+          "zh": "项目创建仅两天便登上上升榜，总星标 741，基于学术论文的“叙事架构修复”概念引发关注，今日新增星标未披露。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 707 stars、39 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 707 stars and 39 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 741 stars、39 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 741 stars and 39 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 写作后处理需求，可能催生新的内容优化产品方向。",
+          "zh": "观察 AI 写作工具如何从“生成”转向“润色”，以及垂直场景定制化技能的市场潜力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -343,26 +327,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程助手提供架构图生成技能，可自动生成美观、可验证的架构图、流程图等，输出自包含 HTML 并支持动态效果。",
+          "zh": "这是一个为 AI 编程助手设计的架构图生成技能，可自动生成美观、可验证的架构图、流程图、时序图等，输出为自包含 HTML，支持动画和清晰导出。",
           "en": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export."
         },
-        "totalStars": 31649,
+        "totalStars": 31872,
         "language": "JavaScript",
         "dailyStars": 3902,
         "chineseIntro": {
-          "zh": "为 AI 编程助手提供架构图生成技能，可自动生成美观、可验证的架构图、流程图等，输出自包含 HTML 并支持动态效果。",
+          "zh": "这是一个为 AI 编程助手设计的架构图生成技能，可自动生成美观、可验证的架构图、流程图、时序图等，输出为自包含 HTML，支持动画和清晰导出。",
           "en": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export."
         },
         "todayHighlight": {
-          "zh": "今日新增 3902 星，总星数达 31649，位列全球趋势榜第一，因其在架构可视化领域的实用性和易用性持续获得大量关注。",
+          "zh": "今日新增 3902 星，总星标达 3.2 万，位列全球趋势榜第一，凭借“架构即代码”理念和跨平台兼容性在开发者中快速传播。",
           "en": "登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 3,902 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,649 stars、1,968 forks，topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,649 stars and 1,968 forks，topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,872 stars、1,992 forks，topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,872 stars and 1,992 forks，topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 辅助设计工具如何提升开发效率，可能影响产品设计文档的呈现方式。",
+          "zh": "关注开发者对可视化文档的刚需，以及 AI 技能如何提升系统设计的沟通效率。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +367,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 代理提供科学技能库，包含 165 个经过验证的技能和 100 多个科学数据库，覆盖生物、化学、医学等领域，支持多种 AI 工具。",
+          "zh": "这是一个面向科学研究的 AI 技能库，提供 165 个经过验证的技能和 100+ 科学数据库，覆盖生物、化学、医学等领域，可将任何 AI 代理变成“AI 科学家”。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
-        "totalStars": 38082,
+        "totalStars": 38134,
         "language": "Python",
         "dailyStars": 1587,
         "chineseIntro": {
-          "zh": "为 AI 代理提供科学技能库，包含 165 个经过验证的技能和 100 多个科学数据库，覆盖生物、化学、医学等领域，支持多种 AI 工具。",
+          "zh": "这是一个面向科学研究的 AI 技能库，提供 165 个经过验证的技能和 100+ 科学数据库，覆盖生物、化学、医学等领域，可将任何 AI 代理变成“AI 科学家”。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
         "todayHighlight": {
-          "zh": "今日新增 1587 星，总星数达 38082，位列全球趋势榜第三，因其庞大的用户基础和持续更新的技能库保持强劲增长。",
+          "zh": "今日新增 1587 星，总星标 3.8 万，位列全球趋势榜第三，凭借“190,000+ 科学家使用”的背书和跨平台兼容性持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,587 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,082 stars、3,589 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,082 stars and 3,589 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,134 stars、3,591 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,134 stars and 3,591 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察垂直领域技能库的生态构建，可能为专业 AI 工具提供参考。",
+          "zh": "观察垂直领域 AI 技能库的生态构建，以及科研工具如何通过标准化技能提升可复用性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +407,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "清华团队开源的多智能体交互课堂，一键即可获得沉浸式多智能体学习体验，支持多种教学场景。",
+          "zh": "这是一个开源的多智能体交互课堂系统，一键即可获得沉浸式的多智能体学习体验，适用于教育、培训等场景。",
           "en": "Star THU-MAIC / OpenMAIC Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click"
         },
-        "totalStars": 22512,
+        "totalStars": 22578,
         "language": "TypeScript",
         "dailyStars": 907,
         "chineseIntro": {
-          "zh": "清华团队开源的多智能体交互课堂，一键即可获得沉浸式多智能体学习体验，支持多种教学场景。",
+          "zh": "这是一个开源的多智能体交互课堂系统，一键即可获得沉浸式的多智能体学习体验，适用于教育、培训等场景。",
           "en": "Star THU-MAIC / OpenMAIC Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click"
         },
         "todayHighlight": {
-          "zh": "今日新增 907 星，总星数达 22512，位列全球趋势榜第五，因其教育创新和易用性持续吸引关注。",
+          "zh": "今日新增 907 星，总星标 2.3 万，位列全球趋势榜第五，凭借“多智能体学习”的新颖概念和清华背景在技术圈升温。",
           "en": "登上 GitHub Trending 日榜第 5 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 907 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,512 stars、4,342 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,512 stars and 4,342 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 22,578 stars、4,355 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 22,578 stars and 4,355 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注多智能体在教育领域的应用，可能引领新型学习方式。",
+          "zh": "关注多智能体在教育领域的应用前景，以及开源项目如何借助高校背书快速获得关注。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -463,26 +447,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全球首个开源智能体视频制作系统，提供 12 条制作流水线、100 多个工具和 700 多个技能文件，可将 AI 编程助手变为完整视频工作室。",
+          "zh": "这是全球首个开源智能体视频制作系统，提供 12 条生产流水线、100+ 工具和 700+ 技能文件，可将 AI 编程助手变成完整的视频制作工作室。",
           "en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
         },
-        "totalStars": 54208,
+        "totalStars": 54231,
         "language": "Python",
         "dailyStars": 806,
         "chineseIntro": {
-          "zh": "全球首个开源智能体视频制作系统，提供 12 条制作流水线、100 多个工具和 700 多个技能文件，可将 AI 编程助手变为完整视频工作室。",
+          "zh": "这是全球首个开源智能体视频制作系统，提供 12 条生产流水线、100+ 工具和 700+ 技能文件，可将 AI 编程助手变成完整的视频制作工作室。",
           "en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
         },
         "todayHighlight": {
-          "zh": "今日新增 806 星，总星数达 54208，位列全球趋势榜第十，因其全面的功能和开源特性持续获得关注。",
+          "zh": "今日新增 806 星，总星标 5.4 万，位列全球趋势榜第十，凭借“开源视频制作系统”的定位和丰富功能持续吸引内容创作者。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 54k+，持续占据 AI 开源热门榜单, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 806 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,208 stars、6,721 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,208 stars and 6,721 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,231 stars、6,723 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,231 stars and 6,723 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开源视频制作系统的生态，可能为内容创作工具提供新范式。",
+          "zh": "观察开源项目如何整合多种 AI 能力形成完整解决方案，以及视频制作自动化对内容产业的潜在影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -503,26 +487,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方维护的 Claude Code 插件目录，收录高质量插件，确保用户安全使用。",
+          "zh": "这是 Anthropic 官方维护的 Claude Code 插件目录，收录高质量插件，帮助用户扩展 Claude Code 的功能。",
           "en": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
         },
-        "totalStars": 35483,
+        "totalStars": 35504,
         "language": "Python",
         "dailyStars": 358,
         "chineseIntro": {
-          "zh": "Anthropic 官方维护的 Claude Code 插件目录，收录高质量插件，确保用户安全使用。",
+          "zh": "这是 Anthropic 官方维护的 Claude Code 插件目录，收录高质量插件，帮助用户扩展 Claude Code 的功能。",
           "en": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
         },
         "todayHighlight": {
-          "zh": "今日新增 358 星，总星数达 35483，位列全球趋势榜第十四，作为官方目录持续获得稳定关注。",
+          "zh": "今日新增 358 星，总星标 3.6 万，位列全球趋势榜第十四，作为官方目录持续获得稳定关注，是插件生态的核心入口。",
           "en": "登上 GitHub Trending 日榜第 14 位, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散, 今日新增 358 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 35,483 stars、3,963 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 35,483 stars and 3,963 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 35,504 stars、3,964 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 35,504 stars and 3,964 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注官方插件生态的治理模式，可能影响 AI 工具生态的发展。",
+          "zh": "关注官方生态对第三方插件的治理模式，以及平台如何通过目录机制促进生态繁荣。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -543,26 +527,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "JetBrains 官方项目，为 AI 编码代理提供编写现代 Go 代码的指南，帮助生成更简洁高效的代码。",
+          "zh": "这是 JetBrains 官方发布的 Go 语言编码指南，帮助 AI 编程代理写出符合现代 Go 风格的代码，例如使用新语法和标准库函数。",
           "en": "Star JetBrains / go-modern-guidelines Help AI coding agents write modern Go"
         },
-        "totalStars": 2909,
+        "totalStars": 2918,
         "language": "Go",
         "dailyStars": 303,
         "chineseIntro": {
-          "zh": "JetBrains 官方项目，为 AI 编码代理提供编写现代 Go 代码的指南，帮助生成更简洁高效的代码。",
+          "zh": "这是 JetBrains 官方发布的 Go 语言编码指南，帮助 AI 编程代理写出符合现代 Go 风格的代码，例如使用新语法和标准库函数。",
           "en": "Star JetBrains / go-modern-guidelines Help AI coding agents write modern Go"
         },
         "todayHighlight": {
-          "zh": "今日新增 303 星，总星数达 2909，位列全球趋势榜第八，因其官方背景和实用性快速获得开发者关注。",
+          "zh": "今日新增 303 星，总星标 2918，位列全球趋势榜第八，凭借 JetBrains 的权威性和对 AI 编码质量的提升作用快速获得开发者认可。",
           "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 303 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,909 stars、81 forks，topics: ai-agents, coding-agent, developer-tools, go, golang，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,909 stars and 81 forks，topics: ai-agents, coding-agent, developer-tools, go, golang, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,918 stars、81 forks，topics: ai-agents, coding-agent, developer-tools, go, golang，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,918 stars and 81 forks，topics: ai-agents, coding-agent, developer-tools, go, golang, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方指南如何影响 AI 编码行为，可能为开发工具提供新思路。",
+          "zh": "观察 IDE 厂商如何通过指南影响 AI 编码行为，以及语言规范对 AI 代码质量的重要性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -583,26 +567,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为智能体系统设计的模型路由器，可在 50 毫秒内将每个提示路由到合适模型，仅需更改端点即可降低 40-70% 成本。",
+          "zh": "这是一个模型路由器，为智能体系统智能分配提示词到最合适的模型，响应时间小于 50 毫秒，仅需更改端点即可降低 40-70% 的成本。",
           "en": "Star workweave / router Model router for agentic systems. Routes every prompt to the right model in &lt;50ms. Cut costs 40-70% with just an endpoint change."
         },
-        "totalStars": 2846,
+        "totalStars": 2882,
         "language": "Go",
         "dailyStars": 284,
         "chineseIntro": {
-          "zh": "为智能体系统设计的模型路由器，可在 50 毫秒内将每个提示路由到合适模型，仅需更改端点即可降低 40-70% 成本。",
+          "zh": "这是一个模型路由器，为智能体系统智能分配提示词到最合适的模型，响应时间小于 50 毫秒，仅需更改端点即可降低 40-70% 的成本。",
           "en": "Star workweave / router Model router for agentic systems. Routes every prompt to the right model in &lt;50ms. Cut costs 40-70% with just an endpoint change."
         },
         "todayHighlight": {
-          "zh": "今日新增 284 星，总星数达 2846，位列全球趋势榜第十九，因其成本优化效果在 AI 应用开发者中快速传播。",
+          "zh": "今日新增 284 星，总星标 2882，位列全球趋势榜第十九，凭借“降本增效”的明确价值主张在 AI 工程圈快速传播。",
           "en": "登上 GitHub Trending 日榜第 19 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 284 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,846 stars、81 forks，topics: agentic-coding, ai-gateway, anthropic, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,846 stars and 81 forks，topics: agentic-coding, ai-gateway, anthropic, claude-code, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,882 stars、82 forks，topics: agentic-coding, ai-gateway, anthropic, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,882 stars and 82 forks，topics: agentic-coding, ai-gateway, anthropic, claude-code, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注模型路由技术如何优化 AI 成本，可能成为企业 AI 应用的关键组件。",
+          "zh": "关注模型路由如何优化 AI 成本与性能，以及企业级 AI 基础设施的选型趋势。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -617,6 +601,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "companyUpdates": [
       {
         "title": {
+          "zh": "Hacker News AI: Show HN: VelocityNote – A tiny Markdown notebook with local AI",
+          "en": "Hacker News AI: Show HN: VelocityNote – A tiny Markdown notebook with local AI"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "Community / research signal"
+        },
+        "summary": {
+          "zh": "Hacker News AI 发布「Show HN: VelocityNote – A tiny Markdown notebook with local AI」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Hi HN — I built VelocityNote, a compact, Markdown cross-platform notebook.The desktop app is under 100 MB. It starts quickly and remains responsive under memory pressure.VelocityNote has a built-in, pluggable AI system that can run local models:- It is a local LLM app: you can use a llama.cpp-based local agent to summarize notes and tasks. More features, including translation, are coming. - It is an intelligent scree"
+        },
+        "chineseIntro": {
+          "zh": "Hacker News AI 发布「Show HN: VelocityNote – A tiny Markdown notebook with local AI」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Hi HN — I built VelocityNote, a compact, Markdown cross-platform notebook.The desktop app is under 100 MB. It starts quickly and remains responsive under memory pressure.VelocityNote has a built-in, pluggable AI system that can run local models:- It is a local LLM app: you can use a llama.cpp-based local agent to summarize notes and tasks. More features, including translation, are coming. - It is an intelligent scree"
+        },
+        "todayHighlight": {
+          "zh": "发布于 Sun, 30 Aug 2026 06:17:01 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Sun, 30 Aug 2026 06:17:01 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://velocitynote.app/"
+          }
+        ]
+      },
+      {
+        "title": {
           "zh": "OpenAI: Our decision on Cursor following its acquisition by SpaceX",
           "en": "OpenAI: Our decision on Cursor following its acquisition by SpaceX"
         },
@@ -625,23 +646,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "生态合作",
-          "en": "生态合作"
+          "zh": "新模型/新能力",
+          "en": "Model / capability"
         },
         "summary": {
-          "zh": "OpenAI 宣布终止向 Cursor 提供模型服务，原因是 Cursor 被 SpaceX 收购。此举可能影响 Cursor 的模型供应，并引发对 AI 模型供应商与下游工具关系的重新思考。",
+          "zh": "OpenAI 发布「Our decision on Cursor following its acquisition by SpaceX」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX."
         },
         "chineseIntro": {
-          "zh": "OpenAI 宣布终止向 Cursor 提供模型服务，原因是 Cursor 被 SpaceX 收购。此举可能影响 Cursor 的模型供应，并引发对 AI 模型供应商与下游工具关系的重新思考。",
+          "zh": "OpenAI 发布「Our decision on Cursor following its acquisition by SpaceX」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX."
         },
         "todayHighlight": {
-          "zh": "OpenAI 与 SpaceX 的交叉动态凸显 AI 模型供应商与科技巨头之间的战略博弈，可能重塑行业合作格局。",
-          "en": "OpenAI 与 SpaceX 的交叉动态凸显 AI 模型供应商与科技巨头之间的战略博弈，可能重塑行业合作格局。"
+          "zh": "发布于 Fri, 28 Aug 2026 06:00:00 GMT；属于「新模型/新能力」类型更新，反映 OpenAI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Fri, 28 Aug 2026 06:00:00 GMT；属于「新模型/新能力」类型更新，反映 OpenAI 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
-          "zh": "评估模型供应商的依赖风险，考虑多模型策略以应对类似突发变化。",
+          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -662,26 +683,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
+          "zh": "新模型/新能力",
+          "en": "Model / capability"
         },
         "summary": {
-          "zh": "GitHub Copilot 在 Visual Studio 中推出 8 月更新，新增组织级自定义代理、模型思考强度控制、模型固定等功能，提升开发者的控制力和协作效率。",
+          "zh": "GitHub Changelog 发布「GitHub Copilot in Visual Studio — August update」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "August 2026 brought more control over how GitHub Copilot reasons, which models you use, how teams share specialized agents, and when you ask for a code review. Highlights Here&#8217;s what&#8217;s&#8230; The post GitHub Copilot in Visual Studio — August update appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 在 Visual Studio 中推出 8 月更新，新增组织级自定义代理、模型思考强度控制、模型固定等功能，提升开发者的控制力和协作效率。",
+          "zh": "GitHub Changelog 发布「GitHub Copilot in Visual Studio — August update」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "August 2026 brought more control over how GitHub Copilot reasons, which models you use, how teams share specialized agents, and when you ask for a code review. Highlights Here&#8217;s what&#8217;s&#8230; The post GitHub Copilot in Visual Studio — August update appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "GitHub Copilot 持续增强企业级功能，进一步巩固其在 AI 编程助手市场的领先地位。",
-          "en": "GitHub Copilot 持续增强企业级功能，进一步巩固其在 AI 编程助手市场的领先地位。"
+          "zh": "发布于 Fri, 28 Aug 2026 20:24:20 +0000；属于「新模型/新能力」类型更新，反映 GitHub Changelog 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Fri, 28 Aug 2026 20:24:20 +0000；属于「新模型/新能力」类型更新，反映 GitHub Changelog 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
-          "zh": "关注组织级代理和思考强度控制，可优化团队 AI 辅助开发流程并管理 token 成本。",
+          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "GitHub Changelog",
@@ -700,22 +721,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         },
         "eventType": {
           "zh": "新模型/新能力",
-          "en": "新模型/新能力"
+          "en": "Model / capability"
         },
         "summary": {
-          "zh": "Anthropic 发布模型硬件标准（MHS）研究预览，旨在让 AI 代理安全操作物理设备，如显微镜、机械臂等，将集成时间从数周缩短至数分钟。",
+          "zh": "Anthropic 发布「Previewing the Model Hardware Standard」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "We`re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug dis"
         },
         "chineseIntro": {
-          "zh": "Anthropic 发布模型硬件标准（MHS）研究预览，旨在让 AI 代理安全操作物理设备，如显微镜、机械臂等，将集成时间从数周缩短至数分钟。",
+          "zh": "Anthropic 发布「Previewing the Model Hardware Standard」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "We`re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers. MHS enables AI agents to operate multiple lab and manufacturing instruments, such as microscopes, liquid handlers, and robotic arms, in parallel, and perform intricate tasks ranging from routine drug dis"
         },
         "todayHighlight": {
-          "zh": "MHS 是 AI 从数字世界迈向物理世界的关键一步，可能开启 AI 驱动科学实验和智能制造的新时代。",
-          "en": "MHS 是 AI 从数字世界迈向物理世界的关键一步，可能开启 AI 驱动科学实验和智能制造的新时代。"
+          "zh": "发布于 Thu, 27 Aug 2026 04:00:00 GMT；属于「新模型/新能力」类型更新，反映 Anthropic 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Thu, 27 Aug 2026 04:00:00 GMT；属于「新模型/新能力」类型更新，反映 Anthropic 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
-          "zh": "探索 MHS 在实验室自动化或工业场景的应用，提前布局 AI 与硬件结合的解决方案。",
+          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -737,22 +758,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         },
         "eventType": {
           "zh": "社区/研究信号",
-          "en": "社区/研究信号"
+          "en": "Community / research signal"
         },
         "summary": {
-          "zh": "OpenLake 开源存储系统发布，声称在 LLM 推理和训练中实现 8 倍吞吐量提升、600 微秒小对象读取延迟，并支持百万级并发 IOPS。",
+          "zh": "Hacker News LLM 发布「OpenLake: Fast, Durable Storage for LLM Inference and Training」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "Article URL: https://www.theopenlake.com/blog/introducing-openlake Comments URL: https://news.ycombinator.com/item?id=49490470 Points: 2 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "OpenLake 开源存储系统发布，声称在 LLM 推理和训练中实现 8 倍吞吐量提升、600 微秒小对象读取延迟，并支持百万级并发 IOPS。",
+          "zh": "Hacker News LLM 发布「OpenLake: Fast, Durable Storage for LLM Inference and Training」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "Article URL: https://www.theopenlake.com/blog/introducing-openlake Comments URL: https://news.ycombinator.com/item?id=49490470 Points: 2 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "存储瓶颈成为 LLM 规模化部署的关键，OpenLake 的性能突破可能推动 AI 基础设施的革新。",
-          "en": "存储瓶颈成为 LLM 规模化部署的关键，OpenLake 的性能突破可能推动 AI 基础设施的革新。"
+          "zh": "发布于 Sat, 29 Aug 2026 15:00:32 +0000；属于「社区/研究信号」类型更新，反映 Hacker News LLM 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Sat, 29 Aug 2026 15:00:32 +0000；属于「社区/研究信号」类型更新，反映 Hacker News LLM 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
-          "zh": "评估 OpenLake 作为模型训练和推理存储层的潜力，以降低 I/O 瓶颈带来的成本。",
+          "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -760,43 +781,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Hacker News LLM",
             "url": "https://www.theopenlake.com/blog/introducing-openlake"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Reddit LocalLLaMA: Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
-          "en": "Reddit LocalLLaMA: Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "社区用户分享在 16GB 消费级 GPU 上运行 Qwen 3.8 27B 模型，实现 50 tok/s 速度和 100k 上下文窗口，展示了高效推理的可能性。",
-          "en": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to share my successful setup for running a <strong>Qwen 3.8 27B</strong> model with a massive context window on a consumer 16GB GPU (RTX 4070 Ti SUPER). The goal was to fit everything into VRAM without sacrificing quality or speed.</p> <h1>🧠 Key Components</h1> <ul> <li><strong>Model:</strong> <code>Qwen3.8-27B-i1-IQ4_XS-GGUF-Smaller</code> from <a href=\"https://huggingface"
-        },
-        "chineseIntro": {
-          "zh": "社区用户分享在 16GB 消费级 GPU 上运行 Qwen 3.8 27B 模型，实现 50 tok/s 速度和 100k 上下文窗口，展示了高效推理的可能性。",
-          "en": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to share my successful setup for running a <strong>Qwen 3.8 27B</strong> model with a massive context window on a consumer 16GB GPU (RTX 4070 Ti SUPER). The goal was to fit everything into VRAM without sacrificing quality or speed.</p> <h1>🧠 Key Components</h1> <ul> <li><strong>Model:</strong> <code>Qwen3.8-27B-i1-IQ4_XS-GGUF-Smaller</code> from <a href=\"https://huggingface"
-        },
-        "todayHighlight": {
-          "zh": "消费级硬件运行大模型的能力提升，可能加速边缘 AI 和本地化部署的普及。",
-          "en": "消费级硬件运行大模型的能力提升，可能加速边缘 AI 和本地化部署的普及。"
-        },
-        "pmInsight": {
-          "zh": "关注此类优化技术，可探索在资源受限设备上提供 AI 功能的产品机会。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a/"
           }
         ]
       },
@@ -810,26 +794,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "生态合作",
-          "en": "生态合作"
+          "zh": "API/定价",
+          "en": "API / pricing"
         },
         "summary": {
-          "zh": "Vercel AI SDK 新增 Cursor 适配器，使开发者能通过统一接口切换不同编码代理，包括 Cursor、Claude Code 等，提升应用灵活性。",
+          "zh": "Vercel AI 发布「Cursor is now available in the AI SDK harness layer」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "The AI SDK harness layer now supports Cursor through the official @ai-sdk/harness-cursor adapter. The harness layer lets your application run different coding agents through the same HarnessAgent interface, so you can switch agents without changing your application code. Pass cursor to HarnessAgent:Under the hood, the adapter uses @ai-sdk/harness-acp to connect Cursor to HarnessAgent through the Agent Client Protocol"
         },
         "chineseIntro": {
-          "zh": "Vercel AI SDK 新增 Cursor 适配器，使开发者能通过统一接口切换不同编码代理，包括 Cursor、Claude Code 等，提升应用灵活性。",
+          "zh": "Vercel AI 发布「Cursor is now available in the AI SDK harness layer」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
           "en": "The AI SDK harness layer now supports Cursor through the official @ai-sdk/harness-cursor adapter. The harness layer lets your application run different coding agents through the same HarnessAgent interface, so you can switch agents without changing your application code. Pass cursor to HarnessAgent:Under the hood, the adapter uses @ai-sdk/harness-acp to connect Cursor to HarnessAgent through the Agent Client Protocol"
         },
         "todayHighlight": {
-          "zh": "AI SDK 的代理抽象层日益成熟，可能成为多代理工作流的标准，影响开发者工具生态。",
-          "en": "AI SDK 的代理抽象层日益成熟，可能成为多代理工作流的标准，影响开发者工具生态。"
+          "zh": "发布于 2026-08-27T14:47:00.000Z；属于「API/定价」类型更新，反映 Vercel AI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 2026-08-27T14:47:00.000Z；属于「API/定价」类型更新，反映 Vercel AI 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
-          "zh": "利用 harness 层快速集成多种编码代理，降低对单一工具的依赖，增强产品适应性。",
+          "zh": "评估成本结构、配额策略是否会重塑你的产品定价与毛利模型。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "Vercel AI",
