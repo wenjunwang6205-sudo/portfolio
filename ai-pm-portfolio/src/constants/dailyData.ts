@@ -44,37 +44,41 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品日报：Agent 生态升温，安全与效率并重",
-      "en": "AI Product Daily: Agent Ecosystem Heats Up, Safety and Efficiency in Focus"
+      "zh": "AI 产品经理日报：Agent 技能生态升温，安全与本地推理成焦点",
+      "en": "AI PM Daily: Agent Skill Ecosystem Heats Up, Safety and Local Inference in Focus"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势显示 Agent 相关项目持续领跑，从通用框架到垂直技能包全面开花；同时 OpenAI 安全评估、Hugging Face 本地推理等动态值得关注。",
-      "en": "Today's GitHub trends show Agent-related projects leading, from general frameworks to vertical skill packs; meanwhile, OpenAI's safety assessment and Hugging Face's local inference are noteworthy."
+      "zh": "今日 GitHub 趋势显示，围绕 AI Agent 的技能包与工具链持续升温，教育、科研、专利等垂直场景成为热点。同时，OpenAI 的安全里程碑与 Hugging Face 的 WebGPU 内核发布，提示前沿模型安全与本地推理的重要性。",
+      "en": "Today's GitHub trends show continued growth in AI agent skill packs and toolchains, with vertical scenarios like education, research, and patents becoming hotspots. Meanwhile, OpenAI's safety milestone and Hugging Face's WebGPU kernels highlight the importance of frontier model safety and local inference."
     },
     "keyTakeaway": {
-      "zh": "Agent 生态从通用框架向垂直技能包演进，开发者更关注可落地的执行效率与安全边界。",
-      "en": "The Agent ecosystem is evolving from general frameworks to vertical skill packs, with developers focusing on actionable execution efficiency and safety boundaries."
+      "zh": "AI Agent 正从通用助手走向垂直场景的“技能化”落地，同时安全评估与本地推理成为平台竞争的新焦点。",
+      "en": "AI agents are moving from general assistants to skill-based vertical deployments, while safety evaluation and local inference become new competitive focuses."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 技能包垂直化加速，覆盖科研、专利、视频等场景",
-          "en": "Agent skill packs verticalize rapidly, covering research, patents, video, etc."
+          "zh": "垂直技能包成为 Agent 生态增长引擎",
+          "en": "Vertical Skill Packs Become Growth Engine for Agent Ecosystem"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "今日 GitHub 趋势中，多个 Agent 技能包项目上榜：scientific-agent-skills（科研，日增 912 星）、patent-disclosure-skill（专利，日增 501 星）、video-shotcraft（视频，7k+ 星）、academic-research-skills（学术，日增 193 星）。这些项目均基于 Claude Code 或 Codex 等编程助手，提供特定领域的技能库。",
-          "en": "Today's GitHub trends feature multiple Agent skill pack projects: scientific-agent-skills (research, +912 stars), patent-disclosure-skill (patents, +501 stars), video-shotcraft (video, 7k+ stars), academic-research-skills (academic, +193 stars). These projects are based on coding assistants like Claude Code or Codex, providing domain-specific skill libraries."
+          "zh": "今日 GitHub 趋势榜中，多个 Agent 技能包项目表现突出：video-shotcraft（视频制作）、scientific-agent-skills（科学领域）、patent-disclosure-skill（中国专利）、academic-research-skills（学术研究）等，均获得较高星标增长。",
+          "en": "Several agent skill pack projects stand out on today's GitHub trending: video-shotcraft (video production), scientific-agent-skills (science), patent-disclosure-skill (Chinese patents), academic-research-skills (academic research), etc., all gaining significant stars."
         },
         "pmInsight": {
-          "zh": "垂直技能包降低了 Agent 在专业领域的应用门槛，PM 可关注如何构建行业专属技能库，或为现有 Agent 平台提供技能市场，以快速覆盖细分场景。",
-          "en": "Vertical skill packs lower the barrier for Agent adoption in specialized fields. PMs should consider building industry-specific skill libraries or offering a skill marketplace for existing Agent platforms to quickly cover niche scenarios."
+          "zh": "开发者正通过“技能包”快速构建垂直场景的 Agent 应用，PM 可关注如何为特定行业提供开箱即用的技能模板，降低定制成本。",
+          "en": "Developers are rapidly building vertical agent applications via 'skill packs'. PMs should focus on providing out-of-the-box skill templates for specific industries to reduce customization costs."
         },
         "impact": "High",
         "sources": [
+          {
+            "label": "video-shotcraft",
+            "url": "https://github.com/Vincentwei1021/video-shotcraft"
+          },
           {
             "label": "scientific-agent-skills",
             "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
@@ -84,10 +88,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/handsomestWei/patent-disclosure-skill"
           },
           {
-            "label": "video-shotcraft",
-            "url": "https://github.com/Vincentwei1021/video-shotcraft"
-          },
-          {
             "label": "academic-research-skills",
             "url": "https://github.com/Imbad0202/academic-research-skills"
           }
@@ -95,20 +95,49 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Agent 性能与安全成为焦点，OpenAI 与社区双线推进",
-          "en": "Agent performance and safety become focus, OpenAI and community advance on two fronts"
+          "zh": "AI 教育项目持续升温，低成本与沉浸式成卖点",
+          "en": "AI Education Projects Continue to Heat Up, Low-Cost and Immersive as Selling Points"
         },
         "category": {
-          "zh": "AI 安全与治理",
-          "en": "AI Safety & Governance"
+          "zh": "教育科技",
+          "en": "EdTech"
         },
         "summary": {
-          "zh": "OpenAI 宣布 Astra 模型在预备框架下达到关键网络安全能力阈值，并加强发布安全措施；同时 Hacker News 展示 Semantic Overlays 方法，通过小型适配器标记上下文以缓解提示注入攻击，在基准上取得 SOTA。",
-          "en": "OpenAI announced that its Astra model reached critical cybersecurity capability thresholds under a preparedness framework and strengthened release safety measures; meanwhile, Hacker News showcased Semantic Overlays, a method using small adapters to tag context to mitigate prompt injection, achieving SOTA on benchmarks."
+          "zh": "清华 OpenMAIC 今日新增 3128 星标，位列趋势榜第三；minimind 持续在榜，日增 1005 星标。两者分别主打多智能体交互式课堂和低成本训练 LLM。",
+          "en": "Tsinghua's OpenMAIC gained 3,128 stars today, ranking third on trending; minimind continues on the list with 1,005 daily stars. They focus on multi-agent interactive classrooms and low-cost LLM training respectively."
         },
         "pmInsight": {
-          "zh": "Agent 的自主性提升带来安全新挑战。PM 在设计 Agent 产品时需内置安全机制，如上下文隔离、输入验证，并关注前沿安全研究，以建立用户信任。",
-          "en": "Increased Agent autonomy brings new safety challenges. PMs should build in safety mechanisms like context isolation and input validation when designing Agent products, and follow frontier safety research to build user trust."
+          "zh": "教育领域对 AI 的需求呈现两极：一方面需要沉浸式互动体验，另一方面需要低成本可复现的学习资源。PM 可探索将真实项目与教学结合，提供“学练一体”的平台。",
+          "en": "AI demand in education shows two poles: immersive interactive experiences and low-cost reproducible learning resources. PMs can explore combining real projects with teaching to provide 'learn-and-practice' platforms."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenMAIC",
+            "url": "https://github.com/THU-MAIC/OpenMAIC"
+          },
+          {
+            "label": "minimind",
+            "url": "https://github.com/jingyaogong/minimind"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "模型安全评估与本地推理成为平台竞争新高地",
+          "en": "Model Safety Evaluation and Local Inference Become New Competitive Frontiers"
+        },
+        "category": {
+          "zh": "平台与基础设施",
+          "en": "Platform & Infrastructure"
+        },
+        "summary": {
+          "zh": "OpenAI 宣布 Astra 模型在预备框架下达到关键网络安全能力阈值；Hugging Face 发布 200+ WebGPU 内核，加速浏览器本地推理。",
+          "en": "OpenAI announced Astra model reached critical cybersecurity capability threshold under preparedness framework; Hugging Face released 200+ WebGPU kernels to accelerate in-browser local inference."
+        },
+        "pmInsight": {
+          "zh": "安全评估正成为模型发布的前置条件，PM 需将安全测试纳入产品路线图；同时，本地推理的进步可能催生隐私敏感型应用，PM 可探索端侧 AI 产品。",
+          "en": "Safety evaluation is becoming a prerequisite for model release; PMs should integrate safety testing into product roadmaps. Meanwhile, advances in local inference may enable privacy-sensitive applications; PMs can explore on-device AI products."
         },
         "impact": "High",
         "sources": [
@@ -116,31 +145,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "label": "OpenAI: Path to Astra",
             "url": "https://openai.com/index/path-to-astra"
           },
-          {
-            "label": "Semantic Overlays",
-            "url": "https://semantic-overlays.vercel.app/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "本地化与浏览器端 AI 推理升温，WebGPU 内核发布",
-          "en": "Local and browser-based AI inference heats up with WebGPU kernels release"
-        },
-        "category": {
-          "zh": "AI 基础设施",
-          "en": "AI Infrastructure"
-        },
-        "summary": {
-          "zh": "Hugging Face 发布 @huggingface/kernels，提供 200+ WebGPU 内核，并推出浏览器内基准测试套件 Fleet，旨在加速浏览器端 AI 推理。",
-          "en": "Hugging Face released @huggingface/kernels, providing 200+ WebGPU kernels and a browser-based benchmark suite Fleet, aiming to accelerate browser-based AI inference."
-        },
-        "pmInsight": {
-          "zh": "浏览器端 AI 推理可降低部署成本、提升隐私性。PM 可探索将轻量模型推理迁移至客户端，尤其适用于实时交互场景，但需评估性能与兼容性。",
-          "en": "Browser-based AI inference can reduce deployment costs and improve privacy. PMs could explore moving lightweight model inference to the client, especially for real-time interaction scenarios, but need to evaluate performance and compatibility."
-        },
-        "impact": "Medium",
-        "sources": [
           {
             "label": "Hugging Face WebGPU Kernels",
             "url": "https://huggingface.co/blog/webgpu-kernels"
@@ -151,59 +155,55 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建企业级 Agent 技能市场",
-          "en": "Build an enterprise-grade Agent skill marketplace"
+          "zh": "面向科研与专利场景的 Agent 技能市场",
+          "en": "Agent Skill Marketplace for Research and Patent Scenarios"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于垂直技能包的火热，可打造一个类似 npm 的 Agent 技能注册中心，支持技能的上传、搜索、版本管理，并集成到主流 Agent 框架（如 deepseek-harness、Claude Code）中。",
-          "en": "Based on the popularity of vertical skill packs, create an npm-like registry for Agent skills, supporting upload, search, versioning, and integration with mainstream Agent frameworks like deepseek-harness and Claude Code."
+          "zh": "基于 scientific-agent-skills 和 patent-disclosure-skill 的快速增长，可验证科研与专利领域对专业 Agent 技能的需求。",
+          "en": "Based on the rapid growth of scientific-agent-skills and patent-disclosure-skill, the demand for specialized agent skills in research and patent domains can be validated."
         },
         "pmInsight": {
-          "zh": "验证假设：开发者是否愿意为高质量技能付费？可通过早期采用者访谈和技能下载量来验证。",
-          "en": "Validate hypothesis: Are developers willing to pay for high-quality skills? Validate through early adopter interviews and skill download metrics."
+          "zh": "假设：若提供面向科研人员的“AI 科学家”技能订阅服务，覆盖文献分析、实验设计、论文写作等，可能吸引大量用户。可先通过开源技能包积累用户，再推出增值服务。",
+          "en": "Hypothesis: If we offer an 'AI Scientist' skill subscription for researchers covering literature analysis, experiment design, paper writing, etc., it may attract many users. Start with open-source skill packs to accumulate users, then launch value-added services."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
-          {
-            "label": "deepseek-harness",
-            "url": "https://github.com/deepseek-ai/deepseek-harness"
-          },
           {
             "label": "scientific-agent-skills",
             "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+          },
+          {
+            "label": "patent-disclosure-skill",
+            "url": "https://github.com/handsomestWei/patent-disclosure-skill"
           }
         ]
       },
       {
         "title": {
-          "zh": "开发 Agent 安全评估工具",
-          "en": "Develop Agent safety evaluation tools"
+          "zh": "基于 WebGPU 的浏览器端 AI 应用",
+          "en": "Browser-Based AI Applications Powered by WebGPU"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "随着 Agent 能力增强，安全风险凸显。可开发一套针对 Agent 的渗透测试和红队工具，模拟提示注入、越狱等攻击，帮助开发者评估其 Agent 的安全性。",
-          "en": "As Agent capabilities grow, safety risks become prominent. Develop a suite of penetration testing and red-team tools for Agents, simulating prompt injection, jailbreaks, etc., to help developers assess their Agent's security."
+          "zh": "Hugging Face 发布 200+ WebGPU 内核，显著提升浏览器本地推理性能，为无需后端的 AI 应用提供可能。",
+          "en": "Hugging Face released 200+ WebGPU kernels, significantly improving in-browser local inference performance, enabling AI applications without backend."
         },
         "pmInsight": {
-          "zh": "验证假设：Agent 开发者是否愿意为安全评估付费？可参考 OpenAI 的预备框架，提供分级安全报告。",
-          "en": "Validate hypothesis: Are Agent developers willing to pay for safety assessments? Reference OpenAI's preparedness framework to provide tiered safety reports."
+          "zh": "假设：若开发一款完全在浏览器端运行的文档分析工具，利用 WebGPU 加速，可满足数据隐私敏感用户的需求。可验证用户对本地处理与云处理的付费意愿差异。",
+          "en": "Hypothesis: If we develop a document analysis tool that runs entirely in the browser, leveraging WebGPU acceleration, it can meet the needs of privacy-sensitive users. We can validate users' willingness to pay for local vs. cloud processing."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI: Path to Astra",
-            "url": "https://openai.com/index/path-to-astra"
-          },
-          {
-            "label": "Semantic Overlays",
-            "url": "https://semantic-overlays.vercel.app/"
+            "label": "Hugging Face WebGPU Kernels",
+            "url": "https://huggingface.co/blog/webgpu-kernels"
           }
         ]
       }
@@ -219,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 推出的开源 Agent 运行框架，采用“万物皆插件”架构，可灵活组合工具与模型，构建复杂 AI 代理应用。",
+          "zh": "DeepSeek 开源的 AI Agent 运行框架，采用“一切皆插件”的架构，基于 Cordis 构建，支持灵活组合各类插件来构建智能体应用。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 208467,
+        "totalStars": 208587,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 推出的开源 Agent 运行框架，采用“万物皆插件”架构，可灵活组合工具与模型，构建复杂 AI 代理应用。",
+          "zh": "DeepSeek 开源的 AI Agent 运行框架，采用“一切皆插件”的架构，基于 Cordis 构建，支持灵活组合各类插件来构建智能体应用。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "作为 DeepSeek 官方项目，发布仅一个月即获超 20 万星标，今日新增星标数据暂缺，但总星标数已达 208k，社区关注度极高。",
+          "zh": "作为 DeepSeek 官方推出的新项目，创建仅一个月便获得超 20 万星标，今日新增星标数据暂缺，但凭借 DeepSeek 的品牌效应和插件化设计理念，迅速成为开发者关注的焦点。",
           "en": "创建仅约 1 个月便已积累 208k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 208,467 stars、24,289 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 208,467 stars and 24,289 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 208,587 stars、24,317 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 208,587 stars and 24,317 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方如何通过插件化设计降低 Agent 开发门槛，以及其生态构建策略。",
+          "zh": "观察官方如何通过开源框架构建生态，以及插件化架构对 Agent 应用开发的标准化影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 和 Codex 等 AI 编程助手提供视频制作技能包，内置 152 个镜头配方和 209 个动态预览，可快速生成电影级产品视频。",
+          "zh": "为 Claude Code 和 Codex 等 AI 编程助手提供视频制作技能包，内置 152 个镜头配方卡片和 209 个动态预览，可快速生成电影级产品视频。",
           "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
         },
-        "totalStars": 7039,
+        "totalStars": 7047,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 Claude Code 和 Codex 等 AI 编程助手提供视频制作技能包，内置 152 个镜头配方和 209 个动态预览，可快速生成电影级产品视频。",
+          "zh": "为 Claude Code 和 Codex 等 AI 编程助手提供视频制作技能包，内置 152 个镜头配方卡片和 209 个动态预览，可快速生成电影级产品视频。",
           "en": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
         },
         "todayHighlight": {
-          "zh": "项目创建仅一个多月，已积累 7k+ 星标，今日新增星标数据暂缺，但凭借“AI 生成视频”的实用场景在开发者社区快速传播。",
-          "en": "创建仅约 1 个月便已积累 7,039 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
+          "zh": "项目创建仅一个多月，已积累 7047 星标，今日新增星标数据暂缺，但凭借“AI 生成电影级视频”的实用场景，在开发者社区快速传播。",
+          "en": "创建仅约 1 个月便已积累 7,047 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,039 stars、624 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,039 stars and 624 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,047 stars、625 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,047 stars and 625 forks，topics: agent-skills, ai-agents, ai-video, claude-code, claude-code-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程助手从代码生成向多媒体内容创作扩展的趋势。",
+          "zh": "关注 AI 技能包如何降低视频创作门槛，以及模板化技能对内容创作工具生态的启示。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 OpenAI Codex CLI 打造的便携配置工具包，提供确定性二进制分析、解耦流水线和零摩擦执行，优化 Agent 工作流。",
+          "zh": "为 OpenAI Codex CLI 提供便携式配置工具包，包含自动化工作流和安全工具，旨在减少无关对话，让 AI 更专注于执行任务。",
           "en": "Autonomous Systems & Security Toolkit for OpenAI Codex CLI. Deterministic binary analysis, decoupled pipeline, and zero-friction execution."
         },
-        "totalStars": 364,
+        "totalStars": 422,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 OpenAI Codex CLI 打造的便携配置工具包，提供确定性二进制分析、解耦流水线和零摩擦执行，优化 Agent 工作流。",
+          "zh": "为 OpenAI Codex CLI 提供便携式配置工具包，包含自动化工作流和安全工具，旨在减少无关对话，让 AI 更专注于执行任务。",
           "en": "Autonomous Systems & Security Toolkit for OpenAI Codex CLI. Deterministic binary analysis, decoupled pipeline, and zero-friction execution."
         },
         "todayHighlight": {
-          "zh": "项目创建仅数天即登上增长榜单，今日新增星标数据暂缺，总星标 364，凭借“反说教、重执行”的定位吸引开发者关注。",
+          "zh": "项目创建仅数天便登上增长榜单，今日新增星标数据暂缺，但“反说教、重执行”的定位切中开发者痛点，引发快速关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 364 stars、68 forks，topics: agentic-workflow, ai-agents, automation, codex, codex-cli，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 364 stars and 68 forks，topics: agentic-workflow, ai-agents, automation, codex, codex-cli, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 422 stars、83 forks，topics: agentic-workflow, ai-agents, automation, codex, codex-cli，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 422 stars and 83 forks，topics: agentic-workflow, ai-agents, automation, codex, codex-cli, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开发者对 AI 编程工具效率优化的需求，以及“极简执行”理念的吸引力。",
+          "zh": "观察开发者对 AI 工具效率的极致追求，以及“少废话多干活”的产品设计理念。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "清华大学推出的开源多智能体交互课堂平台，一键即可获得沉浸式多智能体学习体验，支持多种教学场景。",
+          "zh": "清华大学推出的多智能体交互式课堂平台，一键即可获得沉浸式多智能体学习体验，支持多种教学场景。",
           "en": "Star THU-MAIC / OpenMAIC Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click"
         },
-        "totalStars": 29810,
+        "totalStars": 29903,
         "language": "TypeScript",
         "dailyStars": 3128,
         "chineseIntro": {
-          "zh": "清华大学推出的开源多智能体交互课堂平台，一键即可获得沉浸式多智能体学习体验，支持多种教学场景。",
+          "zh": "清华大学推出的多智能体交互式课堂平台，一键即可获得沉浸式多智能体学习体验，支持多种教学场景。",
           "en": "Star THU-MAIC / OpenMAIC Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click"
         },
         "todayHighlight": {
-          "zh": "今日新增 3128 星，总星标近 3 万，位列 GitHub 全球趋势榜第三，教育+AI 概念引发广泛关注。",
+          "zh": "今日新增 3128 星标，总星标近 3 万，位列 GitHub 全球趋势榜第三，教育+AI 的叙事引发广泛关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 3,128 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,810 stars、5,002 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,810 stars and 5,002 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,903 stars、5,014 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,903 stars and 5,014 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注高校开源项目如何借助 AI 技术重塑教育形态，以及其社区运营模式。",
+          "zh": "关注多智能体在教育领域的应用潜力，以及高校开源项目如何快速获得社区认可。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -382,7 +382,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "一个从零开始训练 64M 参数大语言模型的开源项目，仅需 2 小时即可完成训练，适合学习和研究 LLM 原理。",
           "en": "🧠 Train a 64M-parameter LLM from scratch in just 2h!"
         },
-        "totalStars": 57313,
+        "totalStars": 57379,
         "language": "Python",
         "dailyStars": 1005,
         "chineseIntro": {
@@ -390,15 +390,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "🧠 Train a 64M-parameter LLM from scratch in just 2h!"
         },
         "todayHighlight": {
-          "zh": "今日新增 1005 星，总星标 57k+，持续在榜，作为“轻量级 LLM 训练”标杆项目，长期吸引 AI 学习者。",
+          "zh": "今日新增 1005 星标，总星标超 5.7 万，持续在榜，作为教育类项目，其“低成本训练 LLM”的卖点长期吸引开发者。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 57k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 1,005 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,313 stars、7,453 forks，topics: artificial-intelligence, large-language-model，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,313 stars and 7,453 forks，topics: artificial-intelligence, large-language-model, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,379 stars、7,460 forks，topics: artificial-intelligence, large-language-model，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,379 stars and 7,460 forks，topics: artificial-intelligence, large-language-model, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察低资源训练大模型的需求，以及教育类 AI 项目的增长潜力。",
+          "zh": "观察轻量级模型训练工具如何降低 AI 学习门槛，以及教育类开源项目的增长模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向科学研究的 AI Agent 技能库，提供 165 个经过验证的技能和 100+ 科学数据库，覆盖生物、化学、医学等领域，可将 AI 代理变为“AI 科学家”。",
+          "zh": "为 AI Agent 提供科学领域技能库，包含 165 个经过验证的技能和 100+ 科学数据库，覆盖生物、化学、医学等领域，可将 AI 变为“AI 科学家”。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
-        "totalStars": 41723,
+        "totalStars": 41781,
         "language": "Python",
         "dailyStars": 912,
         "chineseIntro": {
-          "zh": "面向科学研究的 AI Agent 技能库，提供 165 个经过验证的技能和 100+ 科学数据库，覆盖生物、化学、医学等领域，可将 AI 代理变为“AI 科学家”。",
+          "zh": "为 AI Agent 提供科学领域技能库，包含 165 个经过验证的技能和 100+ 科学数据库，覆盖生物、化学、医学等领域，可将 AI 变为“AI 科学家”。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
         "todayHighlight": {
-          "zh": "今日新增 912 星，总星标 41k+，位列全球趋势榜第九，已宣称被 19 万科学家使用，科研 AI 生态持续升温。",
+          "zh": "今日新增 912 星标，总星标超 4.1 万，位列全球趋势榜第九，其“190,000+ 科学家使用”的背书和跨学科覆盖推动增长。",
           "en": "登上 GitHub Trending 日榜第 9 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 912 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 41,723 stars、3,838 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 41,723 stars and 3,838 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 41,781 stars、3,844 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 41,781 stars and 3,844 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注垂直领域 Agent 技能库的商业模式和用户粘性。",
+          "zh": "关注垂直领域技能库的生态价值，以及如何通过标准化技能吸引专业用户。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Agent 性能优化系统，为 Claude Code、Codex 等提供技能、本能、记忆、安全等模块，提升开发效率。",
+          "zh": "一个 Agent 性能优化系统，提供技能、本能、记忆、安全等功能，支持 Claude Code、Codex 等多种 AI 编程工具，旨在提升 Agent 开发效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 245853,
+        "totalStars": 245889,
         "language": "JavaScript",
         "dailyStars": 623,
         "chineseIntro": {
-          "zh": "一个 Agent 性能优化系统，为 Claude Code、Codex 等提供技能、本能、记忆、安全等模块，提升开发效率。",
+          "zh": "一个 Agent 性能优化系统，提供技能、本能、记忆、安全等功能，支持 Claude Code、Codex 等多种 AI 编程工具，旨在提升 Agent 开发效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日新增 623 星，总星标 245k+，位列全球趋势榜第十三，作为“Agent 操作系统”概念项目，持续获得开发者追捧。",
+          "zh": "今日新增 623 星标，总星标超 24.5 万，位列全球趋势榜第十三，作为“Agent 操作系统”概念的代表，持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 13 位, 总 star 数已达 245k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 623 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 245,853 stars、37,099 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 245,853 stars and 37,099 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 245,889 stars、37,106 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 245,889 stars and 37,106 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 Agent 开发工具链的整合趋势，以及“操作系统”级产品的定位。",
+          "zh": "观察 Agent 开发工具链的整合趋势，以及“性能优化”如何成为 Agent 产品的核心竞争力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向中国专利撰写的 AI 技能，可辅助专利点挖掘、交底书编写、通俗解读专利，并嗅探政策动向，支持发明、实用、外观专利。",
+          "zh": "面向中国专利的 AI 技能包，可辅助专利点挖掘、交底书编写、通俗解读专利，并嗅探政策动向，支持发明、实用、外观专利。",
           "en": "Star handsomestWei / patent-disclosure-skill 中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。"
         },
-        "totalStars": 6859,
+        "totalStars": 6904,
         "language": "Python",
         "dailyStars": 501,
         "chineseIntro": {
-          "zh": "面向中国专利撰写的 AI 技能，可辅助专利点挖掘、交底书编写、通俗解读专利，并嗅探政策动向，支持发明、实用、外观专利。",
+          "zh": "面向中国专利的 AI 技能包，可辅助专利点挖掘、交底书编写、通俗解读专利，并嗅探政策动向，支持发明、实用、外观专利。",
           "en": "Star handsomestWei / patent-disclosure-skill 中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。"
         },
         "todayHighlight": {
-          "zh": "今日新增 501 星，总星标 6.8k+，位列全球趋势榜第十，中文专利垂直场景需求旺盛，快速传播。",
+          "zh": "今日新增 501 星标，总星标近 7 千，位列全球趋势榜第十，中文专利场景的稀缺性引发国内开发者关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 501 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,859 stars、766 forks，topics: chinese, disclosure, obsidian, patent, skill，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,859 stars and 766 forks，topics: chinese, disclosure, obsidian, patent, skill, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,904 stars、768 forks，topics: chinese, disclosure, obsidian, patent, skill，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,904 stars and 768 forks，topics: chinese, disclosure, obsidian, patent, skill, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 在专业文书写作领域的落地机会，以及中文社区对垂直技能的需求。",
+          "zh": "关注 AI 在专业文书领域的应用，以及本地化技能包的市场机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 设计的学术研究技能包，覆盖研究、写作、评审、修改到定稿的完整流程，提升学术工作效率。",
+          "zh": "为 Claude Code 提供学术研究技能，覆盖研究、写作、评审、修改、定稿全流程，帮助科研人员高效完成论文。",
           "en": "Academic Research Skills for Claude Code: research → write → review → revise → finalize"
         },
-        "totalStars": 45113,
+        "totalStars": 45163,
         "language": "Python",
         "dailyStars": 193,
         "chineseIntro": {
-          "zh": "为 Claude Code 设计的学术研究技能包，覆盖研究、写作、评审、修改到定稿的完整流程，提升学术工作效率。",
+          "zh": "为 Claude Code 提供学术研究技能，覆盖研究、写作、评审、修改、定稿全流程，帮助科研人员高效完成论文。",
           "en": "Academic Research Skills for Claude Code: research → write → review → revise → finalize"
         },
         "todayHighlight": {
-          "zh": "今日新增 193 星，总星标 45k+，位列全球趋势榜第二，学术 AI 工具持续受关注，版本迭代频繁。",
+          "zh": "今日新增 193 星标，总星标超 4.5 万，位列全球趋势榜第二，学术写作的刚需和持续迭代推动其长期增长。",
           "en": "登上 GitHub Trending 日榜第 2 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 193 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,113 stars、3,558 forks，topics: academic-pipeline, academic-writing, ai-research, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,113 stars and 3,558 forks，topics: academic-pipeline, academic-writing, ai-research, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,163 stars、3,561 forks，topics: academic-pipeline, academic-writing, ai-research, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,163 stars and 3,561 forks，topics: academic-pipeline, academic-writing, ai-research, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察学术写作 AI 工具的市场空间，以及如何满足严谨性要求。",
+          "zh": "观察 AI 在学术写作中的渗透，以及流程化技能如何提升科研效率。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源 LLM 友好的网页爬虫与抓取工具，专为 AI 应用设计，可高效提取网页数据供大模型使用。",
+          "zh": "开源的 LLM 友好型网络爬虫与数据抓取工具，专为 AI 应用设计，可高效提取网页数据供大模型使用。",
           "en": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler &amp; Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
         },
-        "totalStars": 80950,
+        "totalStars": 80974,
         "language": "Python",
         "dailyStars": 145,
         "chineseIntro": {
-          "zh": "开源 LLM 友好的网页爬虫与抓取工具，专为 AI 应用设计，可高效提取网页数据供大模型使用。",
+          "zh": "开源的 LLM 友好型网络爬虫与数据抓取工具，专为 AI 应用设计，可高效提取网页数据供大模型使用。",
           "en": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler &amp; Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN"
         },
         "todayHighlight": {
-          "zh": "今日新增 145 星，总星标 80k+，位列全球趋势榜第十四，作为数据管道基础组件，随 AI 应用增长持续获得关注。",
+          "zh": "今日新增 145 星标，总星标超 8 万，位列全球趋势榜第十四，作为数据管道基础组件，随 AI 应用生态持续升温。",
           "en": "登上 GitHub Trending 日榜第 14 位, 总 star 数已达 80k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 145 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 80,950 stars、8,362 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 80,950 stars and 8,362 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 80,974 stars、8,364 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 80,974 stars and 8,364 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 数据获取工具的需求，以及开源爬虫项目的商业化可能。",
+          "zh": "关注数据获取工具在 AI 产业链中的基础地位，以及开源爬虫的商业模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 宣布其 Astra 模型成为首个在预备框架下达到关键网络安全能力阈值的模型，并加强了发布安全措施。",
+          "zh": "OpenAI 宣布其 Astra 模型成为首个在预备框架下达到关键网络安全能力阈值的模型，并加强了发布安全措施。这标志着模型能力与安全评估的里程碑。",
           "en": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release."
         },
         "chineseIntro": {
-          "zh": "OpenAI 宣布其 Astra 模型成为首个在预备框架下达到关键网络安全能力阈值的模型，并加强了发布安全措施。",
+          "zh": "OpenAI 宣布其 Astra 模型成为首个在预备框架下达到关键网络安全能力阈值的模型，并加强了发布安全措施。这标志着模型能力与安全评估的里程碑。",
           "en": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release."
         },
         "todayHighlight": {
-          "zh": "这标志着前沿模型安全评估进入新阶段，对行业安全标准制定具有引领意义。",
-          "en": "这标志着前沿模型安全评估进入新阶段，对行业安全标准制定具有引领意义。"
+          "zh": "Astra 达到关键网络安全阈值，凸显前沿模型安全评估的严格化，可能影响行业安全标准。",
+          "en": "Astra 达到关键网络安全阈值，凸显前沿模型安全评估的严格化，可能影响行业安全标准。"
         },
         "pmInsight": {
-          "zh": "产品经理应关注安全阈值对模型发布节奏的影响，提前规划合规与安全测试流程。",
+          "zh": "产品经理应关注安全评估框架的演进，将安全合规纳入模型选型和发布流程。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -662,19 +662,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Google 汇总了 2026 年 8 月发布的 AI 更新，涵盖模型、产品与基础设施等多个领域。",
+          "zh": "Google 汇总了 2026 年 8 月发布的 AI 更新，涵盖模型、研究、产品等多个领域。具体细节未在摘要中展开。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_AI_Recap_social.max-600x600.format-webp.webp\">Here are Google’s latest AI updates from August 2026"
         },
         "chineseIntro": {
-          "zh": "Google 汇总了 2026 年 8 月发布的 AI 更新，涵盖模型、产品与基础设施等多个领域。",
+          "zh": "Google 汇总了 2026 年 8 月发布的 AI 更新，涵盖模型、研究、产品等多个领域。具体细节未在摘要中展开。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/August_AI_Recap_social.max-600x600.format-webp.webp\">Here are Google’s latest AI updates from August 2026"
         },
         "todayHighlight": {
-          "zh": "作为月度总结，展示 Google AI 整体进展，对追踪其战略方向有参考价值。",
-          "en": "作为月度总结，展示 Google AI 整体进展，对追踪其战略方向有参考价值。"
+          "zh": "Google 月度 AI 更新汇总，可能包含重要模型或产品进展，值得关注后续细节。",
+          "en": "Google 月度 AI 更新汇总，可能包含重要模型或产品进展，值得关注后续细节。"
         },
         "pmInsight": {
-          "zh": "产品经理可从中筛选与自身业务相关的更新，评估潜在合作或竞争机会。",
+          "zh": "产品经理应跟踪 Google 的月度更新，以捕捉可能影响生态的模型或工具变化。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -699,19 +699,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 宣布 Enterprise Live Migrations 正式可用，支持从 GHES 到 GHEC DR 的近乎零停机迁移。",
+          "zh": "GitHub 的 Enterprise Live Migrations (ELM) 正式可用，支持从 GitHub Enterprise Server 到 GitHub Enterprise Cloud 的近乎零停机迁移，专为大型活跃仓库设计。",
           "en": "Enterprise Live Migrations (ELM) is now generally available, enabling near-zero-downtime repository migrations from GitHub Enterprise Server (GHES) to GitHub Enterprise Cloud with Data Residency (GHEC DR), so you can move&#8230; The post Enterprise Live Migrations from GHES to ghe.com generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 宣布 Enterprise Live Migrations 正式可用，支持从 GHES 到 GHEC DR 的近乎零停机迁移。",
+          "zh": "GitHub 的 Enterprise Live Migrations (ELM) 正式可用，支持从 GitHub Enterprise Server 到 GitHub Enterprise Cloud 的近乎零停机迁移，专为大型活跃仓库设计。",
           "en": "Enterprise Live Migrations (ELM) is now generally available, enabling near-zero-downtime repository migrations from GitHub Enterprise Server (GHES) to GitHub Enterprise Cloud with Data Residency (GHEC DR), so you can move&#8230; The post Enterprise Live Migrations from GHES to ghe.com generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "该功能解决了大型仓库迁移的痛点，可能推动更多企业迁移至 GitHub 云服务。",
-          "en": "该功能解决了大型仓库迁移的痛点，可能推动更多企业迁移至 GitHub 云服务。"
+          "zh": "ELM 的 GA 降低了企业迁移门槛，可能加速企业向 GitHub 云迁移，影响开发者工具市场。",
+          "en": "ELM 的 GA 降低了企业迁移门槛，可能加速企业向 GitHub 云迁移，影响开发者工具市场。"
         },
         "pmInsight": {
-          "zh": "产品经理可评估迁移工具对客户留存的影响，并考虑在服务中集成类似的无缝迁移能力。",
+          "zh": "产品经理可评估 ELM 对客户迁移成本的影响，并考虑在服务中集成或推荐该功能。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -736,63 +736,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Hugging Face 发布 @huggingface/kernels，提供 200 多个 WebGPU 内核，并推出浏览器内基准测试套件 Fleet。",
+          "zh": "Hugging Face 发布 @huggingface/kernels，包含 200 多个 WebGPU 内核，用于加速浏览器中的本地 AI 推理，并推出 Fleet 基准测试套件。",
           "en": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 发布 @huggingface/kernels，提供 200 多个 WebGPU 内核，并推出浏览器内基准测试套件 Fleet。",
+          "zh": "Hugging Face 发布 @huggingface/kernels，包含 200 多个 WebGPU 内核，用于加速浏览器中的本地 AI 推理，并推出 Fleet 基准测试套件。",
           "en": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
         },
         "todayHighlight": {
-          "zh": "此举将加速浏览器端 AI 推理，可能改变本地 AI 应用的性能格局。",
-          "en": "此举将加速浏览器端 AI 推理，可能改变本地 AI 应用的性能格局。"
+          "zh": "该库可能显著提升浏览器端 AI 性能，推动本地推理生态发展，对边缘计算有潜在影响。",
+          "en": "该库可能显著提升浏览器端 AI 性能，推动本地推理生态发展，对边缘计算有潜在影响。"
         },
         "pmInsight": {
-          "zh": "产品经理可探索基于 WebGPU 的端侧推理方案，以降低延迟和成本，提升用户体验。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Hugging Face",
-            "url": "https://huggingface.co/blog/webgpu-kernels"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News LLM: Show HN: Semantic Overlays – an NX bit for LLM prompt injection (live demo)",
-          "en": "Hacker News LLM: Show HN: Semantic Overlays – an NX bit for LLM prompt injection (live demo)"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "Hacker News 上展示了一种名为 Semantic Overlays 的新方法，通过小型适配器标记上下文，以缓解提示注入攻击。",
-          "en": "I've built a new method for steering LLMs called Semantic Overlays, small trained adapters on a frozen model which change how it perceives a piece of its context. The most readily applicable usage is to mitigate prompt injection, and it lets us take a very-injectable Qwen-3.5-9B to SOTA scores on all the prompt injection benchmarks I could find. (They are only blackbox attacks, but I did NOT train on anything like th"
-        },
-        "chineseIntro": {
-          "zh": "Hacker News 上展示了一种名为 Semantic Overlays 的新方法，通过小型适配器标记上下文，以缓解提示注入攻击。",
-          "en": "I've built a new method for steering LLMs called Semantic Overlays, small trained adapters on a frozen model which change how it perceives a piece of its context. The most readily applicable usage is to mitigate prompt injection, and it lets us take a very-injectable Qwen-3.5-9B to SOTA scores on all the prompt injection benchmarks I could find. (They are only blackbox attacks, but I did NOT train on anything like th"
-        },
-        "todayHighlight": {
-          "zh": "该方法在提示注入基准上取得 SOTA 成绩，可能为 LLM 安全提供新思路。",
-          "en": "该方法在提示注入基准上取得 SOTA 成绩，可能为 LLM 安全提供新思路。"
-        },
-        "pmInsight": {
-          "zh": "产品经理应关注此类防御技术，考虑将其集成到应用中，增强安全性。",
+          "zh": "产品经理可关注 WebGPU 内核的采用，探索在浏览器中部署轻量级 AI 功能的可行性。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hacker News LLM",
-            "url": "https://semantic-overlays.vercel.app/"
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/webgpu-kernels"
           }
         ]
       },
@@ -810,19 +773,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "arXiv 论文提出 HyperWorld，通过超图结构的状态序列化提升文本世界模型的学习效果。",
+          "zh": "arXiv 论文提出 HyperWorld，研究超图结构的状态序列化对文本世界模型学习的影响，发现实体中心超边单元优于其他序列化方式。",
           "en": "arXiv:2609.00002v1 Announce Type: new Abstract: World models enable language-model agents to predict environment dynamics and plan before acting. In text environments, the model must learn symbolic action effects from serialized state descriptions, but the role of serialization structure remains underexplored. We present HyperWorld, a controlled study of state serialization for learned textual world models. We compar"
         },
         "chineseIntro": {
-          "zh": "arXiv 论文提出 HyperWorld，通过超图结构的状态序列化提升文本世界模型的学习效果。",
+          "zh": "arXiv 论文提出 HyperWorld，研究超图结构的状态序列化对文本世界模型学习的影响，发现实体中心超边单元优于其他序列化方式。",
           "en": "arXiv:2609.00002v1 Announce Type: new Abstract: World models enable language-model agents to predict environment dynamics and plan before acting. In text environments, the model must learn symbolic action effects from serialized state descriptions, but the role of serialization structure remains underexplored. We present HyperWorld, a controlled study of state serialization for learned textual world models. We compar"
         },
         "todayHighlight": {
-          "zh": "该研究为世界模型的状态表示提供了新方法，可能影响智能体规划能力。",
-          "en": "该研究为世界模型的状态表示提供了新方法，可能影响智能体规划能力。"
+          "zh": "该研究可能改进语言代理在文本环境中的规划能力，对具身智能和交互式 AI 有参考价值。",
+          "en": "该研究可能改进语言代理在文本环境中的规划能力，对具身智能和交互式 AI 有参考价值。"
         },
         "pmInsight": {
-          "zh": "产品经理可关注世界模型进展，探索其在复杂任务规划中的应用潜力。",
+          "zh": "产品经理可关注状态表示方法的研究，以优化基于文本的模拟和代理性能。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -830,6 +793,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "arXiv AI",
             "url": "https://arxiv.org/abs/2609.00002"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "arXiv CL: Behaviorally Grounded User Profiles from the Wild for Personalized Alignment and Multi-Perspective Reasoning",
+          "en": "arXiv CL: Behaviorally Grounded User Profiles from the Wild for Personalized Alignment and Multi-Perspective Reasoning"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "arXiv 论文提出行为基础的用户画像框架，从真实社交媒体数据提取用户画像，用于个性化对齐和多视角推理，优于合成画像。",
+          "en": "arXiv:2609.00014v1 Announce Type: new Abstract: Persona-driven techniques increasingly adapt large language models (LLMs) to diverse contexts. However, existing methods predominantly rely on rigid, synthetic personas that flatten individual variation, rely on stereotypes, and miss the nuanced signals driving actual human preferences. We introduce profile behavioral grounding, a framework for extracting open-ended, hi"
+        },
+        "chineseIntro": {
+          "zh": "arXiv 论文提出行为基础的用户画像框架，从真实社交媒体数据提取用户画像，用于个性化对齐和多视角推理，优于合成画像。",
+          "en": "arXiv:2609.00014v1 Announce Type: new Abstract: Persona-driven techniques increasingly adapt large language models (LLMs) to diverse contexts. However, existing methods predominantly rely on rigid, synthetic personas that flatten individual variation, rely on stereotypes, and miss the nuanced signals driving actual human preferences. We introduce profile behavioral grounding, a framework for extracting open-ended, hi"
+        },
+        "todayHighlight": {
+          "zh": "该研究可能推动更真实的用户建模，提升个性化推荐和对话系统的表现。",
+          "en": "该研究可能推动更真实的用户建模，提升个性化推荐和对话系统的表现。"
+        },
+        "pmInsight": {
+          "zh": "产品经理可探索基于真实行为数据的用户画像方法，以增强个性化体验。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "arXiv CL",
+            "url": "https://arxiv.org/abs/2609.00014"
           }
         ]
       }
