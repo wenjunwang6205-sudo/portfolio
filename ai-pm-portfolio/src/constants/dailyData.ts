@@ -44,101 +44,113 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 代理生态升温：记忆、验证与多模型编排成主线",
-      "en": "AI Agent Ecosystem Heats Up: Memory, Verification, and Multi-Model Orchestration as Key Themes"
+      "zh": "AI 产品经理日报：AI 编程助手生态升温，多模型编排与本地化部署成新焦点",
+      "en": "AI PM Daily: AI Coding Assistant Ecosystem Heats Up, Multi-Model Orchestration and Local Deployment Become New Focus"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势与公司动态共同指向 AI 代理的工程化与生态化：从记忆机制到验证框架，再到多模型编排，开发者社区与科技巨头正从不同维度解决代理的可靠性、连续性与成本问题。",
-      "en": "Today's GitHub trends and company news jointly point to the engineering and ecosystem development of AI agents: from memory mechanisms to verification frameworks and multi-model orchestration, the developer community and tech giants are addressing agent reliability, continuity, and cost from different angles."
+      "zh": "今日 GitHub 趋势与公司动态显示，AI 编程助手领域持续活跃，多模型编排、本地化推理、代理记忆管理等方向值得关注。同时，AI 安全与网络防御成为巨头竞争的新战场。",
+      "en": "Today's GitHub trends and company news show continued activity in AI coding assistants, with multi-model orchestration, local inference, and agent memory management worth attention. Meanwhile, AI safety and cyber defense are becoming new battlegrounds for tech giants."
     },
     "keyTakeaway": {
-      "zh": "AI 代理正从“能跑”迈向“好用”，记忆、验证与多模型编排成为今日最值得关注的技术主线，开源社区与商业平台同步发力。",
-      "en": "AI agents are moving from 'can run' to 'easy to use', with memory, verification, and multi-model orchestration emerging as the most noteworthy technical themes today, as open-source communities and commercial platforms push forward in tandem."
+      "zh": "AI 编程助手正从单一模型走向多模型编排与本地化部署，同时代理的记忆与技能管理成为提升效率的关键。",
+      "en": "AI coding assistants are moving from single-model to multi-model orchestration and local deployment, while agent memory and skill management become key to improving efficiency."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 代理记忆机制受关注，跨会话连续性成刚需",
-          "en": "AI Agent Memory Mechanisms Gain Attention, Cross-Session Continuity Becomes a Necessity"
+          "zh": "AI 编程助手生态持续升温，多模型编排与本地化推理成为新趋势",
+          "en": "AI Coding Assistant Ecosystem Heats Up, Multi-Model Orchestration and Local Inference Become New Trends"
         },
         "category": {
-          "zh": "技术趋势",
-          "en": "Technology Trend"
+          "zh": "开发者工具",
+          "en": "Developer Tools"
         },
         "summary": {
-          "zh": "Vera 项目为 AI 编码代理提供跨会话共享记忆，以追加式日志存储决策和状态；DeepSeek 的 deepseek-harness 采用“一切皆插件”架构，支持灵活扩展代理功能，上线一月即获 21 万星。",
-          "en": "The Vera project provides cross-session shared memory for AI coding agents, storing decisions and states in an append-only log; DeepSeek's deepseek-harness adopts an 'everything is a plugin' architecture for flexible agent extension, gaining 210k stars within a month of launch."
+          "zh": "GitHub 趋势榜上，多个 AI 编程助手项目持续在榜，如 ECC（日增 1314 星）、opencode（日增 725 星）等。同时，GitHub 推出 Project HydraFusion 研究预览，通过多模型编排实现前沿质量并降低成本；magnitude 项目则提供本地推理服务器，实现免费、私密、离线的 AI 体验。",
+          "en": "Multiple AI coding assistant projects continue to trend on GitHub, such as ECC (+1314 stars/day) and opencode (+725 stars/day). Meanwhile, GitHub introduced Project HydraFusion research preview for multi-model orchestration to achieve frontier quality at lower cost; magnitude offers a local inference server for free, private, offline AI."
         },
         "pmInsight": {
-          "zh": "代理在长任务中的上下文丢失是实际痛点，记忆机制可能成为代理框架的标配。PM 可关注如何将记忆模块化，并设计跨会话的持久化策略，以提升代理在复杂工作流中的可靠性。",
-          "en": "Context loss in long-running tasks is a real pain point, and memory mechanisms may become standard in agent frameworks. PMs should consider how to modularize memory and design cross-session persistence strategies to improve agent reliability in complex workflows."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Vera",
-            "url": "https://ag3497120.github.io/call-me-vera/"
-          },
-          {
-            "label": "deepseek-harness",
-            "url": "https://github.com/deepseek-ai/deepseek-harness"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "验证器模式兴起，提升代理可靠性的通用方法浮现",
-          "en": "Verifier Pattern Emerges as a General Method to Improve Agent Reliability"
-        },
-        "category": {
-          "zh": "技术趋势",
-          "en": "Technology Trend"
-        },
-        "summary": {
-          "zh": "LLM-as-a-Verifier 框架无需额外训练即可为代理提供细粒度反馈，在编码、机器人和医疗基准上达到 SOTA；GitHub 的 Project HydraFusion 通过多模型编排（起草、批评、级联）在离线评估中匹配或超越 Opus 5 基线并降低成本。",
-          "en": "The LLM-as-a-Verifier framework provides fine-grained feedback to agents without extra training, achieving SOTA on coding, robotics, and medical benchmarks; GitHub's Project HydraFusion uses multi-model orchestration (draft, critique, cascade) to match or exceed Opus 5 baseline in offline evals while reducing cost."
-        },
-        "pmInsight": {
-          "zh": "验证器模式与多模型编排都指向“用模型监督模型”的思路，可显著提升代理输出质量并控制成本。PM 可探索在代理工作流中集成验证环节，或利用多模型协作来平衡性能与费用。",
-          "en": "Both the verifier pattern and multi-model orchestration point to a 'models supervising models' approach, which can significantly improve agent output quality while controlling costs. PMs can explore integrating verification steps into agent workflows or using multi-model collaboration to balance performance and expense."
+          "zh": "PM 应关注多模型路由与本地化部署对成本、隐私和性能的平衡，探索在编码助手产品中集成模型编排层，或提供本地化选项以满足企业敏感代码需求。",
+          "en": "PMs should focus on the balance of cost, privacy, and performance in multi-model routing and local deployment, exploring integration of an orchestration layer in coding assistant products or offering local options for enterprise sensitive code."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "LLM-as-a-Verifier",
-            "url": "https://github.com/llm-as-a-verifier/llm-as-a-verifier"
+            "label": "GitHub Blog: Project HydraFusion",
+            "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
           },
           {
-            "label": "Project HydraFusion",
-            "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
+            "label": "magnitudedev/magnitude",
+            "url": "https://github.com/magnitudedev/magnitude"
+          },
+          {
+            "label": "affaan-m/ECC",
+            "url": "https://github.com/affaan-m/ECC"
+          },
+          {
+            "label": "anomalyco/opencode",
+            "url": "https://github.com/anomalyco/opencode"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI 安全防御成科技巨头竞争新焦点",
-          "en": "AI Security Defense Becomes a New Competitive Focus for Tech Giants"
+          "zh": "AI 代理的记忆与技能管理成为效率提升的关键",
+          "en": "Agent Memory and Skill Management Become Key to Efficiency"
         },
         "category": {
-          "zh": "行业动态",
-          "en": "Industry Dynamics"
+          "zh": "AI 代理",
+          "en": "AI Agents"
         },
         "summary": {
-          "zh": "OpenAI 宣布投入 10 亿美元推出 Daybreak for Frontline Defenders 计划，为关键基础设施提供网络 AI；Google 推出 Fairwind Program，为政府和可信合作伙伴提供有限的网络防御工具访问权限。",
-          "en": "OpenAI announced a $1B investment in the Daybreak for Frontline Defenders program to provide cyber AI for critical infrastructure; Google launched the Fairwind Program to provide limited access to cyber defense tools for governments and trusted partners."
+          "zh": "多个项目聚焦代理记忆与技能：'call me vera' 为 AI 编码代理提供跨会话共享内存；ponytail 注入极简主义原则，避免过度设计；guizang-yingzao-skill 提供文化设计技能包。这些项目均获得较高关注，显示开发者对代理个性化和效率优化的需求。",
+          "en": "Several projects focus on agent memory and skills: 'call me vera' provides cross-session shared memory for coding agents; ponytail injects minimalism principles to avoid over-engineering; guizang-yingzao-skill offers cultural design skill packs. These projects have gained attention, showing developer demand for agent personalization and efficiency."
         },
         "pmInsight": {
-          "zh": "两大 AI 巨头同日发布网络安全举措，表明 AI 安全防御市场正在升温。PM 可关注将 AI 代理能力应用于安全场景的机会，如自动化威胁检测与响应，但需注意合规与伦理边界。",
-          "en": "The simultaneous release of cybersecurity initiatives by two AI giants indicates the AI security defense market is heating up. PMs can watch for opportunities to apply AI agent capabilities to security scenarios, such as automated threat detection and response, while being mindful of compliance and ethical boundaries."
+          "zh": "PM 可考虑为 AI 代理产品增加可配置的记忆与技能模块，让用户自定义行为风格，提升在特定场景（如设计、写作）的适用性。",
+          "en": "PMs could consider adding configurable memory and skill modules to agent products, allowing users to customize behavior styles and improve applicability in specific scenarios like design or writing."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI Daybreak",
+            "label": "Hacker News AI: call me vera",
+            "url": "https://ag3497120.github.io/call-me-vera/"
+          },
+          {
+            "label": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
+          },
+          {
+            "label": "op7418/guizang-yingzao-skill",
+            "url": "https://github.com/op7418/guizang-yingzao-skill"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 安全与网络防御成为科技巨头竞争新战场",
+          "en": "AI Safety and Cyber Defense Become New Battleground for Tech Giants"
+        },
+        "category": {
+          "zh": "AI 安全",
+          "en": "AI Safety"
+        },
+        "summary": {
+          "zh": "OpenAI 宣布投入 10 亿美元启动 Daybreak for Frontline Defenders 计划，Google 推出 Fairwind 计划，均聚焦于为政府和关键服务提供 AI 网络防御工具。这显示 AI 安全领域竞争加剧。",
+          "en": "OpenAI announced a $1B Daybreak for Frontline Defenders initiative, and Google launched the Fairwind program, both focusing on AI cyber defense for governments and critical services. This shows intensifying competition in AI safety."
+        },
+        "pmInsight": {
+          "zh": "PM 应关注 AI 安全产品的市场需求，特别是针对企业级客户的安全解决方案，可探索与云服务或安全厂商合作，提供主动防御能力。",
+          "en": "PMs should watch the market demand for AI security products, especially enterprise-grade solutions, and explore partnerships with cloud or security vendors to offer proactive defense capabilities."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI: Daybreak for Frontline Defenders",
             "url": "https://openai.com/index/daybreak-for-frontline-defenders"
           },
           {
-            "label": "Google Fairwind",
+            "label": "Google AI: Fairwind program",
             "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/"
           }
         ]
@@ -147,59 +159,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "开发面向代理的“记忆即服务”产品",
-          "en": "Develop 'Memory-as-a-Service' Products for Agents"
+          "zh": "开发面向企业的本地化 AI 编码助手，强调数据隐私与成本控制",
+          "en": "Develop Enterprise-Focused Local AI Coding Assistant Emphasizing Data Privacy and Cost Control"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 Vera 和 deepseek-harness 等项目的信号，代理记忆机制需求明确。可构建一个跨框架的代理记忆层，提供持久化、检索与共享功能，作为独立服务或 SDK 提供给开发者。",
-          "en": "Based on signals from projects like Vera and deepseek-harness, the need for agent memory mechanisms is clear. One could build a cross-framework agent memory layer offering persistence, retrieval, and sharing, delivered as a standalone service or SDK."
+          "zh": "基于 magnitude 项目的快速增长和 GitHub Copilot 的内容排除功能，企业对于敏感代码的隐私保护需求明确。可验证假设：提供本地推理或混合部署的编码助手，能吸引对数据安全要求高的企业客户。",
+          "en": "Based on magnitude's rapid growth and GitHub Copilot's content exclusion feature, enterprise demand for sensitive code privacy is clear. Testable hypothesis: offering a coding assistant with local inference or hybrid deployment can attract enterprise customers with high data security requirements."
         },
         "pmInsight": {
-          "zh": "假设：开发者愿意为提升代理连续性的记忆服务付费。可验证：通过 MVP 测试开发者对记忆插件的采用率与付费意愿，重点关注编码代理与自动化工具场景。",
-          "en": "Hypothesis: Developers are willing to pay for memory services that improve agent continuity. Validation: Test adoption and willingness to pay for a memory plugin MVP, focusing on coding agents and automation tools."
+          "zh": "PM 可设计一个支持本地模型或私有云部署的编码助手，突出数据不出域、成本可控，并集成主流 IDE 插件，以差异化竞争。",
+          "en": "PMs could design a coding assistant supporting local models or private cloud deployment, highlighting data staying on-premises and cost control, with IDE plugins for differentiation."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "Vera",
-            "url": "https://ag3497120.github.io/call-me-vera/"
+            "label": "magnitudedev/magnitude",
+            "url": "https://github.com/magnitudedev/magnitude"
           },
           {
-            "label": "deepseek-harness",
-            "url": "https://github.com/deepseek-ai/deepseek-harness"
+            "label": "GitHub Changelog: Copilot weekly releases",
+            "url": "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31"
           }
         ]
       },
       {
         "title": {
-          "zh": "打造多模型编排的代理工作流平台",
-          "en": "Build an Agent Workflow Platform with Multi-Model Orchestration"
+          "zh": "打造可定制技能与记忆的 AI 代理平台，赋能垂直场景",
+          "en": "Build Customizable Skill and Memory AI Agent Platform for Vertical Scenarios"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "LLM-as-a-Verifier 和 HydraFusion 表明多模型协作可提升性能并降本。可设计一个可视化工作流编辑器，让用户编排不同模型（如起草、批评、最终生成）并自动路由，以优化质量与成本。",
-          "en": "LLM-as-a-Verifier and HydraFusion show that multi-model collaboration can improve performance and reduce cost. One could design a visual workflow editor allowing users to orchestrate different models (e.g., draft, critique, final generation) with automatic routing to optimize quality and cost."
+          "zh": "从 ponytail、guizang-yingzao-skill 等项目的流行看出，开发者希望 AI 代理能遵循特定风格或具备领域知识。可验证假设：提供技能市场或记忆管理功能，能提升代理在特定任务（如设计、写作）中的表现，从而增加用户粘性。",
+          "en": "The popularity of projects like ponytail and guizang-yingzao-skill shows developers want agents to follow specific styles or have domain knowledge. Testable hypothesis: offering a skill marketplace or memory management can improve agent performance in specific tasks like design or writing, increasing user stickiness."
         },
         "pmInsight": {
-          "zh": "假设：企业用户需要灵活的多模型编排工具来平衡质量与成本。可验证：通过原型测试用户对编排功能的兴趣，并衡量在典型编码任务中的成本节省与质量提升。",
-          "en": "Hypothesis: Enterprise users need flexible multi-model orchestration tools to balance quality and cost. Validation: Prototype test user interest in orchestration features and measure cost savings and quality improvements on typical coding tasks."
+          "zh": "PM 可构建一个代理平台，允许用户上传自定义技能包或设置行为准则，并支持跨会话记忆，以服务于内容创作、设计等垂直领域。",
+          "en": "PMs could build an agent platform allowing users to upload custom skill packs or set behavior guidelines, and support cross-session memory to serve verticals like content creation and design."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "LLM-as-a-Verifier",
-            "url": "https://github.com/llm-as-a-verifier/llm-as-a-verifier"
+            "label": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
           },
           {
-            "label": "Project HydraFusion",
-            "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/"
+            "label": "op7418/guizang-yingzao-skill",
+            "url": "https://github.com/op7418/guizang-yingzao-skill"
+          },
+          {
+            "label": "Hacker News AI: call me vera",
+            "url": "https://ag3497120.github.io/call-me-vera/"
           }
         ]
       }
@@ -215,26 +231,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 推出的开源 Agent 运行框架，采用“一切皆插件”的架构，可灵活扩展 AI 代理功能，适用于构建复杂自动化任务。",
+          "zh": "DeepSeek 官方开源的智能体运行框架，采用“一切皆插件”的架构，可灵活扩展 AI Agent 的功能模块，适用于构建复杂自动化任务。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 213337,
+        "totalStars": 213401,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 推出的开源 Agent 运行框架，采用“一切皆插件”的架构，可灵活扩展 AI 代理功能，适用于构建复杂自动化任务。",
+          "zh": "DeepSeek 官方开源的智能体运行框架，采用“一切皆插件”的架构，可灵活扩展 AI Agent 的功能模块，适用于构建复杂自动化任务。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "作为 DeepSeek 官方项目，上线仅一个月即获 21 万星，今日新增星数未披露，但总星数已超 21 万，社区关注度极高。",
+          "zh": "作为 DeepSeek 官方项目，上线仅一个月便获得超 21 万星标，今日新增星标数据暂缺，但凭借官方背书和插件化设计，在开发者社区快速升温。",
           "en": "创建仅约 1 个月便已积累 213k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 213,337 stars、25,086 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 213,337 stars and 25,086 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 213,401 stars、25,095 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 213,401 stars and 25,095 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方如何通过插件生态快速构建开发者社区，以及“一切皆插件”理念对 Agent 框架设计的影响。",
+          "zh": "关注官方开源框架如何通过插件生态吸引开发者，以及其对 DeepSeek 平台战略的推动作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,18 +271,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "通过文字描述即可生成可交互的 3D 世界，基于 Claude 等 AI 代理自动完成地点研究、建模与渲染，输出可在浏览器中运行的三维场景。",
+          "zh": "通过文字描述即可生成可交互的 3D 城市世界，基于 Claude 等 AI 智能体自动研究、建模并渲染，输出为浏览器可运行的 Three.js 应用。",
           "en": "worlds via code, from fable 5.1"
         },
         "totalStars": 438,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "通过文字描述即可生成可交互的 3D 世界，基于 Claude 等 AI 代理自动完成地点研究、建模与渲染，输出可在浏览器中运行的三维场景。",
+          "zh": "通过文字描述即可生成可交互的 3D 城市世界，基于 Claude 等 AI 智能体自动研究、建模并渲染，输出为浏览器可运行的 Three.js 应用。",
           "en": "worlds via code, from fable 5.1"
         },
         "todayHighlight": {
-          "zh": "项目创建仅一个月，今日上榜“rising”榜单，总星数 438，虽规模尚小，但“文字生成世界”的创意引发关注。",
+          "zh": "项目创建仅一个月，今日在 GitHub 趋势榜上快速上升，虽星标总数不高（438），但“一句话生成可探索世界”的创意引发关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -274,7 +290,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 438 stars and 21 forks，topics: 3d-reconstruction, ai-agents, claude, digital-twin, openstreetmap, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 生成 3D 内容的潜力，以及“世界即代码”概念对数字孪生和游戏开发领域的产品启发。",
+          "zh": "观察 AI 生成 3D 内容的潜力，以及“世界即代码”概念对数字孪生和游戏开发领域的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,26 +311,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 等 AI 代理设计的技能，可将中国古建筑与旅行照片转化为具有艺术指导风格的编辑海报，保留建筑细节与文化韵味。",
+          "zh": "为 AI 编程助手（如 Claude Code）设计的技能包，可将中国古建筑、文化场所和旅行照片转化为具有艺术指导风格的编辑海报，支持小红书等场景。",
           "en": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建筑与在地文化照片 → 艺术指导海报"
         },
-        "totalStars": 347,
+        "totalStars": 349,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 Claude Code 等 AI 代理设计的技能，可将中国古建筑与旅行照片转化为具有艺术指导风格的编辑海报，保留建筑细节与文化韵味。",
+          "zh": "为 AI 编程助手（如 Claude Code）设计的技能包，可将中国古建筑、文化场所和旅行照片转化为具有艺术指导风格的编辑海报，支持小红书等场景。",
           "en": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建筑与在地文化照片 → 艺术指导海报"
         },
         "todayHighlight": {
-          "zh": "项目上线仅数日即获 347 星，今日上榜“rising”榜单，凭借文化特色与实用价值在社交媒体快速传播。",
+          "zh": "项目上线仅一天便进入趋势榜，星标数达 349，凭借“中国传统文化+AI 设计”的独特定位，在中文社区快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 347 stars、32 forks，topics: agent-skill, ai-agent, anthropic, chinese-architecture, chinese-culture，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 347 stars and 32 forks，topics: agent-skill, ai-agent, anthropic, chinese-architecture, chinese-culture, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 349 stars、32 forks，topics: agent-skill, ai-agent, anthropic, chinese-architecture, chinese-culture，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 349 stars and 32 forks，topics: agent-skill, ai-agent, anthropic, chinese-architecture, chinese-culture, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察垂直领域技能如何通过文化共鸣吸引用户，以及 AI 代理技能市场的细分机会。",
+          "zh": "关注垂直领域技能包如何满足特定文化审美需求，以及 AI 工具在创意设计中的本地化应用机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +351,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程代理注入“懒惰资深工程师”思维，引导其编写最简代码，避免过度设计，提升代码质量与开发效率。",
+          "zh": "为 AI 编程助手注入“极简主义”原则，引导其像资深开发者一样写出最少代码，避免过度设计，提升代码质量与可维护性。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
-        "totalStars": 128229,
+        "totalStars": 128309,
         "language": "JavaScript",
         "dailyStars": 2845,
         "chineseIntro": {
-          "zh": "为 AI 编程代理注入“懒惰资深工程师”思维，引导其编写最简代码，避免过度设计，提升代码质量与开发效率。",
+          "zh": "为 AI 编程助手注入“极简主义”原则，引导其像资深开发者一样写出最少代码，避免过度设计，提升代码质量与可维护性。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
         "todayHighlight": {
-          "zh": "今日新增 2845 星，总星数达 12.8 万，位列全球趋势榜第三，其“少即是多”的理念引发开发者共鸣。",
+          "zh": "今日新增 2845 星，总星标超 12.8 万，位列全球趋势榜第三，凭借“懒惰资深开发者”的幽默叙事和实用价值，持续获得开发者追捧。",
           "en": "登上 GitHub Trending 日榜第 3 位, 创建仅约 3 个月便已积累 128k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,845 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 128,229 stars、6,864 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 128,229 stars and 6,864 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 128,309 stars、6,875 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 128,309 stars and 6,875 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注开发者对 AI 编程效率的深层需求，以及“极简主义”理念在 AI 工具中的产品化机会。",
+          "zh": "观察开发者对 AI 代码生成“克制性”的需求，以及如何通过风格化提示词塑造 AI 行为。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +391,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 代理的性能优化系统，提供技能、记忆、安全等模块，支持 Claude Code、Codex 等主流工具，提升代理开发效率。",
+          "zh": "面向 AI 编程助手的性能优化系统，提供技能、记忆、安全等模块，支持 Claude Code、Codex 等多种工具，提升开发效率与稳定性。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 250159,
+        "totalStars": 250228,
         "language": "JavaScript",
         "dailyStars": 1314,
         "chineseIntro": {
-          "zh": "面向 AI 代理的性能优化系统，提供技能、记忆、安全等模块，支持 Claude Code、Codex 等主流工具，提升代理开发效率。",
+          "zh": "面向 AI 编程助手的性能优化系统，提供技能、记忆、安全等模块，支持 Claude Code、Codex 等多种工具，提升开发效率与稳定性。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日新增 1314 星，总星数达 25 万，位列全球趋势榜第二，作为老牌项目持续保持高增长，生态影响力稳固。",
+          "zh": "今日新增 1314 星，总星标超 25 万，位列全球趋势榜第二，作为老牌项目（8个月）仍保持高速增长，生态位稳固。",
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 250k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,314 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 250,159 stars、37,636 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 250,159 stars and 37,636 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 250,228 stars、37,646 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 250,228 stars and 37,646 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 代理开发工具链的整合趋势，以及“操作系统”级产品如何构建护城河。",
+          "zh": "关注 AI 开发工具链的集成化趋势，以及“操作系统级”管理方案对开发者工作流的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +431,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 代理提供的技能，可自动改写 AI 生成的文本，去除机器痕迹，使其读起来更像人类撰写，适用于内容创作与润色。",
+          "zh": "为 AI 写作工具提供“去 AI 味”技能，基于维基百科的 AI 写作特征清单，重写文本使其更自然，适用于 Claude Code、Codex 等。",
           "en": "Star blader / humanizer Agent skill that removes signs of AI-generated writing from text"
         },
-        "totalStars": 43630,
+        "totalStars": 43666,
         "language": "Python",
         "dailyStars": 990,
         "chineseIntro": {
-          "zh": "为 AI 代理提供的技能，可自动改写 AI 生成的文本，去除机器痕迹，使其读起来更像人类撰写，适用于内容创作与润色。",
+          "zh": "为 AI 写作工具提供“去 AI 味”技能，基于维基百科的 AI 写作特征清单，重写文本使其更自然，适用于 Claude Code、Codex 等。",
           "en": "Star blader / humanizer Agent skill that removes signs of AI-generated writing from text"
         },
         "todayHighlight": {
-          "zh": "今日新增 990 星，总星数达 4.3 万，位列全球趋势榜第十一，随着 AI 内容泛滥，去 AI 味需求持续升温。",
+          "zh": "今日新增 990 星，总星标超 4.3 万，位列全球趋势榜第 11，随着 AI 写作普及，去除“机器感”的需求持续升温。",
           "en": "登上 GitHub Trending 日榜第 11 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 990 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 43,630 stars、3,653 forks，topics: agent-skills, ai-writing, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 43,630 stars and 3,653 forks，topics: agent-skills, ai-writing, claude-code, codex, cursor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 43,666 stars、3,654 forks，topics: agent-skills, ai-writing, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 43,666 stars and 3,654 forks，topics: agent-skills, ai-writing, claude-code, codex, cursor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 内容治理与个性化表达的需求，以及“人性化”工具在内容创作领域的市场空间。",
+          "zh": "关注 AI 内容质量优化方向，以及用户对“人性化”文本的付费意愿。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +471,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 等代理提供 38 种编辑级图表模板，生成自包含 HTML+SVG 图表，避免丑陋的 Mermaid 图，提升视觉专业度。",
+          "zh": "为 AI 编程助手提供 38 种编辑级图表设计模板，生成自包含的 HTML+SVG 图表，避免常见的“Mermaid 风格”，提升视觉专业度。",
           "en": "Star cathrynlavery / diagram-design 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
-        "totalStars": 31835,
+        "totalStars": 31861,
         "language": "HTML",
         "dailyStars": 855,
         "chineseIntro": {
-          "zh": "为 Claude Code 等代理提供 38 种编辑级图表模板，生成自包含 HTML+SVG 图表，避免丑陋的 Mermaid 图，提升视觉专业度。",
+          "zh": "为 AI 编程助手提供 38 种编辑级图表设计模板，生成自包含的 HTML+SVG 图表，避免常见的“Mermaid 风格”，提升视觉专业度。",
           "en": "Star cathrynlavery / diagram-design 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
         "todayHighlight": {
-          "zh": "今日新增 855 星，总星数达 3.1 万，位列全球趋势榜第七，其“设计师友好”定位吸引大量开发者。",
+          "zh": "今日新增 855 星，总星标超 3.1 万，位列全球趋势榜第七，凭借“设计师不讨厌的图表”定位，在开发者中快速传播。",
           "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 855 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,835 stars、2,048 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,835 stars and 2,048 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,861 stars、2,051 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,861 stars and 2,051 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 生成内容的美学升级需求，以及专业设计模板在开发者工具中的价值。",
+          "zh": "观察 AI 生成内容的审美升级需求，以及专业设计模板在开发工具中的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -495,26 +511,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源 AI 编程代理，支持在终端中与代码库交互，自动完成编码任务，兼容多种模型，是开发者效率工具。",
+          "zh": "开源 AI 编程代理，可自主完成代码编写、调试等任务，支持多种模型，是开发者常用的自动化编程工具。",
           "en": "The open source coding agent."
         },
-        "totalStars": 204778,
+        "totalStars": 204811,
         "language": "TypeScript",
         "dailyStars": 725,
         "chineseIntro": {
-          "zh": "开源 AI 编程代理，支持在终端中与代码库交互，自动完成编码任务，兼容多种模型，是开发者效率工具。",
+          "zh": "开源 AI 编程代理，可自主完成代码编写、调试等任务，支持多种模型，是开发者常用的自动化编程工具。",
           "en": "The open source coding agent."
         },
         "todayHighlight": {
-          "zh": "今日新增 725 星，总星数达 20.4 万，位列全球趋势榜第八，作为老牌开源项目持续获得关注，社区活跃。",
+          "zh": "今日新增 725 星，总星标超 20 万，位列全球趋势榜第八，作为老牌项目（16个月）持续在榜，社区活跃度高。",
           "en": "登上 GitHub Trending 日榜第 8 位, 总 star 数已达 204k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 725 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 204,778 stars、26,708 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 204,778 stars and 26,708 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 204,811 stars、26,711 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 204,811 stars and 26,711 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察开源 AI 编程代理的竞争格局，以及终端型工具与 IDE 型工具的差异化路径。",
+          "zh": "关注开源 AI 编程代理的竞争格局，以及其与闭源产品的差异化优势。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,26 +551,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "由 Nous Research 开发的 AI 代理，强调可成长性，支持多种模型与工具，适用于复杂任务自动化与个性化助手场景。",
+          "zh": "由 Nous Research 开发的 AI 智能体，强调“与你共同成长”，支持多种模型，提供桌面应用，适用于个人自动化助手场景。",
           "en": "The agent that grows with you"
         },
-        "totalStars": 242099,
+        "totalStars": 242126,
         "language": "Python",
         "dailyStars": 575,
         "chineseIntro": {
-          "zh": "由 Nous Research 开发的 AI 代理，强调可成长性，支持多种模型与工具，适用于复杂任务自动化与个性化助手场景。",
+          "zh": "由 Nous Research 开发的 AI 智能体，强调“与你共同成长”，支持多种模型，提供桌面应用，适用于个人自动化助手场景。",
           "en": "The agent that grows with you"
         },
         "todayHighlight": {
-          "zh": "今日新增 575 星，总星数达 24.2 万，位列全球趋势榜第四，作为研究机构的项目，其技术前瞻性持续吸引关注。",
+          "zh": "今日新增 575 星，总星标超 24 万，位列全球趋势榜第四，凭借研究机构的品牌和持续迭代，保持稳定增长。",
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 242k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 575 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 242,099 stars、49,756 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 242,099 stars and 49,756 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 242,126 stars、49,759 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 242,126 stars and 49,759 forks，topics: ai, ai-agent, ai-agents, anthropic, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注研究机构在 AI 代理领域的产品化能力，以及“成长型”代理的用户粘性设计。",
+          "zh": "关注研究机构在 AI Agent 领域的布局，以及“成长型”智能体的用户粘性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,26 +591,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源推理服务器，可根据硬件自动选择最佳本地模型，并兼容主流 AI 代理，实现完全本地、免费、私密的 AI 运行。",
+          "zh": "开源推理服务器，可根据硬件自动选择最佳本地模型，并接入现有 AI 代理（如 Claude Code、OpenCode 等），实现免费、私密、离线的 AI 体验。",
           "en": "Star magnitudedev / magnitude Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline."
         },
-        "totalStars": 3308,
+        "totalStars": 3326,
         "language": "TypeScript",
         "dailyStars": 674,
         "chineseIntro": {
-          "zh": "开源推理服务器，可根据硬件自动选择最佳本地模型，并兼容主流 AI 代理，实现完全本地、免费、私密的 AI 运行。",
+          "zh": "开源推理服务器，可根据硬件自动选择最佳本地模型，并接入现有 AI 代理（如 Claude Code、OpenCode 等），实现免费、私密、离线的 AI 体验。",
           "en": "Star magnitudedev / magnitude Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline."
         },
         "todayHighlight": {
-          "zh": "今日新增 674 星，总星数 3308，位列全球趋势榜第十四，项目仅三个月即获快速增长，反映本地 AI 需求旺盛。",
+          "zh": "今日新增 674 星，总星标超 3.3 千，位列全球趋势榜第 14，作为新项目（3个月）增长迅猛，反映本地化 AI 需求旺盛。",
           "en": "登上 GitHub Trending 日榜第 14 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 674 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,308 stars、238 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,308 stars and 238 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,326 stars、240 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,326 stars and 240 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注本地 AI 推理的市场机遇，以及“隐私优先”产品在 AI 代理生态中的切入点。",
+          "zh": "关注本地推理市场的发展，以及“即插即用”兼容策略对用户采纳的促进作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -609,8 +625,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "companyUpdates": [
       {
         "title": {
-          "zh": "Hacker News AI: Show HN: Vera – A memory log that leaves interpretation to AI agents",
-          "en": "Hacker News AI: Show HN: Vera – A memory log that leaves interpretation to AI agents"
+          "zh": "Hacker News AI: interpretation to AI agents",
+          "en": "Hacker News AI: interpretation to AI agents"
         },
         "category": {
           "zh": "公司动态",
@@ -621,19 +637,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Vera 是一个开源项目，为 AI 编码代理提供跨会话的轻量级共享记忆，以追加式日志存储决策和状态。该工具旨在解决代理在会话间丢失上下文的问题，提升长期任务的连续性。",
+          "zh": "开源项目 'call me vera' 为 AI 编码代理提供跨会话的轻量级共享内存，通过 SQLite 存储和 MCP 接口实现上下文持久化。",
           "en": "Article URL: https://ag3497120.github.io/call-me-vera/ Comments URL: https://news.ycombinator.com/item?id=49583685 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "Vera 是一个开源项目，为 AI 编码代理提供跨会话的轻量级共享记忆，以追加式日志存储决策和状态。该工具旨在解决代理在会话间丢失上下文的问题，提升长期任务的连续性。",
+          "zh": "开源项目 'call me vera' 为 AI 编码代理提供跨会话的轻量级共享内存，通过 SQLite 存储和 MCP 接口实现上下文持久化。",
           "en": "Article URL: https://ag3497120.github.io/call-me-vera/ Comments URL: https://news.ycombinator.com/item?id=49583685 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "Vera 代表了社区对 AI 代理记忆机制的探索，可能影响未来代理框架的设计方向。",
-          "en": "Vera 代表了社区对 AI 代理记忆机制的探索，可能影响未来代理框架的设计方向。"
+          "zh": "该项目展示了代理记忆管理的新思路，可能影响未来 AI 代理的协作方式。",
+          "en": "该项目展示了代理记忆管理的新思路，可能影响未来 AI 代理的协作方式。"
         },
         "pmInsight": {
-          "zh": "关注代理记忆管理，可评估集成此类记忆层以增强代理在复杂任务中的表现。",
+          "zh": "关注此类记忆层设计，可探索提升代理连续性和可追溯性的产品方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -641,43 +657,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Hacker News AI",
             "url": "https://ag3497120.github.io/call-me-vera/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News LLM: LLM-as-a-Verifier",
-          "en": "Hacker News LLM: LLM-as-a-Verifier"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "LLM-as-a-Verifier 是一个通用框架，无需额外训练即可为任何代理提供细粒度反馈，在编码、机器人和医疗基准上达到 SOTA。该框架通过验证器模式提升代理性能，降低了对专门训练模型的依赖。",
-          "en": "Article URL: https://github.com/llm-as-a-verifier/llm-as-a-verifier Comments URL: https://news.ycombinator.com/item?id=49583167 Points: 2 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "LLM-as-a-Verifier 是一个通用框架，无需额外训练即可为任何代理提供细粒度反馈，在编码、机器人和医疗基准上达到 SOTA。该框架通过验证器模式提升代理性能，降低了对专门训练模型的依赖。",
-          "en": "Article URL: https://github.com/llm-as-a-verifier/llm-as-a-verifier Comments URL: https://news.ycombinator.com/item?id=49583167 Points: 2 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "该框架展示了验证器在代理系统中的潜力，可能成为提升代理可靠性的通用方法。",
-          "en": "该框架展示了验证器在代理系统中的潜力，可能成为提升代理可靠性的通用方法。"
-        },
-        "pmInsight": {
-          "zh": "考虑在代理工作流中集成验证器模块，以低成本提高输出质量，尤其适用于高风险任务。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Hacker News LLM",
-            "url": "https://github.com/llm-as-a-verifier/llm-as-a-verifier"
           }
         ]
       },
@@ -695,19 +674,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot 本周更新：新增 Claude Fable 5.1 和 Gemini 3.8 Flash 模型支持，并扩展内容排除功能以保护敏感代码。VS Code 中 Agent Merge 进入公开预览，可自动解决 PR 反馈、失败检查和合并冲突。",
+          "zh": "GitHub Copilot 本周更新：新增 Claude Fable 5.1 和 Gemini 3.8 Flash 模型选择，并支持内容排除以保护敏感代码。",
           "en": "This week, GitHub Copilot expands model choice and content protections, while VS Code adds new ways to manage agent sessions and get pull requests merge-ready. GitHub Copilot, general Claude Fable&#8230; The post GitHub Copilot weekly releases — August 31 appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 本周更新：新增 Claude Fable 5.1 和 Gemini 3.8 Flash 模型支持，并扩展内容排除功能以保护敏感代码。VS Code 中 Agent Merge 进入公开预览，可自动解决 PR 反馈、失败检查和合并冲突。",
+          "zh": "GitHub Copilot 本周更新：新增 Claude Fable 5.1 和 Gemini 3.8 Flash 模型选择，并支持内容排除以保护敏感代码。",
           "en": "This week, GitHub Copilot expands model choice and content protections, while VS Code adds new ways to manage agent sessions and get pull requests merge-ready. GitHub Copilot, general Claude Fable&#8230; The post GitHub Copilot weekly releases — August 31 appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "GitHub Copilot 持续集成多模型和自动化功能，强化其在 AI 编码助手市场的竞争力。",
-          "en": "GitHub Copilot 持续集成多模型和自动化功能，强化其在 AI 编码助手市场的竞争力。"
+          "zh": "模型选择扩展和内容保护增强，提升 Copilot 在企业和代理工作流中的适用性。",
+          "en": "模型选择扩展和内容保护增强，提升 Copilot 在企业和代理工作流中的适用性。"
         },
         "pmInsight": {
-          "zh": "利用 Agent Merge 自动化 PR 流程，可显著减少开发者手动操作，提升团队效率。",
+          "zh": "跟进模型选择功能，评估如何为用户提供更灵活的模型切换和成本优化。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -732,19 +711,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "GitHub 推出 Project HydraFusion 研究预览，通过运行时编排多模型（如起草、批评、级联）来执行编码任务，在离线评估中匹配或超越 Opus 5 基线并降低成本。该功能在 GitHub Copilot 中可用。",
+          "zh": "GitHub 推出 Project HydraFusion 研究预览，通过多模型编排实现前沿质量，同时降低工作流成本。",
           "en": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 推出 Project HydraFusion 研究预览，通过运行时编排多模型（如起草、批评、级联）来执行编码任务，在离线评估中匹配或超越 Opus 5 基线并降低成本。该功能在 GitHub Copilot 中可用。",
+          "zh": "GitHub 推出 Project HydraFusion 研究预览，通过多模型编排实现前沿质量，同时降低工作流成本。",
           "en": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "HydraFusion 展示了多模型编排的潜力，可能改变 AI 编码助手的成本与性能平衡。",
-          "en": "HydraFusion 展示了多模型编排的潜力，可能改变 AI 编码助手的成本与性能平衡。"
+          "zh": "HydraFusion 代表模型路由和编排的新方向，可能改变编码助手的成本效益平衡。",
+          "en": "HydraFusion 代表模型路由和编排的新方向，可能改变编码助手的成本效益平衡。"
         },
         "pmInsight": {
-          "zh": "探索多模型路由策略，根据任务复杂度动态选择模型，以优化成本与质量。",
+          "zh": "探索多模型编排策略，在保证质量的前提下优化成本，可考虑类似的路由机制。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -769,19 +748,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 宣布投入 10 亿美元推出 Daybreak for Frontline Defenders 计划，为关键基础设施提供前沿网络 AI、培训和支持，以增强网络安全防御能力。",
+          "zh": "OpenAI 宣布投入 10 亿美元启动 Daybreak for Frontline Defenders 计划，为关键服务提供前沿网络 AI 和培训。",
           "en": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
         },
         "chineseIntro": {
-          "zh": "OpenAI 宣布投入 10 亿美元推出 Daybreak for Frontline Defenders 计划，为关键基础设施提供前沿网络 AI、培训和支持，以增强网络安全防御能力。",
+          "zh": "OpenAI 宣布投入 10 亿美元启动 Daybreak for Frontline Defenders 计划，为关键服务提供前沿网络 AI 和培训。",
           "en": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
         },
         "todayHighlight": {
-          "zh": "OpenAI 大规模投资网络安全领域，凸显 AI 在安全防御中的战略地位，可能引发行业跟进。",
-          "en": "OpenAI 大规模投资网络安全领域，凸显 AI 在安全防御中的战略地位，可能引发行业跟进。"
+          "zh": "此举显示 AI 安全领域竞争加剧，OpenAI 强化其在网络防御中的角色。",
+          "en": "此举显示 AI 安全领域竞争加剧，OpenAI 强化其在网络防御中的角色。"
         },
         "pmInsight": {
-          "zh": "关注 AI 安全市场，评估将 AI 能力集成到安全产品中的机会，尤其是针对政府和企业客户。",
+          "zh": "关注 AI 安全市场机会，可考虑针对关键基础设施的定制化安全解决方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -806,19 +785,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Google 推出 Fairwind Program，为政府和可信合作伙伴提供有限的网络防御工具访问权限，利用 AI 进行主动防御。该计划旨在加强关键基础设施的安全防护。",
+          "zh": "Google 推出 Fairwind 计划，为政府和可信伙伴提供网络防御工具，强调主动防御。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-8__fairwind-program__b.max-600x600.format-webp.webp\">The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools."
         },
         "chineseIntro": {
-          "zh": "Google 推出 Fairwind Program，为政府和可信合作伙伴提供有限的网络防御工具访问权限，利用 AI 进行主动防御。该计划旨在加强关键基础设施的安全防护。",
+          "zh": "Google 推出 Fairwind 计划，为政府和可信伙伴提供网络防御工具，强调主动防御。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3-8__fairwind-program__b.max-600x600.format-webp.webp\">The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools."
         },
         "todayHighlight": {
-          "zh": "Google 与 OpenAI 同日发布网络安全举措，显示科技巨头在 AI 安全领域的竞争加剧。",
-          "en": "Google 与 OpenAI 同日发布网络安全举措，显示科技巨头在 AI 安全领域的竞争加剧。"
+          "zh": "与 OpenAI 的 Daybreak 计划形成竞争，显示科技巨头在 AI 网络安全领域的布局。",
+          "en": "与 OpenAI 的 Daybreak 计划形成竞争，显示科技巨头在 AI 网络安全领域的布局。"
         },
         "pmInsight": {
-          "zh": "评估政府和企业安全需求，考虑与云服务商合作提供 AI 驱动的主动防御解决方案。",
+          "zh": "评估政府和企业客户的安全需求，开发符合合规的主动防御产品。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -826,6 +805,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Google AI",
             "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Product Hunt AI: Agentic Video Understanding in Gemini",
+          "en": "Product Hunt AI: Agentic Video Understanding in Gemini"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Gemini 推出代理式视频理解功能，可对视频内容进行智能分析，提供更深入的洞察。",
+          "en": "<p> Agentic video analysis for faster, smarter Gemini insights </p> <p> <a href=\"https://www.producthunt.com/products/google?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1239740?app_id=339\">Link</a> </p>"
+        },
+        "chineseIntro": {
+          "zh": "Gemini 推出代理式视频理解功能，可对视频内容进行智能分析，提供更深入的洞察。",
+          "en": "<p> Agentic video analysis for faster, smarter Gemini insights </p> <p> <a href=\"https://www.producthunt.com/products/google?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1239740?app_id=339\">Link</a> </p>"
+        },
+        "todayHighlight": {
+          "zh": "视频理解能力增强，可能推动多模态 AI 在视频分析领域的应用。",
+          "en": "视频理解能力增强，可能推动多模态 AI 在视频分析领域的应用。"
+        },
+        "pmInsight": {
+          "zh": "探索视频理解在内容审核、媒体分析等场景的应用，开发差异化功能。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Product Hunt AI",
+            "url": "https://www.producthunt.com/products/google"
           }
         ]
       }
