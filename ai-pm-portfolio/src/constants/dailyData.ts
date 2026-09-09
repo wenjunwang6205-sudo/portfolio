@@ -44,118 +44,106 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI Agent 生态持续升温：技能、记忆与浏览器工具成焦点",
-      "en": "AI Agent Ecosystem Heats Up: Skills, Memory, and Browser Tools in Focus"
+      "zh": "AI 代理生态升温：记忆、上下文与技能成为关键竞争点",
+      "en": "AI Agent Ecosystem Heats Up: Memory, Context, and Skills Become Key Competitive Points"
     },
     "editorNote": {
-      "zh": "今日 GitHub 趋势显示 AI Agent 生态持续升温，技能包、记忆管理和浏览器自动化工具成为开发者关注焦点。同时，OpenAI 展示 GPT-5.6 Sol 在量子计算实验中的应用，GitHub 发布企业版更新，Anthropic 与英国测试机构的分歧引发讨论。",
-      "en": "Today's GitHub trends show the AI agent ecosystem heating up, with skills, memory management, and browser automation tools drawing developer attention. Meanwhile, OpenAI showcases GPT-5.6 Sol in quantum computing experiments, GitHub releases an enterprise update, and Anthropic's disagreement with UK testing agency sparks discussion."
+      "zh": "今日 GitHub 趋势榜被 AI 代理相关项目占据，从运行框架、记忆管理到技能增强，生态工具链正在快速完善。同时，OpenAI 发布量子计算实验案例，GitHub 推出企业版更新，显示 AI 代理正从开发工具向专业领域渗透。",
+      "en": "Today's GitHub trending list is dominated by AI agent-related projects, from runtime frameworks, memory management to skill enhancement, the ecosystem toolchain is rapidly improving. Meanwhile, OpenAI released a quantum computing experiment case, and GitHub launched an enterprise update, showing AI agents are penetrating from development tools to professional fields."
     },
     "keyTakeaway": {
-      "zh": "AI Agent 正从“能对话”走向“能干活”，技能包、记忆与浏览器自动化成为提升代理实用性的关键基础设施，开发者生态围绕“效率”与“自动化”快速演进。",
-      "en": "AI agents are moving from 'chat' to 'work', with skills, memory, and browser automation becoming key infrastructure for practicality. The developer ecosystem is rapidly evolving around 'efficiency' and 'automation'."
+      "zh": "AI 代理的竞争焦点正从模型能力转向工程化基础设施，记忆、上下文优化和技能生态成为提升代理实用性的关键。",
+      "en": "The competitive focus of AI agents is shifting from model capabilities to engineering infrastructure, with memory, context optimization, and skill ecosystems becoming key to improving agent practicality."
     },
     "signals": [
       {
         "title": {
-          "zh": "AI 代理技能包生态升温，覆盖编程、营销、图表等多领域",
-          "en": "AI Agent Skills Ecosystem Explodes, Covering Coding, Marketing, Diagrams and More"
+          "zh": "AI 代理记忆与上下文优化项目集中涌现",
+          "en": "AI Agent Memory and Context Optimization Projects Emerge Collectively"
         },
         "category": {
           "zh": "开发者工具",
           "en": "Developer Tools"
         },
         "summary": {
-          "zh": "今日 GitHub 趋势榜上，多个技能包项目表现亮眼：ECC 提供性能优化技能，diagram-design 提供 38 种图表类型，i-have-adhd 提供简洁输出技能，marketingskills 提供营销自动化技能，OpenAI 官方也发布了 skills 仓库（虽已弃用）。这些项目日增星标数百至上千，显示开发者对扩展 AI 代理能力的强烈需求。",
-          "en": "On today's GitHub trending list, multiple skills projects stand out: ECC offers performance optimization skills, diagram-design provides 38 diagram types, i-have-adhd offers concise output skills, marketingskills provides marketing automation skills, and OpenAI officially released a skills repo (though deprecated). These projects gained hundreds to thousands of stars daily, showing strong developer demand for extending AI agent capabilities."
+          "zh": "okf-agent-memory 提供基于 Git 的持久化记忆，减少 80% Token 消耗；context-mode 通过沙箱工具输出减少 98% Token 占用，并支持跨平台路由。两者均针对 AI 代理的上下文限制和记忆缺失问题。",
+          "en": "okf-agent-memory provides Git-based persistent memory, reducing token consumption by 80%; context-mode reduces token usage by 98% through sandboxed tool outputs and supports cross-platform routing. Both address context limits and memory gaps in AI agents."
         },
         "pmInsight": {
-          "zh": "技能包模式正在成为 AI 代理功能扩展的主流方式，类似手机应用商店的生态雏形已现。PM 应关注技能包的可发现性、标准化和商业化机会，考虑构建技能市场或集成第三方技能。",
-          "en": "The skills model is becoming the mainstream way to extend AI agent functionality, resembling an app store ecosystem in its infancy. PMs should focus on discoverability, standardization, and monetization opportunities for skills, considering building a skills marketplace or integrating third-party skills."
+          "zh": "记忆和上下文是 AI 代理实际落地的主要瓶颈，产品经理应关注如何通过工程手段降低 Token 成本、提升长期任务的一致性，这将成为代理平台的核心卖点。",
+          "en": "Memory and context are major bottlenecks for AI agent deployment. PMs should focus on engineering solutions to reduce token costs and improve consistency in long-horizon tasks, which will become core selling points for agent platforms."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
-          },
-          {
-            "label": "cathrynlavery/diagram-design",
-            "url": "https://github.com/cathrynlavery/diagram-design"
-          },
-          {
-            "label": "ayghri/i-have-adhd",
-            "url": "https://github.com/ayghri/i-have-adhd"
-          },
-          {
-            "label": "coreyhaines31/marketingskills",
-            "url": "https://github.com/coreyhaines31/marketingskills"
-          },
-          {
-            "label": "openai/skills",
-            "url": "https://github.com/openai/skills"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "AI 代理记忆与上下文管理成为效率瓶颈，新方案涌现",
-          "en": "AI Agent Memory and Context Management Become Efficiency Bottlenecks, New Solutions Emerge"
-        },
-        "category": {
-          "zh": "AI 基础设施",
-          "en": "AI Infrastructure"
-        },
-        "summary": {
-          "zh": "okf-agent-memory 提供基于 Git 的持久化记忆，context-mode 通过沙箱工具输出减少 98% 数据并支持跨平台路由，两者均登上增长榜。同时，deepseek-harness 作为 DeepSeek 官方框架，采用插件化架构，也强调灵活扩展。这些项目聚焦于解决 AI 代理的上下文限制和记忆持久化问题。",
-          "en": "okf-agent-memory provides Git-based persistent memory, and context-mode reduces data by 98% via sandboxed tool output and supports cross-platform routing, both on the trending list. Meanwhile, deepseek-harness, DeepSeek's official framework, adopts a plugin-based architecture and emphasizes flexible extension. These projects focus on solving context limits and memory persistence for AI agents."
-        },
-        "pmInsight": {
-          "zh": "上下文窗口限制是 AI 代理实际应用的主要障碍，记忆和上下文管理方案将决定代理的复杂任务处理能力。PM 应评估这些方案是否可集成到产品中，以提升代理的连续性和效率，并关注标准化趋势。",
-          "en": "Context window limits are a major obstacle to practical AI agent use. Memory and context management solutions will determine an agent's ability to handle complex tasks. PMs should evaluate integrating these solutions to improve continuity and efficiency, and watch for standardization trends."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "okf-memory/okf-agent-memory",
+            "label": "okf-agent-memory",
             "url": "https://github.com/okf-memory/okf-agent-memory"
           },
           {
-            "label": "mksglu/context-mode",
+            "label": "context-mode",
             "url": "https://github.com/mksglu/context-mode"
-          },
-          {
-            "label": "deepseek-ai/deepseek-harness",
-            "url": "https://github.com/deepseek-ai/deepseek-harness"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI 代理浏览器自动化工具升温，反检测能力受关注",
-          "en": "AI Agent Browser Automation Tools Heat Up, Anti-Detection Capabilities Gain Attention"
+          "zh": "AI 代理技能生态快速扩展，覆盖营销、图表、专注力等垂直场景",
+          "en": "AI Agent Skill Ecosystem Rapidly Expands, Covering Marketing, Diagrams, Focus, and Other Vertical Scenarios"
         },
         "category": {
-          "zh": "自动化工具",
-          "en": "Automation Tools"
+          "zh": "AI 应用",
+          "en": "AI Applications"
         },
         "summary": {
-          "zh": "camofox-browser 专为 AI 代理设计，可绕过 Cloudflare 等反爬机制，今日新增 871 星，总星数破万。同时，mobilecode 针对移动应用开发优化，可自动构建并预览 iOS/Android 项目。这些工具反映了 AI 代理在网页交互和移动端开发中的实际需求。",
-          "en": "camofox-browser, designed for AI agents to bypass anti-bot mechanisms like Cloudflare, gained 871 stars today, surpassing 10k total. Meanwhile, mobilecode optimizes for mobile app development, auto-building and previewing iOS/Android projects. These tools reflect real needs for AI agents in web interaction and mobile development."
+          "zh": "marketingskills 提供营销技能集，diagram-design 提供 38 种图表类型，i-have-adhd 提供 ADHD 友好输出，均针对特定场景优化 AI 代理行为，且今日星标增长显著。",
+          "en": "marketingskills provides marketing skill sets, diagram-design offers 38 diagram types, and i-have-adhd provides ADHD-friendly outputs, all optimizing AI agent behavior for specific scenarios, with significant star growth today."
         },
         "pmInsight": {
-          "zh": "AI 代理需要与网页和移动应用交互，但反爬机制和平台限制是主要障碍。PM 应关注此类工具的法律合规风险，并探索在合规前提下提升代理自动化能力的方案，例如与平台合作或使用官方 API。",
-          "en": "AI agents need to interact with web and mobile apps, but anti-bot mechanisms and platform restrictions are major obstacles. PMs should be aware of legal compliance risks and explore ways to enhance automation within compliance, such as partnering with platforms or using official APIs."
+          "zh": "技能市场正在形成，产品经理可考虑构建开放技能平台，鼓励第三方开发者贡献垂直技能，以低成本覆盖长尾场景，增强代理的通用性和用户粘性。",
+          "en": "A skill marketplace is emerging. PMs should consider building an open skill platform, encouraging third-party developers to contribute vertical skills, covering long-tail scenarios at low cost, and enhancing agent versatility and user stickiness."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "jo-inc/camofox-browser",
-            "url": "https://github.com/jo-inc/camofox-browser"
+            "label": "marketingskills",
+            "url": "https://github.com/coreyhaines31/marketingskills"
           },
           {
-            "label": "hsandhu/mobilecode",
-            "url": "https://github.com/hsandhu/mobilecode"
+            "label": "diagram-design",
+            "url": "https://github.com/cathrynlavery/diagram-design"
+          },
+          {
+            "label": "i-have-adhd",
+            "url": "https://github.com/ayghri/i-have-adhd"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "OpenAI 与 Google 将 AI 代理引入量子计算与网络安全等专业领域",
+          "en": "OpenAI and Google Introduce AI Agents into Professional Fields like Quantum Computing and Cybersecurity"
+        },
+        "category": {
+          "zh": "行业动态",
+          "en": "Industry News"
+        },
+        "summary": {
+          "zh": "OpenAI 发布 GPT-5.6 Sol 辅助量子计算实验的案例，Google AI 推出面向政府与企业的主动网络防御项目 FAIRWIND，显示 AI 代理正向高价值专业场景渗透。",
+          "en": "OpenAI released a case of GPT-5.6 Sol assisting quantum computing experiments, and Google AI launched FAIRWIND, a proactive cyber defense program for governments and enterprises, showing AI agents are penetrating high-value professional scenarios."
+        },
+        "pmInsight": {
+          "zh": "专业领域对 AI 代理的容错性和可解释性要求更高，产品经理应探索与行业专家合作，开发符合专业标准的代理解决方案，这可能成为差异化竞争点。",
+          "en": "Professional fields demand higher fault tolerance and explainability from AI agents. PMs should explore collaborations with domain experts to develop agent solutions that meet professional standards, which could become a differentiator."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI: How GPT-5.6 Sol helps run quantum computing experiments",
+            "url": "https://openai.com/index/codex-quantum-computing-experiments"
+          },
+          {
+            "label": "Google AI: Proactive cyber defense for governments and enterprises",
+            "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/"
           }
         ]
       }
@@ -163,59 +151,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "构建企业级 AI 代理技能市场",
-          "en": "Build an Enterprise AI Agent Skills Marketplace"
+          "zh": "构建面向 AI 代理的上下文与记忆优化中间层",
+          "en": "Build a Middle Layer for Context and Memory Optimization for AI Agents"
         },
         "category": {
-          "zh": "平台机会",
-          "en": "Platform Opportunity"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于技能包生态的升温，企业需要统一管理、分发和治理 AI 代理技能。可验证假设：企业用户愿意为经过验证、安全且合规的技能包付费，并需要一个集中平台来管理技能版本和权限。",
-          "en": "Based on the explosion of skills ecosystem, enterprises need unified management, distribution, and governance of AI agent skills. Testable hypothesis: enterprise users are willing to pay for verified, secure, and compliant skills, and need a centralized platform to manage skill versions and permissions."
+          "zh": "基于 okf-agent-memory 和 context-mode 的成功，可开发统一的代理记忆与上下文管理服务，提供 API 供不同代理框架集成，降低 Token 成本并提升任务连续性。",
+          "en": "Based on the success of okf-agent-memory and context-mode, develop a unified agent memory and context management service, providing APIs for integration with different agent frameworks, reducing token costs and improving task continuity."
         },
         "pmInsight": {
-          "zh": "PM 可探索构建面向企业的技能市场，提供技能审核、安全扫描、版本管理和使用分析，类似于企业级应用商店。初期可聚焦于编程和营销等高频场景，与技能开发者分成。",
-          "en": "PMs can explore building an enterprise-focused skills marketplace offering skill review, security scanning, version management, and usage analytics, similar to an enterprise app store. Initially focus on high-frequency scenarios like coding and marketing, with revenue sharing for skill developers."
+          "zh": "假设：开发者愿意为节省 Token 成本和提升代理稳定性付费。验证方法：提供免费层，监测集成率与付费转化，并对比集成前后的 Token 消耗。",
+          "en": "Hypothesis: Developers are willing to pay for token cost savings and improved agent stability. Validation: Offer a free tier, monitor integration rate and paid conversion, and compare token consumption before and after integration."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
+            "label": "okf-agent-memory",
+            "url": "https://github.com/okf-memory/okf-agent-memory"
           },
           {
-            "label": "openai/skills",
-            "url": "https://github.com/openai/skills"
+            "label": "context-mode",
+            "url": "https://github.com/mksglu/context-mode"
           }
         ]
       },
       {
         "title": {
-          "zh": "开发 AI 代理记忆即服务（Memory-as-a-Service）",
-          "en": "Develop Memory-as-a-Service for AI Agents"
+          "zh": "打造垂直领域的 AI 代理技能市场",
+          "en": "Create a Vertical AI Agent Skill Marketplace"
         },
         "category": {
-          "zh": "AI 基础设施",
-          "en": "AI Infrastructure"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "记忆和上下文管理是 AI 代理长期运行的刚需，okf-agent-memory 和 context-mode 等开源方案已出现，但企业级应用需要更可靠、可扩展的托管服务。可验证假设：AI 代理开发者愿意为托管的记忆服务付费，以获得跨会话持久化、低延迟和安全性。",
-          "en": "Memory and context management are essential for long-running AI agents. Open-source solutions like okf-agent-memory and context-mode exist, but enterprise applications need more reliable, scalable managed services. Testable hypothesis: AI agent developers are willing to pay for a managed memory service offering cross-session persistence, low latency, and security."
+          "zh": "鉴于 marketing、diagram、ADHD 等技能项目快速获得星标，可构建一个技能市场平台，让开发者上传并分享针对特定场景的代理技能，平台提供分发和变现机制。",
+          "en": "Given the rapid star growth of marketing, diagram, ADHD skill projects, build a skill marketplace platform where developers can upload and share agent skills for specific scenarios, with distribution and monetization mechanisms."
         },
         "pmInsight": {
-          "zh": "PM 可考虑提供 Memory-as-a-Service，集成主流 AI 代理框架，提供简单 API 和 SDK，支持自动记忆提取、索引和检索。初期可免费增值，吸引开发者，后续按存储和查询量收费。",
-          "en": "PMs can consider offering Memory-as-a-Service, integrating with mainstream AI agent frameworks, providing simple APIs and SDKs, and supporting automatic memory extraction, indexing, and retrieval. Start with freemium to attract developers, then charge based on storage and query volume."
+          "zh": "假设：开发者社区愿意为垂直技能付费或贡献。验证方法：先聚合现有技能，观察下载量与贡献者数量，再引入付费或捐赠模式。",
+          "en": "Hypothesis: The developer community is willing to pay for or contribute vertical skills. Validation: First aggregate existing skills, observe download counts and contributor numbers, then introduce paid or donation models."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "okf-memory/okf-agent-memory",
-            "url": "https://github.com/okf-memory/okf-agent-memory"
+            "label": "marketingskills",
+            "url": "https://github.com/coreyhaines31/marketingskills"
           },
           {
-            "label": "mksglu/context-mode",
-            "url": "https://github.com/mksglu/context-mode"
+            "label": "diagram-design",
+            "url": "https://github.com/cathrynlavery/diagram-design"
+          },
+          {
+            "label": "i-have-adhd",
+            "url": "https://github.com/ayghri/i-have-adhd"
           }
         ]
       }
@@ -231,26 +223,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 推出的开源 AI Agent 运行框架，采用“一切皆插件”的架构，支持通过插件灵活扩展功能，适用于构建复杂的 AI 代理应用。",
+          "zh": "DeepSeek 推出的开源 AI Agent 运行框架，采用“一切皆插件”的架构，基于 Cordis 构建，支持灵活扩展，用于构建和运行智能体应用。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 216515,
+        "totalStars": 216579,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 推出的开源 AI Agent 运行框架，采用“一切皆插件”的架构，支持通过插件灵活扩展功能，适用于构建复杂的 AI 代理应用。",
+          "zh": "DeepSeek 推出的开源 AI Agent 运行框架，采用“一切皆插件”的架构，基于 Cordis 构建，支持灵活扩展，用于构建和运行智能体应用。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "作为 DeepSeek 官方项目，创建仅一个月便获得超 21 万星标，今日新增星标数据暂缺，但整体热度极高，持续吸引开发者关注。",
+          "zh": "作为 DeepSeek 官方项目，发布仅一个月便获得 21.6 万星标，今日新增星标数据暂缺，但持续受到开发者社区高度关注。",
           "en": "创建仅约 1 个月便已积累 216k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 216,515 stars、25,595 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 216,515 stars and 25,595 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 216,579 stars、25,602 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 216,579 stars and 25,602 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方如何通过插件化架构构建生态，以及如何利用品牌效应快速获得社区认可。",
+          "zh": "关注官方框架如何通过插件化设计降低 AI Agent 开发门槛，以及其生态构建策略。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -271,18 +263,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程代理提供基于 Git 的持久化记忆，实现快速搜索和上下文管理，无需外部数据库，可大幅减少 token 消耗。",
+          "zh": "为 AI 编程代理提供基于 Git 的持久化记忆，实现 Google OKF v0.2 规范，内置 MCP 服务器，可减少 80% 的 Token 消耗，无需外部数据库。",
           "en": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go."
         },
         "totalStars": 498,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "为 AI 编程代理提供基于 Git 的持久化记忆，实现快速搜索和上下文管理，无需外部数据库，可大幅减少 token 消耗。",
+          "zh": "为 AI 编程代理提供基于 Git 的持久化记忆，实现 Google OKF v0.2 规范，内置 MCP 服务器，可减少 80% 的 Token 消耗，无需外部数据库。",
           "en": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go."
         },
         "todayHighlight": {
-          "zh": "今日登上增长榜，创建仅一个月已获近 500 星，作为新兴的 Agent 记忆方案，正随着 AI 编程工具的发展而受到关注。",
+          "zh": "作为新兴项目，创建仅一个月便获得 498 星标，今日新增数据暂缺，但因其解决 Agent 记忆痛点而快速升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -290,7 +282,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 498 stars and 29 forks，topics: agent-memory, ai-agents, bm25, coding-agents, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程代理的“记忆”需求，以及如何通过轻量级方案解决 token 成本问题。",
+          "zh": "观察 AI Agent 记忆管理如何成为提升开发效率的关键环节，以及 Git 原生方案的市场接受度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -311,26 +303,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于 opencode 的 AI 编程代理，专为移动应用开发优化，可自动构建并预览 iOS 和 Android 项目，支持 React Native 等跨平台框架。",
+          "zh": "基于 opencode 的 AI 编程代理，专为移动开发优化，可自动构建并预览 iOS 和 Android 项目，支持 React Native 等跨平台框架。",
           "en": "mobilecode is a fork of opencode that builds and previews iOS and Android projects"
         },
-        "totalStars": 225,
+        "totalStars": 226,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "基于 opencode 的 AI 编程代理，专为移动应用开发优化，可自动构建并预览 iOS 和 Android 项目，支持 React Native 等跨平台框架。",
+          "zh": "基于 opencode 的 AI 编程代理，专为移动开发优化，可自动构建并预览 iOS 和 Android 项目，支持 React Native 等跨平台框架。",
           "en": "mobilecode is a fork of opencode that builds and previews iOS and Android projects"
         },
         "todayHighlight": {
-          "zh": "今日登上增长榜，创建仅一个月已获 225 星，填补了 AI 编程代理在移动端领域的空白，吸引移动开发者关注。",
+          "zh": "创建仅一个月，已获得 226 星标，今日新增数据暂缺，但作为移动端 AI 编程工具的新选择，正在吸引开发者关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 225 stars、26 forks，topics: ai-agents, ai-coding, ai-tools, androidstudio, xcode，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 225 stars and 26 forks，topics: ai-agents, ai-coding, ai-tools, androidstudio, xcode, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 226 stars、27 forks，topics: ai-agents, ai-coding, ai-tools, androidstudio, xcode，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 226 stars and 27 forks，topics: ai-agents, ai-coding, ai-tools, androidstudio, xcode, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 编程工具向垂直领域（如移动开发）的延伸，以及 fork 项目如何通过差异化定位获得市场。",
+          "zh": "关注 AI 编程工具向移动端细分场景渗透的趋势，以及 fork 项目的差异化机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -351,26 +343,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Claude Code、Codex 等 AI 编程代理的性能优化系统，提供技能、记忆、安全等功能，提升代理的效率和可靠性。",
+          "zh": "面向 Claude Code、Codex 等 AI 编程代理的性能优化系统，提供技能、记忆、安全等功能，提升代理开发效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 254456,
+        "totalStars": 254523,
         "language": "JavaScript",
         "dailyStars": 1427,
         "chineseIntro": {
-          "zh": "面向 Claude Code、Codex 等 AI 编程代理的性能优化系统，提供技能、记忆、安全等功能，提升代理的效率和可靠性。",
+          "zh": "面向 Claude Code、Codex 等 AI 编程代理的性能优化系统，提供技能、记忆、安全等功能，提升代理开发效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日新增 1427 星，总星数超 25 万，持续位列全球趋势榜，作为 Agent 生态的基础设施，热度居高不下。",
+          "zh": "今日新增 1427 星标，总星标达 25.4 万，位列全球趋势榜第四，持续获得开发者社区的热烈追捧。",
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 254k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,427 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 254,456 stars、38,125 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 254,456 stars and 38,125 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 254,523 stars、38,131 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 254,523 stars and 38,131 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 代理工具链的标准化趋势，以及“操作系统”级产品如何整合碎片化需求。",
+          "zh": "观察 AI 代理工具链的生态化发展，以及性能优化系统如何成为刚需。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -391,26 +383,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 代理设计的隐形浏览器，可绕过 Cloudflare 等反爬机制，支持 Puppeteer/Playwright 的无缝替换，用于网页自动化与数据采集。",
+          "zh": "为 AI 代理设计的隐形无头浏览器，可绕过 Cloudflare 等反爬机制，兼容 Puppeteer/Playwright，用于网页自动化与数据采集。",
           "en": "Star jo-inc / camofox-browser Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement."
         },
-        "totalStars": 10624,
+        "totalStars": 10659,
         "language": "JavaScript",
         "dailyStars": 871,
         "chineseIntro": {
-          "zh": "为 AI 代理设计的隐形浏览器，可绕过 Cloudflare 等反爬机制，支持 Puppeteer/Playwright 的无缝替换，用于网页自动化与数据采集。",
+          "zh": "为 AI 代理设计的隐形无头浏览器，可绕过 Cloudflare 等反爬机制，兼容 Puppeteer/Playwright，用于网页自动化与数据采集。",
           "en": "Star jo-inc / camofox-browser Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping. Drop-in Puppeteer/Playwright replacement."
         },
         "todayHighlight": {
-          "zh": "今日新增 871 星，总星数破万，位列全球趋势榜，随着 AI 代理对网页交互需求的增加，该工具持续升温。",
+          "zh": "今日新增 871 星标，总星标 1 万+，位列全球趋势榜第十，因解决 AI 代理访问受限网站的需求而快速增长。",
           "en": "登上 GitHub Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 871 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,624 stars、1,060 forks，topics: ai-agent, anti-bot, antidetect-browser, automation, bot-detection，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,624 stars and 1,060 forks，topics: ai-agent, anti-bot, antidetect-browser, automation, bot-detection, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 10,659 stars、1,061 forks，topics: ai-agent, anti-bot, antidetect-browser, automation, bot-detection，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 10,659 stars and 1,061 forks，topics: ai-agent, anti-bot, antidetect-browser, automation, bot-detection, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 代理在真实网页环境中的落地挑战，以及反检测技术的商业价值。",
+          "zh": "关注 AI 代理在真实网络环境中的合规与反检测需求，以及此类工具的市场空间。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -431,26 +423,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 等 AI 编程代理提供 38 种编辑级图表类型，生成自包含的 HTML+SVG，避免常见的 Mermaid 样式问题，输出专业美观的图表。",
+          "zh": "为 Claude Code、Codex 等 AI 代理提供 38 种编辑级图表类型，基于 HTML+SVG，避免使用 Mermaid 生成低质量图表。",
           "en": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
-        "totalStars": 35215,
+        "totalStars": 35361,
         "language": "HTML",
         "dailyStars": 710,
         "chineseIntro": {
-          "zh": "为 Claude Code 等 AI 编程代理提供 38 种编辑级图表类型，生成自包含的 HTML+SVG，避免常见的 Mermaid 样式问题，输出专业美观的图表。",
+          "zh": "为 Claude Code、Codex 等 AI 代理提供 38 种编辑级图表类型，基于 HTML+SVG，避免使用 Mermaid 生成低质量图表。",
           "en": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
         "todayHighlight": {
-          "zh": "今日新增 710 星，总星数超 3.5 万，位列全球趋势榜，因其解决了 AI 生成图表“丑”的痛点而广受欢迎。",
+          "zh": "今日新增 710 星标，总星标 3.5 万，位列全球趋势榜第二，因提升 AI 生成图表质量而广受好评。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 710 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 35,215 stars、2,216 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 35,215 stars and 2,216 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 35,361 stars、2,222 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 35,361 stars and 2,222 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 编程代理在“设计感”方面的需求，以及如何通过模板化方案提升输出质量。",
+          "zh": "观察 AI 生成内容质量提升的需求，以及专业设计资源如何赋能 AI 代理。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -471,26 +463,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程代理添加“ADHD 友好”输出技能，让回答更简洁直接，避免冗长，帮助用户快速获取关键信息。",
+          "zh": "为 AI 编程代理提供 ADHD 友好输出技能，让回答更简洁直接，避免冗长信息，提升专注力。",
           "en": "Star ayghri / i-have-adhd A skill to stop your coding agent from burying the answer. ADHD-friendly output."
         },
-        "totalStars": 31175,
+        "totalStars": 31410,
         "language": "Python",
         "dailyStars": 656,
         "chineseIntro": {
-          "zh": "为 AI 编程代理添加“ADHD 友好”输出技能，让回答更简洁直接，避免冗长，帮助用户快速获取关键信息。",
+          "zh": "为 AI 编程代理提供 ADHD 友好输出技能，让回答更简洁直接，避免冗长信息，提升专注力。",
           "en": "Star ayghri / i-have-adhd A skill to stop your coding agent from burying the answer. ADHD-friendly output."
         },
         "todayHighlight": {
-          "zh": "今日新增 656 星，总星数超 3.1 万，位列全球趋势榜第一，因其精准切中开发者对高效沟通的需求而快速传播。",
+          "zh": "今日新增 656 星标，总星标 3.1 万，位列全球趋势榜第一，因其独特视角和实用价值迅速传播。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 31k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 656 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,175 stars、1,882 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,175 stars and 1,882 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,410 stars、1,893 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,410 stars and 1,893 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察用户对 AI 交互体验的细微需求，以及“人性化”功能如何成为差异化亮点。",
+          "zh": "关注 AI 交互设计中对用户认知差异的考虑，以及个性化输出技能的市场潜力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -511,26 +503,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code 等 AI 代理提供营销技能包，涵盖转化率优化、文案、SEO、分析等，帮助技术创始人自动化营销任务。",
+          "zh": "为 Claude Code 等 AI 代理提供营销技能集，涵盖 CRO、文案、SEO、分析等，帮助技术营销人员自动化营销任务。",
           "en": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering."
         },
-        "totalStars": 48939,
+        "totalStars": 48965,
         "language": "JavaScript",
         "dailyStars": 666,
         "chineseIntro": {
-          "zh": "为 Claude Code 等 AI 代理提供营销技能包，涵盖转化率优化、文案、SEO、分析等，帮助技术创始人自动化营销任务。",
+          "zh": "为 Claude Code 等 AI 代理提供营销技能集，涵盖 CRO、文案、SEO、分析等，帮助技术营销人员自动化营销任务。",
           "en": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering."
         },
         "todayHighlight": {
-          "zh": "今日新增 666 星，总星数近 5 万，位列全球趋势榜，营销自动化需求旺盛，该技能包持续获得关注。",
+          "zh": "今日新增 666 星标，总星标 4.9 万，位列全球趋势榜第六，因 AI 营销自动化需求增长而持续升温。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 666 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,939 stars、7,500 forks，topics: claude, codex, marketing，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,939 stars and 7,500 forks，topics: claude, codex, marketing, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,965 stars、7,503 forks，topics: claude, codex, marketing，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,965 stars and 7,503 forks，topics: claude, codex, marketing, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 代理在非技术领域的应用扩展，以及“技能包”模式如何降低使用门槛。",
+          "zh": "观察 AI 代理在垂直业务领域（如营销）的应用拓展，以及技能市场的形成。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -551,26 +543,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "优化 AI 编程代理的上下文窗口，通过沙箱工具输出（减少 98% 数据）、持久化会话记忆，并支持跨 17 个平台的路由，提升效率。",
+          "zh": "优化 AI 编程代理的上下文窗口，通过沙箱工具输出减少 98% 的 Token 占用，持久化会话记忆，并支持跨 17 个平台路由。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
-        "totalStars": 21473,
+        "totalStars": 21484,
         "language": "TypeScript",
         "dailyStars": 651,
         "chineseIntro": {
-          "zh": "优化 AI 编程代理的上下文窗口，通过沙箱工具输出（减少 98% 数据）、持久化会话记忆，并支持跨 17 个平台的路由，提升效率。",
+          "zh": "优化 AI 编程代理的上下文窗口，通过沙箱工具输出减少 98% 的 Token 占用，持久化会话记忆，并支持跨 17 个平台路由。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
         "todayHighlight": {
-          "zh": "今日新增 651 星，总星数超 2.1 万，位列全球趋势榜，上下文管理成为 AI 编程痛点，该方案因此升温。",
+          "zh": "今日新增 651 星标，总星标 2.1 万，位列全球趋势榜第十三，因解决上下文长度限制问题而受到关注。",
           "en": "登上 GitHub Trending 日榜第 13 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 651 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 21,473 stars、1,545 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 21,473 stars and 1,545 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 21,484 stars、1,548 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 21,484 stars and 1,548 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程中的“上下文”瓶颈，以及跨平台兼容性对用户的价值。",
+          "zh": "关注 AI 代理上下文管理技术如何提升效率，以及跨平台兼容性的重要性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -591,26 +583,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "OpenAI 官方发布的 Codex 技能目录，包含多种可复用的技能，但已弃用，推荐使用新的 Plugins 仓库。",
+          "zh": "OpenAI 官方发布的 Codex 技能目录，包含各种技能示例，但已弃用，推荐使用新的 Plugins 仓库。",
           "en": "Star openai / skills Skills Catalog for Codex"
         },
-        "totalStars": 26598,
+        "totalStars": 26623,
         "language": "Python",
         "dailyStars": 490,
         "chineseIntro": {
-          "zh": "OpenAI 官方发布的 Codex 技能目录，包含多种可复用的技能，但已弃用，推荐使用新的 Plugins 仓库。",
+          "zh": "OpenAI 官方发布的 Codex 技能目录，包含各种技能示例，但已弃用，推荐使用新的 Plugins 仓库。",
           "en": "Star openai / skills Skills Catalog for Codex"
         },
         "todayHighlight": {
-          "zh": "今日新增 490 星，总星数超 2.6 万，位列全球趋势榜，尽管已弃用，但官方背书和技能生态仍吸引关注。",
+          "zh": "今日新增 490 星标，总星标 2.6 万，位列全球趋势榜第三，尽管已弃用，仍因 OpenAI 品牌效应持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 490 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 26,598 stars、1,784 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 26,598 stars and 1,784 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 26,623 stars、1,785 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 26,623 stars and 1,785 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方对技能生态的迭代，以及弃用仓库为何仍保持热度。",
+          "zh": "观察官方仓库的弃用策略如何影响开发者生态，以及新旧仓库的迁移趋势。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -699,8 +691,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Hacker News AI: Anthropic withheld latest AI model from UK testing agency",
-          "en": "Hacker News AI: Anthropic withheld latest AI model from UK testing agency"
+          "zh": "Hacker News AI: The Math Under Every AI Model: James Wilkinson and Backward Error",
+          "en": "Hacker News AI: The Math Under Every AI Model: James Wilkinson and Backward Error"
         },
         "category": {
           "zh": "公司动态",
@@ -711,16 +703,16 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Community / research signal"
         },
         "summary": {
-          "zh": "Hacker News AI 发布「Anthropic withheld latest AI model from UK testing agency」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "Article URL: https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870 Comments URL: https://news.ycombinator.com/item?id=49621024 Points: 1 # Comments: 0"
+          "zh": "Hacker News AI 发布「The Math Under Every AI Model: James Wilkinson and Backward Error」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Article URL: https://nirmalutwani.substack.com/p/james-wilkinson-and-the-math-under Comments URL: https://news.ycombinator.com/item?id=49621657 Points: 1 # Comments: 1"
         },
         "chineseIntro": {
-          "zh": "Hacker News AI 发布「Anthropic withheld latest AI model from UK testing agency」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "Article URL: https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870 Comments URL: https://news.ycombinator.com/item?id=49621024 Points: 1 # Comments: 0"
+          "zh": "Hacker News AI 发布「The Math Under Every AI Model: James Wilkinson and Backward Error」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "Article URL: https://nirmalutwani.substack.com/p/james-wilkinson-and-the-math-under Comments URL: https://news.ycombinator.com/item?id=49621657 Points: 1 # Comments: 1"
         },
         "todayHighlight": {
-          "zh": "发布于 Wed, 09 Sep 2026 04:32:58 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。",
-          "en": "发布于 Wed, 09 Sep 2026 04:32:58 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。"
+          "zh": "发布于 Wed, 09 Sep 2026 05:51:29 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Wed, 09 Sep 2026 05:51:29 +0000；属于「社区/研究信号」类型更新，反映 Hacker News AI 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
           "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
@@ -730,14 +722,14 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "sources": [
           {
             "label": "Hacker News AI",
-            "url": "https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870"
+            "url": "https://nirmalutwani.substack.com/p/james-wilkinson-and-the-math-under"
           }
         ]
       },
       {
         "title": {
-          "zh": "Hacker News LLM: Show HN: Browser LLM Fit",
-          "en": "Hacker News LLM: Show HN: Browser LLM Fit"
+          "zh": "Reddit LocalLLaMA: OpenAI alleged of stealing mathematicians work",
+          "en": "Reddit LocalLLaMA: OpenAI alleged of stealing mathematicians work"
         },
         "category": {
           "zh": "公司动态",
@@ -748,16 +740,16 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Community / research signal"
         },
         "summary": {
-          "zh": "Hacker News LLM 发布「Show HN: Browser LLM Fit」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "Auto-detect client hardware capabilities and match against in-browser AI models across WebGPU, WASM, and ONNX Runtime.GH: https://github.com/hemanth/browser-llm-fit Comments URL: https://news.ycombinator.com/item?id=49617427 Points: 1 # Comments: 0"
+          "zh": "Reddit LocalLLaMA 发布「OpenAI alleged of stealing mathematicians work」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Privacy have been concern of many of us to have their own hardware to run llms, and here's another reason why: two mathematicians spent a year cracking one of the hardest problems in math and fed every draft of their works into Codex. A few days before they could publish, OpenAI suddenly showed up with the same solutions. When asked if their model (Sol and Astra) was trained on the p"
         },
         "chineseIntro": {
-          "zh": "Hacker News LLM 发布「Show HN: Browser LLM Fit」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
-          "en": "Auto-detect client hardware capabilities and match against in-browser AI models across WebGPU, WASM, and ONNX Runtime.GH: https://github.com/hemanth/browser-llm-fit Comments URL: https://news.ycombinator.com/item?id=49617427 Points: 1 # Comments: 0"
+          "zh": "Reddit LocalLLaMA 发布「OpenAI alleged of stealing mathematicians work」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Privacy have been concern of many of us to have their own hardware to run llms, and here's another reason why: two mathematicians spent a year cracking one of the hardest problems in math and fed every draft of their works into Codex. A few days before they could publish, OpenAI suddenly showed up with the same solutions. When asked if their model (Sol and Astra) was trained on the p"
         },
         "todayHighlight": {
-          "zh": "发布于 Tue, 08 Sep 2026 21:35:54 +0000；属于「社区/研究信号」类型更新，反映 Hacker News LLM 在当前 AI 竞争中的重点投入方向。",
-          "en": "发布于 Tue, 08 Sep 2026 21:35:54 +0000；属于「社区/研究信号」类型更新，反映 Hacker News LLM 在当前 AI 竞争中的重点投入方向。"
+          "zh": "发布于 2026-09-08T14:12:10+00:00；属于「社区/研究信号」类型更新，反映 Reddit LocalLLaMA 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 2026-09-08T14:12:10+00:00；属于「社区/研究信号」类型更新，反映 Reddit LocalLLaMA 在当前 AI 竞争中的重点投入方向。"
         },
         "pmInsight": {
           "zh": "把社区讨论和研究进展当作早期弱信号，验证其是否会进入真实产品工作流。",
@@ -766,8 +758,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hacker News LLM",
-            "url": "https://news.ycombinator.com/item?id=49617427"
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wapjaw/openai_alleged_of_stealing_mathematicians_work/"
           }
         ]
       },
