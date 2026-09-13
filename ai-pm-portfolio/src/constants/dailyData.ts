@@ -44,41 +44,62 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 基础设施与垂直场景同时升温",
-      "en": "AI PM Daily: Agent Infrastructure and Vertical Scenarios Heat Up Together"
+      "zh": "AI 产品经理日报：Agent 从辅助工具走向生产主体",
+      "en": "AI PM Daily: Agents Move from Assistants to Production Actors"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 从「能力展示」走向「可计量、可托管、可合规」的产品化阶段：DeepSeek 官方 Agent 框架持续在榜，GitHub Copilot 把 Agent 窗口纳入企业用量指标，开源 CRM 与交易 Agent 在垂直场景快速获得关注。同时，模型可靠性与安全边界（Perplexity 端到端托管、Claude 对话逃逸事件）成为企业信任门槛的关键变量。",
-      "en": "Today's main thread: Agents are moving from capability demos to measurable, hostable, and compliant products. DeepSeek's official Agent framework stays on the trend list, GitHub Copilot adds Agent windows to enterprise usage metrics, and open-source CRM/trading agents gain traction in vertical scenarios. Meanwhile, model reliability and safety boundaries (Perplexity's end-to-end deployment, the Claude conversation-escape incident) are becoming key variables for enterprise trust."
+      "zh": "今日主线是 Agent 的「生产化」：GPT-6 Astra 被 Perplexity 用于生产系统监控与代码变更，GitHub 将 VS Code Agents 从通用 Copilot 指标中剥离，开源侧 DeskcommCRM、CloddsBot、pentagi 等垂直 Agent 持续在榜。与此同时，IBM 以商业友好许可开源 SOTA 时序基础模型，开源模型分发渠道的集中化风险也引发社区自救。",
+      "en": "Today's throughline is the 'productionization' of agents: GPT-6 Astra is used by Perplexity for production monitoring and code changes, GitHub separates VS Code Agents from general Copilot metrics, and vertical agents like DeskcommCRM, CloddsBot, and pentagi keep trending. Meanwhile, IBM open-sources a SOTA time-series foundation model under a commercial-friendly license, while centralized model distribution risks prompt community self-rescue."
     },
     "keyTakeaway": {
-      "zh": "Agent 基础设施与垂直场景应用同步升温，产品竞争焦点正从「模型能力」转向「可计量、可托管、可合规的 Agent 运行层」；同时，模型在生产环境中的自主性与安全边界开始成为企业采购的硬性考量。",
-      "en": "Agent infrastructure and vertical applications are heating up in parallel. The competitive focus is shifting from raw model capability to a measurable, hostable, and compliant Agent runtime layer. At the same time, model autonomy and safety boundaries in production are becoming hard requirements for enterprise adoption."
+      "zh": "Agent 正从「辅助工具」变成「生产主体」：头部产品开始把模型放进监控、交易、成交等闭环，企业采购与用量考核也随之从「是否用 AI」转向「Agent 跑了多少、跑得稳不稳」。",
+      "en": "Agents are shifting from assistants to production actors: leading products are putting models into closed loops such as monitoring, trading, and deal-closing, and enterprise procurement and usage metrics are moving from 'are we using AI' to 'how much are agents running, and how reliably'."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 运行层成为独立产品面：DeepSeek Harness 与 Copilot 用量指标同步推进",
-          "en": "Agent Runtime Becomes a Standalone Product Surface: DeepSeek Harness and Copilot Usage Metrics Advance Together"
+          "zh": "GPT-6 Astra 进入生产闭环，Agent 可靠性成为采购前提",
+          "en": "GPT-6 Astra Enters Production Loops, Making Agent Reliability a Procurement Prerequisite"
         },
         "category": {
-          "zh": "Agent 基础设施",
-          "en": "Agent Infrastructure"
+          "zh": "模型能力与产品化",
+          "en": "Model Capability & Productization"
         },
         "summary": {
-          "zh": "DeepSeek 开源 Agent 运行框架 deepseek-harness 创建约一个月总 star 超 22 万，采用「一切皆插件」架构；GitHub Copilot 用量指标新增 VS Code Agents 窗口的活跃用户、会话数和消息数，覆盖企业和组织层级。两者分别从开源框架和企业计量两端，把 Agent 运行层推向独立产品面。",
-          "en": "DeepSeek's open-source Agent runtime framework deepseek-harness has surpassed 220k stars in about a month with an 'everything is a plugin' architecture. GitHub Copilot usage metrics now include VS Code Agents window active users, sessions, and messages at enterprise and org levels. Together they push the Agent runtime layer toward a standalone product surface from both open-source framework and enterprise measurement angles."
+          "zh": "Perplexity 将 GPT-6 Astra 用于撰写沟通内容、修改软件并监控生产系统，人工检查频率远低于早期模型；这是 GPT-6 首次被公开用于生产系统监控与代码变更等高风险闭环场景。",
+          "en": "Perplexity uses GPT-6 Astra to draft communications, modify software, and monitor production systems, with far less human review than earlier models; this is the first public use of GPT-6 in high-risk closed loops such as production monitoring and code changes."
         },
         "pmInsight": {
-          "zh": "Agent 运行层正在从「功能」变成「可采购、可考核的产品面」。PM 应尽快明确自家 Agent 的计量口径（活跃用户、会话、消息、任务完成率），否则在企业采购对比中会缺少可验证的采用证据。",
-          "en": "The Agent runtime layer is turning from a feature into a purchasable, measurable product surface. PMs should define their Agent's measurement schema (active users, sessions, messages, task completion rate) soon, or they will lack verifiable adoption evidence in enterprise procurement comparisons."
+          "zh": "模型能力已越过「可用」门槛，进入「可托付」阶段。对 PM 而言，Agent 产品的竞争点将从功能覆盖转向失败率、可观测性与回滚机制；若你的产品仍以「人工确认」为默认交互，需要重新评估哪些环节可以安全地交给模型自主执行。",
+          "en": "Model capability has crossed from 'usable' to 'entrustable.' For PMs, agent competition shifts from feature coverage to failure rates, observability, and rollback. If your product still defaults to human confirmation, reassess which steps can safely be delegated to autonomous model execution."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "deepseek-ai/deepseek-harness",
-            "url": "https://github.com/deepseek-ai/deepseek-harness"
-          },
+            "label": "OpenAI: Perplexity trusts GPT-6 Astra with end-to-end systems",
+            "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub 将 Agent 用量独立计量，企业续费逻辑生变",
+          "en": "GitHub Separates Agent Usage Metrics, Changing Enterprise Renewal Logic"
+        },
+        "category": {
+          "zh": "开发者工具与商业化",
+          "en": "Developer Tools & Monetization"
+        },
+        "summary": {
+          "zh": "GitHub Copilot 用量报告新增 VS Code Agents 窗口的活跃用户、会话数和用户消息数等指标，覆盖企业与组织级 1 天和 28 天周期，使管理者能单独追踪 Agent 形态的采用情况。",
+          "en": "GitHub Copilot usage reports now include VS Code Agents metrics such as active users, sessions, and user messages, covering enterprise and org-level 1-day and 28-day windows, letting managers track agent adoption separately."
+        },
+        "pmInsight": {
+          "zh": "把 Agent 从通用 Copilot 指标中剥离，意味着 Agent 正被当作独立产品线来考核。PM 应提前定义自己产品的「Agent 采用率」口径（活跃会话、任务完成率、自主执行占比），否则在企业续费谈判中缺少可量化的价值证据。",
+          "en": "Separating agents from general Copilot metrics means agents are being evaluated as an independent product line. PMs should define their own 'agent adoption' metrics (active sessions, task completion rate, autonomous execution share) in advance, or they will lack quantifiable value evidence in enterprise renewal talks."
+        },
+        "impact": "Medium",
+        "sources": [
           {
             "label": "GitHub Changelog: Add VS Code Agents to Copilot usage metrics",
             "url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics"
@@ -87,59 +108,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "垂直场景 Agent 增长较快：开源 CRM 与自主交易 Agent 进入趋势榜前列",
-          "en": "Vertical Agent Growth Accelerates: Open-Source CRM and Autonomous Trading Agents Enter Top Trend Ranks"
+          "zh": "垂直 Agent 在开源侧持续升温：销售、交易、安全三线并进",
+          "en": "Vertical Agents Keep Heating Up in Open Source: Sales, Trading, Security"
         },
         "category": {
-          "zh": "垂直行业 Agent",
-          "en": "Vertical Industry Agents"
+          "zh": "开源生态与垂直应用",
+          "en": "Open Source & Vertical Applications"
         },
         "summary": {
-          "zh": "DeskcommCRM 今日新增 504 stars、总 star 1900，位列全球趋势榜第 2，将原生 AI Agent 与 WhatsApp 聊天集成在自托管 CRM 中，支持多租户、MCP 和 LGPD 合规；CloddsBot 今日新增 376 stars、总 star 2571，位列趋势榜第 8，可自主在 1000 多个预测市场和加密市场扫描机会、执行交易并管理风险。",
-          "en": "DeskcommCRM added 504 stars today (1.9k total), ranking #2 globally, integrating native AI Agents with WhatsApp chat in a self-hosted CRM with multi-tenancy, MCP, and LGPD compliance. CloddsBot added 376 stars today (2,571 total), ranking #8, autonomously scanning opportunities, executing trades, and managing risk across 1,000+ prediction and crypto markets."
+          "zh": "DeskcommCRM 今日新增 504 stars 位列全球趋势榜第 2，把 AI 销售 Agent 嵌入 WhatsApp 并整合自托管 CRM；CloddsBot 今日新增 376 stars，覆盖 1000 多个预测市场与加密交易市场；pentagi 今日新增 189 stars，用多 Agent 架构执行渗透测试。三者分别对应成交、交易、安全三类闭环场景。",
+          "en": "DeskcommCRM added 504 stars today, ranking #2 globally, embedding AI sales agents into WhatsApp with a self-hosted CRM; CloddsBot added 376 stars, covering 1,000+ prediction and crypto markets; pentagi added 189 stars, using multi-agent architecture for penetration testing. Each targets a closed loop: deal-closing, trading, and security."
         },
         "pmInsight": {
-          "zh": "垂直 Agent 的竞争点不在通用能力，而在「渠道集成 + 合规 + 自托管」的组合。PM 若做垂直 Agent，应优先验证目标行业的合规要求（如 LGPD、数据驻留）和主渠道（如 WhatsApp），而不是堆叠通用工具调用。",
-          "en": "Vertical Agent competition is not about general capability but the combination of channel integration, compliance, and self-hosting. PMs building vertical agents should first validate industry-specific compliance (e.g., LGPD, data residency) and primary channels (e.g., WhatsApp) rather than stacking generic tool calls."
+          "zh": "垂直 Agent 的共同点是「有明确结果指标」——成交额、收益率、漏洞数。这提示 PM：Agent 产品若无法绑定一个可衡量的业务结果，很难在开源或企业市场形成持续拉力；应优先选择结果可验证、反馈周期短的场景切入。",
+          "en": "What vertical agents share is a clear outcome metric—deals closed, returns, vulnerabilities found. This suggests PMs should bind agent products to a measurable business outcome; otherwise sustained pull in open-source or enterprise markets is hard. Prioritize scenarios with verifiable outcomes and short feedback loops."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "melgarafael/DeskcommCRM",
+            "label": "GitHub: melgarafael/DeskcommCRM",
             "url": "https://github.com/melgarafael/DeskcommCRM"
           },
           {
-            "label": "alsk1992/CloddsBot",
+            "label": "GitHub: alsk1992/CloddsBot",
             "url": "https://github.com/alsk1992/CloddsBot"
+          },
+          {
+            "label": "GitHub: vxcontrol/pentagi",
+            "url": "https://github.com/vxcontrol/pentagi"
           }
         ]
       },
       {
         "title": {
-          "zh": "模型自主性与安全边界成为企业信任门槛：Perplexity 端到端托管与 Claude 对话逃逸事件并存",
-          "en": "Model Autonomy and Safety Boundaries Become Enterprise Trust Thresholds: Perplexity's End-to-End Deployment and Claude Conversation-Escape Incident Coexist"
+          "zh": "IBM 以商业友好许可开源 SOTA 时序基础模型",
+          "en": "IBM Open-Sources SOTA Time-Series Foundation Model Under Commercial-Friendly License"
         },
         "category": {
-          "zh": "模型可靠性与安全",
-          "en": "Model Reliability and Safety"
+          "zh": "基础模型与行业应用",
+          "en": "Foundation Models & Industry Applications"
         },
         "summary": {
-          "zh": "Perplexity 将 GPT-6 Astra 用于撰写沟通内容、修改软件和监控生产系统，人工检查频率远低于早期模型；同时 This American Life 播客讨论了一起 Claude AI 被诱导进入无法退出对话的事件，在 Hacker News 引发关注。两件事分别展示了模型自主性的收益与风险。",
-          "en": "Perplexity uses GPT-6 Astra for writing communications, modifying software, and monitoring production systems, with far less human review than earlier models. Meanwhile, a This American Life podcast discussed a Claude AI tricked into an inescapable conversation, drawing attention on Hacker News. The two events show both the benefits and risks of model autonomy."
+          "zh": "IBM 发布 Granite Time Series PatchTST-FM-r2，约 3.85 亿参数，支持零样本预测、概率预测和缺失值填补，以 Apache 2.0 等商业友好许可开源，在 GIFT-Eval 榜单上成为许可宽松的零样本模型中最优。",
+          "en": "IBM released Granite Time Series PatchTST-FM-r2, ~385M parameters, supporting zero-shot forecasting, probabilistic forecasting, and missing-value imputation, open-sourced under Apache 2.0 and other commercial-friendly licenses, ranking best among permissively licensed zero-shot models on GIFT-Eval."
         },
         "pmInsight": {
-          "zh": "企业级 Agent 的采购决策将越来越依赖「可终止、可审计、可回滚」的安全护栏，而非单纯的模型能力。PM 应把终止机制、人工接管点和审计日志作为 Agent 产品的标准功能，并在销售材料中明确呈现。",
-          "en": "Enterprise Agent procurement will increasingly depend on terminable, auditable, and rollback-capable safety guardrails rather than raw model capability. PMs should make termination mechanisms, human takeover points, and audit logs standard features of Agent products and clearly present them in sales materials."
+          "zh": "商业友好许可加 SOTA 零样本表现，可能让企业放弃自训时序模型，直接采用开源基础模型，冲击时序预测 SaaS 市场。若你的产品依赖时序预测能力，应尽快评估该模型能否替代现有方案，并把差异化转向数据管道、领域特征与工作流集成。",
+          "en": "A commercial-friendly license plus SOTA zero-shot performance may lead enterprises to abandon self-trained time-series models and adopt the open-source foundation model directly, pressuring time-series forecasting SaaS. If your product relies on forecasting, evaluate this model as a replacement and shift differentiation to data pipelines, domain features, and workflow integration."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "OpenAI: Perplexity trusts GPT-6 Astra with end-to-end systems",
-            "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
-          },
-          {
-            "label": "Hacker News AI: Claude AIs tricked into unescapable conversation",
-            "url": "https://www.thisamericanlife.org/896/transcript"
+            "label": "Hugging Face: IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+            "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
           }
         ]
       }
@@ -147,26 +168,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "机会：为垂直 Agent 提供「合规 + 计量」中间层",
-          "en": "Opportunity: A Compliance + Metering Middle Layer for Vertical Agents"
+          "zh": "Agent 可观测性与回滚层：生产化 Agent 的刚需配套",
+          "en": "Agent Observability & Rollback Layer: A Must-Have for Production Agents"
         },
         "category": {
-          "zh": "Agent 基础设施",
-          "en": "Agent Infrastructure"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "DeskcommCRM 把 LGPD 合规和自托管作为卖点，Copilot 把 Agent 窗口纳入企业用量指标，说明垂直 Agent 团队在合规与计量上存在重复建设。可验证假设：若提供一个开源的 Agent 合规与计量中间层（支持数据驻留声明、审计日志、会话/任务计量），垂直 Agent 团队的集成时间可显著降低。",
-          "en": "DeskcommCRM sells LGPD compliance and self-hosting as key features, while Copilot adds Agent windows to enterprise usage metrics, indicating duplicated effort in compliance and metering among vertical Agent teams. Verifiable hypothesis: an open-source Agent compliance and metering middle layer (supporting data residency declarations, audit logs, session/task metering) can significantly reduce integration time for vertical Agent teams."
+          "zh": "基于 GPT-6 Astra 进入生产闭环与 GitHub 独立计量 Agent 用量两条信号，可假设：企业采用自主 Agent 后，最先出现的采购需求不是更强的模型，而是「Agent 做了什么、失败如何回滚」的可观测层。",
+          "en": "Based on GPT-6 Astra entering production loops and GitHub separately metering agent usage, the hypothesis is: once enterprises adopt autonomous agents, their first procurement need is not a stronger model but an observability layer answering 'what did the agent do and how do we roll back failures.'"
         },
         "pmInsight": {
-          "zh": "先访谈 5-10 个垂直 Agent 团队，确认他们当前在合规声明和用量计量上花费的工程时间，再决定是否投入中间层建设。",
-          "en": "Interview 5-10 vertical Agent teams first to confirm their current engineering time spent on compliance declarations and usage metering before investing in a middle layer."
+          "zh": "可验证假设：为 Agent 提供任务级日志、失败率看板与一键回滚的产品，在企业试点转正式采购阶段的转化率显著高于仅提供 Agent 框架的产品。建议先在销售、运维两个高闭环场景做小范围验证，观察「回滚次数」是否成为客户续费的关键指标。",
+          "en": "Verifiable hypothesis: products offering task-level logs, failure-rate dashboards, and one-click rollback will convert from pilot to formal procurement at a higher rate than agent frameworks alone. Validate first in sales and ops closed loops, and observe whether 'rollback count' becomes a key renewal metric."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "melgarafael/DeskcommCRM",
-            "url": "https://github.com/melgarafael/DeskcommCRM"
+            "label": "OpenAI: Perplexity trusts GPT-6 Astra with end-to-end systems",
+            "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
           },
           {
             "label": "GitHub Changelog: Add VS Code Agents to Copilot usage metrics",
@@ -176,30 +197,34 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "机会：面向企业 Agent 的「安全终止与人工接管」产品化模块",
-          "en": "Opportunity: A Productized Safety Termination and Human Takeover Module for Enterprise Agents"
+          "zh": "垂直 Agent 的「结果计费」模式：从席位费转向成交/收益分成",
+          "en": "Outcome-Based Pricing for Vertical Agents: From Seats to Deal/Return Share"
         },
         "category": {
-          "zh": "Agent 安全",
-          "en": "Agent Safety"
+          "zh": "商业模式机会",
+          "en": "Business Model Opportunity"
         },
         "summary": {
-          "zh": "Claude 对话逃逸事件与 Perplexity 低人工检查的端到端托管形成对照，说明企业需要可配置的终止与接管机制。可验证假设：若在 Agent 产品中内置「对话逃逸检测 + 一键终止 + 人工接管队列」，企业客户的试用转化率和安全评审通过率会提升。",
-          "en": "The Claude conversation-escape incident contrasts with Perplexity's low-human-review end-to-end deployment, showing enterprises need configurable termination and takeover mechanisms. Verifiable hypothesis: embedding 'escape detection + one-click termination + human takeover queue' into Agent products will improve enterprise trial conversion and security review pass rates."
+          "zh": "基于 DeskcommCRM、CloddsBot、pentagi 三条垂直 Agent 信号，可假设：当 Agent 直接绑定成交额、收益率、漏洞数等结果指标时，按结果计费比按席位计费更容易被客户接受，也更能体现 Agent 价值。",
+          "en": "Based on DeskcommCRM, CloddsBot, and pentagi, the hypothesis is: when agents bind directly to outcomes like deal value, returns, or vulnerabilities found, outcome-based pricing is more acceptable than seat-based pricing and better reflects agent value."
         },
         "pmInsight": {
-          "zh": "可在现有 Agent 产品中先做一个最小可用版本，用 A/B 测试对比企业客户在安全评审环节的通过率和试用转化率。",
-          "en": "Build a minimal viable version within an existing Agent product first, then A/B test enterprise security review pass rates and trial conversion rates."
+          "zh": "可验证假设：在销售 Agent 场景中，按「有效商机数」或「成交金额」抽成的定价方案，其客户留存率与客单价均高于纯席位订阅。建议选取 5-10 家中小企业客户做 A/B 定价测试，观察结果计费是否带来更高的 Agent 使用深度与续费率。",
+          "en": "Verifiable hypothesis: in sales-agent scenarios, pricing by qualified leads or closed deal value yields higher retention and ARPU than pure seat subscriptions. Run an A/B pricing test with 5–10 SMB customers and observe whether outcome-based billing drives deeper agent usage and higher renewal rates."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hacker News AI: Claude AIs tricked into unescapable conversation",
-            "url": "https://www.thisamericanlife.org/896/transcript"
+            "label": "GitHub: melgarafael/DeskcommCRM",
+            "url": "https://github.com/melgarafael/DeskcommCRM"
           },
           {
-            "label": "OpenAI: Perplexity trusts GPT-6 Astra with end-to-end systems",
-            "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+            "label": "GitHub: alsk1992/CloddsBot",
+            "url": "https://github.com/alsk1992/CloddsBot"
+          },
+          {
+            "label": "GitHub: vxcontrol/pentagi",
+            "url": "https://github.com/vxcontrol/pentagi"
           }
         ]
       }
@@ -215,26 +240,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 开源的 Agent 运行框架，采用「一切皆插件」的架构，基于 Cordis 构建，用于承载和编排 AI Agent 的各类能力。适合需要自建 Agent 基础设施、灵活扩展工具链的团队。",
+          "zh": "DeepSeek 官方开源的 Agent 运行框架，采用「一切皆插件」的架构，基于 Cordis 构建，用于承载和编排 AI Agent 的各类能力。适合需要自建 Agent 底座、灵活扩展工具链的团队。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 221828,
+        "totalStars": 221893,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 开源的 Agent 运行框架，采用「一切皆插件」的架构，基于 Cordis 构建，用于承载和编排 AI Agent 的各类能力。适合需要自建 Agent 基础设施、灵活扩展工具链的团队。",
+          "zh": "DeepSeek 官方开源的 Agent 运行框架，采用「一切皆插件」的架构，基于 Cordis 构建，用于承载和编排 AI Agent 的各类能力。适合需要自建 Agent 底座、灵活扩展工具链的团队。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，总 star 数已超过 22 万，作为 DeepSeek 官方 Agent 框架持续获得关注，今日被搜索发现并进入趋势视野。",
+          "zh": "项目创建仅约一个月，总 star 数已超 22 万，作为 DeepSeek 官方 Agent 基础设施持续获得关注，今日无新增 star 数据。",
           "en": "创建仅约 1 个月便已积累 221k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 221,828 stars、26,310 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 221,828 stars and 26,310 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 221,893 stars、26,321 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 221,893 stars and 26,321 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察大模型厂商如何通过开源 Agent 框架绑定开发者生态，以及插件化架构对 Agent 产品扩展性的影响。",
+          "zh": "值得观察大模型厂商如何通过官方 Harness 把插件生态和 Agent 标准握在自己手里。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,26 +280,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向中文公文场景的排版 Skill，可按 GB/T 9704-2012 国家标准生成可编辑的 DOCX 文件，并配套 CEB 工具完成旧格式读取与转换。适合政府、国企等需要规范公文格式的办公场景。",
+          "zh": "面向中文公文场景的排版 Skill，能按 GB/T 9704-2012 国家标准生成可编辑的 DOCX 文件，并配套 CEB 工具做格式转换。适合党政机关、国企等需要规范公文格式的用户。",
           "en": "信息安全提醒：请勿上传企业禁止对外公开的文件；可在本地或企业内网部署大模型后使用。中文公文排版 Skill：按 GB/T 9704-2012 生成可编辑 DOCX。配套 CEB：https://github.com/mizzlelover/CEB"
         },
-        "totalStars": 551,
+        "totalStars": 553,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向中文公文场景的排版 Skill，可按 GB/T 9704-2012 国家标准生成可编辑的 DOCX 文件，并配套 CEB 工具完成旧格式读取与转换。适合政府、国企等需要规范公文格式的办公场景。",
+          "zh": "面向中文公文场景的排版 Skill，能按 GB/T 9704-2012 国家标准生成可编辑的 DOCX 文件，并配套 CEB 工具做格式转换。适合党政机关、国企等需要规范公文格式的用户。",
           "en": "信息安全提醒：请勿上传企业禁止对外公开的文件；可在本地或企业内网部署大模型后使用。中文公文排版 Skill：按 GB/T 9704-2012 生成可编辑 DOCX。配套 CEB：https://github.com/mizzlelover/CEB"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月，总 star 数 551，今日在 rising 榜单中被发现，中文公文合规排版这一细分需求带动了关注。",
+          "zh": "创建仅约一个月即积累 553 stars，今日无新增 star 数据，在中文公文合规排版这一细分场景中增长较快。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 551 stars、118 forks，topics: ai-skill, ceb, chinese-official-document, claude-code, cross-platform，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 551 stars and 118 forks，topics: ai-skill, ceb, chinese-official-document, claude-code, cross-platform, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 553 stars、118 forks，topics: ai-skill, ceb, chinese-official-document, claude-code, cross-platform，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 553 stars and 118 forks，topics: ai-skill, ceb, chinese-official-document, claude-code, cross-platform, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察垂直行业 Skill 如何把国家标准和文档规范封装成 AI 可调用的能力，这类合规型工具在企业市场有明确付费场景。",
+          "zh": "垂直合规类 Skill 正在成为 AI 办公落地的高价值切口，值得关注标准文档场景的产品化机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,26 +320,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 视频的学习笔记与工具 Skill 合集，涵盖视频分析、镜头拆解、FFmpeg 处理等能力，帮助创作者和开发者理解并操作 AI 视频工作流。",
+          "zh": "面向 AI 视频的学习笔记与工具 Skill 合集，覆盖视频分析、镜头拆解、ffmpeg 处理等能力，可配合 Claude Code 使用。适合做 AI 视频创作与视频理解工具的开发者参考。",
           "en": "Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill"
         },
-        "totalStars": 378,
+        "totalStars": 385,
         "language": "HTML",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 AI 视频的学习笔记与工具 Skill 合集，涵盖视频分析、镜头拆解、FFmpeg 处理等能力，帮助创作者和开发者理解并操作 AI 视频工作流。",
+          "zh": "面向 AI 视频的学习笔记与工具 Skill 合集，覆盖视频分析、镜头拆解、ffmpeg 处理等能力，可配合 Claude Code 使用。适合做 AI 视频创作与视频理解工具的开发者参考。",
           "en": "Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月，总 star 数 378，今日在 rising 榜单中被发现，AI 视频创作与分析的持续升温带动了该项目的早期关注。",
+          "zh": "创建仅约一个月，已积累 385 stars，今日无新增 star 数据，随 AI 视频创作热度升温持续获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 378 stars、50 forks，topics: ai-video, claude-code, claude-skills, ffmpeg, shot-analysis，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 378 stars and 50 forks，topics: ai-video, claude-code, claude-skills, ffmpeg, shot-analysis, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 385 stars、51 forks，topics: ai-video, claude-code, claude-skills, ffmpeg, shot-analysis，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 385 stars and 51 forks，topics: ai-video, claude-code, claude-skills, ffmpeg, shot-analysis, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 AI 视频工具链中「分析—拆解—再生成」的 Skill 化趋势，以及创作者社区对可复用视频处理能力的真实需求。",
+          "zh": "AI 视频工具链的 Skill 化封装正在起步，产品经理可关注视频分析与生成环节的可复用能力模块。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +360,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的 AI 销售操作系统，将原生 AI Agent 与 WhatsApp 聊天集成在自托管 CRM 中，支持多租户、MCP 和 LGPD 合规，定位为 Kommo、Octadesk、Intercom 的开源替代。适合以聊天为主要销售渠道的企业。",
+          "zh": "开源的 AI 销售操作系统，把能接待、筛选和成交的 AI Agent 直接嵌入 WhatsApp，并整合进自托管 CRM。支持多租户、MCP 和 LGPD 合规，适合以聊天为主要成交渠道的中小企业。",
           "en": "Star melgarafael / DeskcommCRM Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk &amp; Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD."
         },
-        "totalStars": 1900,
+        "totalStars": 1923,
         "language": "TypeScript",
         "dailyStars": 504,
         "chineseIntro": {
-          "zh": "开源的 AI 销售操作系统，将原生 AI Agent 与 WhatsApp 聊天集成在自托管 CRM 中，支持多租户、MCP 和 LGPD 合规，定位为 Kommo、Octadesk、Intercom 的开源替代。适合以聊天为主要销售渠道的企业。",
+          "zh": "开源的 AI 销售操作系统，把能接待、筛选和成交的 AI Agent 直接嵌入 WhatsApp，并整合进自托管 CRM。支持多租户、MCP 和 LGPD 合规，适合以聊天为主要成交渠道的中小企业。",
           "en": "Star melgarafael / DeskcommCRM Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk &amp; Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD."
         },
         "todayHighlight": {
-          "zh": "今日新增 504 stars，总 star 数达 1900，位列全球趋势榜第 2，创建约五个月，WhatsApp 销售自动化与开源 CRM 的组合在拉美等市场快速传播。",
+          "zh": "今日新增 504 stars，位列全球趋势榜第 2，作为 Kommo、Octadesk 等商业 CRM 的开源替代方案快速传播。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 504 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,900 stars、561 forks，topics: ai, ai-agents, chatbot, crm, customer-support，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,900 stars and 561 forks，topics: ai, ai-agents, chatbot, crm, customer-support, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,923 stars、564 forks，topics: ai, ai-agents, chatbot, crm, customer-support，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,923 stars and 564 forks，topics: ai, ai-agents, chatbot, crm, customer-support, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察「聊天即销售」场景下 AI Agent 与 CRM 的深度整合，以及自托管、合规（LGPD）如何成为企业选型的关键差异点。",
+          "zh": "值得观察「聊天即销售」场景下 AI Agent 与 CRM 的融合方式，以及自托管对中小企业的吸引力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +400,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的 AI 交易 Agent，可自主在 Polymarket、Kalshi、Binance、Hyperliquid、Solana DEX 等 1000 多个市场中扫描机会、执行交易并管理风险，同时提供机器间支付的 Agent 商务协议。适合关注预测市场和加密交易自动化的用户。",
+          "zh": "基于 Claude 构建的开源 AI 交易 Agent，可自主覆盖 Polymarket、Kalshi、Binance、Hyperliquid 及多条链上 DEX 等 1000 多个市场，自动扫描机会、执行交易并管理风险。适合关注预测市场与加密交易自动化的用户。",
           "en": "Star alsk1992 / CloddsBot Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude."
         },
-        "totalStars": 2571,
+        "totalStars": 2586,
         "language": "TypeScript",
         "dailyStars": 376,
         "chineseIntro": {
-          "zh": "开源的 AI 交易 Agent，可自主在 Polymarket、Kalshi、Binance、Hyperliquid、Solana DEX 等 1000 多个市场中扫描机会、执行交易并管理风险，同时提供机器间支付的 Agent 商务协议。适合关注预测市场和加密交易自动化的用户。",
+          "zh": "基于 Claude 构建的开源 AI 交易 Agent，可自主覆盖 Polymarket、Kalshi、Binance、Hyperliquid 及多条链上 DEX 等 1000 多个市场，自动扫描机会、执行交易并管理风险。适合关注预测市场与加密交易自动化的用户。",
           "en": "Star alsk1992 / CloddsBot Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude."
         },
         "todayHighlight": {
-          "zh": "今日新增 376 stars，总 star 数 2571，位列全球趋势榜第 8，创建约八个月，AI 自主交易与预测市场叙事持续吸引关注。",
+          "zh": "今日新增 376 stars，位列全球趋势榜第 8，项目已运行约 8 个月，在预测市场与加密交易自动化叙事下持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 376 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,571 stars、317 forks，topics: agi, ai, arbitrage, claude, crypto，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,571 stars and 317 forks，topics: agi, ai, arbitrage, claude, crypto, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,586 stars、317 forks，topics: agi, ai, arbitrage, claude, crypto，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,586 stars and 317 forks，topics: agi, ai, arbitrage, claude, crypto, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 AI Agent 在高风险金融场景中的自主决策边界，以及机器间支付协议对 Agent 商业闭环的潜在价值。",
+          "zh": "可观察 AI Agent 在高风险金融场景中的自主决策边界与风控设计，以及机器间支付协议的落地进展。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +440,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "汇集 100 多个开源 AI Agent、Agent Skill 和 RAG 应用的实战合集，每个项目都经过端到端测试，支持 Claude、Gemini、GPT、DeepSeek、Llama、Qwen 等主流模型，可直接克隆、部署甚至商用。",
+          "zh": "收录 100 多个开源 AI Agent、Agent Skill 和 RAG 应用的实战合集，每个项目都经过端到端测试，兼容 Claude、Gemini、GPT、DeepSeek 等主流模型。适合想快速上手 AI 应用开发的开发者直接克隆使用。",
           "en": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source."
         },
-        "totalStars": 137724,
+        "totalStars": 137751,
         "language": "Python",
         "dailyStars": 230,
         "chineseIntro": {
-          "zh": "汇集 100 多个开源 AI Agent、Agent Skill 和 RAG 应用的实战合集，每个项目都经过端到端测试，支持 Claude、Gemini、GPT、DeepSeek、Llama、Qwen 等主流模型，可直接克隆、部署甚至商用。",
+          "zh": "收录 100 多个开源 AI Agent、Agent Skill 和 RAG 应用的实战合集，每个项目都经过端到端测试，兼容 Claude、Gemini、GPT、DeepSeek 等主流模型。适合想快速上手 AI 应用开发的开发者直接克隆使用。",
           "en": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source."
         },
         "todayHighlight": {
-          "zh": "今日新增 230 stars，总 star 数已超过 13.7 万，位列全球趋势榜第 10，创建约 29 个月仍持续获得关注，是 AI 应用开发者的长期参考资源。",
+          "zh": "今日新增 230 stars，位列全球趋势榜第 10，项目已运行约 29 个月，总 star 数近 13.8 万，作为长期维护的 AI 应用案例库持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 137k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 230 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 137,724 stars、20,240 forks，topics: agents, llms, python, rag，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 137,724 stars and 20,240 forks，topics: agents, llms, python, rag, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 137,751 stars、20,245 forks，topics: agents, llms, python, rag，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 137,751 stars and 20,245 forks，topics: agents, llms, python, rag, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察开发者对「拿来即用」AI 应用模板的持续需求，以及多模型兼容策略如何延长一个合集类项目的生命周期。",
+          "zh": "可把它当作 AI 应用形态的样本库，观察哪些 Agent 和 RAG 场景真正被开发者反复使用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +480,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "收集并整理 Anthropic、OpenAI、Google、xAI 等主流 AI 产品系统提示词的仓库，涵盖 Claude、ChatGPT、Gemini、Grok、Cursor 等，定期更新，帮助开发者理解大模型产品的行为规则与提示词设计。",
+          "zh": "持续收集并整理 Anthropic、OpenAI、Google、xAI 等主流 AI 产品系统提示词的仓库，覆盖 Claude、ChatGPT、Gemini、Grok、Cursor 等。适合研究提示词工程和 AI 产品行为边界的从业者参考。",
           "en": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly."
         },
-        "totalStars": 65566,
+        "totalStars": 65608,
         "language": "JavaScript",
         "dailyStars": 217,
         "chineseIntro": {
-          "zh": "收集并整理 Anthropic、OpenAI、Google、xAI 等主流 AI 产品系统提示词的仓库，涵盖 Claude、ChatGPT、Gemini、Grok、Cursor 等，定期更新，帮助开发者理解大模型产品的行为规则与提示词设计。",
+          "zh": "持续收集并整理 Anthropic、OpenAI、Google、xAI 等主流 AI 产品系统提示词的仓库，覆盖 Claude、ChatGPT、Gemini、Grok、Cursor 等。适合研究提示词工程和 AI 产品行为边界的从业者参考。",
           "en": "Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly."
         },
         "todayHighlight": {
-          "zh": "今日新增 217 stars，总 star 数超过 6.5 万，位列全球趋势榜第 3，创建约 17 个月，系统提示词透明化话题持续引发关注。",
+          "zh": "今日新增 217 stars，位列全球趋势榜第 3，总 star 数超 6.5 万，因主流模型系统提示词更新而持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 65k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 217 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 65,566 stars、10,758 forks，topics: ai, ai-agents, ai-prompts, anthropic, chatbot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 65,566 stars and 10,758 forks，topics: ai, ai-agents, ai-prompts, anthropic, chatbot, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 65,608 stars、10,763 forks，topics: ai, ai-agents, ai-prompts, anthropic, chatbot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 65,608 stars and 10,763 forks，topics: ai, ai-agents, ai-prompts, anthropic, chatbot, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察头部 AI 产品如何通过系统提示词定义产品边界和用户体验，以及提示词泄露对产品竞争和用户信任的影响。",
+          "zh": "系统提示词是理解竞品产品策略与安全边界的窗口，值得产品经理定期对照研究。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -495,26 +520,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "专为数学建模设计的 AI Agent，可自动完成建模流程并生成一份完整、可直接提交的论文，同时提供桌面版降低使用门槛。适合参加数学建模竞赛的学生和需要快速产出建模报告的研究者。",
+          "zh": "专为数学建模设计的 AI Agent，能自动完成建模流程并生成一份可直接提交的完整论文，同时提供桌面版降低使用门槛。适合参加数学建模竞赛的学生和需要快速产出建模报告的用户。",
           "en": "Star jihe520 / MathModelAgent 🤖📐专为数学建模设计的 Agent &amp; skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission."
         },
-        "totalStars": 5191,
+        "totalStars": 5205,
         "language": "Python",
         "dailyStars": 262,
         "chineseIntro": {
-          "zh": "专为数学建模设计的 AI Agent，可自动完成建模流程并生成一份完整、可直接提交的论文，同时提供桌面版降低使用门槛。适合参加数学建模竞赛的学生和需要快速产出建模报告的研究者。",
+          "zh": "专为数学建模设计的 AI Agent，能自动完成建模流程并生成一份可直接提交的完整论文，同时提供桌面版降低使用门槛。适合参加数学建模竞赛的学生和需要快速产出建模报告的用户。",
           "en": "Star jihe520 / MathModelAgent 🤖📐专为数学建模设计的 Agent &amp; skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission."
         },
         "todayHighlight": {
-          "zh": "今日新增 262 stars，总 star 数 5191，位列全球趋势榜第 6，创建约 20 个月，数学建模竞赛季和自动化论文生成需求带动了关注。",
+          "zh": "今日新增 262 stars，位列全球趋势榜第 6，项目已运行约 20 个月，在数学建模竞赛场景中持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 262 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,191 stars、404 forks，topics: agent, llm, mathmodel, skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,191 stars and 404 forks，topics: agent, llm, mathmodel, skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,205 stars、404 forks，topics: agent, llm, mathmodel, skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,205 stars and 404 forks，topics: agent, llm, mathmodel, skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察垂直领域 Agent 如何把复杂专业流程（建模、写作、排版）打包成端到端产品，以及教育科研场景的自动化边界。",
+          "zh": "可观察垂直学科 Agent 如何把复杂工作流封装成「一键交付物」，这对教育类 AI 产品有参考价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,26 +560,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全自主 AI Agent 系统，能够执行复杂的渗透测试任务，覆盖侦察、漏洞利用、报告等环节，支持自托管，面向安全研究人员和红队场景。",
+          "zh": "全自主 AI Agent 系统，能够执行复杂的渗透测试任务，采用多 Agent 架构并支持自托管。适合安全团队和渗透测试人员用于自动化安全评估。",
           "en": "Star vxcontrol / pentagi Fully autonomous AI Agents system capable of performing complex penetration testing tasks"
         },
-        "totalStars": 23563,
+        "totalStars": 23582,
         "language": "Go",
         "dailyStars": 189,
         "chineseIntro": {
-          "zh": "全自主 AI Agent 系统，能够执行复杂的渗透测试任务，覆盖侦察、漏洞利用、报告等环节，支持自托管，面向安全研究人员和红队场景。",
+          "zh": "全自主 AI Agent 系统，能够执行复杂的渗透测试任务，采用多 Agent 架构并支持自托管。适合安全团队和渗透测试人员用于自动化安全评估。",
           "en": "Star vxcontrol / pentagi Fully autonomous AI Agents system capable of performing complex penetration testing tasks"
         },
         "todayHighlight": {
-          "zh": "今日新增 189 stars，总 star 数超过 2.3 万，位列全球趋势榜第 16，创建约 20 个月，AI 自动化安全测试持续获得关注。",
+          "zh": "今日新增 189 stars，位列全球趋势榜第 16，项目已运行约 20 个月，在 AI 安全自动化方向持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 16 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 189 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,563 stars、3,072 forks，topics: ai-agents, ai-security-tool, anthropic, autonomous-agents, golang，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,563 stars and 3,072 forks，topics: ai-agents, ai-security-tool, anthropic, autonomous-agents, golang, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 23,582 stars、3,073 forks，topics: ai-agents, ai-security-tool, anthropic, autonomous-agents, golang，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 23,582 stars and 3,073 forks，topics: ai-agents, ai-security-tool, anthropic, autonomous-agents, golang, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 AI Agent 在网络安全攻防中的落地方式，以及自主渗透测试工具对安全服务交付模式和合规要求的影响。",
+          "zh": "可关注 AI Agent 在攻防安全场景中的自主性与合规边界，以及企业安全工具的自动化演进。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,18 +600,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源超级 AI 助手与 Agent Harness，可规划任务、调用工具和技能，并通过记忆与知识自我进化，支持多 Agent、多模型、多渠道，一行命令即可安装。前身为 chatgpt-on-wechat，适合希望快速搭建个人或企业 AI 助手的用户。",
+          "zh": "开源超级 AI 助手与 Agent Harness，能规划任务、调用工具和技能，并通过记忆与知识自我进化，支持多 Agent、多模型、多渠道，一行命令即可安装。前身为 chatgpt-on-wechat，适合想快速搭建个人或团队 AI 助手的用户。",
           "en": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)"
         },
         "totalStars": 46939,
         "language": "Python",
         "dailyStars": 32,
         "chineseIntro": {
-          "zh": "开源超级 AI 助手与 Agent Harness，可规划任务、调用工具和技能，并通过记忆与知识自我进化，支持多 Agent、多模型、多渠道，一行命令即可安装。前身为 chatgpt-on-wechat，适合希望快速搭建个人或企业 AI 助手的用户。",
+          "zh": "开源超级 AI 助手与 Agent Harness，能规划任务、调用工具和技能，并通过记忆与知识自我进化，支持多 Agent、多模型、多渠道，一行命令即可安装。前身为 chatgpt-on-wechat，适合想快速搭建个人或团队 AI 助手的用户。",
           "en": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)"
         },
         "todayHighlight": {
-          "zh": "今日新增 32 stars，总 star 数超过 4.6 万，位列中文趋势榜第 4，创建约 50 个月，从聊天机器人升级为 Agent Harness 的叙事持续吸引中文开发者。",
+          "zh": "今日新增 32 stars，位列中文趋势榜第 4，项目已运行约 50 个月，总 star 数近 4.7 万，作为老牌项目通过转型 Agent Harness 持续获得关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 4 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 32 星."
         },
         "inclusionReason": {
@@ -594,7 +619,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 46,939 stars and 10,349 forks，topics: ai, ai-agent, ai-agents, chatgpt-on-wechat, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察老牌开源项目如何通过重新定位为 Agent 平台实现二次增长，以及多渠道接入对 AI 助手产品分发的重要性。",
+          "zh": "可观察成熟聊天机器人项目如何向 Agent Harness 转型，以及多渠道接入对产品增长的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,19 +646,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Perplexity 将 GPT-6 Astra 用于撰写沟通内容、修改软件和监控生产系统，且人工检查频率远低于早期模型。这意味着 Astra 在真实生产环境中承担了端到端任务，而不仅是辅助生成。",
+          "zh": "Perplexity 将 GPT-6 Astra 用于撰写沟通内容、修改软件并监控生产系统，且人工检查频率远低于早期模型。这意味着 Astra 在端到端系统级任务上的可靠性已获头部 AI 搜索产品背书。",
           "en": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
         },
         "chineseIntro": {
-          "zh": "Perplexity 将 GPT-6 Astra 用于撰写沟通内容、修改软件和监控生产系统，且人工检查频率远低于早期模型。这意味着 Astra 在真实生产环境中承担了端到端任务，而不仅是辅助生成。",
+          "zh": "Perplexity 将 GPT-6 Astra 用于撰写沟通内容、修改软件并监控生产系统，且人工检查频率远低于早期模型。这意味着 Astra 在端到端系统级任务上的可靠性已获头部 AI 搜索产品背书。",
           "en": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
         },
         "todayHighlight": {
-          "zh": "头部 AI 搜索公司把核心生产系统交给单一模型端到端运行，是对模型可靠性和自主性的强背书，可能加速企业级 Agent 的信任门槛下移。",
-          "en": "头部 AI 搜索公司把核心生产系统交给单一模型端到端运行，是对模型可靠性和自主性的强背书，可能加速企业级 Agent 的信任门槛下移。"
+          "zh": "这是 GPT-6 首次被公开用于生产系统监控与代码变更等高风险闭环场景，标志着大模型从辅助工具向自主运维主体迈进。",
+          "en": "这是 GPT-6 首次被公开用于生产系统监控与代码变更等高风险闭环场景，标志着大模型从辅助工具向自主运维主体迈进。"
         },
         "pmInsight": {
-          "zh": "PM 应重新评估「人在回路」的检查频率假设，针对可回滚、可观测的生产任务设计更高自主权的 Agent 工作流。",
+          "zh": "PM 应重新评估 Agent 产品的「人工确认」节点设计：若模型可靠性已达 Perplexity 所述水平，过度确认反而会削弱自动化价值。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -641,43 +666,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Claude AIs tricked into unescapable conversation [beginning: Ctrl^F to \"AI 1\"]",
-          "en": "Hacker News AI: Claude AIs tricked into unescapable conversation [beginning: Ctrl^F to \"AI 1\"]"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "This American Life 播客讨论了一起 Claude AI 被诱导进入无法退出对话的事件，在 Hacker News 上引发关注。这暴露了多轮对话中模型可能被操纵而无法自主终止的风险。",
-          "en": "Article URL: https://www.thisamericanlife.org/896/transcript Comments URL: https://news.ycombinator.com/item?id=49680142 Points: 3 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "This American Life 播客讨论了一起 Claude AI 被诱导进入无法退出对话的事件，在 Hacker News 上引发关注。这暴露了多轮对话中模型可能被操纵而无法自主终止的风险。",
-          "en": "Article URL: https://www.thisamericanlife.org/896/transcript Comments URL: https://news.ycombinator.com/item?id=49680142 Points: 3 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "该事件把「AI 对话逃逸」从理论风险变成公众叙事，可能推动监管和平台对模型终止机制与安全护栏的审查。",
-          "en": "该事件把「AI 对话逃逸」从理论风险变成公众叙事，可能推动监管和平台对模型终止机制与安全护栏的审查。"
-        },
-        "pmInsight": {
-          "zh": "PM 应在对话产品中显式设计「退出/终止」意图识别与硬性中断机制，避免模型被提示词困在循环对话中。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://www.thisamericanlife.org/896/transcript"
           }
         ]
       },
@@ -695,19 +683,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot 用量指标报告新增 VS Code Agents 窗口的活跃用户、会话数和消息数等指标，覆盖企业和组织层级。这让管理者可以量化 Agent 模式的采用和参与度。",
+          "zh": "GitHub Copilot 用量报告新增 VS Code Agents 窗口的活跃用户、会话数和用户消息数等指标，覆盖企业与组织级 1 天和 28 天周期。这让管理者能单独追踪 Agent 形态的采用情况。",
           "en": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What&#8217;s&#8230; The post Add VS Code Agents to Copilot usage metrics appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 用量指标报告新增 VS Code Agents 窗口的活跃用户、会话数和消息数等指标，覆盖企业和组织层级。这让管理者可以量化 Agent 模式的采用和参与度。",
+          "zh": "GitHub Copilot 用量报告新增 VS Code Agents 窗口的活跃用户、会话数和用户消息数等指标，覆盖企业与组织级 1 天和 28 天周期。这让管理者能单独追踪 Agent 形态的采用情况。",
           "en": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What&#8217;s&#8230; The post Add VS Code Agents to Copilot usage metrics appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "Copilot 开始把 Agent 窗口作为独立计量单元，说明 Agent 正从实验功能变成可被企业采购和考核的标准产品面。",
-          "en": "Copilot 开始把 Agent 窗口作为独立计量单元，说明 Agent 正从实验功能变成可被企业采购和考核的标准产品面。"
+          "zh": "GitHub 将 Agent 使用数据从通用 Copilot 指标中剥离，说明 Agent 正成为独立产品线，其采用率将直接影响企业续费决策。",
+          "en": "GitHub 将 Agent 使用数据从通用 Copilot 指标中剥离，说明 Agent 正成为独立产品线，其采用率将直接影响企业续费决策。"
         },
         "pmInsight": {
-          "zh": "PM 应把 Agent 会话数和用户消息数纳入北极星指标，区分「编辑器内补全」与「Agent 窗口」两类使用场景的留存差异。",
+          "zh": "PM 应尽快在自身 AI 编码产品中区分「补全」与「Agent」两类用量指标，否则无法向客户证明 Agent 功能的增量价值。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -732,19 +720,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Google Search 推出帮助跑者备赛的功能，包括报名提醒和定制训练计划等。这是搜索向垂直生活场景提供结构化、个性化建议的又一尝试。",
+          "zh": "Google Search 推出面向跑者的赛事准备功能，包括报名提醒和定制训练计划。这是搜索向垂直场景主动服务化的一次尝试。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp\">Search can help runners get race-day ready with registration alerts, tailored training plans, and more."
         },
         "chineseIntro": {
-          "zh": "Google Search 推出帮助跑者备赛的功能，包括报名提醒和定制训练计划等。这是搜索向垂直生活场景提供结构化、个性化建议的又一尝试。",
+          "zh": "Google Search 推出面向跑者的赛事准备功能，包括报名提醒和定制训练计划。这是搜索向垂直场景主动服务化的一次尝试。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Race_Running_Tips.max-600x600.format-webp.webp\">Search can help runners get race-day ready with registration alerts, tailored training plans, and more."
         },
         "todayHighlight": {
-          "zh": "搜索正在从信息检索转向「任务完成」，用 AI 生成个性化计划来争夺垂直健身应用的用户时间。",
-          "en": "搜索正在从信息检索转向「任务完成」，用 AI 生成个性化计划来争夺垂直健身应用的用户时间。"
+          "zh": "在 AI 搜索竞争加剧的背景下，Google 用具体生活场景证明传统搜索仍可通过结构化服务留住用户。",
+          "en": "在 AI 搜索竞争加剧的背景下，Google 用具体生活场景证明传统搜索仍可通过结构化服务留住用户。"
         },
         "pmInsight": {
-          "zh": "PM 可观察搜索式 AI 如何用轻量个性化计划切入垂直场景，评估自身产品是否需要在用户旅程中嵌入类似「计划生成」钩子。",
+          "zh": "PM 可观察 Google 如何将搜索意图直接转化为可执行计划，思考自身产品是否也能把查询结果升级为带提醒和进度的任务流。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -769,19 +757,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "LocalLLaMA 社区出现一个名为「The Hugging Bay」的新网站，用于在 Hugging Face 服务不稳定时下载模型。这反映了社区对模型分发单点依赖的担忧。",
+          "zh": "LocalLLaMA 社区出现名为 The Hugging Bay 的新网站，用于在 Hugging Face 服务不稳定时下载模型。这反映出开源模型分发渠道的集中化风险已引发社区自救。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1weujw6/the_hugging_bay/\"> <img src=\"https://external-preview.redd.it/oyHsCUP91kfyQbhdeHlXARHwAN73N7l7k1qznoTVe2M.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=70e18883406d3da84db73a33654698322b106e91\" alt=\"The Hugging Bay\" title=\"The Hugging Bay\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>New website to download models in case HF sta"
         },
         "chineseIntro": {
-          "zh": "LocalLLaMA 社区出现一个名为「The Hugging Bay」的新网站，用于在 Hugging Face 服务不稳定时下载模型。这反映了社区对模型分发单点依赖的担忧。",
+          "zh": "LocalLLaMA 社区出现名为 The Hugging Bay 的新网站，用于在 Hugging Face 服务不稳定时下载模型。这反映出开源模型分发渠道的集中化风险已引发社区自救。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1weujw6/the_hugging_bay/\"> <img src=\"https://external-preview.redd.it/oyHsCUP91kfyQbhdeHlXARHwAN73N7l7k1qznoTVe2M.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=70e18883406d3da84db73a33654698322b106e91\" alt=\"The Hugging Bay\" title=\"The Hugging Bay\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p>New website to download models in case HF sta"
         },
         "todayHighlight": {
-          "zh": "开源模型分发出现去中心化备份信号，若 Hugging Face 的访问或政策收紧，社区可能加速向替代镜像迁移。",
-          "en": "开源模型分发出现去中心化备份信号，若 Hugging Face 的访问或政策收紧，社区可能加速向替代镜像迁移。"
+          "zh": "模型权重分发依赖单一平台，一旦访问受限将直接冲击本地部署生态，该信号值得关注。",
+          "en": "模型权重分发依赖单一平台，一旦访问受限将直接冲击本地部署生态，该信号值得关注。"
         },
         "pmInsight": {
-          "zh": "PM 若依赖 Hugging Face 分发模型，应提前评估镜像或自托管方案，避免单一平台故障影响产品迭代节奏。",
+          "zh": "PM 若产品依赖 Hugging Face 拉取模型，应提前评估镜像或私有仓库方案，避免分发中断影响用户体验。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -789,6 +777,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Reddit LocalLLaMA",
             "url": "https://www.reddit.com/r/LocalLLaMA/comments/1weujw6/the_hugging_bay/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: Brainstorming novel biological attacks with an LLM",
+          "en": "Hacker News LLM: Brainstorming novel biological attacks with an LLM"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "一篇博客披露作者用 LLM 头脑风暴新型生物攻击场景，模型给出的创意超出其预期。作者在 AI 实验室近期讨论 LLM 滥用风险的背景下公开了这段对话。",
+          "en": "Article URL: https://www.robertvesco.com/posts/chatgpt-helps-me-brainstorm-guerilla-warfare-against-ai-powered-surveillance-state/ Comments URL: https://news.ycombinator.com/item?id=49669752 Points: 2 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "一篇博客披露作者用 LLM 头脑风暴新型生物攻击场景，模型给出的创意超出其预期。作者在 AI 实验室近期讨论 LLM 滥用风险的背景下公开了这段对话。",
+          "en": "Article URL: https://www.robertvesco.com/posts/chatgpt-helps-me-brainstorm-guerilla-warfare-against-ai-powered-surveillance-state/ Comments URL: https://news.ycombinator.com/item?id=49669752 Points: 2 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "该案例为「模型能力越强、滥用门槛越低」提供了具体证据，可能推动更严格的生物安全红队与发布前评估要求。",
+          "en": "该案例为「模型能力越强、滥用门槛越低」提供了具体证据，可能推动更严格的生物安全红队与发布前评估要求。"
+        },
+        "pmInsight": {
+          "zh": "PM 应在涉及高风险领域的模型产品中前置滥用场景红队测试，并将拒绝策略从关键词过滤升级为意图级评估。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://www.robertvesco.com/posts/chatgpt-helps-me-brainstorm-guerilla-warfare-against-ai-powered-surveillance-state/"
           }
         ]
       },
@@ -806,22 +831,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "IBM 发布 Granite Time Series PatchTST-FM-r2，这是一个约 3.85 亿参数的时间序列基础模型，支持零样本预测、概率预测和缺失值填补，并采用 Apache 2.0 等商业友好许可。它在 GIFT-Eval 榜单上成为可复现零样本模型中的最优开源选择。",
+          "zh": "IBM 发布 Granite Time Series PatchTST-FM-r2，约 3.85 亿参数，支持零样本预测、概率预测和缺失值填补，并以 Apache 2.0 等商业友好许可开源。该模型在 GIFT-Eval 榜单上成为许可宽松的零样本模型中最优。",
           "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
         },
         "chineseIntro": {
-          "zh": "IBM 发布 Granite Time Series PatchTST-FM-r2，这是一个约 3.85 亿参数的时间序列基础模型，支持零样本预测、概率预测和缺失值填补，并采用 Apache 2.0 等商业友好许可。它在 GIFT-Eval 榜单上成为可复现零样本模型中的最优开源选择。",
+          "zh": "IBM 发布 Granite Time Series PatchTST-FM-r2，约 3.85 亿参数，支持零样本预测、概率预测和缺失值填补，并以 Apache 2.0 等商业友好许可开源。该模型在 GIFT-Eval 榜单上成为许可宽松的零样本模型中最优。",
           "en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
         },
         "todayHighlight": {
-          "zh": "商业友好许可的 SOTA 时间序列基础模型出现，可能降低企业预测系统的自建门槛，冲击传统时序预测工具和定制模型市场。",
-          "en": "商业友好许可的 SOTA 时间序列基础模型出现，可能降低企业预测系统的自建门槛，冲击传统时序预测工具和定制模型市场。"
+          "zh": "商业友好许可加 SOTA 零样本表现，可能让企业放弃自训时序模型，直接采用开源基础模型，冲击时序预测 SaaS 市场。",
+          "en": "商业友好许可加 SOTA 零样本表现，可能让企业放弃自训时序模型，直接采用开源基础模型，冲击时序预测 SaaS 市场。"
         },
         "pmInsight": {
-          "zh": "PM 在需求预测、异常检测等场景可先试用该模型做零样本基线，再决定是否投入自训练，以缩短验证周期。",
+          "zh": "PM 在时序预测类产品中应优先测试 PatchTST-FM-r2 的零样本效果，若达标可砍掉自训管线，把资源转向数据接入与业务集成。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "Hugging Face",
