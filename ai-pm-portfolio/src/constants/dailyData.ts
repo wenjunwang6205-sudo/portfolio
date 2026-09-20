@@ -44,106 +44,106 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 技能生态与安全审计升温",
-      "en": "AI PM Daily: Agent Skill Ecosystem and Security Auditing Heat Up"
+      "zh": "AI 产品经理日报：代理技能化与成本护栏同时升温",
+      "en": "AI PM Daily: Agent Skills and Cost Guardrails Heat Up Together"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 能力从「能写代码」向「可审计、可治理、可嵌入工作流」延伸，同时端侧小模型与 AI 可见性工具开始形成可量化的产品叙事。",
-      "en": "Today's main thread: agent capabilities are extending from 'can write code' to 'auditable, governable, and embeddable in workflows,' while on-device small models and AI visibility tools are forming quantifiable product narratives."
+      "zh": "今日主线不在模型参数，而在「代理如何被约束」：一边是 Cloudflare、Anthropic、Addy Osmani 把安全审计与工程规范打包成代理技能，一边是 Vercel 把预算护栏接进部署控制面。同时 Jev 生态清单类项目快速聚集，值得观察类型化决策模型能否走出对话范式。",
+      "en": "Today's thread is not model scale but how agents are constrained: Cloudflare, Anthropic and Addy Osmani package security audits and engineering standards into agent skills, while Vercel wires budget guardrails into the deployment control plane. Meanwhile Jev ecosystem lists are clustering fast — worth watching whether typed decision models move beyond chat."
     },
     "keyTakeaway": {
-      "zh": "Agent 竞争正从模型能力转向「技能 + 治理」：Cloudflare 安全审计技能单日新增 3155 stars 登顶趋势榜，Anthropic 与埃森哲的嵌入式评估合作同步推进，说明可验证、可审计的 Agent 工作流正在成为企业采购与平台竞争的新焦点。",
-      "en": "Agent competition is shifting from model capability to 'skills + governance': Cloudflare's security audit skill topped the trend with 3,155 stars in a day, while Anthropic's embedded evaluation partnership with Accenture advanced in parallel, indicating that verifiable, auditable agent workflows are becoming the new focus for enterprise procurement and platform competition."
+      "zh": "代理竞争正从「能做什么」转向「被什么约束」：安全审计技能、工程规范技能与预算护栏同日升温，说明可治理性正在成为 AI 代理产品的核心卖点。",
+      "en": "Agent competition is shifting from what it can do to what constrains it: security-audit skills, engineering-standard skills and budget guardrails all heated up the same day, suggesting governability is becoming a core selling point for AI agent products."
     },
     "signals": [
       {
         "title": {
-          "zh": "Cloudflare 安全审计技能登顶，Agent 从「写代码」走向「查漏洞」",
-          "en": "Cloudflare Security Audit Skill Tops Trend, Agents Move from 'Writing Code' to 'Finding Vulnerabilities'"
+          "zh": "代理技能从「能力包」走向「治理包」",
+          "en": "Agent Skills Shift from Capability Packs to Governance Packs"
         },
         "category": {
-          "zh": "开发者工具 / Agent 技能",
-          "en": "Developer Tools / Agent Skills"
+          "zh": "开发者工具 / 代理治理",
+          "en": "Developer Tools / Agent Governance"
         },
         "summary": {
-          "zh": "Cloudflare 开源的 security-audit-skill 今日新增 3155 stars、总数达 1.7 万，位列全球趋势榜第 1；该技能让编码 Agent 自动完成侦察、漏洞搜寻、候选验证与结构化输出。同期 addyosmani/agent-skills 以 9.7 万 stars 持续在榜，Anthropic 官方 claude-code 也保持高位。",
-          "en": "Cloudflare's open-source security-audit-skill gained 3,155 stars today, reaching 17k total and ranking #1 globally; it enables coding agents to automate reconnaissance, vulnerability hunting, candidate validation, and structured output. Meanwhile addyosmani/agent-skills remains on the chart with 97k stars, and Anthropic's official claude-code stays high."
+          "zh": "Cloudflare 的 security-audit-skill 今日新增 3155 stars、总量 17102，位列趋势榜第 1，把编码代理变成安全审计员并输出机器可读发现；Addy Osmani 的 agent-skills 总量超 9.7 万、今日新增 556，把资深工程师的质量门禁打包成代理可遵循的技能。两者同日走强，指向同一方向：代理需要被注入规范与审查流程，而非仅增加工具调用。",
+          "en": "Cloudflare's security-audit-skill added 3,155 stars today (17,102 total, #1 trending), turning coding agents into security auditors with machine-readable findings; Addy Osmani's agent-skills passed 97K stars with 556 added today, packaging senior-engineer quality gates into agent-followable skills. Both rising the same day point one way: agents need injected standards and review flows, not just more tool calls."
         },
         "pmInsight": {
-          "zh": "安全审计是 Agent 技能中少有的「高价值、可验证、有明确交付物」场景，企业愿意为此付费。PM 应评估将安全审计、合规检查等技能嵌入现有 Agent 产品线，并优先设计机器可读的输出格式，以便接入 CI/CD 与工单系统。",
-          "en": "Security auditing is one of the few agent skill scenarios with 'high value, verifiability, and clear deliverables' that enterprises will pay for. PMs should evaluate embedding security audit and compliance check skills into existing agent product lines, and prioritize machine-readable output formats for CI/CD and ticketing system integration."
+          "zh": "如果代理的差异化来自「被约束的方式」，那么产品路线图应把技能库、门禁规则与审计输出格式当作一等公民，而不是附属配置。建议本周评估：你的代理是否能在 PR 流程中产出可复核的结构化结论，而非仅给出建议文本。",
+          "en": "If agent differentiation comes from how it is constrained, the roadmap should treat skill libraries, gate rules and audit output formats as first-class, not add-ons. This week, assess whether your agent can produce reviewable structured findings inside the PR flow rather than just advisory text."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub: cloudflare/security-audit-skill",
+            "label": "cloudflare/security-audit-skill",
             "url": "https://github.com/cloudflare/security-audit-skill"
           },
           {
-            "label": "GitHub: addyosmani/agent-skills",
+            "label": "addyosmani/agent-skills",
             "url": "https://github.com/addyosmani/agent-skills"
-          },
-          {
-            "label": "GitHub: anthropics/claude-code",
-            "url": "https://github.com/anthropics/claude-code"
           }
         ]
       },
       {
         "title": {
-          "zh": "Anthropic 与埃森哲共建嵌入式评估，安全治理进入「驻场」模式",
-          "en": "Anthropic and Accenture Build Embedded Evaluation, Safety Governance Enters 'On-Site' Mode"
+          "zh": "AI 成本护栏从财务工具变成部署控制面",
+          "en": "AI Cost Guardrails Move from Finance Tool to Deployment Control Plane"
         },
         "category": {
-          "zh": "AI 安全 / 生态合作",
-          "en": "AI Safety / Ecosystem Partnership"
+          "zh": "平台 / 成本治理",
+          "en": "Platform / Cost Governance"
         },
         "summary": {
-          "zh": "Anthropic 宣布与埃森哲合作开展前沿 AI 独立评估，由埃森哲旗下 Faculty 团队主导红队测试、对齐评估与模型防护测试，双方计划五年内各投入至少 10 亿美元。同期 OpenAI 发布澳大利亚青少年安全蓝图，提出六大支柱路线图。",
-          "en": "Anthropic announced a partnership with Accenture for independent frontier AI evaluation, with Accenture's Faculty team leading red-teaming, alignment evaluation, and model safeguard testing, each planning to invest at least $1 billion over five years. In parallel, OpenAI released the Australian Youth Safety Blueprint with a six-pillar roadmap."
+          "zh": "Vercel 将支出管理扩展到企业灵活承诺计划，可按计费周期设预算，接近或超出时触发邮件、Webhook 或暂停所有项目生产部署，暂停为可选且不影响 AI Gateway 与 v0 用量。与此同时，阶跃星辰 Step 5 Preview 以智能指数 44、输入 1 美元/输出 2.7 美元每百万 token 登上 Artificial Analysis 帕累托前沿，性价比竞争继续压低中高端 API 定价预期。",
+          "en": "Vercel extended spend management to Enterprise Flexible Commitment plans: per-cycle budgets can trigger email, webhook or pause all production deployments, with pause opt-in and AI Gateway/v0 usage unaffected. Meanwhile Stepfun Step 5 Preview hit the Artificial Analysis Pareto frontier with an intelligence index of 44 at $1/$2.7 per million tokens, keeping price-performance pressure on mid-to-high-end API pricing."
         },
         "pmInsight": {
-          "zh": "「嵌入式评估者」把第三方审计放进模型公司内部，是对「自我监管不可信」质疑的直接回应。PM 在面向企业客户时，应提前准备可被第三方验证的安全评估材料与接口，把安全治理能力作为差异化卖点而非合规成本。",
-          "en": "The 'embedded evaluator' model places third-party auditors inside model companies, directly responding to doubts about self-regulation. When serving enterprise customers, PMs should prepare third-party verifiable safety evaluation materials and interfaces in advance, treating safety governance as a differentiator rather than a compliance cost."
+          "zh": "当平台能直接暂停部署，成本就不再只是财务指标，而是产品可用性的一部分。建议把「预算触发后的降级策略」写进产品设计：哪些功能可降级、哪些必须保活、用户如何被通知，而不是让一次超支直接停服。",
+          "en": "When a platform can pause deployments outright, cost stops being a finance metric and becomes part of product availability. Design the post-budget-trigger degradation path: what degrades, what must stay alive, how users are notified — rather than letting one overspend halt service."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Anthropic: Partnering with Accenture on embedded evaluation",
-            "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
+            "label": "Vercel Spend Management",
+            "url": "https://vercel.com/changelog/spend-management-enterprise-flex"
           },
           {
-            "label": "OpenAI: Australian Youth Safety Blueprint",
-            "url": "https://openai.com/index/australian-youth-safety-blueprint"
+            "label": "Stepfun Step 5 Preview on Artificial Analysis",
+            "url": "https://artificialanalysis.ai/models/step-5"
           }
         ]
       },
       {
         "title": {
-          "zh": "端侧小模型与 AI 可见性工具同步升温，新品类正在形成",
-          "en": "On-Device Small Models and AI Visibility Tools Heat Up Together, New Categories Emerging"
+          "zh": "Jev 生态清单类项目快速聚集，类型化决策模型受关注",
+          "en": "Jev Ecosystem Lists Cluster Fast, Typed Decision Models Draw Attention"
         },
         "category": {
-          "zh": "端侧 AI / 增长工具",
-          "en": "On-Device AI / Growth Tools"
+          "zh": "开源生态 / 模型形态",
+          "en": "Open Source Ecosystem / Model Form Factor"
         },
         "summary": {
-          "zh": "cactus-compute/needle 以 8-29 MB、2-bit 量化模型主打端侧工具调用与结构化抽取，今日新增 234 stars、总数超 1.1 万；同时 Hacker News 出现 Website Auditor，抓取网站后向 Claude、ChatGPT、Gemini、Perplexity 提问，检测品牌是否进入前五并给出增长建议。",
-          "en": "cactus-compute/needle, an 8-29 MB 2-bit quantized model for on-device tool calling and structured extraction, gained 234 stars today with over 11k total; meanwhile Website Auditor appeared on Hacker News, querying Claude, ChatGPT, Gemini, and Perplexity to check if a brand ranks top-five and offering growth advice."
+          "zh": "围绕 TypeSafe AI 的 System One 模型 Jev，两个清单项目同日出现在 rising 榜：yibie/awesome-jev 创建约一个月获 455 stars，v-modal/awesome-jev-tools 创建约两天即获 369 stars，覆盖机器人、控制、仿真等非对话方向。同时 awlevin/typesafe-computer-use 以 OCR + TypeSafe 判断 + 点击的低成本方案获 548 stars，说明「类型化决策 + 桌面操作」的组合正在被早期开发者验证。",
+          "en": "Two list projects around TypeSafe AI's System One model Jev appeared on the rising board the same day: yibie/awesome-jev reached 455 stars in about a month, while v-modal/awesome-jev-tools hit 369 stars in roughly two days, covering robotics, control and simulation beyond chat. Meanwhile awlevin/typesafe-computer-use gained 548 stars with a low-cost OCR + TypeSafe decision + click loop, suggesting early developers are validating typed decision plus desktop operation."
         },
         "pmInsight": {
-          "zh": "端侧小模型让「工具调用」可以脱离云端成本与延迟约束，而 AI 可见性工具把品牌在 AI 回答中的排名变成可审计指标。PM 可探索将端侧结构化抽取能力用于本地数据采集，再与 AI 可见性监测结合，形成「采集-监测-优化」的闭环产品假设。",
-          "en": "On-device small models free 'tool calling' from cloud cost and latency constraints, while AI visibility tools turn brand ranking in AI answers into an auditable metric. PMs can explore combining on-device structured extraction for local data collection with AI visibility monitoring to form a 'collect-monitor-optimize' closed-loop product hypothesis."
+          "zh": "清单类项目两天内聚集数百 stars，通常意味着生态处于「找方向」阶段而非成熟期。值得跟进但不宜重仓：建议先验证类型化决策在你们场景中是否比通用模型更省成本或更可控，再决定是否纳入技术选型。",
+          "en": "Lists gathering hundreds of stars in two days usually means an ecosystem is still finding direction, not mature. Worth following but not over-committing: first validate whether typed decisions beat general models on cost or controllability in your scenario before adding it to the stack."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "GitHub: cactus-compute/needle",
-            "url": "https://github.com/cactus-compute/needle"
+            "label": "yibie/awesome-jev",
+            "url": "https://github.com/yibie/awesome-jev"
           },
           {
-            "label": "Hacker News: Website Auditor",
-            "url": "https://website-auditor.io/"
+            "label": "v-modal/awesome-jev-tools",
+            "url": "https://github.com/v-modal/awesome-jev-tools"
+          },
+          {
+            "label": "awlevin/typesafe-computer-use",
+            "url": "https://github.com/awlevin/typesafe-computer-use"
           }
         ]
       }
@@ -151,59 +151,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向企业研发的「Agent 安全审计即服务」",
-          "en": "Agent Security Audit-as-a-Service for Enterprise R&D"
+          "zh": "把安全审计技能嵌入 PR 流程的可验证假设",
+          "en": "A Testable Hypothesis for Embedding Security-Audit Skills into the PR Flow"
         },
         "category": {
-          "zh": "产品机会 / 安全审计",
-          "en": "Product Opportunity / Security Audit"
+          "zh": "产品假设 / 代理治理",
+          "en": "Product Hypothesis / Agent Governance"
         },
         "summary": {
-          "zh": "基于 Cloudflare security-audit-skill 的机器可读审计输出，结合 GitHub 新开放的代码覆盖率规则集 REST API，可构建一个把安全审计与覆盖率门禁统一编排的 Agent 服务，让团队在 PR 阶段自动获得漏洞报告与覆盖率变化。",
-          "en": "Building on Cloudflare's machine-readable security-audit-skill output and GitHub's newly opened code coverage ruleset REST API, an agent service can orchestrate security audits and coverage gates together, giving teams automatic vulnerability reports and coverage changes at the PR stage."
+          "zh": "基于 Cloudflare security-audit-skill 的机器可读审计输出与 Addy Osmani agent-skills 的质量门禁思路，可假设：在 PR 流程中嵌入结构化安全审计技能，能把人工安全评审时间降低 30% 以上，且不显著增加误报导致的合并阻塞。验证方式：选一个中等规模仓库，对比接入前后安全相关评审耗时与误报率。",
+          "en": "Building on Cloudflare's machine-readable audit output and Addy Osmani's quality-gate approach, hypothesize that embedding structured security-audit skills into the PR flow cuts manual security review time by over 30% without materially increasing merge blocking from false positives. Validate by comparing security review time and false-positive rate before and after on a mid-sized repo."
         },
         "pmInsight": {
-          "zh": "可验证假设：若在 CI 中同时接入安全审计技能与覆盖率门禁，企业团队对 Agent 生成代码的合并意愿会提升。验证方式：对比接入前后 PR 合并率与回滚率，观察 4 周内变化。",
-          "en": "Verifiable hypothesis: if security audit skills and coverage gates are both integrated into CI, enterprise teams' willingness to merge agent-generated code will increase. Validation: compare PR merge and rollback rates before and after integration over 4 weeks."
+          "zh": "该假设的关键变量是误报成本，而非审计覆盖率。若误报导致开发者绕过门禁，产品价值会被抵消，因此应优先设计可解释的发现分级与一键复核路径。",
+          "en": "The key variable is false-positive cost, not audit coverage. If false positives push developers to bypass gates, product value is negated — so prioritize explainable finding severity and a one-click review path."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub: cloudflare/security-audit-skill",
+            "label": "cloudflare/security-audit-skill",
             "url": "https://github.com/cloudflare/security-audit-skill"
           },
           {
-            "label": "GitHub Changelog: Code coverage ruleset REST API",
-            "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api"
+            "label": "addyosmani/agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       },
       {
         "title": {
-          "zh": "AI 可见性监测 + 端侧采集的闭环工具",
-          "en": "Closed-Loop Tool for AI Visibility Monitoring + On-Device Collection"
+          "zh": "预算触发后的降级体验可作为差异化能力",
+          "en": "Post-Budget-Trigger Degradation as a Differentiator"
         },
         "category": {
-          "zh": "产品机会 / 增长与端侧",
-          "en": "Product Opportunity / Growth & On-Device"
+          "zh": "产品假设 / 成本体验",
+          "en": "Product Hypothesis / Cost Experience"
         },
         "summary": {
-          "zh": "将 Website Auditor 式的多助手品牌排名检测，与 needle 这类端侧小模型的本地结构化抽取结合，可在不依赖云端大模型的前提下，持续采集品牌在 AI 回答中的表现并生成优化建议。",
-          "en": "Combining Website Auditor-style multi-assistant brand ranking checks with on-device structured extraction from models like needle enables continuous collection of brand performance in AI answers and optimization suggestions without relying on cloud LLMs."
+          "zh": "基于 Vercel 支出管理可暂停生产部署、以及 Step 5 Preview 压低 API 定价预期的组合信号，可假设：提供「预算触发后自动降级到低成本模型并保留核心功能」的产品，比直接停服的产品在续费率上更高。验证方式：对同一功能做 A/B，一组超支即停，一组降级到低价模型并提示用户，观察留存与投诉率。",
+          "en": "Combining Vercel's ability to pause production deployments with Step 5 Preview's downward pressure on API pricing, hypothesize that products which auto-degrade to a low-cost model while preserving core features after a budget trigger retain better than those that simply halt. Validate via A/B: one arm stops on overspend, the other degrades and notifies, comparing retention and complaint rates."
         },
         "pmInsight": {
-          "zh": "可验证假设：端侧抽取可降低 AI 可见性监测的单次查询成本，使高频监测成为可能。验证方式：对比端侧与云端方案的单次成本与延迟，并观察监测频率提升后品牌排名改善的相关性。",
-          "en": "Verifiable hypothesis: on-device extraction can lower the per-query cost of AI visibility monitoring, enabling high-frequency monitoring. Validation: compare per-query cost and latency between on-device and cloud solutions, and observe correlation between increased monitoring frequency and brand ranking improvement."
+          "zh": "降级策略需要提前定义「核心功能」边界，否则工程上会退化为全量停服。建议把降级路径与模型路由一起设计，而不是留到超支当天临时决定。",
+          "en": "Degradation requires defining the core-feature boundary in advance, or it collapses into a full stop in practice. Design the degradation path alongside model routing rather than deciding on the day of overspend."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hacker News: Website Auditor",
-            "url": "https://website-auditor.io/"
+            "label": "Vercel Spend Management",
+            "url": "https://vercel.com/changelog/spend-management-enterprise-flex"
           },
           {
-            "label": "GitHub: cactus-compute/needle",
-            "url": "https://github.com/cactus-compute/needle"
+            "label": "Stepfun Step 5 Preview on Artificial Analysis",
+            "url": "https://artificialanalysis.ai/models/step-5"
           }
         ]
       }
@@ -219,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 macOS 上的轻量级「电脑操作」方案：先对屏幕做 OCR 识别，再用 TypeSafe 判断下一步该点哪里，最后执行点击，单步成本约 0.0002 美元。适合需要让 AI 自动操作桌面软件、又对成本敏感的场景。",
+          "zh": "一个让 AI 代理在 macOS 上操作电脑的低成本方案：先对屏幕做 OCR 识别，再用 TypeSafe 模型判断下一步该点哪里，最后执行点击。适合需要自动化桌面操作、又对单步成本敏感的场景。",
           "en": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS."
         },
-        "totalStars": 542,
+        "totalStars": 548,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 macOS 上的轻量级「电脑操作」方案：先对屏幕做 OCR 识别，再用 TypeSafe 判断下一步该点哪里，最后执行点击，单步成本约 0.0002 美元。适合需要让 AI 自动操作桌面软件、又对成本敏感的场景。",
+          "zh": "一个让 AI 代理在 macOS 上操作电脑的低成本方案：先对屏幕做 OCR 识别，再用 TypeSafe 模型判断下一步该点哪里，最后执行点击。适合需要自动化桌面操作、又对单步成本敏感的场景。",
           "en": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，已积累 542 stars，今日进入上升榜；「极低成本电脑操作」的叙事在 AI Agent 自动化圈层中开始升温。",
+          "zh": "项目创建仅约一个月，已积累 548 stars，今日出现在 rising 榜单中，说明「极低成本电脑操作代理」这一叙事正在获得早期开发者关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 542 stars、34 forks，topics: ai-agents, automation, computer-use, macos, ocr，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 542 stars and 34 forks，topics: ai-agents, automation, computer-use, macos, ocr, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 548 stars、34 forks，topics: ai-agents, automation, computer-use, macos, ocr，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 548 stars and 34 forks，topics: ai-agents, automation, computer-use, macos, ocr, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得关注「低成本 + 可验证动作」的 Agent 执行路径，思考如何把单步成本压到可忽略，从而支撑高频桌面自动化产品。",
+          "zh": "值得观察 AI 代理在桌面自动化场景中如何用「OCR + 分类」替代昂贵的多模态推理，从而把单步成本压到极低。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一份围绕 Jev（TypeSafe AI 的 System One 模型）的公开项目、集成与讨论的精选清单，帮助开发者快速了解基于「类型化决策」模型能做什么。",
+          "zh": "一份围绕 Jev 的公开项目与集成清单。Jev 是 TypeSafe AI 推出的「System One」模型，专门处理带类型约束的决策任务，而非通用聊天。该清单帮助开发者快速找到基于 Jev 构建的实践案例。",
           "en": "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions."
         },
-        "totalStars": 443,
+        "totalStars": 455,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一份围绕 Jev（TypeSafe AI 的 System One 模型）的公开项目、集成与讨论的精选清单，帮助开发者快速了解基于「类型化决策」模型能做什么。",
+          "zh": "一份围绕 Jev 的公开项目与集成清单。Jev 是 TypeSafe AI 推出的「System One」模型，专门处理带类型约束的决策任务，而非通用聊天。该清单帮助开发者快速找到基于 Jev 构建的实践案例。",
           "en": "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即获得 443 stars，今日在上升榜出现；作为新模型生态的早期索引，随 Jev 相关讨论增多而持续获得关注。",
+          "zh": "项目创建仅约一个月，已获得 455 stars，今日在 rising 榜单中出现，反映出围绕 Jev 这一新型「类型化决策模型」的生态正在早期聚集。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 443 stars、63 forks，topics: awesome, awesome-list, jev, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 443 stars and 63 forks，topics: awesome, awesome-list, jev, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 455 stars、64 forks，topics: awesome, awesome-list, jev, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 455 stars and 64 forks，topics: awesome, awesome-list, jev, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察新模型生态的「清单型」项目如何快速聚拢早期开发者，可作为判断一个 AI 模型是否形成社区势能的低成本信号。",
+          "zh": "可以关注「非聊天型、面向结构化决策的模型」是否正在形成独立生态位，以及清单类项目如何成为新模型生态的早期入口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -291,41 +291,41 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "AbdelStark/awesome-typesafe",
-          "en": "AbdelStark/awesome-typesafe"
+          "zh": "v-modal/awesome-jev-tools",
+          "en": "v-modal/awesome-jev-tools"
         },
         "category": {
           "zh": "GitHub 项目",
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一份汇总 TypeSafe、System One 模型与 Jev 官方资源及社区项目的精选列表，为想接入类型化决策能力的开发者提供入口。",
-          "en": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev."
+          "zh": "另一份聚焦 Jev 生态的工具清单，收录为 TypeSafe AI 的 System One 模型构建的各类工具，覆盖机器人、控制、仿真等方向。适合想了解 Jev 在非对话场景下有哪些现成工具可用的开发者。",
+          "en": "A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions."
         },
-        "totalStars": 360,
-        "language": "CSS",
+        "totalStars": 369,
+        "language": "Unknown",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一份汇总 TypeSafe、System One 模型与 Jev 官方资源及社区项目的精选列表，为想接入类型化决策能力的开发者提供入口。",
-          "en": "A curated list of official resources and community projects for TypeSafe, System One models, and Jev."
+          "zh": "另一份聚焦 Jev 生态的工具清单，收录为 TypeSafe AI 的 System One 模型构建的各类工具，覆盖机器人、控制、仿真等方向。适合想了解 Jev 在非对话场景下有哪些现成工具可用的开发者。",
+          "en": "A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions."
         },
         "todayHighlight": {
-          "zh": "项目创建约一个月，已积累 360 stars，今日出现在上升榜；与同主题清单同步升温，反映 TypeSafe 生态正在吸引早期关注。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+          "zh": "项目创建仅两天左右便获得 369 stars，今日在 rising 榜单中出现，说明 Jev 相关生态的清单类项目正在被快速传播和补充。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 360 stars、60 forks，topics: ai-agents, awesome-list, jev, llm, machine-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 360 stars and 60 forks，topics: ai-agents, awesome-list, jev, llm, machine-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 369 stars、1 forks，topics: awesome, awesome-list, awesome-lists, jev, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 369 stars and 1 forks，topics: awesome, awesome-list, awesome-lists, jev, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "当同一技术方向短期内出现多份精选清单时，说明该生态正处于「资源聚合期」，产品经理可借此判断是否值得提前布局。",
+          "zh": "同一模型生态短时间内出现多份清单，提示产品经理关注新兴 AI 模型生态中「工具索引」类项目的卡位价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
         "sources": [
           {
             "label": "GitHub Repository",
-            "url": "https://github.com/AbdelStark/awesome-typesafe"
+            "url": "https://github.com/v-modal/awesome-jev-tools"
           }
         ]
       },
@@ -339,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Cloudflare 推出的编码 Agent 技能，能把 AI 编程助手变成安全审计员：自动完成侦察、覆盖式漏洞搜寻、候选验证、结构化输出与独立复核，最终生成机器可读的审计结果。",
+          "zh": "Cloudflare 推出的编码代理技能，能把 AI 编程助手变成安全审计员：自动完成侦察、覆盖式排查、候选验证、结构化输出和独立复核，最终给出机器可读的审计发现。适合在开发流程中嵌入自动化安全审查。",
           "en": "Star cloudflare / security-audit-skill A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
         },
-        "totalStars": 17002,
+        "totalStars": 17102,
         "language": "JavaScript",
         "dailyStars": 3155,
         "chineseIntro": {
-          "zh": "Cloudflare 推出的编码 Agent 技能，能把 AI 编程助手变成安全审计员：自动完成侦察、覆盖式漏洞搜寻、候选验证、结构化输出与独立复核，最终生成机器可读的审计结果。",
+          "zh": "Cloudflare 推出的编码代理技能，能把 AI 编程助手变成安全审计员：自动完成侦察、覆盖式排查、候选验证、结构化输出和独立复核，最终给出机器可读的审计发现。适合在开发流程中嵌入自动化安全审查。",
           "en": "Star cloudflare / security-audit-skill A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
         },
         "todayHighlight": {
-          "zh": "今日新增 3155 stars，总 star 数达 1.7 万，位列全球趋势榜第 1；作为 Cloudflare 漏洞发现框架的开源技能，安全审计与 Agent 结合的话题快速传播。",
+          "zh": "今日新增 3155 stars，总 star 数达 17102，位列全球趋势榜第 1，增长较快，与 Cloudflare 官方博客中「自建漏洞发现工具链」的叙事传播有关。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 3 个月便已积累 17k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 3,155 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,002 stars、933 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,002 stars and 933 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,102 stars、940 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,102 stars and 940 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "安全审计正从人工流程变成可编排的 Agent 技能，产品经理应思考如何把专业工作流封装成「技能」来扩展 AI 助手的边界。",
+          "zh": "值得观察大厂如何把内部安全审计能力封装成可复用的代理技能，以及「机器可读审计结果」对 DevSecOps 产品形态的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 编程 Agent 的生产级工程技能集合，把资深工程师的工作流、质量门禁和最佳实践打包成技能，让 Agent 在开发各阶段保持一致的高标准。",
+          "zh": "面向 AI 编程代理的生产级工程技能集合，把资深工程师的工作流、质量门禁和最佳实践打包成代理可遵循的技能，让 AI 在开发各阶段保持一致的高标准。适合希望提升 AI 编码质量的团队。",
           "en": "Production-grade engineering skills for AI coding agents."
         },
-        "totalStars": 97271,
+        "totalStars": 97302,
         "language": "JavaScript",
         "dailyStars": 556,
         "chineseIntro": {
-          "zh": "面向 AI 编程 Agent 的生产级工程技能集合，把资深工程师的工作流、质量门禁和最佳实践打包成技能，让 Agent 在开发各阶段保持一致的高标准。",
+          "zh": "面向 AI 编程代理的生产级工程技能集合，把资深工程师的工作流、质量门禁和最佳实践打包成代理可遵循的技能，让 AI 在开发各阶段保持一致的高标准。适合希望提升 AI 编码质量的团队。",
           "en": "Production-grade engineering skills for AI coding agents."
         },
         "todayHighlight": {
-          "zh": "总 star 数已超过 9.7 万，今日新增 556，位列全球趋势榜第 3；作为 Agent 技能生态中较早成体系的项目，持续获得新增关注。",
+          "zh": "总 star 数已超过 9.7 万，今日新增 556，位列全球趋势榜第 3，作为创建约 7 个月的项目持续获得关注，说明「给 AI 代理注入工程规范」的需求在升温。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 97k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 556 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 97,271 stars、10,263 forks，topics: agent-skills, antigravity, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 97,271 stars and 10,263 forks，topics: agent-skills, antigravity, claude-code, codex, cursor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 97,302 stars、10,263 forks，topics: agent-skills, antigravity, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 97,302 stars and 10,263 forks，topics: agent-skills, antigravity, claude-code, codex, cursor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "「技能化」正在成为 AI 编程助手差异化的关键，产品经理应关注如何把团队规范沉淀为可复用的 Agent 技能资产。",
+          "zh": "可以关注「代理技能」是否会成为 AI 编程工具的标准扩展方式，以及工程规范类内容如何转化为可复用的产品资产。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方的终端 AI 编程工具，能理解代码库、执行日常任务、解释复杂代码并处理 Git 工作流，全部通过自然语言命令完成，支持终端、IDE 等多种使用方式。",
+          "zh": "Anthropic 官方的终端 AI 编程工具，能理解代码库、执行日常任务、解释复杂代码并处理 Git 工作流，全部通过自然语言命令完成。支持终端、IDE 等多种使用方式。",
           "en": "Star anthropics / claude-code Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands."
         },
-        "totalStars": 146835,
+        "totalStars": 146848,
         "language": "TypeScript",
         "dailyStars": 483,
         "chineseIntro": {
-          "zh": "Anthropic 官方的终端 AI 编程工具，能理解代码库、执行日常任务、解释复杂代码并处理 Git 工作流，全部通过自然语言命令完成，支持终端、IDE 等多种使用方式。",
+          "zh": "Anthropic 官方的终端 AI 编程工具，能理解代码库、执行日常任务、解释复杂代码并处理 Git 工作流，全部通过自然语言命令完成。支持终端、IDE 等多种使用方式。",
           "en": "Star anthropics / claude-code Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands."
         },
         "todayHighlight": {
-          "zh": "总 star 数已接近 14.7 万，今日新增 483，位列全球趋势榜第 5；作为 Agent 编程赛道的标杆产品，长期保持高热度。",
+          "zh": "总 star 数已接近 14.7 万，今日新增 483，位列全球趋势榜第 5，作为创建约 19 个月的项目持续在榜，反映出终端型 AI 编程助手仍是开发者关注的核心入口。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 146k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 483 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 146,835 stars、23,981 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 146,835 stars and 23,981 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 146,848 stars、23,983 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 146,848 stars and 23,983 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察官方工具如何定义「终端内 Agent 编程」的交互范式，这对设计 AI 开发工具的产品形态有直接参考价值。",
+          "zh": "值得观察官方终端代理如何与 IDE、插件生态协同，以及自然语言编程入口对开发者工作流的长期重塑。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 开源的插件仓库，主要面向知识工作者，用于 Claude Cowork（也兼容 Claude Code），让 Claude 变成特定角色、团队或公司的专属助手，可配置工作方式、数据来源和快捷命令。",
+          "zh": "Anthropic 开源的插件集合，主要面向知识工作者，用于 Claude Cowork 场景。插件可以让 Claude 按你的角色、团队和公司习惯来工作，指定数据来源、关键流程和快捷命令，也兼容 Claude Code。",
           "en": "Star anthropics / knowledge-work-plugins Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork"
         },
-        "totalStars": 25205,
+        "totalStars": 25211,
         "language": "Python",
         "dailyStars": 281,
         "chineseIntro": {
-          "zh": "Anthropic 开源的插件仓库，主要面向知识工作者，用于 Claude Cowork（也兼容 Claude Code），让 Claude 变成特定角色、团队或公司的专属助手，可配置工作方式、数据来源和快捷命令。",
+          "zh": "Anthropic 开源的插件集合，主要面向知识工作者，用于 Claude Cowork 场景。插件可以让 Claude 按你的角色、团队和公司习惯来工作，指定数据来源、关键流程和快捷命令，也兼容 Claude Code。",
           "en": "Star anthropics / knowledge-work-plugins Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork"
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 2.5 万，今日新增 281，位列全球趋势榜第 13；随着 Claude Cowork 面向知识工作场景推广，插件生态持续获得关注。",
+          "zh": "总 star 数超过 2.5 万，今日新增 281，位列全球趋势榜第 13，作为创建约 8 个月的项目持续获得关注，说明「把通用 AI 变成岗位专家」的插件化思路在扩散。",
           "en": "登上 GitHub Trending 日榜第 13 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 281 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 25,205 stars、3,002 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 25,205 stars and 3,002 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 25,211 stars、3,002 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 25,211 stars and 3,002 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "知识工作场景的 AI 插件化是重要方向，产品经理可研究如何用「角色 + 数据 + 命令」的配置方式降低企业落地门槛。",
+          "zh": "可以关注知识工作场景中「插件即岗位配置」的产品模式，以及通用助手如何通过插件沉淀企业专属工作流。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个容错、可扩展的 GPU 编排与机器学习框架，专为训练数十亿到数万亿参数的大模型设计，帮助团队在多节点环境下更稳定地完成训练任务。",
+          "zh": "一个容错、可扩展的 GPU 编排与机器学习框架，面向数十亿到数万亿参数的大模型训练，负责管理 GPU 工作负载和分布式训练。适合需要多节点训练大模型的团队。",
           "en": "Star higgsfield-ai / higgsfield Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters"
         },
-        "totalStars": 5072,
+        "totalStars": 5082,
         "language": "Jupyter Notebook",
         "dailyStars": 196,
         "chineseIntro": {
-          "zh": "一个容错、可扩展的 GPU 编排与机器学习框架，专为训练数十亿到数万亿参数的大模型设计，帮助团队在多节点环境下更稳定地完成训练任务。",
+          "zh": "一个容错、可扩展的 GPU 编排与机器学习框架，面向数十亿到数万亿参数的大模型训练，负责管理 GPU 工作负载和分布式训练。适合需要多节点训练大模型的团队。",
           "en": "Star higgsfield-ai / higgsfield Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters"
         },
         "todayHighlight": {
-          "zh": "项目已创建约 8 年，总 star 数 5072，今日新增 196，位列全球趋势榜第 7；在大模型训练基础设施需求持续存在的背景下重新获得关注。",
+          "zh": "项目创建已超过 8 年，今日新增 196 stars，位列全球趋势榜第 7，属于老项目重新获得关注，可能与近期大模型训练基础设施需求回升有关。",
           "en": "登上 GitHub Trending 日榜第 7 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 196 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,072 stars、924 forks，topics: cluster-management, deep-learning, distributed, llama, llama2，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,072 stars and 924 forks，topics: cluster-management, deep-learning, distributed, llama, llama2, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,082 stars、926 forks，topics: cluster-management, deep-learning, distributed, llama, llama2，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,082 stars and 926 forks，topics: cluster-management, deep-learning, distributed, llama, llama2, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "老牌训练框架的重新升温说明大模型基础设施仍是刚需，产品经理可关注多节点训练稳定性和成本控制这类企业级痛点。",
+          "zh": "值得观察老牌分布式训练框架在 LLM 时代如何被重新评估，以及 GPU 编排层在 AI 基础设施中的产品定位。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向手机、可穿戴设备、智能家居、机器人和微控制器的自动化基础模型，整个模型仅 8-29 MB、2-bit 量化，主打端侧工具调用、结构化抽取和嵌入能力。",
+          "zh": "面向手机、可穿戴设备、智能家居、机器人和微控制器的自动化基础模型，整模型仅 8-29 MB、2-bit 量化，支持工具调用、结构化抽取和嵌入。牺牲通用聊天能力，换取在端侧工具调用上超越十倍大模型的表现。",
           "en": "Star cactus-compute / needle Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers."
         },
-        "totalStars": 11733,
+        "totalStars": 11754,
         "language": "Python",
         "dailyStars": 234,
         "chineseIntro": {
-          "zh": "面向手机、可穿戴设备、智能家居、机器人和微控制器的自动化基础模型，整个模型仅 8-29 MB、2-bit 量化，主打端侧工具调用、结构化抽取和嵌入能力。",
+          "zh": "面向手机、可穿戴设备、智能家居、机器人和微控制器的自动化基础模型，整模型仅 8-29 MB、2-bit 量化，支持工具调用、结构化抽取和嵌入。牺牲通用聊天能力，换取在端侧工具调用上超越十倍大模型的表现。",
           "en": "Star cactus-compute / needle Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers."
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 1.1 万，今日新增 234，位列全球趋势榜第 14；端侧 AI 与「小模型做工具调用」的方向持续升温。",
+          "zh": "总 star 数超过 1.1 万，今日新增 234，位列全球趋势榜第 14，作为创建约 7 个月的项目持续在榜，说明端侧小模型与工具调用方向正在升温。",
           "en": "登上 GitHub Trending 日榜第 14 位, RAG/向量检索仍是 AI 应用落地的高频需求，相关工具链持续被集成, 今日新增 234 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,733 stars、752 forks，topics: cactus, edge-ai, foundation-model, function-calling, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,733 stars and 752 forks，topics: cactus, edge-ai, foundation-model, function-calling, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,754 stars、753 forks，topics: cactus, edge-ai, foundation-model, function-calling, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,754 stars and 753 forks，topics: cactus, edge-ai, foundation-model, function-calling, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "端侧小模型正在把 AI 能力带到没有云连接的设备上，产品经理应评估哪些功能可以本地化以降低延迟和隐私风险。",
+          "zh": "可以关注「极小体积 + 工具调用」的端侧模型是否能在手机、汽车、机器人等场景中形成新的产品入口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个把 PDF、Word、Excel、PowerPoint、HTML 等文档转换成 Markdown、JSON 等结构化格式的工具，为生成式 AI 应用准备高质量文档数据，支持表格解析。",
+          "zh": "把 PDF、Word、Excel、PowerPoint、HTML 等各类文档转换成适合生成式 AI 使用的结构化格式，支持表格、Markdown、JSON 等输出。是 AI 应用做文档预处理时常用的工具链。",
           "en": "Star docling-project / docling Get your documents ready for gen AI"
         },
-        "totalStars": 67267,
+        "totalStars": 67291,
         "language": "Python",
         "dailyStars": 129,
         "chineseIntro": {
-          "zh": "一个把 PDF、Word、Excel、PowerPoint、HTML 等文档转换成 Markdown、JSON 等结构化格式的工具，为生成式 AI 应用准备高质量文档数据，支持表格解析。",
+          "zh": "把 PDF、Word、Excel、PowerPoint、HTML 等各类文档转换成适合生成式 AI 使用的结构化格式，支持表格、Markdown、JSON 等输出。是 AI 应用做文档预处理时常用的工具链。",
           "en": "Star docling-project / docling Get your documents ready for gen AI"
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 6.7 万，今日新增 129，位列全球趋势榜第 8；作为 AI 文档预处理的基础组件，随 RAG 和文档智能需求持续获得关注。",
+          "zh": "总 star 数超过 6.7 万，今日新增 129，位列全球趋势榜第 8，作为创建约 27 个月的项目持续在榜，说明文档解析仍是 AI 数据管道中的稳定刚需。",
           "en": "登上 GitHub Trending 日榜第 8 位, 总 star 数已达 67k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 129 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 67,267 stars、4,843 forks，topics: ai, convert, document-parser, document-parsing, documents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 67,267 stars and 4,843 forks，topics: ai, convert, document-parser, document-parsing, documents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 67,291 stars、4,845 forks，topics: ai, convert, document-parser, document-parsing, documents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 67,291 stars and 4,845 forks，topics: ai, convert, document-parser, document-parsing, documents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "文档解析质量直接决定 AI 应用的上限，产品经理应把文档预处理链路当作核心能力而非边缘工具来规划。",
+          "zh": "值得观察文档解析工具在 RAG 和 Agent 数据准备中的基础组件地位，以及多格式兼容能力对产品落地的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -613,43 +613,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "companyUpdates": [
       {
         "title": {
-          "zh": "Hacker News AI: Show HN: Website Auditor –> Test your brand's AI visibility, get growth plan",
-          "en": "Hacker News AI: Show HN: Website Auditor –> Test your brand's AI visibility, get growth plan"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "有开发者发布 Website Auditor，抓取网站后向 Claude、ChatGPT、Gemini、Perplexity 四个 AI 助手提问，检测品牌在其业务领域回答中是否进入前五，并据此给出评分与增长建议。这意味着「AI 可见性」正从概念变成可量化、可审计的指标。",
-          "en": "Hey HN community - Website Auditor crawls and hits 4 AI Assistants (Claude, ChatGPT, Gemini, Perplexity) based on your website's detected business sector with questions based on the market served. If your business comes back in the top five of your market served for that business sector, you are scored. If not, you get a 0. Based on that, I pull the citations AI assistants use to determine ranking, and put together a"
-        },
-        "chineseIntro": {
-          "zh": "有开发者发布 Website Auditor，抓取网站后向 Claude、ChatGPT、Gemini、Perplexity 四个 AI 助手提问，检测品牌在其业务领域回答中是否进入前五，并据此给出评分与增长建议。这意味着「AI 可见性」正从概念变成可量化、可审计的指标。",
-          "en": "Hey HN community - Website Auditor crawls and hits 4 AI Assistants (Claude, ChatGPT, Gemini, Perplexity) based on your website's detected business sector with questions based on the market served. If your business comes back in the top five of your market served for that business sector, you are scored. If not, you get a 0. Based on that, I pull the citations AI assistants use to determine ranking, and put together a"
-        },
-        "todayHighlight": {
-          "zh": "当用户获取信息的入口从搜索框转向 AI 助手，品牌排名规则被重写，这类工具可能催生新的 SEO 品类与预算项。",
-          "en": "当用户获取信息的入口从搜索框转向 AI 助手，品牌排名规则被重写，这类工具可能催生新的 SEO 品类与预算项。"
-        },
-        "pmInsight": {
-          "zh": "PM 可先自查自家产品在四个主流助手中的提及率与引用来源，把「AI 可见性」纳入增长指标而非仅看传统搜索流量。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://website-auditor.io/"
-          }
-        ]
-      },
-      {
-        "title": {
           "zh": "OpenAI: Introducing the Australian Youth Safety Blueprint",
           "en": "OpenAI: Introducing the Australian Youth Safety Blueprint"
         },
@@ -662,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 发布澳大利亚青少年安全蓝图，提出六大支柱路线图，用于在保护未成年人的同时让他们安全使用 AI。这是把安全承诺落到具体区域监管框架的动作。",
+          "zh": "OpenAI 发布面向澳大利亚的青少年安全蓝图，提出六大支柱路线图，旨在让年轻人在使用 AI 时既受保护又能获得赋能。这意味着面向未成年人的 AI 产品将面临更明确的安全设计与合规预期。",
           "en": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布澳大利亚青少年安全蓝图，提出六大支柱路线图，用于在保护未成年人的同时让他们安全使用 AI。这是把安全承诺落到具体区域监管框架的动作。",
+          "zh": "OpenAI 发布面向澳大利亚的青少年安全蓝图，提出六大支柱路线图，旨在让年轻人在使用 AI 时既受保护又能获得赋能。这意味着面向未成年人的 AI 产品将面临更明确的安全设计与合规预期。",
           "en": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
         },
         "todayHighlight": {
-          "zh": "各国青少年 AI 监管正在加速，OpenAI 选择主动输出框架而非被动合规，意在抢占规则制定的话语权。",
-          "en": "各国青少年 AI 监管正在加速，OpenAI 选择主动输出框架而非被动合规，意在抢占规则制定的话语权。"
+          "zh": "在各国监管加速收紧未成年人 AI 使用的背景下，OpenAI 主动以区域蓝图抢占合规话语权，可能成为其他市场青少年安全政策的模板。",
+          "en": "在各国监管加速收紧未成年人 AI 使用的背景下，OpenAI 主动以区域蓝图抢占合规话语权，可能成为其他市场青少年安全政策的模板。"
         },
         "pmInsight": {
-          "zh": "面向 C 端或教育场景的 PM 应提前梳理未成年人年龄识别、内容分级与家长控制能力，避免在区域合规落地时被动改造。",
+          "zh": "若产品涉及未成年用户，应尽快对照六大支柱梳理年龄验证、内容过滤与家长控制缺口，把合规成本前置为产品设计项。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -699,19 +662,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Anthropic 与埃森哲合作开展前沿 AI 的独立评估，由埃森哲旗下 Faculty 团队主导红队测试、对齐评估与模型防护测试，双方计划五年内各投入至少 10 亿美元。这推动「嵌入式评估者」进入模型公司内部。",
+          "zh": "Anthropic 与埃森哲合作开展前沿 AI 的独立评估，由埃森哲旗下 Faculty 团队主导红队测试、对齐评估与模型防护测试，双方计划五年内各投入至少 10 亿美元。这标志着「嵌入式评估」从理念走向落地，评估方将像员工一样进入 AI 公司内部。",
           "en": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO`s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.The partnership will be led by Faculty, Accenture`s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps"
         },
         "chineseIntro": {
-          "zh": "Anthropic 与埃森哲合作开展前沿 AI 的独立评估，由埃森哲旗下 Faculty 团队主导红队测试、对齐评估与模型防护测试，双方计划五年内各投入至少 10 亿美元。这推动「嵌入式评估者」进入模型公司内部。",
+          "zh": "Anthropic 与埃森哲合作开展前沿 AI 的独立评估，由埃森哲旗下 Faculty 团队主导红队测试、对齐评估与模型防护测试，双方计划五年内各投入至少 10 亿美元。这标志着「嵌入式评估」从理念走向落地，评估方将像员工一样进入 AI 公司内部。",
           "en": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO`s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.The partnership will be led by Faculty, Accenture`s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps"
         },
         "todayHighlight": {
-          "zh": "把第三方评估者放进公司内部、给予接近员工的访问权限，是对「自我监管不可信」质疑的直接回应，可能成为前沿实验室安全治理的新范式。",
-          "en": "把第三方评估者放进公司内部、给予接近员工的访问权限，是对「自我监管不可信」质疑的直接回应，可能成为前沿实验室安全治理的新范式。"
+          "zh": "这是头部模型公司首次把第三方评估机构嵌入内部并配套十亿美元级投入，可能重塑前沿模型的安全验证标准与行业信任机制。",
+          "en": "这是头部模型公司首次把第三方评估机构嵌入内部并配套十亿美元级投入，可能重塑前沿模型的安全验证标准与行业信任机制。"
         },
         "pmInsight": {
-          "zh": "涉及高风险场景的 PM 应关注嵌入式评估带来的模型行为变更节奏，提前在发布流程中预留评估反馈到产品迭代的回路。",
+          "zh": "做企业级 AI 产品的团队应关注嵌入式评估产出的报告口径，提前准备模型卡、红队记录与对齐证据，以便在客户安全审查中复用。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -736,22 +699,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 将「限制代码覆盖率」规则集选项开放给正式版 REST API，此前只能在网页界面配置。团队现在可以按行覆盖率设最低门槛或限制 PR 覆盖率下降幅度，并纳入基础设施即代码流程。",
+          "zh": "GitHub 将代码覆盖率规则集条件开放给正式版 REST API，此前只能在网页界面配置，现在可通过 API 创建、更新和读取该规则。团队可以按行覆盖率设最低门槛或限制 PR 覆盖率下降幅度，并纳入基础设施即代码流程。",
           "en": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce&#8230; The post Manage the code coverage ruleset condition with the REST API appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 将「限制代码覆盖率」规则集选项开放给正式版 REST API，此前只能在网页界面配置。团队现在可以按行覆盖率设最低门槛或限制 PR 覆盖率下降幅度，并纳入基础设施即代码流程。",
+          "zh": "GitHub 将代码覆盖率规则集条件开放给正式版 REST API，此前只能在网页界面配置，现在可通过 API 创建、更新和读取该规则。团队可以按行覆盖率设最低门槛或限制 PR 覆盖率下降幅度，并纳入基础设施即代码流程。",
           "en": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce&#8230; The post Manage the code coverage ruleset condition with the REST API appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "代码质量门禁从人工点击走向可编程，是多仓库规模化治理的关键一步，也强化了 GitHub 在企业研发流程中的粘性。",
-          "en": "代码质量门禁从人工点击走向可编程，是多仓库规模化治理的关键一步，也强化了 GitHub 在企业研发流程中的粘性。"
+          "zh": "覆盖率门禁从手工配置变为可编程治理，意味着代码质量策略可以像其他基础设施一样被版本化和批量下发。",
+          "en": "覆盖率门禁从手工配置变为可编程治理，意味着代码质量策略可以像其他基础设施一样被版本化和批量下发。"
         },
         "pmInsight": {
-          "zh": "研发效能类 PM 可把覆盖率规则写入仓库模板与 CI 流水线，让新项目默认继承质量门槛，减少逐仓库手工配置。",
+          "zh": "多仓库团队应把覆盖率规则写入 IaC 模板统一管理，避免各仓库配置漂移，同时注意该能力依赖 GitHub Code Quality 与覆盖率上传配置。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "GitHub Changelog",
@@ -773,19 +736,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "LocalLLaMA 社区讨论 Gemini 4 发布后基准测试分数上升，并质疑此前「开源权重模型正在缩小差距」的说法。这反映出社区对闭源前沿模型与开源模型差距的重新评估。",
+          "zh": "LocalLLaMA 社区讨论称 Gemini 4 发布后基准测试分数整体走高，并质疑此前「开放权重模型正在追赶」的说法。这反映出社区对闭源旗舰模型拉开差距的敏感与焦虑。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wkxx8e/with_gemini_4_bench_goes_up/\"> <img src=\"https://preview.redd.it/bggvjg6xmjqh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=28688ffaaca2c001f9c0494cb64284e7af185bc6\" alt=\"With Gemini 4, bench goes up.\" title=\"With Gemini 4, bench goes up.\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p><strong>They claimed open-weight models are d"
         },
         "chineseIntro": {
-          "zh": "LocalLLaMA 社区讨论 Gemini 4 发布后基准测试分数上升，并质疑此前「开源权重模型正在缩小差距」的说法。这反映出社区对闭源前沿模型与开源模型差距的重新评估。",
+          "zh": "LocalLLaMA 社区讨论称 Gemini 4 发布后基准测试分数整体走高，并质疑此前「开放权重模型正在追赶」的说法。这反映出社区对闭源旗舰模型拉开差距的敏感与焦虑。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wkxx8e/with_gemini_4_bench_goes_up/\"> <img src=\"https://preview.redd.it/bggvjg6xmjqh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=28688ffaaca2c001f9c0494cb64284e7af185bc6\" alt=\"With Gemini 4, bench goes up.\" title=\"With Gemini 4, bench goes up.\" /> </a> </td><td> <!-- SC_OFF --><div class=\"md\"><p><strong>They claimed open-weight models are d"
         },
         "todayHighlight": {
-          "zh": "若闭源旗舰再次拉开代差，开源阵营的追赶叙事与本地部署的性价比判断都需要重新校准。",
-          "en": "若闭源旗舰再次拉开代差，开源阵营的追赶叙事与本地部署的性价比判断都需要重新校准。"
+          "zh": "若 Gemini 4 确实抬高了基准水位，开源与闭源之间的能力差距可能重新扩大，影响本地部署与开源路线的选型信心。",
+          "en": "若 Gemini 4 确实抬高了基准水位，开源与闭源之间的能力差距可能重新扩大，影响本地部署与开源路线的选型信心。"
         },
         "pmInsight": {
-          "zh": "依赖开源权重做本地部署的 PM 应重新跑一遍自身任务集的对比评测，而不是沿用旧结论决定是否切换到闭源 API。",
+          "zh": "在选型评估中不要只看社区榜单涨跌，应针对自身任务跑私有评测集，确认闭源旗舰的增益是否真实转化为业务指标。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -793,6 +756,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Reddit LocalLLaMA",
             "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wkxx8e/with_gemini_4_bench_goes_up/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: Stepfun Step 5 Preview (LLM): On AA Pareto frontier",
+          "en": "Hacker News LLM: Stepfun Step 5 Preview (LLM): On AA Pareto frontier"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "阶跃星辰 Step 5 Preview 登上 Artificial Analysis 帕累托前沿，智能指数 44 分远高于同类中位数 24，输入 1 美元、输出 2.7 美元每百万 token，速度约 100 token/秒，支持文本与图像输入及 100 万 token 上下文。其输出冗长程度也显著高于中位数。",
+          "en": "Article URL: https://artificialanalysis.ai/models/step-5 Comments URL: https://news.ycombinator.com/item?id=49763660 Points: 15 # Comments: 2"
+        },
+        "chineseIntro": {
+          "zh": "阶跃星辰 Step 5 Preview 登上 Artificial Analysis 帕累托前沿，智能指数 44 分远高于同类中位数 24，输入 1 美元、输出 2.7 美元每百万 token，速度约 100 token/秒，支持文本与图像输入及 100 万 token 上下文。其输出冗长程度也显著高于中位数。",
+          "en": "Article URL: https://artificialanalysis.ai/models/step-5 Comments URL: https://news.ycombinator.com/item?id=49763660 Points: 15 # Comments: 2"
+        },
+        "todayHighlight": {
+          "zh": "中国厂商在智能与价格比上进入第一梯队，可能进一步压低中高端模型的 API 定价预期，加剧与头部闭源模型的性价比竞争。",
+          "en": "中国厂商在智能与价格比上进入第一梯队，可能进一步压低中高端模型的 API 定价预期，加剧与头部闭源模型的性价比竞争。"
+        },
+        "pmInsight": {
+          "zh": "若考虑接入该模型，需重点压测其冗长输出带来的 token 成本放大效应，并评估 100 万上下文在长文档场景下的实际可用性。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://artificialanalysis.ai/models/step-5"
           }
         ]
       },
@@ -810,19 +810,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "Vercel 将 Spend Management 扩展到企业 Flexible Commitment 计划，企业团队可免费设置按计费周期的预算，接近或超支时触发邮件、Webhook 或暂停所有项目的生产部署。此前该能力仅面向 Pro。",
+          "zh": "Vercel 将支出管理扩展到企业灵活承诺计划，企业团队可免费使用该功能，按计费周期设置预算，在用量接近或超出时触发邮件通知、Webhook 或暂停所有项目的生产部署。暂停为可选开启，且不影响 AI Gateway 与 v0 用量。",
           "en": "Enterprise teams on Flexible Commitment plans can now use Spend Management, already available on Pro, at no additional cost.You can set a budget at any time in Spend Management settings.Set a budget per billing cycle, and when your team's metered usage approaches or crosses it, Spend Management can send email notifications, trigger a webhook, or pause the production deployments of all projects. The amount governs the"
         },
         "chineseIntro": {
-          "zh": "Vercel 将 Spend Management 扩展到企业 Flexible Commitment 计划，企业团队可免费设置按计费周期的预算，接近或超支时触发邮件、Webhook 或暂停所有项目的生产部署。此前该能力仅面向 Pro。",
+          "zh": "Vercel 将支出管理扩展到企业灵活承诺计划，企业团队可免费使用该功能，按计费周期设置预算，在用量接近或超出时触发邮件通知、Webhook 或暂停所有项目的生产部署。暂停为可选开启，且不影响 AI Gateway 与 v0 用量。",
           "en": "Enterprise teams on Flexible Commitment plans can now use Spend Management, already available on Pro, at no additional cost.You can set a budget at any time in Spend Management settings.Set a budget per billing cycle, and when your team's metered usage approaches or crosses it, Spend Management can send email notifications, trigger a webhook, or pause the production deployments of all projects. The amount governs the"
         },
         "todayHighlight": {
-          "zh": "AI 应用的按量计费容易失控，把预算熔断下放到企业套餐，说明成本治理正成为平台竞争的基础能力。",
-          "en": "AI 应用的按量计费容易失控，把预算熔断下放到企业套餐，说明成本治理正成为平台竞争的基础能力。"
+          "zh": "AI 应用的成本失控风险正被平台层直接接管，预算护栏从财务工具变成部署控制面的一部分。",
+          "en": "AI 应用的成本失控风险正被平台层直接接管，预算护栏从财务工具变成部署控制面的一部分。"
         },
         "pmInsight": {
-          "zh": "PM 应为 AI 功能单独设置预算阈值与告警 Webhook，并明确暂停部署的触发条件，避免一次流量高峰烧穿季度预算。",
+          "zh": "接入前应确认暂停部署的触发阈值与恢复流程，避免生产环境被自动暂停，同时把 Webhook 接到内部告警以提前干预。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
