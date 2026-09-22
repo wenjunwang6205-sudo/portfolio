@@ -48,30 +48,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily · 2026-09-22"
     },
     "editorNote": {
-      "zh": "今日主线是「Agent 基础设施与决策模型同时升温」：一边是 DeepSeek 官方 Agent 框架、BuilderIO 的 Agent 原生前端框架、跨厂商记忆层在 GitHub 上持续获得关注；另一边是 Jev 这类只输出分类与置信度的决策模型，开始挑战按输出 token 计费的既有定价逻辑。",
-      "en": "Today's thread: agent infrastructure and decision-only models are heating up at the same time — DeepSeek's official agent harness, BuilderIO's agent-native frontend framework, and cross-vendor memory layers are gaining traction on GitHub, while decision models like Jev start to challenge output-token pricing."
+      "zh": "今日主线是「Agent 基础设施与决策模型同时升温」：DeepSeek 官方 Agent 框架、BuilderIO 的 Agent 原生框架、以及为编码助手补记忆的开源方案，都在把 Agent 从演示推向工程化；与此同时，Jev 提出的「决策模型」形态，可能让分类、审核、路由这类场景不再依赖文本生成。",
+      "en": "Today's thread: agent infrastructure and decision models are heating up together. DeepSeek's official agent framework, BuilderIO's agent-native framework, and open-source memory layers for coding assistants are pushing agents from demo to engineering, while Jev's 'decision model' shape may remove text generation from classification, moderation, and routing."
     },
     "keyTakeaway": {
-      "zh": "Agent 的竞争重心正从「模型能力」下移到「运行框架 + 记忆 + 原生交互」这一层，同时 Jev 这类决策模型提示：并非所有 AI 调用都需要生成文本，按「判断」而非「字数」计费可能成为新的产品分叉点。",
-      "en": "The agent race is shifting down-stack from model capability to runtime, memory, and native interaction layers — and decision-only models like Jev suggest not every AI call needs text generation, making 'pay per judgment' rather than 'pay per token' a possible new product fork."
+      "zh": "Agent 的竞争重心正从「模型能力」转向「运行框架 + 记忆 + 评审流程」的工程化配套，同时 Jev 这类只输出结构化决策的模型开始试探按 token 计价的成本结构。",
+      "en": "The agent race is shifting from raw model capability to engineering scaffolding — runtime frameworks, memory, and review workflows — while decision-only models like Jev begin to probe the token-priced cost structure."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 运行框架与原生交互层同时升温",
-          "en": "Agent runtime and native interaction layers heat up together"
+          "zh": "Agent 运行框架密集出现，工程化配套成为新战场",
+          "en": "Agent runtime frameworks cluster, engineering scaffolding becomes the new battleground"
         },
         "category": {
-          "zh": "开发者生态 / Agent 基础设施",
-          "en": "Developer Ecosystem / Agent Infrastructure"
+          "zh": "Agent 基础设施",
+          "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "DeepSeek 官方开源 deepseek-harness，采用「一切皆插件」架构，创建约一个月总 star 已超 23 万；BuilderIO/agent-native 今日登上全球趋势榜第 1，单日新增 607 星，主打用 React + TypeScript 把 Agent 嵌入产品而非外挂聊天窗口。两者分别覆盖运行框架与前端交互层。",
-          "en": "DeepSeek open-sourced deepseek-harness with an 'everything is a plugin' architecture, surpassing 230K stars in about a month; BuilderIO/agent-native topped the global trending list today with 607 stars in a day, embedding agents into products via React + TypeScript instead of a bolted-on chat window."
+          "zh": "DeepSeek 官方开源 deepseek-harness，采用「一切皆插件」架构，创建约一个月 star 已超 23 万；BuilderIO/agent-native 今日新增 607 star 位列全球趋势榜第一，主张把 Agent 能力直接嵌入 React/TypeScript 应用逻辑；akitaonrails/ai-memory 今日新增 167 star，解决多 Agent 工具切换时的记忆断层。",
+          "en": "DeepSeek open-sourced deepseek-harness with an 'everything is a plugin' architecture, passing 230k stars in about a month; BuilderIO/agent-native added 607 stars today to top the global trending list, embedding agent capability directly into React/TypeScript app logic; akitaonrails/ai-memory added 167 stars, addressing memory loss when switching between agent tools."
         },
         "pmInsight": {
-          "zh": "Agent 能力正在被拆成「运行时 + 交互层」两个可独立选型的模块，意味着产品团队不必自研全套，但也意味着差异化会更快被抹平。建议本周评估：自家 Agent 功能中哪些应绑定框架、哪些应保留在自有交互层，避免把核心体验交给单一开源依赖。",
-          "en": "Agent capability is splitting into independently selectable runtime and interaction layers — teams need not build everything, but differentiation erodes faster. This week, decide which agent features should bind to a framework and which should stay in your own interaction layer."
+          "zh": "框架层正在被大厂开源和社区项目同时填充，意味着 Agent 产品的差异化将更多来自记忆、权限、评审等配套能力，而非单点模型调用。PM 应评估自研 Agent 编排层是否还有必要，优先把资源投向记忆与可观测性。",
+          "en": "The framework layer is being filled by both big-lab open source and community projects, meaning agent product differentiation will come from memory, permissions, and review rather than single model calls. PMs should reassess whether to build their own orchestration layer and shift resources to memory and observability."
         },
         "impact": "High",
         "sources": [
@@ -82,68 +82,68 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "BuilderIO/agent-native",
             "url": "https://github.com/BuilderIO/agent-native"
+          },
+          {
+            "label": "akitaonrails/ai-memory",
+            "url": "https://github.com/akitaonrails/ai-memory"
           }
         ]
       },
       {
         "title": {
-          "zh": "多 Agent 工具并存催生「记忆迁移」需求",
-          "en": "Coexisting agent tools create demand for memory portability"
+          "zh": "Jev 决策模型试探「输出免费、输入计价」的新形态",
+          "en": "Jev's decision model probes a new shape: free output, priced input"
         },
         "category": {
-          "zh": "开发者工具 / 上下文管理",
-          "en": "Developer Tools / Context Management"
+          "zh": "模型形态与定价",
+          "en": "Model Shape & Pricing"
         },
         "summary": {
-          "zh": "akitaonrails/ai-memory 今日位列全球趋势榜第 4，单日新增 167 星，总 star 接近 8000，解决的是在 Claude Code 与 OpenAI Codex 之间切换时上下文丢失的问题；同期 yynxxxxx/Codex-X 以可视化方式管理 Codex 的提示词模板、供应商切换与 MCP 配置，单日新增 50 星。",
-          "en": "akitaonrails/ai-memory ranked #4 on the global trending list with 167 stars in a day (nearly 8K total), addressing context loss when switching between Claude Code and OpenAI Codex; meanwhile Codex-X visualizes Codex prompt templates, provider switching, and MCP config, adding 50 stars."
+          "zh": "TypeSafe AI 发布 Jev，输入文本、输出类别/是否判断/评分/置信度等浮点数，只对输入计费，输入价格低至每百万 token 0.042 美元；GitHub 上围绕 Jev 的 awesome 列表创建数日即获 600 多 star。",
+          "en": "TypeSafe AI released Jev, which takes text and outputs categories, booleans, scores, and confidence floats, charging only for input at as low as $0.042 per million tokens; a Jev awesome list on GitHub gained 600+ stars within days."
         },
         "pmInsight": {
-          "zh": "开发者已经在用第三方工具填补「记忆」和「配置」的空白，说明主流 Agent 产品在跨工具连续性和可配置性上仍有缺口。PM 行动方向：把「会话可迁移」当作一项可验证的产品指标，先在小范围用户中测试导出/导入上下文的留存影响。",
-          "en": "Developers are already using third-party tools to fill memory and config gaps, signaling that mainstream agent products lack cross-tool continuity and configurability. Test 'session portability' as a measurable retention lever with a small user group."
+          "zh": "如果决策模型在分类、审核、路由场景可用，很多产品不必再为生成式输出付费，成本结构会明显变化。PM 应挑一个高频分类或审核场景做 A/B，验证 Jev 类模型在准确率与延迟上是否可替代现有大模型调用。",
+          "en": "If decision models work for classification, moderation, and routing, many products no longer need to pay for generative output, changing the cost structure. PMs should pick one high-frequency classification or moderation scenario and A/B test whether Jev-like models can replace current LLM calls on accuracy and latency."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "akitaonrails/ai-memory",
-            "url": "https://github.com/akitaonrails/ai-memory"
-          },
-          {
-            "label": "yynxxxxx/Codex-X",
-            "url": "https://github.com/yynxxxxx/Codex-X"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "决策模型出现，挑战按输出 token 计费的定价逻辑",
-          "en": "Decision models emerge, challenging output-token pricing"
-        },
-        "category": {
-          "zh": "模型能力 / 定价模式",
-          "en": "Model Capability / Pricing Model"
-        },
-        "summary": {
-          "zh": "TypeSafe AI 发布 Jev，只输出分类、是非判断、评分与置信度，按输入 token 计费、输出免费，输入价格低至每百万 token 0.042 美元；社区已出现 awesome-jev-tools 这类生态清单，创建数日即超 600 star。同期 Vercel AI Gateway 上线 Grok 4.7，提供四档推理强度并在 9 月 27 日前 40% 折扣。",
-          "en": "TypeSafe AI released Jev, which outputs only classifications, yes/no judgments, scores, and confidence — billed on input tokens with free output, as low as $0.042 per million input tokens; an ecosystem list awesome-jev-tools already passed 600 stars in days. Meanwhile Vercel AI Gateway added Grok 4.7 with four reasoning levels and a 40% discount through Sept 27."
-        },
-        "pmInsight": {
-          "zh": "如果「判断」可以比「生成」便宜一个数量级，那么分类、路由、风控、意图识别等环节的成本结构会被重写，产品可以把更多决策点交给模型而不是硬编码规则。建议先挑一个高频、低风险的判断场景（如工单分类或内容打标）做 A/B，验证准确率与成本是否同时成立。",
-          "en": "If judgment can be an order of magnitude cheaper than generation, cost structures for classification, routing, risk, and intent detection get rewritten. Pick one high-frequency, low-risk judgment task (e.g., ticket triage) and A/B test accuracy against cost."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Hacker News LLM: Jev introduces a new shape of LLM",
+            "label": "Simon Willison: Jev introduces a new shape of LLM",
             "url": "https://simonwillison.net/2026/Sep/21/jev/"
           },
           {
             "label": "v-modal/awesome-jev-tools",
             "url": "https://github.com/v-modal/awesome-jev-tools"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 生成 PR 增多，GitHub 优先优化评审与批量处理",
+          "en": "As AI-generated PRs grow, GitHub prioritizes review and bulk handling"
+        },
+        "category": {
+          "zh": "开发者工作流",
+          "en": "Developer Workflow"
+        },
+        "summary": {
+          "zh": "GitHub 重新设计的仓库 Pull Requests 页面正式全量上线，新增内容辅助筛选、AND/OR 嵌套搜索、可折叠侧边栏、紧凑视图与批量操作；同期 Codex-X 这类 Codex 可视化管理工具今日新增 50 star，反映编码代理配置管理的实际需求。",
+          "en": "GitHub's redesigned repository Pull Requests page is now generally available, adding content-assisted filtering, nested AND/OR search, a collapsible sidebar, compact view, and bulk actions; meanwhile Codex-X, a visual manager for Codex, added 50 stars today, reflecting real demand for coding-agent configuration management."
+        },
+        "pmInsight": {
+          "zh": "GitHub 把 PR 发现与批量处理放在优先位置，说明评审环节正成为 AI 编码代理普及后的瓶颈。做研发效能或代码评审类产品的团队，应把「AI 生成 PR 的摘要、分组与批量决策」作为近期功能方向。",
+          "en": "GitHub prioritizing PR discovery and bulk actions signals that review is becoming the bottleneck as coding agents spread. Teams building engineering-efficiency or code-review products should make 'summarizing, grouping, and bulk-deciding AI-generated PRs' a near-term feature direction."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog: Refreshed repository pull requests page",
+            "url": "https://github.blog/changelog/2026-09-21-refreshed-repository-pull-requests-page-generally-available"
           },
           {
-            "label": "Vercel AI: Grok 4.7 now available and 40% off",
-            "url": "https://vercel.com/changelog/grok-4-7-now-available-and-40-off-on-ai-gateway-fx-eve"
+            "label": "yynxxxxx/Codex-X",
+            "url": "https://github.com/yynxxxxx/Codex-X"
           }
         ]
       }
@@ -151,59 +151,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "把「判断层」从生成式调用中拆出来做成本优化",
-          "en": "Split a 'judgment layer' out of generative calls for cost optimization"
+          "zh": "为多 Agent 工具用户做一层「项目记忆中间件」",
+          "en": "Build a project-memory middleware for multi-agent tool users"
         },
         "category": {
-          "zh": "产品架构 / 成本优化",
-          "en": "Product Architecture / Cost Optimization"
+          "zh": "Agent 记忆层",
+          "en": "Agent Memory Layer"
         },
         "summary": {
-          "zh": "基于 Jev 的输入计费模式与 Grok 4.7 的多档推理控制，可以假设：在客服意图识别、内容审核初筛、工单路由等场景中，用决策模型替代通用 LLM 生成调用，能在保持准确率的前提下显著降低单位成本。",
-          "en": "Given Jev's input-only pricing and Grok 4.7's tiered reasoning, hypothesize that replacing general LLM generation with decision models in intent detection, content pre-moderation, and ticket routing can cut unit cost while holding accuracy."
+          "zh": "ai-memory 今日新增 167 star，切中开发者在 Codex、Claude Code 等工具间切换时重复解释项目架构的痛点；DeepSeek harness 与 agent-native 也在推动 Agent 工程化。可验证假设：为团队提供一层跨工具的本地记忆服务，把项目架构、失败尝试、待解决问题持久化，能让新 Agent 会话的首次有效输出时间缩短 30% 以上。",
+          "en": "ai-memory added 167 stars today, targeting the pain of re-explaining project architecture when switching between Codex, Claude Code, and similar tools; DeepSeek harness and agent-native are also pushing agent engineering. Testable hypothesis: a cross-tool local memory service persisting architecture, failed attempts, and open issues can cut time-to-first-useful-output for a new agent session by over 30%."
         },
         "pmInsight": {
-          "zh": "可验证假设：选取一个日均调用量最高的判断类场景，用决策模型与现有 LLM 做并行 A/B，观察准确率差异是否在 2 个百分点以内、成本是否下降 50% 以上。若成立，可把该模式推广到其他规则密集环节。",
-          "en": "Verifiable hypothesis: run a parallel A/B on your highest-volume judgment task; if accuracy stays within 2 points and cost drops over 50%, extend the pattern to other rule-heavy steps."
+          "zh": "先在一个内部团队做两周试点，记录切换工具后重复解释的耗时与首次有效输出时间，再决定是否产品化。",
+          "en": "Run a two-week pilot in one internal team, logging time spent re-explaining after tool switches and time-to-first-useful-output, before deciding whether to productize."
         },
         "impact": "Medium",
-        "sources": [
-          {
-            "label": "Hacker News LLM: Jev introduces a new shape of LLM",
-            "url": "https://simonwillison.net/2026/Sep/21/jev/"
-          },
-          {
-            "label": "Vercel AI: Grok 4.7 now available and 40% off",
-            "url": "https://vercel.com/changelog/grok-4-7-now-available-and-40-off-on-ai-gateway-fx-eve"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "以「会话可迁移」作为 Agent 产品的留存抓手",
-          "en": "Use session portability as a retention lever for agent products"
-        },
-        "category": {
-          "zh": "Agent 产品 / 留存",
-          "en": "Agent Product / Retention"
-        },
-        "summary": {
-          "zh": "ai-memory 与 Codex-X 的走热说明开发者愿意为跨工具连续性付出额外工具成本。可假设：若 Agent 产品原生支持上下文导出与跨会话恢复，能提升重度用户的周留存与任务完成率。",
-          "en": "The traction of ai-memory and Codex-X shows developers will pay extra for cross-tool continuity. Hypothesize that native context export and cross-session restore can lift weekly retention and task completion for power users."
-        },
-        "pmInsight": {
-          "zh": "可验证假设：为 5% 的重度用户开放上下文导出/导入能力，对比其周留存与平均任务轮次是否高于对照组；若正向，再考虑把记忆层做成可插拔模块而非封闭能力。",
-          "en": "Verifiable hypothesis: give 5% of power users context export/import and compare weekly retention and average task turns against control; if positive, consider making the memory layer pluggable rather than closed."
-        },
-        "impact": "Watch",
         "sources": [
           {
             "label": "akitaonrails/ai-memory",
             "url": "https://github.com/akitaonrails/ai-memory"
           },
           {
-            "label": "yynxxxxx/Codex-X",
-            "url": "https://github.com/yynxxxxx/Codex-X"
+            "label": "deepseek-ai/deepseek-harness",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "在审核/路由场景试点决策模型替代生成式调用",
+          "en": "Pilot decision models to replace generative calls in moderation/routing"
+        },
+        "category": {
+          "zh": "成本优化",
+          "en": "Cost Optimization"
+        },
+        "summary": {
+          "zh": "Jev 以每百万输入 token 0.042 美元、输出免费的方式提供结构化决策，且 awesome 列表数日获 600 多 star。可验证假设：在内容审核或工单路由这类高频、低创造性场景，用决策模型替代大模型生成式调用，可在准确率下降不超过 2 个百分点的前提下把单次调用成本降低一个数量级。",
+          "en": "Jev offers structured decisions at $0.042 per million input tokens with free output, and its awesome list gained 600+ stars in days. Testable hypothesis: in high-frequency, low-creativity scenarios like content moderation or ticket routing, replacing generative LLM calls with decision models can cut per-call cost by an order of magnitude while losing no more than 2 percentage points of accuracy."
+        },
+        "pmInsight": {
+          "zh": "选一个日均调用量最高的审核或路由接口做影子流量对比，同时记录准确率、延迟与成本，两周后决定是否切换主链路。",
+          "en": "Pick the highest-volume moderation or routing endpoint for shadow-traffic comparison, logging accuracy, latency, and cost, then decide after two weeks whether to switch the main path."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Simon Willison: Jev introduces a new shape of LLM",
+            "url": "https://simonwillison.net/2026/Sep/21/jev/"
+          },
+          {
+            "label": "v-modal/awesome-jev-tools",
+            "url": "https://github.com/v-modal/awesome-jev-tools"
           }
         ]
       }
@@ -219,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，让开发者可以像搭积木一样组合出不同能力的智能体。适合需要快速搭建、灵活扩展 Agent 能力的团队。",
+          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，开发者可以按需拼装能力模块，用于构建和运行自主智能体。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 232806,
+        "totalStars": 232869,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，让开发者可以像搭积木一样组合出不同能力的智能体。适合需要快速搭建、灵活扩展 Agent 能力的团队。",
+          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，开发者可以按需拼装能力模块，用于构建和运行自主智能体。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，总 star 数已超过 23 万，今日在搜索场景中被发现并持续获得关注，反映出 DeepSeek 生态在 Agent 基础设施层的热度。",
+          "zh": "项目创建仅约一个月，总 star 数已超过 23 万，作为 DeepSeek 在 Agent 基础设施方向的开源布局，持续获得开发者关注。",
           "en": "创建仅约 1 个月便已积累 232k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 232,806 stars、27,948 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 232,806 stars and 27,948 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 232,869 stars、27,954 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 232,869 stars and 27,954 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「插件化 Agent 框架」是否会成为 AI 应用开发的新默认范式，以及它对产品功能迭代速度的影响。",
+          "zh": "关注头部模型厂商如何通过开源 Agent 框架锁定开发者生态，插件化架构可能成为 Agent 工具链的标准形态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "装在手机上的聊天副驾，能在微信、QQ、X、飞书等聊天应用中读懂对方消息，给出候选回复并一键填入输入框，发不发由用户决定。采用非侵入式设计，只读屏幕，不修改聊天应用。",
+          "zh": "装在安卓手机上的聊天辅助工具，能在微信、QQ、X、飞书等聊天界面中读取对话内容，由 AI 生成候选回复并一键填入输入框，是否发送由用户决定，全程只读屏幕、不修改应用。",
           "en": "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
         },
-        "totalStars": 2223,
+        "totalStars": 2463,
         "language": "Kotlin",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "装在手机上的聊天副驾，能在微信、QQ、X、飞书等聊天应用中读懂对方消息，给出候选回复并一键填入输入框，发不发由用户决定。采用非侵入式设计，只读屏幕，不修改聊天应用。",
+          "zh": "装在安卓手机上的聊天辅助工具，能在微信、QQ、X、飞书等聊天界面中读取对话内容，由 AI 生成候选回复并一键填入输入框，是否发送由用户决定，全程只读屏幕、不修改应用。",
           "en": "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，总 star 数已超过 2200，今日在 rising 榜单中被发现，说明「AI 帮你想怎么回消息」这一轻量场景正在吸引非技术用户关注。",
+          "zh": "项目创建仅约一个月，已积累 2400 多 star，今日在 rising 榜单中被发现，切中「AI 帮我想怎么回消息」的高频社交场景。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,223 stars、650 forks，topics: accessibility-service, android, chat-assistant, llm, qq，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,223 stars and 650 forks，topics: accessibility-service, android, chat-assistant, llm, qq, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,463 stars、678 forks，topics: accessibility-service, android, chat-assistant, llm, qq，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,463 stars and 678 forks，topics: accessibility-service, android, chat-assistant, llm, qq, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察「非侵入式 AI 助手」如何在超级 App 生态中寻找生存空间，以及用户对「AI 代拟回复」的接受边界。",
+          "zh": "观察非侵入式屏幕读取方案如何在隐私合规与实用体验之间取得平衡，这类「副驾式」AI 可能成为移动端 AI 落地的重要产品形态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一份围绕 Jev 模型（TypeSafe AI 推出的 System One 类型化决策模型）的生态工具与开发实践清单，汇总了基于 Jev 构建的公开项目。适合想了解 Jev 能做什么、有哪些现成方案的开发者快速浏览。",
+          "zh": "围绕 TypeSafe AI 的 Jev 模型整理的资源合集，汇总了基于 Jev 构建的公开项目与开发实践，方便开发者快速了解该技术方向的应用案例。",
           "en": "A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions."
         },
-        "totalStars": 633,
+        "totalStars": 634,
         "language": "Unknown",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一份围绕 Jev 模型（TypeSafe AI 推出的 System One 类型化决策模型）的生态工具与开发实践清单，汇总了基于 Jev 构建的公开项目。适合想了解 Jev 能做什么、有哪些现成方案的开发者快速浏览。",
+          "zh": "围绕 TypeSafe AI 的 Jev 模型整理的资源合集，汇总了基于 Jev 构建的公开项目与开发实践，方便开发者快速了解该技术方向的应用案例。",
           "en": "A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions."
         },
         "todayHighlight": {
-          "zh": "项目创建仅数日，总 star 数已超过 600，今日在 rising 榜单中被发现，说明围绕 Jev 的生态正在早期形成，社区有整理和发现工具的需求。",
+          "zh": "项目创建仅数日，已获得 600 多 star，作为 Jev 生态的首个 awesome 列表，在 rising 榜单中被发现，反映出开发者对类型安全决策模型的好奇与关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 633 stars、14 forks，topics: awesome, awesome-list, awesome-lists, jev, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 633 stars and 14 forks，topics: awesome, awesome-list, awesome-lists, jev, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 634 stars、15 forks，topics: awesome, awesome-list, awesome-lists, jev, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 634 stars and 15 forks，topics: awesome, awesome-list, awesome-lists, jev, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注新兴模型生态中「awesome 清单」类项目的出现时机，它往往是判断一个技术方向是否开始形成社区共识的早期信号。",
+          "zh": "关注新兴 AI 模型生态中「awesome 列表」作为早期社区聚合器的角色，它往往是判断一个技术方向是否形成开发者势能的先行指标。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个用于构建 Agent 原生应用的框架，帮助开发者用 React 和 TypeScript 把 AI Agent 能力直接嵌入产品，而不是外挂一个聊天窗口。适合希望把 Agent 作为产品核心交互方式的前端团队。",
+          "zh": "一套用于构建 Agent 原生应用的开发框架，基于 React 和 TypeScript，帮助开发者把 AI 智能体能力直接嵌入应用逻辑，而不是外挂式调用。",
           "en": "Star BuilderIO / agent-native A framework for building agentic apps"
         },
-        "totalStars": 6202,
+        "totalStars": 6230,
         "language": "TypeScript",
         "dailyStars": 607,
         "chineseIntro": {
-          "zh": "一个用于构建 Agent 原生应用的框架，帮助开发者用 React 和 TypeScript 把 AI Agent 能力直接嵌入产品，而不是外挂一个聊天窗口。适合希望把 Agent 作为产品核心交互方式的前端团队。",
+          "zh": "一套用于构建 Agent 原生应用的开发框架，基于 React 和 TypeScript，帮助开发者把 AI 智能体能力直接嵌入应用逻辑，而不是外挂式调用。",
           "en": "Star BuilderIO / agent-native A framework for building agentic apps"
         },
         "todayHighlight": {
-          "zh": "今日登上全球趋势榜第 1 名，单日新增 607 星，总 star 数超过 6200。项目创建约 6 个月，正处于从早期采用者向更广泛开发者扩散的阶段。",
+          "zh": "今日新增 607 star，位列全球趋势榜第一，总 star 数超过 6200，创建约半年，Agent 原生应用开发范式正在快速升温。",
           "en": "登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 607 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,202 stars、560 forks，topics: agent-native, agents, ai, react, typescript，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,202 stars and 560 forks，topics: agent-native, agents, ai, react, typescript, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,230 stars、561 forks，topics: agent-native, agents, ai, react, typescript，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,230 stars and 561 forks，topics: agent-native, agents, ai, react, typescript, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「Agent 原生应用」这一产品形态是否正在从概念走向可复用的工程框架，以及它对前端技术选型的影响。",
+          "zh": "关注「Agent 原生」概念如何从技术架构演变为产品设计原则，应用层开发者可能需要重新思考交互与状态管理的组织方式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个离线优先的知识与教育服务器，把维基百科、数千本书籍、课程、地图和可选的本地 AI 装进用户自己的硬件里，无需联网即可访问。适合网络不稳定或希望数据完全自持的场景。",
+          "zh": "离线优先的知识与教育服务器，把维基百科、数千本书籍、课程、地图和可选的本地 AI 打包运行在用户自有硬件上，无需联网即可访问。",
           "en": "Star Crosstalk-Solutions / project-nomad Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required."
         },
-        "totalStars": 38038,
+        "totalStars": 38057,
         "language": "TypeScript",
         "dailyStars": 394,
         "chineseIntro": {
-          "zh": "一个离线优先的知识与教育服务器，把维基百科、数千本书籍、课程、地图和可选的本地 AI 装进用户自己的硬件里，无需联网即可访问。适合网络不稳定或希望数据完全自持的场景。",
+          "zh": "离线优先的知识与教育服务器，把维基百科、数千本书籍、课程、地图和可选的本地 AI 打包运行在用户自有硬件上，无需联网即可访问。",
           "en": "Star Crosstalk-Solutions / project-nomad Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required."
         },
         "todayHighlight": {
-          "zh": "今日位列全球趋势榜第 11 名，单日新增 394 星，总 star 数超过 3.8 万。项目已创建约 15 个月，持续在榜说明「离线知识自由」的叙事有长期吸引力。",
+          "zh": "今日新增 394 star，位列全球趋势榜第 11，总 star 数超过 3.8 万，项目已创建 15 个月，在断网可用与数据自主叙事下持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 11 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 394 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,038 stars、3,778 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,038 stars and 3,778 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,057 stars、3,779 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,057 stars and 3,779 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「离线优先 + 本地 AI」组合在隐私敏感和教育场景中的产品机会，以及硬件与内容打包的商业模式。",
+          "zh": "观察离线优先与本地 AI 组合在隐私敏感、网络不稳定场景中的产品价值，以及自托管硬件作为 AI 载体的可能性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一款 AI 驱动的视频高光提取与剪辑工具，能把长视频自动变成值得分享的精彩片段，支持多语言界面。适合内容创作者做二创和短视频分发。",
+          "zh": "AI 驱动的视频高光提取与剪辑工具，能把长视频自动切成值得分享的精彩片段，适合二创和短视频内容生产。",
           "en": "Star zhouxiaoka / autoclip AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具"
         },
-        "totalStars": 8557,
+        "totalStars": 8585,
         "language": "Python",
         "dailyStars": 250,
         "chineseIntro": {
-          "zh": "一款 AI 驱动的视频高光提取与剪辑工具，能把长视频自动变成值得分享的精彩片段，支持多语言界面。适合内容创作者做二创和短视频分发。",
+          "zh": "AI 驱动的视频高光提取与剪辑工具，能把长视频自动切成值得分享的精彩片段，适合二创和短视频内容生产。",
           "en": "Star zhouxiaoka / autoclip AutoClip : AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具"
         },
         "todayHighlight": {
-          "zh": "今日位列全球趋势榜第 9 名，单日新增 250 星，总 star 数超过 8500。项目创建约 15 个月，持续获得关注，说明「长转短」的自动化剪辑需求稳定存在。",
+          "zh": "今日新增 250 star，位列全球趋势榜第 9，总 star 数超过 8500，项目已创建 15 个月，在 AI 视频剪辑工具需求持续升温的背景下保持增长。",
           "en": "登上 GitHub Trending 日榜第 9 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 250 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,557 stars、1,593 forks，topics: ai, ai-agents, ai-tools, ai-video, ai-video-editor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,557 stars and 1,593 forks，topics: ai, ai-agents, ai-tools, ai-video, ai-video-editor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,585 stars、1,594 forks，topics: ai, ai-agents, ai-tools, ai-video, ai-video-editor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,585 stars and 1,594 forks，topics: ai, ai-agents, ai-tools, ai-video, ai-video-editor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 视频剪辑工具在创作者工作流中的具体卡位，以及它如何与平台分发规则形成配合。",
+          "zh": "关注 AI 视频剪辑从「辅助工具」向「自动出片」演进的产品节奏，以及长视频到短视频的转化效率对内容创作者的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程助手提供长期记忆的解决方案，让用户可以在不同厂商的 Agent 工具之间无缝切换——比如在 Claude Code 里做到一半的任务，换到 OpenAI Codex 继续做，不用重新解释架构和上下文。",
+          "zh": "为 AI 编程助手提供长期记忆的解决方案，让开发者在不同厂商的 Agent 工具之间切换时，无需重新解释项目架构、失败尝试和待解决问题。",
           "en": "Star akitaonrails / ai-memory Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors"
         },
-        "totalStars": 7909,
+        "totalStars": 7934,
         "language": "Rust",
         "dailyStars": 167,
         "chineseIntro": {
-          "zh": "为 AI 编程助手提供长期记忆的解决方案，让用户可以在不同厂商的 Agent 工具之间无缝切换——比如在 Claude Code 里做到一半的任务，换到 OpenAI Codex 继续做，不用重新解释架构和上下文。",
+          "zh": "为 AI 编程助手提供长期记忆的解决方案，让开发者在不同厂商的 Agent 工具之间切换时，无需重新解释项目架构、失败尝试和待解决问题。",
           "en": "Star akitaonrails / ai-memory Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors"
         },
         "todayHighlight": {
-          "zh": "今日位列全球趋势榜第 4 名，单日新增 167 星，总 star 数接近 8000。项目创建约 4 个月，增长较快，反映出多 Agent 工具并存带来的「记忆迁移」痛点正在被正视。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 4 个月便已积累 7,909 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 167 星."
+          "zh": "今日新增 167 star，位列全球趋势榜第 4，总 star 数接近 8000，创建仅 4 个月，切中多 Agent 工具并用场景下的记忆断层痛点。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 4 个月便已积累 7,934 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 167 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,909 stars、531 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,909 stars and 531 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,934 stars、531 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,934 stars and 531 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程工具生态碎片化带来的跨工具协作需求，以及「记忆层」是否会成为 Agent 基础设施的标配。",
+          "zh": "关注跨 Agent 记忆层作为独立基础设施的机会，它可能成为开发者工作流中不可或缺的「上下文中间件」。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "《动手学深度学习》中文版，一本面向中文读者、代码可运行、支持讨论的深度学习教材，中英文版被 70 多个国家的 500 多所大学用于教学。适合系统学习深度学习的学生和从业者。",
+          "zh": "面向中文读者的深度学习开源教材，内容可运行、可讨论，中英文版已被 70 多个国家的 500 多所大学用于教学。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
-        "totalStars": 80990,
+        "totalStars": 80994,
         "language": "Python",
         "dailyStars": 93,
         "chineseIntro": {
-          "zh": "《动手学深度学习》中文版，一本面向中文读者、代码可运行、支持讨论的深度学习教材，中英文版被 70 多个国家的 500 多所大学用于教学。适合系统学习深度学习的学生和从业者。",
+          "zh": "面向中文读者的深度学习开源教材，内容可运行、可讨论，中英文版已被 70 多个国家的 500 多所大学用于教学。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
         "todayHighlight": {
-          "zh": "今日位列中文趋势榜第 5 名，单日新增 93 星，总 star 数超过 8 万。项目已创建约 9 年，作为经典教材持续在榜，说明中文 AI 学习需求长期稳定。",
+          "zh": "今日新增 93 star，位列中文趋势榜第 5，总 star 数超过 8 万，作为创建超过 9 年的经典教材，持续在中文 AI 学习社区中保持存在感。",
           "en": "登上 GitHub 中文 Trending 日榜第 5 位, 总 star 数已达 80k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 93 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 80,990 stars、12,407 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 80,990 stars and 12,407 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 80,994 stars、12,406 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 80,994 stars and 12,406 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注经典教育内容在 AI 热潮中的长尾价值，以及中文技术内容生态的持续需求。",
+          "zh": "关注经典教育内容在 AI 热潮中的长尾价值，以及中文技术社区对系统性学习资源的持续需求。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 OpenAI Codex 桌面端和 CLI 的可视化管理工具，把提示词模板、第三方 API 供应商切换、会话同步、Skills/MCP 管理和 TOML 配置都放进图形界面，不用反复手改文件。",
+          "zh": "面向 OpenAI Codex 桌面端和 CLI 的可视化管理工具，把提示词模板、第三方 API 切换、会话同步、Skills/MCP 管理和 TOML 配置都放进图形界面，减少手动改文件。",
           "en": "Star yynxxxxx / Codex-X OpenAI Codex 桌面端/CLI 的可视化管理工具，具有Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理、TOML 配置可视化的跨平台工具。"
         },
-        "totalStars": 3808,
+        "totalStars": 3823,
         "language": "Rust",
         "dailyStars": 50,
         "chineseIntro": {
-          "zh": "面向 OpenAI Codex 桌面端和 CLI 的可视化管理工具，把提示词模板、第三方 API 供应商切换、会话同步、Skills/MCP 管理和 TOML 配置都放进图形界面，不用反复手改文件。",
+          "zh": "面向 OpenAI Codex 桌面端和 CLI 的可视化管理工具，把提示词模板、第三方 API 切换、会话同步、Skills/MCP 管理和 TOML 配置都放进图形界面，减少手动改文件。",
           "en": "Star yynxxxxx / Codex-X OpenAI Codex 桌面端/CLI 的可视化管理工具，具有Provider/API 切换、会话同步、提示词注入、Skills/MCP 管理、TOML 配置可视化的跨平台工具。"
         },
         "todayHighlight": {
-          "zh": "今日位列全球趋势榜第 12 名，单日新增 50 星，总 star 数超过 3800。项目创建约 3 个月，说明 Codex 用户对「可视化配置管理」有明确需求。",
+          "zh": "今日新增 50 star，位列全球趋势榜第 12，总 star 数超过 3800，创建仅 3 个月，反映出 Codex 用户对可视化配置与多供应商管理的实际需求。",
           "en": "登上 GitHub Trending 日榜第 12 位, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散, 今日新增 50 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,808 stars、468 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,808 stars and 468 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,823 stars、469 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,823 stars and 469 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程工具周边管理类产品的机会，以及开发者对「少改配置文件」的普遍偏好。",
+          "zh": "关注 AI 编程工具生态中「周边管理工具」的涌现，这类工具往往能反映主流 Agent 产品在配置体验上的缺口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AutoGPT 是让每个人都能使用和构建 AI Agent 的开源平台，用户描述想完成的任务，AutoGPT 会构建 Agent、运行并汇报结果。适合希望把重复性工作交给 AI 自动完成的个人和团队。",
+          "zh": "AutoGPT 是让每个人都能使用和构建 AI 智能体的开源平台，用户描述任务后，系统会自动构建并运行智能体，完成后汇报结果。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
-        "totalStars": 187484,
+        "totalStars": 187485,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "AutoGPT 是让每个人都能使用和构建 AI Agent 的开源平台，用户描述想完成的任务，AutoGPT 会构建 Agent、运行并汇报结果。适合希望把重复性工作交给 AI 自动完成的个人和团队。",
+          "zh": "AutoGPT 是让每个人都能使用和构建 AI 智能体的开源平台，用户描述任务后，系统会自动构建并运行智能体，完成后汇报结果。",
           "en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 18.7 万，项目已创建约 43 个月，作为 Agent 领域的早期标志性项目，今日在搜索场景中仍被持续发现和关注。",
+          "zh": "总 star 数超过 18.7 万，创建已超过 3 年，作为自主智能体方向的早期标志性项目，至今仍保持代码更新和社区关注。",
           "en": "总 star 数已达 187k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 187,484 stars、46,004 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 187,484 stars and 46,004 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 187,485 stars、46,004 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 187,485 stars and 46,004 forks，topics: agentic-ai, agents, ai, artificial-intelligence, autonomous-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注早期 Agent 平台如何从「演示惊艳」走向「日常可用」，以及它在当前 Agent 生态中的位置变化。",
+          "zh": "关注早期 Agent 平台如何从概念验证走向可交付的工作流产品，以及「描述即完成」的交互承诺在真实场景中的兑现程度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,23 +621,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "新模型/新能力",
-          "en": "新模型/新能力"
+          "zh": "生态合作",
+          "en": "生态合作"
         },
         "summary": {
-          "zh": "OpenAI 披露 GPT-6 Astra 帮助 Higgsfield AI 在一天内上线面向小企业的视频广告创作新功能。这意味着新一代模型正把视频生成从演示推向可快速交付的生产工具。",
+          "zh": "Higgsfield AI 借助 GPT-6 Astra 在一天内上线了新的视频广告创作功能，让中小企业也能快速生成视频素材。这说明 Astra 在视频生成与创意工作流上的集成能力已能支撑产品级快速交付。",
           "en": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         },
         "chineseIntro": {
-          "zh": "OpenAI 披露 GPT-6 Astra 帮助 Higgsfield AI 在一天内上线面向小企业的视频广告创作新功能。这意味着新一代模型正把视频生成从演示推向可快速交付的生产工具。",
+          "zh": "Higgsfield AI 借助 GPT-6 Astra 在一天内上线了新的视频广告创作功能，让中小企业也能快速生成视频素材。这说明 Astra 在视频生成与创意工作流上的集成能力已能支撑产品级快速交付。",
           "en": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         },
         "todayHighlight": {
-          "zh": "这是 GPT-6 能力在垂直视频场景的落地样本，说明模型厂商正通过客户案例争夺创意生产入口。",
-          "en": "这是 GPT-6 能力在垂直视频场景的落地样本，说明模型厂商正通过客户案例争夺创意生产入口。"
+          "zh": "GPT-6 Astra 首次以「一天内落地产品功能」的案例出现，意味着视频生成正从演示走向可规模化的商业工具，对视频广告赛道竞争格局有直接影响。",
+          "en": "GPT-6 Astra 首次以「一天内落地产品功能」的案例出现，意味着视频生成正从演示走向可规模化的商业工具，对视频广告赛道竞争格局有直接影响。"
         },
         "pmInsight": {
-          "zh": "评估视频类需求时，优先测算从提示到成片的端到端耗时，而非只看单帧画质。",
+          "zh": "评估视频生成能力时，不要只看画质，要测「从 prompt 到可投放素材」的端到端耗时与返工率，这决定小客户能否真正用起来。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -662,19 +662,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 将重构后的仓库 Pull Requests 页面正式开放给所有用户，新增内容辅助筛选、AND/OR 高级搜索、可折叠侧边栏和紧凑视图。对开发者工具产品而言，代码评审入口的交互密度和检索效率被重新定义。",
+          "zh": "GitHub 重新设计的仓库 Pull Requests 页面正式全量上线，新增内容辅助筛选、AND/OR 嵌套搜索、可折叠侧边栏和紧凑视图，并支持批量操作。对依赖 PR 流程的团队来说，日常代码评审效率会有可感知提升。",
           "en": "The new repository pull requests page is now generally available to all GitHub users. Highlights The new page makes it easier to find and act on pull requests in a&#8230; The post Refreshed repository pull requests page generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 将重构后的仓库 Pull Requests 页面正式开放给所有用户，新增内容辅助筛选、AND/OR 高级搜索、可折叠侧边栏和紧凑视图。对开发者工具产品而言，代码评审入口的交互密度和检索效率被重新定义。",
+          "zh": "GitHub 重新设计的仓库 Pull Requests 页面正式全量上线，新增内容辅助筛选、AND/OR 嵌套搜索、可折叠侧边栏和紧凑视图，并支持批量操作。对依赖 PR 流程的团队来说，日常代码评审效率会有可感知提升。",
           "en": "The new repository pull requests page is now generally available to all GitHub users. Highlights The new page makes it easier to find and act on pull requests in a&#8230; The post Refreshed repository pull requests page generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "PR 页面是 GitHub 最高频的协作界面，此次 GA 意味着其评审体验标准将影响整个代码托管赛道的产品设计。",
-          "en": "PR 页面是 GitHub 最高频的协作界面，此次 GA 意味着其评审体验标准将影响整个代码托管赛道的产品设计。"
+          "zh": "在 AI 编码代理大量生成 PR 的背景下，GitHub 优先优化 PR 发现与批量处理，说明评审环节正成为开发者体验的瓶颈与竞争焦点。",
+          "en": "在 AI 编码代理大量生成 PR 的背景下，GitHub 优先优化 PR 发现与批量处理，说明评审环节正成为开发者体验的瓶颈与竞争焦点。"
         },
         "pmInsight": {
-          "zh": "对照新 PR 页的筛选与批量操作逻辑，检查自家代码评审流程中是否存在同类可折叠、可批量化的效率缺口。",
+          "zh": "如果你的产品有列表型工作流，可参考这次改版：把「筛选语法辅助 + 批量操作 + 未读状态」作为标配，能显著降低高频用户的操作成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -695,26 +695,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "TypeSafe AI 发布 Jev，一种只输出分类、是非判断、评分及置信度的“决策模型”，按输入 token 计费且输出免费，输入价格低至每百万 token 0.042 美元。这为需要结构化概率决策而非自由文本的场景提供了更便宜、更快的替代路径。",
-          "en": "Article URL: https://simonwillison.net/2026/Sep/21/jev/ Comments URL: https://news.ycombinator.com/item?id=49796843 Points: 26 # Comments: 5"
+          "zh": "TypeSafe AI 发布 Jev，一种被称为「System One / 决策模型」的新形态：输入文本，输出类别、是否判断、评分及置信度等浮点数，且只对输入计费、输出免费，输入价格低至每百万 token 0.042 美元。它把 LLM 从「生成文本」转向「输出结构化概率决策」。",
+          "en": "Article URL: https://simonwillison.net/2026/Sep/21/jev/ Comments URL: https://news.ycombinator.com/item?id=49796843 Points: 29 # Comments: 5"
         },
         "chineseIntro": {
-          "zh": "TypeSafe AI 发布 Jev，一种只输出分类、是非判断、评分及置信度的“决策模型”，按输入 token 计费且输出免费，输入价格低至每百万 token 0.042 美元。这为需要结构化概率决策而非自由文本的场景提供了更便宜、更快的替代路径。",
-          "en": "Article URL: https://simonwillison.net/2026/Sep/21/jev/ Comments URL: https://news.ycombinator.com/item?id=49796843 Points: 26 # Comments: 5"
+          "zh": "TypeSafe AI 发布 Jev，一种被称为「System One / 决策模型」的新形态：输入文本，输出类别、是否判断、评分及置信度等浮点数，且只对输入计费、输出免费，输入价格低至每百万 token 0.042 美元。它把 LLM 从「生成文本」转向「输出结构化概率决策」。",
+          "en": "Article URL: https://simonwillison.net/2026/Sep/21/jev/ Comments URL: https://news.ycombinator.com/item?id=49796843 Points: 29 # Comments: 5"
         },
         "todayHighlight": {
-          "zh": "若决策模型成立，LLM 的定价与产品形态可能从“生成文本”转向“输出可编程判断”，冲击现有按输出 token 收费的商业模式。",
-          "en": "若决策模型成立，LLM 的定价与产品形态可能从“生成文本”转向“输出可编程判断”，冲击现有按输出 token 收费的商业模式。"
+          "zh": "若决策模型成立，很多分类、审核、路由场景不再需要大模型生成文本，可能重塑按 token 计价的成本结构与产品形态。",
+          "en": "若决策模型成立，很多分类、审核、路由场景不再需要大模型生成文本，可能重塑按 token 计价的成本结构与产品形态。"
         },
         "pmInsight": {
-          "zh": "梳理现有 prompt 中实际只需分类或打分的环节，测算改用决策模型后能否在成本与延迟上获得数量级收益。",
+          "zh": "盘点你产品中「让模型输出 JSON 再解析」的环节，评估能否换成决策模型，通常能同时降本并减少解析失败。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "High",
         "sources": [
           {
             "label": "Hacker News LLM",
@@ -724,38 +724,38 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Reddit LocalLLaMA: Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip",
-          "en": "Reddit LocalLLaMA: Alibaba plans AI model with 5 trillion to 10 trillion parameters, unveils new chip"
+          "zh": "Reddit LocalLLaMA: Ngram and world knowledge - why are we just building a coding model?",
+          "en": "Reddit LocalLLaMA: Ngram and world knowledge - why are we just building a coding model?"
         },
         "category": {
           "zh": "公司动态",
           "en": "Company update"
         },
         "eventType": {
-          "zh": "新模型/新能力",
-          "en": "新模型/新能力"
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "据路透报道，阿里巴巴计划推出参数规模达 5 万亿至 10 万亿的 AI 模型，并同步发布新芯片。这显示头部厂商正以超大模型加自研算力组合，争夺下一代基础模型的话语权。",
-          "en": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/tengo_harambe\"> /u/tengo_harambe </a> <br/> <span><a href=\"https://www.reuters.com/business/retail-consumer/alibaba-plans-ai-model-with-5-trillion-10-trillion-parameters-unveils-new-chip-2026-09-22/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wmyh9z/alibaba_plans_ai_model_with_5_trillion_to_10/\">[comments]</a></spa"
+          "zh": "LocalLLaMA 社区讨论指出，小尺寸开源模型几乎都在卷编码与工具调用，但用户若想脱离大厂 API，还需要世界知识与通用问答能力。这反映出本地模型能力分布与真实使用需求之间存在错位。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>This post is written by a human and I'd appreciate it if you treated it as such. Thanks.</p> <p>So, I've been noticing a pretty clear interest in developing as good a coding and agentic tool-calling model as possible, especially at smaller sizes, sub-50 gigs. However, I'm finding that at least for my use of AI, if I really want to move away from big providers, I am going to require a"
         },
         "chineseIntro": {
-          "zh": "据路透报道，阿里巴巴计划推出参数规模达 5 万亿至 10 万亿的 AI 模型，并同步发布新芯片。这显示头部厂商正以超大模型加自研算力组合，争夺下一代基础模型的话语权。",
-          "en": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/tengo_harambe\"> /u/tengo_harambe </a> <br/> <span><a href=\"https://www.reuters.com/business/retail-consumer/alibaba-plans-ai-model-with-5-trillion-10-trillion-parameters-unveils-new-chip-2026-09-22/\">[link]</a></span> &#32; <span><a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wmyh9z/alibaba_plans_ai_model_with_5_trillion_to_10/\">[comments]</a></spa"
+          "zh": "LocalLLaMA 社区讨论指出，小尺寸开源模型几乎都在卷编码与工具调用，但用户若想脱离大厂 API，还需要世界知识与通用问答能力。这反映出本地模型能力分布与真实使用需求之间存在错位。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>This post is written by a human and I'd appreciate it if you treated it as such. Thanks.</p> <p>So, I've been noticing a pretty clear interest in developing as good a coding and agentic tool-calling model as possible, especially at smaller sizes, sub-50 gigs. However, I'm finding that at least for my use of AI, if I really want to move away from big providers, I am going to require a"
         },
         "todayHighlight": {
-          "zh": "万亿级参数与自研芯片同时推进，意味着竞争焦点从单一模型能力转向“模型+算力”的垂直整合。",
-          "en": "万亿级参数与自研芯片同时推进，意味着竞争焦点从单一模型能力转向“模型+算力”的垂直整合。"
+          "zh": "当开源社区开始质疑「只做编码模型」的路线，说明本地部署的差异化机会可能在于通用知识与垂直领域，而非继续堆编码 benchmark。",
+          "en": "当开源社区开始质疑「只做编码模型」的路线，说明本地部署的差异化机会可能在于通用知识与垂直领域，而非继续堆编码 benchmark。"
         },
         "pmInsight": {
-          "zh": "关注该模型是否开放 API 及定价，若开放则需提前评估其对现有推理成本结构的挤压。",
+          "zh": "若你在做本地或私有化方案，先明确用户是「写代码」还是「查知识」，据此选型，避免被编码榜单带偏而牺牲通用问答体验。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wmyh9z/alibaba_plans_ai_model_with_5_trillion_to_10/"
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wn2ybk/ngram_and_world_knowledge_why_are_we_just/"
           }
         ]
       },
@@ -773,19 +773,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "Vercel AI Gateway 上线 SpaceXAI 的 Grok 4.7，支持 500K token 上下文和 low 到 xhigh 四档推理强度，并在 9 月 27 日前提供 40% 折扣。开发者可用同一模型 ID 在 AI SDK、OpenAI 兼容接口和编码代理中调用。",
+          "zh": "Vercel AI Gateway 上线 SpaceXAI 的 Grok 4.7，支持 500K 上下文与 low/medium/high/xhigh 四档推理强度，并在 9 月 27 日前自动打四折。同一模型 ID 可在 AI SDK、OpenAI 兼容接口和编码代理中通用。",
           "en": "Grok 4.7 from SpaceXAI is now available on AI Gateway and 40% off through September 27. The discount applies automatically when you call spacexai/grok-4.7.Grok 4.7 has a 500K token context window and supports low, medium, high, and xhigh reasoning levels, giving you control over the tradeoff between latency and depth.Use spacexai/grok-4.7 everywhere you call the model. The same ID works with the AI SDK, the OpenAI-co"
         },
         "chineseIntro": {
-          "zh": "Vercel AI Gateway 上线 SpaceXAI 的 Grok 4.7，支持 500K token 上下文和 low 到 xhigh 四档推理强度，并在 9 月 27 日前提供 40% 折扣。开发者可用同一模型 ID 在 AI SDK、OpenAI 兼容接口和编码代理中调用。",
+          "zh": "Vercel AI Gateway 上线 SpaceXAI 的 Grok 4.7，支持 500K 上下文与 low/medium/high/xhigh 四档推理强度，并在 9 月 27 日前自动打四折。同一模型 ID 可在 AI SDK、OpenAI 兼容接口和编码代理中通用。",
           "en": "Grok 4.7 from SpaceXAI is now available on AI Gateway and 40% off through September 27. The discount applies automatically when you call spacexai/grok-4.7.Grok 4.7 has a 500K token context window and supports low, medium, high, and xhigh reasoning levels, giving you control over the tradeoff between latency and depth.Use spacexai/grok-4.7 everywhere you call the model. The same ID works with the AI SDK, the OpenAI-co"
         },
         "todayHighlight": {
-          "zh": "限时折扣叠加多档推理控制，是模型分发平台用价格与灵活性争夺开发者默认调用入口的典型动作。",
-          "en": "限时折扣叠加多档推理控制，是模型分发平台用价格与灵活性争夺开发者默认调用入口的典型动作。"
+          "zh": "推理强度可调加限时折扣，等于把「延迟与深度」的取舍交给开发者按场景定价，这会加剧网关层对模型分发的争夺。",
+          "en": "推理强度可调加限时折扣，等于把「延迟与深度」的取舍交给开发者按场景定价，这会加剧网关层对模型分发的争夺。"
         },
         "pmInsight": {
-          "zh": "在折扣窗口内对 Grok 4.7 做 A/B 成本测试，重点验证 xhigh 档在编码任务上的质量增益是否覆盖延迟代价。",
+          "zh": "把推理档位做成用户可见或可配置项，并趁折扣期跑一轮成本对比，确定哪些功能值得用 xhigh、哪些用 low 即可。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -810,22 +810,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Anthropic 与埃森哲合作开展前沿 AI 的独立评估，由埃森哲旗下 Faculty 团队负责红队测试、对齐评估和模型防护测试，双方计划未来五年各投入至少 10 亿美元。这是其 CEO 提出的“嵌入评估者”承诺的落地步骤。",
+          "zh": "Anthropic 与 Accenture 旗下 Faculty 合作开展「嵌入式评估」，由外部评估者以接近员工权限进入公司内部，对前沿模型进行红队测试、对齐评估与防护测试，双方未来五年各计划投入至少 10 亿美元。",
           "en": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO`s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.The partnership will be led by Faculty, Accenture`s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps"
         },
         "chineseIntro": {
-          "zh": "Anthropic 与埃森哲合作开展前沿 AI 的独立评估，由埃森哲旗下 Faculty 团队负责红队测试、对齐评估和模型防护测试，双方计划未来五年各投入至少 10 亿美元。这是其 CEO 提出的“嵌入评估者”承诺的落地步骤。",
+          "zh": "Anthropic 与 Accenture 旗下 Faculty 合作开展「嵌入式评估」，由外部评估者以接近员工权限进入公司内部，对前沿模型进行红队测试、对齐评估与防护测试，双方未来五年各计划投入至少 10 亿美元。",
           "en": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO`s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.The partnership will be led by Faculty, Accenture`s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps"
         },
         "todayHighlight": {
-          "zh": "嵌入式评估让外部评估者以接近员工权限进入模型训练与部署流程，可能成为前沿实验室安全治理的新范式。",
-          "en": "嵌入式评估让外部评估者以接近员工权限进入模型训练与部署流程，可能成为前沿实验室安全治理的新范式。"
+          "zh": "嵌入式评估把安全审查从外部事后审计变成训练过程中的常驻机制，可能成为前沿实验室与监管沟通的新范式，也抬高了安全合规的资本门槛。",
+          "en": "嵌入式评估把安全审查从外部事后审计变成训练过程中的常驻机制，可能成为前沿实验室与监管沟通的新范式，也抬高了安全合规的资本门槛。"
         },
         "pmInsight": {
-          "zh": "若产品面向受监管行业，提前梳理模型评估与红队证据链，以便在采购尽调中复用此类第三方评估结论。",
+          "zh": "面向企业客户的产品应提前准备可审计的模型评估与红队记录，未来采购问卷里很可能直接要求提供这类第三方嵌入式评估证据。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Anthropic",
