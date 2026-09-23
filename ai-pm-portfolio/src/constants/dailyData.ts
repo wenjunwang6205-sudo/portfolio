@@ -48,30 +48,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily · 2026-09-23"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 基础设施的「分层成型」：从执行沙箱、工具目录到 Office 运行时，GitHub 趋势榜被 Agent 底座类项目占据；同时 OpenAI 把提示缓存变成可显式控制的工程能力，Anthropic 把安全评估嵌入企业内部，模型层的竞争正从「能力」转向「成本结构与治理接口」。",
-      "en": "Today's thread is the stratification of agent infrastructure: from execution sandboxes and tool directories to Office runtimes, GitHub trending is dominated by agent substrate projects. Meanwhile OpenAI turns prompt caching into an explicitly controllable engineering capability, and Anthropic embeds safety evaluation inside the enterprise — model-layer competition is shifting from raw capability to cost structure and governance interfaces."
+      "zh": "今日主线是 Agent 基础设施的「分层成型」：执行沙箱、工具目录、办公运行时、可观测性各自出现明确的头部项目或平台级更新，Agent 从「能跑」进入「可治理、可计费、可审计」阶段。",
+      "en": "Today's throughline is the stratification of agent infrastructure: execution sandboxes, tool directories, office runtimes, and observability each show clear leaders or platform-level updates. Agents are moving from 'can run' to 'governable, billable, auditable'."
     },
     "keyTakeaway": {
-      "zh": "Agent 竞争正从「模型能力」下移到「运行时与工具层」：谁掌握沙箱执行、工具目录、Office 数据运行时和可观测/缓存这类工程接口，谁就掌握 Agent 产品的成本曲线与合规入口。",
-      "en": "Agent competition is moving down-stack from model capability to runtime and tooling: whoever controls sandbox execution, tool directories, Office data runtimes, and engineering interfaces like observability and caching controls the cost curve and compliance entry point for agent products."
+      "zh": "Agent 基础设施正在从单点工具走向分层：安全执行、工具调用、文档运行时、可观测性各自出现明确的头部项目，而 OpenAI 的缓存升级与 Vercel 的模型分层定价则把竞争推向「单位任务成本」这一新维度。",
+      "en": "Agent infrastructure is stratifying: secure execution, tool invocation, document runtimes, and observability each have clear leaders, while OpenAI's caching upgrade and Vercel's tiered model pricing push competition toward 'cost per task'."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 运行时与工具层集中升温：沙箱、工具目录、Office 运行时同时上榜",
-          "en": "Agent runtime and tooling layer heats up: sandbox, tool directory, and Office runtime trend together"
+          "zh": "Agent 执行层与工具层同时升温，基础设施开始分层",
+          "en": "Agent execution and tool layers heat up simultaneously, infrastructure begins to stratify"
         },
         "category": {
           "zh": "Agent 基础设施",
           "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "GitHub 趋势榜前列被 Agent 底座类项目占据：默认安全的执行运行时 agent-substrate/substrate 今日 +245 stars（趋势第 2），统一工具目录 superdesigndev/treg 今日 +230 stars（趋势第 7，号称「工具版 OpenRouter」，覆盖 60 多家供应商 3000 多个接口），面向 Agent 的 Office 运行时 dream-num/univer 今日 +255 stars（趋势第 3）。三者分别对应执行隔离、工具接入、数据/文档操作三个 Agent 落地必需环节。",
-          "en": "GitHub trending is led by agent substrate projects: default-secure execution runtime agent-substrate/substrate (+245 stars today, #2 trending), unified tool directory superdesigndev/treg (+230 stars today, #7 trending, positioned as 'OpenRouter for tools' covering 3,000+ APIs from 60+ vendors), and agent-oriented Office runtime dream-num/univer (+255 stars today, #3 trending). These map to execution isolation, tool access, and document/data manipulation — three prerequisites for agent deployment."
+          "zh": "agent-substrate/substrate 今日新增 245 stars（总 3179），主打默认安全、密度比标准容器高 10 倍的沙箱运行时；superdesigndev/treg 今日新增 230 stars（总 2404），以「Agent 工具的 OpenRouter」定位统一 60 多家供应商、3000 多个 API 端点。两者分别占据执行层与工具层，且都处于创建 2-4 个月的早期阶段。",
+          "en": "agent-substrate/substrate added 245 stars today (3,179 total), offering a default-secure sandbox runtime with 10x container density; superdesigndev/treg added 230 stars (2,404 total), positioning as an 'OpenRouter for agent tools' unifying 60+ vendors and 3,000+ API endpoints. They occupy the execution and tool layers respectively, both only 2-4 months old."
         },
         "pmInsight": {
-          "zh": "Agent 产品的差异化正在从「用哪个模型」转向「运行时怎么搭」。工具目录类项目若形成事实标准，会显著降低 Agent 接入第三方能力的边际成本，也会让「工具生态覆盖度」成为选型指标；沙箱密度与 Office 运行时则直接决定单任务成本与可处理的数据形态。建议本周评估自研 Agent 栈中这三层是自建还是采购，并测算替换成本。",
-          "en": "Agent product differentiation is shifting from 'which model' to 'how the runtime is assembled.' If tool-directory projects become de facto standards, the marginal cost of connecting agents to third-party capabilities drops sharply, and 'tool ecosystem coverage' becomes a selection criterion; sandbox density and Office runtime directly determine per-task cost and the data formats an agent can handle. This week, assess whether to build or buy these three layers, and estimate switching costs."
+          "zh": "执行层与工具层同时出现高增速项目，说明 Agent 产品化的瓶颈正从「模型能力」转向「安全运行 + 工具接入」的工程底座。PM 应评估自建还是接入这两类基础设施：若产品涉及多租户或敏感数据，沙箱隔离是合规前提；若工具链分散，统一目录可显著降低集成成本。",
+          "en": "High-growth projects in both execution and tool layers indicate the bottleneck for agent products is shifting from model capability to the engineering foundation of secure execution and tool access. PMs should assess build-vs-buy for both: sandbox isolation is a compliance prerequisite for multi-tenant or sensitive-data products, while a unified directory can significantly cut integration costs for fragmented toolchains."
         },
         "impact": "High",
         "sources": [
@@ -82,60 +82,27 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "superdesigndev/treg",
             "url": "https://github.com/superdesigndev/treg"
-          },
-          {
-            "label": "dream-num/univer",
-            "url": "https://github.com/dream-num/univer"
           }
         ]
       },
       {
         "title": {
-          "zh": "OpenAI 把提示缓存变成显式工程能力，成本竞争进入「可调参」阶段",
-          "en": "OpenAI turns prompt caching into an explicit engineering capability, cost competition enters a tunable phase"
+          "zh": "Agent 可观测性从个人配置升级为企业治理能力",
+          "en": "Agent observability upgrades from personal config to enterprise governance"
         },
         "category": {
-          "zh": "模型平台与成本",
-          "en": "Model Platform & Cost"
+          "zh": "企业级 Agent 治理",
+          "en": "Enterprise Agent Governance"
         },
         "summary": {
-          "zh": "OpenAI 为 GPT-6 升级提示缓存，带来更高命中率、显式断点与诊断工具，缓存从黑盒优化变为可显式控制的工程能力；同日 Vercel AI Gateway 上线 GPT-6 Sol 与 GPT-6 Luna，官方称两者在专业工作、编程、计算机使用与事实性上优于 GPT-6 Astra 且价格更低，Luna 面向高并发 Agent 与日常任务。",
-          "en": "OpenAI upgraded prompt caching for GPT-6 with higher hit rates, explicit breakpoints, and diagnostics, turning caching from a black-box optimization into an explicitly controllable engineering capability. On the same day, Vercel AI Gateway launched GPT-6 Sol and GPT-6 Luna, which OpenAI says outperform GPT-6 Astra on professional work, coding, computer use, and factuality at lower prices, with Luna aimed at high-concurrency agents and everyday tasks."
+          "zh": "GitHub Copilot 应用支持通过企业托管设置配置 OpenTelemetry，管理员可将代理活动数据发送到组织监控工具，实现会话追踪与异常排查，默认排除提示和响应内容。同期 Anthropic 与 Accenture 合作开展嵌入式评估，双方预计未来五年各投资至少 10 亿美元，覆盖模型评估、红队测试与对齐评估。",
+          "en": "GitHub Copilot app now supports OpenTelemetry via enterprise-managed settings, letting admins route agent activity data to organizational monitoring tools for session tracing and anomaly detection, with prompts and responses excluded by default. Meanwhile, Anthropic partners with Accenture on embedded evaluation, with each side expected to invest at least $1B over five years, covering model evaluation, red-teaming, and alignment assessment."
         },
         "pmInsight": {
-          "zh": "缓存断点可显式控制意味着长上下文、多轮 Agent 的成本结构可以被产品侧主动设计，而不是被动等待平台优化；分层模型 + 第三方网关同步铺开，则让「按任务路由到不同价位模型」成为可落地的降本手段。建议本周对现有 Agent 链路做一次缓存命中率与模型分层路由的联合测算，看能否在不降质的前提下压缩单位任务成本。",
-          "en": "Explicit cache breakpoints mean the cost structure of long-context, multi-turn agents can be actively designed by product teams rather than passively waiting for platform optimization. Tiered models distributed through third-party gateways make 'route tasks to different price tiers' a practical cost-reduction lever. This week, run a joint estimate of cache hit rate and tiered model routing on your existing agent pipeline to see whether per-task cost can be compressed without quality loss."
+          "zh": "可观测性与独立评估同时被平台化，意味着企业采购 Agent 产品时，「能否审计、能否接入现有监控、能否被第三方评估」正在成为硬性门槛。PM 应把可观测性从「开发者选项」提升为「企业销售材料」，并提前准备数据边界说明（如默认不采集提示内容），以缩短安全审查周期。",
+          "en": "Observability and independent evaluation are being platformized simultaneously, meaning 'auditable, integrable with existing monitoring, third-party evaluable' is becoming a hard procurement threshold for enterprise agent products. PMs should elevate observability from a developer option to enterprise sales collateral, and prepare data-boundary documentation (e.g., prompts not collected by default) to shorten security review cycles."
         },
         "impact": "High",
-        "sources": [
-          {
-            "label": "OpenAI: Better prompt caching for GPT-6",
-            "url": "https://openai.com/index/better-prompt-caching-for-gpt-6"
-          },
-          {
-            "label": "Vercel AI: GPT-6 Sol and Luna on AI Gateway",
-            "url": "https://vercel.com/changelog/gpt-6-sol-and-luna-now-available-on-ai-gateway"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Agent 治理双线推进：企业级可观测性与嵌入式安全评估同时落地",
-          "en": "Agent governance advances on two fronts: enterprise observability and embedded safety evaluation"
-        },
-        "category": {
-          "zh": "安全与合规",
-          "en": "Safety & Compliance"
-        },
-        "summary": {
-          "zh": "GitHub Copilot 应用支持通过企业托管设置接入 OpenTelemetry，管理员可将 Agent 会话、模型调用与工具使用链路导出到自有监控系统，默认不采集提示与响应内容；Anthropic 与 Accenture 旗下 Faculty 合作开展前沿 AI 嵌入式评估，涵盖红队测试、对齐评估与安全防护测试，双方计划未来五年各投入至少 10 亿美元。",
-          "en": "The GitHub Copilot app now supports OpenTelemetry via enterprise-managed settings, letting admins export agent sessions, model calls, and tool usage traces to their own monitoring systems, with prompts and responses not collected by default. Anthropic is partnering with Accenture's Faculty on embedded evaluation of frontier AI, covering red-teaming, alignment evaluation, and safeguard testing, with each side planning to invest at least $1B over five years."
-        },
-        "pmInsight": {
-          "zh": "可观测性从个人调试升级为企业采购门槛，安全评估从外部审计变为嵌入研发流程，两者共同指向「Agent 治理接口」正在标准化。对面向受监管行业的产品，这意味着需要提前准备审计日志、数据边界说明与第三方评估证据；对通用产品，则要关注默认不采集内容这类设计是否会成为客户尽调中的加分项。",
-          "en": "Observability is upgrading from personal debugging to an enterprise procurement gate, and safety evaluation is moving from external audit to embedded R&D process — together signaling that 'agent governance interfaces' are standardizing. For products targeting regulated industries, this means preparing audit logs, data-boundary documentation, and third-party evaluation evidence in advance; for general products, watch whether designs like 'no content collection by default' become a plus in customer due diligence."
-        },
-        "impact": "Medium",
         "sources": [
           {
             "label": "GitHub Changelog: OpenTelemetry in the GitHub Copilot app",
@@ -146,54 +113,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
           }
         ]
-      }
-    ],
-    "opportunities": [
-      {
-        "title": {
-          "zh": "机会：以「工具目录 + 沙箱运行时」组合，做面向中小团队的 Agent 接入层",
-          "en": "Opportunity: an agent access layer combining tool directory and sandbox runtime for small and mid-size teams"
-        },
-        "category": {
-          "zh": "Agent 基础设施产品化",
-          "en": "Agent Infrastructure Productization"
-        },
-        "summary": {
-          "zh": "treg 用统一地址和令牌接入 60 多家供应商 3000 多个接口，substrate 提供默认安全的沙箱执行，两者分别解决「工具从哪来」和「在哪跑」的问题，但当前仍是独立开源项目，缺少面向中小团队的托管组合方案。",
-          "en": "treg provides unified access to 3,000+ APIs from 60+ vendors via one address and token, while substrate offers default-secure sandbox execution — solving 'where do tools come from' and 'where does it run' respectively. Both remain standalone open-source projects, with no managed bundle for small and mid-size teams."
-        },
-        "pmInsight": {
-          "zh": "可验证假设：若将工具目录与沙箱运行时打包为托管服务，并把「首次跑通一个多工具 Agent」的时间压缩到 30 分钟以内，中小团队的自建 Agent 意愿会显著提升。验证方式：面向 20 个有 Agent 需求但无专职基础设施团队的产品团队做落地测试，测量接入耗时、工具调用成功率与两周留存。",
-          "en": "Testable hypothesis: bundling a tool directory with a sandbox runtime as a managed service, and compressing 'first working multi-tool agent' to under 30 minutes, would significantly raise small teams' willingness to build agents. Validation: run onboarding tests with 20 product teams that need agents but lack dedicated infra staff, measuring setup time, tool-call success rate, and two-week retention."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "superdesigndev/treg",
-            "url": "https://github.com/superdesigndev/treg"
-          },
-          {
-            "label": "agent-substrate/substrate",
-            "url": "https://github.com/agent-substrate/substrate"
-          }
-        ]
       },
       {
         "title": {
-          "zh": "机会：把缓存断点与模型分层路由做成产品侧的成本控制面板",
-          "en": "Opportunity: turn cache breakpoints and tiered model routing into a product-side cost control panel"
+          "zh": "模型平台竞争转向单位任务成本：缓存与分层定价同步推进",
+          "en": "Model platform competition shifts to cost per task: caching and tiered pricing advance together"
         },
         "category": {
-          "zh": "成本工程",
-          "en": "Cost Engineering"
+          "zh": "模型平台与定价",
+          "en": "Model Platform & Pricing"
         },
         "summary": {
-          "zh": "OpenAI 的显式缓存断点与诊断工具，加上 Vercel AI Gateway 上更低价的 GPT-6 Sol/Luna，使「按任务复杂度选择模型 + 按上下文结构设置缓存断点」成为可组合的降本手段，但目前多数产品团队仍靠人工经验配置。",
-          "en": "OpenAI's explicit cache breakpoints and diagnostics, plus cheaper GPT-6 Sol/Luna on Vercel AI Gateway, make 'choose model by task complexity + set cache breakpoints by context structure' a combinable cost-reduction approach — yet most product teams still configure it by hand."
+          "zh": "OpenAI 为 GPT-6 升级提示缓存，带来更高命中率、显式断点和诊断工具，直接降低长上下文与重复提示场景的延迟和成本。Vercel AI Gateway 上线 GPT-6 Sol 和 Luna，价格低于 GPT-6 Astra，其中 Luna 定位高并发代理工作流的低成本选项。Hacker News 同期讨论本地运行 LLM 的成本、隐私与性能权衡。",
+          "en": "OpenAI upgraded prompt caching for GPT-6 with higher hit rates, explicit breakpoints, and diagnostics, directly cutting latency and cost for long-context and repeated-prompt scenarios. Vercel AI Gateway launched GPT-6 Sol and Luna below GPT-6 Astra, with Luna positioned as a low-cost option for high-concurrency agent workflows. Hacker News concurrently discussed cost, privacy, and performance tradeoffs of running LLMs locally."
         },
         "pmInsight": {
-          "zh": "可验证假设：若在 Agent 编排层内置「任务复杂度 → 模型档位」与「上下文分段 → 缓存断点」的自动建议，并展示预估成本对比，团队的单位任务成本可下降 20% 以上且质量评分不降。验证方式：在一条真实多轮 Agent 链路上做 A/B，对照组人工配置，实验组使用自动建议，对比成本、延迟与人工评分。",
-          "en": "Testable hypothesis: embedding automatic suggestions for 'task complexity → model tier' and 'context segmentation → cache breakpoints' in the agent orchestration layer, with projected cost comparisons, could cut per-task cost by over 20% without lowering quality scores. Validation: A/B on a real multi-turn agent pipeline — control group configures manually, experiment group uses auto-suggestions — comparing cost, latency, and human ratings."
+          "zh": "缓存优化与模型分层定价共同把竞争焦点从「单 token 价格」推向「单位任务成本」。PM 应重新测算高频 Agent 场景（如多轮工具调用、长文档处理）的实际成本结构，并评估是否将部分任务路由到 Luna 这类低成本模型，或对重复上下文启用缓存断点。本地推理的讨论升温也提示：数据敏感场景可保留混合部署选项。",
+          "en": "Caching improvements and tiered model pricing together shift competition from 'price per token' to 'cost per task.' PMs should re-model the actual cost structure of high-frequency agent scenarios (multi-turn tool calls, long-document processing), evaluate routing some tasks to low-cost models like Luna, and enable cache breakpoints for repeated context. The rising discussion of local inference also suggests keeping a hybrid deployment option for data-sensitive scenarios."
         },
         "impact": "Medium",
         "sources": [
@@ -202,8 +138,72 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://openai.com/index/better-prompt-caching-for-gpt-6"
           },
           {
-            "label": "Vercel AI: GPT-6 Sol and Luna on AI Gateway",
+            "label": "Vercel AI: GPT-6 Sol and Luna now available on AI Gateway",
             "url": "https://vercel.com/changelog/gpt-6-sol-and-luna-now-available-on-ai-gateway"
+          },
+          {
+            "label": "Hacker News LLM: Tradeoff considerations while running LLM models locally",
+            "url": "https://swapniltalekar.substack.com/p/should-you-be-running-llm-models"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "面向 Agent 的「办公文档运行时」中间层",
+          "en": "An 'office document runtime' middleware layer for agents"
+        },
+        "category": {
+          "zh": "Agent 办公场景",
+          "en": "Agent Office Scenarios"
+        },
+        "summary": {
+          "zh": "dream-num/univer 今日新增 255 stars（总 15958），位列全球趋势榜第 3，将电子表格、文档、演示、画布、关系表和 PDF 统一在一个运行时中，明确面向 AI Agent。结合 substrate 的沙箱执行与 treg 的工具目录，Agent 处理办公文档的「执行—工具—文档」三层已可组合。",
+          "en": "dream-num/univer added 255 stars today (15,958 total), ranking #3 globally, unifying spreadsheets, docs, presentations, canvas, relational tables, and PDF in one runtime explicitly for AI agents. Combined with substrate's sandbox execution and treg's tool directory, the 'execution-tool-document' three layers for agents handling office documents are now composable."
+        },
+        "pmInsight": {
+          "zh": "可验证假设：若将 Univer 作为文档运行时、substrate 作为沙箱、treg 作为工具入口，可在 2-4 周内搭建一个「Agent 自动生成并校验财务报表」的原型；关键验证指标是端到端任务成功率与人工修正率。若修正率低于 20%，则该中间层具备独立产品化价值。",
+          "en": "Testable hypothesis: combining Univer as document runtime, substrate as sandbox, and treg as tool gateway could produce a prototype for 'agent auto-generates and validates financial reports' within 2-4 weeks; key metrics are end-to-end task success rate and human correction rate. If correction rate is below 20%, this middleware layer has standalone product value."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "dream-num/univer",
+            "url": "https://github.com/dream-num/univer"
+          },
+          {
+            "label": "agent-substrate/substrate",
+            "url": "https://github.com/agent-substrate/substrate"
+          },
+          {
+            "label": "superdesigndev/treg",
+            "url": "https://github.com/superdesigndev/treg"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "垂直领域模型的数据配比策略可产品化",
+          "en": "Vertical model data-mix strategy can be productized"
+        },
+        "category": {
+          "zh": "垂直模型数据策略",
+          "en": "Vertical Model Data Strategy"
+        },
+        "summary": {
+          "zh": "arXiv 论文通过 token 匹配实验发现，医学大模型中临床数据提升临床任务且不损害知识密集型任务，教学数据主要提升知识密集型任务，并存在「知易行难」的差距。这为医疗等垂直 AI 产品的数据采购与配比提供了实证依据。",
+          "en": "An arXiv paper using token-matching experiments found that in medical LLMs, clinical data improves clinical tasks without harming knowledge-intensive tasks, while didactic data mainly improves knowledge-intensive tasks, revealing a 'knowing-easy, doing-hard' gap. This provides empirical grounding for data sourcing and mixing in vertical AI products like healthcare."
+        },
+        "pmInsight": {
+          "zh": "可验证假设：在垂直领域产品中，将训练/微调数据从「教材为主」调整为「临床/实操数据占比 ≥ 30%」，可在不降低知识问答准确率的前提下，提升任务型评测（如诊断建议、流程操作）得分。建议用 A/B 评测验证，若任务型指标提升 ≥ 10% 且知识型指标不降，则可将该配比写入数据采购标准。",
+          "en": "Testable hypothesis: shifting vertical-domain training/fine-tuning data from 'textbook-dominant' to 'clinical/hands-on data ≥ 30%' can improve task-oriented evaluation scores (e.g., diagnostic suggestions, workflow operations) without lowering knowledge QA accuracy. Validate via A/B evaluation; if task metrics improve ≥ 10% with no knowledge regression, codify this ratio into data procurement standards."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "arXiv AI: Didactic knowledge or Clinical Cases? How Data Types Shape Medical Large Language Models",
+            "url": "https://arxiv.org/abs/2609.22161"
           }
         ]
       }
@@ -219,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，开发者可以按需拼装工具、记忆、安全等能力，用于搭建可扩展的智能体应用。",
+          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，基于 Cordis 构建，用于承载和调度各类智能体能力。适合需要统一管理 Agent 插件、扩展工具链的开发者与产品团队。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
-        "totalStars": 233896,
+        "totalStars": 233939,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，开发者可以按需拼装工具、记忆、安全等能力，用于搭建可扩展的智能体应用。",
+          "zh": "DeepSeek 官方开源的 AI Agent 运行框架，采用「一切皆插件」的架构，基于 Cordis 构建，用于承载和调度各类智能体能力。适合需要统一管理 Agent 插件、扩展工具链的开发者与产品团队。",
           "en": "DeepSeek Harness: Everything is a Plugin."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，总 star 数已超过 23 万，作为 DeepSeek 官方 Agent 基础设施持续获得关注。",
+          "zh": "项目创建仅约一个月，总 star 数已超过 23 万，作为 DeepSeek 官方 Agent 基础设施持续获得关注，今日虽无新增 star 数据，但 fork 数已达 2.8 万，社区参与度较高。",
           "en": "创建仅约 1 个月便已积累 233k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 233,896 stars、28,102 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 233,896 stars and 28,102 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 233,939 stars、28,108 forks，topics: ai-agents, cordis, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 233,939 stars and 28,108 forks，topics: ai-agents, cordis, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察官方 Agent 框架如何定义插件标准，这可能影响未来智能体工具生态的接入方式。",
+          "zh": "值得关注官方 Agent 框架的插件化设计思路，思考自家 AI 产品如何通过插件生态降低集成成本、提升可扩展性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "装在手机上的聊天辅助工具，能在微信、QQ、X、飞书等聊天场景中读取屏幕内容，理解对方消息并给出候选回复，用户可一键填入输入框，发不发由自己决定。",
+          "zh": "装在手机上的聊天副驾，能在微信、QQ、X、飞书等聊天应用中读取屏幕内容，理解对方消息并给出候选回复，一键填入输入框，是否发送由用户决定。采用非侵入式设计，只读屏幕，不 hook、不改包。",
           "en": "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
         },
-        "totalStars": 4737,
+        "totalStars": 4815,
         "language": "Kotlin",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "装在手机上的聊天辅助工具，能在微信、QQ、X、飞书等聊天场景中读取屏幕内容，理解对方消息并给出候选回复，用户可一键填入输入框，发不发由自己决定。",
+          "zh": "装在手机上的聊天副驾，能在微信、QQ、X、飞书等聊天应用中读取屏幕内容，理解对方消息并给出候选回复，一键填入输入框，是否发送由用户决定。采用非侵入式设计，只读屏幕，不 hook、不改包。",
           "en": "装在手机上的对话副驾：在微信 / QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。"
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月便积累 4700 多 stars，今日在 rising 榜单中获得关注，非侵入式「只读屏幕」的产品定位降低了用户尝试门槛。",
+          "zh": "项目创建仅约一个月，总 star 数已达 4815，今日在 rising 榜单中被发现，说明「AI 帮你回消息」这一场景在社交聊天用户中快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,737 stars、954 forks，topics: accessibility-service, android, chat-assistant, llm, qq，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,737 stars and 954 forks，topics: accessibility-service, android, chat-assistant, llm, qq, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,815 stars、965 forks，topics: accessibility-service, android, chat-assistant, llm, qq，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,815 stars and 965 forks，topics: accessibility-service, android, chat-assistant, llm, qq, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察这类「对话副驾」产品如何在隐私敏感场景中平衡辅助能力与用户控制权。",
+          "zh": "观察非侵入式屏幕读取方案如何平衡便利性与隐私合规，以及「辅助而非替代」的交互设计对用户信任的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "围绕 Jev 模型整理的工具与开发实践清单，汇总了基于该模型构建的公开项目，方便开发者快速了解可用的生态资源。",
+          "zh": "一份围绕 Jev（TypeSafe AI 的 System One 模型，用于类型化决策）的公开工具与开发模式精选列表，汇总了基于 Jev 构建的项目和实践。适合想了解 Jev 生态的开发者快速入门。",
           "en": "A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions."
         },
-        "totalStars": 671,
+        "totalStars": 674,
         "language": "Unknown",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "围绕 Jev 模型整理的工具与开发实践清单，汇总了基于该模型构建的公开项目，方便开发者快速了解可用的生态资源。",
+          "zh": "一份围绕 Jev（TypeSafe AI 的 System One 模型，用于类型化决策）的公开工具与开发模式精选列表，汇总了基于 Jev 构建的项目和实践。适合想了解 Jev 生态的开发者快速入门。",
           "en": "A curated list of tools  built for Jev — TypeSafe AI's System One model for typed decisions."
         },
         "todayHighlight": {
-          "zh": "项目创建仅数日，总 star 数已达 671，作为 Jev 生态的早期索引类项目随相关模型讨论升温而获得关注。",
+          "zh": "项目创建仅约一个月，总 star 数 674，今日在 rising 榜单中被发现，作为 Jev 生态的早期资源聚合页，随相关模型讨论升温而获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 671 stars、23 forks，topics: awesome, awesome-list, awesome-lists, jev, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 671 stars and 23 forks，topics: awesome, awesome-list, awesome-lists, jev, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 674 stars、23 forks，topics: awesome, awesome-list, awesome-lists, jev, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 674 stars and 23 forks，topics: awesome, awesome-list, awesome-lists, jev, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察新兴模型生态中「awesome 清单」类项目如何成为开发者发现工具的第一入口。",
+          "zh": "关注新兴 AI 模型生态中「awesome 列表」类项目的早期信号，它们往往能反映开发者社区的真实兴趣方向。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套面向 AI Agent 的 Office 运行时，把电子表格、文档、幻灯片、画布、关系表和 PDF 统一在一个引擎中，支持浏览器和 Node.js 环境，方便在应用里嵌入表格与文档能力。",
+          "zh": "面向 AI Agent 的 Office 套件运行时，将电子表格、文档、演示文稿、画布、关系表和 PDF 统一在一个运行时中，提供高性能、可定制的 Office SDK，支持浏览器和 Node.js 环境。",
           "en": "Star dream-num / univer The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime."
         },
-        "totalStars": 15915,
+        "totalStars": 15958,
         "language": "TypeScript",
         "dailyStars": 255,
         "chineseIntro": {
-          "zh": "一套面向 AI Agent 的 Office 运行时，把电子表格、文档、幻灯片、画布、关系表和 PDF 统一在一个引擎中，支持浏览器和 Node.js 环境，方便在应用里嵌入表格与文档能力。",
+          "zh": "面向 AI Agent 的 Office 套件运行时，将电子表格、文档、演示文稿、画布、关系表和 PDF 统一在一个运行时中，提供高性能、可定制的 Office SDK，支持浏览器和 Node.js 环境。",
           "en": "Star dream-num / univer The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime."
         },
         "todayHighlight": {
-          "zh": "作为全球趋势榜第 3 名，今日新增 255 stars，总 star 数接近 1.6 万，AI Agent 与 Office 场景结合的趋势带动了持续关注。",
+          "zh": "今日新增 255 stars，总 star 数接近 1.6 万，位列全球趋势榜第 3，作为 AI Agent 处理办公文档的基础设施，随 Agent 生态升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 255 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,915 stars、1,408 forks，topics: board, collaboration, data-table, doc, docx，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,915 stars and 1,408 forks，topics: board, collaboration, data-table, doc, docx, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,958 stars、1,412 forks，topics: board, collaboration, data-table, doc, docx，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,958 stars and 1,412 forks，topics: board, collaboration, data-table, doc, docx, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 AI Agent 如何从纯文本交互走向结构化办公文档操作，这可能催生新的产品形态。",
+          "zh": "值得观察 AI Agent 如何通过统一运行时操作 Office 文档，这可能是下一代办公自动化产品的关键底层能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个默认安全的 Agent 执行运行时，目标是以更高密度运行大量沙箱环境，适合需要隔离执行 AI 智能体任务的场景。",
+          "zh": "一个默认安全的 Agent 执行运行时，专为大规模沙箱运行设计，密度比标准容器高 10 倍，可支撑数百万级沙箱。适合需要安全隔离、高密度部署 Agent 的平台型产品。",
           "en": "Star agent-substrate / substrate Agent Substrate: the core system"
         },
-        "totalStars": 3164,
+        "totalStars": 3179,
         "language": "Go",
         "dailyStars": 245,
         "chineseIntro": {
-          "zh": "一个默认安全的 Agent 执行运行时，目标是以更高密度运行大量沙箱环境，适合需要隔离执行 AI 智能体任务的场景。",
+          "zh": "一个默认安全的 Agent 执行运行时，专为大规模沙箱运行设计，密度比标准容器高 10 倍，可支撑数百万级沙箱。适合需要安全隔离、高密度部署 Agent 的平台型产品。",
           "en": "Star agent-substrate / substrate Agent Substrate: the core system"
         },
         "todayHighlight": {
-          "zh": "作为全球趋势榜第 2 名，今日新增 245 stars，项目创建约四个月，安全沙箱与 Agent 基础设施的定位契合当前生态需求。",
+          "zh": "今日新增 245 stars，总 star 数 3179，位列全球趋势榜第 2，项目创建约 4 个月，作为 Agent 安全执行基础设施在生态中快速升温。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 245 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,164 stars、395 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,164 stars and 395 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,179 stars、396 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,179 stars and 396 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 Agent 执行安全与沙箱密度如何成为企业级智能体落地的关键基础设施指标。",
+          "zh": "关注 Agent 执行安全与密度问题，这直接关系到 AI 产品能否规模化、低成本地运行大量智能体任务。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Agent 工具调用的统一目录服务，类似「工具版 OpenRouter」，开发者用一个地址和令牌即可让智能体访问 60 多家供应商的 3000 多个接口，覆盖 SEO、社交、数据增强、爬取、图像视频生成等能力。",
+          "zh": "被称为「Agent 工具的 OpenRouter」，为智能体提供统一的工具目录，一个 base URL 和一个 token 即可调用 60 多家供应商的 3000 多个 API 端点，涵盖 SEO、社交、数据增强、爬虫、图像视频生成等，按次计费。",
           "en": "Star superdesigndev / treg OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn"
         },
-        "totalStars": 2391,
+        "totalStars": 2404,
         "language": "Python",
         "dailyStars": 230,
         "chineseIntro": {
-          "zh": "面向 Agent 工具调用的统一目录服务，类似「工具版 OpenRouter」，开发者用一个地址和令牌即可让智能体访问 60 多家供应商的 3000 多个接口，覆盖 SEO、社交、数据增强、爬取、图像视频生成等能力。",
+          "zh": "被称为「Agent 工具的 OpenRouter」，为智能体提供统一的工具目录，一个 base URL 和一个 token 即可调用 60 多家供应商的 3000 多个 API 端点，涵盖 SEO、社交、数据增强、爬虫、图像视频生成等，按次计费。",
           "en": "Star superdesigndev / treg OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn"
         },
         "todayHighlight": {
-          "zh": "作为全球趋势榜第 7 名，今日新增 230 stars，项目创建仅约两个月，按调用计费、无需逐个注册供应商的模式降低了 Agent 工具接入成本。",
+          "zh": "今日新增 230 stars，总 star 数 2404，位列全球趋势榜第 7，项目创建仅约 2 个月，作为 Agent 工具调用的统一入口快速传播。",
           "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 230 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,391 stars、228 forks，topics: agents, api-keys, cli, credentials, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,391 stars and 228 forks，topics: agents, api-keys, cli, credentials, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,404 stars、228 forks，topics: agents, api-keys, cli, credentials, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,404 stars and 228 forks，topics: agents, api-keys, cli, credentials, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察工具聚合层如何降低 Agent 开发者的集成成本，以及按调用计费模式在工具市场的可行性。",
+          "zh": "观察工具聚合层如何降低 Agent 接入外部能力的门槛，这可能成为 AI 产品快速扩展功能的重要中间件。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版已被 70 多个国家的 500 多所大学用于教学，适合系统学习深度学习并动手实践。",
+          "zh": "《动手学深度学习》中文版，面向中文读者、可运行、可讨论的深度学习教材，中英文版被 70 多个国家的 500 多所大学用于教学。适合学生、教师和自学者系统学习深度学习。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
-        "totalStars": 81045,
+        "totalStars": 81047,
         "language": "Python",
         "dailyStars": 84,
         "chineseIntro": {
-          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版已被 70 多个国家的 500 多所大学用于教学，适合系统学习深度学习并动手实践。",
+          "zh": "《动手学深度学习》中文版，面向中文读者、可运行、可讨论的深度学习教材，中英文版被 70 多个国家的 500 多所大学用于教学。适合学生、教师和自学者系统学习深度学习。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
         "todayHighlight": {
-          "zh": "作为中文趋势榜第 2 名，今日新增 84 stars，总 star 数超过 8.1 万，长期作为中文深度学习入门教材持续获得关注。",
+          "zh": "今日新增 84 stars，总 star 数超过 8.1 万，位列中文趋势榜第 2，作为长期维护的经典教材，持续获得中文学习者的关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 2 位, 总 star 数已达 81k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 84 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 81,045 stars、12,407 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 81,045 stars and 12,407 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 81,047 stars、12,407 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 81,047 stars and 12,407 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察经典开源教材如何长期占据学习入口，以及教育类内容产品的社区维护模式。",
+          "zh": "关注经典教育资源的长期生命力，AI 产品经理可从中借鉴如何设计可运行、可讨论的学习型内容。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "用于配置和监控 Claude Code 的命令行工具，帮助开发者快速搭建和管理 Claude Code 的运行环境与模板。",
+          "zh": "用于配置和监控 Claude Code 的 CLI 工具，提供模板化配置能力，帮助开发者更高效地使用 Claude Code 进行 AI 辅助编程。",
           "en": "CLI tool for configuring and monitoring Claude Code"
         },
-        "totalStars": 31256,
+        "totalStars": 31279,
         "language": "Python",
         "dailyStars": 64,
         "chineseIntro": {
-          "zh": "用于配置和监控 Claude Code 的命令行工具，帮助开发者快速搭建和管理 Claude Code 的运行环境与模板。",
+          "zh": "用于配置和监控 Claude Code 的 CLI 工具，提供模板化配置能力，帮助开发者更高效地使用 Claude Code 进行 AI 辅助编程。",
           "en": "CLI tool for configuring and monitoring Claude Code"
         },
         "todayHighlight": {
-          "zh": "作为全球趋势榜第 4 名，今日新增 64 stars，总 star 数超过 3.1 万，Claude Code 生态的持续升温带动了配套工具的关注。",
+          "zh": "今日新增 64 stars，总 star 数超过 3.1 万，位列全球趋势榜第 4，项目创建约 15 个月，作为 Claude Code 生态的配套工具持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 4 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 64 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,256 stars、3,553 forks，topics: anthropic, anthropic-claude, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,256 stars and 3,553 forks，topics: anthropic, anthropic-claude, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,279 stars、3,554 forks，topics: anthropic, anthropic-claude, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,279 stars and 3,554 forks，topics: anthropic, anthropic-claude, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 AI 编程助手周边工具链如何随主产品生态成长，以及开发者对配置管理类工具的真实需求。",
+          "zh": "观察 AI 编程助手周边工具链的成长机会，配置与监控类工具往往是开发者体验的关键补充。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Android 全栈设备控制平台，提供远程桌面、UI/OCR/图像匹配自动化、一键中间人攻击、内置 Frida、代理与 P2P 网络、MCP/Agent 等能力，面向多设备集群和工程化部署场景。",
+          "zh": "Android 全栈设备控制平台，提供 WebRTC/H.264 远程桌面、UI/OCR/图像匹配自动化、一键 MITM、内置 Frida、代理/VPN/frp/P2P 网络、MCP/Agent 等能力，拥有 160 多个 API，面向多设备集群和工程化部署。",
           "en": "Star firerpa / lamda Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching automation, one-click MITM, built-in Frida, proxy/VPN/frp/P2P networking, MCP/Agent, 160+ APIs, designed for multi-device clusters and engineered deployments."
         },
-        "totalStars": 8408,
+        "totalStars": 8409,
         "language": "Python",
         "dailyStars": 15,
         "chineseIntro": {
-          "zh": "Android 全栈设备控制平台，提供远程桌面、UI/OCR/图像匹配自动化、一键中间人攻击、内置 Frida、代理与 P2P 网络、MCP/Agent 等能力，面向多设备集群和工程化部署场景。",
+          "zh": "Android 全栈设备控制平台，提供 WebRTC/H.264 远程桌面、UI/OCR/图像匹配自动化、一键 MITM、内置 Frida、代理/VPN/frp/P2P 网络、MCP/Agent 等能力，拥有 160 多个 API，面向多设备集群和工程化部署。",
           "en": "Star firerpa / lamda Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching automation, one-click MITM, built-in Frida, proxy/VPN/frp/P2P networking, MCP/Agent, 160+ APIs, designed for multi-device clusters and engineered deployments."
         },
         "todayHighlight": {
-          "zh": "作为中文趋势榜第 3 名，今日新增 15 stars，项目已创建约四年，在移动安全与自动化领域持续获得关注。",
+          "zh": "今日新增 15 stars，总 star 数 8409，位列中文趋势榜第 3，项目创建约 51 个月，作为 Android 自动化与安全测试的成熟工具持续在榜。",
           "en": "登上 GitHub 中文 Trending 日榜第 3 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 15 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,408 stars、1,131 forks，topics: adb, agents, ai, ai-agents, android，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,408 stars and 1,131 forks，topics: adb, agents, ai, ai-agents, android, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,409 stars、1,131 forks，topics: adb, agents, ai, ai-agents, android，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,409 stars and 1,131 forks，topics: adb, agents, ai, ai-agents, android, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察移动端自动化与安全测试工具如何与 AI Agent 能力结合，拓展企业设备管理场景。",
+          "zh": "关注 Android 设备集群控制与自动化能力，这对移动端 AI 测试、群控类产品有直接参考价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI 原生的 API 网关，基于 Envoy 构建，面向云原生环境，为 AI 应用提供流量管理、安全与可观测能力。",
+          "zh": "AI 原生的 API 网关，基于 Envoy 构建，面向云原生环境，为 AI 应用提供流量管理、安全防护和可观测性能力。适合需要统一管理 AI 服务流量的团队。",
           "en": "Star higress-group / higress 🤖 AI Gateway | AI Native API Gateway"
         },
         "totalStars": 9442,
         "language": "Go",
         "dailyStars": 7,
         "chineseIntro": {
-          "zh": "AI 原生的 API 网关，基于 Envoy 构建，面向云原生环境，为 AI 应用提供流量管理、安全与可观测能力。",
+          "zh": "AI 原生的 API 网关，基于 Envoy 构建，面向云原生环境，为 AI 应用提供流量管理、安全防护和可观测性能力。适合需要统一管理 AI 服务流量的团队。",
           "en": "Star higress-group / higress 🤖 AI Gateway | AI Native API Gateway"
         },
         "todayHighlight": {
-          "zh": "作为中文趋势榜第 10 名，今日新增 7 stars，项目已创建约四年，AI 网关作为基础设施持续获得稳定关注。",
+          "zh": "今日新增 7 stars，总 star 数 9442，位列中文趋势榜第 10，项目创建约 48 个月，作为 AI 网关在云原生生态中持续获得关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 10 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 7 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,442 stars、1,311 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,442 stars and 1,311 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,442 stars、1,312 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,442 stars and 1,312 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可以观察 AI 应用规模化后，网关层在模型路由、限流与安全方面承担的产品角色。",
+          "zh": "观察 AI 网关如何成为 AI 应用的基础设施层，产品经理可思考流量治理对 AI 服务稳定性和成本控制的意义。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "OpenAI 为 GPT-6 升级了提示缓存机制，带来更高的缓存命中率、显式断点与诊断工具，可显著降低延迟与成本。对产品意味着长上下文、多轮 Agent 场景的调用成本结构可能被重写。",
+          "zh": "OpenAI 为 GPT-6 升级了提示缓存机制，带来更高的缓存命中率、新的诊断工具、显式断点以及降低延迟和成本的控制项。对产品而言，这意味着长上下文、重复提示场景的成本和响应速度将显著优化。",
           "en": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         },
         "chineseIntro": {
-          "zh": "OpenAI 为 GPT-6 升级了提示缓存机制，带来更高的缓存命中率、显式断点与诊断工具，可显著降低延迟与成本。对产品意味着长上下文、多轮 Agent 场景的调用成本结构可能被重写。",
+          "zh": "OpenAI 为 GPT-6 升级了提示缓存机制，带来更高的缓存命中率、新的诊断工具、显式断点以及降低延迟和成本的控制项。对产品而言，这意味着长上下文、重复提示场景的成本和响应速度将显著优化。",
           "en": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         },
         "todayHighlight": {
-          "zh": "缓存从「黑盒优化」变成可显式控制的工程能力，可能成为各家模型平台下一轮成本与延迟竞争的关键战场。",
-          "en": "缓存从「黑盒优化」变成可显式控制的工程能力，可能成为各家模型平台下一轮成本与延迟竞争的关键战场。"
+          "zh": "缓存能力正成为大模型平台竞争的关键差异化因素，直接影响高频调用场景的毛利和用户体验。",
+          "en": "缓存能力正成为大模型平台竞争的关键差异化因素，直接影响高频调用场景的毛利和用户体验。"
         },
         "pmInsight": {
-          "zh": "PM 应重新测算高频重复前缀场景（系统提示、RAG 模板、Agent 工具定义）的 token 账单，并把缓存命中率纳入成本监控指标。",
+          "zh": "PM 应重新评估高频提示的缓存策略，利用显式断点设计可复用的提示模板，并监控缓存命中率对单位成本的影响。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -662,19 +662,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot 应用支持通过企业托管设置接入 OpenTelemetry，管理员可将 Agent 会话、模型调用与工具使用链路导出到自有监控系统，默认不采集提示与响应内容。",
+          "zh": "GitHub Copilot 应用现已支持通过企业托管设置配置 OpenTelemetry，管理员可将代理活动数据发送到组织兼容的监控工具，实现会话追踪、异常排查和集中管理。默认排除提示和响应内容。",
           "en": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability framework.&#8230; The post OpenTelemetry in the GitHub Copilot app appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 应用支持通过企业托管设置接入 OpenTelemetry，管理员可将 Agent 会话、模型调用与工具使用链路导出到自有监控系统，默认不采集提示与响应内容。",
+          "zh": "GitHub Copilot 应用现已支持通过企业托管设置配置 OpenTelemetry，管理员可将代理活动数据发送到组织兼容的监控工具，实现会话追踪、异常排查和集中管理。默认排除提示和响应内容。",
           "en": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability framework.&#8230; The post OpenTelemetry in the GitHub Copilot app appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "Agent 可观测性正从开发者个人调试升级为企业级治理能力，这会直接影响 Copilot 在受监管行业的采购决策。",
-          "en": "Agent 可观测性正从开发者个人调试升级为企业级治理能力，这会直接影响 Copilot 在受监管行业的采购决策。"
+          "zh": "AI 代理的可观测性正从开发者个人配置转向企业级治理，这为 Copilot 在大型组织中的合规落地扫清障碍。",
+          "en": "AI 代理的可观测性正从开发者个人配置转向企业级治理，这为 Copilot 在大型组织中的合规落地扫清障碍。"
         },
         "pmInsight": {
-          "zh": "PM 应把「Agent 执行链路可追踪」列为对企业客户的核心卖点，并提前设计内容采集开关与合规默认值。",
+          "zh": "PM 应推动将代理遥测纳入企业监控体系，并明确内容捕获的合规边界，以平衡可观测性与隐私要求。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -682,43 +682,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Changelog",
             "url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Reddit LocalLLaMA: Nathan Lambert's written Congressional testimony on the state of open models - Chinese open-weight downloads now 2x America's, >80% of OpenRouter open-model usage",
-          "en": "Reddit LocalLLaMA: Nathan Lambert's written Congressional testimony on the state of open models - Chinese open-weight downloads now 2x America's, >80% of OpenRouter open-model usage"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "Nathan Lambert 的国会书面证词披露：自 2025 年 8 月以来，中国开源权重模型在 Hugging Face 下载量约 32 亿次，是美国 16 亿次的两倍；OpenRouter 开源模型流量一年内从每周约 1 万亿 token 增至约 80 万亿，其中中国模型占比超 80%。",
-          "en": "<!-- SC_OFF --><div class=\"md\"><p>Worth a read if you track open weights. Nathan Lambert (interconnects) posted the written version of his Congressional testimony on where open models stand. The numbers that got me: Hugging Face downloads of Chinese open-weight models are about 3.2B vs 1.6B American since he started tracking in Aug 2025, OpenRouter open-model traffic went from ~1T tokens a week to ~80T in a year with"
-        },
-        "chineseIntro": {
-          "zh": "Nathan Lambert 的国会书面证词披露：自 2025 年 8 月以来，中国开源权重模型在 Hugging Face 下载量约 32 亿次，是美国 16 亿次的两倍；OpenRouter 开源模型流量一年内从每周约 1 万亿 token 增至约 80 万亿，其中中国模型占比超 80%。",
-          "en": "<!-- SC_OFF --><div class=\"md\"><p>Worth a read if you track open weights. Nathan Lambert (interconnects) posted the written version of his Congressional testimony on where open models stand. The numbers that got me: Hugging Face downloads of Chinese open-weight models are about 3.2B vs 1.6B American since he started tracking in Aug 2025, OpenRouter open-model traffic went from ~1T tokens a week to ~80T in a year with"
-        },
-        "todayHighlight": {
-          "zh": "开源权重生态的重心已明显向中国模型倾斜，这将影响美国政策讨论、企业选型与全球模型供应链格局。",
-          "en": "开源权重生态的重心已明显向中国模型倾斜，这将影响美国政策讨论、企业选型与全球模型供应链格局。"
-        },
-        "pmInsight": {
-          "zh": "PM 在选型时应把中国开源权重模型纳入基准测试，并评估其许可证、数据合规与长期维护风险，而非默认只用美国模型。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wnu53i/nathan_lamberts_written_congressional_testimony/"
           }
         ]
       },
@@ -736,19 +699,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一篇讨论本地运行 LLM 取舍的文章在 Hacker News 引发关注，涉及硬件成本、隐私、延迟与模型质量之间的权衡。",
+          "zh": "Hacker News 上讨论了一篇关于本地运行 LLM 模型权衡的文章，涉及成本、隐私、性能等取舍。这反映了开发者对本地部署方案的持续关注。",
           "en": "Article URL: https://swapniltalekar.substack.com/p/should-you-be-running-llm-models Comments URL: https://news.ycombinator.com/item?id=49812956 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "一篇讨论本地运行 LLM 取舍的文章在 Hacker News 引发关注，涉及硬件成本、隐私、延迟与模型质量之间的权衡。",
+          "zh": "Hacker News 上讨论了一篇关于本地运行 LLM 模型权衡的文章，涉及成本、隐私、性能等取舍。这反映了开发者对本地部署方案的持续关注。",
           "en": "Article URL: https://swapniltalekar.substack.com/p/should-you-be-running-llm-models Comments URL: https://news.ycombinator.com/item?id=49812956 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "本地推理讨论升温，反映部分团队对云端 API 成本与数据主权的持续顾虑，是边缘 AI 趋势的早期信号。",
-          "en": "本地推理讨论升温，反映部分团队对云端 API 成本与数据主权的持续顾虑，是边缘 AI 趋势的早期信号。"
+          "zh": "本地推理与云端 API 的边界正在被重新审视，尤其在数据敏感和成本敏感场景下。",
+          "en": "本地推理与云端 API 的边界正在被重新审视，尤其在数据敏感和成本敏感场景下。"
         },
         "pmInsight": {
-          "zh": "PM 可梳理产品中哪些功能必须云端、哪些可降级到本地小模型，为隐私敏感客户准备混合推理方案。",
+          "zh": "PM 应定期评估本地模型在特定场景下的可行性，并设计可切换的推理后端以应对不同客户需求。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -773,19 +736,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "Vercel AI Gateway 上线 OpenAI 的 GPT-6 Sol 与 GPT-6 Luna，两者在专业工作、编程、计算机使用与事实性上较 GPT-6 Astra 有提升且价格更低，Luna 面向高并发 Agent 与日常任务。",
+          "zh": "Vercel AI Gateway 上线了 OpenAI 的 GPT-6 Sol 和 GPT-6 Luna，两者在专业工作、编码、计算机使用、事实性和沟通方面均有提升，且价格低于 GPT-6 Astra。Sol 适合复杂专业工作流和持续编码，Luna 是面向高并发代理工作流和日常任务的低成本选项。",
           "en": "GPT-6 Sol and GPT-6 Luna from OpenAI are now available on AI Gateway.Both models bring GPT-6 improvements in professional work, coding, computer use, factuality, and communication at a lower price than GPT-6 Astra.GPT-6 Sol (openai/gpt-6-sol) is suited to complex professional workflows and sustained coding tasks where quality and room to iterate both matter.GPT-6 Luna (openai/gpt-6-luna) is the lower-cost option for "
         },
         "chineseIntro": {
-          "zh": "Vercel AI Gateway 上线 OpenAI 的 GPT-6 Sol 与 GPT-6 Luna，两者在专业工作、编程、计算机使用与事实性上较 GPT-6 Astra 有提升且价格更低，Luna 面向高并发 Agent 与日常任务。",
+          "zh": "Vercel AI Gateway 上线了 OpenAI 的 GPT-6 Sol 和 GPT-6 Luna，两者在专业工作、编码、计算机使用、事实性和沟通方面均有提升，且价格低于 GPT-6 Astra。Sol 适合复杂专业工作流和持续编码，Luna 是面向高并发代理工作流和日常任务的低成本选项。",
           "en": "GPT-6 Sol and GPT-6 Luna from OpenAI are now available on AI Gateway.Both models bring GPT-6 improvements in professional work, coding, computer use, factuality, and communication at a lower price than GPT-6 Astra.GPT-6 Sol (openai/gpt-6-sol) is suited to complex professional workflows and sustained coding tasks where quality and room to iterate both matter.GPT-6 Luna (openai/gpt-6-luna) is the lower-cost option for "
         },
         "todayHighlight": {
-          "zh": "OpenAI 通过分层模型与第三方网关同步铺开，正在用价格与场景细分挤压竞品的中间市场。",
-          "en": "OpenAI 通过分层模型与第三方网关同步铺开，正在用价格与场景细分挤压竞品的中间市场。"
+          "zh": "OpenAI 通过细分模型层级（Sol/Luna/Astra）进一步渗透开发者平台，价格战与能力分层同步加剧。",
+          "en": "OpenAI 通过细分模型层级（Sol/Luna/Astra）进一步渗透开发者平台，价格战与能力分层同步加剧。"
         },
         "pmInsight": {
-          "zh": "PM 应按任务复杂度做模型路由：复杂编码走 Sol、高并发 Agent 走 Luna，并在网关层做 A/B 以验证质量与成本收益。",
+          "zh": "PM 应根据任务复杂度在 Sol 和 Luna 之间动态路由，并对比 Astra 的性价比，以优化代理产品的单位经济模型。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -793,6 +756,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Vercel AI",
             "url": "https://vercel.com/changelog/gpt-6-sol-and-luna-now-available-on-ai-gateway"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "arXiv AI: Didactic knowledge or Clinical Cases? How Data Types Shape Medical Large Language Models",
+          "en": "arXiv AI: Didactic knowledge or Clinical Cases? How Data Types Shape Medical Large Language Models"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "一篇 arXiv 论文通过 token 匹配实验研究了医学大模型中教学数据与临床数据的比例如何影响模型能力，发现临床数据提升临床任务且不损害知识密集型任务，而教学数据主要提升知识密集型任务，并存在“知易行难”的差距。",
+          "en": "arXiv:2609.22161v1 Announce Type: new Abstract: Medical large language models are commonly trained on mixtures of didactic data (e.g., textbooks) and clinical data (e.g., patient records), yet how these data types differentially shape model capabilities remains unclear. We address this issue with token-matched experiments that vary the didactic-to-clinical ratio and analyze how data composition affects performance, c"
+        },
+        "chineseIntro": {
+          "zh": "一篇 arXiv 论文通过 token 匹配实验研究了医学大模型中教学数据与临床数据的比例如何影响模型能力，发现临床数据提升临床任务且不损害知识密集型任务，而教学数据主要提升知识密集型任务，并存在“知易行难”的差距。",
+          "en": "arXiv:2609.22161v1 Announce Type: new Abstract: Medical large language models are commonly trained on mixtures of didactic data (e.g., textbooks) and clinical data (e.g., patient records), yet how these data types differentially shape model capabilities remains unclear. We address this issue with token-matched experiments that vary the didactic-to-clinical ratio and analyze how data composition affects performance, c"
+        },
+        "todayHighlight": {
+          "zh": "数据组成对垂直领域模型的能力塑造具有不对称性，这为医疗 AI 产品的数据策略提供了实证依据。",
+          "en": "数据组成对垂直领域模型的能力塑造具有不对称性，这为医疗 AI 产品的数据策略提供了实证依据。"
+        },
+        "pmInsight": {
+          "zh": "PM 在构建垂直模型时应优先引入真实临床数据，并设计任务导向的评估集来检测知识到推理的迁移效果。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "arXiv AI",
+            "url": "https://arxiv.org/abs/2609.22161"
           }
         ]
       },
@@ -806,23 +806,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "政策/安全",
-          "en": "政策/安全"
+          "zh": "生态合作",
+          "en": "生态合作"
         },
         "summary": {
-          "zh": "Anthropic 与 Accenture 旗下 Faculty 合作开展前沿 AI 的嵌入式评估，包括红队测试、对齐评估与安全防护测试，双方计划未来五年各投入至少 10 亿美元。",
+          "zh": "Anthropic 与 Accenture 合作开展前沿 AI 的独立评估，由 Accenture 旗下 Faculty 领导，包括模型评估、红队测试、对齐评估和安全测试。双方预计未来五年各投资至少 10 亿美元。",
           "en": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO`s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.The partnership will be led by Faculty, Accenture`s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps"
         },
         "chineseIntro": {
-          "zh": "Anthropic 与 Accenture 旗下 Faculty 合作开展前沿 AI 的嵌入式评估，包括红队测试、对齐评估与安全防护测试，双方计划未来五年各投入至少 10 亿美元。",
+          "zh": "Anthropic 与 Accenture 合作开展前沿 AI 的独立评估，由 Accenture 旗下 Faculty 领导，包括模型评估、红队测试、对齐评估和安全测试。双方预计未来五年各投资至少 10 亿美元。",
           "en": "We're partnering with Accenture on independent evaluation of frontier AI. This is an important step toward the commitment, made in our CEO`s essay “We Must Pace the Frontier,” to embed evaluators within Anthropic.The partnership will be led by Faculty, Accenture`s specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards. Accenture helps"
         },
         "todayHighlight": {
-          "zh": "「嵌入式评估员」进入 AI 公司内部，可能成为前沿模型安全治理的新行业标准，也会影响企业客户的合规采购逻辑。",
-          "en": "「嵌入式评估员」进入 AI 公司内部，可能成为前沿模型安全治理的新行业标准，也会影响企业客户的合规采购逻辑。"
+          "zh": "嵌入式评估将评估者置于 AI 公司内部，可能成为前沿模型安全治理的新范式，影响监管与行业标准。",
+          "en": "嵌入式评估将评估者置于 AI 公司内部，可能成为前沿模型安全治理的新范式，影响监管与行业标准。"
         },
         "pmInsight": {
-          "zh": "PM 应关注嵌入式评估对模型发布节奏与能力边界的影响，提前在路线图中预留安全评估与合规文档的交付时间。",
+          "zh": "PM 应关注嵌入式评估对模型发布节奏和合规文档的影响，并提前准备内部评估流程以应对客户审计需求。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
