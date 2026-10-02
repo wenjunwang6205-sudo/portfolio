@@ -44,40 +44,69 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 基础设施与成本安全成为主线",
-      "en": "AI PM Daily: Agent Infrastructure and Cost Security Take Center Stage"
+      "zh": "AI 产品经理日报：Agent 基础设施与安全边界成为主线",
+      "en": "AI PM Daily: Agent Infrastructure and Security Boundaries Take Center Stage"
     },
     "editorNote": {
-      "zh": "今日信号集中在 Agent 运行时安全、编码代理的企业级渗透，以及 AI 生成代码的「减法」趋势。GitHub 趋势榜上，NVIDIA OpenShell 与 ponytail 分别代表基础设施与提示词治理两个方向，值得产品团队关注。",
-      "en": "Today's signals cluster around agent runtime security, enterprise penetration of coding agents, and the 'subtraction' trend in AI-generated code. On GitHub trending, NVIDIA OpenShell and ponytail represent infrastructure and prompt governance respectively, both worth PM attention."
+      "zh": "今日信号集中在 Agent 运行时、上下文管理与成本安全三条线，叠加金融与零售的规模化落地案例，Agent 正从「能跑」走向「可控、可算账」。",
+      "en": "Today's signals cluster around agent runtime, context management, and cost security, alongside scaled deployments in finance and retail. Agents are moving from 'can run' to 'controllable and accountable'."
     },
     "keyTakeaway": {
-      "zh": "Agent 生态正从「能跑」进入「可控、可算账」阶段：NVIDIA OpenShell 提供安全运行时，agent-cost-bench 把成本攻击变成可复现基准，Barclays 给 Claude Code 设定了量化渗透目标。产品团队需要把安全边界与成本模型纳入 Agent 产品设计的前置条件。",
-      "en": "The agent ecosystem is moving from 'it runs' to 'it's controllable and accountable': NVIDIA OpenShell offers a secure runtime, agent-cost-bench turns cost attacks into reproducible benchmarks, and Barclays sets quantified Claude Code penetration targets. PM teams need to treat security boundaries and cost models as prerequisites for agent product design."
+      "zh": "Agent 生态的竞争焦点正从模型能力转向运行时安全、上下文效率与成本可控性；NVIDIA OpenShell 与 GitHub Copilot computer use 同日推进，说明大厂正把 Agent 从演示推向受控生产环境。",
+      "en": "The agent ecosystem's competitive focus is shifting from model capability to runtime security, context efficiency, and cost controllability. NVIDIA OpenShell and GitHub Copilot computer use advancing on the same day shows major vendors pushing agents from demos into controlled production environments."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 运行时安全与成本安全同时升温",
-          "en": "Agent Runtime Security and Cost Security Heat Up Together"
+          "zh": "Agent 运行时安全成为大厂新战场",
+          "en": "Agent Runtime Security Becomes a Big-Tech Battleground"
         },
         "category": {
-          "zh": "Agent 基础设施",
-          "en": "Agent Infrastructure"
+          "zh": "基础设施与安全",
+          "en": "Infrastructure & Security"
         },
         "summary": {
-          "zh": "NVIDIA 推出 OpenShell，为自主 AI Agent 提供隔离、可控的私有运行时，今日新增 2456 stars，总 star 达 1.4 万，位列全球趋势榜第 3。与此同时，开源项目 agent-cost-bench 提供离线扫描工具型 LLM 代理「拒绝钱包」漏洞的可复现基准，无需 API key 即可检测 token 账单放大风险。",
-          "en": "NVIDIA launched OpenShell, a secure private runtime for autonomous AI agents, adding 2,456 stars today to reach 14k total, ranking #3 globally. Meanwhile, open-source agent-cost-bench offers a reproducible benchmark to scan tool-using LLM agents for 'denial-of-wallet' vulnerabilities, detecting token bill amplification risks without an API key."
+          "zh": "NVIDIA 推出 OpenShell，为自主 Agent 提供隔离、可控的私有运行时，今日新增 2456 星、位列全球趋势榜第 3；同期 GitHub Copilot 在 CLI 与桌面应用开启 computer use 公开预览，让 Copilot 可代用户操作桌面应用。两者共同指向 Agent 执行环境的安全与可控问题。",
+          "en": "NVIDIA launched OpenShell, a secure private runtime for autonomous agents, gaining 2,456 stars today and ranking #3 globally. Meanwhile, GitHub Copilot opened a public preview of computer use in CLI and desktop apps, letting Copilot operate desktop applications on users' behalf. Both point to safety and controllability of agent execution environments."
         },
         "pmInsight": {
-          "zh": "Agent 安全正从模型层下沉到运行时与成本层。产品团队需要把「隔离执行环境」和「账单放大攻击」纳入威胁模型，否则企业客户在采购 Agent 产品时会要求这些能力作为准入条件。",
-          "en": "Agent security is shifting from model layer to runtime and cost layer. PM teams must include 'isolated execution environment' and 'bill amplification attacks' in their threat models, or enterprise customers will demand these as procurement prerequisites."
+          "zh": "Agent 从「能调用工具」进入「能操作桌面」阶段后，权限边界、审计日志与回滚机制将成为企业采购的硬性门槛。PM 应优先梳理自身 Agent 产品的执行沙箱与权限模型，而不是继续堆叠工具数量。",
+          "en": "As agents move from 'can call tools' to 'can operate desktops,' permission boundaries, audit logs, and rollback mechanisms become hard procurement requirements for enterprises. PMs should prioritize their agent's execution sandbox and permission model rather than piling on more tools."
         },
         "impact": "High",
         "sources": [
           {
             "label": "NVIDIA/OpenShell",
             "url": "https://github.com/NVIDIA/OpenShell"
+          },
+          {
+            "label": "GitHub Changelog: Copilot computer use",
+            "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "上下文管理与成本安全成为 Agent 效率新瓶颈",
+          "en": "Context Management and Cost Security Emerge as New Agent Efficiency Bottlenecks"
+        },
+        "category": {
+          "zh": "Agent 效率与安全",
+          "en": "Agent Efficiency & Security"
+        },
+        "summary": {
+          "zh": "context-mode 今日新增 362 星、位列趋势榜第 8，主打沙箱化工具输出与持久化会话记忆，适配 17 个平台；同期社区出现 agent-cost-bench，专门扫描 LLM Agent 工具链中的「拒绝钱包」成本放大漏洞。两者分别从上下文窗口和账单风险两个角度切入 Agent 效率问题。",
+          "en": "context-mode gained 362 stars today, ranking #8, focusing on sandboxing tool outputs and persistent session memory across 17 platforms. Meanwhile, agent-cost-bench emerged to scan LLM agent toolchains for 'denial-of-wallet' cost-amplification vulnerabilities. Both address agent efficiency from context window and billing risk angles."
+        },
+        "pmInsight": {
+          "zh": "长会话与多工具协作下，上下文膨胀和成本失控是同一问题的两面。PM 在评估 Agent 方案时，应把「每任务 token 成本」和「上下文压缩策略」纳入核心指标，而非只看任务成功率。",
+          "en": "Under long sessions and multi-tool collaboration, context bloat and cost overrun are two sides of the same problem. When evaluating agent solutions, PMs should include 'token cost per task' and 'context compression strategy' as core metrics, not just task success rate."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "mksglu/context-mode",
+            "url": "https://github.com/mksglu/context-mode"
           },
           {
             "label": "agent-cost-bench",
@@ -87,59 +116,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "编码代理在受监管行业进入量化渗透阶段",
-          "en": "Coding Agents Enter Quantified Penetration Phase in Regulated Industries"
+          "zh": "受监管行业 AI 采购进入规模化承诺阶段",
+          "en": "Regulated Industries Enter Scaled AI Procurement Commitments"
         },
         "category": {
-          "zh": "企业级 AI 落地",
-          "en": "Enterprise AI Adoption"
+          "zh": "行业落地",
+          "en": "Industry Deployment"
         },
         "summary": {
-          "zh": "Barclays 扩大与 Anthropic 合作，预计 2026 年底 Claude Code 覆盖 50% 开发者，2027 年覆盖多数软件工程师。GitHub Copilot 也在同日公开预览 computer use，可读取界面、点击控件、跨应用导航，把编码代理从「写代码」扩展到「操作整个工作流」。",
-          "en": "Barclays expanded its partnership with Anthropic, targeting 50% developer coverage for Claude Code by end-2026 and most software engineers by 2027. GitHub Copilot also previewed computer use the same day, enabling UI reading, control clicking, and cross-app navigation, extending coding agents from 'writing code' to 'operating entire workflows'."
+          "zh": "巴克莱扩大与 Anthropic 合作，计划 2026 年底 Claude Code 覆盖 50% 开发者，用于软件开发与遗留系统现代化；Albertsons 则借助 ChatGPT Enterprise 与 OpenAI API 同时提升内部团队效率与顾客体验。两家头部企业均把 AI 从单点试点推向全链路嵌入。",
+          "en": "Barclays expanded its partnership with Anthropic, targeting 50% developer coverage with Claude Code by end-2026 for software development and legacy modernization. Albertsons uses ChatGPT Enterprise and OpenAI API to improve both internal team efficiency and customer experience. Both leaders are moving AI from pilot to full-chain embedding."
         },
         "pmInsight": {
-          "zh": "大型银行给出量化渗透目标，说明编码代理在强合规环境下的可采购性已被验证。产品团队应关注「代理操作 GUI 遗留系统」这一能力，它可能打开金融、医疗等无 API 场景的自动化市场。",
-          "en": "A major bank setting quantified penetration targets validates coding agent purchasability in highly regulated environments. PM teams should watch 'agent operating legacy GUI systems,' which could open automation markets in finance, healthcare, and other API-less scenarios."
+          "zh": "银行公开开发者渗透率目标，为受监管行业提供了可参照的规模化路径。面向金融、零售的 AI 产品应提前准备合规审计、数据驻留与遗留系统集成能力，而非只强调模型效果。",
+          "en": "A bank publicly committing to a developer penetration target provides a referenceable scaling path for regulated industries. AI products targeting finance and retail should prepare compliance auditing, data residency, and legacy system integration capabilities in advance, rather than only emphasizing model performance."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Anthropic: Barclays scales Claude",
             "url": "https://www.anthropic.com/news/barclays-scales-claude"
           },
           {
-            "label": "GitHub Copilot computer use",
-            "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "AI 生成代码的「减法」与「审美」治理持续在榜",
-          "en": "'Subtraction' and 'Aesthetics' Governance for AI-Generated Code Persist on Trending"
-        },
-        "category": {
-          "zh": "开发者工具与提示词治理",
-          "en": "Developer Tools & Prompt Governance"
-        },
-        "summary": {
-          "zh": "ponytail 倡导 AI 编程助手「像最懒的资深开发者一样思考」，能不写代码就不写，今日新增 1194 stars，总 star 超 15 万，位列趋势榜第 1。impeccable 则为 AI 生成前端界面注入设计品位，包含 61 条确定性检测规则，今日新增 495 stars，总 star 超 7.3 万。两者共同指向对 AI 生成冗余代码和千篇一律界面的治理需求。",
-          "en": "ponytail advocates AI coding assistants 'thinking like the laziest senior developer,' avoiding code when possible, adding 1,194 stars today to exceed 150k total, ranking #1. impeccable injects design taste into AI-generated frontends with 61 deterministic detection rules, adding 495 stars to exceed 73k total. Both point to governance demand for redundant AI code and homogeneous interfaces."
-        },
-        "pmInsight": {
-          "zh": "开发者对 AI 生成代码的「量」和「质」同时产生治理需求。产品团队在构建编码代理时，应把「最小化代码输出」和「设计一致性检测」作为差异化能力，而非仅追求生成速度。",
-          "en": "Developers are demanding governance over both the 'quantity' and 'quality' of AI-generated code. PM teams building coding agents should treat 'minimal code output' and 'design consistency checks' as differentiators, not just generation speed."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "DietrichGebert/ponytail",
-            "url": "https://github.com/DietrichGebert/ponytail"
-          },
-          {
-            "label": "pbakaus/impeccable",
-            "url": "https://github.com/pbakaus/impeccable"
+            "label": "OpenAI: Albertsons reimagining retail",
+            "url": "https://openai.com/index/albertsons-reimagining-retail"
           }
         ]
       }
@@ -147,59 +147,55 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向 Agent 产品的「成本安全」审计功能",
-          "en": "Cost-Security Audit Feature for Agent Products"
+          "zh": "面向 Agent 的「成本可观测性」中间层",
+          "en": "A Cost-Observability Middle Layer for Agents"
         },
         "category": {
-          "zh": "Agent 安全与成本管理",
-          "en": "Agent Security & Cost Management"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 agent-cost-bench 的「拒绝钱包」基准和 NVIDIA OpenShell 的隔离运行时，可以假设：企业级 Agent 平台若内置 token 消耗异常检测与预算熔断机制，将显著降低客户对账单失控的顾虑，提升采购转化率。",
-          "en": "Building on agent-cost-bench's 'denial-of-wallet' benchmark and NVIDIA OpenShell's isolated runtime, hypothesize that enterprise agent platforms with built-in token consumption anomaly detection and budget circuit breakers will significantly reduce customer concerns about runaway bills and improve procurement conversion."
+          "zh": "结合 agent-cost-bench 暴露的成本放大漏洞与 context-mode 的上下文优化方向，可假设：企业 Agent 团队愿意为「每任务成本归因 + 异常成本告警」付费，且该能力可独立于具体 Agent 框架存在。",
+          "en": "Combining the cost-amplification vulnerabilities exposed by agent-cost-bench and context-mode's context optimization direction, one hypothesis: enterprise agent teams would pay for 'per-task cost attribution + anomalous cost alerting,' and this capability can exist independently of any specific agent framework."
         },
         "pmInsight": {
-          "zh": "可验证假设：在 Agent 产品中加入「单次任务 token 上限」和「异常调用模式告警」后，企业客户的安全评审通过率提升。建议先以 agent-cost-bench 为测试集做内部验证。",
-          "en": "Verifiable hypothesis: adding 'per-task token caps' and 'abnormal call pattern alerts' to agent products increases enterprise security review pass rates. Recommend validating internally using agent-cost-bench as the test set."
+          "zh": "验证方式：选取 3-5 个已部署 Agent 的企业团队，测量其是否能在现有工具链中回答「哪个工具调用最烧钱」。若多数无法回答，则该中间层有明确切入点。",
+          "en": "Validation: select 3-5 enterprise teams already running agents and test whether they can answer 'which tool call burns the most money' with their current stack. If most cannot, the middle layer has a clear entry point."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
             "label": "agent-cost-bench",
             "url": "https://github.com/samuelrojas-dev/agent-cost-bench"
           },
           {
-            "label": "NVIDIA/OpenShell",
-            "url": "https://github.com/NVIDIA/OpenShell"
+            "label": "mksglu/context-mode",
+            "url": "https://github.com/mksglu/context-mode"
           }
         ]
       },
       {
         "title": {
-          "zh": "编码代理的「最小代码」与「设计一致性」双模治理",
-          "en": "Dual-Mode Governance: 'Minimal Code' and 'Design Consistency' for Coding Agents"
+          "zh": "垂直行业自托管热点聚合的模板化机会",
+          "en": "Templated Vertical Hotspot Aggregation via Self-Hosting"
         },
         "category": {
-          "zh": "开发者工具差异化",
-          "en": "Developer Tool Differentiation"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "ponytail 和 impeccable 分别从代码量和界面审美两个维度治理 AI 生成内容。可以假设：编码代理产品若同时提供「代码精简建议」和「前端设计规则检测」，将比仅强调生成速度的产品获得更高的开发者留存。",
-          "en": "ponytail and impeccable govern AI-generated content from code volume and UI aesthetics respectively. Hypothesize that coding agent products offering both 'code simplification suggestions' and 'frontend design rule checks' will achieve higher developer retention than those emphasizing only generation speed."
+          "zh": "AIHOT 创建约一个月积累近 5 千星，验证了「自托管 + 行业定制」的热点聚合需求。可假设：金融、医疗等垂直团队愿意用可替换信源的框架搭建内部情报站，而非依赖通用资讯产品。",
+          "en": "AIHOT gained nearly 5,000 stars in about a month, validating demand for self-hosted, industry-customized hotspot aggregation. Hypothesis: vertical teams in finance, healthcare, etc. would use a source-swappable framework to build internal intelligence hubs rather than relying on generic news products."
         },
         "pmInsight": {
-          "zh": "可验证假设：在编码代理中集成 ponytail 式提示词技能与 impeccable 式检测规则后，开发者对生成代码的采纳率提升。建议以 A/B 测试对比「仅生成」与「生成+治理」两种模式的留存差异。",
-          "en": "Verifiable hypothesis: integrating ponytail-style prompt skills and impeccable-style detection rules into coding agents increases developer adoption of generated code. Recommend A/B testing retention differences between 'generation only' and 'generation + governance' modes."
+          "zh": "验证方式：为 2-3 个垂直团队提供信源替换模板，观察其是否在两周内完成部署并持续使用；若留存低，则说明定制成本仍高于通用产品。",
+          "en": "Validation: provide source-swap templates to 2-3 vertical teams and observe whether they deploy within two weeks and keep using it. Low retention would indicate customization cost still exceeds that of generic products."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "DietrichGebert/ponytail",
-            "url": "https://github.com/DietrichGebert/ponytail"
-          },
-          {
-            "label": "pbakaus/impeccable",
-            "url": "https://github.com/pbakaus/impeccable"
+            "label": "KKKKhazix/AIHOT",
+            "url": "https://github.com/KKKKhazix/AIHOT"
           }
         ]
       }
@@ -215,26 +211,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个可自托管的行业热点聚合站框架，自动抓取信源、筛选内容并生成日报，把信源和精选标准换成你的，就能变成法律、金融、人力资源等任意垂直行业的 AI 热点站。",
+          "zh": "一个可自托管的行业热点聚合站框架，能自动抓取信源、筛选精选内容并生成日报。适合媒体、咨询或行业团队替换信源后快速搭建自己的垂直热点站。",
           "en": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。"
         },
-        "totalStars": 4781,
+        "totalStars": 4820,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个可自托管的行业热点聚合站框架，自动抓取信源、筛选内容并生成日报，把信源和精选标准换成你的，就能变成法律、金融、人力资源等任意垂直行业的 AI 热点站。",
+          "zh": "一个可自托管的行业热点聚合站框架，能自动抓取信源、筛选精选内容并生成日报。适合媒体、咨询或行业团队替换信源后快速搭建自己的垂直热点站。",
           "en": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月便积累近 4.8k stars，今日在 rising 榜获得关注，自托管加行业定制的叙事在内容运营和垂直媒体圈快速传播。",
+          "zh": "创建仅约一个月便积累近5千星，今日在 Rising 榜获得曝光，自托管加行业定制的叙事在内容运营圈持续升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,781 stars、1,310 forks，topics: ai, content-curation, llm, mcp, news-aggregator，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,781 stars and 1,310 forks，topics: ai, content-curation, llm, mcp, news-aggregator, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,820 stars、1,316 forks，topics: ai, content-curation, llm, mcp, news-aggregator，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,820 stars and 1,316 forks，topics: ai, content-curation, llm, mcp, news-aggregator, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「信源可替换 + 日报自动生成」这种轻量框架如何降低垂直行业内容产品的启动成本。",
+          "zh": "关注「信源可替换、日报自动生成」这一模式，思考如何把行业信息差转化为可复用的产品能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,26 +251,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个给 AI Agent 配备专属浏览器的开源方案，让 Agent 像真人一样访问网页且不易被反爬机制拦截，支持切换不同大模型，典型场景是网页自动化、数据采集和在线任务执行。",
+          "zh": "一个自带浏览器的开源 AI Agent，强调不被网站反爬机制拦截，可自主完成网页操作。适合需要稳定执行网页任务的自动化场景。",
           "en": "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
         },
-        "totalStars": 2405,
+        "totalStars": 2408,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个给 AI Agent 配备专属浏览器的开源方案，让 Agent 像真人一样访问网页且不易被反爬机制拦截，支持切换不同大模型，典型场景是网页自动化、数据采集和在线任务执行。",
+          "zh": "一个自带浏览器的开源 AI Agent，强调不被网站反爬机制拦截，可自主完成网页操作。适合需要稳定执行网页任务的自动化场景。",
           "en": "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即获得 2.4k stars，今日在 rising 榜升温，「Agent 失败往往不是模型问题而是浏览器问题」的叙事在开发者社区引发共鸣。",
+          "zh": "创建仅约一个月即获2.4k星，今日在 Rising 榜出现，反检测浏览器与 Agent 结合的定位在自动化社区获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,405 stars、420 forks，topics: ai-agent, ai-agents, ai-browser, anti-detect-browser, browser-agent，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,405 stars and 420 forks，topics: ai-agent, ai-agents, ai-browser, anti-detect-browser, browser-agent, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,408 stars、420 forks，topics: ai-agent, ai-agents, ai-browser, anti-detect-browser, browser-agent，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,408 stars and 420 forks，topics: ai-agent, ai-agents, ai-browser, anti-detect-browser, browser-agent, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注 Agent 执行环节中「浏览器层」的稳定性问题，这可能是决定自动化任务成败的关键瓶颈。",
+          "zh": "观察 Agent 执行层「浏览器不被封」这一刚需，思考产品在网页自动化中的稳定性壁垒。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,26 +291,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套让 Claude Code 等 AI 编程助手给任意 PC 游戏做模组的技能与工具集，覆盖游戏侦察、逆向工程、AI 生成美术/3D/音效、游戏内测试到展示视频的全流程。",
+          "zh": "一套让 Claude Code 等 AI 编程助手为任意 PC 游戏制作模组的技能与工具集，覆盖逆向分析、美术/3D/音频生成和游戏内测试。适合游戏模组爱好者与创作者。",
           "en": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
         },
-        "totalStars": 1674,
+        "totalStars": 1715,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套让 Claude Code 等 AI 编程助手给任意 PC 游戏做模组的技能与工具集，覆盖游戏侦察、逆向工程、AI 生成美术/3D/音效、游戏内测试到展示视频的全流程。",
+          "zh": "一套让 Claude Code 等 AI 编程助手为任意 PC 游戏制作模组的技能与工具集，覆盖逆向分析、美术/3D/音频生成和游戏内测试。适合游戏模组爱好者与创作者。",
           "en": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月便积累 1.6k stars，今日在 rising 榜获得关注，把 AI 编程能力延伸到游戏模组这一小众但高粘性场景，带动了社区讨论。",
+          "zh": "创建仅约一个月便获1.7k星，今日在 Rising 榜获得曝光，AI 辅助游戏模组这一小众场景快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,674 stars、123 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,674 stars and 123 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,715 stars、127 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,715 stars and 127 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 AI 编程助手从「写业务代码」向「改造游戏」等非传统场景渗透时，工具链和知识库如何被重新组织。",
+          "zh": "关注 AI 编程助手向垂直创作场景延伸的潜力，思考如何把通用 Agent 能力封装成行业工具包。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +331,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "英伟达推出的自主 AI Agent 安全私有运行时，为 Agent 提供隔离、可控的执行环境，解决 Agent 在真实系统中运行时的安全与隐私问题。",
+          "zh": "英伟达推出的自主 AI Agent 安全私有运行时，为 Agent 提供隔离、可控的执行环境。适合企业部署需要安全边界的智能体应用。",
           "en": "Star NVIDIA / OpenShell OpenShell is the safe, private runtime for autonomous AI agents."
         },
-        "totalStars": 14139,
+        "totalStars": 14174,
         "language": "Rust",
         "dailyStars": 2456,
         "chineseIntro": {
-          "zh": "英伟达推出的自主 AI Agent 安全私有运行时，为 Agent 提供隔离、可控的执行环境，解决 Agent 在真实系统中运行时的安全与隐私问题。",
+          "zh": "英伟达推出的自主 AI Agent 安全私有运行时，为 Agent 提供隔离、可控的执行环境。适合企业部署需要安全边界的智能体应用。",
           "en": "Star NVIDIA / OpenShell OpenShell is the safe, private runtime for autonomous AI agents."
         },
         "todayHighlight": {
-          "zh": "今日新增 2456 stars，总 star 数达 1.4 万，位列全球趋势榜第 3，作为大厂出品的 Agent 基础设施，随 Agent 生态升温持续获得关注。",
+          "zh": "今日新增2456星，位列全球趋势榜第3，作为大厂出品的 Agent 基础设施，随 Agent 生态升温获得大量新增关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,456 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,139 stars、1,635 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,139 stars and 1,635 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,174 stars、1,637 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,174 stars and 1,637 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注 Agent 运行时安全这一基础设施层，它可能成为企业级 Agent 落地的合规前提。",
+          "zh": "关注 Agent 运行时安全与隔离这一基础设施层，思考企业级 Agent 落地的合规与信任问题。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +371,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个让 AI 编程助手「像最懒的资深开发者一样思考」的提示词技能，倡导能不写代码就不写，用最少代码解决问题，减少 AI 生成冗余代码的倾向。",
+          "zh": "让 AI 编程助手像「最懒的资深开发」一样思考，倡导能不写的代码就不写。通过提示词与规则减少冗余代码，提升开发效率。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
-        "totalStars": 150868,
+        "totalStars": 150964,
         "language": "JavaScript",
         "dailyStars": 1194,
         "chineseIntro": {
-          "zh": "一个让 AI 编程助手「像最懒的资深开发者一样思考」的提示词技能，倡导能不写代码就不写，用最少代码解决问题，减少 AI 生成冗余代码的倾向。",
+          "zh": "让 AI 编程助手像「最懒的资深开发」一样思考，倡导能不写的代码就不写。通过提示词与规则减少冗余代码，提升开发效率。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
         "todayHighlight": {
-          "zh": "今日新增 1194 stars，总 star 数已超 15 万，位列全球趋势榜第 1，创建仅 4 个月，「少写代码」的反直觉叙事在开发者中快速传播。",
+          "zh": "今日新增1194星，位列全球趋势榜第1，总 star 数已超15万，创建仅4个月，YAGNI 理念在开发者社区快速传播。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 150k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,194 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 150,868 stars、8,096 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 150,868 stars and 8,096 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 150,964 stars、8,103 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 150,964 stars and 8,103 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察开发者对 AI 生成代码「做减法」的真实需求，这可能影响 AI 编程工具的产品定位和默认行为设计。",
+          "zh": "关注「少即是多」的工程哲学如何被产品化为 AI 助手规则，思考如何用约束提升 AI 输出质量。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +411,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个用 YAML 定义多 Agent 团队的工具，把 Claude Code、Codex 等不同 AI 编程助手组织成有角色、共享上下文、各司其职的持久化协作网络。",
+          "zh": "用 YAML 定义由 Claude Code、Codex 等组成的持久化多 Agent 团队，支持角色分工、共享上下文和任务归属。适合需要多智能体协作的复杂工作流。",
           "en": "Star mvschwarz / openrig Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work."
         },
-        "totalStars": 3874,
+        "totalStars": 3913,
         "language": "TypeScript",
         "dailyStars": 642,
         "chineseIntro": {
-          "zh": "一个用 YAML 定义多 Agent 团队的工具，把 Claude Code、Codex 等不同 AI 编程助手组织成有角色、共享上下文、各司其职的持久化协作网络。",
+          "zh": "用 YAML 定义由 Claude Code、Codex 等组成的持久化多 Agent 团队，支持角色分工、共享上下文和任务归属。适合需要多智能体协作的复杂工作流。",
           "en": "Star mvschwarz / openrig Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work."
         },
         "todayHighlight": {
-          "zh": "今日新增 642 stars，总 star 数近 3.9k，位列全球趋势榜第 5，创建约 6 个月，多 Agent 编排叙事随 Agent 生态升温持续获得关注。",
+          "zh": "今日新增642星，位列全球趋势榜第5，创建约6个月，多 Agent 编排叙事随 Agent 生态升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 5 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 642 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,874 stars、257 forks，topics: agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,874 stars and 257 forks，topics: agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,913 stars、261 forks，topics: agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,913 stars and 261 forks，topics: agent-harness, agent-orchestration, agent-skills, ai-coding, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注多 Agent 协作从「单点工具」向「团队编排」演进时，配置复杂度和协作效率如何平衡。",
+          "zh": "关注多 Agent 团队编排的产品化路径，思考如何把角色分工与共享上下文变成可配置的协作能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +451,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套给 AI 编程助手注入设计品位的设计语言，包含 1 个技能、24 条命令、实时浏览器迭代和 61 条确定性检测规则，专门治理 AI 生成前端界面千篇一律的问题。",
+          "zh": "一套让 AI 编程助手产出更好设计的「设计语言」，包含技能、命令和检测规则，用于约束 AI 生成的前端界面。适合希望提升 AI 生成 UI 品质的团队。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
-        "totalStars": 73854,
+        "totalStars": 73896,
         "language": "JavaScript",
         "dailyStars": 495,
         "chineseIntro": {
-          "zh": "一套给 AI 编程助手注入设计品位的设计语言，包含 1 个技能、24 条命令、实时浏览器迭代和 61 条确定性检测规则，专门治理 AI 生成前端界面千篇一律的问题。",
+          "zh": "一套让 AI 编程助手产出更好设计的「设计语言」，包含技能、命令和检测规则，用于约束 AI 生成的前端界面。适合希望提升 AI 生成 UI 品质的团队。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
         "todayHighlight": {
-          "zh": "今日新增 495 stars，总 star 数已超 7.3 万，位列全球趋势榜第 14，创建约 11 个月，AI 生成界面「审美力」话题持续获得关注。",
+          "zh": "今日新增495星，位列全球趋势榜第14，总 star 数近7.4万，创建约11个月，AI 生成前端设计品质问题持续引发关注。",
           "en": "登上 GitHub Trending 日榜第 14 位, 总 star 数已达 73k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 495 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 73,854 stars、4,447 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 73,854 stars and 4,447 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 73,896 stars、4,451 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 73,896 stars and 4,451 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 AI 生成前端从「能跑」到「好看」的体验升级需求，设计规则化可能是提升 AI 产品交付质量的关键抓手。",
+          "zh": "关注 AI 生成界面的「审美力」缺口，思考如何用规则和技能把设计规范注入 AI 工作流。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -495,26 +491,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 编程助手的上下文窗口优化工具，通过沙箱化工具输出减少约 98% 的上下文占用、持久化会话记忆，并支持 17 个平台的 MCP 路由。",
+          "zh": "面向 AI 编程助手的上下文窗口优化工具，可沙箱化工具输出、持久化会话记忆，并通过 MCP 与钩子适配17个平台。适合需要长会话、多工具协作的 Agent 场景。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
-        "totalStars": 24855,
+        "totalStars": 24876,
         "language": "TypeScript",
         "dailyStars": 362,
         "chineseIntro": {
-          "zh": "面向 AI 编程助手的上下文窗口优化工具，通过沙箱化工具输出减少约 98% 的上下文占用、持久化会话记忆，并支持 17 个平台的 MCP 路由。",
+          "zh": "面向 AI 编程助手的上下文窗口优化工具，可沙箱化工具输出、持久化会话记忆，并通过 MCP 与钩子适配17个平台。适合需要长会话、多工具协作的 Agent 场景。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
         "todayHighlight": {
-          "zh": "今日新增 362 stars，总 star 数近 2.5 万，位列全球趋势榜第 8，创建约 7 个月，上下文管理作为 Agent 效率瓶颈持续获得关注。",
+          "zh": "今日新增362星，位列全球趋势榜第8，创建约7个月，上下文管理作为 Agent 效率瓶颈持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 362 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 24,855 stars、1,788 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 24,855 stars and 1,788 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 24,876 stars、1,788 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 24,876 stars and 1,788 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注上下文窗口这一 Agent 核心瓶颈的优化方案，它直接影响 AI 编程助手的可用时长和任务复杂度上限。",
+          "zh": "关注上下文窗口优化这一 Agent 效率关键点，思考如何降低长会话成本并保持记忆连续性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,26 +531,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 AI Agent 工具包，提供统一的大模型 API、Agent 循环、终端界面和编程助手 CLI，帮助开发者快速搭建和运行自己的 AI 编程 Agent。",
+          "zh": "一个 AI Agent 工具包，提供统一 LLM API、Agent 循环、终端界面和编程 Agent CLI。适合开发者快速构建和运行自己的编码智能体。",
           "en": "Star earendil-works / pi AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
         },
-        "totalStars": 111407,
+        "totalStars": 111470,
         "language": "TypeScript",
         "dailyStars": 298,
         "chineseIntro": {
-          "zh": "一个 AI Agent 工具包，提供统一的大模型 API、Agent 循环、终端界面和编程助手 CLI，帮助开发者快速搭建和运行自己的 AI 编程 Agent。",
+          "zh": "一个 AI Agent 工具包，提供统一 LLM API、Agent 循环、终端界面和编程 Agent CLI。适合开发者快速构建和运行自己的编码智能体。",
           "en": "Star earendil-works / pi AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
         },
         "todayHighlight": {
-          "zh": "今日新增 298 stars，总 star 数已超 11 万，位列全球趋势榜第 10，创建约 14 个月，作为 Agent 工具链中的老牌项目持续获得关注。",
+          "zh": "今日新增298星，位列全球趋势榜第10，总 star 数超11万，创建约14个月，作为老牌 Agent 工具持续在榜。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 111k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 298 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 111,407 stars、14,145 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 111,407 stars and 14,145 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 111,470 stars、14,147 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 111,470 stars and 14,147 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察统一 LLM API 加 Agent 循环这种「全家桶」式工具包，在 Agent 生态碎片化背景下如何保持长期吸引力。",
+          "zh": "关注 Agent 工具链的标准化与统一接口趋势，思考如何降低多模型接入与 Agent 开发门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,26 +571,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一篇 SIGGRAPH Asia 2026 论文的官方实现，用一个统一模型为不同骨架结构的角色生成动画，解决多种骨骼类型需要分别训练动画模型的问题。",
+          "zh": "SIGGRAPH Asia 2026 论文项目，提出一个统一模型为不同骨架结构生成动画。适合动画、游戏和虚拟人领域的研究与创作者。",
           "en": "Star Friedrich-M / UniMate [SIGGRAPH Asia 2026] UniMate: One Unified Model to Animate Diverse Skeletons"
         },
-        "totalStars": 1135,
+        "totalStars": 1146,
         "language": "Python",
         "dailyStars": 217,
         "chineseIntro": {
-          "zh": "一篇 SIGGRAPH Asia 2026 论文的官方实现，用一个统一模型为不同骨架结构的角色生成动画，解决多种骨骼类型需要分别训练动画模型的问题。",
+          "zh": "SIGGRAPH Asia 2026 论文项目，提出一个统一模型为不同骨架结构生成动画。适合动画、游戏和虚拟人领域的研究与创作者。",
           "en": "Star Friedrich-M / UniMate [SIGGRAPH Asia 2026] UniMate: One Unified Model to Animate Diverse Skeletons"
         },
         "todayHighlight": {
-          "zh": "今日新增 217 stars，总 star 数 1.1k，位列全球趋势榜第 15，创建仅 2 个月，学术顶会论文开源在图形学与 AI 动画社区带动关注。",
+          "zh": "今日新增217星，位列全球趋势榜第15，创建仅约2个月，学术成果开源后快速获得关注。",
           "en": "登上 GitHub Trending 日榜第 15 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 217 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,135 stars、102 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,135 stars and 102 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,146 stars、102 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,146 stars and 102 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注统一骨架动画模型对游戏、虚拟人等场景中角色动画生产流程的简化潜力。",
+          "zh": "关注学术前沿向产品化迁移的节奏，思考统一动画模型在游戏与虚拟人场景的落地可能。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,19 +617,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Albertsons 正在用 ChatGPT Enterprise 和 OpenAI API 让内部团队提速，并改善数百万顾客的购物体验。对产品意味着零售场景的 AI 落地从客服向选品、库存、门店运营等核心流程延伸。",
+          "zh": "Albertsons 借助 ChatGPT Enterprise 与 OpenAI API 让内部团队提速，并改善数百万顾客的购物体验。对产品意味着零售场景的 AI 落地从客服延伸到内部协作与供应链。",
           "en": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
         },
         "chineseIntro": {
-          "zh": "Albertsons 正在用 ChatGPT Enterprise 和 OpenAI API 让内部团队提速，并改善数百万顾客的购物体验。对产品意味着零售场景的 AI 落地从客服向选品、库存、门店运营等核心流程延伸。",
+          "zh": "Albertsons 借助 ChatGPT Enterprise 与 OpenAI API 让内部团队提速，并改善数百万顾客的购物体验。对产品意味着零售场景的 AI 落地从客服延伸到内部协作与供应链。",
           "en": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
         },
         "todayHighlight": {
-          "zh": "大型连锁商超把 ChatGPT Enterprise 与 API 同时铺进业务，说明 OpenAI 的企业渗透正从科技公司转向传统零售主战场。",
-          "en": "大型连锁商超把 ChatGPT Enterprise 与 API 同时铺进业务，说明 OpenAI 的企业渗透正从科技公司转向传统零售主战场。"
+          "zh": "头部连锁超市把企业级 AI 同时用于员工效率与顾客体验，说明零售业正从单点试点转向全链路嵌入。",
+          "en": "头部连锁超市把企业级 AI 同时用于员工效率与顾客体验，说明零售业正从单点试点转向全链路嵌入。"
         },
         "pmInsight": {
-          "zh": "做零售 AI 产品时，优先梳理「员工高频重复动作」和「顾客决策断点」两条链路，分别对应内部提效与外部体验的 ROI 叙事。",
+          "zh": "做零售 AI 产品时，优先梳理「员工高频重复动作」与「顾客决策节点」两条链路，分别设计可量化的效率与转化指标。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -658,19 +654,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "巴克莱扩大与 Anthropic 的合作，在全行推广 Claude，预计 2026 年底 Claude Code 覆盖 50% 开发者，2027 年覆盖多数软件工程师。对产品意味着受监管行业的大规模编码代理采购正在成为现实。",
+          "zh": "巴克莱扩大与 Anthropic 的合作，在全行推广 Claude 用于软件开发、遗留系统现代化与运营提效，预计 2026 年底 Claude Code 覆盖 50% 开发者。对产品意味着受监管行业的大规模 AI 采购正在加速。",
           "en": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population b"
         },
         "chineseIntro": {
-          "zh": "巴克莱扩大与 Anthropic 的合作，在全行推广 Claude，预计 2026 年底 Claude Code 覆盖 50% 开发者，2027 年覆盖多数软件工程师。对产品意味着受监管行业的大规模编码代理采购正在成为现实。",
+          "zh": "巴克莱扩大与 Anthropic 的合作，在全行推广 Claude 用于软件开发、遗留系统现代化与运营提效，预计 2026 年底 Claude Code 覆盖 50% 开发者。对产品意味着受监管行业的大规模 AI 采购正在加速。",
           "en": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.Barclays is extending Claude across the bank to accelerate software development, modernize legacy systems, and improve operational efficiency. As part of this rollout, Barclays expects Claude Code adoption to reach 50% of its developer population b"
         },
         "todayHighlight": {
-          "zh": "这是 Claude Code 在大型银行中少见的量化渗透目标，直接验证编码代理在强合规环境下的可采购性。",
-          "en": "这是 Claude Code 在大型银行中少见的量化渗透目标，直接验证编码代理在强合规环境下的可采购性。"
+          "zh": "大型银行公开承诺开发者渗透率目标，为金融业 AI 采购树立可参照的规模化路径，可能带动同业跟进。",
+          "en": "大型银行公开承诺开发者渗透率目标，为金融业 AI 采购树立可参照的规模化路径，可能带动同业跟进。"
         },
         "pmInsight": {
-          "zh": "面向金融客户的 AI 编码产品，应把「审计日志、权限边界、遗留系统迁移模板」做成开箱即用模块，而不是让客户自行拼装。",
+          "zh": "面向金融客户的产品需提前准备合规审计、权限治理与代码溯源能力，否则难以进入这类规模化采购清单。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -695,19 +691,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Ai2 发布 Olmo-core 3，重新设计开源 MoE 训练系统，目标把 MoE 训练扩展到万亿参数级并保持计算效率。对产品意味着开源社区获得更接近前沿实验室的训练基础设施。",
+          "zh": "Ai2 发布 Olmo-core 3，重设计开源 MoE 训练系统，目标支持万亿参数级 MoE 并保持计算效率。对产品意味着开源社区获得更接近前沿的训练基础设施。",
           "en": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         },
         "chineseIntro": {
-          "zh": "Ai2 发布 Olmo-core 3，重新设计开源 MoE 训练系统，目标把 MoE 训练扩展到万亿参数级并保持计算效率。对产品意味着开源社区获得更接近前沿实验室的训练基础设施。",
+          "zh": "Ai2 发布 Olmo-core 3，重设计开源 MoE 训练系统，目标支持万亿参数级 MoE 并保持计算效率。对产品意味着开源社区获得更接近前沿的训练基础设施。",
           "en": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         },
         "todayHighlight": {
-          "zh": "开源 MoE 训练栈向万亿参数迈进，可能降低中小实验室进入大模型训练的门槛，改变模型供给格局。",
-          "en": "开源 MoE 训练栈向万亿参数迈进，可能降低中小实验室进入大模型训练的门槛，改变模型供给格局。"
+          "zh": "开源 MoE 训练框架向万亿参数迈进，可能缩小中小实验室与头部厂商在模型训练基础设施上的差距。",
+          "en": "开源 MoE 训练框架向万亿参数迈进，可能缩小中小实验室与头部厂商在模型训练基础设施上的差距。"
         },
         "pmInsight": {
-          "zh": "若团队依赖开源基座，应评估 Olmo-core 3 的 MoE 路由与通信开销是否匹配自有 GPU 集群，提前规划迁移或对照实验。",
+          "zh": "若团队考虑自训 MoE，先评估 Olmo-core 3 的通信与显存开销是否匹配现有集群，再决定是否替换内部训练栈。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -732,19 +728,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot CLI 和桌面应用在 macOS/Windows 上公开预览 computer use，可读取界面、点击控件、输入文本并跨应用导航。对产品意味着 Copilot 能自动化没有 API 或 CLI 的遗留 GUI 软件。",
+          "zh": "GitHub Copilot 在 CLI 与桌面应用中开启 computer use 公开预览，可代用户操作桌面应用，包括点击、输入、滚动等。对产品意味着 Copilot 从代码助手扩展到通用桌面自动化。",
           "en": "Computer use is now available in public preview in GitHub Copilot CLI and the GitHub Copilot app on macOS and Windows. Copilot can interact with desktop applications on your behalf&#8230; The post GitHub Copilot can now interact with desktop apps with computer use appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot CLI 和桌面应用在 macOS/Windows 上公开预览 computer use，可读取界面、点击控件、输入文本并跨应用导航。对产品意味着 Copilot 能自动化没有 API 或 CLI 的遗留 GUI 软件。",
+          "zh": "GitHub Copilot 在 CLI 与桌面应用中开启 computer use 公开预览，可代用户操作桌面应用，包括点击、输入、滚动等。对产品意味着 Copilot 从代码助手扩展到通用桌面自动化。",
           "en": "Computer use is now available in public preview in GitHub Copilot CLI and the GitHub Copilot app on macOS and Windows. Copilot can interact with desktop applications on your behalf&#8230; The post GitHub Copilot can now interact with desktop apps with computer use appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "把 computer use 直接嵌入开发者日常工具，是编码代理从「写代码」走向「操作整个工作流」的关键一步。",
-          "en": "把 computer use 直接嵌入开发者日常工具，是编码代理从「写代码」走向「操作整个工作流」的关键一步。"
+          "zh": "Copilot 进入 computer use 赛道，直接与操作系统级自动化工具竞争，可能重塑开发者与遗留 GUI 软件的交互方式。",
+          "en": "Copilot 进入 computer use 赛道，直接与操作系统级自动化工具竞争，可能重塑开发者与遗留 GUI 软件的交互方式。"
         },
         "pmInsight": {
-          "zh": "设计自动化功能时，应默认加入「逐应用授权 + 可重置白名单」的权限模型，因为企业 IT 对屏幕控制类能力的合规审查会非常严格。",
+          "zh": "设计 agent 产品时，把「用户审批与权限重置」作为一等功能，并优先覆盖无 API 的遗留软件场景以形成差异化。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -769,19 +765,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一个开源项目 agent-cost-bench 提供可复现的「拒绝钱包」基准，离线扫描工具型 LLM 代理是否存在被攻击者放大 token 账单的漏洞。对产品意味着代理成本安全开始有可量化的测试方法。",
+          "zh": "开源项目 agent-cost-bench 提供离线扫描工具，检测 LLM agent 工具链中可能被攻击者利用的「拒绝钱包」成本放大漏洞。对产品意味着 agent 安全开始覆盖成本维度。",
           "en": "Article URL: https://github.com/samuelrojas-dev/agent-cost-bench Comments URL: https://news.ycombinator.com/item?id=49927585 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "一个开源项目 agent-cost-bench 提供可复现的「拒绝钱包」基准，离线扫描工具型 LLM 代理是否存在被攻击者放大 token 账单的漏洞。对产品意味着代理成本安全开始有可量化的测试方法。",
+          "zh": "开源项目 agent-cost-bench 提供离线扫描工具，检测 LLM agent 工具链中可能被攻击者利用的「拒绝钱包」成本放大漏洞。对产品意味着 agent 安全开始覆盖成本维度。",
           "en": "Article URL: https://github.com/samuelrojas-dev/agent-cost-bench Comments URL: https://news.ycombinator.com/item?id=49927585 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "代理成本攻击从概念讨论进入可复现基准阶段，提示产品团队需要把「账单放大」纳入安全威胁模型。",
-          "en": "代理成本攻击从概念讨论进入可复现基准阶段，提示产品团队需要把「账单放大」纳入安全威胁模型。"
+          "zh": "成本放大攻击被单独提出并工具化，提示 agent 安全评估不能只看数据泄露，还要看账单风险。",
+          "en": "成本放大攻击被单独提出并工具化，提示 agent 安全评估不能只看数据泄露，还要看账单风险。"
         },
         "pmInsight": {
-          "zh": "在代理工具上线前，用类似基准对每个工具做「最坏情况 token 消耗」压测，并把单次调用预算上限写进工具描述。",
+          "zh": "在 agent 上线前，用此类工具对工具调用链做一次成本压力测试，并为高风险工具设置调用频率与预算上限。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -794,38 +790,38 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Reddit LocalLLaMA: Pi 1.0 released - MCP support now included by default",
-          "en": "Reddit LocalLLaMA: Pi 1.0 released - MCP support now included by default"
+          "zh": "Product Hunt AI: Clef",
+          "en": "Product Hunt AI: Clef"
         },
         "category": {
           "zh": "公司动态",
           "en": "Company update"
         },
         "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "本地 LLM 工具 Pi 发布 1.0，默认内置 MCP 支持。对产品意味着本地推理客户端开始把 MCP 当作标准连接层，降低接入外部工具的门槛。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wvffcr/pi_10_released_mcp_support_now_included_by_default/\"> <img src=\"https://external-preview.redd.it/Vepj0yQzyt4jznZvaW9V19SoptglYMNz_nIyksfQdu0.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=ada03e103a6a278259e8d4ceb1f363f6dde51ab5\" alt=\"Pi 1.0 released - MCP support now included by default\" title=\"Pi 1.0 released - MCP support now included"
+          "zh": "Cloudflare 推出开源决策模型 Clef，在 Product Hunt 发布。对产品意味着边缘与安全厂商开始把决策能力模型化并开放。",
+          "en": "<p> Open-source decision models from Cloudflare </p> <p> <a href=\"https://www.producthunt.com/products/cloudflare-clef?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1267041?app_id=339\">Link</a> </p>"
         },
         "chineseIntro": {
-          "zh": "本地 LLM 工具 Pi 发布 1.0，默认内置 MCP 支持。对产品意味着本地推理客户端开始把 MCP 当作标准连接层，降低接入外部工具的门槛。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wvffcr/pi_10_released_mcp_support_now_included_by_default/\"> <img src=\"https://external-preview.redd.it/Vepj0yQzyt4jznZvaW9V19SoptglYMNz_nIyksfQdu0.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=ada03e103a6a278259e8d4ceb1f363f6dde51ab5\" alt=\"Pi 1.0 released - MCP support now included by default\" title=\"Pi 1.0 released - MCP support now included"
+          "zh": "Cloudflare 推出开源决策模型 Clef，在 Product Hunt 发布。对产品意味着边缘与安全厂商开始把决策能力模型化并开放。",
+          "en": "<p> Open-source decision models from Cloudflare </p> <p> <a href=\"https://www.producthunt.com/products/cloudflare-clef?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1267041?app_id=339\">Link</a> </p>"
         },
         "todayHighlight": {
-          "zh": "MCP 在本地开源客户端中默认化，说明工具调用协议正从可选插件变成基础能力，生态整合速度加快。",
-          "en": "MCP 在本地开源客户端中默认化，说明工具调用协议正从可选插件变成基础能力，生态整合速度加快。"
+          "zh": "Cloudflare 以开源决策模型切入 AI，可能把其边缘网络优势转化为可编程的决策层能力。",
+          "en": "Cloudflare 以开源决策模型切入 AI，可能把其边缘网络优势转化为可编程的决策层能力。"
         },
         "pmInsight": {
-          "zh": "如果产品有本地部署版本，应尽快提供 MCP server 或兼容层，否则会在本地开发者工作流中被边缘化。",
+          "zh": "关注 Clef 的决策模型是否可嵌入现有规则引擎，评估其能否替代部分硬编码策略以降低维护成本。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvffcr/pi_10_released_mcp_support_now_included_by_default/"
+            "label": "Product Hunt AI",
+            "url": "https://www.producthunt.com/products/cloudflare-clef"
           }
         ]
       }
