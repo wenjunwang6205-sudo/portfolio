@@ -44,130 +44,150 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报 · 2026-10-04",
-      "en": "AI PM Daily · 2026-10-04"
+      "zh": "AI 产品经理日报：Agent 工程化与技能层成为主线",
+      "en": "AI PM Daily: Agent Engineering and Skill Layers Take Center Stage"
     },
     "editorNote": {
-      "zh": "今日主线是「Agent 工程化」与「垂直场景专精」并行：一边是编程助手技能、记忆、审查接口的持续沉淀，一边是游戏模组、日语润色、论文精读等窄场景工具快速起量。",
-      "en": "Today's thread: agent engineering matures while vertical, narrow-scope tools gain traction—from coding-assistant skills and review APIs to game modding, Japanese polishing, and paper reading."
+      "zh": "今日 GitHub 趋势榜被 AI 编程助手的「技能/优化层」占据，同时 OpenAI 与 Anthropic 分别从选型指南和人才培养切入开发者工作流。信号集中在 Agent 从「能用」走向「可控、可复用、可计费」。",
+      "en": "Today's GitHub trending is dominated by skill/optimization layers for AI coding assistants, while OpenAI and Anthropic target developer workflows via model selection guides and talent programs. Signals converge on agents moving from 'usable' to 'controllable, reusable, and billable'."
     },
     "keyTakeaway": {
-      "zh": "Agent 生态正从「能跑」转向「可编排、可治理」：GitHub 把 Copilot 代码审查开放为 API，OpenAI 给出 GPT-6 生产选型指南，Anthropic 投入 1 亿美元做工程师培训，说明竞争焦点正从模型能力转向工程流程与人才供给。",
-      "en": "The agent ecosystem is shifting from 'it runs' to 'it's orchestrated and governed': GitHub opens Copilot code review as an API, OpenAI publishes a GPT-6 production guide, and Anthropic commits $100M to engineer training—competition is moving from raw model capability to engineering workflow and talent supply."
+      "zh": "Agent 竞争正从模型能力转向「技能层与工程规范」：GitHub 趋势榜前列几乎全是给 AI 编程助手加装记忆、审美、成本控制与质量门禁的项目，而 OpenAI、Anthropic 同步用选型指南和培训计划争夺开发者默认工作流。",
+      "en": "Agent competition is shifting from raw model capability to skill layers and engineering discipline: GitHub trending is dominated by projects adding memory, aesthetics, cost control, and quality gates to AI coding assistants, while OpenAI and Anthropic compete for the default developer workflow via guides and training programs."
     },
     "signals": [
       {
         "title": {
-          "zh": "Copilot 代码审查开放 API，审查能力从界面走向可编排基础设施",
-          "en": "Copilot code review opens API, moving from UI feature to orchestration layer"
+          "zh": "AI 编程助手的「技能层」集中上榜，工程规范成为差异化",
+          "en": "Skill Layers for AI Coding Assistants Cluster on Trending, Engineering Discipline Becomes the Differentiator"
         },
         "category": {
-          "zh": "开发者工具 / 工程基础设施",
-          "en": "Developer Tools / Engineering Infrastructure"
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "GitHub 宣布 Copilot 代码审查支持 REST 与 GraphQL API 发起，并可为每次请求单独设置审查强度，Balanced 成为默认档位。这意味着代码审查可被嵌入脚本、CI 流程和内部工具，而不再局限于 GitHub 界面。",
-          "en": "GitHub announced Copilot code review can now be triggered via REST and GraphQL APIs, with per-request effort levels and Balanced as the new default. Review can be embedded into scripts, CI pipelines, and internal tools rather than staying inside the GitHub UI."
+          "zh": "GitHub 趋势榜前列被 ponytail（今日 +1281，总 15.3 万）、ECC（+897，总 27.2 万）、impeccable（+699，总 7.5 万）、caveman（+507，总 10.9 万）、agent-skills（+252，总 10 万）等「给 AI 编程助手加装技能/优化层」的项目占据，分别对应少写代码、Agent 编排、界面审美、token 成本与工程规范。",
+          "en": "GitHub trending is led by projects that add skill/optimization layers to AI coding assistants: ponytail (+1281 today, 153.8k total), ECC (+897, 272.4k), impeccable (+699, 75.6k), caveman (+507, 109.6k), and agent-skills (+252, 100.9k), covering minimal code, agent orchestration, UI aesthetics, token cost, and engineering standards."
         },
         "pmInsight": {
-          "zh": "把审查变成可编程接口，等于把 Copilot 从编辑器插件升级为可被编排的工程基础设施。对做代码质量、静态分析、CI 编排的产品来说，需要重新评估与 Copilot 是集成还是被替代；对内部平台团队，这是把 AI 审查纳入既有门禁的低成本切入点。",
-          "en": "Turning review into a programmable interface upgrades Copilot from an editor plugin to orchestration infrastructure. Code-quality, static-analysis, and CI products must reassess whether to integrate or be displaced; internal platform teams get a low-cost way to fold AI review into existing gates."
+          "zh": "当模型能力趋近，开发者开始为「如何用好 Agent」付费和投票，技能层可能成为新的分发入口与商业化载体。PM 应评估自家 Agent 产品是否缺少可复用的技能/规范层，以及能否通过开放技能市场建立粘性。",
+          "en": "As model capabilities converge, developers are voting for 'how to use agents well,' making skill layers a potential new distribution and monetization surface. PMs should assess whether their agent products lack a reusable skill/standards layer and whether an open skill marketplace can build stickiness."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "OpenAI 发布 GPT-6 选型指南，官方开始定义生产环境标准打法",
-          "en": "OpenAI publishes GPT-6 guide, defining the standard production playbook"
-        },
-        "category": {
-          "zh": "模型平台 / 商业化节奏",
-          "en": "Model Platform / Commercialization"
-        },
-        "summary": {
-          "zh": "OpenAI 发布 GPT-6 家族选型指南，面向创业公司说明如何挑选模型、调节推理强度、优化提示与技能、协调工具调用，并为生产环境做准备。官方选型指南往往先于定价与配额调整出现。",
-          "en": "OpenAI released a GPT-6 family selection guide for startups covering model choice, reasoning effort, prompt and skill optimization, tool orchestration, and production readiness. Official guides often precede pricing and quota changes."
-        },
-        "pmInsight": {
-          "zh": "官方指南降低了多模型选型的试错成本，也意味着 GPT-6 的产品分层与商业化节奏可能临近。PM 应提前对齐技术栈，把「推理强度」当作可调成本参数纳入产品设计，而不是事后优化项。",
-          "en": "The guide lowers trial-and-error costs for model selection and hints that GPT-6 tiering and monetization may be near. PMs should align their stack early and treat reasoning effort as a tunable cost parameter in product design, not an afterthought."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "OpenAI",
-            "url": "https://openai.com/index/practical-guide-building-gpt-6"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Agent 数据接入层持续升温，Agent-Reach 单日新增近 1700 stars",
-          "en": "Agent data-access layer heats up as Agent-Reach adds ~1,700 stars in a day"
-        },
-        "category": {
-          "zh": "Agent 生态 / 数据接入",
-          "en": "Agent Ecosystem / Data Access"
-        },
-        "summary": {
-          "zh": "Panniantong/Agent-Reach 提供一键接入 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台的 CLI，无需支付 API 费用，总 star 已突破 9 万，今日新增 1696 stars，位列全球趋势榜第 6。同期 ECC、pi、agent-skills 等 Agent 框架与技能项目持续在榜。",
-          "en": "Panniantong/Agent-Reach offers a CLI to connect agents to Twitter, Reddit, YouTube, GitHub, Bilibili, and Xiaohongshu without API fees; it passed 90k stars with 1,696 added today, ranking #6 globally. Agent frameworks like ECC, pi, and agent-skills remain on the board."
-        },
-        "pmInsight": {
-          "zh": "Agent 的能力瓶颈正从推理转向「能拿到什么数据」。数据接入层升温说明，谁能低成本、合规地打通多平台上下文，谁就掌握 Agent 产品的差异化。PM 需评估自建接入与依赖第三方 CLI 的合规与稳定性风险。",
-          "en": "The agent bottleneck is shifting from reasoning to what data it can reach. A heating data-access layer means whoever connects multi-platform context cheaply and compliantly owns differentiation. PMs must weigh building access versus relying on third-party CLIs for compliance and stability."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub · Agent-Reach",
-            "url": "https://github.com/Panniantong/Agent-Reach"
+            "label": "ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
           },
           {
-            "label": "GitHub · ECC",
+            "label": "ECC",
             "url": "https://github.com/affaan-m/ECC"
           },
           {
-            "label": "GitHub · agent-skills",
+            "label": "impeccable",
+            "url": "https://github.com/pbakaus/impeccable"
+          },
+          {
+            "label": "caveman",
+            "url": "https://github.com/JuliusBrussee/caveman"
+          },
+          {
+            "label": "agent-skills",
             "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       },
       {
         "title": {
-          "zh": "垂直小工具密集起量：游戏模组、日语润色、论文精读各占一角",
-          "en": "Vertical micro-tools gain traction: game modding, Japanese polishing, paper reading"
+          "zh": "Agent 数据接入层持续升温，Agent-Reach 单日 +1696",
+          "en": "Agent Data Access Layer Heats Up, Agent-Reach Adds 1,696 Stars in a Day"
         },
         "category": {
-          "zh": "垂直应用 / 场景专精",
-          "en": "Vertical Apps / Niche Specialization"
+          "zh": "Agent 基础设施",
+          "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "universal-modder 让 AI 编程助手为任意 PC 游戏制作模组，创建约一个月积累近 2.7k stars；yomiyasu 把 AI 生硬日文润色为自然表达，约一个月获 1.3k+ stars；easyread 本地运行、逐页翻译英文论文并保留公式表格，约一个月获近 700 stars。三者均在 rising 榜单被发现。",
-          "en": "universal-modder lets coding assistants mod any PC game, reaching ~2.7k stars in about a month; yomiyasu polishes stiff AI Japanese, hitting 1.3k+ stars in a month; easyread locally translates English papers page-by-page while preserving formulas, at ~700 stars. All three surfaced on the rising board."
+          "zh": "Agent-Reach 今日新增 1696 stars，总 star 超 9 万，位列全球趋势榜第 6，提供 CLI 一键接入 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等内容源且无需 API 费用；同期社区出现 cliproxy-rs，用 Rust 重写多模型订阅代理，让编码工具复用已有订阅。",
+          "en": "Agent-Reach added 1,696 stars today (90k+ total, #6 global trending), offering a CLI to access Twitter, Reddit, YouTube, GitHub, Bilibili, and Xiaohongshu without API fees. Meanwhile cliproxy-rs, a Rust rewrite of a multi-model subscription proxy, lets coding tools reuse existing subscriptions."
         },
         "pmInsight": {
-          "zh": "这些工具的共同点是「窄场景 + 明确交付物 + 本地或低成本运行」，绕开了通用大模型的正面竞争。PM 可关注自身产品中是否存在类似高摩擦、低容错的窄流程，用专精小模型或技能包切入，而非再做一个通用助手。",
-          "en": "These tools share narrow scope, clear deliverables, and local or low-cost operation, sidestepping head-on competition with general models. PMs should look for similarly high-friction, low-tolerance narrow workflows and enter with specialized models or skill packs rather than another general assistant."
+          "zh": "Agent 的瓶颈正从推理能力转向「能否低成本、合规地拿到实时外部数据」。数据接入与订阅代理的社区供给说明这是稳定需求，PM 需提前评估数据源合规风险，并考虑把接入层作为产品护城河而非一次性集成。",
+          "en": "The agent bottleneck is shifting from reasoning to 'can it get real-time external data cheaply and compliantly.' Community supply of data access and subscription proxies signals stable demand; PMs should assess data-source compliance risks early and treat the access layer as a moat rather than a one-off integration."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Agent-Reach",
+            "url": "https://github.com/Panniantong/Agent-Reach"
+          },
+          {
+            "label": "cliproxy-rs",
+            "url": "https://github.com/vayungodara/cliproxy-rs"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "模型平台转向「选型与工程化」叙事，争夺开发者默认工作流",
+          "en": "Model Platforms Shift to 'Selection and Engineering' Narratives to Win the Default Developer Workflow"
+        },
+        "category": {
+          "zh": "模型平台",
+          "en": "Model Platform"
+        },
+        "summary": {
+          "zh": "OpenAI 发布 GPT-6 家族选型指南，覆盖按场景选模型、调推理强度、优化提示与工具调用；Anthropic 推出 Claude Frontier Academy，投入 1 亿美元培训 1 万名工程师；GitHub Copilot 代码审查开放 REST/GraphQL API 并调整默认审查强度。",
+          "en": "OpenAI published a GPT-6 family selection guide covering model choice, reasoning effort, prompt/tool optimization; Anthropic launched Claude Frontier Academy with $100M to train 10,000 engineers; GitHub Copilot code review opened REST/GraphQL APIs and adjusted default review effort."
+        },
+        "pmInsight": {
+          "zh": "在模型能力趋近的背景下，平台方用「工程实践标准 + 人才培训 + 可编程审查」把模型差异转化为工作流锁定。PM 应关注自家产品的模型选型是否被官方指南默认化，以及代码审查等能力是否会被平台 API 直接替代。",
+          "en": "With model capabilities converging, platforms are converting model differences into workflow lock-in via engineering standards, talent training, and programmable review. PMs should watch whether their model choices get defaulted by official guides and whether capabilities like code review will be directly replaced by platform APIs."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI GPT-6 guide",
+            "url": "https://openai.com/index/practical-guide-building-gpt-6"
+          },
+          {
+            "label": "Claude Frontier Academy",
+            "url": "https://www.anthropic.com/news/claude-frontier-academy"
+          },
+          {
+            "label": "Copilot code review API",
+            "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "垂直场景小模型与本地化写作工具升温",
+          "en": "Vertical Small Models and Localized Writing Tools Gain Traction"
+        },
+        "category": {
+          "zh": "垂直应用",
+          "en": "Vertical Applications"
+        },
+        "summary": {
+          "zh": "Ai2 在 Hugging Face 开源 AstaBrief，针对科研智能体 Asta 的带引用报告生成做专项优化，支持自托管；GitHub 上 yomiyasu（日语润色，1342 stars）与 easyread（英文论文本地翻译阅读，690 stars）等本地化写作/阅读工具在 rising 榜出现。",
+          "en": "Ai2 open-sourced AstaBrief on Hugging Face, optimized for citation-backed report generation in its research agent Asta with self-hosting; on GitHub, localized writing/reading tools like yomiyasu (Japanese polishing, 1,342 stars) and easyread (local English paper translation, 690 stars) appeared on rising."
+        },
+        "pmInsight": {
+          "zh": "通用大模型在「带引用的专业报告」和「本地化语言质量」上仍有明显缺口，小模型与本地工具正从这些缝隙切入。PM 可评估在科研、法务、本地化写作等高严谨场景中，自托管小模型是否比通用 API 更具成本与合规优势。",
+          "en": "General LLMs still show gaps in citation-backed professional reports and localized language quality, where small models and local tools are entering. PMs can assess whether self-hosted small models offer cost and compliance advantages over general APIs in high-rigor scenarios like research, legal, and localization writing."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "GitHub · universal-modder",
-            "url": "https://github.com/rehan-remade/universal-modder"
+            "label": "AstaBrief",
+            "url": "https://huggingface.co/blog/allenai/astabrief"
           },
           {
-            "label": "GitHub · yomiyasu",
+            "label": "yomiyasu",
             "url": "https://github.com/nanaism/yomiyasu"
           },
           {
-            "label": "GitHub · easyread",
+            "label": "easyread",
             "url": "https://github.com/Edwardxlai/easyread"
           }
         ]
@@ -176,55 +196,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "假设：把「审查强度」做成产品可调参数，可降低 AI 代码审查的采纳门槛",
-          "en": "Hypothesis: exposing review effort as a tunable parameter lowers adoption friction for AI code review"
+          "zh": "假设：为团队 Agent 提供「技能包 + 质量门禁」市场可提升留存",
+          "en": "Hypothesis: A 'Skill Pack + Quality Gate' Marketplace for Team Agents Improves Retention"
         },
         "category": {
-          "zh": "产品假设 / 开发者工具",
-          "en": "Product Hypothesis / Developer Tools"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 Copilot 代码审查开放 API 且支持按请求设置强度，可验证假设：在 CI 中按变更风险分级调用不同审查强度（如小改动用低档、核心模块用高档），能在不显著增加成本的前提下提升团队对 AI 审查的信任与采纳率。",
-          "en": "Given Copilot code review's API and per-request effort levels, a testable hypothesis: routing CI reviews by change risk (low effort for small diffs, high for core modules) raises trust and adoption without materially raising cost."
+          "zh": "基于 ponytail、impeccable、agent-skills、caveman 等技能层项目集中上榜，可验证假设：在 AI 编程产品中内置可复用技能包（少写代码、审美、token 控制）并配套质量门禁，能提升团队用户的周留存与付费转化。",
+          "en": "Given the clustering of skill-layer projects like ponytail, impeccable, agent-skills, and caveman, a testable hypothesis: embedding reusable skill packs (minimal code, aesthetics, token control) with quality gates in AI coding products can raise weekly retention and paid conversion for team users."
         },
         "pmInsight": {
-          "zh": "验证方式：选取一个中等规模仓库，对高风险目录启用高强度审查、其余用默认档，对比审查耗时、误报率与开发者接受度。若信任度提升明显，可把「风险分级审查」做成平台默认策略。",
-          "en": "Validation: pick a mid-size repo, enable high effort on high-risk directories and default elsewhere, then compare review time, false-positive rate, and developer acceptance. If trust improves, make risk-tiered review a platform default."
+          "zh": "验证方式：对两组团队用户分别开放/不开放技能市场，观察 4 周内技能安装率、周活跃与升级率差异；若技能安装率 >30% 且留存提升显著，则可作为独立付费层。",
+          "en": "Validation: expose a skill marketplace to one team cohort and not another, tracking skill install rate, weekly activity, and upgrade rate over 4 weeks; if install rate >30% and retention lift is significant, it can become a standalone paid tier."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level"
+            "label": "ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
+          },
+          {
+            "label": "impeccable",
+            "url": "https://github.com/pbakaus/impeccable"
+          },
+          {
+            "label": "agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       },
       {
         "title": {
-          "zh": "假设：为 Agent 提供「可验证引用」的垂直报告能力，比通用写作更有付费意愿",
-          "en": "Hypothesis: verifiable-citation vertical reporting beats generic writing for willingness to pay"
+          "zh": "假设：合规的数据接入层可成为 Agent 产品的付费护城河",
+          "en": "Hypothesis: A Compliant Data Access Layer Can Be a Paid Moat for Agent Products"
         },
         "category": {
-          "zh": "产品假设 / 科研与知识工作",
-          "en": "Product Hypothesis / Research & Knowledge Work"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合 Hugging Face 与 Ai2 开源 AstaBrief（强调引用可验证的快速报告生成）与 easyread（论文精读、原文对照）两条信号，可验证假设：在科研、法务、投研等场景，用户更愿意为「每条结论可溯源」的垂直报告工具付费，而非通用写作助手。",
-          "en": "Combining Hugging Face/Ai2's AstaBrief (fast report generation with verifiable citations) and easyread (paper reading with side-by-side source), a testable hypothesis: in research, legal, and investment contexts, users pay more for vertical reporting where every claim is traceable than for generic writing assistants."
+          "zh": "基于 Agent-Reach 单日 +1696 与 cliproxy-rs 的出现，可验证假设：面向企业提供「合规、可审计、按源计费」的 Agent 数据接入层，比免费抓取工具更能获得企业付费，尤其在需要审计与数据治理的场景。",
+          "en": "Given Agent-Reach's +1,696 daily stars and the emergence of cliproxy-rs, a testable hypothesis: an enterprise-facing, compliant, auditable, per-source-billed agent data access layer can command payment better than free scraping tools, especially where audit and data governance matter."
         },
         "pmInsight": {
-          "zh": "验证方式：做一个只覆盖单一领域（如某学科论文或某类监管文件）的报告工具，强制每条结论附原文出处，对比无引用版本的用户留存与付费转化。若溯源版本显著更优，可把「引用可验证」作为核心卖点而非附加功能。",
-          "en": "Validation: build a report tool for a single domain (one discipline's papers or one class of regulatory filings) that forces a source for every claim, then compare retention and paid conversion against a no-citation version. If traceable wins clearly, make verifiable citations the core pitch, not a feature."
+          "zh": "验证方式：向 10 家企业客户提供接入层试用，测量其对合规审计日志、源级计费与 SLA 的付费意愿；若超过半数愿意为合规能力单独付费，则可作为独立产品线。",
+          "en": "Validation: offer the access layer to 10 enterprise clients and measure willingness to pay for compliance audit logs, source-level billing, and SLAs; if more than half pay separately for compliance, it can become a standalone product line."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "Hugging Face · AstaBrief",
-            "url": "https://huggingface.co/blog/allenai/astabrief"
+            "label": "Agent-Reach",
+            "url": "https://github.com/Panniantong/Agent-Reach"
           },
           {
-            "label": "GitHub · easyread",
-            "url": "https://github.com/Edwardxlai/easyread"
+            "label": "cliproxy-rs",
+            "url": "https://github.com/vayungodara/cliproxy-rs"
           }
         ]
       }
@@ -240,26 +268,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "让 Claude 等 AI 编程助手直接为任意 PC 游戏制作模组：自动侦察游戏引擎、逆向分析、生成美术/3D/音效素材，并完成游戏内测试与展示视频。",
+          "zh": "让 Claude 等 AI 编程助手直接为任意 PC 游戏制作模组：自动识别游戏引擎、逆向分析、生成美术/3D/音效素材，并完成游戏内测试与展示视频。适合想给老游戏加新内容但缺乏逆向工程经验的玩家。",
           "en": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
         },
-        "totalStars": 2696,
+        "totalStars": 2720,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "让 Claude 等 AI 编程助手直接为任意 PC 游戏制作模组：自动侦察游戏引擎、逆向分析、生成美术/3D/音效素材，并完成游戏内测试与展示视频。",
+          "zh": "让 Claude 等 AI 编程助手直接为任意 PC 游戏制作模组：自动识别游戏引擎、逆向分析、生成美术/3D/音效素材，并完成游戏内测试与展示视频。适合想给老游戏加新内容但缺乏逆向工程经验的玩家。",
           "en": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月便积累近 2.7k stars，今日在 rising 榜单中被发现，AI 游戏模组这一细分场景正吸引开发者关注。",
+          "zh": "创建仅约一个月便积累 2720 stars，今日在 rising 榜单获得关注，AI 辅助游戏模组这一细分场景正吸引开发者尝鲜。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,696 stars、237 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,696 stars and 237 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,720 stars、239 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,720 stars and 239 forks，topics: age-of-empires, claude-code, claude-code-plugin, fal, game-assets, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI Agent 从「写代码」向「改造游戏内容」延伸时，工具链如何封装逆向工程与素材生成能力。",
+          "zh": "关注 AI Agent 如何把高门槛的逆向工程与创意生产打包成可复用技能，这可能是「AI 改造存量软件」的早期信号。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -280,26 +308,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Agent Skill，专门把 AI 生成的生硬日文润色成自然、易读且信息密度高的日语，适用于技术文章、设计文档、PR 说明等实务写作。",
+          "zh": "一个 Agent Skill，专门把 AI 生成的生硬日语润色成自然、易读且信息密度高的日语，面向技术文章、设计文档、PR 说明等实务写作场景。可加载到 Claude Code、Codex、Cursor 等 AI 编程环境。",
           "en": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese"
         },
-        "totalStars": 1340,
+        "totalStars": 1342,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 Agent Skill，专门把 AI 生成的生硬日文润色成自然、易读且信息密度高的日语，适用于技术文章、设计文档、PR 说明等实务写作。",
+          "zh": "一个 Agent Skill，专门把 AI 生成的生硬日语润色成自然、易读且信息密度高的日语，面向技术文章、设计文档、PR 说明等实务写作场景。可加载到 Claude Code、Codex、Cursor 等 AI 编程环境。",
           "en": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese"
         },
         "todayHighlight": {
-          "zh": "创建约一个月即获得 1.3k+ stars，今日在 rising 榜单中被发现，日语 AI 写作润色这一垂直需求正在升温。",
+          "zh": "创建约一个月即获得 1342 stars，今日在 rising 榜单出现，日语 AI 写作质量这一本地化需求正在升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,340 stars、29 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,340 stars and 29 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,342 stars、29 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,342 stars and 29 forks，topics: agent-skills, ai-writing, antigravity, claude-code, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察非英语市场对 AI 生成内容「本地化润色」的刚需，以及 Agent Skill 在写作辅助场景的轻量落地方式。",
+          "zh": "观察非英语市场的 AI 写作润色工具如何以轻量 Skill 形式切入，本地化质量可能成为 AI 写作产品的差异化壁垒。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -320,26 +348,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "本地运行的 PDF 论文阅读工具，可将英文论文逐页翻译成中文并保留公式表格排版，支持原文对照、划线笔记和边读边问 AI。",
+          "zh": "本地运行的英文论文阅读工具：导入 PDF 后逐页翻译成中文，保留公式与表格排版，支持原文对照、划线笔记和边读边问 AI，并自带文献管理。适合需要高效阅读英文论文的研究者与学生。",
           "en": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese."
         },
-        "totalStars": 683,
+        "totalStars": 690,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "本地运行的 PDF 论文阅读工具，可将英文论文逐页翻译成中文并保留公式表格排版，支持原文对照、划线笔记和边读边问 AI。",
+          "zh": "本地运行的英文论文阅读工具：导入 PDF 后逐页翻译成中文，保留公式与表格排版，支持原文对照、划线笔记和边读边问 AI，并自带文献管理。适合需要高效阅读英文论文的研究者与学生。",
           "en": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese."
         },
         "todayHighlight": {
-          "zh": "创建约一个月获得近 700 stars，今日在 rising 榜单中被发现，学术阅读与 AI 翻译结合的工具正持续获得关注。",
+          "zh": "创建约一个月获得 690 stars，今日在 rising 榜单受到关注，学术阅读与 AI 翻译结合的本地化工具正在获得早期用户。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 683 stars、51 forks，topics: academic, arxiv, chinese, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 683 stars and 51 forks，topics: academic, arxiv, chinese, claude-code, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 690 stars、52 forks，topics: academic, arxiv, chinese, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 690 stars and 52 forks，topics: academic, arxiv, chinese, claude-code, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注本地优先、隐私友好的 AI 阅读工具如何切入学术人群的高频刚需场景。",
+          "zh": "关注「本地优先 + AI 翻译 + 阅读工作流」的组合，学术场景对隐私和排版保真度的要求可能催生垂直阅读工具机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -360,26 +388,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "给 AI Agent 一键接入互联网能力的 CLI 工具，可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台，无需支付 API 费用。",
+          "zh": "给 AI Agent 一键接入互联网内容源：通过一个 CLI 即可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台，无需支付 API 费用。适合需要让 Agent 获取实时外部信息的开发者。",
           "en": "Star Panniantong / Agent-Reach Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
         },
-        "totalStars": 90012,
+        "totalStars": 90053,
         "language": "Python",
         "dailyStars": 1696,
         "chineseIntro": {
-          "zh": "给 AI Agent 一键接入互联网能力的 CLI 工具，可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台，无需支付 API 费用。",
+          "zh": "给 AI Agent 一键接入互联网内容源：通过一个 CLI 即可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台，无需支付 API 费用。适合需要让 Agent 获取实时外部信息的开发者。",
           "en": "Star Panniantong / Agent-Reach Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
         },
         "todayHighlight": {
-          "zh": "总 star 数已突破 9 万，今日新增 1696 stars，位列全球趋势榜第 6，作为 Agent 数据接入层随生态升温持续获得关注。",
+          "zh": "今日新增 1696 stars，总 star 数已超过 9 万，位列全球趋势榜第 6；作为 Agent 数据接入层，随 Agent 生态升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 90k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,696 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 90,012 stars、7,916 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 90,012 stars and 7,916 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 90,053 stars、7,923 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 90,053 stars and 7,923 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI Agent 获取外部实时数据的基础设施机会，以及「零 API 费用」叙事对开发者采纳的推动力。",
+          "zh": "观察 Agent 基础设施中「免费数据接入」的生态位，平台内容获取的合规与稳定性将是产品化的关键变量。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -400,26 +428,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "让 AI 编程助手像「最懒的资深工程师」一样思考，倡导能不写的代码就不写，用最少代码解决问题。",
+          "zh": "让 AI 编程助手像「最懒的资深开发者」一样思考：少写代码、只写必要的一行，强调 YAGNI 原则。适合希望抑制 AI 过度生成、保持代码简洁的工程团队。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
-        "totalStars": 153710,
+        "totalStars": 153797,
         "language": "JavaScript",
         "dailyStars": 1281,
         "chineseIntro": {
-          "zh": "让 AI 编程助手像「最懒的资深工程师」一样思考，倡导能不写的代码就不写，用最少代码解决问题。",
+          "zh": "让 AI 编程助手像「最懒的资深开发者」一样思考：少写代码、只写必要的一行，强调 YAGNI 原则。适合希望抑制 AI 过度生成、保持代码简洁的工程团队。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
         "todayHighlight": {
-          "zh": "总 star 数已超 15 万，今日新增 1281 stars，位列全球趋势榜第 1，创建仅 4 个月，YAGNI 理念在 AI 编程圈快速传播。",
+          "zh": "今日新增 1281 stars，总 star 数超过 15 万，位列全球趋势榜第 1；创建仅 4 个月，以「少即是多」的叙事在开发者社区快速传播。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 153k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,281 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 153,710 stars、8,257 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 153,710 stars and 8,257 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 153,797 stars、8,268 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 153,797 stars and 8,268 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 编程助手从「多写」转向「少写」的提示工程趋势，以及开发者对代码简洁性的真实诉求。",
+          "zh": "关注 AI 编程工具从「生成更多」转向「生成更少但更准」的产品理念，代码质量与可维护性可能成为下一阶段竞争点。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -440,26 +468,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Claude Code、Codex、Cursor 等 AI 编程助手的性能优化系统，提供技能、直觉、记忆、安全与研究优先的开发流程。",
+          "zh": "面向 Claude Code、Codex、Cursor 等 AI 编程助手的性能优化系统，提供技能、直觉、记忆、安全与研究优先的开发流程，相当于给 Agent 装上一套「操作系统」。适合重度使用 AI 编程的团队。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 272388,
+        "totalStars": 272424,
         "language": "JavaScript",
         "dailyStars": 897,
         "chineseIntro": {
-          "zh": "面向 Claude Code、Codex、Cursor 等 AI 编程助手的性能优化系统，提供技能、直觉、记忆、安全与研究优先的开发流程。",
+          "zh": "面向 Claude Code、Codex、Cursor 等 AI 编程助手的性能优化系统，提供技能、直觉、记忆、安全与研究优先的开发流程，相当于给 Agent 装上一套「操作系统」。适合重度使用 AI 编程的团队。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总 star 数已超 27 万，今日新增 897 stars，位列全球趋势榜第 3，创建 9 个月，作为 Agent 运行框架持续获得关注。",
+          "zh": "今日新增 897 stars，总 star 数超过 27 万，位列全球趋势榜第 3；创建 9 个月，作为 Agent 编排层持续获得大规模关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 272k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 897 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 272,388 stars、40,671 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 272,388 stars and 40,671 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 272,424 stars、40,678 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 272,424 stars and 40,678 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI Agent 基础设施层如何通过「记忆+安全+技能」组合提升编程助手的长期可用性。",
+          "zh": "观察 Agent 工具链中「性能与记忆管理」层的价值，这类系统可能成为 AI 编程工作流的标准中间件。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -480,26 +508,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套让 AI 编程助手生成的前端界面更具设计品位的设计语言，包含 1 个技能、24 条命令、实时浏览器迭代和 61 条确定性检测规则。",
+          "zh": "给 AI 编程助手注入设计语言：通过 1 个技能、24 条命令和 61 条检测规则，让 AI 生成的前端界面具备层级感、留白和排版品位。适合用 AI 生成前端但苦于界面千篇一律的开发者。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
-        "totalStars": 75496,
+        "totalStars": 75555,
         "language": "JavaScript",
         "dailyStars": 699,
         "chineseIntro": {
-          "zh": "一套让 AI 编程助手生成的前端界面更具设计品位的设计语言，包含 1 个技能、24 条命令、实时浏览器迭代和 61 条确定性检测规则。",
+          "zh": "给 AI 编程助手注入设计语言：通过 1 个技能、24 条命令和 61 条检测规则，让 AI 生成的前端界面具备层级感、留白和排版品位。适合用 AI 生成前端但苦于界面千篇一律的开发者。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
         "todayHighlight": {
-          "zh": "总 star 数超 7.5 万，今日新增 699 stars，位列全球趋势榜第 2，创建约 11 个月，AI 生成前端「审美力」话题持续升温。",
+          "zh": "今日新增 699 stars，总 star 数超过 7.5 万，位列全球趋势榜第 2；创建约 11 个月，AI 生成界面的审美问题持续引发共鸣。",
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 75k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 699 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 75,496 stars、4,525 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 75,496 stars and 4,525 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 75,555 stars、4,528 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 75,555 stars and 4,528 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI 生成 UI 从「能用」到「好看」的体验升级需求，以及设计规则如何被封装为可复用的 Agent 能力。",
+          "zh": "关注「AI 生成质量」从功能正确转向设计品位的趋势，设计规则化可能成为 AI 前端工具的重要卖点。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -520,26 +548,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个让 AI 编程助手「像原始人一样说话」的技能与代理，通过精简表达减少约 65% 的 token 消耗，同时保持代码准确。",
+          "zh": "一个让 AI 编程助手「像原始人一样说话」的技能与代理，通过精简提示词减少约 65% 的 token 消耗，同时保持代码精确。适合关注 AI 调用成本与效率的开发者。",
           "en": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman."
         },
-        "totalStars": 109606,
+        "totalStars": 109627,
         "language": "Go",
         "dailyStars": 507,
         "chineseIntro": {
-          "zh": "一个让 AI 编程助手「像原始人一样说话」的技能与代理，通过精简表达减少约 65% 的 token 消耗，同时保持代码准确。",
+          "zh": "一个让 AI 编程助手「像原始人一样说话」的技能与代理，通过精简提示词减少约 65% 的 token 消耗，同时保持代码精确。适合关注 AI 调用成本与效率的开发者。",
           "en": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman."
         },
         "todayHighlight": {
-          "zh": "总 star 数超 10 万，今日新增 507 stars，位列全球趋势榜第 5，创建 6 个月，省 token 的趣味叙事在开发者中快速传播。",
+          "zh": "今日新增 507 stars，总 star 数超过 10 万，位列全球趋势榜第 5；创建 6 个月，以幽默叙事在开发者社区持续传播。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 109k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 507 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 109,606 stars、6,340 forks，topics: ai, anthropic, caveman, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 109,606 stars and 6,340 forks，topics: ai, anthropic, caveman, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 109,627 stars、6,341 forks，topics: ai, anthropic, caveman, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 109,627 stars and 6,341 forks，topics: ai, anthropic, caveman, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 token 成本优化这一刚需如何被轻量、易传播的产品形态满足，以及社区对「省钱」叙事的敏感度。",
+          "zh": "观察 token 成本优化类工具如何用轻量、易传播的方式切入，成本敏感型用户可能愿意为「省 token」买单。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -560,26 +588,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI Agent 工具包，提供统一 LLM API、Agent 循环、终端界面和编程助手 CLI，帮助开发者快速构建和运行 AI 编程代理。",
+          "zh": "一套 AI Agent 工具包，包含统一 LLM API、Agent 循环、终端界面和编程 Agent CLI，帮助开发者快速搭建自己的 AI 编程助手。适合需要自建 Agent 工作流的团队。",
           "en": "Star earendil-works / pi AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
         },
-        "totalStars": 112228,
+        "totalStars": 112253,
         "language": "TypeScript",
         "dailyStars": 408,
         "chineseIntro": {
-          "zh": "AI Agent 工具包，提供统一 LLM API、Agent 循环、终端界面和编程助手 CLI，帮助开发者快速构建和运行 AI 编程代理。",
+          "zh": "一套 AI Agent 工具包，包含统一 LLM API、Agent 循环、终端界面和编程 Agent CLI，帮助开发者快速搭建自己的 AI 编程助手。适合需要自建 Agent 工作流的团队。",
           "en": "Star earendil-works / pi AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
         },
         "todayHighlight": {
-          "zh": "总 star 数超 11 万，今日新增 408 stars，位列全球趋势榜第 14，创建 14 个月，作为 Agent 工具链持续获得稳定关注。",
+          "zh": "今日新增 408 stars，总 star 数超过 11 万，位列全球趋势榜第 14；创建 14 个月，作为老牌 Agent 工具包持续获得稳定关注。",
           "en": "登上 GitHub Trending 日榜第 14 位, 总 star 数已达 112k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 408 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 112,228 stars、14,236 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 112,228 stars and 14,236 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 112,253 stars、14,238 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 112,253 stars and 14,238 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注 AI Agent 开发工具从「单点功能」向「统一工具包」整合的趋势，以及开发者对开箱即用体验的偏好。",
+          "zh": "关注统一 LLM 接口与 Agent 循环的抽象层，这类工具包可能成为多模型时代的基础设施选项。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -600,26 +628,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程助手提供生产级工程技能，将资深工程师的工作流、质量门禁和最佳实践打包成可复用的技能，覆盖开发各阶段。",
+          "zh": "为 AI 编程助手提供生产级工程技能，把资深工程师的工作流、质量门禁和最佳实践打包成可复用技能，让 Agent 在开发各阶段保持一致。适合希望提升 AI 代码质量的团队。",
           "en": "Production-grade engineering skills for AI coding agents."
         },
-        "totalStars": 100906,
+        "totalStars": 100920,
         "language": "JavaScript",
         "dailyStars": 252,
         "chineseIntro": {
-          "zh": "为 AI 编程助手提供生产级工程技能，将资深工程师的工作流、质量门禁和最佳实践打包成可复用的技能，覆盖开发各阶段。",
+          "zh": "为 AI 编程助手提供生产级工程技能，把资深工程师的工作流、质量门禁和最佳实践打包成可复用技能，让 Agent 在开发各阶段保持一致。适合希望提升 AI 代码质量的团队。",
           "en": "Production-grade engineering skills for AI coding agents."
         },
         "todayHighlight": {
-          "zh": "总 star 数超 10 万，今日新增 252 stars，位列全球趋势榜第 10，创建 8 个月，工程化 Agent 技能持续获得关注。",
+          "zh": "今日新增 252 stars，总 star 数超过 10 万，位列全球趋势榜第 10；创建 8 个月，工程规范化需求推动其持续在榜。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 100k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 252 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 100,906 stars、10,599 forks，topics: agent-skills, antigravity, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 100,906 stars and 10,599 forks，topics: agent-skills, antigravity, claude-code, codex, cursor, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 100,920 stars、10,603 forks，topics: agent-skills, antigravity, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 100,920 stars and 10,603 forks，topics: agent-skills, antigravity, claude-code, codex, cursor, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察 AI 编程助手从「能写代码」到「按工程规范写代码」的升级路径，以及技能包如何标准化开发流程。",
+          "zh": "观察「技能即产品」的趋势，把工程经验封装成 Agent 可执行模块，可能是 AI 编程工具生态的重要形态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -683,19 +711,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "OpenAI 发布 GPT-6 家族选型指南，面向创业公司说明如何挑选模型、调节推理强度、优化提示与技能、协调工具调用，并为生产环境准备流程。这相当于官方给出了 GPT-6 从原型到上线的标准打法，降低了多模型选型的试错成本。",
+          "zh": "OpenAI 发布 GPT-6 家族选型指南，面向创业公司说明如何按场景选择模型、调节推理强度、优化提示与技能、协调工具调用，并为生产环境做准备。这相当于官方给出了 GPT-6 从原型到上线的工程化路线图。",
           "en": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 GPT-6 家族选型指南，面向创业公司说明如何挑选模型、调节推理强度、优化提示与技能、协调工具调用，并为生产环境准备流程。这相当于官方给出了 GPT-6 从原型到上线的标准打法，降低了多模型选型的试错成本。",
+          "zh": "OpenAI 发布 GPT-6 家族选型指南，面向创业公司说明如何按场景选择模型、调节推理强度、优化提示与技能、协调工具调用，并为生产环境做准备。这相当于官方给出了 GPT-6 从原型到上线的工程化路线图。",
           "en": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
         },
         "todayHighlight": {
-          "zh": "官方选型指南往往先于定价与配额调整出现，是判断 GPT-6 产品分层与商业化节奏的前置信号，值得提前对齐技术栈。",
-          "en": "官方选型指南往往先于定价与配额调整出现，是判断 GPT-6 产品分层与商业化节奏的前置信号，值得提前对齐技术栈。"
+          "zh": "在多家模型能力趋近的当下，OpenAI 用「选型+调优」指南争夺开发者的默认工作流，把模型差异转化为工程实践标准。",
+          "en": "在多家模型能力趋近的当下，OpenAI 用「选型+调优」指南争夺开发者的默认工作流，把模型差异转化为工程实践标准。"
         },
         "pmInsight": {
-          "zh": "按指南中的推理强度与工具编排维度建立内部评测矩阵，把「选哪个模型」变成可复用的决策规则，而不是每次凭感觉切换。",
+          "zh": "建议对照该指南梳理自家 prompt、推理强度与工具编排的默认配置，把「模型选型」沉淀为可复用的内部决策文档。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -703,6 +731,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/practical-guide-building-gpt-6"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: Show HN: Cliproxy-rs, a Rust port of the CLIProxyAPI LLM subscription proxy",
+          "en": "Hacker News LLM: Show HN: Cliproxy-rs, a Rust port of the CLIProxyAPI LLM subscription proxy"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "开发者发布 cliproxy-rs，用 Rust 重写 CLIProxyAPI，让 Claude Code、Codex CLI、Cursor 等编码工具通过本地地址复用已有的 Claude Max、ChatGPT 等订阅与 API Key。这类代理工具正在把「多模型订阅」变成个人开发者的统一入口。",
+          "en": "Article URL: https://github.com/vayungodara/cliproxy-rs Comments URL: https://news.ycombinator.com/item?id=49948441 Points: 3 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "开发者发布 cliproxy-rs，用 Rust 重写 CLIProxyAPI，让 Claude Code、Codex CLI、Cursor 等编码工具通过本地地址复用已有的 Claude Max、ChatGPT 等订阅与 API Key。这类代理工具正在把「多模型订阅」变成个人开发者的统一入口。",
+          "en": "Article URL: https://github.com/vayungodara/cliproxy-rs Comments URL: https://news.ycombinator.com/item?id=49948441 Points: 3 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "订阅制与 API 计费之间的套利工具持续涌现，说明开发者对多模型统一接入和成本控制的需求已形成稳定社区供给。",
+          "en": "订阅制与 API 计费之间的套利工具持续涌现，说明开发者对多模型统一接入和成本控制的需求已形成稳定社区供给。"
+        },
+        "pmInsight": {
+          "zh": "关注此类代理对订阅条款与用量统计的冲击，若你的产品按订阅计费，需提前评估本地代理带来的滥用与风控盲区。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://github.com/vayungodara/cliproxy-rs"
           }
         ]
       },
@@ -716,26 +781,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Hugging Face 与 Ai2 开源了 AstaBrief，这是其科研智能体 Asta 中负责快速生成报告的小模型，目标是让研究者本地下载运行，在保持引用可验证的前提下缩短报告生成时间。它验证了小而专的开源模型可以在特定任务上对标闭源模型的质量。",
+          "zh": "Ai2 在 Hugging Face 开源 AstaBrief，这是其科研智能体 Asta 中用于快速生成带引用报告的小模型，目标是在可下载自托管的前提下接近专有模型的报告质量并缩短生成时间。科研场景对证据溯源和结论严谨性的要求被明确写进了模型定位。",
           "en": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 与 Ai2 开源了 AstaBrief，这是其科研智能体 Asta 中负责快速生成报告的小模型，目标是让研究者本地下载运行，在保持引用可验证的前提下缩短报告生成时间。它验证了小而专的开源模型可以在特定任务上对标闭源模型的质量。",
+          "zh": "Ai2 在 Hugging Face 开源 AstaBrief，这是其科研智能体 Asta 中用于快速生成带引用报告的小模型，目标是在可下载自托管的前提下接近专有模型的报告质量并缩短生成时间。科研场景对证据溯源和结论严谨性的要求被明确写进了模型定位。",
           "en": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         },
         "todayHighlight": {
-          "zh": "科研场景对「证据可追溯」的要求远高于通用写作，这类垂直小模型开源，说明专精任务正在成为开源模型绕开通用大模型竞争的一条现实路径。",
-          "en": "科研场景对「证据可追溯」的要求远高于通用写作，这类垂直小模型开源，说明专精任务正在成为开源模型绕开通用大模型竞争的一条现实路径。"
+          "zh": "开源小模型开始针对「带引用的专业报告生成」这一高价值垂直任务做专项优化，可能削弱通用大模型在科研工作流中的默认地位。",
+          "en": "开源小模型开始针对「带引用的专业报告生成」这一高价值垂直任务做专项优化，可能削弱通用大模型在科研工作流中的默认地位。"
         },
         "pmInsight": {
-          "zh": "如果你的产品有高约束的文档生成场景（如合规、研报、审计），可评估用此类专精小模型替代通用大模型，换取更低的延迟与可自托管成本。",
+          "zh": "若产品涉及报告、综述或证据类输出，可测试 AstaBrief 作为低成本自托管方案，重点验证引用准确率与结论不扩大的约束表现。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Hugging Face",
@@ -757,19 +822,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot 代码审查现已支持通过 REST 与 GraphQL API 发起，并可为每次请求单独设置审查强度，同时 Balanced 成为默认档位。这让代码审查能被嵌入团队已有的脚本、CI 流程和内部工具，而不再局限于 GitHub 界面内。",
+          "zh": "GitHub Copilot 代码审查现已支持通过 REST 和 GraphQL API 触发，并可为每次请求设置审查强度，默认强度改为 Balanced，面向 Pro、Pro+、Max、Business 和 Enterprise 计划开放。这意味着代码审查可以嵌入团队已有的脚本、CI 和内部工具中。",
           "en": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default&#8230; The post Copilot code review: API support and new default effort level appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 代码审查现已支持通过 REST 与 GraphQL API 发起，并可为每次请求单独设置审查强度，同时 Balanced 成为默认档位。这让代码审查能被嵌入团队已有的脚本、CI 流程和内部工具，而不再局限于 GitHub 界面内。",
+          "zh": "GitHub Copilot 代码审查现已支持通过 REST 和 GraphQL API 触发，并可为每次请求设置审查强度，默认强度改为 Balanced，面向 Pro、Pro+、Max、Business 和 Enterprise 计划开放。这意味着代码审查可以嵌入团队已有的脚本、CI 和内部工具中。",
           "en": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default&#8230; The post Copilot code review: API support and new default effort level appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "把代码审查变成可编程接口，意味着 Copilot 正从编辑器插件升级为可被编排的工程基础设施，直接影响第三方代码质量工具的生存空间。",
-          "en": "把代码审查变成可编程接口，意味着 Copilot 正从编辑器插件升级为可被编排的工程基础设施，直接影响第三方代码质量工具的生存空间。"
+          "zh": "Copilot 审查从 IDE 功能变成可编程的 API 能力，是 GitHub 把 AI 审查嵌入企业研发流水线的关键一步，直接对标第三方代码审查工具。",
+          "en": "Copilot 审查从 IDE 功能变成可编程的 API 能力，是 GitHub 把 AI 审查嵌入企业研发流水线的关键一步，直接对标第三方代码审查工具。"
         },
         "pmInsight": {
-          "zh": "尽快把 Copilot 审查接入 CI 门禁并显式指定 effort level，避免默认档位变化导致审查耗时或漏检在团队无感知的情况下漂移。",
+          "zh": "建议把 Copilot 审查 API 接入 PR 流水线并对比 Balanced 与 Lite 的误报率，用数据决定默认强度，而不是沿用平台默认值。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -782,45 +847,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Microsoft AI: New Microsoft data innovations unlock what only your business knows",
-          "en": "Microsoft AI: New Microsoft data innovations unlock what only your business knows"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
-        },
-        "summary": {
-          "zh": "微软发布一系列数据侧创新，强调帮助企业把自身业务运作方式、历史数据和员工经验等「独有知识」转化为 AI 可用的资产。这延续了微软把 Copilot 价值锚定在企业私有数据与上下文上的路线。",
-          "en": "Every organization has knowledge that is uniquely its own: the way its business operates, the data it has built over time, the expertise of its people and the context behind thousands of everyday decisions. As powerful AI models become more widely available, that unique business intelligence matters more than ever. The difference will come from... The post New Microsoft data innovations unlock what only your business"
-        },
-        "chineseIntro": {
-          "zh": "微软发布一系列数据侧创新，强调帮助企业把自身业务运作方式、历史数据和员工经验等「独有知识」转化为 AI 可用的资产。这延续了微软把 Copilot 价值锚定在企业私有数据与上下文上的路线。",
-          "en": "Every organization has knowledge that is uniquely its own: the way its business operates, the data it has built over time, the expertise of its people and the context behind thousands of everyday decisions. As powerful AI models become more widely available, that unique business intelligence matters more than ever. The difference will come from... The post New Microsoft data innovations unlock what only your business"
-        },
-        "todayHighlight": {
-          "zh": "在模型能力趋于同质化后，微软选择用数据层与治理能力构筑护城河，这会影响企业客户在「用哪家模型」与「数据放在哪」之间的权衡。",
-          "en": "在模型能力趋于同质化后，微软选择用数据层与治理能力构筑护城河，这会影响企业客户在「用哪家模型」与「数据放在哪」之间的权衡。"
-        },
-        "pmInsight": {
-          "zh": "梳理自家产品依赖的企业数据接入点，判断是否会被微软的数据层能力覆盖或替代，提前明确差异化在于工作流而非数据搬运。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Microsoft AI",
-            "url": "https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: AI Just Changed Mathematics Forever – Brian Greene & Tristan Buckmaster",
-          "en": "Hacker News AI: AI Just Changed Mathematics Forever – Brian Greene & Tristan Buckmaster"
+          "zh": "Reddit LocalLLaMA: Is all the work that's being put into Qwen3.8 Flash Next going to set us up for a very quick uplift to Qwen4?",
+          "en": "Reddit LocalLLaMA: Is all the work that's being put into Qwen3.8 Flash Next going to set us up for a very quick uplift to Qwen4?"
         },
         "category": {
           "zh": "公司动态",
@@ -831,26 +859,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Hacker News 上出现一场关于 AI 如何改变数学研究的对谈，讨论 AI 在数学发现与证明中的角色。目前讨论热度很低，属于早期信号而非成熟结论。",
-          "en": "Article URL: https://www.youtube.com/watch?v=PQYFRuZ5phs Comments URL: https://news.ycombinator.com/item?id=49951002 Points: 1 # Comments: 0"
+          "zh": "LocalLLaMA 社区讨论 Qwen3.8 Flash Next 的推理优化工作是否会直接加速 Qwen4 的到来，反映出开发者对通义千问下一代模型节奏的高度预期。社区把当前优化投入视为下一代模型快速升级的前置铺垫。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Given the commentary on the Q3.8FN release page here <a href=\"https://qwen.ai/blog?id=qwen3.8-flash-next\">https://qwen.ai/blog?id=qwen3.8-flash-next</a> I assume/hope that all the work that's going on to optimise the hell out of running it will be useful when Qwen4 drops?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/demomanca\"> /u/demomanca <"
         },
         "chineseIntro": {
-          "zh": "Hacker News 上出现一场关于 AI 如何改变数学研究的对谈，讨论 AI 在数学发现与证明中的角色。目前讨论热度很低，属于早期信号而非成熟结论。",
-          "en": "Article URL: https://www.youtube.com/watch?v=PQYFRuZ5phs Comments URL: https://news.ycombinator.com/item?id=49951002 Points: 1 # Comments: 0"
+          "zh": "LocalLLaMA 社区讨论 Qwen3.8 Flash Next 的推理优化工作是否会直接加速 Qwen4 的到来，反映出开发者对通义千问下一代模型节奏的高度预期。社区把当前优化投入视为下一代模型快速升级的前置铺垫。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Given the commentary on the Q3.8FN release page here <a href=\"https://qwen.ai/blog?id=qwen3.8-flash-next\">https://qwen.ai/blog?id=qwen3.8-flash-next</a> I assume/hope that all the work that's going on to optimise the hell out of running it will be useful when Qwen4 drops?</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/demomanca\"> /u/demomanca <"
         },
         "todayHighlight": {
-          "zh": "数学是检验模型推理上限的硬场景，此类讨论虽未成气候，但常是后续「AI 做科研」产品化的前兆，值得放入长期观察清单。",
-          "en": "数学是检验模型推理上限的硬场景，此类讨论虽未成气候，但常是后续「AI 做科研」产品化的前兆，值得放入长期观察清单。"
+          "zh": "开源社区开始用「优化投入是否可迁移」来判断下一代模型的时间表，说明 Qwen 的迭代节奏已成为本地部署选型的重要变量。",
+          "en": "开源社区开始用「优化投入是否可迁移」来判断下一代模型的时间表，说明 Qwen 的迭代节奏已成为本地部署选型的重要变量。"
         },
         "pmInsight": {
-          "zh": "关注该方向时优先看是否有可复现的基准或工具链出现，而非对谈本身，避免把话题热度误判为可落地的产品机会。",
+          "zh": "若产品依赖本地开源模型，建议跟踪 Qwen3.8 Flash Next 的推理优化是否向后兼容，避免为短期版本做深度定制而无法平滑升级到 Qwen4。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "Hacker News AI",
-            "url": "https://www.youtube.com/watch?v=PQYFRuZ5phs"
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wx3sxu/is_all_the_work_thats_being_put_into_qwen38_flash/"
           }
         ]
       }
