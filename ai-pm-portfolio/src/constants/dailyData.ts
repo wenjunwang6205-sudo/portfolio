@@ -48,90 +48,94 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily: Agent Infrastructure and Monetization Both Heating Up"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 生态的「能力补齐」与「商业闭环」同时推进：一边是记忆、联网、代码审查基准等基础设施持续在榜，一边是 OpenAI 把广告产品化、Anthropic 投入教育。PM 需要同时关注能力边界与变现路径。",
-      "en": "Today's main thread is the simultaneous advance of 'capability completion' and 'commercial loop' in the agent ecosystem: infrastructure like memory, web access, and code review benchmarks stay on the charts, while OpenAI productizes ads and Anthropic invests in education. PMs should track both capability boundaries and monetization paths."
+      "zh": "今日主线是 Agent 生态的「连接层」与「记忆层」持续升温，同时 OpenAI 把广告产品化，对话式 AI 的商业模式开始向主流数字广告靠拢。",
+      "en": "Today's main thread: the 'connection layer' and 'memory layer' of the agent ecosystem continue to heat up, while OpenAI productizes advertising, moving conversational AI business models closer to mainstream digital advertising."
     },
     "keyTakeaway": {
-      "zh": "Agent 基础设施（记忆、联网、代码审查）持续升温，同时 OpenAI 将广告产品化、Anthropic 投入 1 亿美元培训工程师，说明头部厂商正从「模型能力」转向「生态卡位与商业闭环」。",
-      "en": "Agent infrastructure (memory, web access, code review) continues to heat up, while OpenAI productizes ads and Anthropic invests $100M in engineer training, signaling that leading vendors are shifting from 'model capability' to 'ecosystem positioning and commercial loop'."
+      "zh": "Agent 基础设施（互联网接入、持久记忆、代码审查基准）正在快速成熟，同时 OpenAI 将广告系统性地产品化，标志着对话式 AI 从纯订阅向广告变现延伸，产品经理需要同时关注 Agent 能力栈的标准化和商业模式的迁移。",
+      "en": "Agent infrastructure (internet access, persistent memory, code review benchmarks) is maturing rapidly, while OpenAI is systematically productizing advertising, marking conversational AI's extension from pure subscription to ad monetization. PMs need to watch both the standardization of the agent capability stack and the shift in business models."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 记忆与联网能力持续在榜，基础设施层竞争加剧",
-          "en": "Agent Memory and Web Access Stay on the Charts, Infrastructure Competition Intensifies"
+          "zh": "Agent 互联网接入与持久记忆成为基础设施级需求",
+          "en": "Agent Internet Access and Persistent Memory Become Infrastructure-Level Needs"
         },
         "category": {
           "zh": "Agent 基础设施",
           "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "claude-mem（今日 +534 stars，总 9.6 万）提供跨会话持久化记忆，Agent-Reach（今日 +1155 stars，总 9.2 万）让 Agent 无需 API 费用即可读取 Twitter、Reddit、小红书等平台。两者均位列全球趋势榜前列，说明「记忆 + 联网」正成为 Agent 的标配能力。",
-          "en": "claude-mem (+534 stars today, 96k total) provides cross-session persistent memory, while Agent-Reach (+1155 stars today, 92k total) lets agents read Twitter, Reddit, Xiaohongshu, etc. without API fees. Both rank high on global trending, indicating 'memory + web access' is becoming standard for agents."
+          "zh": "Agent-Reach 今日新增 1155 stars，总 star 数达 92160，位列全球趋势榜第 6，为 Agent 提供读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台的能力且无需 API 费用；claude-mem 今日新增 534 stars，总 star 数 96754，位列全球趋势榜第 2，为 Agent 提供跨会话持久记忆，支持 Claude Code、Codex、Gemini 等多种工具。两者分别解决 Agent 的「外部信息获取」和「内部状态延续」问题。",
+          "en": "Agent-Reach gained 1,155 stars today, reaching 92,160 total and ranking #6 on the global trending list, providing agents with the ability to read and search Twitter, Reddit, YouTube, GitHub, Bilibili, Xiaohongshu and other platforms without API fees; claude-mem gained 534 stars today, reaching 96,754 total and ranking #2 on the global trending list, providing agents with cross-session persistent memory and supporting Claude Code, Codex, Gemini and other tools. The two address 'external information acquisition' and 'internal state continuity' for agents respectively."
         },
         "pmInsight": {
-          "zh": "记忆和联网不再是差异化卖点，而是 Agent 产品的准入门槛。PM 应评估自研 Agent 是否已具备跨会话上下文与实时信息获取能力，否则用户留存和任务完成率会明显落后。",
-          "en": "Memory and web access are no longer differentiators but entry barriers for agent products. PMs should assess whether their agents already have cross-session context and real-time information retrieval, or user retention and task completion will lag noticeably."
+          "zh": "Agent 的竞争正从模型能力转向「连接+记忆」的基础设施层。产品经理应评估自有 Agent 产品是否需要在信息获取和跨会话记忆上补齐能力，或考虑集成这些开源组件以降低自研成本。",
+          "en": "Agent competition is shifting from model capability to the 'connection + memory' infrastructure layer. PMs should assess whether their agent products need to fill gaps in information access and cross-session memory, or consider integrating these open-source components to reduce in-house development costs."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "thedotmack/claude-mem",
-            "url": "https://github.com/thedotmack/claude-mem"
+            "label": "Agent-Reach GitHub",
+            "url": "https://github.com/Panniantong/Agent-Reach"
           },
           {
-            "label": "Panniantong/Agent-Reach",
-            "url": "https://github.com/Panniantong/Agent-Reach"
+            "label": "claude-mem GitHub",
+            "url": "https://github.com/thedotmack/claude-mem"
           }
         ]
       },
       {
         "title": {
-          "zh": "OpenAI 将广告产品化，AI 助手商业模式向广告延伸",
-          "en": "OpenAI Productizes Ads, AI Assistant Business Model Extends to Advertising"
+          "zh": "OpenAI 将广告产品化，对话式 AI 商业模式向广告延伸",
+          "en": "OpenAI Productizes Advertising, Extending Conversational AI Business Models Toward Ads"
         },
         "category": {
           "zh": "商业模式",
           "en": "Business Model"
         },
         "summary": {
-          "zh": "OpenAI 在 ChatGPT 中推出新的视觉广告格式，并扩展广告测量、归因合作和品牌安全能力。这是 OpenAI 首次系统性地把广告产品化，意味着 ChatGPT 正从纯订阅模式向广告变现延伸。",
-          "en": "OpenAI launched new visual ad formats in ChatGPT and expanded ad measurement, attribution partnerships, and brand safety. This is OpenAI's first systematic productization of ads, meaning ChatGPT is extending from pure subscription to ad monetization."
+          "zh": "OpenAI 在 ChatGPT 中推出新的视觉广告格式，并扩展了广告测量工具、归因合作与品牌适配能力。这是 OpenAI 首次系统性地把广告产品化，意味着 ChatGPT 正从纯订阅模式向广告变现延伸，广告主将获得更接近主流数字广告平台的投放与衡量体验。",
+          "en": "OpenAI launched new visual ad formats in ChatGPT and expanded ad measurement tools, attribution partnerships, and brand suitability capabilities. This is OpenAI's first systematic productization of advertising, meaning ChatGPT is extending from a pure subscription model to ad monetization, giving advertisers a delivery and measurement experience closer to mainstream digital advertising platforms."
         },
         "pmInsight": {
-          "zh": "AI 助手的广告形态可能与搜索广告和社交广告都不同，PM 需要关注其交互设计（如对话内原生广告）和衡量标准。若广告成为主流变现方式，免费版 AI 助手的产品逻辑和用户体验将面临重新设计。",
-          "en": "Ad formats in AI assistants may differ from both search and social ads. PMs should watch interaction design (e.g., native in-conversation ads) and measurement standards. If ads become mainstream monetization, free-tier AI assistant product logic and UX will need redesign."
+          "zh": "对话式 AI 的广告形态可能不同于传统搜索广告，产品经理需要关注其交互设计、归因方式和用户体验平衡。对于依赖 AI 对话流量的产品，需评估广告插入对用户留存的影响，并思考自身产品的变现路径是否会被挤压。",
+          "en": "Conversational AI ad formats may differ from traditional search ads. PMs need to watch their interaction design, attribution methods, and user experience balance. For products relying on AI conversation traffic, assess the impact of ad insertion on user retention and consider whether their own monetization paths will be squeezed."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "OpenAI: Building advertising for the way people use AI",
+            "label": "OpenAI Blog",
             "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
           }
         ]
       },
       {
         "title": {
-          "zh": "GitHub 推出 ReviewBench，代码审查 Agent 评估标准争夺升温",
-          "en": "GitHub Launches ReviewBench, Competition for Code Review Agent Evaluation Standards Heats Up"
+          "zh": "AI 代码审查与垂直领域小模型走向标准化和可自托管",
+          "en": "AI Code Review and Vertical Small Models Move Toward Standardization and Self-Hosting"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "开发者工具与垂直模型",
+          "en": "Developer Tools & Vertical Models"
         },
         "summary": {
-          "zh": "GitHub 发布 ReviewBench，一个基于真实 Pull Request、多源 ground truth 和生产对齐指标的 AI 代码审查基准，支持按严重程度、类别和精确率-召回率偏好比较不同代码审查 Agent。",
-          "en": "GitHub released ReviewBench, an open benchmark for AI code review based on real pull requests, multi-source ground truth, and production-aligned metrics, allowing comparison of code review agents by severity, category, and precision-recall preference."
+          "zh": "GitHub 发布 ReviewBench，一个基于真实 PR、多源标注和生产对齐指标的 AI 代码审查开放基准，为代码审查智能体提供可比较的评测标准；Hugging Face 与 Ai2 开源 AstaBrief，一个专为科学报告生成设计的小型快速模型，可下载自行运行，强调引用可验证和证据忠实。两者分别推动代码审查和科研报告场景的评测标准化与模型可自托管。",
+          "en": "GitHub released ReviewBench, an open benchmark for AI code review based on real PRs, multi-source annotations, and production-aligned metrics, providing comparable evaluation standards for code review agents; Hugging Face and Ai2 open-sourced AstaBrief, a small fast model designed for scientific report generation that can be downloaded and run locally, emphasizing verifiable citations and evidence faithfulness. The two promote evaluation standardization and model self-hosting for code review and scientific reporting scenarios respectively."
         },
         "pmInsight": {
-          "zh": "代码审查 Agent 正成为开发流程的关键环节，GitHub 用开放基准争夺评估标准话语权。PM 在选型代码审查工具时，应优先参考 ReviewBench 等生产对齐指标，而非仅看模型跑分。",
-          "en": "Code review agents are becoming a key part of the development workflow, and GitHub is using an open benchmark to compete for evaluation standard authority. When selecting code review tools, PMs should prioritize production-aligned metrics like ReviewBench rather than model scores alone."
+          "zh": "代码审查和科研报告是 AI 落地的高价值垂直场景，开放基准和开源小模型降低了选型门槛。产品经理在采购或自研相关工具时，应优先参考 ReviewBench 等基准，并评估垂直小模型在成本、隐私和准确性上的取舍。",
+          "en": "Code review and scientific reporting are high-value vertical scenarios for AI adoption. Open benchmarks and open-source small models lower the selection barrier. When procuring or building related tools, PMs should prioritize benchmarks like ReviewBench and evaluate the trade-offs of vertical small models in cost, privacy, and accuracy."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Blog: ReviewBench",
+            "label": "GitHub Blog",
             "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+          },
+          {
+            "label": "Hugging Face Blog",
+            "url": "https://huggingface.co/blog/allenai/astabrief"
           }
         ]
       }
@@ -139,55 +143,55 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "为 Agent 产品内置「记忆 + 联网」一体化模块",
-          "en": "Build an Integrated 'Memory + Web Access' Module for Agent Products"
+          "zh": "为垂直场景 Agent 提供「连接+记忆」一体化中间件",
+          "en": "Provide Integrated 'Connection + Memory' Middleware for Vertical Scenario Agents"
         },
         "category": {
           "zh": "产品机会",
           "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 claude-mem 和 Agent-Reach 的持续升温，可假设：若在现有 Agent 产品中集成跨会话记忆与低成本联网能力，用户周留存率可提升 15% 以上。验证方式：对两组用户分别开放/不开放该模块，对比 4 周留存与任务完成率。",
-          "en": "Based on the continued traction of claude-mem and Agent-Reach, hypothesize that integrating cross-session memory and low-cost web access into an existing agent product can increase weekly retention by 15%+. Validate by A/B testing two user groups with and without the module, comparing 4-week retention and task completion rate."
+          "zh": "基于 Agent-Reach 和 claude-mem 的升温，可以假设：面向法律、医疗、科研等垂直场景的 Agent 产品，需要同时接入外部专业数据库和保持跨会话记忆。如果提供一套开箱即用的中间件，将信息获取和持久记忆封装为标准化 API，可能降低垂直 Agent 的开发门槛。",
+          "en": "Based on the heating up of Agent-Reach and claude-mem, it can be hypothesized that agent products for vertical scenarios such as legal, medical, and scientific research need to simultaneously access external professional databases and maintain cross-session memory. If an out-of-the-box middleware is provided that encapsulates information access and persistent memory as standardized APIs, it could lower the development barrier for vertical agents."
         },
         "pmInsight": {
-          "zh": "记忆和联网是当前 Agent 产品最明确的体验短板，优先补齐可形成可量化的留存优势。",
-          "en": "Memory and web access are the clearest experience gaps in current agent products; filling them first can create a quantifiable retention advantage."
+          "zh": "验证方式：选取一个垂直场景（如法律合同审查），构建原型 Agent，对比使用中间件与自研连接/记忆模块的开发时间和效果差异。关键指标包括信息检索准确率、跨会话任务完成率和开发周期缩短比例。",
+          "en": "Validation: Select a vertical scenario (e.g., legal contract review), build a prototype agent, and compare development time and effectiveness between using the middleware and building connection/memory modules in-house. Key metrics include information retrieval accuracy, cross-session task completion rate, and development cycle reduction."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "thedotmack/claude-mem",
-            "url": "https://github.com/thedotmack/claude-mem"
+            "label": "Agent-Reach GitHub",
+            "url": "https://github.com/Panniantong/Agent-Reach"
           },
           {
-            "label": "Panniantong/Agent-Reach",
-            "url": "https://github.com/Panniantong/Agent-Reach"
+            "label": "claude-mem GitHub",
+            "url": "https://github.com/thedotmack/claude-mem"
           }
         ]
       },
       {
         "title": {
-          "zh": "面向科研场景的自托管报告生成工具",
-          "en": "Self-Hosted Report Generation Tool for Research Scenarios"
+          "zh": "对话式 AI 广告的体验设计工具与归因方案",
+          "en": "Experience Design Tools and Attribution Solutions for Conversational AI Ads"
         },
         "category": {
-          "zh": "垂直场景",
-          "en": "Vertical Scenario"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 Hugging Face 与 Ai2 开源的 AstaBrief，可假设：学术与研发团队愿意为「可自托管、带引用、快速生成」的科研报告工具付费，客单价可达每月 50-200 美元。验证方式：面向 20 个实验室或研发团队做付费意愿调研与原型试用。",
-          "en": "Based on Hugging Face and Ai2's open-source AstaBrief, hypothesize that academic and R&D teams are willing to pay for a self-hostable, citation-backed, fast report generation tool at $50-200/month. Validate by surveying 20 labs or R&D teams on willingness to pay and prototype trials."
+          "zh": "基于 OpenAI 在 ChatGPT 中推出视觉广告格式和测量工具，可以假设：广告主需要专门针对对话式 AI 的广告创意工具和归因分析平台。如果开发一套帮助品牌设计对话原生广告、并跨对话轮次追踪转化归因的产品，可能抓住对话式广告的早期红利。",
+          "en": "Based on OpenAI's launch of visual ad formats and measurement tools in ChatGPT, it can be hypothesized that advertisers need ad creative tools and attribution analysis platforms specifically for conversational AI. If a product is developed to help brands design conversation-native ads and track conversion attribution across dialogue turns, it could capture the early红利 of conversational advertising."
         },
         "pmInsight": {
-          "zh": "科研报告生成是高价值、低容错的场景，开源小模型降低了自托管门槛，适合做垂直工具而非通用助手。",
-          "en": "Research report generation is a high-value, low-fault-tolerance scenario. Open-source small models lower the self-hosting barrier, making it suitable for a vertical tool rather than a general assistant."
+          "zh": "验证方式：与 2-3 个数字广告代理商合作，测试对话式广告创意的点击率和转化率，对比传统展示广告。关键指标包括广告回忆度、对话中断率和归因准确率。",
+          "en": "Validation: Partner with 2-3 digital advertising agencies to test click-through and conversion rates of conversational ad creatives versus traditional display ads. Key metrics include ad recall, conversation interruption rate, and attribution accuracy."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hugging Face: Open-sourcing AstaBrief",
-            "url": "https://huggingface.co/blog/allenai/astabrief"
+            "label": "OpenAI Blog",
+            "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
           }
         ]
       }
@@ -203,26 +207,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个让 AI Agent 用一页 HTML 回答复杂问题的技能，把原本冗长的文字答案变成可读性强的网页，适合需要清晰展示解释、图表或步骤的场景。",
+          "zh": "一个让 AI Agent 用一页 HTML 回答复杂问题的技能，把长篇大论变成可读性强的网页，适合解释性问答和知识呈现场景。",
           "en": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
         },
-        "totalStars": 1533,
+        "totalStars": 1549,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个让 AI Agent 用一页 HTML 回答复杂问题的技能，把原本冗长的文字答案变成可读性强的网页，适合需要清晰展示解释、图表或步骤的场景。",
+          "zh": "一个让 AI Agent 用一页 HTML 回答复杂问题的技能，把长篇大论变成可读性强的网页，适合解释性问答和知识呈现场景。",
           "en": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。"
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，今日在 Rising 榜单中被发现，总 star 数已达 1533，说明「用 HTML 回答」的交互形式在 Agent 技能生态中开始获得关注。",
+          "zh": "项目创建仅约 1 个月，今日在 rising 榜单中被发现，总 star 数已达 1549，增长较快，反映出对 Agent 输出可读性优化的需求正在升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,533 stars、108 forks，topics: agent-skill, ai-agent, claude-code, cli, diagram，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,533 stars and 108 forks，topics: agent-skill, ai-agent, claude-code, cli, diagram, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,549 stars、108 forks，topics: agent-skill, ai-agent, claude-code, cli, diagram，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,549 stars and 108 forks，topics: agent-skill, ai-agent, claude-code, cli, diagram, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注如何将 AI 输出从纯文本升级为结构化、可视化的 HTML 页面，提升复杂信息的可读性和用户体验。",
+          "zh": "产品经理可关注如何通过输出格式创新提升 AI 回答的消费体验，以及 Agent 技能生态中「可读性」这一细分方向的潜力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -243,26 +247,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套包含 11 个免费 Claude 技能的合集，能逆向分析、重建、测试并改进任意应用，最终产出可售卖的克隆产品，适合独立开发者快速复制并优化现有应用。",
+          "zh": "一套包含 11 个免费 Claude 技能的工具包，可逆向工程、重建、测试并改进任意应用，帮助独立开发者快速克隆并优化产品。",
           "en": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT."
         },
-        "totalStars": 558,
+        "totalStars": 566,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套包含 11 个免费 Claude 技能的合集，能逆向分析、重建、测试并改进任意应用，最终产出可售卖的克隆产品，适合独立开发者快速复制并优化现有应用。",
+          "zh": "一套包含 11 个免费 Claude 技能的工具包，可逆向工程、重建、测试并改进任意应用，帮助独立开发者快速克隆并优化产品。",
           "en": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，今日在 Rising 榜单中被发现，总 star 数 558，其「克隆并改进」的叙事在独立开发者社区中开始传播。",
+          "zh": "项目创建仅约 1 个月，今日在 rising 榜单中被发现，总 star 数 566，增长较快，契合独立开发者对快速复刻和微创新的需求。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 558 stars、49 forks，topics: agent, agent-skills, app-clone, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 558 stars and 49 forks，topics: agent, agent-skills, app-clone, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 566 stars、49 forks，topics: agent, agent-skills, app-clone, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 566 stars and 49 forks，topics: agent, agent-skills, app-clone, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可观察这种「逆向工程+快速迭代」模式如何降低产品复制门槛，并思考如何利用类似技能加速竞品分析和产品改进。",
+          "zh": "产品经理应留意「克隆+改进」模式对产品差异化和竞争壁垒的冲击，以及低代码 Agent 技能如何降低产品验证门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -283,18 +287,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个注重细节的 AI 聊天应用，支持所有主流模型、真实记忆、动态文档和自定义工具，可自托管，适合追求快速友好体验的团队或个人。",
+          "zh": "一个注重细节的 AI 聊天应用，支持所有主流模型、真实记忆、动态文档和自定义工具，提供快速友好的自托管体验。",
           "en": "The AI chat app that sweats the details. Every top model, real memory, living documents, and your own tools."
         },
         "totalStars": 481,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个注重细节的 AI 聊天应用，支持所有主流模型、真实记忆、动态文档和自定义工具，可自托管，适合追求快速友好体验的团队或个人。",
+          "zh": "一个注重细节的 AI 聊天应用，支持所有主流模型、真实记忆、动态文档和自定义工具，提供快速友好的自托管体验。",
           "en": "The AI chat app that sweats the details. Every top model, real memory, living documents, and your own tools."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，今日在 Rising 榜单中被发现，总 star 数 481，其「细节控」定位在 AI 聊天应用赛道中开始吸引早期用户。",
+          "zh": "项目创建仅约 1 个月，今日在 rising 榜单中被发现，总 star 数 481，增长较快，反映出用户对一体化 AI 聊天工作台的兴趣。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
@@ -302,7 +306,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 481 stars and 43 forks，topics: ai, ai-chat, chat, convex, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注自托管 AI 聊天应用在数据隐私和定制化方面的优势，以及如何通过细节体验建立差异化。",
+          "zh": "产品经理可观察 AI 聊天应用如何通过「记忆+文档+工具」组合提升粘性，以及自托管模式在隐私敏感场景中的机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -323,26 +327,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个让 AI Agent 获得互联网访问能力的 CLI 工具，可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台，无需 API 费用，适合需要实时网络信息的 Agent 场景。",
+          "zh": "一个 CLI 工具，为 AI Agent 提供读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台的能力，无需 API 费用。",
           "en": "Star Panniantong / Agent-Reach Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
         },
-        "totalStars": 92105,
+        "totalStars": 92160,
         "language": "Python",
         "dailyStars": 1155,
         "chineseIntro": {
-          "zh": "一个让 AI Agent 获得互联网访问能力的 CLI 工具，可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台，无需 API 费用，适合需要实时网络信息的 Agent 场景。",
+          "zh": "一个 CLI 工具，为 AI Agent 提供读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台的能力，无需 API 费用。",
           "en": "Star Panniantong / Agent-Reach Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
         },
         "todayHighlight": {
-          "zh": "作为 Agent 基础设施的重要组件，随 Agent 生态升温持续获得关注，今日新增 1155 stars，总 star 数已超过 9.2 万，位列全球趋势榜第 6。",
+          "zh": "今日新增 1155 stars，总 star 数已达 92160，位列全球趋势榜第 6，作为 Agent 互联网接入的基础设施持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 92k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,155 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 92,105 stars、8,082 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 92,105 stars and 8,082 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 92,160 stars、8,085 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 92,160 stars and 8,085 forks，topics: agent-infrastructure, ai-agent, ai-search, automation, bilibili, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注 Agent 获取实时互联网数据的能力如何成为 AI 应用的基础设施，并思考如何集成类似工具提升产品智能。",
+          "zh": "产品经理应关注 Agent 获取外部数据的能力如何成为产品差异化的关键，以及免费数据接入对构建 AI 应用的成本影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -363,26 +367,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个提供完整 AI 代理机构的项目，包含从前端专家到社区运营等各类专业化 Agent，每个 Agent 都有个性、流程和可交付成果，适合需要多角色协作的工作流。",
+          "zh": "一个完整的 AI 代理机构，提供从前端开发到社区运营等各类专业化 Agent，每个 Agent 都有独特个性和工作流程。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
-        "totalStars": 157402,
+        "totalStars": 157440,
         "language": "Shell",
         "dailyStars": 744,
         "chineseIntro": {
-          "zh": "一个提供完整 AI 代理机构的项目，包含从前端专家到社区运营等各类专业化 Agent，每个 Agent 都有个性、流程和可交付成果，适合需要多角色协作的工作流。",
+          "zh": "一个完整的 AI 代理机构，提供从前端开发到社区运营等各类专业化 Agent，每个 Agent 都有独特个性和工作流程。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
         "todayHighlight": {
-          "zh": "项目已创建约 12 个月，今日新增 744 stars，总 star 数超过 15.7 万，位列全球趋势榜第 12，其「AI 代理机构」概念持续吸引关注。",
+          "zh": "今日新增 744 stars，总 star 数高达 157440，位列全球趋势榜第 12，项目已创建 12 个月，持续获得关注，反映出多 Agent 协作的长期热度。",
           "en": "登上 GitHub Trending 日榜第 12 位, 总 star 数已达 157k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 744 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 157,402 stars、25,384 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 157,402 stars and 25,384 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 157,440 stars、25,386 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 157,440 stars and 25,386 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可观察多 Agent 协作模式如何模拟真实团队分工，并思考如何将专业化 Agent 应用于产品运营和开发流程。",
+          "zh": "产品经理可思考如何将专业分工的 Agent 模式应用到团队工作流中，以及 Agent 人格化设计对用户体验的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -403,26 +407,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "全球首个开源、代理驱动的视频制作系统，包含 12 条制作流水线、100+ 工具和 700+ 技能文件，可将 AI 编程助手变成完整的视频制作工作室。",
+          "zh": "全球首个开源、代理驱动的视频制作系统，包含 12 条制作流水线、100+ 工具和 700+ 技能文件，可将 AI 编程助手变成视频工作室。",
           "en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
         },
-        "totalStars": 64223,
+        "totalStars": 64287,
         "language": "Python",
         "dailyStars": 742,
         "chineseIntro": {
-          "zh": "全球首个开源、代理驱动的视频制作系统，包含 12 条制作流水线、100+ 工具和 700+ 技能文件，可将 AI 编程助手变成完整的视频制作工作室。",
+          "zh": "全球首个开源、代理驱动的视频制作系统，包含 12 条制作流水线、100+ 工具和 700+ 技能文件，可将 AI 编程助手变成视频工作室。",
           "en": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
         },
         "todayHighlight": {
-          "zh": "项目创建约 6 个月，今日新增 742 stars，总 star 数超过 6.4 万，位列全球趋势榜第 7，其「Agent 视频制作」叙事在创作者和开发者社区中快速传播。",
+          "zh": "今日新增 742 stars，总 star 数 64287，位列全球趋势榜第 7，项目创建 6 个月，随着 AI 视频生成需求升温而快速传播。",
           "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 64k+，持续占据 AI 开源热门榜单, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 742 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 64,223 stars、8,140 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 64,223 stars and 8,140 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 64,287 stars、8,147 forks，topics: agent, agentic-ai, ai, claude, copilot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 64,287 stars and 8,147 forks，topics: agent, agentic-ai, ai, claude, copilot, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注 Agent 如何将复杂视频制作流程自动化，并思考如何将类似能力集成到内容创作产品中。",
+          "zh": "产品经理应关注视频制作流程的自动化如何降低内容创作门槛，以及 Agent 技能库在垂直领域的复用价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -443,26 +447,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个为 AI Agent 提供跨会话持久化记忆的工具，能捕获 Agent 会话中的一切，用 AI 压缩并注入未来会话，支持 Claude Code、OpenClaw、Codex 等多种 Agent。",
+          "zh": "为 AI Agent 提供跨会话的持久记忆，自动捕获会话内容、用 AI 压缩并注入未来会话，支持 Claude Code、Codex、Gemini 等多种工具。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
-        "totalStars": 96730,
+        "totalStars": 96754,
         "language": "TypeScript",
         "dailyStars": 534,
         "chineseIntro": {
-          "zh": "一个为 AI Agent 提供跨会话持久化记忆的工具，能捕获 Agent 会话中的一切，用 AI 压缩并注入未来会话，支持 Claude Code、OpenClaw、Codex 等多种 Agent。",
+          "zh": "为 AI Agent 提供跨会话的持久记忆，自动捕获会话内容、用 AI 压缩并注入未来会话，支持 Claude Code、Codex、Gemini 等多种工具。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
         "todayHighlight": {
-          "zh": "项目已创建约 13 个月，今日新增 534 stars，总 star 数超过 9.6 万，位列全球趋势榜第 2，其「Agent 记忆」能力随 Agent 生态升温持续获得关注。",
+          "zh": "今日新增 534 stars，总 star 数 96754，位列全球趋势榜第 2，项目已创建 13 个月，作为 Agent 记忆层的关键组件持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 96k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 534 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 96,730 stars、8,533 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 96,730 stars and 8,533 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 96,754 stars、8,536 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 96,754 stars and 8,536 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注持久化记忆如何提升 Agent 的连续性和个性化，并思考如何将记忆机制融入 AI 产品设计。",
+          "zh": "产品经理需重视记忆能力对 Agent 产品长期价值的提升，以及跨会话上下文如何改善用户留存和个性化体验。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -483,26 +487,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个赋予 AI Agent CAD 超能力的工具，可通过文本生成 CAD 模型，支持 STEP、STL 等格式，适合机械工程、机器人等领域的快速原型设计。",
+          "zh": "一个让 AI Agent 获得 CAD 超能力的工具，可通过文本生成机械工程领域的 CAD 模型，支持 STEP、STL 等格式。",
           "en": "Star earthtojake / text-to-cad Give your agent CAD superpowers."
         },
-        "totalStars": 17549,
+        "totalStars": 17586,
         "language": "Python",
         "dailyStars": 437,
         "chineseIntro": {
-          "zh": "一个赋予 AI Agent CAD 超能力的工具，可通过文本生成 CAD 模型，支持 STEP、STL 等格式，适合机械工程、机器人等领域的快速原型设计。",
+          "zh": "一个让 AI Agent 获得 CAD 超能力的工具，可通过文本生成机械工程领域的 CAD 模型，支持 STEP、STL 等格式。",
           "en": "Star earthtojake / text-to-cad Give your agent CAD superpowers."
         },
         "todayHighlight": {
-          "zh": "项目创建约 6 个月，今日新增 437 stars，总 star 数超过 1.7 万，位列全球趋势榜第 3，其「文本到 CAD」能力在工程和制造领域开始获得关注。",
+          "zh": "今日新增 437 stars，总 star 数 17586，位列全球趋势榜第 3，项目创建 6 个月，随着 AI 在工程领域的渗透而增长较快。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 437 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,549 stars、1,776 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,549 stars and 1,776 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 17,586 stars、1,779 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 17,586 stars and 1,779 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注 AI 在专业设计工具中的落地，思考如何将自然语言交互引入传统工程软件。",
+          "zh": "产品经理可观察 AI 在专业工程软件中的落地路径，以及文本到 3D 模型对产品设计和原型制作流程的潜在变革。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -523,26 +527,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Cloudflare 推出的基于 Workers 的 Agent 工作空间，用于创建文档、构建应用和运行 Agent，并融入公司上下文和系统，适合企业内部 AI 生产力场景。",
+          "zh": "Cloudflare 推出的 AI 生产力环境，基于 Cloudflare Workers 构建，用于创建文档、构建应用和运行 Agent，并融入公司上下文和系统。",
           "en": "Star cloudflare / cloudflare-os Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems."
         },
-        "totalStars": 11098,
+        "totalStars": 11111,
         "language": "TypeScript",
         "dailyStars": 101,
         "chineseIntro": {
-          "zh": "Cloudflare 推出的基于 Workers 的 Agent 工作空间，用于创建文档、构建应用和运行 Agent，并融入公司上下文和系统，适合企业内部 AI 生产力场景。",
+          "zh": "Cloudflare 推出的 AI 生产力环境，基于 Cloudflare Workers 构建，用于创建文档、构建应用和运行 Agent，并融入公司上下文和系统。",
           "en": "Star cloudflare / cloudflare-os Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems."
         },
         "todayHighlight": {
-          "zh": "项目创建约 6 个月，今日新增 101 stars，总 star 数超过 1.1 万，位列全球趋势榜第 10，其「企业级 Agent 工作空间」定位持续获得关注。",
+          "zh": "今日新增 101 stars，总 star 数 11111，位列全球趋势榜第 10，项目创建 6 个月，作为大厂内部工具开源持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 101 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,098 stars、1,315 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,098 stars and 1,315 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,111 stars、1,316 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,111 stars and 1,316 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可观察大厂如何将 Agent 能力嵌入现有云基础设施，并思考企业级 AI 工作空间的集成机会。",
+          "zh": "产品经理应关注企业级 AI 工作台如何整合内部系统与 Agent，以及大厂开源策略对生态建设的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -563,18 +567,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个生产级多平台智能机器人开发平台，支持 Discord、Slack、LINE、Telegram、微信、飞书、钉钉、QQ 等，集成 ChatGPT、DeepSeek、Dify 等多种模型和工具，适合快速构建 IM 机器人。",
+          "zh": "生产级多平台智能机器人开发平台，支持 Discord、Slack、Telegram、微信、飞书、钉钉、QQ 等，集成多种大模型和 Agent 编排。",
           "en": "Star langbot-app / LangBot Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow"
         },
         "totalStars": 18020,
         "language": "Python",
         "dailyStars": 15,
         "chineseIntro": {
-          "zh": "一个生产级多平台智能机器人开发平台，支持 Discord、Slack、LINE、Telegram、微信、飞书、钉钉、QQ 等，集成 ChatGPT、DeepSeek、Dify 等多种模型和工具，适合快速构建 IM 机器人。",
+          "zh": "生产级多平台智能机器人开发平台，支持 Discord、Slack、Telegram、微信、飞书、钉钉、QQ 等，集成多种大模型和 Agent 编排。",
           "en": "Star langbot-app / LangBot Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow"
         },
         "todayHighlight": {
-          "zh": "项目已创建约 47 个月，今日新增 15 stars，总 star 数超过 1.8 万，位列中文趋势榜第 10，其多平台兼容性在中文开发者社区中持续获得关注。",
+          "zh": "今日新增 15 stars，总 star 数 18020，位列中文趋势榜第 10，项目已创建 47 个月，作为成熟的 IM 机器人平台持续在榜。",
           "en": "登上 GitHub 中文 Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 15 星."
         },
         "inclusionReason": {
@@ -582,7 +586,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,020 stars and 1,623 forks，topics: agent, coze, deepseek, dify, dingtalk, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注多平台 IM 机器人如何统一管理，并思考如何利用类似平台快速部署客服或社区运营机器人。",
+          "zh": "产品经理可研究多平台机器人如何统一管理，以及 Agent 与知识库编排在客服、社区运营等场景中的产品化机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -609,19 +613,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "OpenAI 在 ChatGPT 中推出新的视觉广告格式，并扩展了广告测量工具、归因合作和品牌安全能力。这意味着 ChatGPT 正从纯订阅模式向广告变现延伸，广告主将获得更接近主流数字广告平台的投放与衡量体验。",
+          "zh": "OpenAI 在 ChatGPT 中推出新的视觉广告格式，并扩展了广告测量工具、归因合作与品牌适配能力。这意味着 ChatGPT 正从纯订阅模式向广告变现延伸，广告主将获得更接近主流数字广告平台的投放与衡量体验。",
           "en": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
         },
         "chineseIntro": {
-          "zh": "OpenAI 在 ChatGPT 中推出新的视觉广告格式，并扩展了广告测量工具、归因合作和品牌安全能力。这意味着 ChatGPT 正从纯订阅模式向广告变现延伸，广告主将获得更接近主流数字广告平台的投放与衡量体验。",
+          "zh": "OpenAI 在 ChatGPT 中推出新的视觉广告格式，并扩展了广告测量工具、归因合作与品牌适配能力。这意味着 ChatGPT 正从纯订阅模式向广告变现延伸，广告主将获得更接近主流数字广告平台的投放与衡量体验。",
           "en": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
         },
         "todayHighlight": {
-          "zh": "这是 OpenAI 首次系统性地把广告产品化，可能重塑 AI 助手的商业模式，并给 Google、Meta 的广告收入带来长期竞争压力。",
-          "en": "这是 OpenAI 首次系统性地把广告产品化，可能重塑 AI 助手的商业模式，并给 Google、Meta 的广告收入带来长期竞争压力。"
+          "zh": "这是 OpenAI 首次系统性地把广告产品化，可能重新定义对话式 AI 的商业模式，并给传统搜索广告和社交广告带来直接竞争压力。",
+          "en": "这是 OpenAI 首次系统性地把广告产品化，可能重新定义对话式 AI 的商业模式，并给传统搜索广告和社交广告带来直接竞争压力。"
         },
         "pmInsight": {
-          "zh": "PM 应关注广告格式与对话体验的平衡，评估在自有 AI 产品中引入广告或赞助内容时，如何设计不破坏用户信任的展示与归因方案。",
+          "zh": "做 AI 产品商业化时，应提前评估对话式广告对用户体验和留存的影响，并设计好广告与自然回答之间的边界与频控策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -629,43 +633,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Plainserp – Google search API for AI agents at $0.30 per 1k",
-          "en": "Hacker News AI: Plainserp – Google search API for AI agents at $0.30 per 1k"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "API/定价",
-          "en": "API/定价"
-        },
-        "summary": {
-          "zh": "Plainserp 推出面向 AI Agent 的 Google 搜索结果 API，每 1000 次查询收费 0.30 美元，返回干净的 JSON 标题、链接和摘要，前 1000 次免费。这为需要实时搜索能力的 Agent 开发者提供了一个低价、按量付费的替代方案。",
-          "en": "Article URL: https://plainserp.com Comments URL: https://news.ycombinator.com/item?id=49974619 Points: 1 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "Plainserp 推出面向 AI Agent 的 Google 搜索结果 API，每 1000 次查询收费 0.30 美元，返回干净的 JSON 标题、链接和摘要，前 1000 次免费。这为需要实时搜索能力的 Agent 开发者提供了一个低价、按量付费的替代方案。",
-          "en": "Article URL: https://plainserp.com Comments URL: https://news.ycombinator.com/item?id=49974619 Points: 1 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "搜索 API 的定价被压到每千次 0.3 美元，可能加速 Agent 应用对实时搜索的集成，并挤压传统搜索 API 的利润空间。",
-          "en": "搜索 API 的定价被压到每千次 0.3 美元，可能加速 Agent 应用对实时搜索的集成，并挤压传统搜索 API 的利润空间。"
-        },
-        "pmInsight": {
-          "zh": "PM 在评估 Agent 的搜索工具链时，应把每千次查询成本和返回结构纳入选型对比，尤其关注免费额度能否覆盖原型验证阶段。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://plainserp.com"
           }
         ]
       },
@@ -683,19 +650,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "GitHub 推出 ReviewBench，一个基于真实 Pull Request、多源 ground truth 和生产对齐指标的 AI 代码审查基准。它让团队可以按严重程度、类别和精确率-召回率偏好来比较不同代码审查 Agent 的优劣。",
+          "zh": "GitHub 发布 ReviewBench，一个基于真实 PR、多源标注和生产对齐指标的 AI 代码审查开放基准。它为代码审查智能体提供了可比较的评测标准，帮助团队判断不同审查工具在查全率、噪声和严重问题识别上的取舍。",
           "en": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 推出 ReviewBench，一个基于真实 Pull Request、多源 ground truth 和生产对齐指标的 AI 代码审查基准。它让团队可以按严重程度、类别和精确率-召回率偏好来比较不同代码审查 Agent 的优劣。",
+          "zh": "GitHub 发布 ReviewBench，一个基于真实 PR、多源标注和生产对齐指标的 AI 代码审查开放基准。它为代码审查智能体提供了可比较的评测标准，帮助团队判断不同审查工具在查全率、噪声和严重问题识别上的取舍。",
           "en": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "代码审查 Agent 正成为开发流程的关键环节，GitHub 用开放基准争夺这一环节的评估标准话语权，可能影响企业采购决策。",
-          "en": "代码审查 Agent 正成为开发流程的关键环节，GitHub 用开放基准争夺这一环节的评估标准话语权，可能影响企业采购决策。"
+          "zh": "代码审查是 AI 编程助手竞争的下一个关键战场，GitHub 用开放基准抢占评测话语权，可能影响企业采购代码审查工具时的选型标准。",
+          "en": "代码审查是 AI 编程助手竞争的下一个关键战场，GitHub 用开放基准抢占评测话语权，可能影响企业采购代码审查工具时的选型标准。"
         },
         "pmInsight": {
-          "zh": "PM 若在构建或采购代码审查 Agent，应优先用 ReviewBench 的严重程度和精确率-召回率维度做内部评测，避免只看问题发现数量而忽略噪声成本。",
+          "zh": "如果团队在做代码审查类 AI 功能，应尽快用 ReviewBench 做基线对比，并重点关注严重问题召回率与误报率的平衡，而不是只看问题数量。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -703,6 +670,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Blog",
             "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News LLM: Show HN: All local LLM(s) on all Apple Devices",
+          "en": "Hacker News LLM: Show HN: All local LLM(s) on all Apple Devices"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "有开发者发布 Simulkit 模拟器，可估算每款 Apple 设备能运行哪些本地大模型以及生成速度。它把 Mac 芯片、统一内存、量化和模型规模放在一起做可视化对比，降低了本地部署的试错成本。",
+          "en": "Various simulation running website with complete LLM indexation support.I thought it would be interesting to explain everyone what kind of model can be run in each type of Apple Device.If I give a shared simulation like https://simulkit.com/en/mac-local-llm/6MwixMWu8mAny LLM will be able to read it because it also generates the LLM side of it: https://simulkit.com/en/mac-local-llm/6MwixMWu8m.md .Also there's no track"
+        },
+        "chineseIntro": {
+          "zh": "有开发者发布 Simulkit 模拟器，可估算每款 Apple 设备能运行哪些本地大模型以及生成速度。它把 Mac 芯片、统一内存、量化和模型规模放在一起做可视化对比，降低了本地部署的试错成本。",
+          "en": "Various simulation running website with complete LLM indexation support.I thought it would be interesting to explain everyone what kind of model can be run in each type of Apple Device.If I give a shared simulation like https://simulkit.com/en/mac-local-llm/6MwixMWu8mAny LLM will be able to read it because it also generates the LLM side of it: https://simulkit.com/en/mac-local-llm/6MwixMWu8m.md .Also there's no track"
+        },
+        "todayHighlight": {
+          "zh": "本地 LLM 在 Apple 生态的可行性正被社区工具化，这可能推动更多隐私敏感场景从云端 API 转向端侧推理。",
+          "en": "本地 LLM 在 Apple 生态的可行性正被社区工具化，这可能推动更多隐私敏感场景从云端 API 转向端侧推理。"
+        },
+        "pmInsight": {
+          "zh": "做端侧 AI 产品规划时，可参考此类模拟数据来设定模型规模和量化策略，优先保证首屏响应速度而非追求最大参数。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News LLM",
+            "url": "https://simulkit.com/en/mac-local-llm"
           }
         ]
       },
@@ -720,22 +724,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "PewDiePie 在本地微调模型 Ajax 时，使用 OpenAI API 生成训练数据，两次被 OpenAI 以违反条款为由封禁账号。这凸显了模型厂商对“用其输出训练竞品模型”的严格限制，以及本地模型爱好者与平台条款之间的紧张关系。",
+          "zh": "Reddit 热议 PewDiePie 用 OpenAI API 生成数据来微调本地模型，两次被 OpenAI 以违反使用条款为由封禁。这凸显了模型厂商对「用输出训练竞品」的严格限制，以及本地模型爱好者与平台条款之间的张力。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>So PewDiePie decides to fine-tune a local AI model called Ajax on his own computer. Pretty normal stuff for local model fans.</p> <p>To make his dataset, he uses OpenAI's API. OpenAI catches him using their outputs to train another model, flags his account for breaking their terms, and bans him.</p> <p>He files an appeal, gets unbanned, goes right back to pulling data from the API, a"
         },
         "chineseIntro": {
-          "zh": "PewDiePie 在本地微调模型 Ajax 时，使用 OpenAI API 生成训练数据，两次被 OpenAI 以违反条款为由封禁账号。这凸显了模型厂商对“用其输出训练竞品模型”的严格限制，以及本地模型爱好者与平台条款之间的紧张关系。",
+          "zh": "Reddit 热议 PewDiePie 用 OpenAI API 生成数据来微调本地模型，两次被 OpenAI 以违反使用条款为由封禁。这凸显了模型厂商对「用输出训练竞品」的严格限制，以及本地模型爱好者与平台条款之间的张力。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>So PewDiePie decides to fine-tune a local AI model called Ajax on his own computer. Pretty normal stuff for local model fans.</p> <p>To make his dataset, he uses OpenAI's API. OpenAI catches him using their outputs to train another model, flags his account for breaking their terms, and bans him.</p> <p>He files an appeal, gets unbanned, goes right back to pulling data from the API, a"
         },
         "todayHighlight": {
-          "zh": "头部创作者公开撞上 API 条款红线，说明数据蒸馏与模型训练的合规边界正在成为 AI 生态的显性冲突点。",
-          "en": "头部创作者公开撞上 API 条款红线，说明数据蒸馏与模型训练的合规边界正在成为 AI 生态的显性冲突点。"
+          "zh": "头部创作者公开触碰 API 条款红线，说明数据蒸馏和模型微调的法律边界正在成为 AI 生态的显性冲突点。",
+          "en": "头部创作者公开触碰 API 条款红线，说明数据蒸馏和模型微调的法律边界正在成为 AI 生态的显性冲突点。"
         },
         "pmInsight": {
-          "zh": "PM 在设计涉及模型输出再利用的功能时，应提前梳理 API 条款中关于训练竞品模型的限制，并在产品内提供合规的数据来源指引，避免用户账号风险。",
+          "zh": "使用第三方 API 构建训练数据时，务必先确认条款是否允许输出用于训练其他模型，并保留合规审查记录，避免账号和业务中断。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Reddit LocalLLaMA",
@@ -794,19 +798,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Hugging Face 与 Ai2 开源了 AstaBrief，这是 Asta 科研平台中用于快速生成带引用报告的小型模型。它试图在科学报告生成任务上，以可下载、可自托管的方式接近专有模型的质量，同时降低生成时间。",
+          "zh": "Hugging Face 与 Ai2 开源 AstaBrief，一个专为科学报告生成设计的小型快速模型，可下载自行运行。它试图在保持引用可验证和证据忠实的前提下，用开源小模型替代部分专有模型来加速报告生成。",
           "en": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 与 Ai2 开源了 AstaBrief，这是 Asta 科研平台中用于快速生成带引用报告的小型模型。它试图在科学报告生成任务上，以可下载、可自托管的方式接近专有模型的质量，同时降低生成时间。",
+          "zh": "Hugging Face 与 Ai2 开源 AstaBrief，一个专为科学报告生成设计的小型快速模型，可下载自行运行。它试图在保持引用可验证和证据忠实的前提下，用开源小模型替代部分专有模型来加速报告生成。",
           "en": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         },
         "todayHighlight": {
-          "zh": "科研报告生成这一高价值场景出现开源小模型，可能降低学术与研发团队使用 AI 做证据合成的门槛，并推动垂直领域模型的自托管趋势。",
-          "en": "科研报告生成这一高价值场景出现开源小模型，可能降低学术与研发团队使用 AI 做证据合成的门槛，并推动垂直领域模型的自托管趋势。"
+          "zh": "科研场景对事实准确性和可验证性要求极高，AstaBrief 的开源意味着垂直领域小模型可以在质量上挑战通用大模型，推动科研 AI 工具走向可自托管。",
+          "en": "科研场景对事实准确性和可验证性要求极高，AstaBrief 的开源意味着垂直领域小模型可以在质量上挑战通用大模型，推动科研 AI 工具走向可自托管。"
         },
         "pmInsight": {
-          "zh": "PM 在规划科研或分析类报告功能时，可评估 AstaBrief 作为自托管选项，重点测试其引用准确性和结论保守性是否满足专业用户对可信度的要求。",
+          "zh": "做垂直领域生成产品时，可评估用开源小模型加领域数据微调来替代通用大模型，重点验证引用准确率和生成延迟是否满足专业用户预期。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
