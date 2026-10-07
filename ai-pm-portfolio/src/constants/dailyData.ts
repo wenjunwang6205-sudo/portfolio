@@ -44,122 +44,110 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报 · 2026-10-07",
-      "en": "AI PM Daily · 2026-10-07"
+      "zh": "AI 产品经理日报：代理技能生态与企业知识落地双线升温",
+      "en": "AI PM Daily: Agent Skill Ecosystem and Enterprise Knowledge Landing Heat Up"
     },
     "editorNote": {
-      "zh": "今日主线不在模型能力本身，而在「代理工作流」与「分发规则」两条暗线：GitHub 趋势榜被代理技能、记忆层、设计规范类项目占据，同时 Anthropic 与 OpenAI 分别用身份分层和企业套件重新定义模型如何被调用。",
-      "en": "Today's thread is not raw model capability but two undercurrents: agent workflows and distribution rules. GitHub trending is dominated by agent skills, memory layers and design specs, while Anthropic and OpenAI redefine how models get invoked via identity tiers and enterprise suites."
+      "zh": "今日主线不在模型参数，而在「代理能力如何被封装、评估与嵌入工作流」。GitHub 趋势榜被 Claude 技能类项目占据，企业侧 OpenAI 与 Atlassian 的合作则把模型推进到知识管理核心。",
+      "en": "Today's main thread is not model parameters, but how agent capabilities are packaged, evaluated, and embedded into workflows. GitHub trending is dominated by Claude skill projects, while OpenAI-Atlassian partnership pushes models into the core of knowledge management."
     },
     "keyTakeaway": {
-      "zh": "代理生态正从「能跑」转向「可组合、可记忆、可评审」：GitHub 趋势榜上技能包、跨会话记忆与设计规范类项目密集在榜，而 GitHub 用堆叠 PR 与 ReviewBench 把 AI 代码评审纳入可量化流程；与此同时，Anthropic 以身份分层分发强模型、OpenAI 借 Atlassian 深入企业知识工作流，说明模型竞争的重心正从能力转向「谁能在受控条件下被调用」。",
-      "en": "The agent ecosystem is shifting from 'it runs' to 'composable, memorable, reviewable': GitHub trending is dense with skill packs, cross-session memory and design-spec projects, while GitHub folds AI code review into measurable flows via stacked PRs and ReviewBench. Meanwhile Anthropic tiers strong models by identity and OpenAI embeds into enterprise knowledge workflows via Atlassian — competition is moving from capability to controlled invocation."
+      "zh": "代理技能正从零散脚本走向可复用、可评估的组件层，同时企业知识库成为模型落地的关键入口；PM 应优先关注「技能标准化」与「工作流嵌入」两条主线。",
+      "en": "Agent skills are moving from scattered scripts to reusable, evaluable component layers, while enterprise knowledge bases become key entry points for model deployment; PMs should prioritize 'skill standardization' and 'workflow embedding'."
     },
     "signals": [
       {
         "title": {
-          "zh": "代理技能与记忆层在 GitHub 趋势榜密集在榜",
-          "en": "Agent skills and memory layers cluster on GitHub trending"
+          "zh": "Claude 技能类项目集中上榜，代理能力封装层升温",
+          "en": "Claude Skill Projects Cluster on Trending, Agent Capability Packaging Layer Heats Up"
         },
         "category": {
-          "zh": "开发者生态 / 代理基础设施",
-          "en": "Developer Ecosystem / Agent Infrastructure"
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "今日 GitHub 趋势榜中，claude-mem（97,310 星，+534）、impeccable（77,895 星，+616）、i-have-adhd（54,573 星，+326）、diagram-design（44,247 星，+228）等多个面向 AI 编程代理的技能、记忆与设计规范项目同时上榜；新项目 replica-skill（732 星，今日 +77 fork）与 open-instinct（223 星，今日 +48 fork）也在快速传播。",
-          "en": "Today's GitHub trending includes claude-mem (97,310 stars, +534), impeccable (77,895, +616), i-have-adhd (54,573, +326) and diagram-design (44,247, +228) — multiple skills, memory and design-spec projects for AI coding agents trending together; newer projects replica-skill (732 stars, +77 forks today) and open-instinct (223 stars, +48 forks today) are also spreading quickly."
+          "zh": "GitHub 趋势榜中，replica-skill（743 星）、impeccable（77.9k 星，日增 616）、claude-mem（97.3k 星，日增 534）、i-have-adhd（54.6k 星，日增 326）、diagram-design（44.3k 星，日增 228）等多个面向 Claude/Codex 的技能项目同时出现，覆盖逆向分析、设计规范、跨会话记忆、输出精简、图表设计等环节。",
+          "en": "Multiple skill projects for Claude/Codex appear simultaneously on GitHub trending: replica-skill (743 stars), impeccable (77.9k stars, +616 daily), claude-mem (97.3k stars, +534 daily), i-have-adhd (54.6k stars, +326 daily), diagram-design (44.3k stars, +228 daily), covering reverse analysis, design guidelines, cross-session memory, concise output, and diagram design."
         },
         "pmInsight": {
-          "zh": "代理的差异化正从底层模型转向「技能 + 记忆 + 输出规范」的组合层。claude-mem 解决跨会话上下文丢失，impeccable 和 diagram-design 解决输出质量，i-have-adhd 解决交互效率——这些恰好是当前代理产品最常被抱怨的环节。PM 应把「代理记忆持久化」和「输出风格可控」列入近期路线图评估项，而不是继续堆模型参数。",
-          "en": "Agent differentiation is moving from the base model to the 'skills + memory + output spec' composition layer. claude-mem addresses cross-session context loss, impeccable and diagram-design address output quality, i-have-adhd addresses interaction efficiency — precisely the pain points most complained about in agent products. PMs should evaluate persistent agent memory and controllable output style on near-term roadmaps rather than stacking model parameters."
+          "zh": "技能层正在成为代理产品的差异化来源，而非模型本身。PM 应评估是否将高频能力封装为可复用技能，并关注技能之间的组合与冲突管理。",
+          "en": "The skill layer is becoming a source of differentiation for agent products, not the model itself. PMs should assess whether to package high-frequency capabilities as reusable skills and pay attention to composition and conflict management between skills."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "thedotmack/claude-mem",
-            "url": "https://github.com/thedotmack/claude-mem"
-          },
-          {
-            "label": "pbakaus/impeccable",
-            "url": "https://github.com/pbakaus/impeccable"
-          },
-          {
-            "label": "ayghri/i-have-adhd",
-            "url": "https://github.com/ayghri/i-have-adhd"
-          },
-          {
-            "label": "cathrynlavery/diagram-design",
-            "url": "https://github.com/cathrynlavery/diagram-design"
-          },
-          {
-            "label": "Jakeschincariol/replica-skill",
+            "label": "replica-skill",
             "url": "https://github.com/Jakeschincariol/replica-skill"
           },
           {
-            "label": "mariagorskikh/open-instinct",
-            "url": "https://github.com/mariagorskikh/open-instinct"
+            "label": "impeccable",
+            "url": "https://github.com/pbakaus/impeccable"
+          },
+          {
+            "label": "claude-mem",
+            "url": "https://github.com/thedotmack/claude-mem"
+          },
+          {
+            "label": "i-have-adhd",
+            "url": "https://github.com/ayghri/i-have-adhd"
+          },
+          {
+            "label": "diagram-design",
+            "url": "https://github.com/cathrynlavery/diagram-design"
           }
         ]
       },
       {
         "title": {
-          "zh": "GitHub 把 AI 代码评审纳入可量化流程",
-          "en": "GitHub folds AI code review into measurable flows"
+          "zh": "OpenAI 与 Atlassian 扩大合作，企业知识库成为模型落地入口",
+          "en": "OpenAI and Atlassian Expand Partnership, Enterprise Knowledge Base Becomes Model Landing Entry"
         },
         "category": {
-          "zh": "开发者工具 / 代码评审",
-          "en": "Developer Tools / Code Review"
+          "zh": "企业合作",
+          "en": "Enterprise Partnership"
         },
         "summary": {
-          "zh": "GitHub 堆叠式 Pull Request 正式 GA，预览期数据显示使用堆叠的仓库合并代码量提升 9%，头部仓库采用率超三分之二；同日 GitHub 发布 ReviewBench，基于真实 PR 和多源 ground truth 评测 AI 代码评审代理，可按严重程度、类别和精确率-召回率偏好拆解。",
-          "en": "GitHub's stacked pull requests are now GA; preview data shows repos using stacking merged 9% more code, with adoption above two-thirds in top repos. The same day GitHub launched ReviewBench, an open benchmark for AI code review agents built on real PRs and multi-source ground truth, decomposable by severity, category and precision-recall preference."
+          "zh": "OpenAI 与 Atlassian 扩大合作，将前沿模型接入企业知识库，帮助团队规划、构建和交付工作。这意味着 OpenAI 正通过深度集成 Jira/Confluence 等协作工具，加速模型在真实工作流中的落地。",
+          "en": "OpenAI and Atlassian expand partnership to integrate frontier models into enterprise knowledge bases, helping teams plan, build, and deliver work. This means OpenAI is accelerating model deployment in real workflows through deep integration with collaboration tools like Jira/Confluence."
         },
         "pmInsight": {
-          "zh": "堆叠 PR 改变了大型仓库的评审与 CI 节奏，而 ReviewBench 给了「AI 评审器谁更强」一个可比较的标尺。两者叠加意味着 AI 代码评审代理必须适配「小 PR、高频合并」的新工作流，否则会在真实仓库中被绕过。做代码评审类产品的团队应尽快用 ReviewBench 自测，并把堆叠 PR 场景纳入评测集。",
-          "en": "Stacked PRs change review and CI cadence in large repos, while ReviewBench gives a comparable yardstick for 'which AI reviewer is better.' Together they mean AI code review agents must fit a 'small PRs, high-frequency merge' workflow or be bypassed in real repos. Teams building review products should self-test against ReviewBench soon and add stacked-PR scenarios to their eval sets."
+          "zh": "企业知识管理是 AI 落地的高价值场景，PM 应关注模型如何嵌入现有协作工具而非替代它们，并评估自身产品与 Jira/Confluence 生态的集成机会。",
+          "en": "Enterprise knowledge management is a high-value scenario for AI deployment. PMs should focus on how models embed into existing collaboration tools rather than replace them, and assess integration opportunities with the Jira/Confluence ecosystem."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub Changelog: Stacked pull requests GA",
-            "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available"
-          },
-          {
-            "label": "GitHub Blog: ReviewBench",
-            "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+            "label": "OpenAI Atlassian Partnership",
+            "url": "https://openai.com/index/atlassian-partnership"
           }
         ]
       },
       {
         "title": {
-          "zh": "模型分发规则分层：身份换能力与企业套件卡位",
-          "en": "Model distribution tiers: identity-for-capability and enterprise suite positioning"
+          "zh": "AI 代码评审基准与堆叠 PR 同步推进，评审环节标准化加速",
+          "en": "AI Code Review Benchmark and Stacked PRs Advance Together, Review Standardization Accelerates"
         },
         "category": {
-          "zh": "模型平台 / 分发与合规",
-          "en": "Model Platform / Distribution & Compliance"
+          "zh": "开发者工具",
+          "en": "Developer Tools"
         },
         "summary": {
-          "zh": "Anthropic 将 Cyber Verification Program 扩展为三个访问层级，审核通过的安全团队可解锁 Claude Opus 5.5 等最强模型并降低安全分类器拦截；OpenAI 与 Atlassian 扩大合作，把前沿模型接入 Jira、Confluence 等企业知识库。同期社区出现 FreeLLMAPI 聚合 34 家免费提供商的 635 个端点，GitHub 已获 3.1 万星。",
-          "en": "Anthropic expanded its Cyber Verification Program into three access tiers, letting vetted security teams unlock top models like Claude Opus 5.5 with reduced safety-classifier interception. OpenAI expanded its Atlassian partnership to embed frontier models into Jira and Confluence. Meanwhile FreeLLMAPI aggregates 635 endpoints from 34 free providers into one OpenAI-compatible API, with 31k GitHub stars."
+          "zh": "GitHub 推出 ReviewBench，一个基于真实 PR、多源 ground truth 和生产对齐指标的 AI 代码评审基准；同时堆叠式拉取请求正式 GA，预览期间使用堆叠的仓库合并代码量提升 9%，头部仓库时间到合并缩短 5%。",
+          "en": "GitHub launches ReviewBench, an open benchmark for AI code review based on real PRs, multi-source ground truth, and production-aligned metrics; stacked pull requests are now GA, with repositories using stacking seeing 9% more code merged and top repos reducing time-to-merge by 5% during preview."
         },
         "pmInsight": {
-          "zh": "三条动态指向同一件事：模型能力不再均匀分发。Anthropic 用「可信身份换能力」定义双用途模型的分发规则，OpenAI 用企业套件锁定工作流入口，FreeLLMAPI 则从下方把免费额度变成可编程资源。PM 需要重新评估「默认模型选择」策略：合规敏感场景可能被迫走审核通道，成本敏感场景可能被聚合层截流，企业场景则要判断是否绑定 Atlassian 或 Microsoft 生态。",
-          "en": "All three point to one thing: model capability is no longer evenly distributed. Anthropic defines dual-use distribution via 'trusted identity for capability,' OpenAI locks workflow entry points via enterprise suites, and FreeLLMAPI turns free quotas into programmable resources from below. PMs must revisit default-model strategy: compliance-sensitive scenarios may be forced through vetting, cost-sensitive ones may be intercepted by aggregators, and enterprise scenarios require choosing between Atlassian and Microsoft ecosystems."
+          "zh": "代码评审是 AI 编程助手的核心战场，统一基准和结构化操作单元将加速竞争与优化。PM 应关注评审代理的准确率与可解释性，并考虑如何将堆叠 PR 纳入自身工作流。",
+          "en": "Code review is a core battleground for AI coding assistants. Unified benchmarks and structured operation units will accelerate competition and optimization. PMs should focus on review agent accuracy and explainability, and consider incorporating stacked PRs into their workflows."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Anthropic: Cyber Verification Program",
-            "url": "https://www.anthropic.com/news/cyber-verification-program"
+            "label": "ReviewBench",
+            "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
           },
           {
-            "label": "OpenAI: Atlassian partnership",
-            "url": "https://openai.com/index/atlassian-partnership"
-          },
-          {
-            "label": "FreeLLMAPI",
-            "url": "https://github.com/tashfeenahmed/freellmapi"
+            "label": "Stacked PRs GA",
+            "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available"
           }
         ]
       }
@@ -167,58 +155,58 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "为代理产品内置「可审计记忆层」",
-          "en": "Build an auditable memory layer into agent products"
+          "zh": "面向企业知识库的代理技能市场",
+          "en": "Agent Skill Marketplace for Enterprise Knowledge Bases"
         },
         "category": {
-          "zh": "代理基础设施 / 产品机会",
-          "en": "Agent Infrastructure / Product Opportunity"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "claude-mem 以 97,310 星持续在榜，说明跨会话记忆是代理产品的共性缺口。可验证假设：在现有代理产品中加入「会话记忆压缩 + 可查看/可删除的记忆面板」，若目标用户周留存提升且重复解释成本下降，则记忆层应成为默认能力而非插件。",
-          "en": "claude-mem's 97,310 stars and sustained trending show cross-session memory is a common gap in agent products. Verifiable hypothesis: adding 'session memory compression + a viewable/deletable memory panel' to an existing agent product should raise weekly retention and cut repeated-explanation cost; if so, memory should be a default capability, not a plugin."
+          "zh": "结合 OpenAI-Atlassian 合作与 Claude 技能生态的升温，可假设企业团队需要可复用、可审计的代理技能来操作 Jira/Confluence 等知识库。",
+          "en": "Combining OpenAI-Atlassian partnership and the heating Claude skill ecosystem, we hypothesize that enterprise teams need reusable, auditable agent skills to operate knowledge bases like Jira/Confluence."
         },
         "pmInsight": {
-          "zh": "记忆层的机会不在「存更多」，而在「可审计、可删除、可迁移」。企业客户对代理记住什么、忘掉什么有明确合规诉求，谁能把记忆做成可解释的资产，谁就能在代理采购中拿到信任票。建议先用一个垂直场景（如代码评审代理）验证记忆对评审一致性的提升。",
-          "en": "The opportunity in memory is not storing more but being auditable, deletable and portable. Enterprise buyers have clear compliance demands about what agents remember and forget; whoever makes memory an explainable asset earns trust in agent procurement. Start by validating memory's effect on review consistency in one vertical (e.g., code review agents)."
+          "zh": "可验证假设：若提供面向 Jira/Confluence 的标准化技能包（如自动生成工单、会议纪要转任务），企业用户的周活跃度与任务完成率将显著提升。建议先通过小范围试点验证。",
+          "en": "Verifiable hypothesis: If standardized skill packages for Jira/Confluence (e.g., auto-generating tickets, converting meeting notes to tasks) are provided, enterprise users' weekly active rate and task completion rate will significantly improve. Recommend validating through small-scale pilots first."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "thedotmack/claude-mem",
-            "url": "https://github.com/thedotmack/claude-mem"
+            "label": "OpenAI Atlassian Partnership",
+            "url": "https://openai.com/index/atlassian-partnership"
           },
           {
-            "label": "GitHub Blog: ReviewBench",
-            "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+            "label": "claude-mem",
+            "url": "https://github.com/thedotmack/claude-mem"
           }
         ]
       },
       {
         "title": {
-          "zh": "用 ReviewBench 做 AI 代码评审的差异化定位",
-          "en": "Use ReviewBench to differentiate AI code review"
+          "zh": "基于 ReviewBench 的评审代理优化与差异化",
+          "en": "Review Agent Optimization and Differentiation Based on ReviewBench"
         },
         "category": {
-          "zh": "开发者工具 / 评测与定位",
-          "en": "Developer Tools / Benchmarking & Positioning"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "ReviewBench 提供了按严重程度、类别和精确率-召回率偏好拆解的公开基准，而堆叠 PR 正在改变评审节奏。可验证假设：针对「高严重度缺陷召回」而非「评论数量」优化的评审代理，在 ReviewBench 上的高严重度子集得分应显著高于通用代理，且更适配堆叠 PR 的小批量评审。",
-          "en": "ReviewBench offers a public benchmark decomposable by severity, category and precision-recall preference, while stacked PRs are changing review cadence. Verifiable hypothesis: a review agent optimized for high-severity defect recall rather than comment volume should score significantly higher on ReviewBench's high-severity subset and fit small-batch stacked-PR review better."
+          "zh": "GitHub 推出 ReviewBench 为 AI 代码评审提供标准化评估，同时堆叠 PR 的 GA 为评审代理提供了更结构化的操作单元。",
+          "en": "GitHub's ReviewBench provides standardized evaluation for AI code review, while stacked PRs GA offers more structured operation units for review agents."
         },
         "pmInsight": {
-          "zh": "代码评审代理的竞争会很快从「有没有」转向「准不准、吵不吵」。PM 应把 ReviewBench 的高严重度召回作为北极星指标之一，而不是用评论条数衡量价值；同时把堆叠 PR 场景纳入产品默认流程，否则会在头部仓库中被绕过。",
-          "en": "Competition in code review agents will quickly shift from 'does it exist' to 'is it accurate and quiet.' PMs should treat ReviewBench's high-severity recall as a north-star metric rather than counting comments, and make stacked-PR scenarios a default flow or be bypassed in top repos."
+          "zh": "可验证假设：若将评审代理针对堆叠 PR 场景优化，并在 ReviewBench 上取得领先分数，将提升开发者对产品的信任与采用率。建议跟踪基准排名并快速迭代。",
+          "en": "Verifiable hypothesis: If review agents are optimized for stacked PR scenarios and achieve leading scores on ReviewBench, developer trust and adoption will increase. Recommend tracking benchmark rankings and iterating quickly."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Blog: ReviewBench",
+            "label": "ReviewBench",
             "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
           },
           {
-            "label": "GitHub Changelog: Stacked pull requests GA",
+            "label": "Stacked PRs GA",
             "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available"
           }
         ]
@@ -235,26 +223,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套包含 11 个 Claude 技能的免费工具包，能逆向分析任意应用、重建其功能、测试漏洞，并根据用户反馈修复问题，最终生成可出售的应用。适合独立开发者快速克隆和优化 SaaS 产品。",
+          "zh": "一套包含 11 个 Claude 技能的开源工具包，能逆向分析任意应用、重建其功能、检测缺陷，并针对用户痛点进行改进，最终产出可售卖的克隆应用。适合独立开发者快速复刻并优化现有产品。",
           "en": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT."
         },
-        "totalStars": 732,
+        "totalStars": 743,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套包含 11 个 Claude 技能的免费工具包，能逆向分析任意应用、重建其功能、测试漏洞，并根据用户反馈修复问题，最终生成可出售的应用。适合独立开发者快速克隆和优化 SaaS 产品。",
+          "zh": "一套包含 11 个 Claude 技能的开源工具包，能逆向分析任意应用、重建其功能、检测缺陷，并针对用户痛点进行改进，最终产出可售卖的克隆应用。适合独立开发者快速复刻并优化现有产品。",
           "en": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT."
         },
         "todayHighlight": {
-          "zh": "创建仅约 1 个月便获得 732 颗星，今日新增 77 个 fork，在独立黑客和逆向工程社区中快速传播。",
+          "zh": "项目创建仅约 1 个月，总 star 数已达 743，今日在 rising 榜单中被发现，凭借「免费、MIT、无需注册」的轻量叙事在独立开发者社区快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 732 stars、77 forks，topics: agent, agent-skills, app-clone, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 732 stars and 77 forks，topics: agent, agent-skills, app-clone, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 743 stars、79 forks，topics: agent, agent-skills, app-clone, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 743 stars and 79 forks，topics: agent, agent-skills, app-clone, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注这种「克隆+改进」模式如何降低竞品分析和产品迭代的门槛，思考如何利用类似技能快速验证产品创意。",
+          "zh": "产品经理可关注 AI 技能组合如何将「逆向工程—重建—测试—改进」全流程自动化，思考如何用类似思路加速竞品分析和产品迭代。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -275,26 +263,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "将单张插画转化为可动画的 2D 网格虚拟形象，支持眨眼、说话、转头、呼吸和头发摆动。通过编码代理自动准备形象，并在本地编辑器中实时微调，适用于 VTuber 和虚拟角色场景。",
+          "zh": "将单张插画转换为可动画的 2D 网格虚拟形象，支持眨眼、说话、转头、呼吸和头发摆动等效果。通过编码代理自动生成，并在本地编辑器中实时微调，适用于 VTuber 和虚拟角色场景。",
           "en": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor"
         },
-        "totalStars": 416,
+        "totalStars": 418,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "将单张插画转化为可动画的 2D 网格虚拟形象，支持眨眼、说话、转头、呼吸和头发摆动。通过编码代理自动准备形象，并在本地编辑器中实时微调，适用于 VTuber 和虚拟角色场景。",
+          "zh": "将单张插画转换为可动画的 2D 网格虚拟形象，支持眨眼、说话、转头、呼吸和头发摆动等效果。通过编码代理自动生成，并在本地编辑器中实时微调，适用于 VTuber 和虚拟角色场景。",
           "en": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor"
         },
         "todayHighlight": {
-          "zh": "创建仅约 1 个月便积累 416 颗星，今日新增 55 个 fork，在 VTuber 和 2D 动画爱好者中持续升温。",
+          "zh": "项目创建仅约 1 个月，总 star 数达 418，今日在 rising 榜单中被发现，其「一张图生成动态虚拟形象」的轻量工作流在 VTuber 和 2D 动画爱好者中持续升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 416 stars、55 forks，topics: 2d-animation, avatar, claude-code, codex, mesh-deformation，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 416 stars and 55 forks，topics: 2d-animation, avatar, claude-code, codex, mesh-deformation, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 418 stars、55 forks，topics: 2d-animation, avatar, claude-code, codex, mesh-deformation，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 418 stars and 55 forks，topics: 2d-animation, avatar, claude-code, codex, mesh-deformation, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可观察 AI 辅助动画制作如何简化虚拟形象创作流程，探索在社交、直播和游戏中的轻量化应用。",
+          "zh": "产品经理可观察 AI 代理与本地编辑器结合的交互模式，如何降低 2D 动画创作门槛，为虚拟形象类产品提供新思路。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -315,26 +303,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个开源的个人 AI 代理，可通过 iMessage 发消息指挥，拥有自己的计算机并能执行真实任务，还能与信任的人的其他代理协作。基于 Pi、Inkbox、Maritime 和 Composio 构建。",
+          "zh": "一个开源的个人 AI 代理，用户可通过 iMessage 与其对话，它拥有自己的计算机并能执行真实任务，还能与信任的人的其他代理协作。基于 Pi、Inkbox、Maritime 和 Composio 构建。",
           "en": "Open Instinct: an open-source Instinct. A personal agent you text on iMessage, with its own computer and a trusted network of other agents. Built on Pi, Inkbox, Maritime and Composio."
         },
-        "totalStars": 223,
+        "totalStars": 224,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个开源的个人 AI 代理，可通过 iMessage 发消息指挥，拥有自己的计算机并能执行真实任务，还能与信任的人的其他代理协作。基于 Pi、Inkbox、Maritime 和 Composio 构建。",
+          "zh": "一个开源的个人 AI 代理，用户可通过 iMessage 与其对话，它拥有自己的计算机并能执行真实任务，还能与信任的人的其他代理协作。基于 Pi、Inkbox、Maritime 和 Composio 构建。",
           "en": "Open Instinct: an open-source Instinct. A personal agent you text on iMessage, with its own computer and a trusted network of other agents. Built on Pi, Inkbox, Maritime and Composio."
         },
         "todayHighlight": {
-          "zh": "创建仅约 1 个月获得 223 颗星，今日新增 48 个 fork，在个人助理和 AI 代理社区中引起关注。",
+          "zh": "项目创建仅约 1 个月，总 star 数达 224，今日在 rising 榜单中被发现，其「短信即用、拥有独立电脑」的叙事在个人助理和 AI 代理社区中快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 223 stars、48 forks，topics: agents, ai-agents, composio, imessage, inkbox，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 223 stars and 48 forks，topics: agents, ai-agents, composio, imessage, inkbox, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 224 stars、48 forks，topics: agents, ai-agents, composio, imessage, inkbox，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 224 stars and 48 forks，topics: agents, ai-agents, composio, imessage, inkbox, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注个人代理如何通过日常通讯工具（如 iMessage）降低使用门槛，以及多代理协作的潜在产品形态。",
+          "zh": "产品经理可关注个人代理如何通过现有通讯工具（如 iMessage）降低使用门槛，以及多代理协作网络的产品化潜力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -355,26 +343,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个完整的 AI 代理机构，提供从前端开发到 Reddit 社区运营、从创意注入到现实检查等各类专业代理，每个代理都有独特的个性、流程和可交付成果。",
+          "zh": "一个完整的 AI 代理机构工具包，提供从前端开发到社区运营、从创意注入到现实检查等各类专业代理，每个代理都有独特个性、工作流程和可交付成果。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
-        "totalStars": 157999,
+        "totalStars": 158024,
         "language": "Shell",
         "dailyStars": 623,
         "chineseIntro": {
-          "zh": "一个完整的 AI 代理机构，提供从前端开发到 Reddit 社区运营、从创意注入到现实检查等各类专业代理，每个代理都有独特的个性、流程和可交付成果。",
+          "zh": "一个完整的 AI 代理机构工具包，提供从前端开发到社区运营、从创意注入到现实检查等各类专业代理，每个代理都有独特个性、工作流程和可交付成果。",
           "en": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
         },
         "todayHighlight": {
-          "zh": "已创建约 12 个月，总 star 数高达 157,999，今日新增 623 星，在 GitHub 全球趋势榜排名第 10，持续获得关注。",
-          "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 157k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 623 星."
+          "zh": "项目已创建约 12 个月，总 star 数高达 158k，今日新增 623 星，位列全球趋势榜第 10，持续获得关注，反映出市场对专业化 AI 代理组合的旺盛需求。",
+          "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 158k+，持续占据 AI 开源热门榜单, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 623 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 157,999 stars、25,463 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 157,999 stars and 25,463 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 158,024 stars、25,465 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 158,024 stars and 25,465 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可研究这种「多角色代理」模式如何模拟团队协作，思考如何将专业分工的 AI 代理集成到工作流中。",
+          "zh": "产品经理可研究如何将不同职能的 AI 代理产品化、打包成「虚拟团队」，并思考其交付物标准化对工作流的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -395,26 +383,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程代理提供设计指导的语言，包含 1 个技能、24 个命令、实时浏览器迭代和 60 条确定性检测规则，旨在提升 AI 生成前端代码的设计质量。",
+          "zh": "为 AI 编程代理提供设计指导的语言和工具集，包含 1 个技能、24 个命令、实时浏览器迭代和 60 条确定性检测规则，旨在提升 AI 生成前端代码的设计质量。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
-        "totalStars": 77895,
+        "totalStars": 77943,
         "language": "JavaScript",
         "dailyStars": 616,
         "chineseIntro": {
-          "zh": "为 AI 编程代理提供设计指导的语言，包含 1 个技能、24 个命令、实时浏览器迭代和 60 条确定性检测规则，旨在提升 AI 生成前端代码的设计质量。",
+          "zh": "为 AI 编程代理提供设计指导的语言和工具集，包含 1 个技能、24 个命令、实时浏览器迭代和 60 条确定性检测规则，旨在提升 AI 生成前端代码的设计质量。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
         "todayHighlight": {
-          "zh": "已创建约 11 个月，总 star 数达 77,895，今日新增 616 星，在 GitHub 全球趋势榜排名第 5，设计技能生态位持续升温。",
+          "zh": "项目已创建约 11 个月，总 star 数达 77.9k，今日新增 616 星，位列全球趋势榜第 5，随着 AI 编程普及，对生成界面审美和规范的需求持续升温。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 77k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 616 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 77,895 stars、4,634 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 77,895 stars and 4,634 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 77,943 stars、4,636 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 77,943 stars and 4,636 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注 AI 生成界面的设计标准化趋势，思考如何通过设计规则提升 AI 产出的可用性和美观度。",
+          "zh": "产品经理应关注 AI 生成内容的质量控制工具，思考如何将设计规范嵌入 AI 工作流，以提升最终产品的用户体验。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -435,26 +423,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 代理赋予 CAD 超能力，通过文本描述生成机械工程和机器人领域的 CAD 模型，支持 STEP、STL 等格式。",
+          "zh": "为 AI 代理赋予 CAD 超能力，通过文本描述生成机械工程领域的 CAD 模型，支持 STEP、STL 等格式，适用于机器人、机械设计等场景。",
           "en": "Star earthtojake / text-to-cad Give your agent CAD superpowers."
         },
-        "totalStars": 18128,
+        "totalStars": 18163,
         "language": "Python",
         "dailyStars": 619,
         "chineseIntro": {
-          "zh": "为 AI 代理赋予 CAD 超能力，通过文本描述生成机械工程和机器人领域的 CAD 模型，支持 STEP、STL 等格式。",
+          "zh": "为 AI 代理赋予 CAD 超能力，通过文本描述生成机械工程领域的 CAD 模型，支持 STEP、STL 等格式，适用于机器人、机械设计等场景。",
           "en": "Star earthtojake / text-to-cad Give your agent CAD superpowers."
         },
         "todayHighlight": {
-          "zh": "创建约 6 个月，总 star 数 18,128，今日新增 619 星，在 GitHub 全球趋势榜排名第 3，文本到 CAD 的叙事在工程社区快速传播。",
+          "zh": "项目创建约 6 个月，总 star 数达 18.1k，今日新增 619 星，位列全球趋势榜第 3，其「文本到 CAD」的叙事在工程和 AI 代理社区中快速传播。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 619 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,128 stars、1,811 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,128 stars and 1,811 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,163 stars、1,811 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,163 stars and 1,811 forks，topics: agents, ai-agents, cad, mechanical-engineering, robotics, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可观察 AI 如何降低专业设计工具的使用门槛，探索在制造业和硬件创新中的产品机会。",
+          "zh": "产品经理可观察 AI 代理如何进入专业工程领域，思考文本生成 3D 模型对传统设计流程的潜在影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -475,26 +463,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 代理提供跨会话的持久化上下文，捕获代理在会话中的所有操作，用 AI 压缩后注入未来会话，支持 Claude Code、OpenClaw、Codex 等多种代理。",
+          "zh": "为 AI 代理提供跨会话的持久化上下文记忆，自动捕获代理在会话中的行为，用 AI 压缩后注入未来会话，兼容 Claude Code、Codex、Gemini 等多种代理。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
-        "totalStars": 97310,
+        "totalStars": 97339,
         "language": "TypeScript",
         "dailyStars": 534,
         "chineseIntro": {
-          "zh": "为 AI 代理提供跨会话的持久化上下文，捕获代理在会话中的所有操作，用 AI 压缩后注入未来会话，支持 Claude Code、OpenClaw、Codex 等多种代理。",
+          "zh": "为 AI 代理提供跨会话的持久化上下文记忆，自动捕获代理在会话中的行为，用 AI 压缩后注入未来会话，兼容 Claude Code、Codex、Gemini 等多种代理。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
         "todayHighlight": {
-          "zh": "已创建约 13 个月，总 star 数达 97,310，今日新增 534 星，在 GitHub 全球趋势榜排名第 6，作为 AI 代理记忆层持续获得关注。",
+          "zh": "项目已创建约 13 个月，总 star 数达 97.3k，今日新增 534 星，位列全球趋势榜第 6，随着多代理生态发展，长期记忆成为关键基础组件，持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 97k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 534 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 97,310 stars、8,574 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 97,310 stars and 8,574 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 97,339 stars、8,579 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 97,339 stars and 8,579 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理应关注代理记忆能力如何提升长期任务的连贯性，思考如何将持久化上下文集成到 AI 产品中。",
+          "zh": "产品经理应关注 AI 记忆层如何提升代理的连续性和个性化，思考其在多会话产品中的集成价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -515,26 +503,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个让 AI 编程代理输出更简洁、直击答案的技能，避免冗长解释，适合需要快速获取结果的开发者。",
+          "zh": "一个让 AI 编程代理输出更简洁、直击答案的技能，避免冗长铺垫，适合需要快速获取核心信息的开发者。",
           "en": "Star ayghri / i-have-adhd A skill to stop your coding agent from burying the answer. ADHD-friendly output."
         },
-        "totalStars": 54573,
+        "totalStars": 54607,
         "language": "Python",
         "dailyStars": 326,
         "chineseIntro": {
-          "zh": "一个让 AI 编程代理输出更简洁、直击答案的技能，避免冗长解释，适合需要快速获取结果的开发者。",
+          "zh": "一个让 AI 编程代理输出更简洁、直击答案的技能，避免冗长铺垫，适合需要快速获取核心信息的开发者。",
           "en": "Star ayghri / i-have-adhd A skill to stop your coding agent from burying the answer. ADHD-friendly output."
         },
         "todayHighlight": {
-          "zh": "创建约 5 个月，总 star 数 54,573，今日新增 326 星，在 GitHub 全球趋势榜排名第 7，ADHD 友好输出概念在开发者中引起共鸣。",
+          "zh": "项目创建约 5 个月，总 star 数达 54.6k，今日新增 326 星，位列全球趋势榜第 7，其「ADHD 友好输出」的叙事在开发者社区中引发共鸣，持续传播。",
           "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 54k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 326 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,573 stars、3,134 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,573 stars and 3,134 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,607 stars、3,135 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,607 stars and 3,135 forks，topics: adhd, claude-, claude-code-plugin, claude-skills, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可思考如何通过提示工程优化 AI 交互效率，满足用户对简洁输出的需求。",
+          "zh": "产品经理可思考如何通过提示词或技能设计，优化 AI 输出的信息密度和可读性，提升用户效率。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -555,26 +543,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 Claude Code、Codex、GitHub Copilot 等代理提供编辑级图表设计，包含 42 种图表类型，输出自包含的 HTML + SVG，避免 Mermaid 的粗糙感。",
+          "zh": "为 Claude Code、Codex、GitHub Copilot 等工具提供编辑级图表设计技能，支持 42 种图表类型，输出自包含的 HTML + SVG，避免 Mermaid 的粗糙感。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
-        "totalStars": 44247,
+        "totalStars": 44307,
         "language": "HTML",
         "dailyStars": 228,
         "chineseIntro": {
-          "zh": "为 Claude Code、Codex、GitHub Copilot 等代理提供编辑级图表设计，包含 42 种图表类型，输出自包含的 HTML + SVG，避免 Mermaid 的粗糙感。",
+          "zh": "为 Claude Code、Codex、GitHub Copilot 等工具提供编辑级图表设计技能，支持 42 种图表类型，输出自包含的 HTML + SVG，避免 Mermaid 的粗糙感。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
         "todayHighlight": {
-          "zh": "创建约 6 个月，总 star 数 44,247，今日新增 228 星，在 GitHub 全球趋势榜排名第 12，在数据可视化社区中持续获得关注。",
+          "zh": "项目创建约 6 个月，总 star 数达 44.3k，今日新增 228 星，位列全球趋势榜第 12，其「让设计师不讨厌的图表」定位在开发者和设计社区中持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 12 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 228 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,247 stars、2,849 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,247 stars and 2,849 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,307 stars、2,852 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,307 stars and 2,852 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注 AI 生成图表的品质提升，思考如何将专业设计规则融入自动化文档和报告工具。",
+          "zh": "产品经理可关注 AI 生成图表的质量提升，思考如何将专业设计规范融入自动化文档和可视化流程。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -595,26 +583,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek 开源的高性能 GPU 张量核心内核库，统一了现代大语言模型的关键计算原语，包括 FP8、FP4、BF16 GEMM 和融合 MoE 等，通过 DeepJIT 运行时编译，无需安装时 CUDA 编译。",
+          "zh": "DeepSeek 开源的高性能 GPU 张量核心内核库，统一了现代大语言模型的关键计算原语，包括 FP8/FP4/BF16 GEMM、融合 MoE 等，通过运行时编译简化安装。",
           "en": "Star deepseek-ai / DeepGEMM DeepGEMM: clean and efficient BLAS kernel library on GPU"
         },
-        "totalStars": 8791,
+        "totalStars": 8806,
         "language": "Cuda",
         "dailyStars": 199,
         "chineseIntro": {
-          "zh": "DeepSeek 开源的高性能 GPU 张量核心内核库，统一了现代大语言模型的关键计算原语，包括 FP8、FP4、BF16 GEMM 和融合 MoE 等，通过 DeepJIT 运行时编译，无需安装时 CUDA 编译。",
+          "zh": "DeepSeek 开源的高性能 GPU 张量核心内核库，统一了现代大语言模型的关键计算原语，包括 FP8/FP4/BF16 GEMM、融合 MoE 等，通过运行时编译简化安装。",
           "en": "Star deepseek-ai / DeepGEMM DeepGEMM: clean and efficient BLAS kernel library on GPU"
         },
         "todayHighlight": {
-          "zh": "已创建约 20 个月，总 star 数 8,791，今日新增 199 星，在 GitHub 全球趋势榜排名第 9，作为 AI 基础设施组件持续获得关注。",
+          "zh": "项目已创建约 20 个月，总 star 数达 8.8k，今日新增 199 星，位列全球趋势榜第 9，作为 DeepSeek 生态的基础组件，随大模型训练和推理需求持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 9 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 199 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,791 stars、1,387 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,791 stars and 1,387 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,806 stars、1,387 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,806 stars and 1,387 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可了解底层计算优化如何影响 AI 模型推理效率，关注基础设施层对产品性能的支撑作用。",
+          "zh": "产品经理可了解底层计算优化如何影响 AI 应用的性能和成本，为技术选型提供参考。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -629,43 +617,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "companyUpdates": [
       {
         "title": {
-          "zh": "Anthropic: Expanding the Cyber Verification Program",
-          "en": "Anthropic: Expanding the Cyber Verification Program"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "政策/安全",
-          "en": "政策/安全"
-        },
-        "summary": {
-          "zh": "Anthropic 将 Cyber Verification Program 扩展为三个访问层级，通过审核的安全团队可解锁 Claude Opus 5.5 等最强模型并降低安全分类器拦截。这意味着通用模型的安全护栏开始按身份分层，安全从业者能拿到更接近原始能力的模型。",
-          "en": "We`re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. The program now consists of three access tiers, which allow security teams to apply for the level of access that best suits their work. Each tier includes access to our most capable models, including Claude Opus 5.5, C"
-        },
-        "chineseIntro": {
-          "zh": "Anthropic 将 Cyber Verification Program 扩展为三个访问层级，通过审核的安全团队可解锁 Claude Opus 5.5 等最强模型并降低安全分类器拦截。这意味着通用模型的安全护栏开始按身份分层，安全从业者能拿到更接近原始能力的模型。",
-          "en": "We`re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. The program now consists of three access tiers, which allow security teams to apply for the level of access that best suits their work. Each tier includes access to our most capable models, including Claude Opus 5.5, C"
-        },
-        "todayHighlight": {
-          "zh": "在各国加强 AI 网络安全监管的背景下，Anthropic 用「可信身份换能力」的方式抢先定义双用途模型的分发规则，可能成为行业合规范式。",
-          "en": "在各国加强 AI 网络安全监管的背景下，Anthropic 用「可信身份换能力」的方式抢先定义双用途模型的分发规则，可能成为行业合规范式。"
-        },
-        "pmInsight": {
-          "zh": "若你的产品面向安全、渗透测试或漏洞研究场景，应尽早评估申请 CVP 层级，并把「模型能力随认证等级变化」纳入产品权限与定价设计。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Anthropic",
-            "url": "https://www.anthropic.com/news/cyber-verification-program"
-          }
-        ]
-      },
-      {
-        "title": {
           "zh": "OpenAI: Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
           "en": "OpenAI: Atlassian and OpenAI expand partnership to turn enterprise knowledge into action"
         },
@@ -678,19 +629,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Atlassian 与 OpenAI 扩大合作，把前沿模型接入 Jira、Confluence 等企业知识库，让团队在规划、构建和交付流程中直接调用 AI。这意味着 OpenAI 正通过办公协作套件深入企业工作流，而非只做通用聊天入口。",
+          "zh": "OpenAI 与 Atlassian 扩大合作，将前沿模型接入企业知识库，帮助团队规划、构建和交付工作。这意味着 OpenAI 正通过深度集成企业协作工具来加速模型在真实工作流中的落地。",
           "en": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
         },
         "chineseIntro": {
-          "zh": "Atlassian 与 OpenAI 扩大合作，把前沿模型接入 Jira、Confluence 等企业知识库，让团队在规划、构建和交付流程中直接调用 AI。这意味着 OpenAI 正通过办公协作套件深入企业工作流，而非只做通用聊天入口。",
+          "zh": "OpenAI 与 Atlassian 扩大合作，将前沿模型接入企业知识库，帮助团队规划、构建和交付工作。这意味着 OpenAI 正通过深度集成企业协作工具来加速模型在真实工作流中的落地。",
           "en": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
         },
         "todayHighlight": {
-          "zh": "企业知识是 AI 落地最难的场景之一，OpenAI 借 Atlassian 的既有工作流数据卡位，直接与 Microsoft 365 Copilot 在企业协作层正面竞争。",
-          "en": "企业知识是 AI 落地最难的场景之一，OpenAI 借 Atlassian 的既有工作流数据卡位，直接与 Microsoft 365 Copilot 在企业协作层正面竞争。"
+          "zh": "企业知识管理是 AI 落地的高价值场景，此次合作可能重塑 Jira/Confluence 生态内的 AI 竞争格局。",
+          "en": "企业知识管理是 AI 落地的高价值场景，此次合作可能重塑 Jira/Confluence 生态内的 AI 竞争格局。"
         },
         "pmInsight": {
-          "zh": "做企业 AI 产品的团队应关注 Atlassian 开放了哪些 API 与权限模型，判断能否把自家能力嵌入 Jira/Confluence 工作流，而不是另建一个入口。",
+          "zh": "PM 应评估自家产品是否依赖 Atlassian 生态，并思考如何将模型能力嵌入现有工作流而非另建入口。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -715,19 +666,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 堆叠式 Pull Request 正式 GA，支持把大改动拆成可独立评审、合并的小 PR，并改进了 rebase 保留审批、签名提交和绕过权限。预览期数据显示使用堆叠的仓库合并代码量提升 9%，头部仓库采用率已超三分之二。",
+          "zh": "GitHub 堆叠式拉取请求正式 GA，支持将大变更拆分为独立可审的小 PR 并合并。预览期间使用堆叠的仓库合并代码量提升 9%，头部仓库时间到合并缩短 5%。",
           "en": "GitHub stacked pull requests are now generally available. Break large changes into smaller, focused pull requests that you can review independently and merge together. Since the feature went into public&#8230; The post Stacked pull requests generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 堆叠式 Pull Request 正式 GA，支持把大改动拆成可独立评审、合并的小 PR，并改进了 rebase 保留审批、签名提交和绕过权限。预览期数据显示使用堆叠的仓库合并代码量提升 9%，头部仓库采用率已超三分之二。",
+          "zh": "GitHub 堆叠式拉取请求正式 GA，支持将大变更拆分为独立可审的小 PR 并合并。预览期间使用堆叠的仓库合并代码量提升 9%，头部仓库时间到合并缩短 5%。",
           "en": "GitHub stacked pull requests are now generally available. Break large changes into smaller, focused pull requests that you can review independently and merge together. Since the feature went into public&#8230; The post Stacked pull requests generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "堆叠 PR 从社区工具变成 GitHub 原生能力，会改变大型仓库的代码评审与 CI 节奏，也是 AI 代码评审代理必须适配的新工作流。",
-          "en": "堆叠 PR 从社区工具变成 GitHub 原生能力，会改变大型仓库的代码评审与 CI 节奏，也是 AI 代码评审代理必须适配的新工作流。"
+          "zh": "代码评审是 AI 编程助手的关键战场，堆叠 PR 的 GA 为 AI 自动评审和合并提供了更结构化的操作单元。",
+          "en": "代码评审是 AI 编程助手的关键战场，堆叠 PR 的 GA 为 AI 自动评审和合并提供了更结构化的操作单元。"
         },
         "pmInsight": {
-          "zh": "如果你的产品涉及代码评审、CI 或 AI 编程助手，应尽快支持堆叠 PR 的依赖关系解析，否则在头部仓库的评审场景中会被边缘化。",
+          "zh": "PM 可关注堆叠 PR 的元数据（如依赖关系、审批状态），设计 AI 辅助的堆叠拆分与合并建议功能。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -752,19 +703,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "开源项目 FreeLLMAPI 聚合 34 家免费 LLM 提供商的 635 个模型端点，统一为 OpenAI 兼容的 /v1 接口，并带智能路由、自动故障转移和密钥加密，GitHub 已获 3.1 万星。它把「免费模型额度」变成可编程资源，降低了实验和多模型对比的门槛。",
+          "zh": "FreeLLMAPI 项目在 HN 上发布，提供统一 OpenAI 兼容接口，聚合 34 个免费 LLM 提供商的 635 个模型端点，支持智能路由和自动故障转移。这降低了开发者实验多模型的门槛。",
           "en": "Article URL: https://github.com/tashfeenahmed/freellmapi Comments URL: https://news.ycombinator.com/item?id=49989005 Points: 1 # Comments: 1"
         },
         "chineseIntro": {
-          "zh": "开源项目 FreeLLMAPI 聚合 34 家免费 LLM 提供商的 635 个模型端点，统一为 OpenAI 兼容的 /v1 接口，并带智能路由、自动故障转移和密钥加密，GitHub 已获 3.1 万星。它把「免费模型额度」变成可编程资源，降低了实验和多模型对比的门槛。",
+          "zh": "FreeLLMAPI 项目在 HN 上发布，提供统一 OpenAI 兼容接口，聚合 34 个免费 LLM 提供商的 635 个模型端点，支持智能路由和自动故障转移。这降低了开发者实验多模型的门槛。",
           "en": "Article URL: https://github.com/tashfeenahmed/freellmapi Comments URL: https://news.ycombinator.com/item?id=49989005 Points: 1 # Comments: 1"
         },
         "todayHighlight": {
-          "zh": "免费额度聚合层出现，说明模型 API 的竞争已从能力转向分发与成本，可能倒逼厂商重新设计免费层和限流策略。",
-          "en": "免费额度聚合层出现，说明模型 API 的竞争已从能力转向分发与成本，可能倒逼厂商重新设计免费层和限流策略。"
+          "zh": "免费多模型聚合可能冲击现有 API 聚合商的定价策略，并加速模型商品化趋势。",
+          "en": "免费多模型聚合可能冲击现有 API 聚合商的定价策略，并加速模型商品化趋势。"
         },
         "pmInsight": {
-          "zh": "做原型或成本敏感型功能时，可评估用此类聚合层做多模型 fallback，但需注意其「仅限个人实验」的许可限制，商用前务必确认各上游条款。",
+          "zh": "PM 可测试该 API 作为低成本原型验证工具，但需注意其仅限个人实验，商用需评估合规与稳定性。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -789,19 +740,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "社区消息称 Mistral Large 4 已发布，并将在月底开放权重，代号 Chonky，被视为欧洲重新加入前沿模型竞争的信号。若属实，开源权重阵营将再添一个接近闭源水平的大模型。",
+          "zh": "Reddit 社区热议 Mistral Large 4 发布，并预告月底将开放权重。这标志着欧洲模型厂商在开源大模型领域再次发力。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wzginu/europe_rejoins_the_fight_with_chonky_mistral/\"> <img src=\"https://external-preview.redd.it/ufkI5GrlxXnH9TBfIupjOlc3go-lnkd44PLNd0Pdsjs.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0f9bbd2141c0a5cf024a7f0901b7c4b5254a0683\" alt=\"Europe rejoins the fight with Chonky! Mistral Large 4 Released, Open weights end of month, who’s ready?\" titl"
         },
         "chineseIntro": {
-          "zh": "社区消息称 Mistral Large 4 已发布，并将在月底开放权重，代号 Chonky，被视为欧洲重新加入前沿模型竞争的信号。若属实，开源权重阵营将再添一个接近闭源水平的大模型。",
+          "zh": "Reddit 社区热议 Mistral Large 4 发布，并预告月底将开放权重。这标志着欧洲模型厂商在开源大模型领域再次发力。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1wzginu/europe_rejoins_the_fight_with_chonky_mistral/\"> <img src=\"https://external-preview.redd.it/ufkI5GrlxXnH9TBfIupjOlc3go-lnkd44PLNd0Pdsjs.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0f9bbd2141c0a5cf024a7f0901b7c4b5254a0683\" alt=\"Europe rejoins the fight with Chonky! Mistral Large 4 Released, Open weights end of month, who’s ready?\" titl"
         },
         "todayHighlight": {
-          "zh": "Mistral 若在月底放出 Large 4 权重，将直接冲击 Llama 与 Qwen 在开源生态中的默认地位，并影响欧洲主权 AI 的选型。",
-          "en": "Mistral 若在月底放出 Large 4 权重，将直接冲击 Llama 与 Qwen 在开源生态中的默认地位，并影响欧洲主权 AI 的选型。"
+          "zh": "Mistral 若开放 Large 4 权重，将直接挑战 Llama 和 Qwen 在开源生态的主导地位，影响企业自部署选择。",
+          "en": "Mistral 若开放 Large 4 权重，将直接挑战 Llama 和 Qwen 在开源生态的主导地位，影响企业自部署选择。"
         },
         "pmInsight": {
-          "zh": "在模型选型上应提前准备 Mistral Large 4 的评测计划，尤其关注其许可证是否允许商用，以及推理成本是否适合替换现有闭源调用。",
+          "zh": "PM 应关注开放权重的许可证条款和推理成本，评估是否将其纳入多模型备选方案以降低对闭源 API 的依赖。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -826,19 +777,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "GitHub 推出 ReviewBench，基于真实 PR、多源 ground truth 和生产对齐指标，用于评测 AI 代码评审代理。它试图解决「AI 评审器谁更强」缺乏统一标准的问题，可按严重程度、类别和精确率-召回率偏好拆解。",
+          "zh": "GitHub 推出 ReviewBench，一个基于真实 PR、多源 ground truth 和生产对齐指标的 AI 代码评审基准。这为评估代码评审代理提供了标准化工具。",
           "en": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 推出 ReviewBench，基于真实 PR、多源 ground truth 和生产对齐指标，用于评测 AI 代码评审代理。它试图解决「AI 评审器谁更强」缺乏统一标准的问题，可按严重程度、类别和精确率-召回率偏好拆解。",
+          "zh": "GitHub 推出 ReviewBench，一个基于真实 PR、多源 ground truth 和生产对齐指标的 AI 代码评审基准。这为评估代码评审代理提供了标准化工具。",
           "en": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "AI 代码评审正从功能演示进入可量化竞争阶段，GitHub 掌握 PR 数据优势，其基准可能成为该赛道的默认评分标准。",
-          "en": "AI 代码评审正从功能演示进入可量化竞争阶段，GitHub 掌握 PR 数据优势，其基准可能成为该赛道的默认评分标准。"
+          "zh": "代码评审是 AI 编程助手的核心能力，统一基准将加速该领域的竞争与优化，推动产品差异化。",
+          "en": "代码评审是 AI 编程助手的核心能力，统一基准将加速该领域的竞争与优化，推动产品差异化。"
         },
         "pmInsight": {
-          "zh": "若你在做代码评审代理，应尽早用 ReviewBench 跑分并公开结果，把「少噪音、抓关键问题」的指标做成产品卖点，而非只宣传发现问题数量。",
+          "zh": "PM 可用 ReviewBench 对比不同代码评审代理的精确率与召回率，指导产品选型或自研模型的优化方向。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -846,6 +797,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Blog",
             "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Anthropic: Claude Frontier Academy: &#36;100M to train 10,000 engineers",
+          "en": "Anthropic: Claude Frontier Academy: &#36;100M to train 10,000 engineers"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "Model / capability"
+        },
+        "summary": {
+          "zh": "Anthropic 发布「Claude Frontier Academy: &#36;100M to train 10,000 engineers」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic`s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others.Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a &#36;100 milli"
+        },
+        "chineseIntro": {
+          "zh": "Anthropic 发布「Claude Frontier Academy: &#36;100M to train 10,000 engineers」，面向 AI 产品从业者值得跟进其能力边界与商业化叙事。",
+          "en": "The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic`s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others.Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a &#36;100 milli"
+        },
+        "todayHighlight": {
+          "zh": "发布于 Fri, 02 Oct 2026 23:01:00 GMT；属于「新模型/新能力」类型更新，反映 Anthropic 在当前 AI 竞争中的重点投入方向。",
+          "en": "发布于 Fri, 02 Oct 2026 23:01:00 GMT；属于「新模型/新能力」类型更新，反映 Anthropic 在当前 AI 竞争中的重点投入方向。"
+        },
+        "pmInsight": {
+          "zh": "关注新能力是否改变用户默认预期，以及独立产品应差异化补位的体验环节。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Anthropic",
+            "url": "https://www.anthropic.com/news/claude-frontier-academy"
           }
         ]
       }
