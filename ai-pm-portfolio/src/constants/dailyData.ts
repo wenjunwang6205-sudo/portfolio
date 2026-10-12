@@ -44,102 +44,106 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 技能生态升温，企业级治理与本地推理并行",
-      "en": "AI PM Daily: Agent Skill Ecosystem Heats Up, Enterprise Governance and Local Inference Advance in Parallel"
+      "zh": "AI 产品经理日报：Agent 技能化与本地化双线升温",
+      "en": "AI PM Daily: Agent Skills and Local Inference Gain Momentum"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 能力从「能做什么」转向「怎么管、怎么便宜地做」。GitHub 上 Agent Skills 类项目密集冒头，企业侧 Copilot 开始提供模型与 MCP 的集中管控，模型侧则出现成本与本地速度的明显优化信号。",
-      "en": "Today's thread: agent capabilities are shifting from 'what can it do' to 'how to govern it and do it cheaply.' Agent Skills projects are clustering on GitHub, Copilot is adding centralized model and MCP controls for enterprises, and model-side signals show clear cost and local-speed improvements."
+      "zh": "今日主线是 Agent 能力从「模型调用」转向「技能封装」与「本地可控」：GitHub 上多个 Agent Skill 项目快速起量，同时本地推理优化与企业级管控成为公司动态焦点。",
+      "en": "Today's theme: agent capabilities are shifting from model calls to skill packaging and local controllability, with multiple Agent Skill repos rising on GitHub and enterprise governance plus local inference optimization in company updates."
     },
     "keyTakeaway": {
-      "zh": "Agent 生态正从单点工具走向「技能化 + 可治理」：一边是 Claude Code / Codex 等宿主上的技能类项目快速积累，一边是企业级模型与 MCP 管控落地，同时本地推理与代理成本优化在削弱云端 API 的默认优势。",
-      "en": "The agent ecosystem is moving from point tools to 'skill-ified and governable': skill projects on Claude Code / Codex hosts are accumulating fast, enterprise model and MCP controls are landing, and local inference plus agent cost optimization are eroding the default advantage of cloud APIs."
+      "zh": "Agent 生态正沿两条线升温：一是以 Skill 形式封装垂直能力（PPT、图表、屏幕指引），二是本地推理与企业级管控同步推进，产品经理应关注「可组合技能 + 可控部署」的组合机会。",
+      "en": "The agent ecosystem is heating up along two lines: vertical capabilities packaged as Skills (PPT, diagrams, on-screen guidance), and local inference plus enterprise governance advancing in parallel. PMs should watch the combination of composable skills and controllable deployment."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent Skills 生态密集冒头，可视化与文档产出成高频场景",
-          "en": "Agent Skills Ecosystem Clusters, Visualization and Document Output Emerge as High-Frequency Scenarios"
+          "zh": "Agent Skill 项目密集上榜，垂直能力封装成新竞争点",
+          "en": "Agent Skill Projects Cluster on Trending, Vertical Capability Packaging Becomes New Battleground"
         },
         "category": {
-          "zh": "开发者生态",
-          "en": "Developer Ecosystem"
+          "zh": "开源与开发者生态",
+          "en": "Open Source & Developer Ecosystem"
         },
         "summary": {
-          "zh": "GitHub 趋势榜上，面向 Claude Code / Codex / Cursor 的技能类项目集中出现：diagram-design 今日新增 1083 stars、总 star 超 5 万，提供 44 种图表类型并输出自包含 HTML+SVG；luobo-ppt 可将文章或旧 PPT 转为可编辑原生 PPT；big-arrow-on-the-screen 让代理在屏幕上画箭头指示操作位置。三者均创建约一个月，分别获得 5 万、274、630 stars。",
-          "en": "On GitHub trending, skill projects for Claude Code / Codex / Cursor are clustering: diagram-design added 1,083 stars today with 50k+ total, offering 44 diagram types as self-contained HTML+SVG; luobo-ppt converts articles or old decks into editable native PPT; big-arrow-on-the-screen lets agents draw on-screen arrows to indicate actions. All three are about a month old, with 50k, 274, and 630 stars respectively."
+          "zh": "GitHub 趋势榜出现多个 Agent Skill 项目：luobo-ppt（文章转可编辑 PPT，278 星）、diagram-design（44 种图表类型，今日新增 1083 星、总星超 5 万）、big-arrow-on-the-screen（AI 代理屏幕指引，633 星）。这些项目均以「技能」形式为 Claude、Codex、Gemini CLI 等运行时提供垂直能力。",
+          "en": "Multiple Agent Skill projects appeared on GitHub trending: luobo-ppt (article-to-editable-PPT, 278 stars), diagram-design (44 diagram types, +1083 stars today, 51k total), and big-arrow-on-the-screen (on-screen guidance for AI agents, 633 stars). All provide vertical capabilities as 'skills' for runtimes like Claude, Codex, and Gemini CLI."
         },
         "pmInsight": {
-          "zh": "技能正在成为 Agent 能力分发的标准单元，且集中在「可视化输出」和「文档产出」这类高频、可验证的职场场景。PM 应评估自家 Agent 是否需要一个技能市场或技能注册表，并优先补齐图表、PPT、演示指示这类高感知度技能。",
-          "en": "Skills are becoming the standard unit for distributing agent capabilities, concentrated in high-frequency, verifiable workplace scenarios like visual output and document production. PMs should assess whether their agent needs a skill marketplace or registry, and prioritize high-perception skills like diagrams, PPT, and presentation pointers."
+          "zh": "Agent 竞争正从模型能力转向技能生态，谁能提供高质量、可组合的垂直技能，谁就能在 Agent 工作流中占据入口。PM 应评估自身产品能力是否适合封装为 Skill，并考虑跨运行时兼容。",
+          "en": "Agent competition is shifting from model capability to skill ecosystem. Whoever provides high-quality, composable vertical skills can capture the entry point in agent workflows. PMs should assess whether their product capabilities can be packaged as Skills and consider cross-runtime compatibility."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "diagram-design",
-            "url": "https://github.com/cathrynlavery/diagram-design"
-          },
-          {
-            "label": "luobo-ppt",
+            "label": "GitHub: zhouwei713/luobo-ppt",
             "url": "https://github.com/zhouwei713/luobo-ppt"
           },
           {
-            "label": "big-arrow-on-the-screen",
+            "label": "GitHub: cathrynlavery/diagram-design",
+            "url": "https://github.com/cathrynlavery/diagram-design"
+          },
+          {
+            "label": "GitHub: franzenzenhofer/big-arrow-on-the-screen",
             "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen"
           }
         ]
       },
       {
         "title": {
-          "zh": "Copilot for JetBrains 加入企业级模型管控与 MCP 开关",
-          "en": "Copilot for JetBrains Adds Enterprise Model Controls and MCP Toggle"
+          "zh": "本地推理优化与低成本定制模型并行推进",
+          "en": "Local Inference Optimization and Low-Cost Custom Models Advance in Parallel"
         },
         "category": {
-          "zh": "企业 AI 治理",
-          "en": "Enterprise AI Governance"
+          "zh": "社区与研究信号",
+          "en": "Community & Research Signals"
         },
         "summary": {
-          "zh": "GitHub 为 JetBrains 版 Copilot 增加企业级默认模型管理、MCP 服务器启动开关，以及从诊断菜单一键修复问题的能力。企业可统一控制 AI 编码助手的默认模型，开发者可更灵活管理工具链。",
-          "en": "GitHub added enterprise default model management, an MCP server startup toggle, and one-click fix from the diagnostics menu to Copilot for JetBrains. Enterprises can centrally control the default model of the AI coding assistant, while developers gain more flexible toolchain management."
+          "zh": "Reddit LocalLLaMA 社区通过 Project Maya 的 Strata 优化，使 GLM5.3 Flash 本地推理从约 10 tok/s 提升到 30 tok/s；Hugging Face 用户以 16 美元成本训练出 0.8B 提示重写模型，替代 9B 模型并在 CPU 运行，输出有效率 99.7%，随后又创建五个模型公开在 Hub。",
+          "en": "Reddit LocalLLaMA community optimized GLM5.3 Flash local inference from ~10 tok/s to 30 tok/s via Project Maya's Strata; a Hugging Face user trained a 0.8B prompt-rewriting model for $16, replacing a 9B model, running on CPU with 99.7% valid output, then created five more models on the Hub."
         },
         "pmInsight": {
-          "zh": "这标志着编码助手从个人工具转向可治理的企业平台，模型选择权和 MCP 工具链权限成为采购决策的关键变量。PM 若在做企业级 AI 工具，需要提前设计模型白名单、MCP 权限和审计日志，否则会在企业合规评审中被卡住。",
-          "en": "This marks coding assistants shifting from personal tools to governable enterprise platforms, where model choice and MCP toolchain permissions become key procurement variables. PMs building enterprise AI tools must design model allowlists, MCP permissions, and audit logs early, or risk being blocked in enterprise compliance reviews."
+          "zh": "本地推理性能提升与极低成本定制模型，正在降低边缘部署和垂直模型创建的门槛。PM 应重新评估哪些场景可以下沉到本地或小模型，以降低成本并提升隐私合规性。",
+          "en": "Improved local inference and ultra-low-cost custom models are lowering barriers for edge deployment and vertical model creation. PMs should reassess which scenarios can be pushed to local or small models to cut costs and improve privacy compliance."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains"
+            "label": "Reddit LocalLLaMA: Strata for GLM5.3 Flash",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3fxzj/strata_for_glm53_flash_is_here_for_some_project/"
+          },
+          {
+            "label": "Hugging Face: Building with ML Intern",
+            "url": "https://huggingface.co/blog/building-with-ml-intern"
           }
         ]
       },
       {
         "title": {
-          "zh": "本地推理提速与代理成本骤降，云端 API 默认优势被削弱",
-          "en": "Local Inference Speeds Up and Agent Costs Plunge, Eroding Cloud API Default Advantage"
+          "zh": "企业级 Agent 管控与合规政策同步收紧",
+          "en": "Enterprise Agent Governance and Compliance Policies Tighten in Tandem"
         },
         "category": {
-          "zh": "模型部署经济性",
-          "en": "Model Deployment Economics"
+          "zh": "模型平台",
+          "en": "Model Platforms"
         },
         "summary": {
-          "zh": "社区项目 Maya 为 GLM5.3 Flash 提供优化，本地推理从约 10 tok/s 提升到 30 tok/s；OpenAI 披露 Asana 使用 GPT-6 Astra 在 Codex 中将浏览器代理成本降低 76 倍、速度提升 5 倍。两条信号分别指向本地部署和云端代理两个方向的性价比改善。",
-          "en": "Community project Maya optimizes GLM5.3 Flash, raising local inference from ~10 tok/s to 30 tok/s; OpenAI reports Asana cut browser agent costs 76x and improved speed 5x using GPT-6 Astra in Codex. The two signals point to cost-performance improvements in local deployment and cloud agents respectively."
+          "zh": "GitHub Copilot for JetBrains 新增企业级默认模型管理、MCP 服务器启动控制；Anthropic 发布 2026 使用政策更新，针对更自主的 Claude 新增欺骗性活动、高风险健康金融及自主物理行动的控制条款，11 月 12 日生效。",
+          "en": "GitHub Copilot for JetBrains added enterprise default model management and MCP server startup controls; Anthropic released its 2026 Usage Policy update, adding controls for deceptive activities, high-risk health/finance use cases, and autonomous physical actions for more autonomous Claude, effective Nov 12."
         },
         "pmInsight": {
-          "zh": "当本地推理达到可用速度、代理成本下降一个数量级以上，产品架构中的「默认走云端」假设需要重新审视。PM 应针对低延迟、高频、隐私敏感的场景做本地优先的可行性测试，并为代理类功能重新测算单位经济模型。",
-          "en": "When local inference reaches usable speed and agent costs drop by an order of magnitude, the 'cloud by default' assumption in product architecture needs revisiting. PMs should test local-first feasibility for low-latency, high-frequency, privacy-sensitive scenarios, and recalculate unit economics for agent features."
+          "zh": "Agent 自主性增强的同时，企业管控与合规边界正在明确。PM 在设计 Agent 产品时需提前考虑模型可配置性、工具调用审计和敏感场景限制，否则可能在企业采购中受阻。",
+          "en": "As agent autonomy increases, enterprise governance and compliance boundaries are being defined. PMs designing agent products must consider model configurability, tool-call auditing, and sensitive-scenario restrictions upfront, or risk being blocked in enterprise procurement."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3fxzj/strata_for_glm53_flash_is_here_for_some_project/"
+            "label": "GitHub Changelog: Copilot for JetBrains",
+            "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains"
           },
           {
-            "label": "OpenAI",
-            "url": "https://openai.com/index/asana-browser-agent"
+            "label": "Anthropic: 2026 Usage Policy Update",
+            "url": "https://www.anthropic.com/news/2026-usage-policy-update"
           }
         ]
       }
@@ -147,62 +151,58 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向企业 Agent 的技能注册表与 MCP 权限控制台",
-          "en": "Enterprise Agent Skill Registry and MCP Permission Console"
+          "zh": "面向企业工作流的「可审计 Agent Skill 市场」假设",
+          "en": "Hypothesis: Auditable Agent Skill Marketplace for Enterprise Workflows"
         },
         "category": {
-          "zh": "企业 AI 治理产品",
-          "en": "Enterprise AI Governance Product"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合 Copilot 企业级模型管控与 MCP 开关的落地，以及 Agent Skills 项目在 GitHub 上的密集出现，可以假设：企业需要一个统一的技能注册表，让管理员审批、分发、审计员工可用的 Agent 技能与 MCP 连接。",
-          "en": "Combining Copilot's enterprise model controls and MCP toggle with the clustering of Agent Skills projects on GitHub, one can hypothesize: enterprises need a unified skill registry where admins approve, distribute, and audit agent skills and MCP connections available to employees."
+          "zh": "结合 Agent Skill 项目密集上榜与企业级管控收紧两个信号，可验证假设：企业愿意为「可审计、可配置、跨运行时」的 Agent Skill 付费。验证方式：面向 20 家企业开发者提供 Skill 封装与审计面板的 MVP，观察采购意愿与使用频次。",
+          "en": "Combining the cluster of Agent Skill projects and tightening enterprise governance, a testable hypothesis: enterprises will pay for auditable, configurable, cross-runtime Agent Skills. Validation: offer an MVP with skill packaging and audit dashboard to 20 enterprise developers, observe purchase intent and usage frequency."
         },
         "pmInsight": {
-          "zh": "可验证假设：若为企业提供技能注册表 + MCP 权限控制台，IT 管理员对 Agent 工具的审批周期可缩短 50% 以上。验证方式：访谈 10 家已部署 Copilot 的企业 IT 管理员，测量当前技能审批与 MCP 接入的耗时和阻塞点。",
-          "en": "Verifiable hypothesis: a skill registry plus MCP permission console could cut IT admin approval cycles for agent tools by over 50%. Validation: interview 10 enterprise IT admins already deploying Copilot, measuring current skill approval and MCP onboarding time and blockers."
+          "zh": "若验证成立，PM 应优先构建 Skill 注册、权限控制和调用日志能力，形成企业 Agent 工作流的入口。",
+          "en": "If validated, PMs should prioritize skill registry, permission control, and call logging to become the entry point for enterprise agent workflows."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains"
+            "label": "GitHub: cathrynlavery/diagram-design",
+            "url": "https://github.com/cathrynlavery/diagram-design"
           },
           {
-            "label": "diagram-design",
-            "url": "https://github.com/cathrynlavery/diagram-design"
+            "label": "GitHub Changelog: Copilot for JetBrains",
+            "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains"
           }
         ]
       },
       {
         "title": {
-          "zh": "本地优先的个人 AI 助手与低成本专用小模型组合",
-          "en": "Local-First Personal AI Assistant Paired with Low-Cost Specialized Small Models"
+          "zh": "本地小模型替代云端大模型的成本优化假设",
+          "en": "Hypothesis: Cost Optimization via Local Small Models Replacing Cloud LLMs"
         },
         "category": {
-          "zh": "个人 AI 与本地部署",
-          "en": "Personal AI and Local Deployment"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "talorys 以自托管、无遥测、一条命令部署的定位在约一个月内获得近 800 stars；Hugging Face 用户用 ML Intern 以 16 美元训练出 0.8B 提示重写模型；Maya 将 GLM5.3 Flash 本地推理提升到 30 tok/s。三者共同指向「个人可负担的本地 AI 栈」正在成形。",
-          "en": "talorys gained nearly 800 stars in about a month with self-hosted, telemetry-free, one-command deployment; a Hugging Face user trained a 0.8B prompt-rewriting model for $16 with ML Intern; Maya raised GLM5.3 Flash local inference to 30 tok/s. Together they point to a forming 'personally affordable local AI stack.'"
+          "zh": "结合本地推理提速与 16 美元定制 0.8B 模型两个信号，可验证假设：在提示重写、格式转换等窄任务上，本地小模型可替代云端大模型，成本降低 90% 以上且延迟更低。验证方式：选取 3 个窄任务做 A/B 测试，对比成本、延迟与输出质量。",
+          "en": "Combining local inference speedup and the $16 custom 0.8B model, a testable hypothesis: for narrow tasks like prompt rewriting and format conversion, local small models can replace cloud LLMs with >90% cost reduction and lower latency. Validation: A/B test 3 narrow tasks comparing cost, latency, and output quality."
         },
         "pmInsight": {
-          "zh": "可验证假设：将自托管助手与 16 美元级专用小模型结合，可在隐私敏感的个人场景中达到接近云端助手的任务完成率。验证方式：选取笔记整理、定时提醒两类任务，对比本地组合与云端 API 的完成率、延迟和月成本。",
-          "en": "Verifiable hypothesis: combining a self-hosted assistant with a $16-level specialized small model can approach cloud assistant task completion rates in privacy-sensitive personal scenarios. Validation: pick note organization and scheduled reminders, compare local combo vs cloud API on completion rate, latency, and monthly cost."
+          "zh": "若验证成立，PM 可将窄任务下沉到本地小模型，释放云端预算用于复杂推理，同时提升隐私合规性。",
+          "en": "If validated, PMs can push narrow tasks to local small models, freeing cloud budget for complex reasoning while improving privacy compliance."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
-            "label": "talorys",
-            "url": "https://github.com/rociiu/talorys"
-          },
-          {
-            "label": "Hugging Face",
+            "label": "Hugging Face: Building with ML Intern",
             "url": "https://huggingface.co/blog/building-with-ml-intern"
           },
           {
-            "label": "Reddit LocalLLaMA",
+            "label": "Reddit LocalLLaMA: Strata for GLM5.3 Flash",
             "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3fxzj/strata_for_glm53_flash_is_here_for_some_project/"
           }
         ]
@@ -219,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个部署在自己 Cloudflare 账号里的个人 AI 助手，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可完成部署，适合注重隐私、不想把数据交给第三方的个人用户。",
+          "zh": "一个部署在你自己 Cloudflare 账号里的个人 AI 助手，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可完成部署，免费额度友好且无遥测。",
           "en": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier friendly, single-user, no telemetry."
         },
-        "totalStars": 779,
+        "totalStars": 794,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个部署在自己 Cloudflare 账号里的个人 AI 助手，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可完成部署，适合注重隐私、不想把数据交给第三方的个人用户。",
+          "zh": "一个部署在你自己 Cloudflare 账号里的个人 AI 助手，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可完成部署，免费额度友好且无遥测。",
           "en": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier friendly, single-user, no telemetry."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月便积累近 800 stars，今日在 rising 榜单中被发现，免费额度友好且无遥测的定位契合个人 AI 助手自托管趋势。",
+          "zh": "创建仅约 1 个月便获得近 800 星，今日在 rising 榜单中被发现，契合个人 AI 助手自托管与隐私保护的叙事。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 779 stars、59 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 779 stars and 59 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 794 stars、64 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 794 stars and 64 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得关注个人 AI 助手在「数据主权」叙事下的产品机会，以及 Cloudflare 生态对轻量级 Agent 部署的支撑能力。",
+          "zh": "关注个人 AI 助手在「数据主权」和「零运维」之间的平衡，以及 Cloudflare 生态对轻量级 Agent 部署的推动。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 macOS 命令行工具兼 Claude Code / Codex 技能，让 AI 代理能在屏幕上画出大箭头、方框和文字来指示操作位置，点击可穿透、自动消失，适合演示或教学场景。",
+          "zh": "一个 macOS 命令行工具，让 AI 代理能在屏幕上绘制大箭头、方框和文字，点击可穿透且自动消失，同时提供 Claude Code 和 Codex 的技能。",
           "en": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT."
         },
-        "totalStars": 630,
+        "totalStars": 633,
         "language": "Swift",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 macOS 命令行工具兼 Claude Code / Codex 技能，让 AI 代理能在屏幕上画出大箭头、方框和文字来指示操作位置，点击可穿透、自动消失，适合演示或教学场景。",
+          "zh": "一个 macOS 命令行工具，让 AI 代理能在屏幕上绘制大箭头、方框和文字，点击可穿透且自动消失，同时提供 Claude Code 和 Codex 的技能。",
           "en": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即获得 630 stars，作为 AI 代理与物理屏幕交互的新奇玩法在开发者社区快速传播，今日在 rising 榜单中被发现。",
+          "zh": "创建仅约 1 个月，今日在 rising 榜单中被发现，其「AI 代理可视化指引」的创意在开发者社区快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 630 stars、15 forks，topics: accessibility, ai-agents, claude-code, cli, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 630 stars and 15 forks，topics: accessibility, ai-agents, claude-code, cli, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 633 stars、15 forks，topics: accessibility, ai-agents, claude-code, cli, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 633 stars and 15 forks，topics: accessibility, ai-agents, claude-code, cli, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察 AI 代理从纯文本输出向屏幕空间交互延伸的产品形态，思考人机协作中「指示」类交互的设计空间。",
+          "zh": "观察 AI 代理与物理屏幕交互的新范式，思考如何将代理能力延伸到现实世界的视觉引导场景。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Agent Skill，能把一篇文章或旧 PPT 直接转换成可编辑的原生 PPT 文件，支持 Claude、Codex、Gemini CLI、Cursor 等多种运行环境，适合需要快速产出演示文稿的职场场景。",
+          "zh": "一个 Agent Skill，能根据文章或旧 PPT 生成并美化可编辑的原生 PPT 文件，支持 Claude、Codex、Gemini CLI 等多种运行时。",
           "en": "生成和美化可编辑原生 PPT 的 Agent Skill"
         },
-        "totalStars": 274,
+        "totalStars": 278,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 Agent Skill，能把一篇文章或旧 PPT 直接转换成可编辑的原生 PPT 文件，支持 Claude、Codex、Gemini CLI、Cursor 等多种运行环境，适合需要快速产出演示文稿的职场场景。",
+          "zh": "一个 Agent Skill，能根据文章或旧 PPT 生成并美化可编辑的原生 PPT 文件，支持 Claude、Codex、Gemini CLI 等多种运行时。",
           "en": "生成和美化可编辑原生 PPT 的 Agent Skill"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月获得 274 stars，作为 Agent Skills 生态中少见的 PPT 生成类工具，在中文开发者社区获得关注，今日在 rising 榜单中被发现。",
+          "zh": "创建仅约 1 个月，今日在 rising 榜单中被发现，其「丢进文章拿回可编辑 PPT」的叙事在办公自动化场景中受到关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 274 stars、53 forks，topics: agent-skills, codex-skill, powerpoint, pptx, presentation，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 274 stars and 53 forks，topics: agent-skills, codex-skill, powerpoint, pptx, presentation, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 278 stars、54 forks，topics: agent-skills, codex-skill, powerpoint, pptx, presentation，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 278 stars and 54 forks，topics: agent-skills, codex-skill, powerpoint, pptx, presentation, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得关注 Agent Skill 在办公文档生成领域的落地路径，以及「丢入素材、拿回可编辑文件」这一产品交互范式的可复用性。",
+          "zh": "关注 AI 生成内容从「不可编辑」向「原生可编辑」演进，这直接影响办公场景的落地效率。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个面向 Claude Code、Codex、GitHub Copilot、Cursor 等编程助手的图表设计技能，提供 44 种图表类型，输出自包含的 HTML + SVG 文件，强调编辑级设计感，避免 Mermaid 默认样式的粗糙感。",
+          "zh": "一个为 AI 编程助手提供编辑级图表设计能力的技能，支持 44 种图表类型，输出自包含的 HTML + SVG 文件，避免 Mermaid 的粗糙感。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
-        "totalStars": 50856,
+        "totalStars": 51083,
         "language": "HTML",
         "dailyStars": 1083,
         "chineseIntro": {
-          "zh": "一个面向 Claude Code、Codex、GitHub Copilot、Cursor 等编程助手的图表设计技能，提供 44 种图表类型，输出自包含的 HTML + SVG 文件，强调编辑级设计感，避免 Mermaid 默认样式的粗糙感。",
+          "zh": "一个为 AI 编程助手提供编辑级图表设计能力的技能，支持 44 种图表类型，输出自包含的 HTML + SVG 文件，避免 Mermaid 的粗糙感。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
         "todayHighlight": {
-          "zh": "总 star 数已超过 5 万，今日新增 1083 stars，位列全球趋势榜第 4，持续获得关注，反映出 AI 编程助手生态对高质量可视化输出的强烈需求。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 50k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,083 星."
+          "zh": "创建约 6 个月，今日新增 1083 星，总 star 数已超 5 万，在 global 趋势榜排名第 4，其「让 AI 画图不丑」的定位持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 51k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,083 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 50,856 stars、3,224 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 50,856 stars and 3,224 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 51,083 stars、3,237 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 51,083 stars and 3,237 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "应关注 AI 生成内容从「能用」到「好看」的审美升级需求，以及 Agent Skill 在垂直设计领域的商业化潜力。",
+          "zh": "观察 AI 生成内容的质量标准从「能用」向「设计感」提升，图表设计可能成为 AI 编程助手的差异化能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "企业级 AI 低代码平台，支持一句话生成前后端代码甚至整个系统，内置 AI 聊天、知识库、流程编排、MCP 插件等能力，兼容主流大模型，适合 Java 技术栈的企业快速搭建业务系统。",
+          "zh": "企业级 AI 低代码平台，通过一句话生成整个系统，支持 AI 画流程、设计表单、生成报表和大屏，内置 AI 应用平台涵盖聊天、知识库、流程编排等。",
           "en": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。"
         },
-        "totalStars": 48178,
+        "totalStars": 48182,
         "language": "Java",
         "dailyStars": 29,
         "chineseIntro": {
-          "zh": "企业级 AI 低代码平台，支持一句话生成前后端代码甚至整个系统，内置 AI 聊天、知识库、流程编排、MCP 插件等能力，兼容主流大模型，适合 Java 技术栈的企业快速搭建业务系统。",
+          "zh": "企业级 AI 低代码平台，通过一句话生成整个系统，支持 AI 画流程、设计表单、生成报表和大屏，内置 AI 应用平台涵盖聊天、知识库、流程编排等。",
           "en": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。"
         },
         "todayHighlight": {
-          "zh": "作为已有约 8 年历史的老牌低代码项目，总 star 数超过 4.8 万，今日新增 29 stars，位列中文趋势榜第 4，持续在榜说明 AI 低代码方向仍有稳定需求。",
+          "zh": "作为 8 年历史的老牌低代码项目，今日在中文趋势榜排名第 4，新增 29 星，其 AI Skills 生成模式持续吸引企业开发者。",
           "en": "登上 GitHub 中文 Trending 日榜第 4 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 29 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,178 stars、16,212 forks，topics: activiti, agent, ai, antd, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,178 stars and 16,212 forks，topics: activiti, agent, ai, antd, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,182 stars、16,213 forks，topics: activiti, agent, ai, antd, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,182 stars and 16,213 forks，topics: activiti, agent, ai, antd, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察传统低代码平台如何通过 AI Skills 和 MCP 插件完成能力升级，以及企业级 AI 应用平台的产品组合策略。",
+          "zh": "关注低代码平台如何融入 AI 能力，以及「Skills 生成 → 在线配置 → 代码生成」的新开发模式对传统开发流程的改造。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于 Spring Boot + MyBatis Plus + Vue 的后台管理系统，支持 RBAC 动态权限、SaaS 多租户、工作流、支付、商城、CRM、ERP、AI 大模型、IoT 等丰富功能，适合企业级中后台快速开发。",
+          "zh": "基于 Spring Boot + Vue 的后台管理系统，支持 RBAC 动态权限、SaaS 多租户、工作流、支付、商城、CRM、ERP、AI 大模型等丰富功能，全部开源无商业版。",
           "en": "Star YunaiV / ruoyi-vue-pro 🔥 官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城、CRM、ERP、MES、IM、AI 大模型、IoT 物联网等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！"
         },
-        "totalStars": 39681,
+        "totalStars": 39683,
         "language": "Java",
         "dailyStars": 19,
         "chineseIntro": {
-          "zh": "基于 Spring Boot + MyBatis Plus + Vue 的后台管理系统，支持 RBAC 动态权限、SaaS 多租户、工作流、支付、商城、CRM、ERP、AI 大模型、IoT 等丰富功能，适合企业级中后台快速开发。",
+          "zh": "基于 Spring Boot + Vue 的后台管理系统，支持 RBAC 动态权限、SaaS 多租户、工作流、支付、商城、CRM、ERP、AI 大模型等丰富功能，全部开源无商业版。",
           "en": "Star YunaiV / ruoyi-vue-pro 🔥 官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城、CRM、ERP、MES、IM、AI 大模型、IoT 物联网等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！"
         },
         "todayHighlight": {
-          "zh": "总 star 数接近 4 万，今日新增 19 stars，位列中文趋势榜第 2，作为运营约 6 年的成熟项目持续获得关注，说明国内 Java 后台管理系统的稳定需求。",
+          "zh": "作为 70 个月的老项目，今日在中文趋势榜排名第 2，新增 19 星，其「全部开源无商业版」的承诺持续获得社区信任。",
           "en": "登上 GitHub 中文 Trending 日榜第 2 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 19 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,681 stars、8,560 forks，topics: flowable, mybatis-plus, mysql, redis, redisson，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,681 stars and 8,560 forks，topics: flowable, mybatis-plus, mysql, redis, redisson, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,683 stars、8,561 forks，topics: flowable, mybatis-plus, mysql, redis, redisson，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,683 stars and 8,561 forks，topics: flowable, mybatis-plus, mysql, redis, redisson, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注成熟开源后台框架如何通过持续叠加 AI、IoT 等新模块来维持生态活跃度。",
+          "zh": "观察企业级后台框架如何通过功能广度和开源承诺维持长期热度，以及 AI 大模型集成对传统管理系统的增值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 AI Agent 助手与开发框架，集成多种 IM 平台、大模型、插件和 AI 功能，可作为 openclaw 的替代方案，适合需要跨平台部署智能机器人的开发者。",
+          "zh": "一个 AI Agent 助手与开发框架，集成多种 IM 平台、大模型和插件，可作为 openclaw 的替代方案，支持 QQ、Telegram、Discord 等。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
-        "totalStars": 41742,
+        "totalStars": 41748,
         "language": "Python",
         "dailyStars": 55,
         "chineseIntro": {
-          "zh": "一个 AI Agent 助手与开发框架，集成多种 IM 平台、大模型、插件和 AI 功能，可作为 openclaw 的替代方案，适合需要跨平台部署智能机器人的开发者。",
+          "zh": "一个 AI Agent 助手与开发框架，集成多种 IM 平台、大模型和插件，可作为 openclaw 的替代方案，支持 QQ、Telegram、Discord 等。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 4.1 万，今日新增 55 stars，位列中文趋势榜第 11，作为运营近 4 年的项目持续在榜，多平台 IM 集成能力是其稳定关注来源。",
+          "zh": "创建约 47 个月，今日在中文趋势榜排名第 11，新增 55 星，其多平台 IM 集成和插件生态持续吸引开发者。",
           "en": "登上 GitHub 中文 Trending 日榜第 11 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 55 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 41,742 stars、3,042 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 41,742 stars and 3,042 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 41,748 stars、3,042 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 41,748 stars and 3,042 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察多平台 IM 机器人框架在 Agent 生态中的定位，以及插件系统对产品扩展性的价值。",
+          "zh": "关注多平台 IM 机器人的统一框架如何降低开发门槛，以及插件生态对 Agent 能力扩展的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "生产级多平台智能机器人开发平台，支持 Discord、Slack、LINE、Telegram、企业微信、飞书、钉钉、QQ 等主流 IM，集成 ChatGPT、DeepSeek、Dify、n8n、Coze 等多种大模型与工具，适合企业快速搭建 Agent 机器人。",
+          "zh": "生产级多平台智能机器人开发平台，支持 Discord、Slack、LINE、Telegram、微信、飞书、钉钉、QQ 等，集成 ChatGPT、DeepSeek、Dify、n8n 等多种大模型和工具。",
           "en": "Star langbot-app / LangBot Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow"
         },
-        "totalStars": 18111,
+        "totalStars": 18116,
         "language": "Python",
         "dailyStars": 19,
         "chineseIntro": {
-          "zh": "生产级多平台智能机器人开发平台，支持 Discord、Slack、LINE、Telegram、企业微信、飞书、钉钉、QQ 等主流 IM，集成 ChatGPT、DeepSeek、Dify、n8n、Coze 等多种大模型与工具，适合企业快速搭建 Agent 机器人。",
+          "zh": "生产级多平台智能机器人开发平台，支持 Discord、Slack、LINE、Telegram、微信、飞书、钉钉、QQ 等，集成 ChatGPT、DeepSeek、Dify、n8n 等多种大模型和工具。",
           "en": "Star langbot-app / LangBot Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow"
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 1.8 万，今日新增 19 stars，位列中文趋势榜第 10，作为运营近 4 年的项目持续获得关注，多平台覆盖和丰富集成是其核心优势。",
+          "zh": "创建约 47 个月，今日在中文趋势榜排名第 10，新增 19 星，其「生产级」定位和广泛平台支持持续获得企业关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 19 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,111 stars、1,630 forks，topics: agent, coze, deepseek, dify, dingtalk，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,111 stars and 1,630 forks，topics: agent, coze, deepseek, dify, dingtalk, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,116 stars、1,631 forks，topics: agent, coze, deepseek, dify, dingtalk，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,116 stars and 1,631 forks，topics: agent, coze, deepseek, dify, dingtalk, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注企业级 IM 机器人在 Agent 编排和知识库集成方面的产品化路径，以及多平台适配的工程复杂度管理。",
+          "zh": "观察企业级 IM 机器人平台如何整合多种大模型和工具，以及知识库编排和插件系统对业务落地的支撑。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "《动手学深度学习》中文版开源教材，面向中文读者，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学，适合深度学习入门者和教学场景。",
+          "zh": "《动手学深度学习》中文版，面向中文读者、能运行、可讨论，被 70 多个国家的 500 多所大学用于教学。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
-        "totalStars": 81576,
+        "totalStars": 81584,
         "language": "Python",
         "dailyStars": 30,
         "chineseIntro": {
-          "zh": "《动手学深度学习》中文版开源教材，面向中文读者，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学，适合深度学习入门者和教学场景。",
+          "zh": "《动手学深度学习》中文版，面向中文读者、能运行、可讨论，被 70 多个国家的 500 多所大学用于教学。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 8.1 万，今日新增 30 stars，位列中文趋势榜第 22，作为运营超过 9 年的经典教材持续在榜，说明中文深度学习学习资源仍有长期需求。",
+          "zh": "作为 111 个月的老牌教材项目，今日在中文趋势榜排名第 22，新增 30 星，其教学价值持续获得全球认可。",
           "en": "总 star 数已达 81k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 30 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 81,576 stars、12,422 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 81,576 stars and 12,422 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 81,584 stars、12,422 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 81,584 stars and 12,422 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察经典开源教材在 AI 教育领域的长期价值，以及中文技术内容生态的持续影响力。",
+          "zh": "关注经典教育项目如何通过持续维护和社区讨论保持生命力，以及 AI 教育对人才培养的长期影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 AI 原生的 API 网关，基于 Envoy 构建，面向云原生场景，适合需要统一管理 AI 服务流量、鉴权和路由的企业。",
+          "zh": "AI 原生 API 网关，基于 Envoy 构建，提供 AI 网关能力，支持云原生环境。",
           "en": "Star higress-group / higress 🤖 AI Gateway | AI Native API Gateway"
         },
-        "totalStars": 9535,
+        "totalStars": 9536,
         "language": "Go",
         "dailyStars": 8,
         "chineseIntro": {
-          "zh": "一个 AI 原生的 API 网关，基于 Envoy 构建，面向云原生场景，适合需要统一管理 AI 服务流量、鉴权和路由的企业。",
+          "zh": "AI 原生 API 网关，基于 Envoy 构建，提供 AI 网关能力，支持云原生环境。",
           "en": "Star higress-group / higress 🤖 AI Gateway | AI Native API Gateway"
         },
         "todayHighlight": {
-          "zh": "总 star 数超过 9500，今日新增 8 stars，位列中文趋势榜第 13，作为运营约 4 年的云原生项目持续在榜，AI Gateway 定位契合当前 AI 基础设施需求。",
+          "zh": "创建约 48 个月，今日在中文趋势榜排名第 13，新增 8 星，作为 AI 基础设施组件持续获得关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 13 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 8 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,535 stars、1,338 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,535 stars and 1,338 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,536 stars、1,338 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,536 stars and 1,338 forks，topics: ai-gateway, ai-native, api-gateway, cloud-native, envoy, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注 AI 网关在模型服务治理中的角色，以及云原生生态与 AI 流量的结合点。",
+          "zh": "观察 AI 网关在模型路由、流量管理和安全方面的作用，以及云原生生态对 AI 应用部署的支撑。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 为 JetBrains 版 Copilot 增加了企业级默认模型管理、MCP 服务器启动开关，以及从诊断菜单一键修复问题的能力。这意味着企业可以统一控制 AI 编码助手的默认模型，同时开发者能更灵活地管理工具链。",
+          "zh": "GitHub Copilot for JetBrains 新增企业级默认模型管理、诊断一键修复、MCP 服务器启动控制及聊天导航优化。这意味着企业管理员可以统一设定新会话的默认模型，开发者也能更高效地从报错直接跳转到修复建议。",
           "en": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and&#8230; The post New controls and chat improvements in Copilot for JetBrains appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 为 JetBrains 版 Copilot 增加了企业级默认模型管理、MCP 服务器启动开关，以及从诊断菜单一键修复问题的能力。这意味着企业可以统一控制 AI 编码助手的默认模型，同时开发者能更灵活地管理工具链。",
+          "zh": "GitHub Copilot for JetBrains 新增企业级默认模型管理、诊断一键修复、MCP 服务器启动控制及聊天导航优化。这意味着企业管理员可以统一设定新会话的默认模型，开发者也能更高效地从报错直接跳转到修复建议。",
           "en": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and&#8230; The post New controls and chat improvements in Copilot for JetBrains appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "企业级模型管控与 MCP 启动控制，标志着 Copilot 正从个人助手转向可治理的企业开发平台。",
-          "en": "企业级模型管控与 MCP 启动控制，标志着 Copilot 正从个人助手转向可治理的企业开发平台。"
+          "zh": "企业级模型管控与 MCP 启动开关的加入，表明 Copilot 正在从个人助手转向可治理的企业开发平台，这可能会影响其他 IDE 助手的管控能力竞争。",
+          "en": "企业级模型管控与 MCP 启动开关的加入，表明 Copilot 正在从个人助手转向可治理的企业开发平台，这可能会影响其他 IDE 助手的管控能力竞争。"
         },
         "pmInsight": {
-          "zh": "PM 应评估企业客户对默认模型锁定和 MCP 工具生命周期的需求，考虑在自身 AI 功能中提供类似的集中管控开关。",
+          "zh": "PM 应关注企业管理员对默认模型的控制需求，考虑在自家 AI 编程工具中增加类似的管理策略配置，以降低企业采购阻力。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -662,19 +662,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "社区项目 Maya 为 GLM5.3 Flash 提供了优化方案，使本地推理速度从约 10 tok/s 提升到 30 tok/s。这让更多开发者能在本地流畅运行该模型，可能推动本地 AI 应用的普及。",
+          "zh": "社区用户通过 Project Maya 的 Strata 优化，使 GLM5.3 Flash 在本地推理速度从约 10 tok/s 提升到 30 tok/s，让低量化模型变得可用。这显示出社区对开源大模型本地部署性能优化的强烈需求。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>I stumbled across this as I was currently having glm5.3 flash run only around 10tok/s basically unusable. With Maya i am running 30 tok/s now. GLM5.3 feels even with this low quant like a much more enjoyable model than qwen 3.8 flash next so far. Still testing . </p> <p>This is very exciting allowing many to run GLM5.3 flash. </p> <p><a href=\"https://github.com/mw00/project-maya\">htt"
         },
         "chineseIntro": {
-          "zh": "社区项目 Maya 为 GLM5.3 Flash 提供了优化方案，使本地推理速度从约 10 tok/s 提升到 30 tok/s。这让更多开发者能在本地流畅运行该模型，可能推动本地 AI 应用的普及。",
+          "zh": "社区用户通过 Project Maya 的 Strata 优化，使 GLM5.3 Flash 在本地推理速度从约 10 tok/s 提升到 30 tok/s，让低量化模型变得可用。这显示出社区对开源大模型本地部署性能优化的强烈需求。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>I stumbled across this as I was currently having glm5.3 flash run only around 10tok/s basically unusable. With Maya i am running 30 tok/s now. GLM5.3 feels even with this low quant like a much more enjoyable model than qwen 3.8 flash next so far. Still testing . </p> <p>This is very exciting allowing many to run GLM5.3 flash. </p> <p><a href=\"https://github.com/mw00/project-maya\">htt"
         },
         "todayHighlight": {
-          "zh": "本地推理性能的显著提升，可能削弱云端 API 在低延迟场景的优势，影响模型部署策略。",
-          "en": "本地推理性能的显著提升，可能削弱云端 API 在低延迟场景的优势，影响模型部署策略。"
+          "zh": "本地推理性能的显著提升可能推动更多开发者尝试在消费级硬件上运行 GLM5.3 Flash，从而影响开源模型在边缘场景的采用率。",
+          "en": "本地推理性能的显著提升可能推动更多开发者尝试在消费级硬件上运行 GLM5.3 Flash，从而影响开源模型在边缘场景的采用率。"
         },
         "pmInsight": {
-          "zh": "PM 应关注本地推理优化对产品架构的影响，评估是否需要在端侧部署轻量模型以降低延迟和成本。",
+          "zh": "PM 应留意社区对推理速度的敏感度，评估是否需要在产品中集成类似优化或提供一键加速方案，以提升本地部署体验。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -699,19 +699,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Asana 使用 GPT-6 Astra 在 Codex 中将其浏览器代理的成本降低了 76 倍，速度提升 5 倍。这表明新模型在特定任务上能大幅优化性价比，可能改变 AI 代理的部署经济性。",
+          "zh": "Asana 使用 GPT-6 Astra 在 Codex 中将其浏览器代理的成本降低 76 倍、速度提升 5 倍，从而能为客户提供更强大的模型。这展示了新一代模型在真实业务场景中大幅优化成本与性能的潜力。",
           "en": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
         },
         "chineseIntro": {
-          "zh": "Asana 使用 GPT-6 Astra 在 Codex 中将其浏览器代理的成本降低了 76 倍，速度提升 5 倍。这表明新模型在特定任务上能大幅优化性价比，可能改变 AI 代理的部署经济性。",
+          "zh": "Asana 使用 GPT-6 Astra 在 Codex 中将其浏览器代理的成本降低 76 倍、速度提升 5 倍，从而能为客户提供更强大的模型。这展示了新一代模型在真实业务场景中大幅优化成本与性能的潜力。",
           "en": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
         },
         "todayHighlight": {
-          "zh": "成本降低 76 倍意味着 AI 代理可以大规模部署，可能引发浏览器自动化领域的竞争格局变化。",
-          "en": "成本降低 76 倍意味着 AI 代理可以大规模部署，可能引发浏览器自动化领域的竞争格局变化。"
+          "zh": "76 倍成本削减与 5 倍速度提升的案例，可能促使更多企业重新评估 AI 代理的投入产出比，并加速从旧模型向 GPT-6 系列的迁移。",
+          "en": "76 倍成本削减与 5 倍速度提升的案例，可能促使更多企业重新评估 AI 代理的投入产出比，并加速从旧模型向 GPT-6 系列的迁移。"
         },
         "pmInsight": {
-          "zh": "PM 应重新评估 AI 代理的 ROI 模型，考虑将高成本任务迁移到更高效的模型上，以提升产品竞争力。",
+          "zh": "PM 应主动测算自家 AI 功能在新模型下的成本与延迟变化，优先将高频、高成本场景迁移到 GPT-6 系列以释放预算。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -736,19 +736,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Anthropic 更新了使用政策，针对 Claude 更自主、更长期的任务增加了新示例和限制，包括自主物理行动的控制和欺骗性活动的明确禁止。这反映了 AI 安全治理正随模型能力提升而细化。",
+          "zh": "Anthropic 发布 2026 年使用政策更新，针对 Claude 更长时间、更自主的工作能力，新增欺骗性活动、高风险健康金融用例及自主物理行动的控制条款。新政策将于 11 月 12 日生效。",
           "en": "Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we`ve received from our customers. We're publishing a new version of the policy today. In this post, we summarize the changes we`ve made.Most of the updates in the latest version are intended to clarify existing rules. In the year since our last refresh, Claude has taken on longer, more independent w"
         },
         "chineseIntro": {
-          "zh": "Anthropic 更新了使用政策，针对 Claude 更自主、更长期的任务增加了新示例和限制，包括自主物理行动的控制和欺骗性活动的明确禁止。这反映了 AI 安全治理正随模型能力提升而细化。",
+          "zh": "Anthropic 发布 2026 年使用政策更新，针对 Claude 更长时间、更自主的工作能力，新增欺骗性活动、高风险健康金融用例及自主物理行动的控制条款。新政策将于 11 月 12 日生效。",
           "en": "Each year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we`ve received from our customers. We're publishing a new version of the policy today. In this post, we summarize the changes we`ve made.Most of the updates in the latest version are intended to clarify existing rules. In the year since our last refresh, Claude has taken on longer, more independent w"
         },
         "todayHighlight": {
-          "zh": "政策更新针对自主行动和欺骗性活动，可能为行业树立 AI 代理安全的新标准，影响其他模型提供商。",
-          "en": "政策更新针对自主行动和欺骗性活动，可能为行业树立 AI 代理安全的新标准，影响其他模型提供商。"
+          "zh": "随着 AI 代理自主性增强，Anthropic 率先细化使用边界，这可能成为行业合规参考，并影响企业客户在敏感场景中的部署决策。",
+          "en": "随着 AI 代理自主性增强，Anthropic 率先细化使用边界，这可能成为行业合规参考，并影响企业客户在敏感场景中的部署决策。"
         },
         "pmInsight": {
-          "zh": "PM 应审查自身 AI 功能是否涉及自主行动或高风险用例，提前调整产品设计以符合即将生效的政策要求。",
+          "zh": "PM 需检查自家产品中 Claude 的使用场景是否触及新政策红线，尤其是自主行动与高风险领域，提前调整产品逻辑或准备合规说明。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -773,19 +773,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一篇 arXiv 立场论文指出，可解释 AI 的忠实性指标存在结构性错位，导致用户过度依赖错误预测。这提醒产品团队，当前 XAI 工具更适合调试而非建立信任。",
+          "zh": "一篇 arXiv 立场论文指出，可解释 AI 的忠实性指标存在结构性错位，导致 XAI 未能提升信任，反而可能助长对错误预测的过度依赖。论文认为 XAI 更适合作为调试工具而非信任工具。",
           "en": "arXiv:2610.12493v1 Announce Type: new Abstract: Explainable Artificial Intelligence (XAI) tools have often been presented as methods to increase trust in machine learning models by making aspects of their algorithms more human-understandable. However, evidence accumulated over the last decade points to an overall failure of this objective, instead promoting overreliance on incorrect predictions, which can subsequentl"
         },
         "chineseIntro": {
-          "zh": "一篇 arXiv 立场论文指出，可解释 AI 的忠实性指标存在结构性错位，导致用户过度依赖错误预测。这提醒产品团队，当前 XAI 工具更适合调试而非建立信任。",
+          "zh": "一篇 arXiv 立场论文指出，可解释 AI 的忠实性指标存在结构性错位，导致 XAI 未能提升信任，反而可能助长对错误预测的过度依赖。论文认为 XAI 更适合作为调试工具而非信任工具。",
           "en": "arXiv:2610.12493v1 Announce Type: new Abstract: Explainable Artificial Intelligence (XAI) tools have often been presented as methods to increase trust in machine learning models by making aspects of their algorithms more human-understandable. However, evidence accumulated over the last decade points to an overall failure of this objective, instead promoting overreliance on incorrect predictions, which can subsequentl"
         },
         "todayHighlight": {
-          "zh": "对 XAI 信任构建作用的质疑，可能促使行业重新思考如何向用户解释 AI 决策，影响产品透明度设计。",
-          "en": "对 XAI 信任构建作用的质疑，可能促使行业重新思考如何向用户解释 AI 决策，影响产品透明度设计。"
+          "zh": "该研究对当前 XAI 评估体系提出根本性质疑，可能促使产品团队重新思考如何向用户展示模型解释，避免误导性信任。",
+          "en": "该研究对当前 XAI 评估体系提出根本性质疑，可能促使产品团队重新思考如何向用户展示模型解释，避免误导性信任。"
         },
         "pmInsight": {
-          "zh": "PM 在向用户展示 AI 解释时，应避免过度承诺可解释性，转而聚焦于提供可操作的调试信息和置信度提示。",
+          "zh": "PM 在涉及模型解释功能时，应避免直接展示特征重要性作为“信任凭证”，转而将其定位为内部调试或专家分析工具。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -806,23 +806,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "生态合作",
-          "en": "生态合作"
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Hugging Face 用户通过 ML Intern 用自然语言描述需求，以 16 美元成本训练出 0.8B 的提示重写模型，并发布了多个类似模型。这展示了低门槛、低成本定制小模型的可行性。",
+          "zh": "Hugging Face 用户利用 ML Intern 以 16 美元成本训练出 0.8B 的提示重写模型，替代原本 9B 模型，并在 CPU 上运行，输出有效率 99.7%。随后又用同样方式创建了五个模型并公开在 Hub 上。",
           "en": "The model that didn&apos;t exist, so you made it yourself"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 用户通过 ML Intern 用自然语言描述需求，以 16 美元成本训练出 0.8B 的提示重写模型，并发布了多个类似模型。这展示了低门槛、低成本定制小模型的可行性。",
+          "zh": "Hugging Face 用户利用 ML Intern 以 16 美元成本训练出 0.8B 的提示重写模型，替代原本 9B 模型，并在 CPU 上运行，输出有效率 99.7%。随后又用同样方式创建了五个模型并公开在 Hub 上。",
           "en": "The model that didn&apos;t exist, so you made it yourself"
         },
         "todayHighlight": {
-          "zh": "个人开发者以极低成本创建专用模型，可能推动模型生态从通用大模型向场景化小模型分化。",
-          "en": "个人开发者以极低成本创建专用模型，可能推动模型生态从通用大模型向场景化小模型分化。"
+          "zh": "极低成本定制小模型并自动发布的工作流，可能降低模型创建门槛，推动更多垂直、轻量模型涌现，冲击传统模型开发模式。",
+          "en": "极低成本定制小模型并自动发布的工作流，可能降低模型创建门槛，推动更多垂直、轻量模型涌现，冲击传统模型开发模式。"
         },
         "pmInsight": {
-          "zh": "PM 可以探索用 ML Intern 快速原型化内部专用小模型，以低成本验证特定功能需求，再决定是否投入更大资源。",
+          "zh": "PM 可评估用 ML Intern 类工具快速生成专用小模型，替代大模型处理特定任务，以显著降低推理成本并提升响应速度。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
