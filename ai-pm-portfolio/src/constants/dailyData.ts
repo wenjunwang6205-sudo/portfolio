@@ -48,30 +48,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily · 2026-10-14"
     },
     "editorNote": {
-      "zh": "今日主线：模型能力继续向长时长、多模态与复杂推理推进，同时开发者侧围绕「上下文管理」「技能分发」「低成本真机操控」形成新的工具层。",
-      "en": "Today's throughline: model capabilities push toward longer duration, multimodality and harder reasoning, while a new tooling layer forms around context management, skill distribution and low-cost real-device control."
+      "zh": "今日主线是「前沿模型贴身竞争 + 代理基础设施升温」：Gemini 4 Argon 同日进入 GitHub Copilot，OpenAI 则把多模态能力打包成视频创作管线；开发者侧，上下文管理、技能管理、真机操控等代理周边项目持续在榜。",
+      "en": "Today's throughline: frontier models are competing head-to-head while agent infrastructure heats up. Gemini 4 Argon landed in GitHub Copilot the same day, OpenAI packaged multimodal models into a video pipeline, and agent-adjacent repos (context, skills, real-device control) kept trending."
     },
     "keyTakeaway": {
-      "zh": "今日判断：前沿模型竞争从「单点能力」转向「工作流打包」——Gemini 4 Argon 同步进入 Copilot 分发渠道，OpenAI 把长视频与语音创作串成流程；与此同时，开发者社区正用上下文管理、技能 CLI 和低成本真机操控补齐 Agent 落地的基础设施。",
-      "en": "Today's call: frontier model competition is shifting from single-point capability to packaged workflows — Gemini 4 Argon lands inside Copilot as a distribution channel while OpenAI stitches long video and voice into a creation flow; meanwhile the developer community is filling in Agent infrastructure with context management, skill CLIs and low-cost real-device control."
+      "zh": "前沿模型竞争正从「谁的模型更强」转向「谁先进入开发者工作流」：Gemini 4 Argon 首发即接入 GitHub Copilot，OpenAI 则用 Higgsfield 把视频生成拉长到 10 分钟以上。与此同时，代理生态的瓶颈从模型能力转向上下文、技能与真机操作等工程层，值得产品团队本周重点跟进。",
+      "en": "Frontier model competition is shifting from raw capability to workflow distribution: Gemini 4 Argon shipped into GitHub Copilot on day one, while OpenAI pushed video generation past 10 minutes via Higgsfield. Meanwhile the agent ecosystem's bottleneck is moving from model capability to engineering layers—context, skills, real-device control—worth tracking this week."
     },
     "signals": [
       {
         "title": {
-          "zh": "Gemini 4 Argon 进入 GitHub Copilot，模型分发渠道成为竞争焦点",
-          "en": "Gemini 4 Argon lands in GitHub Copilot, making distribution channels the new battleground"
+          "zh": "Gemini 4 Argon 首发即进 GitHub Copilot，模型竞争转向工作流分发",
+          "en": "Gemini 4 Argon Lands in GitHub Copilot on Day One, Shifting Model Competition to Workflow Distribution"
         },
         "category": {
           "zh": "模型平台 / 开发者生态",
           "en": "Model Platform / Developer Ecosystem"
         },
         "summary": {
-          "zh": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全面开放；同日 GitHub Changelog 宣布该模型在 Copilot 中正式可用，覆盖 Pro+、Max、Business 和 Enterprise 用户，早期测试在编码基准上全面超越前代 Gemini。",
-          "en": "Google released Gemini 4 Argon for developers, enterprises, scientists and consumers; the same day GitHub Changelog announced its availability in Copilot for Pro+, Max, Business and Enterprise users, with early tests surpassing the previous Gemini on coding benchmarks."
+          "zh": "Google 发布 Gemini 4 Argon，同日即在 GitHub Copilot 中可用，覆盖 VS Code、JetBrains、Xcode、CLI 及 coding agent，按供应商列表价计费，早期测试显示 CLI 场景提升最大。",
+          "en": "Google released Gemini 4 Argon, available in GitHub Copilot the same day across VS Code, JetBrains, Xcode, CLI and coding agent, billed at vendor list price; early tests show the largest gains in CLI scenarios."
         },
         "pmInsight": {
-          "zh": "Copilot 同时集成多家前沿模型，意味着 IDE 正在变成模型厂商的分发渠道而非单一绑定。对 PM 而言，模型选型不再是「选最强」，而是「按任务路由」——需要评估在编码、推理、Agent 任务上分别用哪个模型，并设计可切换的抽象层，避免被单一供应商锁定。",
-          "en": "Copilot hosting multiple frontier models means the IDE is becoming a distribution channel rather than a single-vendor lock-in. For PMs, model selection is no longer 'pick the strongest' but 'route by task' — evaluate which model to use for coding, reasoning and agent tasks, and design a switchable abstraction layer to avoid vendor lock-in."
+          "zh": "Copilot 正走向「多模型中立平台」，模型厂商的竞争焦点从独占渠道转向在开发者工作流中的实际表现。对产品团队而言，模型选型应保留可替换性，把评估重点放在具体编码场景（如 CLI、重构、测试生成）的实测表现，而非品牌绑定。",
+          "en": "Copilot is becoming a multi-model neutral platform, so model vendors now compete on real workflow performance rather than exclusive channels. PMs should keep model choices swappable and evaluate on concrete coding scenarios (CLI, refactoring, test generation) rather than brand lock-in."
         },
         "impact": "High",
         "sources": [
@@ -87,20 +87,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "AI 视频从短片段走向长时长与语音驱动",
-          "en": "AI video moves from short clips toward long duration and voice-driven creation"
+          "zh": "OpenAI 借 Higgsfield 把 AI 视频拉长到 10 分钟以上，视频产品进入长叙事阶段",
+          "en": "OpenAI Extends AI Video Past 10 Minutes via Higgsfield, Pushing Video Products into Long-Form Narrative"
         },
         "category": {
-          "zh": "模型平台 / 内容创作",
-          "en": "Model Platform / Content Creation"
+          "zh": "多模态 / 内容生产",
+          "en": "Multimodal / Content Production"
         },
         "summary": {
-          "zh": "Higgsfield 借助 GPT-6 Astra 将 AI 视频生成时长从 1 分钟拉长到 10 分钟以上，同时用 GPT-Image-2.5 提升画面精度，并打通 GPT-Live 走向语音驱动电影制作。",
-          "en": "Higgsfield used GPT-6 Astra to extend AI video generation from 1 minute to over 10 minutes, improved visual precision with GPT-Image-2.5, and connected GPT-Live toward voice-driven filmmaking."
+          "zh": "Higgsfield 借助 GPT-6 Astra 将 AI 视频生成时长从 1 分钟拉长到 10 分钟以上，并用 GPT-Image-2.5 提升画面精度、GPT-Live 打通语音驱动拍片。",
+          "en": "Higgsfield used GPT-6 Astra to extend AI video generation from 1 minute to over 10 minutes, with GPT-Image-2.5 improving frame precision and GPT-Live enabling voice-driven filming."
         },
         "pmInsight": {
-          "zh": "视频生成的竞争维度从「画面质量」扩展到「叙事时长 + 多模态控制」。长视频意味着需要新的编辑、分镜和一致性管理能力，语音驱动则可能改变创作交互方式。PM 应关注：现有视频工具是否支持 10 分钟以上的连贯叙事？是否把语音作为一等输入？这可能是下一波视频产品的基础能力门槛。",
-          "en": "Video generation competition is expanding from 'visual quality' to 'narrative duration + multimodal control'. Long video demands new editing, storyboarding and consistency management, while voice-driven creation may change the interaction model. PMs should ask: does our video tool support coherent 10+ minute narratives? Is voice a first-class input? This may become the baseline capability for the next wave of video products."
+          "zh": "视频生成从「片段工具」迈向「长内容生产管线」，时长与一致性壁垒被抬高。做视频类产品的团队应重新评估：是否仍以短片段为核心交互，还是转向分镜、角色一致性、多镜头连续生成的工作流设计；同时关注语音驱动对拍摄类场景的替代可能。",
+          "en": "Video generation is moving from clip tools to long-form production pipelines, raising the bar on duration and consistency. Video product teams should reassess whether short clips remain the core interaction, or pivot to storyboard, character consistency and multi-shot workflows—and watch voice-driven filming as a substitute for shooting scenarios."
         },
         "impact": "High",
         "sources": [
@@ -112,20 +112,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Agent 基础设施层升温：上下文管理、技能分发与低成本真机操控",
-          "en": "Agent infrastructure layer heats up: context management, skill distribution and low-cost real-device control"
+          "zh": "代理工程层持续升温：上下文压缩、技能管理与真机操控项目在榜",
+          "en": "Agent Engineering Layer Heats Up: Context Compression, Skill Management and Real-Device Control Trending"
         },
         "category": {
-          "zh": "开发者生态 / Agent 基础设施",
-          "en": "Developer Ecosystem / Agent Infrastructure"
+          "zh": "AI 代理 / 开发者工具",
+          "en": "AI Agents / Developer Tools"
         },
         "summary": {
-          "zh": "GitHub 趋势榜上，context-mode（上下文窗口优化，今日 +969 星，总 2.8 万+）、vercel-labs/skills（75+ AI 编程助手技能分发 CLI，总 3.4 万+）、esp32-iphone-agent（约 7 美元开发板让 AI 操控真机 iPhone，总近 1800 星）同时获得关注；GitHub 自身也发布上下文感知密钥检测模型，扫描时间降低 86%、成本降低 98%。",
-          "en": "On GitHub trending, context-mode (context window optimization, +969 stars today, 28k+ total), vercel-labs/skills (skill distribution CLI for 75+ AI coding assistants, 34k+ total) and esp32-iphone-agent (~$7 board letting AI control a real iPhone, ~1.8k stars) all gained attention; GitHub itself shipped a context-aware secret detection model cutting scan time by 86% and cost by 98%."
+          "zh": "mksglu/context-mode 今日新增 969 星，通过沙箱化工具输出减少 98% 上下文占用；vercel-labs/skills 为 75+ 种 AI 代理提供技能管理；onehumanbeing/esp32-iphone-agent 用约 7 美元 ESP32 让 AI 操控真实 iPhone。",
+          "en": "mksglu/context-mode gained 969 stars today, cutting context usage by 98% via sandboxed tool output; vercel-labs/skills manages skills across 75+ AI agents; onehumanbeing/esp32-iphone-agent uses a ~$7 ESP32 to let AI control a real iPhone."
         },
         "pmInsight": {
-          "zh": "Agent 的瓶颈正从「模型够不够聪明」转向「上下文够不够用、技能能不能复用、能不能操作真实世界」。context-mode 和 skills 分别解决上下文爆炸和技能分发，esp32-iphone-agent 则用极低成本打通真机操控。PM 应评估：自己的 Agent 产品是否受限于上下文窗口？是否有统一的技能/工具注册机制？是否需要接入真实设备或系统？这些正在成为 Agent 产品的差异化基础设施。",
-          "en": "The Agent bottleneck is shifting from 'is the model smart enough' to 'is context sufficient, are skills reusable, can it operate the real world'. context-mode and skills address context explosion and skill distribution respectively, while esp32-iphone-agent enables real-device control at extremely low cost. PMs should assess: is our Agent limited by context window? Do we have a unified skill/tool registry? Do we need real-device or system access? These are becoming differentiating infrastructure for Agent products."
+          "zh": "代理生态的瓶颈正从模型能力转向工程层：上下文窗口、技能复用、真机操作。产品团队应把「上下文成本」和「技能可移植性」纳入代理产品的核心指标，并关注低成本真机操控对移动端自动化测试与代理操作场景的替代价值。",
+          "en": "The agent ecosystem's bottleneck is shifting from model capability to engineering: context windows, skill reuse, real-device control. PMs should treat context cost and skill portability as core agent metrics, and watch low-cost real-device control as a substitute for mobile automation testing and agent operation scenarios."
         },
         "impact": "Medium",
         "sources": [
@@ -140,10 +140,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub · esp32-iphone-agent",
             "url": "https://github.com/onehumanbeing/esp32-iphone-agent"
-          },
-          {
-            "label": "GitHub Blog · Secret Detection",
-            "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/"
           }
         ]
       }
@@ -151,20 +147,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "为 AI 编程助手做「上下文预算」可视化与自动路由",
-          "en": "Build context-budget visualization and auto-routing for AI coding assistants"
+          "zh": "机会：为多模型代理平台做「上下文成本」可观测层",
+          "en": "Opportunity: Build a Context-Cost Observability Layer for Multi-Model Agent Platforms"
         },
         "category": {
-          "zh": "开发者工具 / Agent 基础设施",
-          "en": "Developer Tools / Agent Infrastructure"
+          "zh": "AI 代理 / 开发者工具",
+          "en": "AI Agents / Developer Tools"
         },
         "summary": {
-          "zh": "context-mode 今日 +969 星、总 2.8 万+，说明长会话上下文爆炸是真实痛点；同时 GitHub 用专用小模型把密钥检测成本降低 98%，验证了「按任务路由到合适模型」的降本路径。",
-          "en": "context-mode gained +969 stars today (28k+ total), showing context explosion in long sessions is a real pain point; meanwhile GitHub cut secret detection cost by 98% with a specialized small model, validating the 'route to the right model per task' cost-reduction path."
+          "zh": "context-mode 减少 98% 上下文占用、GitHub 用紧凑模型把密钥检测成本降低 98%，两个信号共同指向「上下文与调用成本」正成为代理产品的核心约束。",
+          "en": "context-mode cuts context usage by 98%, and GitHub's compact model cut secret-detection cost by 98%—both point to context and call cost becoming core constraints for agent products."
         },
         "pmInsight": {
-          "zh": "产品假设：如果为 AI 编程助手提供一个「上下文预算仪表盘」，实时显示当前会话的 token 占用、哪些工具输出被沙箱化、哪些历史被压缩，并允许用户按任务类型（编码/推理/搜索）自动路由到不同模型，那么长会话的可用性和成本可同时改善。验证方式：在 20 人以上的开发团队中做 A/B，测量会话中断率、平均 token 成本和任务完成率。",
-          "en": "Product hypothesis: if we give AI coding assistants a 'context budget dashboard' showing real-time token usage, which tool outputs are sandboxed, which history is compressed, and allow auto-routing to different models by task type (coding/reasoning/search), then long-session usability and cost can improve simultaneously. Validation: A/B test with 20+ developer teams, measuring session interruption rate, average token cost and task completion rate."
+          "zh": "可验证假设：若为使用 Claude Code / Codex 的团队提供上下文占用与调用成本的可视化面板，并给出压缩建议，则团队长会话任务完成率提升、单任务成本下降。可在 2 周内用 5-10 个开发团队做对照测试，以「长会话任务完成率」和「单任务 token 成本」为验证指标。",
+          "en": "Testable hypothesis: a dashboard showing context usage and call cost for Claude Code / Codex teams, with compression suggestions, will raise long-session task completion and lower per-task cost. Validate with 5-10 dev teams over 2 weeks, measuring long-session completion rate and per-task token cost."
         },
         "impact": "Medium",
         "sources": [
@@ -173,37 +169,33 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/mksglu/context-mode"
           },
           {
-            "label": "GitHub Blog · Secret Detection",
+            "label": "GitHub Blog",
             "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/"
           }
         ]
       },
       {
         "title": {
-          "zh": "把「语音驱动 + 长时长」做成视频创作工具的一等能力",
-          "en": "Make voice-driven + long-duration a first-class capability in video creation tools"
+          "zh": "机会：长视频生成催生「分镜一致性」工具层",
+          "en": "Opportunity: Long-Form Video Generation Creates Demand for Storyboard-Consistency Tooling"
         },
         "category": {
-          "zh": "内容创作 / 多模态产品",
-          "en": "Content Creation / Multimodal Product"
+          "zh": "多模态 / 内容生产",
+          "en": "Multimodal / Content Production"
         },
         "summary": {
-          "zh": "Higgsfield 用 GPT-6 Astra 把视频生成拉到 10 分钟以上，并打通 GPT-Live 走向语音驱动电影制作；同时 Claude 团队成员的「如何更有野心地使用 AI」在 HN 引发讨论，指出用户采用深度是瓶颈。",
-          "en": "Higgsfield pushed video generation past 10 minutes with GPT-6 Astra and connected GPT-Live toward voice-driven filmmaking; meanwhile a Claude team member's 'how to be more ambitious with AI' sparked HN discussion, noting user adoption depth is the bottleneck."
+          "zh": "Higgsfield 借 GPT-6 Astra 把视频拉长到 10 分钟以上，时长提升后，角色、场景、镜头之间的一致性成为新的产品痛点。",
+          "en": "Higgsfield extended video past 10 minutes with GPT-6 Astra; as duration grows, consistency across characters, scenes and shots becomes the new product pain point."
         },
         "pmInsight": {
-          "zh": "产品假设：如果视频创作工具把「语音脚本 → 分镜 → 长视频生成」串成一条可编辑的流水线，并内置一致性检查（角色、场景、色调跨片段保持），那么创作者从「生成短片段」升级到「完成一支 10 分钟叙事片」的门槛会显著降低。验证方式：招募 10 位短视频创作者，对比有无语音驱动流水线时完成 5 分钟以上视频的比例和返工次数。",
-          "en": "Product hypothesis: if a video creation tool chains 'voice script → storyboard → long video generation' into an editable pipeline with built-in consistency checks (character, scene, tone across clips), the barrier for creators to move from 'generating short clips' to 'completing a 10-minute narrative' drops significantly. Validation: recruit 10 short-video creators, compare completion rate and rework count for 5+ minute videos with and without the voice-driven pipeline."
+          "zh": "可验证假设：若提供跨镜头角色/场景一致性校验与自动修正工具，则长视频创作者的返工率下降、成片交付时间缩短。可用 10-20 个使用长视频生成的创作者做 4 周试点，以「返工次数」和「从脚本到成片时长」为验证指标。",
+          "en": "Testable hypothesis: a cross-shot character/scene consistency checker with auto-correction will reduce rework and shorten delivery time for long-form video creators. Pilot with 10-20 creators over 4 weeks, measuring rework count and script-to-final time."
         },
         "impact": "Watch",
         "sources": [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/higgsfield-longer-videos-voice"
-          },
-          {
-            "label": "Hacker News AI",
-            "url": "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/"
           }
         ]
       }
@@ -219,26 +211,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "用一块约7美元的ESP32开发板，让AI模型直接操控真实iPhone：通过AirPlay获取屏幕画面作为「眼睛」，通过USB HID模拟触控作为「手」，兼容任意OpenAI格式的视觉模型。无需Mac、开发者账号或越狱，适合做手机自动化测试、AI操控真机演示等场景。",
+          "zh": "用一块约7美元的ESP32开发板，让AI模型直接操控真实iPhone：通过AirPlay获取屏幕画面，通过USB HID模拟手指操作，兼容任意OpenAI格式的视觉模型。无需Mac、开发者账号或越狱，适合做手机自动化测试、AI代理操作真机等场景。",
           "en": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak."
         },
-        "totalStars": 1783,
+        "totalStars": 1825,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "用一块约7美元的ESP32开发板，让AI模型直接操控真实iPhone：通过AirPlay获取屏幕画面作为「眼睛」，通过USB HID模拟触控作为「手」，兼容任意OpenAI格式的视觉模型。无需Mac、开发者账号或越狱，适合做手机自动化测试、AI操控真机演示等场景。",
+          "zh": "用一块约7美元的ESP32开发板，让AI模型直接操控真实iPhone：通过AirPlay获取屏幕画面，通过USB HID模拟手指操作，兼容任意OpenAI格式的视觉模型。无需Mac、开发者账号或越狱，适合做手机自动化测试、AI代理操作真机等场景。",
           "en": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约1个月，总star已接近1800，今日在「rising」发现源中被推荐，说明低成本真机AI操控的叙事正在开发者社区升温。",
+          "zh": "项目创建仅约1个月，总star数已达1825，今日在「rising」板块获得关注。低成本「AI操控真机」的叙事在开发者社区快速传播，今日新增star数据暂未提供。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,783 stars、230 forks，topics: ai-agent, airplay, automation, computer-use, esp32，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,783 stars and 230 forks，topics: ai-agent, airplay, automation, computer-use, esp32, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,825 stars、239 forks，topics: ai-agent, airplay, automation, computer-use, esp32，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,825 stars and 239 forks，topics: ai-agent, airplay, automation, computer-use, esp32, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「极低成本硬件+通用AI模型」组合如何降低AI操控真实设备的门槛，这可能催生新的移动端自动化产品形态。",
+          "zh": "关注AI代理从虚拟环境走向真实物理设备的趋势，以及低成本硬件方案如何降低自动化门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +251,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一条命令即可在个人Cloudflare账号内部署专属AI助理，支持聊天、记忆、任务、笔记和定时提醒，数据完全由自己掌控，无服务器、无数据库、无遥测，适合注重隐私的个人用户。",
+          "zh": "部署在你自己Cloudflare账户里的个人AI助手，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可安装。免费额度友好、单用户、无遥测，适合注重隐私、想低成本拥有专属AI助理的用户。",
           "en": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier friendly, single-user, no telemetry."
         },
-        "totalStars": 971,
+        "totalStars": 975,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一条命令即可在个人Cloudflare账号内部署专属AI助理，支持聊天、记忆、任务、笔记和定时提醒，数据完全由自己掌控，无服务器、无数据库、无遥测，适合注重隐私的个人用户。",
+          "zh": "部署在你自己Cloudflare账户里的个人AI助手，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可安装。免费额度友好、单用户、无遥测，适合注重隐私、想低成本拥有专属AI助理的用户。",
           "en": "Your personal AI agent in your own Cloudflare account. Chat, memory, tasks, notes and scheduled reminders, deployed with one command: npx create-talorys@latest. Free-tier friendly, single-user, no telemetry."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约1个月，总star已接近1000，今日在「rising」发现源中被推荐，反映出「个人AI助理+自托管」方向持续获得关注。",
+          "zh": "项目创建仅约1个月，总star数已达975，今日在「rising」板块获得关注。自托管、数据自主的AI助手叙事在隐私敏感用户中升温，今日新增star数据暂未提供。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 971 stars、87 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 971 stars and 87 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 975 stars、87 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 975 stars and 87 forks，topics: ai-agent, cloudflare, cloudflare-workers, durable-objects, personal-assistant, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察「免费额度+单用户+无遥测」的轻量自托管模式，是否能在个人AI助理赛道形成差异化产品定位。",
+          "zh": "观察个人AI助手从SaaS向自托管迁移的需求，以及Cloudflare生态对轻量级AI应用的支撑能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +291,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "每日扫描X、Hugging Face、GitHub和站点地图，在新AI模型、产品、仓库名称刚出现时就捕捉到，比关键词工具更早发现趋势词，适合做AI工具站SEO、newsletter和目录站的人。",
+          "zh": "每日追踪AI领域新术语的雷达工具，从X、Hugging Face、GitHub和站点地图中捕捉新模型、新产品和新仓库的名称，比关键词工具更早发现趋势。适合做AI工具站SEO、新闻通讯、目录站等需要抢先了解新词的人。",
           "en": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them."
         },
-        "totalStars": 893,
+        "totalStars": 898,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "每日扫描X、Hugging Face、GitHub和站点地图，在新AI模型、产品、仓库名称刚出现时就捕捉到，比关键词工具更早发现趋势词，适合做AI工具站SEO、newsletter和目录站的人。",
+          "zh": "每日追踪AI领域新术语的雷达工具，从X、Hugging Face、GitHub和站点地图中捕捉新模型、新产品和新仓库的名称，比关键词工具更早发现趋势。适合做AI工具站SEO、新闻通讯、目录站等需要抢先了解新词的人。",
           "en": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约1个月，总star已接近900，今日在「rising」发现源中被推荐，说明「抢先发现新词」的SEO需求正在快速传播。",
+          "zh": "项目创建仅约1个月，总star数已达898，今日在「rising」板块获得关注。AI新词早期发现的需求在SEO和内容创作者中快速传播，今日新增star数据暂未提供。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 893 stars、361 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 893 stars and 361 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 898 stars、363 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 898 stars and 363 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「趋势词早期发现」如何成为AI产品营销和内容运营的基础设施，可能影响产品发布和SEO策略的节奏。",
+          "zh": "关注AI领域信息差带来的产品机会，以及如何利用早期趋势数据做内容或工具布局。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +331,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为Claude Code、Codex、GitHub Copilot、Cursor等AI编程助手提供编辑级图表设计能力，支持44种图表类型，输出自包含的HTML+SVG文件，无阴影、无Mermaid廉价感，让AI生成的图表具备品牌设计品位。",
+          "zh": "为Claude Code、Codex、GitHub Copilot、Cursor等AI编程助手提供编辑级图表设计能力，支持44种图表类型，输出自包含的HTML+SVG文件，无阴影、无Mermaid的粗糙感。适合需要让AI生成专业级数据可视化的开发者。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
-        "totalStars": 54673,
+        "totalStars": 54782,
         "language": "HTML",
         "dailyStars": 1815,
         "chineseIntro": {
-          "zh": "为Claude Code、Codex、GitHub Copilot、Cursor等AI编程助手提供编辑级图表设计能力，支持44种图表类型，输出自包含的HTML+SVG文件，无阴影、无Mermaid廉价感，让AI生成的图表具备品牌设计品位。",
+          "zh": "为Claude Code、Codex、GitHub Copilot、Cursor等AI编程助手提供编辑级图表设计能力，支持44种图表类型，输出自包含的HTML+SVG文件，无阴影、无Mermaid的粗糙感。适合需要让AI生成专业级数据可视化的开发者。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
         "todayHighlight": {
-          "zh": "项目创建约6个月，总star已超过5.4万，今日新增1815星，位列全球趋势榜第5，说明「AI生成图表的设计感」需求正在快速升温。",
+          "zh": "项目创建约6个月，总star数已达54782，今日新增1815星，位列全球趋势榜第5。AI生成图表「去Mermaid化」的叙事在开发者中持续升温，推动star快速增长。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 54k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,815 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,673 stars、3,454 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,673 stars and 3,454 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,782 stars、3,457 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,782 stars and 3,457 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察AI编程助手生态中「设计技能」类插件的增长，思考如何将专业设计规范封装为可复用的Agent能力。",
+          "zh": "观察AI编程助手在可视化输出质量上的竞争，以及「设计品味」如何成为AI工具差异化的关键。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +371,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "通过优化推理内存占用，让70B大模型在单张4GB显卡上运行，甚至支持2.8T参数的超大开源模型，无需量化、蒸馏或剪枝，大幅降低大模型部署的硬件门槛。",
+          "zh": "AirLLM让大模型推理内存占用大幅降低，单张4GB显卡即可运行70B参数模型，甚至支持2.8T参数的超大开源模型，无需量化、蒸馏或剪枝。适合硬件资源有限但想本地运行大模型的开发者。",
           "en": "AirLLM 2.8T LLM inference with single 4GB GPU"
         },
-        "totalStars": 38502,
+        "totalStars": 38544,
         "language": "Jupyter Notebook",
         "dailyStars": 1001,
         "chineseIntro": {
-          "zh": "通过优化推理内存占用，让70B大模型在单张4GB显卡上运行，甚至支持2.8T参数的超大开源模型，无需量化、蒸馏或剪枝，大幅降低大模型部署的硬件门槛。",
+          "zh": "AirLLM让大模型推理内存占用大幅降低，单张4GB显卡即可运行70B参数模型，甚至支持2.8T参数的超大开源模型，无需量化、蒸馏或剪枝。适合硬件资源有限但想本地运行大模型的开发者。",
           "en": "AirLLM 2.8T LLM inference with single 4GB GPU"
         },
         "todayHighlight": {
-          "zh": "项目已创建约41个月，总star超过3.8万，今日新增1001星，位列全球趋势榜第7，说明「低显存跑大模型」的刚需持续获得关注。",
+          "zh": "项目创建已约41个月，总star数达38544，今日新增1001星，位列全球趋势榜第7。大模型本地部署需求持续存在，AirLLM的低显存方案在硬件受限用户中保持关注。",
           "en": "登上 GitHub Trending 日榜第 7 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 1,001 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,502 stars、3,933 forks，topics: chinese-llm, chinese-nlp, finetune, generative-ai, instruct-gpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,502 stars and 3,933 forks，topics: chinese-llm, chinese-nlp, finetune, generative-ai, instruct-gpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,544 stars、3,937 forks，topics: chinese-llm, chinese-nlp, finetune, generative-ai, instruct-gpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,544 stars and 3,937 forks，topics: chinese-llm, chinese-nlp, finetune, generative-ai, instruct-gpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注推理优化技术如何让大模型在消费级硬件上落地，这可能影响AI产品的部署成本和边缘场景可行性。",
+          "zh": "关注大模型推理成本下降对产品形态的影响，以及低资源部署如何扩大AI应用的可及性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +411,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "针对AI编程助手的上下文窗口优化工具，通过沙箱化工具输出减少98%的上下文占用，持久化会话记忆，并通过MCP+钩子在17个平台上统一路由，解决长会话中上下文爆炸的问题。",
+          "zh": "针对AI编程代理的上下文窗口优化工具，通过沙箱化工具输出减少98%的上下文占用，持久化会话记忆，并通过MCP+钩子在17个平台上执行路由。适合使用Claude Code、Codex等AI编程助手的开发者提升长会话效率。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
-        "totalStars": 28527,
+        "totalStars": 28578,
         "language": "TypeScript",
         "dailyStars": 969,
         "chineseIntro": {
-          "zh": "针对AI编程助手的上下文窗口优化工具，通过沙箱化工具输出减少98%的上下文占用，持久化会话记忆，并通过MCP+钩子在17个平台上统一路由，解决长会话中上下文爆炸的问题。",
+          "zh": "针对AI编程代理的上下文窗口优化工具，通过沙箱化工具输出减少98%的上下文占用，持久化会话记忆，并通过MCP+钩子在17个平台上执行路由。适合使用Claude Code、Codex等AI编程助手的开发者提升长会话效率。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
         "todayHighlight": {
-          "zh": "项目创建约8个月，总star超过2.8万，今日新增969星，位列全球趋势榜第4，说明「上下文管理」正成为AI编程助手生态的关键基础设施。",
+          "zh": "项目创建约8个月，总star数已达28578，今日新增969星，位列全球趋势榜第4。AI编程代理上下文管理需求随生态升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 4 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 969 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 28,527 stars、2,012 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 28,527 stars and 2,012 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 28,578 stars、2,012 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 28,578 stars and 2,012 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察上下文优化如何从技术细节演变为独立产品层，思考AI编程工具中「记忆与路由」的产品化机会。",
+          "zh": "观察AI编程助手生态中上下文优化这一细分赛道的产品机会，以及跨平台路由的集成价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +451,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Vercel Labs出品的开放Agent技能生态CLI工具，通过npx skills命令即可为OpenCode、Claude Code、Codex、Cursor等75+种AI编程助手安装和管理技能，统一技能分发入口。",
+          "zh": "Vercel Labs出品的开放代理技能工具，通过npx skills命令为OpenCode、Claude Code、Codex、Cursor等75+种AI代理提供技能管理。适合希望统一管理多平台AI代理技能的开发者。",
           "en": "Star vercel-labs / skills The open agent skills tool - npx skills"
         },
-        "totalStars": 34733,
+        "totalStars": 34771,
         "language": "TypeScript",
         "dailyStars": 190,
         "chineseIntro": {
-          "zh": "Vercel Labs出品的开放Agent技能生态CLI工具，通过npx skills命令即可为OpenCode、Claude Code、Codex、Cursor等75+种AI编程助手安装和管理技能，统一技能分发入口。",
+          "zh": "Vercel Labs出品的开放代理技能工具，通过npx skills命令为OpenCode、Claude Code、Codex、Cursor等75+种AI代理提供技能管理。适合希望统一管理多平台AI代理技能的开发者。",
           "en": "Star vercel-labs / skills The open agent skills tool - npx skills"
         },
         "todayHighlight": {
-          "zh": "项目创建约9个月，总star超过3.4万，今日新增190星，位列全球趋势榜第6，作为Vercel Labs产品持续获得生态关注。",
+          "zh": "项目创建约9个月，总star数已达34771，今日新增190星，位列全球趋势榜第6。作为AI代理技能生态的基础工具，随代理生态扩张持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 190 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,733 stars、2,966 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,733 stars and 2,966 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,771 stars、2,966 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,771 stars and 2,966 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注「Agent技能」标准化分发渠道的竞争，思考技能市场是否会成为AI编程助手生态的入口级产品。",
+          "zh": "关注AI代理技能标准化和跨平台兼容性的趋势，以及Vercel在开发者工具生态中的布局。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -499,26 +491,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的多平台AI Agent助手与开发框架，集成QQ、Telegram、Discord、微信等主流IM平台，支持多种大模型和插件系统，可快速搭建智能聊天机器人，被称为openclaw的替代方案。",
+          "zh": "集成多种IM平台、大模型和插件的AI代理助手与开发框架，支持QQ、Telegram、Discord等，可作为openclaw替代方案。适合想快速搭建多平台智能机器人的开发者。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
-        "totalStars": 41850,
+        "totalStars": 41851,
         "language": "Python",
         "dailyStars": 67,
         "chineseIntro": {
-          "zh": "开源的多平台AI Agent助手与开发框架，集成QQ、Telegram、Discord、微信等主流IM平台，支持多种大模型和插件系统，可快速搭建智能聊天机器人，被称为openclaw的替代方案。",
+          "zh": "集成多种IM平台、大模型和插件的AI代理助手与开发框架，支持QQ、Telegram、Discord等，可作为openclaw替代方案。适合想快速搭建多平台智能机器人的开发者。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
         "todayHighlight": {
-          "zh": "项目已创建约47个月，总star超过4.1万，今日位列中文趋势榜第6，作为老牌多平台机器人框架持续获得中文社区关注。",
+          "zh": "项目创建已约47个月，总star数达41851，今日新增67星，位列中文趋势榜第6。作为老牌多平台机器人框架，在中文社区持续获得关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 67 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 41,850 stars、3,060 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 41,850 stars and 3,060 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 41,851 stars、3,061 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 41,851 stars and 3,061 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察多IM平台机器人框架的长期生态位，思考跨平台Agent集成能力对产品覆盖面的价值。",
+          "zh": "观察多平台IM机器人框架的长期生态价值，以及AI代理与即时通讯结合的产品化路径。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,18 +531,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于Spring Boot + MyBatis Plus + Vue的后台管理系统与微信小程序全套解决方案，支持RBAC动态权限、SaaS多租户、Flowable工作流、支付、商城、CRM、ERP、AI大模型、IoT等企业级功能，代码全部开源。",
+          "zh": "基于Spring Boot + MyBatis Plus + Vue & Element的后台管理系统，支持RBAC动态权限、SaaS多租户、Flowable工作流、支付、商城、CRM、ERP、AI大模型、IoT等功能。适合企业级快速开发。",
           "en": "Star YunaiV / ruoyi-vue-pro 🔥 官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城、CRM、ERP、MES、IM、AI 大模型、IoT 物联网等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！"
         },
         "totalStars": 39765,
         "language": "Java",
         "dailyStars": 35,
         "chineseIntro": {
-          "zh": "基于Spring Boot + MyBatis Plus + Vue的后台管理系统与微信小程序全套解决方案，支持RBAC动态权限、SaaS多租户、Flowable工作流、支付、商城、CRM、ERP、AI大模型、IoT等企业级功能，代码全部开源。",
+          "zh": "基于Spring Boot + MyBatis Plus + Vue & Element的后台管理系统，支持RBAC动态权限、SaaS多租户、Flowable工作流、支付、商城、CRM、ERP、AI大模型、IoT等功能。适合企业级快速开发。",
           "en": "Star YunaiV / ruoyi-vue-pro 🔥 官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城、CRM、ERP、MES、IM、AI 大模型、IoT 物联网等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！"
         },
         "todayHighlight": {
-          "zh": "项目已创建约70个月，总star接近4万，今日位列中文趋势榜第2，作为国内老牌开源后台框架持续获得企业开发者关注。",
+          "zh": "项目创建已约70个月，总star数达39765，今日新增35星，位列中文趋势榜第2。作为国内老牌开源后台框架，持续获得企业开发者关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 2 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 35 星."
         },
         "inclusionReason": {
@@ -558,7 +550,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,765 stars and 8,572 forks，topics: flowable, mybatis-plus, mysql, redis, redisson, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "关注传统企业级开源框架如何融入AI大模型和IoT能力，思考存量管理系统产品的AI化改造路径。",
+          "zh": "关注企业级后台框架如何集成AI能力，以及开源项目在商业化与社区维护间的平衡。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +571,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "生产级多平台智能机器人开发平台，支持Discord、Slack、LINE、Telegram、企业微信、飞书、钉钉、QQ等主流IM，集成ChatGPT、DeepSeek、Dify、n8n、Coze、Claude、Gemini等模型与工具，提供Agent编排、知识库和插件系统。",
+          "zh": "生产级多平台智能机器人开发平台，支持Discord、Slack、LINE、Telegram、微信、飞书、钉钉、QQ等，集成ChatGPT、DeepSeek、Dify、n8n、Coze等。适合企业快速构建跨平台AI机器人。",
           "en": "Star langbot-app / LangBot Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow"
         },
         "totalStars": 18147,
         "language": "Python",
         "dailyStars": 12,
         "chineseIntro": {
-          "zh": "生产级多平台智能机器人开发平台，支持Discord、Slack、LINE、Telegram、企业微信、飞书、钉钉、QQ等主流IM，集成ChatGPT、DeepSeek、Dify、n8n、Coze、Claude、Gemini等模型与工具，提供Agent编排、知识库和插件系统。",
+          "zh": "生产级多平台智能机器人开发平台，支持Discord、Slack、LINE、Telegram、微信、飞书、钉钉、QQ等，集成ChatGPT、DeepSeek、Dify、n8n、Coze等。适合企业快速构建跨平台AI机器人。",
           "en": "Star langbot-app / LangBot Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台/ Agent、知识库编排、插件系统 / Bots for Discord / Slack / LINE / Telegram / WeChat(企业微信, 企微智能机器人, 公众号) / 飞书 / 钉钉 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow"
         },
         "todayHighlight": {
-          "zh": "项目已创建约47个月，总star超过1.8万，今日位列中文趋势榜第4，作为多平台IM机器人平台持续获得中文社区关注。",
+          "zh": "项目创建已约47个月，总star数达18147，今日新增12星，位列中文趋势榜第4。作为多平台机器人平台，在中文企业市场持续获得关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 4 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 12 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,147 stars、1,641 forks，topics: agent, coze, deepseek, dify, dingtalk，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,147 stars and 1,641 forks，topics: agent, coze, deepseek, dify, dingtalk, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,147 stars、1,642 forks，topics: agent, coze, deepseek, dify, dingtalk，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,147 stars and 1,642 forks，topics: agent, coze, deepseek, dify, dingtalk, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "观察多平台机器人平台如何整合Agent编排与知识库，思考企业IM场景中AI助手的落地产品化机会。",
+          "zh": "观察企业级IM机器人平台如何整合多种大模型和自动化工具，以及跨平台部署的产品化能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,19 +617,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Higgsfield 借助 GPT-6 Astra 将 AI 视频生成时长从 1 分钟拉长到 10 分钟以上，同时用 GPT-Image-2.5 提升画面精度，并打通 GPT-Live 走向语音驱动电影制作。对产品意味着长视频叙事和语音交互式创作可能成为下一波视频工具的基础能力。",
+          "zh": "Higgsfield 借助 GPT-6 Astra 将 AI 视频生成时长从 1 分钟拉长到 10 分钟以上，并用 GPT-Image-2.5 提升画面精度、GPT-Live 打通语音驱动拍片。对视频类产品而言，这意味着长叙事、多镜头连续生成开始具备可落地性。",
           "en": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
         },
         "chineseIntro": {
-          "zh": "Higgsfield 借助 GPT-6 Astra 将 AI 视频生成时长从 1 分钟拉长到 10 分钟以上，同时用 GPT-Image-2.5 提升画面精度，并打通 GPT-Live 走向语音驱动电影制作。对产品意味着长视频叙事和语音交互式创作可能成为下一波视频工具的基础能力。",
+          "zh": "Higgsfield 借助 GPT-6 Astra 将 AI 视频生成时长从 1 分钟拉长到 10 分钟以上，并用 GPT-Image-2.5 提升画面精度、GPT-Live 打通语音驱动拍片。对视频类产品而言，这意味着长叙事、多镜头连续生成开始具备可落地性。",
           "en": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
         },
         "todayHighlight": {
-          "zh": "视频生成从短片段竞赛转向长时长与多模态控制，OpenAI 正把模型能力打包成创作工作流，可能重新定义 AI 视频产品的竞争门槛。",
-          "en": "视频生成从短片段竞赛转向长时长与多模态控制，OpenAI 正把模型能力打包成创作工作流，可能重新定义 AI 视频产品的竞争门槛。"
+          "zh": "视频生成从「片段工具」迈向「长内容生产管线」，OpenAI 正把多模态模型打包成创作工作流，直接冲击现有 AI 视频创业公司的时长与一致性壁垒。",
+          "en": "视频生成从「片段工具」迈向「长内容生产管线」，OpenAI 正把多模态模型打包成创作工作流，直接冲击现有 AI 视频创业公司的时长与一致性壁垒。"
         },
         "pmInsight": {
-          "zh": "PM 应评估自家视频功能是否仍停留在 1 分钟以内，并思考如何将长视频、图像精度和语音控制组合成可付费的创作管线。",
+          "zh": "做视频产品的 PM 应立刻评估 10 分钟时长对分镜编排、素材管理和渲染成本结构的影响，重新设计面向长内容的编辑与审核链路。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -662,19 +654,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Google 发布最新前沿模型 Gemini 4 Argon，面向开发者、企业、科学家和消费者全面开放，主打解决最困难的问题。这意味着 Google 在通用推理和复杂任务上再次拉高模型能力上限。",
+          "zh": "Google 发布最新前沿模型 Gemini 4 Argon，面向开发者、企业、科研人员和普通消费者全面开放。它主打解决高难度问题，意味着 Google 在推理与复杂任务能力上再次抬高基线。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp\">We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
         },
         "chineseIntro": {
-          "zh": "Google 发布最新前沿模型 Gemini 4 Argon，面向开发者、企业、科学家和消费者全面开放，主打解决最困难的问题。这意味着 Google 在通用推理和复杂任务上再次拉高模型能力上限。",
+          "zh": "Google 发布最新前沿模型 Gemini 4 Argon，面向开发者、企业、科研人员和普通消费者全面开放。它主打解决高难度问题，意味着 Google 在推理与复杂任务能力上再次抬高基线。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp\">We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
         },
         "todayHighlight": {
-          "zh": "Gemini 4 Argon 直接对标 OpenAI 和 Anthropic 的旗舰模型，且同步覆盖消费端与开发者端，可能改变企业选型和 API 定价的竞争格局。",
-          "en": "Gemini 4 Argon 直接对标 OpenAI 和 Anthropic 的旗舰模型，且同步覆盖消费端与开发者端，可能改变企业选型和 API 定价的竞争格局。"
+          "zh": "Gemini 4 Argon 同日进入 GitHub Copilot，说明 Google 正用「模型+分发渠道」组合拳抢占开发者心智，与 OpenAI 的前沿模型竞争进入贴身阶段。",
+          "en": "Gemini 4 Argon 同日进入 GitHub Copilot，说明 Google 正用「模型+分发渠道」组合拳抢占开发者心智，与 OpenAI 的前沿模型竞争进入贴身阶段。"
         },
         "pmInsight": {
-          "zh": "PM 应尽快在内部评测集上对比 Gemini 4 Argon 与现有主力模型，尤其关注复杂推理和长上下文任务，以判断是否值得切换或双模型冗余。",
+          "zh": "PM 应尽快在自有评测集上跑 Gemini 4 Argon 与现有主力模型的对比，重点看复杂推理和长任务完成率，再决定是否调整模型路由策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -682,6 +674,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Google AI",
             "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Demonstrating Deterministic Trust and Formal Proof for AI-Generated Code",
+          "en": "Hacker News AI: Demonstrating Deterministic Trust and Formal Proof for AI-Generated Code"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "AdaCore 展示 GNAT Foundry 与 SPARK 形式化证明结合，为 AI 生成代码提供确定性信任与形式化验证路径。这回应了 AI 写代码在安全关键领域「不可信」的核心质疑。",
+          "en": "Article URL: https://www.adacore.com/blog/gnat-foundry-intersection-demonstrating-trustworthy-ai-development Comments URL: https://news.ycombinator.com/item?id=50084212 Points: 1 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "AdaCore 展示 GNAT Foundry 与 SPARK 形式化证明结合，为 AI 生成代码提供确定性信任与形式化验证路径。这回应了 AI 写代码在安全关键领域「不可信」的核心质疑。",
+          "en": "Article URL: https://www.adacore.com/blog/gnat-foundry-intersection-demonstrating-trustworthy-ai-development Comments URL: https://news.ycombinator.com/item?id=50084212 Points: 1 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "当行业普遍追求生成速度时，形式化验证路线提醒市场：在航空、医疗、国防等场景，可证明的正确性可能比生成效率更具商业价值。",
+          "en": "当行业普遍追求生成速度时，形式化验证路线提醒市场：在航空、医疗、国防等场景，可证明的正确性可能比生成效率更具商业价值。"
+        },
+        "pmInsight": {
+          "zh": "面向安全关键行业的 PM 可关注形式化验证与 AI 代码生成的结合点，提前规划「生成+验证」双环节的产品能力，而非只卖生成速度。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://www.adacore.com/blog/gnat-foundry-intersection-demonstrating-trustworthy-ai-development"
           }
         ]
       },
@@ -699,19 +728,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Gemini 4 Argon 在 GitHub Copilot 中正式可用，覆盖 Pro+、Max、Business 和 Enterprise 用户，支持复杂编码、智能体和推理任务，早期测试在编码基准上全面超越前代 Gemini。这意味着 Copilot 用户可以直接在 IDE 和 CLI 中调用 Google 最新模型。",
+          "zh": "Gemini 4 Argon 在 GitHub Copilot 中正式可用，覆盖 VS Code、JetBrains、Xcode、CLI 及 coding agent 等入口，按供应商列表价计费。早期测试显示其在各编码基准上均优于前代 Gemini，CLI 场景提升最大。",
           "en": "Gemini 4 Argon, Google&#8217;s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon&#8230; The post Gemini 4 Argon in GitHub Copilot appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "Gemini 4 Argon 在 GitHub Copilot 中正式可用，覆盖 Pro+、Max、Business 和 Enterprise 用户，支持复杂编码、智能体和推理任务，早期测试在编码基准上全面超越前代 Gemini。这意味着 Copilot 用户可以直接在 IDE 和 CLI 中调用 Google 最新模型。",
+          "zh": "Gemini 4 Argon 在 GitHub Copilot 中正式可用，覆盖 VS Code、JetBrains、Xcode、CLI 及 coding agent 等入口，按供应商列表价计费。早期测试显示其在各编码基准上均优于前代 Gemini，CLI 场景提升最大。",
           "en": "Gemini 4 Argon, Google&#8217;s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon&#8230; The post Gemini 4 Argon in GitHub Copilot appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "GitHub 同时集成多家前沿模型，让 Copilot 成为模型竞争的分发渠道，开发者选择权增加，模型厂商的生态卡位战进一步升温。",
-          "en": "GitHub 同时集成多家前沿模型，让 Copilot 成为模型竞争的分发渠道，开发者选择权增加，模型厂商的生态卡位战进一步升温。"
+          "zh": "GitHub 同时接入 Google 最新前沿模型，表明 Copilot 正走向「多模型中立平台」，模型厂商的竞争焦点从独占渠道转向在开发者工作流中的实际表现。",
+          "en": "GitHub 同时接入 Google 最新前沿模型，表明 Copilot 正走向「多模型中立平台」，模型厂商的竞争焦点从独占渠道转向在开发者工作流中的实际表现。"
         },
         "pmInsight": {
-          "zh": "PM 应检查团队 Copilot 套餐是否已开放该模型，并针对 CLI 和编码智能体场景设计 A/B 测试，量化 Gemini 4 Argon 对任务完成率和成本的影响。",
+          "zh": "使用 Copilot 的团队 PM 应检查企业版模型策略默认开启逻辑，避免新模型未经评估自动进入生产工作流，同时对比 CLI 场景的实际任务完成率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -736,19 +765,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 推出上下文感知的密钥检测分类器，将加权接受率提升 11.5%，中位扫描执行时间降低 86%，服务成本降低 98%。这意味着代码安全扫描从通用 LLM 调用转向紧凑专用模型，在提升准确率的同时大幅降本。",
+          "zh": "GitHub 推出上下文感知的密钥检测分类器，加权接受率提升 11.5%，扫描执行时间中位数下降 86%，服务成本降低 98%。它用紧凑模型替代远程 LLM 调用，在减少误报的同时提升检出质量。",
           "en": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%. The post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 推出上下文感知的密钥检测分类器，将加权接受率提升 11.5%，中位扫描执行时间降低 86%，服务成本降低 98%。这意味着代码安全扫描从通用 LLM 调用转向紧凑专用模型，在提升准确率的同时大幅降本。",
+          "zh": "GitHub 推出上下文感知的密钥检测分类器，加权接受率提升 11.5%，扫描执行时间中位数下降 86%，服务成本降低 98%。它用紧凑模型替代远程 LLM 调用，在减少误报的同时提升检出质量。",
           "en": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%. The post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "安全检测开始用专用小模型替代远程大模型调用，说明 AI 产品在垂直场景中正从“越大越好”转向“越准越省越好”。",
-          "en": "安全检测开始用专用小模型替代远程大模型调用，说明 AI 产品在垂直场景中正从“越大越好”转向“越准越省越好”。"
+          "zh": "这是「小模型替代大模型调用」在安全场景的典型落地，说明垂直场景专用小模型在成本与精度上已能反超通用 LLM 方案。",
+          "en": "这是「小模型替代大模型调用」在安全场景的典型落地，说明垂直场景专用小模型在成本与精度上已能反超通用 LLM 方案。"
         },
         "pmInsight": {
-          "zh": "PM 在安全或合规类功能中应优先评估专用小模型方案，用接受率和误报率而非单纯模型规模来衡量价值，并关注后推送扫描的体验优化。",
+          "zh": "做安全或代码扫描类产品的 PM 可评估用场景专用小模型替换通用 LLM 调用，重点测算误报率下降带来的开发者信任收益与推理成本节省。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -761,8 +790,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Hacker News AI: How to be more ambitious when using AI",
-          "en": "Hacker News AI: How to be more ambitious when using AI"
+          "zh": "Hacker News LLM: LeanLLM: An LLM SDK for applications written in Lean 4",
+          "en": "Hacker News LLM: LeanLLM: An LLM SDK for applications written in Lean 4"
         },
         "category": {
           "zh": "公司动态",
@@ -773,63 +802,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一篇来自 Claude 团队成员的教程文章在 Hacker News 引发讨论，主题是如何更有野心地使用 AI，指出模型能力增长不均衡，很多人仍停留在基础问答。这反映了社区对 AI 产品使用深度的反思。",
-          "en": "Article URL: https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/ Comments URL: https://news.ycombinator.com/item?id=50083514 Points: 1 # Comments: 0"
+          "zh": "社区发布 LeanLLM，为 Lean 4 应用提供统一 LLM 客户端库，支持 Claude、OpenAI、Gemini、DeepSeek、Qwen、Grok、Mistral 等多家模型。它把多厂商接入能力带入形式化验证语言生态。",
+          "en": "Article URL: https://github.com/theoriclabs/leanllm Comments URL: https://news.ycombinator.com/item?id=50082909 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "一篇来自 Claude 团队成员的教程文章在 Hacker News 引发讨论，主题是如何更有野心地使用 AI，指出模型能力增长不均衡，很多人仍停留在基础问答。这反映了社区对 AI 产品使用深度的反思。",
-          "en": "Article URL: https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/ Comments URL: https://news.ycombinator.com/item?id=50083514 Points: 1 # Comments: 0"
+          "zh": "社区发布 LeanLLM，为 Lean 4 应用提供统一 LLM 客户端库，支持 Claude、OpenAI、Gemini、DeepSeek、Qwen、Grok、Mistral 等多家模型。它把多厂商接入能力带入形式化验证语言生态。",
+          "en": "Article URL: https://github.com/theoriclabs/leanllm Comments URL: https://news.ycombinator.com/item?id=50082909 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "当模型能力快速提升时，用户采用深度成为瓶颈，产品设计需要从“能做什么”转向“如何引导用户做更难的事”。",
-          "en": "当模型能力快速提升时，用户采用深度成为瓶颈，产品设计需要从“能做什么”转向“如何引导用户做更难的事”。"
+          "zh": "LLM 工具链开始向 Lean 这类形式化语言渗透，暗示「AI 生成+数学证明」的工程闭环正在被社区自发搭建。",
+          "en": "LLM 工具链开始向 Lean 这类形式化语言渗透，暗示「AI 生成+数学证明」的工程闭环正在被社区自发搭建。"
         },
         "pmInsight": {
-          "zh": "PM 可以在产品内设计渐进式任务模板或野心提示，帮助用户从简单问答过渡到复杂工作流，从而提升留存和付费转化。",
+          "zh": "关注形式化方法与 AI 结合方向的 PM 可跟踪此类 SDK 的成熟度，评估其是否能成为安全关键领域 AI 应用的底层接入层。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "Hacker News AI",
-            "url": "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Product Hunt AI: Nimble",
-          "en": "Product Hunt AI: Nimble"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
-        },
-        "summary": {
-          "zh": "Nimble 在 Product Hunt 发布，定位为 SOTA 决策模型，面向需要高质量决策支持的场景。这代表垂直决策类 AI 产品仍在持续涌现。",
-          "en": "<p> SOTA Decision Model </p> <p> <a href=\"https://www.producthunt.com/products/nimble-5?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1279309?app_id=339\">Link</a> </p>"
-        },
-        "chineseIntro": {
-          "zh": "Nimble 在 Product Hunt 发布，定位为 SOTA 决策模型，面向需要高质量决策支持的场景。这代表垂直决策类 AI 产品仍在持续涌现。",
-          "en": "<p> SOTA Decision Model </p> <p> <a href=\"https://www.producthunt.com/products/nimble-5?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1279309?app_id=339\">Link</a> </p>"
-        },
-        "todayHighlight": {
-          "zh": "决策模型作为独立品类出现，说明通用大模型之外，针对特定决策流程的专用产品仍有差异化空间。",
-          "en": "决策模型作为独立品类出现，说明通用大模型之外，针对特定决策流程的专用产品仍有差异化空间。"
-        },
-        "pmInsight": {
-          "zh": "PM 应关注 Nimble 的决策场景定义和交互方式，思考自家产品是否可以将通用模型输出封装成可解释、可执行的决策建议。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Product Hunt AI",
-            "url": "https://www.producthunt.com/products/nimble-5"
+            "label": "Hacker News LLM",
+            "url": "https://github.com/theoriclabs/leanllm"
           }
         ]
       }
