@@ -44,110 +44,118 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 成本优化与模型迭代双线升温",
-      "en": "AI PM Daily: Agent Cost Optimization and Model Iteration Heat Up"
+      "zh": "AI 产品经理日报：Agent 基础设施与模型选型双线升温",
+      "en": "AI PM Daily: Agent Infrastructure and Model Selection Both Heating Up"
     },
     "editorNote": {
-      "zh": "今日主线集中在 Agent 基础设施的成本效率与模型平台的快速迭代。GitHub 趋势榜上多个 token 优化项目持续在榜，同时 Google、Meta、OpenAI 均有模型或生态动作，企业选型与迁移压力上升。",
-      "en": "Today's focus is on cost efficiency in agent infrastructure and rapid model platform iteration. Multiple token-optimization projects remain on GitHub trending, while Google, Meta, and OpenAI all made model or ecosystem moves, increasing pressure on enterprise selection and migration."
+      "zh": "今日主线集中在两条：一是 Agent 原生基础设施（版本控制、上下文管理、数据搜索、技能库）持续在 GitHub 趋势榜聚集；二是模型层密集更新——Meta 开源 Muse Spark、Google 发布 Gemini 4 Argon、GitHub Copilot 宣布弃用多个模型，模型选型与迁移成本重新成为产品决策焦点。",
+      "en": "Today's focus is on two threads: Agent-native infrastructure (version control, context management, data search, skill libraries) continues to cluster on GitHub trending; and the model layer sees dense updates — Meta open-sources Muse Spark, Google releases Gemini 4 Argon, and GitHub Copilot announces deprecation of several models, making model selection and migration costs a renewed product decision focus."
     },
     "keyTakeaway": {
-      "zh": "Agent 成本优化正从边缘工具变成基础设施共识，同时模型平台的快速迭代让企业面临持续的迁移与选型压力。",
-      "en": "Agent cost optimization is shifting from edge tooling to infrastructure consensus, while rapid model platform iteration creates continuous migration and selection pressure for enterprises."
+      "zh": "Agent 开发正从「能不能跑」转向「跑得省、跑得稳、跑得多」——上下文压缩、多 Agent 版本控制、科学技能库等基础设施项目集中上榜，说明成本与协作效率已成为 Agent 产品的核心竞争维度；与此同时，Copilot 模型弃用与 Meta/Google 新模型发布叠加，模型选型窗口正在收窄，PM 需要把「模型可替换性」纳入架构设计。",
+      "en": "Agent development is shifting from 'can it run' to 'run cheaper, run stabler, run more agents' — infrastructure projects like context compression, multi-agent version control, and scientific skill libraries are clustering on trending, indicating cost and collaboration efficiency have become core competitive dimensions for Agent products. Meanwhile, Copilot model deprecations combined with Meta/Google new model releases are narrowing the model selection window; PMs need to build 'model replaceability' into architecture design."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 上下文与 token 优化项目集中升温",
-          "en": "Agent Context and Token Optimization Projects Heat Up"
+          "zh": "Agent 原生基础设施集中上榜：版本控制、上下文、数据搜索三线并进",
+          "en": "Agent-Native Infrastructure Clusters on Trending: Version Control, Context, and Data Search Advance Together"
         },
         "category": {
-          "zh": "开发者工具与基础设施",
-          "en": "Developer Tools & Infrastructure"
+          "zh": "开发者工具 / Agent 基础设施",
+          "en": "Developer Tools / Agent Infrastructure"
         },
         "summary": {
-          "zh": "GitHub 趋势榜上，context-mode（今日 +904 stars）、xerj（+715）、caveman（+433）等多个 token 优化项目持续在榜，分别通过沙箱化输出、自动索引和精简语言将 token 消耗降低 40-98%。",
-          "en": "GitHub trending shows multiple token-optimization projects—context-mode (+904 stars today), xerj (+715), caveman (+433)—using sandboxed outputs, auto-indexing, and simplified language to cut token consumption by 40-98%."
+          "zh": "open_scion（创建 1 天即 1004 星）为多 Agent 并发提供版本控制，context-mode（今日 +904 星）将上下文占用降低 98%，xerj（今日 +715 星）让 Agent 无需 grep 即可搜索代码与文档，ECC（今日 +1013 星）提供 Agent 性能优化框架。四个项目同日进入趋势榜，覆盖 Agent 协作、记忆、检索与执行效率。",
+          "en": "open_scion (1004 stars in 1 day) provides version control for concurrent multi-agent workflows; context-mode (+904 stars today) reduces context usage by 98%; xerj (+715 stars today) lets agents search code and docs without grep; ECC (+1013 stars today) offers an agent performance optimization framework. Four projects entered trending on the same day, covering agent collaboration, memory, retrieval, and execution efficiency."
         },
         "pmInsight": {
-          "zh": "Agent 成本正从隐性支出变为显性竞争维度，产品经理应评估自身 Agent 工作流的 token 效率，并考虑将上下文优化作为差异化卖点。",
-          "en": "Agent cost is shifting from hidden expense to explicit competitive dimension. PMs should assess token efficiency in their agent workflows and consider context optimization as a differentiator."
+          "zh": "Agent 产品的瓶颈正从模型能力转向工程效率——上下文成本、多 Agent 冲突、数据接入是当前最痛的三个点。PM 应评估自身产品是否在这些环节存在可量化的效率损失，并优先考虑集成或自建对应能力，而非继续堆叠模型调用。",
+          "en": "The bottleneck for Agent products is shifting from model capability to engineering efficiency — context cost, multi-agent conflicts, and data access are the three most painful points. PMs should assess whether their products have quantifiable efficiency losses in these areas and prioritize integrating or building corresponding capabilities rather than stacking more model calls."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "mksglu/context-mode",
+            "label": "open_scion",
+            "url": "https://github.com/feder-cr/open_scion"
+          },
+          {
+            "label": "context-mode",
             "url": "https://github.com/mksglu/context-mode"
           },
           {
-            "label": "xerj-org/xerj",
+            "label": "xerj",
             "url": "https://github.com/xerj-org/xerj"
           },
           {
-            "label": "JuliusBrussee/caveman",
-            "url": "https://github.com/JuliusBrussee/caveman"
+            "label": "ECC",
+            "url": "https://github.com/affaan-m/ECC"
           }
         ]
       },
       {
         "title": {
-          "zh": "模型平台密集迭代，企业迁移压力上升",
-          "en": "Dense Model Platform Iterations Raise Enterprise Migration Pressure"
+          "zh": "模型层密集更新：Copilot 弃用旧模型，Meta 与 Google 同日发布新前沿模型",
+          "en": "Dense Model Layer Updates: Copilot Deprecates Old Models as Meta and Google Release New Frontier Models"
         },
         "category": {
-          "zh": "模型平台与生态",
-          "en": "Model Platforms & Ecosystem"
+          "zh": "模型平台 / 生态动态",
+          "en": "Model Platform / Ecosystem Dynamics"
         },
         "summary": {
-          "zh": "Google 发布 Gemini 4 Argon，Meta 在 Hugging Face 开源 8160 亿参数多模态 MoE 模型 Muse Spark Open，同时 GitHub 宣布 11 月弃用多个 Copilot 模型（Claude Opus 4.8/5、GPT-5.6 Terra）。",
-          "en": "Google released Gemini 4 Argon, Meta open-sourced 816B-parameter multimodal MoE Muse Spark Open on Hugging Face, and GitHub announced deprecation of multiple Copilot models (Claude Opus 4.8/5, GPT-5.6 Terra) in November."
+          "zh": "GitHub 宣布 11 月 16 日弃用 Claude Opus 4.8、Claude Opus 5 和 GPT-5.6 Terra，推荐迁移至 Claude Opus 5.5、GPT-6.1 Sol 或 GPT-6 Luna；同日 Meta 在 Hugging Face 发布 8160 亿参数开源权重多模态 MoE 模型 Muse Spark Open，Google 发布 Gemini 4 Argon 并全面开放。",
+          "en": "GitHub announced deprecation of Claude Opus 4.8, Claude Opus 5, and GPT-5.6 Terra on November 16, recommending migration to Claude Opus 5.5, GPT-6.1 Sol, or GPT-6 Luna. On the same day, Meta released Muse Spark Open, an 816B-parameter open-weight multimodal MoE model on Hugging Face, and Google released Gemini 4 Argon with full availability."
         },
         "pmInsight": {
-          "zh": "模型生命周期缩短，产品经理需建立模型抽象层和快速切换机制，避免被单一供应商锁定，同时关注开源权重模型在成本敏感场景的替代可能。",
-          "en": "Shortening model lifecycles mean PMs need abstraction layers and fast-switching mechanisms to avoid vendor lock-in, while watching open-weight models as cost-sensitive alternatives."
+          "zh": "Copilot 的模型轮换会强制大量企业团队在两周内重新评估模型选型与成本，而 Meta 开源权重模型首次在规模和多模态 agent 能力上逼近闭源前沿，为自托管提供了新选项。PM 应尽快梳理产品中硬编码的模型依赖，建立可替换的模型抽象层，并重新测算自托管与 API 调用的成本平衡点。",
+          "en": "Copilot's model rotation will force many enterprise teams to re-evaluate model selection and costs within two weeks, while Meta's open-weight model approaches closed-source frontier in scale and multimodal agent capability for the first time, offering a new self-hosting option. PMs should quickly audit hardcoded model dependencies, build a replaceable model abstraction layer, and recalculate the cost balance between self-hosting and API calls."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "Google AI: Gemini 4 Argon",
-            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november"
           },
           {
-            "label": "Hugging Face: Muse Spark Open",
+            "label": "Muse Spark Open",
             "url": "https://huggingface.co/blog/meta-muse-spark-open"
           },
           {
-            "label": "GitHub Changelog: Copilot model deprecation",
-            "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november"
+            "label": "Gemini 4 Argon",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
           }
         ]
       },
       {
         "title": {
-          "zh": "科学 Agent 与实时性评估成为新关注点",
-          "en": "Scientific Agents and Real-Time Evaluation Emerge as New Focus"
+          "zh": "垂直 Agent 生态成形：科学技能库与官方插件目录同步增长",
+          "en": "Vertical Agent Ecosystem Takes Shape: Scientific Skill Libraries and Official Plugin Directories Grow in Tandem"
         },
         "category": {
-          "zh": "垂直 Agent 与研究信号",
-          "en": "Vertical Agents & Research Signals"
+          "zh": "垂直应用 / 生态建设",
+          "en": "Vertical Applications / Ecosystem Building"
         },
         "summary": {
-          "zh": "K-Dense-AI/scientific-agent-skills 今日新增 1091 stars，提供 177 个科学技能和 100+ 数据库；arXiv 论文 RealtimeBench 揭示实时环境下 Agent 性能差异，GPT-6.1-sol 在持续运行时落后于更快的 Jev。",
-          "en": "K-Dense-AI/scientific-agent-skills gained 1,091 stars today with 177 scientific skills and 100+ databases; arXiv's RealtimeBench reveals agent performance gaps under live clocks, with GPT-6.1-sol lagging faster Jev during continuous play."
+          "zh": "scientific-agent-skills 提供 177 个科学技能和 100 多个科学数据库，今日 +1091 星位列趋势榜第 3；Anthropic 官方 claude-plugins-official 今日 +307 星位列第 2；OpenAI 推出 Rosalind 学术计划，为学术实验室提供 GPT-Rosalind 赞助访问。三方分别从技能库、插件目录、学术赞助切入垂直科研场景。",
+          "en": "scientific-agent-skills offers 177 scientific skills and 100+ scientific databases, +1091 stars today ranking #3 on trending; Anthropic's official claude-plugins-official gained +307 stars today ranking #2; OpenAI launched the Rosalind Academic Plan providing sponsored GPT-Rosalind access to academic labs. All three approach vertical research scenarios via skill libraries, plugin directories, and academic sponsorship respectively."
         },
         "pmInsight": {
-          "zh": "垂直 Agent 的技能库模式正在验证，同时实时性成为 Agent 设计的新约束。产品经理在科研、运维等场景应优先评估推理速度与动态适应能力，而非仅看静态基准。",
-          "en": "Vertical agent skill libraries are validating, while real-time responsiveness becomes a new design constraint. PMs in research and ops should prioritize inference speed and dynamic adaptation over static benchmarks alone."
+          "zh": "科研场景正在成为 Agent 能力验证的高价值试验场——技能库解决「会做什么」，插件目录解决「怎么接入」，学术赞助解决「谁来用」。PM 若面向专业垂直领域，应优先构建可复用的技能/插件层，而非从零训练垂直模型，同时关注官方目录的收录标准以获取分发红利。",
+          "en": "Research scenarios are becoming a high-value testing ground for agent capability validation — skill libraries answer 'what can it do,' plugin directories answer 'how to integrate,' and academic sponsorship answers 'who uses it.' PMs targeting professional verticals should prioritize building reusable skill/plugin layers rather than training vertical models from scratch, while watching official directory inclusion criteria for distribution benefits."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "K-Dense-AI/scientific-agent-skills",
+            "label": "scientific-agent-skills",
             "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
           },
           {
-            "label": "arXiv: RealtimeBench",
-            "url": "https://arxiv.org/abs/2610.20665"
+            "label": "claude-plugins-official",
+            "url": "https://github.com/anthropics/claude-plugins-official"
+          },
+          {
+            "label": "Rosalind Academic Plan",
+            "url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
           }
         ]
       }
@@ -155,59 +163,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向 Agent 的 token 成本仪表盘",
-          "en": "Token Cost Dashboard for Agents"
+          "zh": "模型可替换层：面向 Copilot 弃用窗口的企业迁移工具",
+          "en": "Model Replaceability Layer: Enterprise Migration Tooling for the Copilot Deprecation Window"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "产品机会 / 模型选型基础设施",
+          "en": "Product Opportunity / Model Selection Infrastructure"
         },
         "summary": {
-          "zh": "基于 context-mode、xerj、caveman 等项目的 token 优化能力，构建统一的 Agent 成本监控与优化建议面板，帮助团队量化不同优化策略的节省效果。",
-          "en": "Build a unified agent cost monitoring and optimization dashboard leveraging token-optimization capabilities from context-mode, xerj, and caveman, helping teams quantify savings from different strategies."
+          "zh": "基于 GitHub Copilot 11 月 16 日弃用三个模型的事件，结合 Model Atlas 这类可自定义能力权重的基准比较工具，可以构建一个「模型迁移评估」产品：自动扫描代码库中的模型调用点，按场景权重对比新旧模型在成本、延迟、基准上的差异，并生成迁移建议。",
+          "en": "Based on GitHub Copilot's November 16 deprecation of three models, combined with benchmark comparison tools like Model Atlas that allow custom capability weights, a 'model migration assessment' product could be built: automatically scan model call sites in codebases, compare old vs. new models on cost, latency, and benchmarks by scenario weight, and generate migration recommendations."
         },
         "pmInsight": {
-          "zh": "可验证假设：若在 Agent 工作流中集成 token 仪表盘，团队可将 LLM 调用成本降低 30% 以上，并提升对模型切换的决策速度。",
-          "en": "Testable hypothesis: integrating a token dashboard into agent workflows can reduce LLM call costs by over 30% and speed up model-switching decisions."
+          "zh": "可验证假设：在 Copilot 弃用公告后两周内，搜索「Copilot model migration」或相关关键词的开发者数量会显著上升；若此时提供一个能一键扫描并对比模型成本的工具，转化率会高于通用基准对比工具。建议先以开源脚本形式验证需求，再考虑产品化。",
+          "en": "Verifiable hypothesis: within two weeks after the Copilot deprecation announcement, searches for 'Copilot model migration' or related keywords will rise significantly; a tool that scans and compares model costs in one click would convert better than generic benchmark comparison tools. Recommend validating demand with an open-source script first before productizing."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "mksglu/context-mode",
-            "url": "https://github.com/mksglu/context-mode"
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november"
           },
           {
-            "label": "xerj-org/xerj",
-            "url": "https://github.com/xerj-org/xerj"
+            "label": "Model Atlas",
+            "url": "https://philippdubach.com/posts/model-atlas-capability-weights/"
           }
         ]
       },
       {
         "title": {
-          "zh": "模型迁移与选型辅助工具",
-          "en": "Model Migration and Selection Assistant"
+          "zh": "Agent 上下文成本仪表盘：把 98% 压缩率变成可售卖的效率指标",
+          "en": "Agent Context Cost Dashboard: Turning 98% Compression into a Sellable Efficiency Metric"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
+          "zh": "产品机会 / Agent 可观测性",
+          "en": "Product Opportunity / Agent Observability"
         },
         "summary": {
-          "zh": "结合 Model Atlas 的能力权重比较思路与 GitHub Copilot 模型弃用事件，开发面向企业的模型迁移评估工具，自动推荐替代模型并估算迁移成本。",
-          "en": "Combine Model Atlas's capability-weight comparison approach with GitHub Copilot model deprecation events to build an enterprise model migration assessment tool that recommends alternatives and estimates migration costs."
+          "zh": "context-mode 展示了 98% 的上下文压缩率，caveman 通过精简表达降低 65% token 用量，两者同日上榜说明 token 成本优化是普遍痛点。可以构建一个 Agent 上下文成本仪表盘，实时展示每个会话的 token 消耗、压缩收益和成本节省，并给出优化建议。",
+          "en": "context-mode demonstrates 98% context compression, and caveman reduces token usage by 65% through concise expression; both trending on the same day indicates token cost optimization is a widespread pain point. An agent context cost dashboard could be built to show real-time token consumption, compression gains, and cost savings per session, with optimization suggestions."
         },
         "pmInsight": {
-          "zh": "可验证假设：若提供模型迁移评估工具，企业客户可将模型切换周期从数周缩短至数天，并降低因模型弃用导致的业务中断风险。",
-          "en": "Testable hypothesis: a model migration assessment tool can shorten enterprise model-switching cycles from weeks to days and reduce business disruption risk from model deprecation."
+          "zh": "可验证假设：Agent 产品团队愿意为「可量化的 token 成本节省」付费，前提是仪表盘能直接关联到账单金额而非仅展示技术指标。建议先在内部产品中验证压缩率与账单节省的相关性，再对外输出为独立工具或平台功能。",
+          "en": "Verifiable hypothesis: Agent product teams are willing to pay for 'quantifiable token cost savings' if the dashboard directly ties to billing amounts rather than just showing technical metrics. Recommend first validating the correlation between compression rates and billing savings internally before externalizing as a standalone tool or platform feature."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "Hacker News LLM: Model Atlas",
-            "url": "https://philippdubach.com/posts/model-atlas-capability-weights/"
+            "label": "context-mode",
+            "url": "https://github.com/mksglu/context-mode"
           },
           {
-            "label": "GitHub Changelog: Copilot model deprecation",
-            "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november"
+            "label": "caveman",
+            "url": "https://github.com/JuliusBrussee/caveman"
           }
         ]
       }
@@ -223,26 +231,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套面向 AI 应用的设计系统，提供 Material、物理感、触觉化、技术化的界面风格，基于 React、Tailwind 和 shadcn 生态，适合快速搭建聊天、Agent 等 AI 产品的前端界面。",
+          "zh": "面向 AI 应用的设计系统，提供材质感、物理触感和技术感的界面组件，基于 React、Tailwind 和 shadcn 生态，适合快速搭建聊天、Agent 等 AI 产品的前端界面。",
           "en": "A design system for AI applications. Material, physical, tactile, technical."
         },
-        "totalStars": 1087,
+        "totalStars": 1121,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套面向 AI 应用的设计系统，提供 Material、物理感、触觉化、技术化的界面风格，基于 React、Tailwind 和 shadcn 生态，适合快速搭建聊天、Agent 等 AI 产品的前端界面。",
+          "zh": "面向 AI 应用的设计系统，提供材质感、物理触感和技术感的界面组件，基于 React、Tailwind 和 shadcn 生态，适合快速搭建聊天、Agent 等 AI 产品的前端界面。",
           "en": "A design system for AI applications. Material, physical, tactile, technical."
         },
         "todayHighlight": {
-          "zh": "创建仅约 1 个月便积累 1087 stars，今日以 rising 项目身份获得关注，AI 应用界面风格化需求升温带动了早期传播。",
+          "zh": "创建仅约 1 个月便获得 1121 星，今日在 rising 榜单中被发现，AI 应用界面设计需求升温带动关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,087 stars、16 forks，topics: agent-ui, ai, ai-agents, chat-ui, design-system，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,087 stars and 16 forks，topics: agent-ui, ai, ai-agents, chat-ui, design-system, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,121 stars、16 forks，topics: agent-ui, ai, ai-agents, chat-ui, design-system，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,121 stars and 16 forks，topics: agent-ui, ai, ai-agents, chat-ui, design-system, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "AI 产品同质化严重，界面设计系统可能成为差异化竞争点，值得关注其组件覆盖度和社区采用情况。",
+          "zh": "AI 产品同质化严重，一套有辨识度的设计系统可能成为产品体验差异化的低成本切入点。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,26 +271,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "每日追踪 AI 新词雷达，从 X、Hugging Face、GitHub 和站点地图中提前捕获新模型、新产品和新仓库的名称，帮助 SEO、Newsletter 和目录站运营者比关键词工具更早发现趋势词。",
+          "zh": "每日追踪 AI 领域新出现的模型、产品和仓库名称，从 X、Hugging Face、GitHub 和站点地图中提前捕获，帮助 SEO、Newsletter 和目录站运营者比关键词工具更早发现新词。",
           "en": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them."
         },
-        "totalStars": 1032,
+        "totalStars": 1034,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "每日追踪 AI 新词雷达，从 X、Hugging Face、GitHub 和站点地图中提前捕获新模型、新产品和新仓库的名称，帮助 SEO、Newsletter 和目录站运营者比关键词工具更早发现趋势词。",
+          "zh": "每日追踪 AI 领域新出现的模型、产品和仓库名称，从 X、Hugging Face、GitHub 和站点地图中提前捕获，帮助 SEO、Newsletter 和目录站运营者比关键词工具更早发现新词。",
           "en": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them."
         },
         "todayHighlight": {
-          "zh": "创建约 1 个月即获得 1032 stars，403 次 fork 显示工具型用户参与度较高，AI 新词监测的时效性需求推动其持续升温。",
+          "zh": "创建约 1 个月积累 1034 星，今日在 rising 榜单中被发现，AI 新词快速涌现让「提前发现」成为内容运营的刚需。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,032 stars、403 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,032 stars and 403 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,034 stars、407 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,034 stars and 407 forks，topics: agent-skills, ai, aisa, claude-code, claude-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "AI 产品经理可关注新词出现到主流工具收录的时间差，这可能是内容或产品抢先布局的窗口期。",
+          "zh": "新词发现速度直接影响内容产品的流量窗口，值得关注如何将趋势雷达能力嵌入自身产品。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,41 +303,41 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "outcrawlai/scout",
-          "en": "outcrawlai/scout"
+          "zh": "feder-cr/open_scion",
+          "en": "feder-cr/open_scion"
         },
         "category": {
           "zh": "GitHub 项目",
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源浏览器 Agent，由 Outcrawl 出品，可自动执行网页浏览和操作任务，基于 TypeScript 和 CDP 协议，适合需要自动化网页交互的 AI 应用场景。",
-          "en": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository."
+          "zh": "Scion 的开源版本，专为编程 Agent 设计的版本控制系统，支持数百个 Agent 同时读写和提交代码，解决传统 Git 在多 Agent 并发场景下的效率瓶颈。",
+          "en": "Open-source version of Scion: version control built for coding agents."
         },
-        "totalStars": 840,
-        "language": "TypeScript",
+        "totalStars": 1004,
+        "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "开源浏览器 Agent，由 Outcrawl 出品，可自动执行网页浏览和操作任务，基于 TypeScript 和 CDP 协议，适合需要自动化网页交互的 AI 应用场景。",
-          "en": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository."
+          "zh": "Scion 的开源版本，专为编程 Agent 设计的版本控制系统，支持数百个 Agent 同时读写和提交代码，解决传统 Git 在多 Agent 并发场景下的效率瓶颈。",
+          "en": "Open-source version of Scion: version control built for coding agents."
         },
         "todayHighlight": {
-          "zh": "创建仅约 1 个月便获得 840 stars，浏览器 Agent 赛道近期升温，开源镜像策略降低了使用门槛，带动早期关注。",
+          "zh": "创建仅 1 天即获得 1004 星，Anthropic 内部 Scion 设计公开后引发开发者对 Agent 原生版本控制的关注，开源替代方案快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 840 stars、26 forks，topics: ai-agent, browser-agent, browser-automation, cdp, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 840 stars and 26 forks，topics: ai-agent, browser-agent, browser-automation, cdp, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,004 stars、107 forks，topics: ai-agents, coding-agents, git, golang, scion，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,004 stars and 107 forks，topics: ai-agents, coding-agents, git, golang, scion, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "浏览器 Agent 是 AI 落地的重要方向，产品经理可观察其任务完成度和与现有自动化工具的差异化。",
+          "zh": "编程 Agent 规模化后，底层工具链需要重新设计，版本控制是其中被低估但关键的一环。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
         "sources": [
           {
             "label": "GitHub Repository",
-            "url": "https://github.com/outcrawlai/scout"
+            "url": "https://github.com/feder-cr/open_scion"
           }
         ]
       },
@@ -343,26 +351,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "将任意 AI Agent 变成 AI 科学家，提供 177 个即用型科学技能和 100 多个科学数据库，覆盖生物、化学、医学和药物发现，兼容 Cursor、Claude Code、Codex 等主流 Agent 平台。",
+          "zh": "将 AI Agent 变成 AI 科学家的技能库，提供 177 个经过验证的科学技能和 100 多个科学数据库，覆盖生物、化学、医学和药物发现，兼容 Cursor、Claude Code 等主流 Agent 平台。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
-        "totalStars": 50675,
+        "totalStars": 50748,
         "language": "Python",
         "dailyStars": 1091,
         "chineseIntro": {
-          "zh": "将任意 AI Agent 变成 AI 科学家，提供 177 个即用型科学技能和 100 多个科学数据库，覆盖生物、化学、医学和药物发现，兼容 Cursor、Claude Code、Codex 等主流 Agent 平台。",
+          "zh": "将 AI Agent 变成 AI 科学家的技能库，提供 177 个经过验证的科学技能和 100 多个科学数据库，覆盖生物、化学、医学和药物发现，兼容 Cursor、Claude Code 等主流 Agent 平台。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
         "todayHighlight": {
-          "zh": "总 star 数已超 5 万，今日新增 1091 stars，位列全球趋势榜第 3，科学 Agent 技能库的生态位和 25 万科学家用户基础持续吸引关注。",
+          "zh": "总 star 数已超 5 万，今日新增 1091 星，位列全球趋势榜第 3，科学 Agent 生态升温带动持续增长。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 50k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,091 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 50,675 stars、4,503 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 50,675 stars and 4,503 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 50,748 stars、4,509 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 50,748 stars and 4,509 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "垂直领域 Agent 技能库的规模化路径值得研究，尤其是如何通过标准协议兼容多平台来扩大用户覆盖。",
+          "zh": "垂直领域的 Agent 技能库正在形成标准化生态，产品经理可关注如何将领域知识封装为可复用的 Agent 能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +391,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Agent 性能优化系统，为 Claude Code、Codex、Cursor 等编程 Agent 提供技能、直觉、记忆、安全和研究优先的开发能力，相当于 Agent 的「操作系统」层。",
+          "zh": "Agent 运行框架的性能优化系统，为 Claude Code、Codex、Cursor 等编程 Agent 提供技能、直觉、记忆、安全和研究优先的开发能力，提升 Agent 执行效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 280556,
+        "totalStars": 280602,
         "language": "JavaScript",
         "dailyStars": 1013,
         "chineseIntro": {
-          "zh": "Agent 性能优化系统，为 Claude Code、Codex、Cursor 等编程 Agent 提供技能、直觉、记忆、安全和研究优先的开发能力，相当于 Agent 的「操作系统」层。",
+          "zh": "Agent 运行框架的性能优化系统，为 Claude Code、Codex、Cursor 等编程 Agent 提供技能、直觉、记忆、安全和研究优先的开发能力，提升 Agent 执行效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "总 star 数高达 28 万，今日新增 1013 stars，位列全球趋势榜第 10，作为 Agent 基础设施的头部项目持续获得关注。",
+          "zh": "总 star 数已超 28 万，今日新增 1013 星，位列全球趋势榜第 10，作为 Agent 基础设施持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 280k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,013 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 280,556 stars、41,720 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 280,556 stars and 41,720 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 280,602 stars、41,728 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 280,602 stars and 41,728 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "Agent 性能优化正在成为独立品类，产品经理应关注其如何定义 Agent 的「记忆」和「安全」标准。",
+          "zh": "Agent 性能优化正在成为独立赛道，产品经理应关注 Agent 运行时的效率瓶颈和优化空间。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +431,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 编程 Agent 的上下文窗口优化工具，通过沙箱化工具输出减少 98% 的 token 消耗，持久化会话记忆，并通过 MCP 和 hooks 在 17 个平台上统一路由。",
+          "zh": "针对 AI 编程 Agent 的上下文窗口优化工具，通过沙箱化工具输出减少 98% 的上下文占用，持久化会话记忆，并通过 MCP 和 hooks 在 17 个平台上实现路由。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
-        "totalStars": 29873,
+        "totalStars": 29894,
         "language": "TypeScript",
         "dailyStars": 904,
         "chineseIntro": {
-          "zh": "面向 AI 编程 Agent 的上下文窗口优化工具，通过沙箱化工具输出减少 98% 的 token 消耗，持久化会话记忆，并通过 MCP 和 hooks 在 17 个平台上统一路由。",
+          "zh": "针对 AI 编程 Agent 的上下文窗口优化工具，通过沙箱化工具输出减少 98% 的上下文占用，持久化会话记忆，并通过 MCP 和 hooks 在 17 个平台上实现路由。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
         "todayHighlight": {
-          "zh": "总 star 数近 3 万，今日新增 904 stars，位列全球趋势榜第 8，上下文优化作为 Agent 成本控制的关键环节持续升温。",
+          "zh": "总 star 数近 3 万，今日新增 904 星，位列全球趋势榜第 8，上下文管理作为 Agent 核心痛点持续升温。",
           "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 904 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,873 stars、2,087 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,873 stars and 2,087 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 29,894 stars、2,090 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 29,894 stars and 2,090 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "上下文成本是 AI 编程 Agent 商业化的核心瓶颈，产品经理应关注此类工具对 token 消耗的实际降低效果。",
+          "zh": "上下文窗口是 Agent 产品的成本和质量关键变量，优化方案值得产品经理深入理解。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -463,26 +471,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 的数据搜索新方式，通过自动索引让 Agent 无需 grep 和 sed 即可理解代码、文档、日志和 PDF，token 消耗降低 40 倍，兼容 Elasticsearch 客户端。",
+          "zh": "面向 AI 的数据搜索引擎，通过自动索引让 Agent 无需 grep 和 sed 即可理解数据，一条命令索引代码、文档、日志和 PDF，支持搜索、RAG、安全审计和 Agent 记忆，兼容 Elasticsearch 客户端。",
           "en": "Star xerj-org / xerj XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work."
         },
-        "totalStars": 5856,
+        "totalStars": 5934,
         "language": "Rust",
         "dailyStars": 715,
         "chineseIntro": {
-          "zh": "面向 AI 的数据搜索新方式，通过自动索引让 Agent 无需 grep 和 sed 即可理解代码、文档、日志和 PDF，token 消耗降低 40 倍，兼容 Elasticsearch 客户端。",
+          "zh": "面向 AI 的数据搜索引擎，通过自动索引让 Agent 无需 grep 和 sed 即可理解数据，一条命令索引代码、文档、日志和 PDF，支持搜索、RAG、安全审计和 Agent 记忆，兼容 Elasticsearch 客户端。",
           "en": "Star xerj-org / xerj XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work."
         },
         "todayHighlight": {
-          "zh": "创建约 4 个月，总 star 数近 6000，今日新增 715 stars，位列全球趋势榜第 12，AI 搜索与 RAG 场景的 token 效率需求推动其增长。",
-          "en": "登上 GitHub Trending 日榜第 12 位, 创建仅约 4 个月便已积累 5,856 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 715 星."
+          "zh": "创建约 4 个月积累近 6000 星，今日新增 715 星，位列全球趋势榜第 12，AI 搜索与 Agent 数据接入需求推动增长。",
+          "en": "登上 GitHub Trending 日榜第 12 位, 创建仅约 4 个月便已积累 5,934 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 715 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,856 stars、317 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,856 stars and 317 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,934 stars、320 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,934 stars and 320 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "AI 搜索的 token 效率直接影响 Agent 的可用性和成本，产品经理可关注其与现有向量数据库方案的互补关系。",
+          "zh": "Agent 与数据之间的检索层正在成为独立产品机会，产品经理可关注搜索效率对 Agent 体验的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -503,26 +511,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "让编程 Agent 用「原始人语」说话，通过技能和代理削减 65% 的 token 消耗，代码保持精确，适合需要控制 LLM 调用成本的开发场景。",
+          "zh": "让编程 Agent 用「原始人语」减少 token 消耗的技能和代理工具，通过精简表达降低 65% 的 token 用量，同时保持代码精确性。",
           "en": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman."
         },
-        "totalStars": 112698,
+        "totalStars": 112755,
         "language": "Go",
         "dailyStars": 433,
         "chineseIntro": {
-          "zh": "让编程 Agent 用「原始人语」说话，通过技能和代理削减 65% 的 token 消耗，代码保持精确，适合需要控制 LLM 调用成本的开发场景。",
+          "zh": "让编程 Agent 用「原始人语」减少 token 消耗的技能和代理工具，通过精简表达降低 65% 的 token 用量，同时保持代码精确性。",
           "en": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman."
         },
         "todayHighlight": {
-          "zh": "总 star 数超 11 万，今日新增 433 stars，位列全球趋势榜第 4，其「少 token 多办事」的传播叙事在开发者社区持续发酵。",
+          "zh": "总 star 数已超 11 万，今日新增 433 星，位列全球趋势榜第 4，趣味叙事与 token 成本优化结合，持续在开发者社区传播。",
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 112k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 433 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 112,698 stars、6,528 forks，topics: ai, anthropic, caveman, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 112,698 stars and 6,528 forks，topics: ai, anthropic, caveman, claude, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 112,755 stars、6,530 forks，topics: ai, anthropic, caveman, claude, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 112,755 stars and 6,530 forks，topics: ai, anthropic, caveman, claude, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "以幽默叙事降低 token 成本的产品化思路值得借鉴，产品经理可观察其实际节省效果和用户留存。",
+          "zh": "token 成本是 Agent 产品规模化的重要约束，轻量化的提示优化方案可能带来显著的成本收益。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -543,26 +551,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方维护的 Claude Code 高质量插件目录，收录内部和第三方插件，帮助用户发现和安装经过筛选的 Claude Code 扩展。",
+          "zh": "Anthropic 官方维护的 Claude Code 插件目录，收录高质量插件，帮助开发者发现和安装经过筛选的扩展能力。",
           "en": "Star anthropics / claude-plugins-official Official, Anthropic-managed directory of high quality Claude Code Plugins."
         },
-        "totalStars": 39299,
+        "totalStars": 39398,
         "language": "Python",
         "dailyStars": 307,
         "chineseIntro": {
-          "zh": "Anthropic 官方维护的 Claude Code 高质量插件目录，收录内部和第三方插件，帮助用户发现和安装经过筛选的 Claude Code 扩展。",
+          "zh": "Anthropic 官方维护的 Claude Code 插件目录，收录高质量插件，帮助开发者发现和安装经过筛选的扩展能力。",
           "en": "Star anthropics / claude-plugins-official Official, Anthropic-managed directory of high quality Claude Code Plugins."
         },
         "todayHighlight": {
-          "zh": "总 star 数近 4 万，今日新增 307 stars，位列全球趋势榜第 2，官方背书和 Claude Code 生态扩张持续吸引开发者关注。",
+          "zh": "总 star 数近 4 万，今日新增 307 星，位列全球趋势榜第 2，官方插件生态的建立吸引开发者持续关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散, 今日新增 307 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,299 stars、4,341 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,299 stars and 4,341 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 39,398 stars、4,346 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 39,398 stars and 4,346 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "官方插件目录是平台生态控制力的体现，产品经理应关注其审核标准和插件质量对用户信任的影响。",
+          "zh": "官方插件目录是平台生态成熟度的信号，产品经理应关注插件生态对用户留存和扩展性的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -583,26 +591,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "原始 Agent 编排框架，支持部署多智能体集群、协调自主工作流和构建对话式 AI 系统，具备自适应记忆、自学习智能、联邦和向量 RAG 集成，原生兼容 Claude Code、Codex 等。",
+          "zh": "面向 Claude Code 和 Codex 的 Agent 元框架，支持部署多智能体集群、协调自主工作流和构建对话式 AI 系统，具备自适应记忆、自学习、联邦和向量 RAG 集成能力。",
           "en": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
         },
-        "totalStars": 75233,
+        "totalStars": 75262,
         "language": "TypeScript",
         "dailyStars": 147,
         "chineseIntro": {
-          "zh": "原始 Agent 编排框架，支持部署多智能体集群、协调自主工作流和构建对话式 AI 系统，具备自适应记忆、自学习智能、联邦和向量 RAG 集成，原生兼容 Claude Code、Codex 等。",
+          "zh": "面向 Claude Code 和 Codex 的 Agent 元框架，支持部署多智能体集群、协调自主工作流和构建对话式 AI 系统，具备自适应记忆、自学习、联邦和向量 RAG 集成能力。",
           "en": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
         },
         "todayHighlight": {
-          "zh": "总 star 数超 7.5 万，今日新增 147 stars，位列全球趋势榜第 7，作为多 Agent 编排的早期项目持续获得稳定关注。",
+          "zh": "总 star 数超 7.5 万，今日新增 147 星，位列全球趋势榜第 7，作为早期 Agent 框架持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 75k+，属于持续在榜的头部 AI 开源项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 147 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 75,233 stars、8,938 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 75,233 stars and 8,938 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 75,262 stars、8,943 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 75,262 stars and 8,943 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "多 Agent 编排是复杂 AI 工作流的关键层，产品经理可观察其集群协调能力在实际业务中的落地案例。",
+          "zh": "多 Agent 协作框架的成熟度直接影响复杂 AI 产品的构建效率，值得关注其抽象层次和集成能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -629,19 +637,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "OpenAI 推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 的赞助访问权限，用于生命科学研究。这意味着 OpenAI 正通过学术渠道扩大其模型在专业科研场景的渗透。",
+          "zh": "OpenAI 推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 的赞助访问权限及生命科学研究工具。这意味着 OpenAI 正通过学术渠道扩大其在专业科研场景中的模型渗透。",
           "en": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
         },
         "chineseIntro": {
-          "zh": "OpenAI 推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 的赞助访问权限，用于生命科学研究。这意味着 OpenAI 正通过学术渠道扩大其模型在专业科研场景的渗透。",
+          "zh": "OpenAI 推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 的赞助访问权限及生命科学研究工具。这意味着 OpenAI 正通过学术渠道扩大其在专业科研场景中的模型渗透。",
           "en": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
         },
         "todayHighlight": {
-          "zh": "此举可能帮助 OpenAI 在生命科学领域建立早期生态壁垒，与 Google 等竞争对手争夺科研用户。",
-          "en": "此举可能帮助 OpenAI 在生命科学领域建立早期生态壁垒，与 Google 等竞争对手争夺科研用户。"
+          "zh": "在模型能力竞争之外，OpenAI 选择用学术赞助锁定生命科学这一高价值垂直领域，可能重塑科研 AI 工具的默认选择。",
+          "en": "在模型能力竞争之外，OpenAI 选择用学术赞助锁定生命科学这一高价值垂直领域，可能重塑科研 AI 工具的默认选择。"
         },
         "pmInsight": {
-          "zh": "PM 应关注学术计划是否附带数据共享或反馈机制，这可能影响未来模型在垂直领域的迭代方向。",
+          "zh": "若你的产品服务科研或生物医药用户，需评估 GPT-Rosalind 学术免费层是否会让用户迁移，并考虑差异化数据合规或工作流集成。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -666,22 +674,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 宣布将于 2026 年 11 月 16 日弃用多个 Copilot 模型，包括 Claude Opus 4.8、Claude Opus 5 和 GPT-5.6 Terra，并推荐替代模型。这要求开发者和企业提前更新工作流与集成。",
+          "zh": "GitHub 宣布将于 2026 年 11 月 16 日在所有 Copilot 体验中弃用 Claude Opus 4.8、Claude Opus 5 和 GPT-5.6 Terra，并推荐迁移到 Claude Opus 5.5、GPT-6.1 Sol 或 GPT-6 Luna。这直接影响依赖这些模型的开发工作流和集成。",
           "en": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of selected GitHub Copilot models in mid-November appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 宣布将于 2026 年 11 月 16 日弃用多个 Copilot 模型，包括 Claude Opus 4.8、Claude Opus 5 和 GPT-5.6 Terra，并推荐替代模型。这要求开发者和企业提前更新工作流与集成。",
+          "zh": "GitHub 宣布将于 2026 年 11 月 16 日在所有 Copilot 体验中弃用 Claude Opus 4.8、Claude Opus 5 和 GPT-5.6 Terra，并推荐迁移到 Claude Opus 5.5、GPT-6.1 Sol 或 GPT-6 Luna。这直接影响依赖这些模型的开发工作流和集成。",
           "en": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of selected GitHub Copilot models in mid-November appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "模型快速迭代下，平台方主动淘汰旧模型，可能加速企业客户向新模型迁移，并影响模型供应商的竞争格局。",
-          "en": "模型快速迭代下，平台方主动淘汰旧模型，可能加速企业客户向新模型迁移，并影响模型供应商的竞争格局。"
+          "zh": "Copilot 作为最大 AI 编程入口，其模型轮换会强制大量企业团队在两周内重新评估模型选型与成本。",
+          "en": "Copilot 作为最大 AI 编程入口，其模型轮换会强制大量企业团队在两周内重新评估模型选型与成本。"
         },
         "pmInsight": {
-          "zh": "PM 需检查产品中依赖的 Copilot 模型版本，并规划迁移时间表，避免服务中断。",
+          "zh": "立即检查你的 Copilot 配置和 CI 中硬编码的模型名称，在 11 月 16 日前切换至推荐替代模型，并验证 agent 模式下的行为一致性。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "GitHub Changelog",
@@ -703,19 +711,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Meta 在 Hugging Face 发布开源权重模型 Muse Spark Open，采用混合专家架构，约 8160 亿参数，支持文本、图像、音频和视频输入，上下文窗口达 100 万 token。这是目前美国最强大的开源权重模型之一。",
+          "zh": "Meta 在 Hugging Face 发布 Muse Spark Open，这是一个约 8160 亿参数、每 token 激活约 420 亿的开源权重多模态 MoE 模型，支持文本、图像、音频和视频输入，上下文窗口达 100 万 token，并针对 agentic 编程训练。它成为目前最强的美国开源权重模型。",
           "en": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
         },
         "chineseIntro": {
-          "zh": "Meta 在 Hugging Face 发布开源权重模型 Muse Spark Open，采用混合专家架构，约 8160 亿参数，支持文本、图像、音频和视频输入，上下文窗口达 100 万 token。这是目前美国最强大的开源权重模型之一。",
+          "zh": "Meta 在 Hugging Face 发布 Muse Spark Open，这是一个约 8160 亿参数、每 token 激活约 420 亿的开源权重多模态 MoE 模型，支持文本、图像、音频和视频输入，上下文窗口达 100 万 token，并针对 agentic 编程训练。它成为目前最强的美国开源权重模型。",
           "en": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
         },
         "todayHighlight": {
-          "zh": "该模型可能改变开源与闭源模型的竞争平衡，为开发者提供接近前沿的多模态能力，同时推动 Agent 编码等场景创新。",
-          "en": "该模型可能改变开源与闭源模型的竞争平衡，为开发者提供接近前沿的多模态能力，同时推动 Agent 编码等场景创新。"
+          "zh": "开源权重模型首次在规模和多模态 agent 能力上逼近闭源前沿，可能改变开发者对自托管与 API 调用的成本权衡。",
+          "en": "开源权重模型首次在规模和多模态 agent 能力上逼近闭源前沿，可能改变开发者对自托管与 API 调用的成本权衡。"
         },
         "pmInsight": {
-          "zh": "PM 可评估该模型在代码生成、多模态理解等任务上的表现，考虑将其集成到产品中以降低成本或增强功能。",
+          "zh": "如果你的产品涉及代码 agent 或多模态输入，应尽快在 Muse Spark Open 上跑通基准测试，评估自托管推理成本是否低于现有 API 方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -740,19 +748,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "开发者创建了 Model Atlas 工具，允许用户根据能力权重比较不同 LLM 的基准测试结果，覆盖 134 个基准家族和 12 项能力。这反映了社区对模型选型透明化和定制化评估的需求。",
+          "zh": "开发者发布 Model Atlas，一个可自定义能力权重来比较 LLM 基准测试的工具，覆盖 134 个基准家族、12 项能力和 37 个评估配置。它试图解决模型选型时基准数据分散、难以按场景加权的问题。",
           "en": "Article URL: https://philippdubach.com/posts/model-atlas-capability-weights/ Comments URL: https://news.ycombinator.com/item?id=50111618 Points: 1 # Comments: 1"
         },
         "chineseIntro": {
-          "zh": "开发者创建了 Model Atlas 工具，允许用户根据能力权重比较不同 LLM 的基准测试结果，覆盖 134 个基准家族和 12 项能力。这反映了社区对模型选型透明化和定制化评估的需求。",
+          "zh": "开发者发布 Model Atlas，一个可自定义能力权重来比较 LLM 基准测试的工具，覆盖 134 个基准家族、12 项能力和 37 个评估配置。它试图解决模型选型时基准数据分散、难以按场景加权的问题。",
           "en": "Article URL: https://philippdubach.com/posts/model-atlas-capability-weights/ Comments URL: https://news.ycombinator.com/item?id=50111618 Points: 1 # Comments: 1"
         },
         "todayHighlight": {
-          "zh": "随着模型数量激增，此类工具可能成为产品经理和开发者选型的重要参考，推动基准测试标准化。",
-          "en": "随着模型数量激增，此类工具可能成为产品经理和开发者选型的重要参考，推动基准测试标准化。"
+          "zh": "随着模型数量激增，社区开始构建选型基础设施，这可能成为 PM 做模型决策时的常用参考层。",
+          "en": "随着模型数量激增，社区开始构建选型基础设施，这可能成为 PM 做模型决策时的常用参考层。"
         },
         "pmInsight": {
-          "zh": "PM 可借鉴该工具的能力权重思路，建立内部模型评估体系，针对具体业务场景选择最优模型。",
+          "zh": "在下次模型选型时，用 Model Atlas 按你的实际任务权重（如编码、写作、工具调用）生成对比，而不是只看单一榜单排名。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -777,19 +785,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Google 发布前沿模型 Gemini 4 Argon，面向开发者、企业、科学家和消费者开放。这标志着 Google 在模型能力上的又一次重大升级。",
+          "zh": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者开放，定位为最新前沿模型，用于解决最困难的问题。这标志着 Google 在 Gemini 系列上继续快速迭代并扩大可及性。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp\">We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
         },
         "chineseIntro": {
-          "zh": "Google 发布前沿模型 Gemini 4 Argon，面向开发者、企业、科学家和消费者开放。这标志着 Google 在模型能力上的又一次重大升级。",
+          "zh": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者开放，定位为最新前沿模型，用于解决最困难的问题。这标志着 Google 在 Gemini 系列上继续快速迭代并扩大可及性。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp\">We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
         },
         "todayHighlight": {
-          "zh": "Gemini 4 Argon 的发布可能加剧与 OpenAI、Meta 等公司在多模态和复杂问题解决上的竞争，并影响企业 AI 采购决策。",
-          "en": "Gemini 4 Argon 的发布可能加剧与 OpenAI、Meta 等公司在多模态和复杂问题解决上的竞争，并影响企业 AI 采购决策。"
+          "zh": "Gemini 4 Argon 的全面开放可能加剧前沿模型在开发者生态和企业采购中的竞争，尤其在多模态和长上下文场景。",
+          "en": "Gemini 4 Argon 的全面开放可能加剧前沿模型在开发者生态和企业采购中的竞争，尤其在多模态和长上下文场景。"
         },
         "pmInsight": {
-          "zh": "PM 应尽快测试 Gemini 4 Argon 在自身产品场景中的表现，评估其是否比现有模型更具性价比或能力优势。",
+          "zh": "对比 Gemini 4 Argon 与现有主力模型在你的核心任务上的延迟、成本和准确率，特别关注其是否在 agent 和科学计算场景有独特优势。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -802,8 +810,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "arXiv AI: The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
-          "en": "arXiv AI: The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock"
+          "zh": "Reddit LocalLLaMA: ALoDLM 8b looped diffusion language model: ~3x inference speed vs its base model qwen3-8b with better benchmark results",
+          "en": "Reddit LocalLLaMA: ALoDLM 8b looped diffusion language model: ~3x inference speed vs its base model qwen3-8b with better benchmark results"
         },
         "category": {
           "zh": "公司动态",
@@ -814,26 +822,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "arXiv 论文提出 RealtimeBench 基准，用于评估 LLM 智能体在实时变化环境中的表现，并发现 GPT-6.1-sol 在游戏暂停时优于更快的 Jev，但在游戏持续运行时落后。研究还提出 TORSI 方法提升快速学生模型的表现。",
-          "en": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol "
+          "zh": "社区发布 ALoDLM 8b，一个基于循环扩散架构的语言模型，相比基座 Qwen3-8B 推理速度约提升 3 倍且基准结果更好。这展示了扩散语言模型在效率上的潜力。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x75bme/alodlm_8b_looped_diffusion_language_model_3x/\"> <img src=\"https://external-preview.redd.it/gx8qk8qtgbuWmuMBesN2n-Gmgx-afJkq53BNZR405Qg.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=f0a96d9f63791afbcd15f3c57ef2a7538cc51128\" alt=\"ALoDLM 8b looped diffusion language model: ~3x inference speed vs its base model qwen3-8b with better benchmar"
         },
         "chineseIntro": {
-          "zh": "arXiv 论文提出 RealtimeBench 基准，用于评估 LLM 智能体在实时变化环境中的表现，并发现 GPT-6.1-sol 在游戏暂停时优于更快的 Jev，但在游戏持续运行时落后。研究还提出 TORSI 方法提升快速学生模型的表现。",
-          "en": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol "
+          "zh": "社区发布 ALoDLM 8b，一个基于循环扩散架构的语言模型，相比基座 Qwen3-8B 推理速度约提升 3 倍且基准结果更好。这展示了扩散语言模型在效率上的潜力。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x75bme/alodlm_8b_looped_diffusion_language_model_3x/\"> <img src=\"https://external-preview.redd.it/gx8qk8qtgbuWmuMBesN2n-Gmgx-afJkq53BNZR405Qg.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=f0a96d9f63791afbcd15f3c57ef2a7538cc51128\" alt=\"ALoDLM 8b looped diffusion language model: ~3x inference speed vs its base model qwen3-8b with better benchmar"
         },
         "todayHighlight": {
-          "zh": "该研究揭示了实时性对智能体性能的关键影响，可能推动未来模型和 Agent 设计更注重推理速度与动态适应能力。",
-          "en": "该研究揭示了实时性对智能体性能的关键影响，可能推动未来模型和 Agent 设计更注重推理速度与动态适应能力。"
+          "zh": "如果扩散架构能在小模型上稳定实现数倍加速，可能为边缘部署和低成本推理开辟新路径。",
+          "en": "如果扩散架构能在小模型上稳定实现数倍加速，可能为边缘部署和低成本推理开辟新路径。"
         },
         "pmInsight": {
-          "zh": "PM 在设计实时交互 Agent 时，需平衡模型推理速度与准确性，并考虑采用类似 TORSI 的离线-在线协同训练策略。",
+          "zh": "关注扩散语言模型在 8B 量级的实际部署表现，若成熟可考虑用于对延迟敏感、成本受限的本地推理场景。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "arXiv AI",
-            "url": "https://arxiv.org/abs/2610.20665"
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x75bme/alodlm_8b_looped_diffusion_language_model_3x/"
           }
         ]
       }
