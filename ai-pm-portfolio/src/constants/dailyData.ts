@@ -44,44 +44,40 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报 · 2026-10-17",
-      "en": "AI PM Daily · 2026-10-17"
+      "zh": "AI 产品经理日报：代理生态从「能跑」转向「可管」",
+      "en": "AI PM Daily: Agent Ecosystem Shifts from 'Runnable' to 'Governable'"
     },
     "editorNote": {
-      "zh": "今日主线是代理基础设施的「分层成形」：上层是插件与技能目录（Claude 插件、科研技能库），中层是代理运行与编排（ECC、ruflo、context-mode），底层是代理专用工具链（git-ai、xerj、eleven）。同时，开源 501B 模型与第三方评估机制落地，提示企业侧的成本与合规变量正在变化。",
-      "en": "Today's thread is the layering of agent infrastructure: plugin/skill catalogs on top, agent runtime and orchestration in the middle, and agent-native tooling underneath. Meanwhile, an open 501B model and third-party evaluation mechanisms signal shifting cost and compliance variables for enterprises."
+      "zh": "今日主线不在模型参数，而在代理的工程化配套：插件目录、上下文压缩、数据检索、并行提交与许可证门禁同时升温，说明竞争焦点正从单点能力转向可运维性。",
+      "en": "Today's thread is not model scale but agent plumbing: plugin directories, context compression, data retrieval, parallel commits and license gates are all heating up, shifting competition from raw capability to operability."
     },
     "keyTakeaway": {
-      "zh": "代理生态正从「单个工具」走向「分层基础设施」：插件目录、技能库、编排框架与代理专用 Git/检索工具同时升温，竞争焦点从模型能力转向代理的协作、上下文成本与可发现性。",
-      "en": "The agent ecosystem is moving from single tools to layered infrastructure: plugin catalogs, skill libraries, orchestration frameworks, and agent-native Git/search tools are all heating up, shifting competition from raw model capability to agent collaboration, context cost, and discoverability."
+      "zh": "代理生态的瓶颈正从「模型够不够强」转向「工程配套够不够稳」：Anthropic 官方插件目录登顶趋势榜、上下文压缩与代理专用检索同日走高，叠加 GitHub 许可证合规 GA，表明企业采用代理的前置条件正在被逐项补齐。",
+      "en": "The bottleneck for agents is moving from model strength to engineering plumbing: Anthropic's official plugin directory topping the trend chart, context compression and agent-specific retrieval rising the same day, plus GitHub license compliance GA, show that enterprise prerequisites for agent adoption are being filled in one by one."
     },
     "signals": [
       {
         "title": {
-          "zh": "插件与技能目录成为代理生态的分发入口",
-          "en": "Plugin and skill catalogs become the distribution gateway for agents"
+          "zh": "官方插件目录成为代理生态的默认分发入口",
+          "en": "Official Plugin Directories Become the Default Distribution Layer"
         },
         "category": {
           "zh": "生态与分发",
           "en": "Ecosystem & Distribution"
         },
         "summary": {
-          "zh": "Anthropic 官方 Claude Code 插件目录今日新增 1552 stars 位列全球趋势第一，总 star 超 4 万；科研 Agent Skills 库今日新增 1158 stars 位列第二，总 star 超 5 万。两者共同点是「官方/高质量目录 + 统一安装入口」。",
-          "en": "Anthropic's official Claude Code plugin catalog added 1,552 stars today, ranking first globally with over 40k total; the scientific Agent Skills library added 1,158 stars, ranking second with over 50k total. Both share an official/high-quality catalog plus a unified install entry."
+          "zh": "anthropics/claude-plugins-official 今日新增 1552 stars 并位居全球趋势榜第一，总 star 超 4 万；同期 OpenAI 披露 Stack Overflow for Agents 借 ChatGPT 插件实现注册量三倍增长，两个工程师用 Codex 数周完成开发。",
+          "en": "anthropics/claude-plugins-official added 1,552 stars today and topped the global trend chart with over 40k total stars; meanwhile OpenAI disclosed that Stack Overflow for Agents tripled signups via a ChatGPT plugin, built by two engineers with Codex in weeks."
         },
         "pmInsight": {
-          "zh": "目录型产品正在复制移动应用商店的分发逻辑：谁掌握高质量插件/技能的发现入口，谁就掌握代理能力的默认选择权。PM 应评估自身产品是否需要一个「可被代理发现」的入口，而非仅做 API。",
-          "en": "Catalog products are replicating the app-store distribution logic: whoever owns the discovery entry for high-quality plugins/skills owns the default choice of agent capabilities. PMs should assess whether their product needs an agent-discoverable entry rather than just an API."
+          "zh": "官方背书的目录正在替代散落的社区列表，成为插件发现与安装的默认入口；对 PM 而言，插件不再只是功能扩展，而是冷启动分发渠道，需提前规划目录占位与插件化封装。",
+          "en": "Officially backed directories are replacing scattered community lists as the default discovery and install entry; for PMs, plugins are no longer just feature extensions but cold-start distribution channels, requiring early planning of directory placement and plugin packaging."
         },
         "impact": "High",
         "sources": [
           {
             "label": "anthropics/claude-plugins-official",
             "url": "https://github.com/anthropics/claude-plugins-official"
-          },
-          {
-            "label": "K-Dense-AI/scientific-agent-skills",
-            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
           },
           {
             "label": "OpenAI: Stack Overflow for Agents triples signups with ChatGPT plugin",
@@ -91,53 +87,49 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "代理运行层与上下文成本成为独立产品品类",
-          "en": "Agent runtime and context cost emerge as a standalone product category"
+          "zh": "代理的上下文与检索成本成为独立产品赛道",
+          "en": "Agent Context and Retrieval Costs Become a Standalone Product Category"
         },
         "category": {
           "zh": "代理基础设施",
           "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "ECC 今日新增 1057 stars 位列第三，总 star 超 28 万，定位代理性能优化系统；context-mode 今日新增 449 stars，宣称减少约 98% 上下文占用；ruflo 今日新增 672 stars，聚焦多代理编排。三者分别覆盖稳定性、上下文成本与协作编排。",
-          "en": "ECC added 1,057 stars today (third globally, 280k+ total), positioning as an agent performance system; context-mode added 449 stars, claiming ~98% context reduction; ruflo added 672 stars, focusing on multi-agent orchestration. Together they cover stability, context cost, and collaboration."
+          "zh": "mksglu/context-mode 今日新增 449 stars、总 star 超 3 万，宣称通过沙箱化工具输出减少约 98% 上下文占用；xerj-org/xerj 今日新增 1648 stars、总 star 达 7193，以「比 grep 省 40 倍 token」的叙事为代码、日志与 PDF 建立可检索索引。",
+          "en": "mksglu/context-mode added 449 stars today (30k+ total), claiming ~98% context reduction via sandboxed tool output; xerj-org/xerj added 1,648 stars today (7,193 total), pitching '40x fewer tokens than grep' to index code, logs and PDFs for retrieval."
         },
         "pmInsight": {
-          "zh": "上下文成本与多代理协作是代理规模化的两个硬约束，已从「使用技巧」变成「可独立售卖/开源的产品层」。PM 在规划代理功能时，应把上下文预算和多代理冲突处理作为一等设计约束，而非事后优化。",
-          "en": "Context cost and multi-agent collaboration are two hard constraints for scaling agents, moving from usage tricks to a standalone product layer. PMs should treat context budget and multi-agent conflict handling as first-class design constraints, not afterthoughts."
+          "zh": "上下文窗口与检索成本已从实现细节上升为可单独售卖的产品层；PM 应把 token 成本与检索命中率纳入代理产品的核心指标，而非仅关注任务完成率。",
+          "en": "Context windows and retrieval costs have risen from implementation details to a separately sellable product layer; PMs should treat token cost and retrieval hit rate as core agent metrics, not just task completion rate."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
-          {
-            "label": "affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
-          },
           {
             "label": "mksglu/context-mode",
             "url": "https://github.com/mksglu/context-mode"
           },
           {
-            "label": "ruvnet/ruflo",
-            "url": "https://github.com/ruvnet/ruflo"
+            "label": "xerj-org/xerj",
+            "url": "https://github.com/xerj-org/xerj"
           }
         ]
       },
       {
         "title": {
-          "zh": "代理专用工具链向 Git、检索与逆向等深水区延伸",
-          "en": "Agent-native tooling extends into Git, search, and reverse engineering"
+          "zh": "多代理协作与合规门禁同步前移",
+          "en": "Multi-Agent Collaboration and Compliance Gates Move Upstream"
         },
         "category": {
-          "zh": "开发者工具",
-          "en": "Developer Tools"
+          "zh": "研发流程",
+          "en": "Development Workflow"
         },
         "summary": {
-          "zh": "git-ai 创建约一个月获 1077 stars，解决多代理同分支并行提交的合并冲突；xerj 今日新增 1648 stars，以「比 grep 少用 40 倍 token」切入代理检索成本；eleven 创建数日达 634 stars，把逆向工程交给代理。",
-          "en": "git-ai reached 1,077 stars in about a month, solving merge conflicts from parallel agent commits on the same branch; xerj added 1,648 stars today, targeting agent retrieval cost with '40x fewer tokens than grep'; eleven reached 634 stars in days, handing reverse engineering to agents."
+          "zh": "feder-cr/git-ai 创建约一个月即达 1082 stars，针对多个代理在同一分支并行提交的冲突与提交混乱重新设计 Git 流程；GitHub Enterprise Cloud 正式上线开源许可证合规功能，在 PR 阶段自动拦截不合规依赖。",
+          "en": "feder-cr/git-ai reached 1,082 stars in about a month, redesigning Git for parallel commits by multiple agents on the same branch; GitHub Enterprise Cloud GA'd open source license compliance, auto-blocking non-compliant dependencies at the PR stage."
         },
         "pmInsight": {
-          "zh": "代理正在进入需要「领域专用工具」的高门槛场景，通用工具（如原生 Git、grep）在代理并发与 token 成本下暴露短板。PM 可关注自身工作流中哪些环节因代理并发而失效，这往往是新工具的切入点。",
-          "en": "Agents are entering high-barrier domains that need domain-specific tools; general tools like native Git and grep show weaknesses under agent concurrency and token cost. PMs should identify which workflow steps break under agent concurrency—often the entry point for new tools."
+          "zh": "代理写代码的规模一旦上升，版本冲突与许可证风险会先于能力问题暴露；PM 需在代理工作流中预置提交协调与合规检查点，否则采用阻力将来自法务与运维而非模型效果。",
+          "en": "Once agent-written code scales, version conflicts and license risk surface before capability issues; PMs need to build commit coordination and compliance checkpoints into agent workflows, or adoption friction will come from legal and ops rather than model quality."
         },
         "impact": "Medium",
         "sources": [
@@ -146,44 +138,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/feder-cr/git-ai"
           },
           {
-            "label": "xerj-org/xerj",
-            "url": "https://github.com/xerj-org/xerj"
-          },
-          {
-            "label": "Zfinix/eleven",
-            "url": "https://github.com/Zfinix/eleven"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "开源前沿模型与第三方评估同步推进，企业侧变量增加",
-          "en": "Open frontier models and third-party evaluation advance together, adding enterprise variables"
-        },
-        "category": {
-          "zh": "模型与合规",
-          "en": "Models & Compliance"
-        },
-        "summary": {
-          "zh": "Reflection 实验室在 Hugging Face 发布 501B 参数 MoE 开源模型 Beam，Apache 2.0 许可、支持 1M 上下文，聚焦编码与 Agent；Anthropic 向 METR 开放类员工权限进行第三方评估；GitHub 正式发布开源许可证合规功能，在 PR 阶段拦截不合规依赖。",
-          "en": "Reflection Lab released Beam, a 501B-parameter MoE open model on Hugging Face under Apache 2.0 with 1M context, focused on coding and agents; Anthropic opened employee-like access to METR for third-party evaluation; GitHub GA'd open-source license compliance, blocking non-compliant dependencies at PR stage."
-        },
-        "pmInsight": {
-          "zh": "可自托管的前沿模型降低了私有化部署的 API 依赖，而第三方评估与许可证合规把「可审计性」变成采购门槛。PM 在做模型选型时，应把自托管成本、评估透明度与依赖合规纳入同一张决策表。",
-          "en": "Self-hostable frontier models reduce API dependence for private deployment, while third-party evaluation and license compliance make auditability a procurement gate. PMs should put self-hosting cost, evaluation transparency, and dependency compliance on the same decision table."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Hugging Face: Welcome Beam",
-            "url": "https://huggingface.co/blog/reflection-beam"
-          },
-          {
-            "label": "Anthropic: update on independent evaluators",
-            "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
-          },
-          {
-            "label": "GitHub Changelog: Open source license compliance GA",
+            "label": "GitHub Changelog: Open source license compliance generally available",
             "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available"
           }
         ]
@@ -192,53 +147,53 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "为多代理协作提供「冲突感知」的变更管理层",
-          "en": "A conflict-aware change management layer for multi-agent collaboration"
+          "zh": "面向代理工作流的「成本与合规」观测面板",
+          "en": "A Cost-and-Compliance Observability Panel for Agent Workflows"
         },
         "category": {
-          "zh": "产品假设",
-          "en": "Product Hypothesis"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 git-ai、ruflo 与 ECC 的信号，假设：当同一仓库有 2 个以上编码代理并行工作时，团队愿意为「自动检测语义冲突并给出合并建议」付费，而不仅是文件级合并。",
-          "en": "Based on signals from git-ai, ruflo, and ECC: teams with 2+ coding agents working in parallel would pay for semantic conflict detection and merge suggestions, not just file-level merges."
+          "zh": "结合 context-mode 的上下文压缩、xerj 的检索索引与 GitHub 许可证门禁，可假设团队需要一个统一面板，展示每次代理任务的 token 消耗、检索命中与依赖合规状态。",
+          "en": "Combining context-mode's compression, xerj's retrieval index and GitHub's license gate, one can hypothesize teams need a unified panel showing per-task token spend, retrieval hits and dependency compliance status."
         },
         "pmInsight": {
-          "zh": "验证方式：在 10 个使用多代理的团队中埋点统计并行提交冲突率，并对比引入冲突感知层前后的返工时间；若返工时间下降 30% 以上，则假设成立。",
-          "en": "Validation: instrument 10 multi-agent teams to measure parallel commit conflict rates and compare rework time before/after a conflict-aware layer; the hypothesis holds if rework time drops by 30%+."
+          "zh": "验证方式：在接入代理的团队中做小范围试点，观察面板是否降低单任务 token 成本并减少 PR 阶段合规拦截返工；若两项指标同时改善，则该面板具备独立产品化价值。",
+          "en": "Validation: pilot with agent-adopting teams to see whether the panel lowers per-task token cost and reduces PR-stage compliance rework; if both improve, the panel has standalone product value."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "feder-cr/git-ai",
-            "url": "https://github.com/feder-cr/git-ai"
+            "label": "mksglu/context-mode",
+            "url": "https://github.com/mksglu/context-mode"
           },
           {
-            "label": "ruvnet/ruflo",
-            "url": "https://github.com/ruvnet/ruflo"
+            "label": "xerj-org/xerj",
+            "url": "https://github.com/xerj-org/xerj"
           },
           {
-            "label": "affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
+            "label": "GitHub Changelog: Open source license compliance generally available",
+            "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available"
           }
         ]
       },
       {
         "title": {
-          "zh": "面向代理的「技能目录 + 合规标签」组合",
-          "en": "Agent skill catalog with compliance labels"
+          "zh": "插件目录的「质量分层」与冷启动打包服务",
+          "en": "Quality Tiering and Cold-Start Packaging for Plugin Directories"
         },
         "category": {
-          "zh": "产品假设",
-          "en": "Product Hypothesis"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 Claude 插件目录、科研技能库与 GitHub 许可证合规信号，假设：企业在采用第三方 Agent Skills 时，最需要的不是更多技能，而是每个技能的来源、许可证与安全评估标签。",
-          "en": "Based on the Claude plugin catalog, scientific skills library, and GitHub license compliance signals: enterprises adopting third-party Agent Skills need provenance, license, and security labels per skill more than more skills."
+          "zh": "官方插件目录登顶与 Stack Overflow for Agents 三倍注册增长共同说明目录分发有效，但目录内插件质量参差；可假设存在对插件做安全审查、性能基准与场景化打包的需求。",
+          "en": "The official directory topping trends and Stack Overflow for Agents' tripled signups both show directory distribution works, but plugin quality varies; one can hypothesize demand for security review, performance benchmarks and scenario-based packaging."
         },
         "pmInsight": {
-          "zh": "验证方式：对 20 家企业代理使用者做访谈，统计其在引入第三方技能前的审查项；若「许可证/来源」进入前三，则可先做轻量标签目录而非完整技能市场。",
-          "en": "Validation: interview 20 enterprise agent users on their review checklist before adopting third-party skills; if license/provenance ranks top-3, start with a lightweight labeled catalog rather than a full marketplace."
+          "zh": "验证方式：先对目录内高安装量插件做一次安全与性能抽检并公开评分，观察开发者是否据此改变安装选择；若评分与安装转化相关，则分层服务可独立收费。",
+          "en": "Validation: run a security and performance audit on top-installed plugins and publish scores, then observe whether developers change install choices; if scores correlate with install conversion, tiering can be monetized separately."
         },
         "impact": "Watch",
         "sources": [
@@ -247,12 +202,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/anthropics/claude-plugins-official"
           },
           {
-            "label": "K-Dense-AI/scientific-agent-skills",
-            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
-          },
-          {
-            "label": "GitHub Changelog: Open source license compliance GA",
-            "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available"
+            "label": "OpenAI: Stack Overflow for Agents triples signups with ChatGPT plugin",
+            "url": "https://openai.com/index/stack-overflow-chatgpt-plugin"
           }
         ]
       }
@@ -268,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 编程代理重新设计的 Git 工具，让多个代理在同一分支上并行提交修改时仍能有序合并，解决代理协作时版本冲突与变更顺序混乱的问题。",
+          "zh": "面向 AI 编程代理重新设计的 Git 工具，让多个代理在同一分支上并行提交改动时仍能有序落盘，解决代理协作时版本冲突与提交混乱的问题。",
           "en": "Git designed for AI agents."
         },
-        "totalStars": 1077,
+        "totalStars": 1082,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 AI 编程代理重新设计的 Git 工具，让多个代理在同一分支上并行提交修改时仍能有序合并，解决代理协作时版本冲突与变更顺序混乱的问题。",
+          "zh": "面向 AI 编程代理重新设计的 Git 工具，让多个代理在同一分支上并行提交改动时仍能有序落盘，解决代理协作时版本冲突与提交混乱的问题。",
           "en": "Git designed for AI agents."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即积累 1077 stars，116 个 fork 显示开发者已在动手试用，「为代理而生的 Git」这一叙事在 AI 编程工具圈持续升温。",
+          "zh": "创建仅约一个月即积累 1082 stars，今日进入上升榜，与「多代理并行写代码」的讨论升温同步获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,077 stars、116 forks，topics: ai-agents, coding-agents, git, golang, scion，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,077 stars and 116 forks，topics: ai-agents, coding-agents, git, golang, scion, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,082 stars、116 forks，topics: ai-agents, coding-agents, git, golang, scion，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,082 stars and 116 forks，topics: ai-agents, coding-agents, git, golang, scion, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "当编码代理从单打独斗走向多人多代理协作，版本控制层是否需要被重新设计，是值得提前判断的基础设施机会。",
+          "zh": "当团队从单个 AI 助手转向多个代理并行开发，版本控制层的协作机制会成为新的产品设计空间。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -308,18 +259,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的浏览器代理，用自然语言指令驱动网页操作与信息采集，可完成浏览、点击、抓取等自动化任务，适合需要让 AI 直接操作网页的场景。",
+          "zh": "开源的浏览器代理，用自然语言指令驱动网页操作与信息采集，可完成浏览、点击、填表等自动化任务，适合网页流程自动化与数据抓取场景。",
           "en": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository."
         },
         "totalStars": 906,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "开源的浏览器代理，用自然语言指令驱动网页操作与信息采集，可完成浏览、点击、抓取等自动化任务，适合需要让 AI 直接操作网页的场景。",
+          "zh": "开源的浏览器代理，用自然语言指令驱动网页操作与信息采集，可完成浏览、点击、填表等自动化任务，适合网页流程自动化与数据抓取场景。",
           "en": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository."
         },
         "todayHighlight": {
-          "zh": "上线约一个月获得 906 stars，作为官方仓库的自动镜像仍持续吸引关注，浏览器代理这一品类正随 Agent 生态升温。",
+          "zh": "上线约一个月积累 906 stars，今日出现在上升榜，浏览器代理这一细分方向持续获得开发者关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -327,7 +278,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 906 stars and 28 forks，topics: ai-agent, browser-agent, browser-automation, cdp, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "浏览器是 Agent 触达真实世界的主要入口，需关注其任务成功率与反爬、登录态等工程细节能否支撑产品化。",
+          "zh": "浏览器是 AI 代理落地最直接的入口，值得观察它在真实网页环境下的稳定性与可控性设计。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -348,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 macOS、Windows、Linux 的代理优先逆向工程工具，让 AI 代理读取、重命名并修补二进制文件、安卓应用与 GPU 内核，把反编译与逆向分析交给代理完成。",
+          "zh": "面向 macOS、Windows、Linux 的「代理优先」逆向工程工具，让 AI 代理在旁协助读取、重命名和修改二进制文件、安卓应用与 GPU 内核。",
           "en": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you."
         },
-        "totalStars": 634,
+        "totalStars": 639,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 macOS、Windows、Linux 的代理优先逆向工程工具，让 AI 代理读取、重命名并修补二进制文件、安卓应用与 GPU 内核，把反编译与逆向分析交给代理完成。",
+          "zh": "面向 macOS、Windows、Linux 的「代理优先」逆向工程工具，让 AI 代理在旁协助读取、重命名和修改二进制文件、安卓应用与 GPU 内核。",
           "en": "Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you."
         },
         "todayHighlight": {
-          "zh": "创建仅数日即达 634 stars、105 个 fork，多语言 README 覆盖中日韩俄等市场，逆向工程这一高门槛领域被代理化后引发开发者关注。",
+          "zh": "创建仅数日即达 639 stars，今日进入上升榜，多语言 README 覆盖中日韩俄等市场，带动跨社区传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 634 stars、105 forks，topics: acp, ai-agents, android, decompiler, disassembler，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 634 stars and 105 forks，topics: acp, ai-agents, android, decompiler, disassembler, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 639 stars、106 forks，topics: acp, ai-agents, android, decompiler, disassembler，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 639 stars and 106 forks，topics: acp, ai-agents, android, decompiler, disassembler, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "高门槛专业工具被 Agent 重做是一条值得跟踪的产品路径，需评估其合规边界与专业用户对自动化结果的信任成本。",
+          "zh": "逆向工程这类高门槛专业工作正被代理化改造，可关注专业工具如何把专家经验封装成代理能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -391,7 +342,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "Anthropic 官方维护的 Claude Code 插件目录，收录官方与第三方高质量插件，为开发者提供统一的插件发现与安装入口。",
           "en": "Star anthropics / claude-plugins-official Official, Anthropic-managed directory of high quality Claude Code Plugins."
         },
-        "totalStars": 40881,
+        "totalStars": 40941,
         "language": "Python",
         "dailyStars": 1552,
         "chineseIntro": {
@@ -399,15 +350,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Star anthropics / claude-plugins-official Official, Anthropic-managed directory of high quality Claude Code Plugins."
         },
         "todayHighlight": {
-          "zh": "今日新增 1552 stars 位列全球趋势第一，总 star 已超 4 万；官方背书叠加插件生态扩张，使其成为 Claude Code 生态的流量入口。",
+          "zh": "今日新增 1552 stars 并位居全球趋势榜第一，总 star 已超 4 万，官方背书使其成为 Claude Code 生态的默认入口。",
           "en": "登上 GitHub Trending 日榜第 1 位, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散, 今日新增 1,552 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 40,881 stars、4,420 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 40,881 stars and 4,420 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 40,941 stars、4,423 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 40,941 stars and 4,423 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "官方插件目录正在成为 AI 编程工具的生态分发渠道，产品经理应关注插件标准与目录位次对用户选择的影响。",
+          "zh": "插件目录正在成为 AI 编程工具争夺生态位的核心资产，值得观察官方如何用目录标准影响第三方开发者。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -428,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 的数据搜索引擎，一条命令即可为代码、文档、日志和 PDF 建立索引，供搜索、RAG、安全审计与代理记忆使用，兼容 Elasticsearch 现有客户端。",
+          "zh": "面向 AI 的数据搜索引擎，一条命令即可为代码、文档、日志和 PDF 建立索引，供搜索、RAG、安全审计与代理记忆使用，兼容 Elasticsearch 客户端。",
           "en": "Star xerj-org / xerj XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work."
         },
-        "totalStars": 7161,
+        "totalStars": 7193,
         "language": "Rust",
         "dailyStars": 1648,
         "chineseIntro": {
-          "zh": "面向 AI 的数据搜索引擎，一条命令即可为代码、文档、日志和 PDF 建立索引，供搜索、RAG、安全审计与代理记忆使用，兼容 Elasticsearch 现有客户端。",
+          "zh": "面向 AI 的数据搜索引擎，一条命令即可为代码、文档、日志和 PDF 建立索引，供搜索、RAG、安全审计与代理记忆使用，兼容 Elasticsearch 客户端。",
           "en": "Star xerj-org / xerj XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work."
         },
         "todayHighlight": {
-          "zh": "今日新增 1648 stars，创建仅四个月总 star 已达 7161；以「比 grep 少用 40 倍 token」的叙事切中代理检索成本痛点，增长较快。",
-          "en": "登上 GitHub Trending 日榜第 13 位, 创建仅约 4 个月便已积累 7,161 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,648 星."
+          "zh": "今日新增 1648 stars，总 star 达 7193，创建约四个月，以「比 grep 省 40 倍 token」的叙事在代理数据检索场景快速传播。",
+          "en": "登上 GitHub Trending 日榜第 13 位, 创建仅约 4 个月便已积累 7,193 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,648 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,161 stars、366 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,161 stars and 366 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,193 stars、368 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,193 stars and 368 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "代理的检索成本正成为产品体验与账单的关键变量，需关注此类索引层能否成为 Agent 数据管道的默认组件。",
+          "zh": "代理的检索成本正成为产品体验瓶颈，索引层方案可能成为 AI 应用的基础设施标配。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -468,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向科研场景的 Agent Skills 库，提供 177 个经过验证的技能与 100 多个科学数据库，覆盖生物、化学、医学与药物发现，可接入 Cursor、Claude Code 等代理。",
+          "zh": "面向科研场景的 Agent Skills 库，提供 177 个经过验证的技能与 100 多个科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor、Claude Code 等主流代理工具。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
-        "totalStars": 51724,
+        "totalStars": 51767,
         "language": "Python",
         "dailyStars": 1158,
         "chineseIntro": {
-          "zh": "面向科研场景的 Agent Skills 库，提供 177 个经过验证的技能与 100 多个科学数据库，覆盖生物、化学、医学与药物发现，可接入 Cursor、Claude Code 等代理。",
+          "zh": "面向科研场景的 Agent Skills 库，提供 177 个经过验证的技能与 100 多个科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor、Claude Code 等主流代理工具。",
           "en": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
         },
         "todayHighlight": {
-          "zh": "今日新增 1158 stars 位列全球趋势第二，总 star 超 5 万；科研代理技能库的定位使其在学术与研发人群中持续获得关注。",
+          "zh": "今日新增 1158 stars，总 star 超 5.1 万，位居全球趋势榜第二，创建约一年，科研代理技能库的定位持续吸引关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 51k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,158 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 51,724 stars、4,579 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 51,724 stars and 4,579 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 51,767 stars、4,583 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 51,767 stars and 4,583 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "垂直领域技能库是代理能力落地的重要形态，应观察科研用户对技能可验证性与数据来源可信度的要求。",
+          "zh": "垂直领域的技能包正在成为代理能力扩展的主要形态，可观察科研等专业场景如何被标准化封装。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -508,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Claude Code、Codex、Cursor 等代理的性能优化系统，整合技能、记忆、安全与研究优先的开发流程，提升代理执行任务时的稳定性与效率。",
+          "zh": "面向 Claude Code、Codex、Cursor 等代理工具的「代理运行框架」优化系统，整合技能、记忆、安全与研究优先的开发流程，提升代理执行效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
-        "totalStars": 281723,
+        "totalStars": 281758,
         "language": "JavaScript",
         "dailyStars": 1057,
         "chineseIntro": {
-          "zh": "面向 Claude Code、Codex、Cursor 等代理的性能优化系统，整合技能、记忆、安全与研究优先的开发流程，提升代理执行任务时的稳定性与效率。",
+          "zh": "面向 Claude Code、Codex、Cursor 等代理工具的「代理运行框架」优化系统，整合技能、记忆、安全与研究优先的开发流程，提升代理执行效率。",
           "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
         },
         "todayHighlight": {
-          "zh": "今日新增 1057 stars 位列全球趋势第三，总 star 已超 28 万；作为代理运行层的早期项目，随编码代理普及持续获得关注。",
+          "zh": "总 star 已超 28 万，今日新增 1057 并位居全球趋势榜第三，创建约九个月，是当前代理框架赛道体量最大的项目之一。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 281k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,057 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 281,723 stars、41,893 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 281,723 stars and 41,893 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 281,758 stars、41,897 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 281,758 stars and 41,897 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "代理运行层正在形成独立产品层，需关注其跨平台兼容能力与用户对代理行为可控性的诉求。",
+          "zh": "代理框架层已出现明显的头部集中，产品经理需关注其能力边界与对上游模型厂商的依赖关系。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -548,26 +499,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于 Claude Code 的求职申请框架，可评估职位、定制简历、撰写求职信并准备面试，全部在本地运行，用户可 fork 后自行掌控数据。",
+          "zh": "运行在本地的 AI 求职框架，基于 Claude Code 评估职位、定制简历、撰写求职信并准备面试，用户可 fork 后自行掌控数据。",
           "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
         },
-        "totalStars": 48850,
+        "totalStars": 48914,
         "language": "Python",
         "dailyStars": 898,
         "chineseIntro": {
-          "zh": "基于 Claude Code 的求职申请框架，可评估职位、定制简历、撰写求职信并准备面试，全部在本地运行，用户可 fork 后自行掌控数据。",
+          "zh": "运行在本地的 AI 求职框架，基于 Claude Code 评估职位、定制简历、撰写求职信并准备面试，用户可 fork 后自行掌控数据。",
           "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
         },
         "todayHighlight": {
-          "zh": "今日新增 898 stars，创建七个月总 star 近 4.9 万；「本地运行、自己拥有」的叙事在求职季带动传播，fork 数已超 1.6 万。",
+          "zh": "今日新增 898 stars，总 star 近 4.9 万，创建约七个月，本地运行与可 fork 的隐私叙事在求职人群中持续传播。",
           "en": "登上 GitHub Trending 日榜第 11 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 898 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,850 stars、16,695 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,850 stars and 16,695 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,914 stars、16,701 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,914 stars and 16,701 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "个人数据敏感场景下，「本地优先、可 fork」正成为用户信任的关键卖点，值得在同类产品设计中借鉴。",
+          "zh": "个人数据敏感场景更适合本地化代理方案，可观察「可 fork 的工作流」如何替代传统 SaaS 求职工具。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -588,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "代理编排框架，支持部署多代理集群、协调自动化工作流并构建对话式 AI 系统，内置自适应记忆、向量 RAG 与多平台集成。",
+          "zh": "多代理编排框架，支持部署多智能体集群、协调自主工作流并构建对话式 AI 系统，内置自适应记忆、自学习与向量检索能力。",
           "en": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
         },
-        "totalStars": 75734,
+        "totalStars": 75744,
         "language": "TypeScript",
         "dailyStars": 672,
         "chineseIntro": {
-          "zh": "代理编排框架，支持部署多代理集群、协调自动化工作流并构建对话式 AI 系统，内置自适应记忆、向量 RAG 与多平台集成。",
+          "zh": "多代理编排框架，支持部署多智能体集群、协调自主工作流并构建对话式 AI 系统，内置自适应记忆、自学习与向量检索能力。",
           "en": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
         },
         "todayHighlight": {
-          "zh": "今日新增 672 stars，创建约 17 个月总 star 超 7.5 万；作为较早的代理编排项目，在多代理叙事回温时持续获得新增关注。",
+          "zh": "总 star 超 7.5 万，今日新增 672，创建约 17 个月，作为较早的代理编排框架持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 75k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 672 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 75,734 stars、8,973 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 75,734 stars and 8,973 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 75,744 stars、8,973 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 75,744 stars and 8,973 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "多代理编排的能力边界与真实落地效果仍需验证，产品经理应关注其从演示到生产环境的差距。",
+          "zh": "多代理编排从概念走向工程化，值得观察其在真实业务流程中的协调成本与可观测性设计。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -628,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI 编码代理的上下文窗口优化工具，通过沙箱化工具输出减少约 98% 的上下文占用，并持久化会话记忆、统一路由 17 个平台。",
+          "zh": "面向 AI 编程代理的上下文窗口优化工具，通过沙箱化工具输出减少约 98% 的上下文占用，并持久化会话记忆、统一路由 17 个平台。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
-        "totalStars": 30324,
+        "totalStars": 30340,
         "language": "TypeScript",
         "dailyStars": 449,
         "chineseIntro": {
-          "zh": "面向 AI 编码代理的上下文窗口优化工具，通过沙箱化工具输出减少约 98% 的上下文占用，并持久化会话记忆、统一路由 17 个平台。",
+          "zh": "面向 AI 编程代理的上下文窗口优化工具，通过沙箱化工具输出减少约 98% 的上下文占用，并持久化会话记忆、统一路由 17 个平台。",
           "en": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks."
         },
         "todayHighlight": {
-          "zh": "今日新增 449 stars 位列全球趋势第五，创建八个月总 star 超 3 万；上下文成本是代理用户的普遍痛点，使其持续获得关注。",
+          "zh": "今日新增 449 stars，总 star 超 3 万，创建约八个月，上下文成本问题在代理普及后持续升温。",
           "en": "登上 GitHub Trending 日榜第 5 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 449 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 30,324 stars、2,155 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 30,324 stars and 2,155 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 30,340 stars、2,157 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 30,340 stars and 2,157 forks，topics: antigravity, claude, claude-code, claude-code-hooks, claude-code-plugins, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "上下文管理直接决定代理的可用时长与成本，是评估编码代理产品体验时不可忽视的底层能力。",
+          "zh": "上下文管理是代理产品体验的隐性成本项，可关注此类中间层如何影响多平台代理的兼容策略。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -674,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "OpenAI 披露 Stack Overflow for Agents 借助 ChatGPT 插件实现注册量三倍增长，两名工程师用 Codex 数周内完成开发。",
+          "zh": "OpenAI 披露 Stack Overflow for Agents 借助 ChatGPT 插件实现注册量三倍增长，两个工程师用 Codex 数周内完成开发。",
           "en": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
         },
         "chineseIntro": {
-          "zh": "OpenAI 披露 Stack Overflow for Agents 借助 ChatGPT 插件实现注册量三倍增长，两名工程师用 Codex 数周内完成开发。",
+          "zh": "OpenAI 披露 Stack Overflow for Agents 借助 ChatGPT 插件实现注册量三倍增长，两个工程师用 Codex 数周内完成开发。",
           "en": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
         },
         "todayHighlight": {
-          "zh": "插件生态正成为 AI 应用冷启动的高效分发渠道，验证了 ChatGPT 平台的分发杠杆效应。",
-          "en": "插件生态正成为 AI 应用冷启动的高效分发渠道，验证了 ChatGPT 平台的分发杠杆效应。"
+          "zh": "插件生态正成为 AI 原生应用冷启动的高效分发渠道，验证了 ChatGPT 作为入口的杠杆效应。",
+          "en": "插件生态正成为 AI 原生应用冷启动的高效分发渠道，验证了 ChatGPT 作为入口的杠杆效应。"
         },
         "pmInsight": {
-          "zh": "评估将产品嵌入 ChatGPT 插件生态的获客成本与转化率，对比自建渠道的 ROI。",
+          "zh": "评估将产品封装为 ChatGPT 插件或 GPT 的获客 ROI，优先选择高频、低门槛的 agent 场景做插件化试点。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -694,43 +645,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/stack-overflow-chatgpt-plugin"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Existential Risk from AI: An Exposition for Mathematicians",
-          "en": "Hacker News AI: Existential Risk from AI: An Exposition for Mathematicians"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "一篇面向数学家的 AI 存在性风险论述在 HN 引发讨论，文中称 LLM 每周证明重要定理，OpenAI 内部模型 Astra 已能批量产出突破。",
-          "en": "Article URL: https://alkjash.github.io/ai-risk/ Comments URL: https://news.ycombinator.com/item?id=50128351 Points: 1 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "一篇面向数学家的 AI 存在性风险论述在 HN 引发讨论，文中称 LLM 每周证明重要定理，OpenAI 内部模型 Astra 已能批量产出突破。",
-          "en": "Article URL: https://alkjash.github.io/ai-risk/ Comments URL: https://news.ycombinator.com/item?id=50128351 Points: 1 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "数学界对 AI 替代专业工作的焦虑正从边缘讨论转向严肃风险论证，可能影响人才流向与监管叙事。",
-          "en": "数学界对 AI 替代专业工作的焦虑正从边缘讨论转向严肃风险论证，可能影响人才流向与监管叙事。"
-        },
-        "pmInsight": {
-          "zh": "关注高技能知识工作场景中用户对 AI 替代的信任阈值变化，提前设计人机协作而非替代的产品叙事。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://alkjash.github.io/ai-risk/"
           }
         ]
       },
@@ -748,22 +662,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Anthropic 开始向 METR 团队开放类员工权限以评估前沿模型风险，并公布与 SecureBio、Accenture 等评估方的合作。",
+          "zh": "Anthropic 开始向 METR 团队开放类员工权限以独立评估前沿模型风险，并公布与 SecureBio、Accenture 等评估方的合作。",
           "en": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we`re announcing that we`ve started to give employee-like access to a team from METR, a nonprofit that evaluates frontier AI models.METR will publish the r"
         },
         "chineseIntro": {
-          "zh": "Anthropic 开始向 METR 团队开放类员工权限以评估前沿模型风险，并公布与 SecureBio、Accenture 等评估方的合作。",
+          "zh": "Anthropic 开始向 METR 团队开放类员工权限以独立评估前沿模型风险，并公布与 SecureBio、Accenture 等评估方的合作。",
           "en": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we`re announcing that we`ve started to give employee-like access to a team from METR, a nonprofit that evaluates frontier AI models.METR will publish the r"
         },
         "todayHighlight": {
-          "zh": "在签署白宫超级智能协议后，Anthropic 率先落地第三方深度评估机制，为行业安全透明度设定新基准。",
-          "en": "在签署白宫超级智能协议后，Anthropic 率先落地第三方深度评估机制，为行业安全透明度设定新基准。"
+          "zh": "在签署白宫超级智能协议后，Anthropic 率先落地第三方审计机制，为行业安全治理树立可参照的操作范式。",
+          "en": "在签署白宫超级智能协议后，Anthropic 率先落地第三方审计机制，为行业安全治理树立可参照的操作范式。"
         },
         "pmInsight": {
-          "zh": "若产品面向企业或受监管行业，提前梳理模型风险评估证据链，以应对客户尽调中的第三方审计要求。",
+          "zh": "面向企业客户的产品应提前准备模型风险评估与第三方审计材料，将合规透明度转化为销售信任资产。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "High",
         "sources": [
           {
             "label": "Anthropic",
@@ -785,19 +699,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 面向企业云客户正式发布开源许可证合规功能，通过规则集在 PR 阶段自动拦截不合规依赖。",
+          "zh": "GitHub Enterprise Cloud 正式上线开源许可证合规功能，通过规则集在 PR 阶段自动拦截不合规依赖。",
           "en": "Enterprises can now manage their dependencies&#8217; licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterprise Cloud&#8230; The post Open source license compliance generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 面向企业云客户正式发布开源许可证合规功能，通过规则集在 PR 阶段自动拦截不合规依赖。",
+          "zh": "GitHub Enterprise Cloud 正式上线开源许可证合规功能，通过规则集在 PR 阶段自动拦截不合规依赖。",
           "en": "Enterprises can now manage their dependencies&#8217; licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterprise Cloud&#8230; The post Open source license compliance generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "AI 生成代码大量引入第三方依赖，许可证合规从法务事后审查前移到开发流程，降低企业采用 AI 编码的合规摩擦。",
-          "en": "AI 生成代码大量引入第三方依赖，许可证合规从法务事后审查前移到开发流程，降低企业采用 AI 编码的合规摩擦。"
+          "zh": "AI 生成代码大量引入第三方依赖，许可证合规从法务事后审查前移为研发流程中的自动化门禁。",
+          "en": "AI 生成代码大量引入第三方依赖，许可证合规从法务事后审查前移为研发流程中的自动化门禁。"
         },
         "pmInsight": {
-          "zh": "在 AI 编码助手的产品流程中嵌入许可证检查节点，把合规能力作为企业版差异化的卖点。",
+          "zh": "在 AI 编码助手的产品设计中嵌入依赖许可证检查节点，避免生成代码带来隐性法律风险。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -822,19 +736,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Reflection 实验室在 Hugging Face 发布 501B 参数 MoE 开源模型 Beam，Apache 2.0 许可，支持 1M 上下文，聚焦编码与 Agent 场景。",
+          "zh": "新实验室 Reflection 在 Hugging Face 发布 501B 参数 MoE 开源模型 Beam，激活 23B、支持 1M 上下文，Apache 2.0 许可，主打编码与 agent 场景。",
           "en": "Welcome Beam: a 501B open model you can own, customize, and scale"
         },
         "chineseIntro": {
-          "zh": "Reflection 实验室在 Hugging Face 发布 501B 参数 MoE 开源模型 Beam，Apache 2.0 许可，支持 1M 上下文，聚焦编码与 Agent 场景。",
+          "zh": "新实验室 Reflection 在 Hugging Face 发布 501B 参数 MoE 开源模型 Beam，激活 23B、支持 1M 上下文，Apache 2.0 许可，主打编码与 agent 场景。",
           "en": "Welcome Beam: a 501B open model you can own, customize, and scale"
         },
         "todayHighlight": {
-          "zh": "前沿规模模型以宽松许可开放自托管，直接冲击闭源 API 在企业私有化部署场景的定价权。",
-          "en": "前沿规模模型以宽松许可开放自托管，直接冲击闭源 API 在企业私有化部署场景的定价权。"
+          "zh": "前沿规模模型以宽松许可证开放并配齐推理与后训练配方，直接冲击闭源 API 在企业自部署场景的定价权。",
+          "en": "前沿规模模型以宽松许可证开放并配齐推理与后训练配方，直接冲击闭源 API 在企业自部署场景的定价权。"
         },
         "pmInsight": {
-          "zh": "对成本敏感或数据敏感的产品线，测算 Beam 自托管推理成本与闭源 API 的盈亏平衡点。",
+          "zh": "对成本敏感或数据敏感的编码/agent 产品，可评估 Beam 自托管替代方案，重点测算 23B 激活下的推理成本与微调收益。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -859,19 +773,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "HN 上出现一个用 Python、FastAPI、Gemini 和 React 搭建 LLM Playground 的教程视频，讨论热度较低。",
+          "zh": "Hacker News 出现用 Python、FastAPI、Gemini 与 React 搭建 LLM Playground 的教程视频，讨论热度较低。",
           "en": "Article URL: https://www.youtube.com/watch?v=73Knur3t4M0 Comments URL: https://news.ycombinator.com/item?id=50118473 Points: 2 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "HN 上出现一个用 Python、FastAPI、Gemini 和 React 搭建 LLM Playground 的教程视频，讨论热度较低。",
+          "zh": "Hacker News 出现用 Python、FastAPI、Gemini 与 React 搭建 LLM Playground 的教程视频，讨论热度较低。",
           "en": "Article URL: https://www.youtube.com/watch?v=73Knur3t4M0 Comments URL: https://news.ycombinator.com/item?id=50118473 Points: 2 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "开发者对轻量级 LLM 实验环境的需求持续存在，反映多模型快速对比仍是日常痛点。",
-          "en": "开发者对轻量级 LLM 实验环境的需求持续存在，反映多模型快速对比仍是日常痛点。"
+          "zh": "开发者对轻量级自建 LLM 实验环境的兴趣持续存在，反映多模型对比调试仍是日常刚需。",
+          "en": "开发者对轻量级自建 LLM 实验环境的兴趣持续存在，反映多模型对比调试仍是日常刚需。"
         },
         "pmInsight": {
-          "zh": "观察开发者自建 Playground 的组件选择，判断 Gemini 在原型验证场景的渗透信号。",
+          "zh": "关注此类教程中反复出现的工具链组合，可作为内部快速验证 prompt 与模型选型的低成本原型参考。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -879,6 +793,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Hacker News LLM",
             "url": "https://www.youtube.com/watch?v=73Knur3t4M0"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: DeepSeek 4.1 Flash 1017 Incoming? --> DeepSeek users report a possible V4.1-Flash-1017 refresh across its API",
+          "en": "Reddit LocalLLaMA: DeepSeek 4.1 Flash 1017 Incoming? --> DeepSeek users report a possible V4.1-Flash-1017 refresh across its API"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "新模型/新能力",
+          "en": "新模型/新能力"
+        },
+        "summary": {
+          "zh": "Reddit 用户报告 DeepSeek API 出现疑似 V4.1-Flash-1017 的版本刷新，官方尚未确认。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x825su/deepseek_41_flash_1017_incoming_deepseek_users/\"> <img src=\"https://external-preview.redd.it/GyIvWAaOj5t33vjw1LXSfFuiPOoySw3YQMAUCfqkLXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=771c8c8eaf5833cf1a26c44e5f946cc55f07cb15\" alt=\"DeepSeek 4.1 Flash 1017 Incoming? --> DeepSeek users report a possible V4.1-Flash-1017 refresh across its A"
+        },
+        "chineseIntro": {
+          "zh": "Reddit 用户报告 DeepSeek API 出现疑似 V4.1-Flash-1017 的版本刷新，官方尚未确认。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1x825su/deepseek_41_flash_1017_incoming_deepseek_users/\"> <img src=\"https://external-preview.redd.it/GyIvWAaOj5t33vjw1LXSfFuiPOoySw3YQMAUCfqkLXA.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=771c8c8eaf5833cf1a26c44e5f946cc55f07cb15\" alt=\"DeepSeek 4.1 Flash 1017 Incoming? --> DeepSeek users report a possible V4.1-Flash-1017 refresh across its A"
+        },
+        "todayHighlight": {
+          "zh": "若属实，DeepSeek 以 Flash 系列持续迭代低价高吞吐模型，将进一步压缩中端推理市场的价格空间。",
+          "en": "若属实，DeepSeek 以 Flash 系列持续迭代低价高吞吐模型，将进一步压缩中端推理市场的价格空间。"
+        },
+        "pmInsight": {
+          "zh": "在模型路由层预留版本灰度与回滚能力，避免上游静默更新导致输出质量波动影响线上业务。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x825su/deepseek_41_flash_1017_incoming_deepseek_users/"
           }
         ]
       }
