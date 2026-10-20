@@ -44,34 +44,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报 · 2026-10-20",
-      "en": "AI PM Daily · 2026-10-20"
+      "zh": "AI 产品经理日报：Agent 生态从「能跑」走向「可治理、可迁移」",
+      "en": "AI PM Daily: The Agent Ecosystem Moves from 'It Runs' to 'Governable and Portable'"
     },
     "editorNote": {
-      "zh": "今日主线不在单点模型能力，而在「Agent 的运行底座」：记忆、编排、CLI 暴露、企业策略 API 与安全审计同时升温。GitHub 趋势榜前十里，多 Agent 与 Agent 基础设施项目占据多数，值得产品侧重新审视 Agent 产品的可迁移性与治理成本。",
-      "en": "Today's thread is not a single model capability but the runtime layer for agents: memory, orchestration, CLI exposure, enterprise policy APIs and security auditing are all warming up. Multi-agent and agent-infrastructure projects dominate GitHub trending, which warrants a fresh look at portability and governance cost in agent products."
+      "zh": "今日主线不在单点模型能力，而在 Agent 周边的治理与迁移层：GitHub 把 Copilot 模型选择权下放到组织层级，开源侧则集中出现跨 Agent 记忆、多 Agent 工作台与电视端去广告工具。我们据此给出三条信号与两条可验证假设。",
+      "en": "Today's thread is not raw model capability but the governance and portability layer around agents: GitHub pushed Copilot model choice down to org level, while open source saw a cluster of cross-agent memory, multi-agent workbenches, and TV de-bloating tools. Three signals and two testable hypotheses follow."
     },
     "keyTakeaway": {
-      "zh": "Agent 竞争正从「谁的模型强」转向「谁的运行层更可迁移、更可治理」：跨 Agent 记忆、多 Agent 编排与 CLI 化能力在开源侧持续升温，而 GitHub 与微软分别从策略 API 和内部威胁框架补上企业侧的控制面。",
-      "en": "Agent competition is shifting from model strength to a portable, governable runtime layer: cross-agent memory, multi-agent orchestration and CLI exposure are warming up in open source, while GitHub and Microsoft add enterprise control planes via policy APIs and insider-threat frameworks."
+      "zh": "Agent 竞争的重心正从「谁的模型更强」转向「谁能管住模型、接住上下文」：企业侧要求可编程的模型策略，开发者侧要求跨厂商的 Agent 记忆与并行调度，这两条需求同时升温。",
+      "en": "The center of gravity in agents is shifting from 'whose model is stronger' to 'who can govern models and carry context': enterprises want programmable model policy, developers want cross-vendor agent memory and parallel orchestration — both are heating up at once."
     },
     "signals": [
       {
         "title": {
-          "zh": "跨 Agent 记忆层升温，Agent 可迁移性成为产品差异点",
-          "en": "Cross-agent memory warms up, agent portability becomes a differentiator"
+          "zh": "Copilot 开放模型策略 API，模型选择权下放到组织与团队",
+          "en": "Copilot Opens Model Policy API, Pushing Model Choice to Orgs and Teams"
         },
         "category": {
-          "zh": "Agent 基础设施",
-          "en": "Agent Infrastructure"
+          "zh": "平台治理",
+          "en": "Platform Governance"
         },
         "summary": {
-          "zh": "akitaonrails/ai-memory 今日新增 666 stars、总 star 约 11.6k，位列全球趋势榜第 3，核心能力是让用户在一个 Agent 中断任务后换用另一厂商 Agent 在同一目录继续工作；同期 stablyai/orca（今日 +1590，总 star 近 99k）与 ruvnet/ruflo（今日 +564，总 star 约 7.7 万）分别从多 Agent 工作台和元编排框架切入同一问题。",
-          "en": "akitaonrails/ai-memory added 666 stars today (about 11.6k total), ranking 3rd globally, letting users switch to another vendor's agent in the same directory after an interruption; stablyai/orca (+1590 today, nearly 99k total) and ruvnet/ruflo (+564 today, about 77k total) approach the same problem via multi-agent workbench and meta-orchestration respectively."
+          "zh": "GitHub 为 Copilot 模型策略开放 REST API，支持在企业、企业团队、企业应用和组织四个层级读取与更新模型可用性。同期 OpenAI 公布 ChatGPT 在 COBOL 等低资源语言上的评测提升，指向企业遗留系统改造场景。",
+          "en": "GitHub released a REST API for Copilot model policy, allowing read/update of model availability at enterprise, enterprise-team, enterprise-app and org levels. In parallel, OpenAI published gains for ChatGPT on low-resource languages including COBOL, pointing at legacy modernization."
         },
         "pmInsight": {
-          "zh": "当记忆与上下文可以跨 Agent 迁移，用户切换成本下降，单一 Agent 的锁定效应被削弱。产品侧需要回答：我们的记忆是资产还是护城河？若只是资产，应尽早支持导出与互操作，把竞争点转向工作流与团队协作。",
-          "en": "When memory and context can move across agents, switching costs fall and single-agent lock-in weakens. PMs must ask whether their memory is an asset or a moat; if only an asset, support export and interoperability early and shift competition to workflow and team collaboration."
+          "zh": "模型选择从产品内置变成可编程配置，意味着企业采购会开始按「治理粒度」比较 Copilot 类产品；PM 需要把模型白名单、按团队差异化策略、审计日志做成可演示的能力，而不是藏在后台设置里。",
+          "en": "Model choice moving from built-in to programmable config means enterprise buyers will start comparing Copilot-like products on governance granularity; PMs should make model allowlists, per-team policies and audit logs demoable capabilities rather than buried settings."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "GitHub Changelog: Copilot model policy API",
+            "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams"
+          },
+          {
+            "label": "OpenAI: Advancing coding in low-resource programming languages",
+            "url": "https://openai.com/index/low-resource-programming-languages"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "跨 Agent 记忆与多 Agent 工作台同时升温，上下文迁移成新痛点",
+          "en": "Cross-Agent Memory and Multi-Agent Workbenches Heat Up Together"
+        },
+        "category": {
+          "zh": "开发者工具",
+          "en": "Developer Tools"
+        },
+        "summary": {
+          "zh": "akitaonrails/ai-memory 今日新增 666 stars，主打在一个 Agent 中断任务后换用另一厂商 Agent 在同一目录继续工作；stablyai/orca 今日新增 1590 stars，总 star 近 9.9 万，支持用自有订阅并行调度 Claude Code、Grok Bot 等编码 Agent；ruvnet/ruflo 今日新增 564 stars，提供多智能体集群与自适应记忆。",
+          "en": "akitaonrails/ai-memory added 666 stars today, letting users resume a task in another vendor's agent within the same directory; stablyai/orca added 1590 stars (near 99k total), orchestrating Claude Code, Grok Bot and others on the user's own subscription; ruvnet/ruflo added 564 stars with multi-agent clusters and adaptive memory."
+        },
+        "pmInsight": {
+          "zh": "开发者已经在用多个厂商的 Agent，但上下文被锁在单一工具里；记忆层与调度层正在成为独立品类。PM 应评估自己的 Agent 产品是否提供可导出的任务上下文，否则会在多 Agent 工作流中被降级为「可替换的执行器」。",
+          "en": "Developers already use agents from multiple vendors, but context is locked inside each tool; memory and orchestration are emerging as standalone categories. PMs should check whether their agent exports task context, or risk being demoted to a replaceable executor in multi-agent workflows."
         },
         "impact": "High",
         "sources": [
@@ -91,63 +120,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "企业 Agent 控制面补齐：策略 API 与内部威胁框架并行",
-          "en": "Enterprise agent control plane fills in: policy APIs and insider-threat frameworks in parallel"
+          "zh": "Agent 安全与第三方评估同步推进，企业信任门槛抬高",
+          "en": "Agent Security and Third-Party Evaluation Advance Together"
         },
         "category": {
-          "zh": "企业治理与安全",
-          "en": "Enterprise Governance & Security"
+          "zh": "安全与合规",
+          "en": "Security & Compliance"
         },
         "summary": {
-          "zh": "GitHub 为 Copilot 模型策略开放 REST API，支持企业、企业团队、企业应用和组织四个层级查询与更新模型可用性；微软安全团队同日发文讨论「智能体内部威胁」，提出需要新框架管控 Agent 行为；Anthropic 则向 METR 提供接近员工的访问权限用于独立评估。",
-          "en": "GitHub opened a REST API for Copilot model policy across enterprise, enterprise team, enterprise app and org levels; Microsoft's security team published on the 'agentic insider', arguing for new frameworks to govern agent behavior; Anthropic gave METR near-employee access for independent evaluation."
+          "zh": "微软安全团队发文讨论「代理型内部人」风险，指出能力增强的模型若管理不当会构成显著威胁；Anthropic 宣布向 METR 开放接近员工级别的访问权限，由其独立评估前沿模型风险并公开结果，同时与 SecureBio、埃森哲合作。",
+          "en": "Microsoft's security team published on 'agentic insider' risk, warning that capable models can be a significant threat if mismanaged; Anthropic gave METR near-employee-level access to independently evaluate frontier model risk and publish results, alongside partnerships with SecureBio and Accenture."
         },
         "pmInsight": {
-          "zh": "模型治理从控制台操作变为可编程策略，意味着企业采购会要求「策略即代码」与审计日志。做企业 Agent 产品的团队应把模型白名单、权限边界和操作审计作为一等功能，而不是上线后再补。",
-          "en": "Model governance moving from console clicks to programmable policy means enterprise buyers will demand policy-as-code and audit logs. Teams building enterprise agents should treat model allowlists, permission boundaries and action auditing as first-class features, not post-launch add-ons."
+          "zh": "两条动态指向同一件事：Agent 的权限范围与行为审计将成为企业采购的硬门槛，而非加分项。PM 应提前把「Agent 能做什么、做了什么、如何回滚」设计成产品界面的一部分，并预留第三方评估报告的位置。",
+          "en": "Both point to one thing: agent permission scope and behavior audit will become a hard procurement gate, not a nice-to-have. PMs should design 'what the agent can do, what it did, how to roll back' into the product surface and reserve a slot for third-party evaluation reports."
         },
-        "impact": "High",
+        "impact": "Medium",
         "sources": [
-          {
-            "label": "GitHub Changelog: Copilot model policy API",
-            "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams"
-          },
           {
             "label": "Microsoft AI: Securing the agentic insider",
             "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/"
           },
           {
-            "label": "Anthropic: update on independent evaluators",
+            "label": "Anthropic: An update on independent evaluators",
             "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "「让软件可被 Agent 调用」持续升温，CLI 成为 Agent 原生接口",
-          "en": "'Make software callable by agents' keeps warming up, CLI as the agent-native interface"
-        },
-        "category": {
-          "zh": "Agent 生态接口",
-          "en": "Agent Ecosystem Interfaces"
-        },
-        "summary": {
-          "zh": "HKUDS/CLI-Anything 今日新增 606 stars、总 star 约 5.5 万，位列趋势榜第 10，通过命令行接口把软件能力暴露给 AI Agent 调用并配套 CLI-Hub；同期 alchaincyf/huashu-motion（1k+ stars）让 Agent 直出产品宣传片，属于同一「Agent 调用专业能力」的方向。",
-          "en": "HKUDS/CLI-Anything added 606 stars today (about 55k total), ranking 10th, exposing software capabilities to agents via CLI with a CLI-Hub; alchaincyf/huashu-motion (1k+ stars) lets agents produce product promo videos, the same 'agents calling specialized capabilities' direction."
-        },
-        "pmInsight": {
-          "zh": "CLI 正在成为 Agent 调用外部能力的低成本标准，而非每个工具单独做插件。产品侧应评估：我们的核心能力是否已可通过 CLI 或 API 被 Agent 稳定调用？若不能，可能在 Agent 分发渠道中缺席。",
-          "en": "CLI is becoming the low-cost standard for agents to call external capabilities, rather than per-tool plugins. PMs should assess whether their core capability can be reliably invoked by agents via CLI or API; if not, they risk missing the agent distribution channel."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "HKUDS/CLI-Anything",
-            "url": "https://github.com/HKUDS/CLI-Anything"
-          },
-          {
-            "label": "alchaincyf/huashu-motion",
-            "url": "https://github.com/alchaincyf/huashu-motion"
           }
         ]
       }
@@ -155,22 +151,51 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "假设：提供「Agent 记忆导出/导入」可提升多 Agent 团队的留存",
-          "en": "Hypothesis: agent memory export/import improves retention in multi-agent teams"
+          "zh": "假设：企业愿意为「按团队差异化模型策略 + 审计」单独付费",
+          "en": "Hypothesis: Enterprises Will Pay Separately for Per-Team Model Policy + Audit"
         },
         "category": {
-          "zh": "产品假设",
-          "en": "Product Hypothesis"
+          "zh": "企业产品机会",
+          "en": "Enterprise Product Opportunity"
         },
         "summary": {
-          "zh": "基于 ai-memory、orca、ruflo 三条信号，可验证假设：在编程 Agent 产品中加入标准化的记忆导出/导入（含架构说明、已试错方案、任务状态），能让使用两个以上 Agent 的团队周留存提升。验证方式：对多 Agent 用户做 A/B，观察跨 Agent 切换后的任务完成率与 4 周留存。",
-          "en": "Based on ai-memory, orca and ruflo, a testable hypothesis: adding standardized memory export/import (architecture notes, tried-and-failed approaches, task state) to a coding agent raises weekly retention for teams using two or more agents. Test via A/B on multi-agent users, measuring task completion after switching and 4-week retention."
+          "zh": "基于 Copilot 模型策略 API 与微软 Agent 安全叙事，可验证假设是：在中大型企业中，按团队配置模型白名单、并导出 Agent 行为审计报告的能力，会显著影响续约与扩容决策。验证方式是在 5-10 家客户中做 A/B 演示，对比「仅统一策略」与「分层策略 + 审计导出」两种方案在采购评审中的通过率。",
+          "en": "Building on the Copilot model policy API and Microsoft's agent security narrative, a testable hypothesis: in mid-to-large enterprises, per-team model allowlists plus exportable agent audit reports materially affect renewal and expansion decisions. Validate via A/B demos with 5-10 customers, comparing a single global policy against tiered policy + audit export in procurement review pass rates."
         },
         "pmInsight": {
-          "zh": "若假设成立，记忆互操作应从「防御性功能」升级为获客卖点；若不成立，说明用户更在意单 Agent 内的深度而非可迁移性，资源应回到工作流深度。",
-          "en": "If true, memory interoperability should move from defensive feature to acquisition pitch; if not, users care more about depth within one agent than portability, and resources should return to workflow depth."
+          "zh": "如果分层策略在评审中通过率明显更高，就应把治理能力从「管理员设置页」提升为独立售卖模块，而不是免费附赠。",
+          "en": "If tiered policy clearly wins in reviews, governance should be promoted from an admin settings page to a separately sold module rather than a free add-on."
         },
         "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog: Copilot model policy API",
+            "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams"
+          },
+          {
+            "label": "Microsoft AI: Securing the agentic insider",
+            "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "假设：可导出的任务上下文会成为 Agent 产品的留存杠杆",
+          "en": "Hypothesis: Exportable Task Context Becomes a Retention Lever for Agent Products"
+        },
+        "category": {
+          "zh": "开发者产品机会",
+          "en": "Developer Product Opportunity"
+        },
+        "summary": {
+          "zh": "基于 ai-memory、orca、ruflo 的同步升温，可验证假设是：为 Agent 产品提供标准化的任务上下文导出（架构说明、已尝试方案、失败原因），能降低用户切换到其他 Agent 的意愿，并提升多 Agent 场景下的留存。验证方式是在一个编码 Agent 产品中上线导出功能，观察 4 周内多工具用户的周留存变化。",
+          "en": "Given the simultaneous rise of ai-memory, orca and ruflo, a testable hypothesis: offering standardized task-context export (architecture notes, attempted approaches, failure reasons) reduces users' willingness to switch agents and improves retention in multi-agent setups. Validate by shipping export in one coding agent and tracking weekly retention of multi-tool users over four weeks."
+        },
+        "pmInsight": {
+          "zh": "若导出功能反而提升了留存，说明「可迁移」是信任信号而非流失通道；此时应把上下文格式做成开放规范，争取成为多 Agent 工作流的默认交接格式。",
+          "en": "If export actually improves retention, portability is a trust signal rather than a leak; the next move is to open the context format and compete to be the default handoff format in multi-agent workflows."
+        },
+        "impact": "Watch",
         "sources": [
           {
             "label": "akitaonrails/ai-memory",
@@ -183,35 +208,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "ruvnet/ruflo",
             "url": "https://github.com/ruvnet/ruflo"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "假设：企业 Agent 的「策略即代码」可缩短采购周期",
-          "en": "Hypothesis: policy-as-code for enterprise agents shortens procurement cycles"
-        },
-        "category": {
-          "zh": "产品假设",
-          "en": "Product Hypothesis"
-        },
-        "summary": {
-          "zh": "基于 GitHub Copilot 模型策略 API 与微软内部威胁框架两条信号，可验证假设：为企业 Agent 产品提供模型白名单、权限边界与操作审计的 API/配置文件（而非仅控制台），能把安全评审阶段缩短。验证方式：对比提供与不提供策略 API 的两组企业客户，统计从安全评审到签约的天数。",
-          "en": "Based on GitHub's Copilot model policy API and Microsoft's insider-threat framework, a testable hypothesis: offering model allowlists, permission boundaries and action-audit APIs/config files (not just a console) for enterprise agents shortens the security review stage. Test by comparing days from security review to signing across enterprise customers with and without policy APIs."
-        },
-        "pmInsight": {
-          "zh": "若成立，策略 API 应作为企业版的核心卖点而非附加项；若不成立，说明企业更依赖人工审计与第三方评估，产品应优先做审计日志与评估报告导出。",
-          "en": "If true, policy APIs should be a core enterprise selling point rather than an add-on; if not, enterprises rely more on manual audit and third-party evaluation, and the product should prioritize audit logs and evaluation report export."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub Changelog: Copilot model policy API",
-            "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams"
-          },
-          {
-            "label": "Microsoft AI: Securing the agentic insider",
-            "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/"
           }
         ]
       }
@@ -227,26 +223,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一款通过 Wi-Fi 远程清理 Android TV / Google TV 预装软件与广告的工具，可把电视主屏替换成类似 Apple TV 的简洁界面，适合想给智能电视「去广告、去臃肿」的家庭用户。",
+          "zh": "通过 Wi-Fi 远程清理 Android TV 和 Google TV 上的预装广告与臃肿应用，并把电视首页替换成类似 Apple TV 的简洁界面。适合想摆脱智能电视开机广告、追求清爽体验的家庭用户。",
           "en": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home."
         },
-        "totalStars": 7277,
+        "totalStars": 7618,
         "language": "Java",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一款通过 Wi-Fi 远程清理 Android TV / Google TV 预装软件与广告的工具，可把电视主屏替换成类似 Apple TV 的简洁界面，适合想给智能电视「去广告、去臃肿」的家庭用户。",
+          "zh": "通过 Wi-Fi 远程清理 Android TV 和 Google TV 上的预装广告与臃肿应用，并把电视首页替换成类似 Apple TV 的简洁界面。适合想摆脱智能电视开机广告、追求清爽体验的家庭用户。",
           "en": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月，已积累 7.2k stars、847 forks，今日在上升榜获得关注；「电视去广告 + 换主屏」的实用叙事在智能电视用户中快速传播。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 创建仅约 1 个月便已积累 7,277 stars, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
+          "zh": "项目创建仅约一个月，已积累 7.6k stars，今日在上升榜获得关注；「用 Claude Code 写出来的电视去广告工具」这一叙事在智能电视用户圈层中快速传播。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 创建仅约 1 个月便已积累 7,618 stars, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,277 stars、847 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,277 stars and 847 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,618 stars、878 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,618 stars and 878 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察用户对「硬件到手后二次改造」的需求强度，以及去广告、隐私类工具如何形成可复用的安装与回滚体验。",
+          "zh": "值得观察：用户对智能电视广告与预装软件的容忍度已很低，「去广告+换首页」这类轻量改造需求可能催生更多消费级工具。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -267,26 +263,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套给 AI 编程 Agent 使用的技能包，让 Agent 一键生成商业级产品宣传片，支持自动作曲，并能通过「指着画面说改哪里」的方式迭代画面。",
+          "zh": "一套给 AI 编程助手使用的技能包，让 Agent 一键生成商业级产品宣传片，支持自动配乐，并能通过指向画面来修改细节。适合需要快速产出发布视频的独立开发者和小团队。",
           "en": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it."
         },
-        "totalStars": 1025,
+        "totalStars": 1042,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套给 AI 编程 Agent 使用的技能包，让 Agent 一键生成商业级产品宣传片，支持自动作曲，并能通过「指着画面说改哪里」的方式迭代画面。",
+          "zh": "一套给 AI 编程助手使用的技能包，让 Agent 一键生成商业级产品宣传片，支持自动配乐，并能通过指向画面来修改细节。适合需要快速产出发布视频的独立开发者和小团队。",
           "en": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it."
         },
         "todayHighlight": {
-          "zh": "项目创建仅约一个月即获得 1k+ stars，今日在上升榜出现；「Agent 直出宣传片」的演示型叙事对内容与营销人群有较强吸引力。",
+          "zh": "项目上线仅数天便获得约 1k stars，属于 Agent Skills 生态中的新面孔；「一句话出一支宣传片」的演示方式在 Claude Code 用户中带动了关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,025 stars、111 forks，topics: agent-skills, animation, claude-code, codex, gsap，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,025 stars and 111 forks，topics: agent-skills, animation, claude-code, codex, gsap, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,042 stars、112 forks，topics: agent-skills, animation, claude-code, codex, gsap，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,042 stars and 112 forks，topics: agent-skills, animation, claude-code, codex, gsap, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注 Agent 技能化封装如何把专业视频制作流程压缩成对话式操作，以及「指哪改哪」的交互范式对创作工具设计的启发。",
+          "zh": "值得观察：Agent 技能正在从写代码扩展到视频制作等创意生产环节，产品经理可关注「技能包」这种轻量分发形态。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -307,26 +303,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Google TV 的开源无广告主屏，提供快速启动、应用内热门推荐、天气与随时间变化的界面，并支持一键还原，适合想保留原系统但改善首页体验的用户。",
+          "zh": "为 Google TV 提供快速、无广告的替代首页，聚合自有应用中的热门内容、天气信息，并支持一键还原。开源且基于 Claude Code 构建，适合想保留原系统但改善首页体验的用户。",
           "en": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo."
         },
-        "totalStars": 613,
+        "totalStars": 692,
         "language": "Java",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 Google TV 的开源无广告主屏，提供快速启动、应用内热门推荐、天气与随时间变化的界面，并支持一键还原，适合想保留原系统但改善首页体验的用户。",
+          "zh": "为 Google TV 提供快速、无广告的替代首页，聚合自有应用中的热门内容、天气信息，并支持一键还原。开源且基于 Claude Code 构建，适合想保留原系统但改善首页体验的用户。",
           "en": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo."
         },
         "todayHighlight": {
-          "zh": "项目创建仅数日便获得 600+ stars，今日在上升榜获得关注；与同类电视去广告项目形成话题共振，带动早期传播。",
+          "zh": "项目创建仅一天左右即获得近 700 stars，与同类的电视去广告项目形成话题联动；「一键撤销」降低了用户尝试门槛，带动了初期关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 613 stars、70 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 613 stars and 70 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 692 stars、72 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 692 stars and 72 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察「轻量改造 + 一键回滚」如何降低用户尝试门槛，以及开源项目如何用可逆性设计建立信任。",
+          "zh": "值得观察：同一需求下出现多个开源方案，说明智能电视首页改造是一个被验证的细分场景，差异化点在于安全性和可逆性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -347,26 +343,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套运行在本地机器上的 AI 求职框架，基于 Claude Code 实现职位评估、简历定制、求职信撰写与面试准备，用户可 fork 后完全掌控自己的求职数据。",
+          "zh": "运行在本地机器上的 AI 求职框架，基于 Claude Code 实现职位评估、简历定制、求职信撰写和面试准备。用户可 Fork 后完全掌控自己的求职数据与流程。",
           "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
         },
-        "totalStars": 58350,
+        "totalStars": 58546,
         "language": "Python",
         "dailyStars": 3856,
         "chineseIntro": {
-          "zh": "一套运行在本地机器上的 AI 求职框架，基于 Claude Code 实现职位评估、简历定制、求职信撰写与面试准备，用户可 fork 后完全掌控自己的求职数据。",
+          "zh": "运行在本地机器上的 AI 求职框架，基于 Claude Code 实现职位评估、简历定制、求职信撰写和面试准备。用户可 Fork 后完全掌控自己的求职数据与流程。",
           "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
         },
         "todayHighlight": {
-          "zh": "今日新增 3856 stars，总 star 数已达 58k，位列全球趋势榜第 1；项目约 7 个月积累起大规模关注，「本地运行、数据自持」的求职叙事持续升温。",
+          "zh": "今日新增 3856 stars，总 star 数已达 5.8 万，位列全球趋势榜第一；项目创建约七个月，持续在榜说明求职场景与 AI Agent 的结合具有长期吸引力。",
           "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 58k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 3,856 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 58,350 stars、18,421 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 58,350 stars and 18,421 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 58,546 stars、18,450 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 58,546 stars and 18,450 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 AI 如何切入高焦虑、高重复的求职流程，以及「本地优先 + 可 fork」模式对用户信任与产品差异化的价值。",
+          "zh": "值得观察：求职是 AI Agent 落地的高频刚需场景，本地运行与数据自主权是用户选择此类工具的重要考量。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -387,26 +383,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个面向多 Agent 协同的工作台，可用自己的订阅运行 Claude Code、Grok Bot 等各类编程 Agent，覆盖桌面端、移动端与远程运行时。",
+          "zh": "一个用于同时管理多个 AI 编程 Agent 的工作台，支持桌面、移动端和远程运行时，用户可用自己的订阅运行 Claude Code、Grok Bot 等任意编码 Agent。适合需要并行调度多个 Agent 的开发者。",
           "en": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
         },
-        "totalStars": 98717,
+        "totalStars": 98801,
         "language": "TypeScript",
         "dailyStars": 1590,
         "chineseIntro": {
-          "zh": "一个面向多 Agent 协同的工作台，可用自己的订阅运行 Claude Code、Grok Bot 等各类编程 Agent，覆盖桌面端、移动端与远程运行时。",
+          "zh": "一个用于同时管理多个 AI 编程 Agent 的工作台，支持桌面、移动端和远程运行时，用户可用自己的订阅运行 Claude Code、Grok Bot 等任意编码 Agent。适合需要并行调度多个 Agent 的开发者。",
           "en": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
         },
         "todayHighlight": {
-          "zh": "今日新增 1590 stars，总 star 数接近 99k，位列全球趋势榜第 6；项目约 7 个月即积累近十万 star，Agent 编排与多端运行的需求持续获得关注。",
+          "zh": "今日新增 1590 stars，总 star 数接近 9.9 万，位列全球趋势榜第六；项目创建约七个月，随多 Agent 协作需求升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 98k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,590 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 98,717 stars、6,296 forks，topics: ade, agent-ide, ai-agents, automation, bot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 98,717 stars and 6,296 forks，topics: ade, agent-ide, ai-agents, automation, bot, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 98,801 stars、6,297 forks，topics: ade, agent-ide, ai-agents, automation, bot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 98,801 stars and 6,297 forks，topics: ade, agent-ide, ai-agents, automation, bot, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注「Agent 舰队管理」是否会成为独立产品层，以及自带订阅、多端接续的体验如何影响开发者工具的选择。",
+          "zh": "值得观察：多 Agent 调度正在从命令行走向带界面的工作台，产品经理可关注「Agent 编排层」的交互设计与订阅模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -427,26 +423,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个开源的 AI 编程 Agent，可在终端中理解代码库并执行开发任务，适合希望自主掌控模型与工作流的开发者。",
+          "zh": "一个开源的 AI 编程 Agent，可在终端中理解代码库并执行开发任务。适合希望自主掌控编程助手、不绑定单一厂商的开发者。",
           "en": "The open source coding agent."
         },
-        "totalStars": 218159,
+        "totalStars": 218218,
         "language": "TypeScript",
         "dailyStars": 1311,
         "chineseIntro": {
-          "zh": "一个开源的 AI 编程 Agent，可在终端中理解代码库并执行开发任务，适合希望自主掌控模型与工作流的开发者。",
+          "zh": "一个开源的 AI 编程 Agent，可在终端中理解代码库并执行开发任务。适合希望自主掌控编程助手、不绑定单一厂商的开发者。",
           "en": "The open source coding agent."
         },
         "todayHighlight": {
-          "zh": "今日新增 1311 stars，总 star 数已超过 21.8 万，位列全球趋势榜第 2；项目已运营约 18 个月，作为开源编程 Agent 的头部项目持续获得新增关注。",
+          "zh": "今日新增 1311 stars，总 star 数已超过 21.8 万，位列全球趋势榜第二；项目已运营约 18 个月，作为开源编程 Agent 的代表持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 218k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,311 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 218,159 stars、29,147 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 218,159 stars and 29,147 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 218,218 stars、29,149 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 218,218 stars and 29,149 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察开源编程 Agent 的长期生态位，以及开放模型选择与社区插件如何构成对闭源产品的替代方案。",
+          "zh": "值得观察：开源编程 Agent 已形成规模化的社区生态，产品经理可关注其插件与模型接入策略对用户留存的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -467,26 +463,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个基于节点图的扩散模型图形界面、API 与后端，支持在本地进行图像与内容生成，以模块化和可编排的工作流著称。",
+          "zh": "基于节点图的扩散模型图形界面与后端，支持本地快速推理，可灵活搭建图像与内容生成工作流。适合需要精细控制生成流程的创作者和研究者。",
           "en": "Star Comfy-Org / ComfyUI The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
         },
-        "totalStars": 140095,
+        "totalStars": 140162,
         "language": "Python",
         "dailyStars": 1011,
         "chineseIntro": {
-          "zh": "一个基于节点图的扩散模型图形界面、API 与后端，支持在本地进行图像与内容生成，以模块化和可编排的工作流著称。",
+          "zh": "基于节点图的扩散模型图形界面与后端，支持本地快速推理，可灵活搭建图像与内容生成工作流。适合需要精细控制生成流程的创作者和研究者。",
           "en": "Star Comfy-Org / ComfyUI The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
         },
         "todayHighlight": {
-          "zh": "今日新增 1011 stars，总 star 数已达 14 万，位列全球趋势榜第 4；项目已运营约 46 个月，作为本地生成式 AI 工作流基础设施持续获得关注。",
+          "zh": "今日新增 1011 stars，总 star 数达 14 万，位列全球趋势榜第四；项目已运营近四年，作为本地生成式 AI 工作流的长期基础设施持续在榜。",
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 140k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 1,011 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 140,095 stars、16,607 forks，topics: ai, comfy, comfyui, python, pytorch，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 140,095 stars and 16,607 forks，topics: ai, comfy, comfyui, python, pytorch, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 140,162 stars、16,610 forks，topics: ai, comfy, comfyui, python, pytorch，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 140,162 stars and 16,610 forks，topics: ai, comfy, comfyui, python, pytorch, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察节点式工作流如何成为 AI 内容生产的「专业界面」，以及本地推理引擎在成本与可控性上的长期竞争力。",
+          "zh": "值得观察：节点式工作流仍是专业创作者控制生成结果的主流方式，产品经理可关注其生态插件与云端化的演进。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -507,26 +503,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为 AI 编程 Agent 提供长期记忆的方案，让用户在一个 Agent 中中断任务后，换用另一个厂商的 Agent 在同一目录继续工作，无需重新解释架构与已试错方案。",
+          "zh": "为 AI 编程 Agent 提供长期记忆的方案，让用户在一个 Agent 中中断任务后，换用另一个厂商的 Agent 在同一目录继续工作，无需重新解释架构和已尝试的方案。适合跨工具切换的开发者。",
           "en": "Star akitaonrails / ai-memory Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors"
         },
-        "totalStars": 11585,
+        "totalStars": 11627,
         "language": "Rust",
         "dailyStars": 666,
         "chineseIntro": {
-          "zh": "为 AI 编程 Agent 提供长期记忆的方案，让用户在一个 Agent 中中断任务后，换用另一个厂商的 Agent 在同一目录继续工作，无需重新解释架构与已试错方案。",
+          "zh": "为 AI 编程 Agent 提供长期记忆的方案，让用户在一个 Agent 中中断任务后，换用另一个厂商的 Agent 在同一目录继续工作，无需重新解释架构和已尝试的方案。适合跨工具切换的开发者。",
           "en": "Star akitaonrails / ai-memory Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors"
         },
         "todayHighlight": {
-          "zh": "今日新增 666 stars，总 star 数约 11.6k，位列全球趋势榜第 3；项目约 5 个月积累起稳定关注，跨 Agent 交接的记忆层正随多 Agent 使用习惯升温。",
+          "zh": "今日新增 666 stars，总 star 数约 1.16 万，位列全球趋势榜第三；项目创建约五个月，切中多 Agent 厂商并存带来的上下文迁移痛点。",
           "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 666 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,585 stars、820 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,585 stars and 820 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,627 stars、823 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,627 stars and 823 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「记忆与上下文交接」是否会成为 Agent 生态中的独立基础层，以及跨厂商互操作对用户留存的影响。",
+          "zh": "值得观察：Agent 之间的记忆与上下文可移植性正在成为独立产品层，产品经理可关注跨厂商互操作带来的机会。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -547,26 +543,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个面向 Claude Code、Codex 等 Agent 的元编排框架，支持部署多智能体集群、协调自动化工作流，并内置自适应记忆、向量检索与联邦能力。",
+          "zh": "一个面向 Claude Code、Codex 等工具的 Agent 元框架，支持部署多智能体集群、协调自动化工作流，并内置自适应记忆、向量检索与联邦能力。适合构建复杂多 Agent 系统的团队。",
           "en": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
         },
-        "totalStars": 77399,
+        "totalStars": 77429,
         "language": "TypeScript",
         "dailyStars": 564,
         "chineseIntro": {
-          "zh": "一个面向 Claude Code、Codex 等 Agent 的元编排框架，支持部署多智能体集群、协调自动化工作流，并内置自适应记忆、向量检索与联邦能力。",
+          "zh": "一个面向 Claude Code、Codex 等工具的 Agent 元框架，支持部署多智能体集群、协调自动化工作流，并内置自适应记忆、向量检索与联邦能力。适合构建复杂多 Agent 系统的团队。",
           "en": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
         },
         "todayHighlight": {
-          "zh": "今日新增 564 stars，总 star 数约 7.7 万，位列全球趋势榜第 5；项目已运营约 17 个月，多 Agent 编排叙事随 Agent 生态扩张持续获得关注。",
+          "zh": "今日新增 564 stars，总 star 数约 7.7 万，位列全球趋势榜第五；项目已运营约 17 个月，在多 Agent 框架竞争中持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 77k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 564 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 77,399 stars、9,117 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 77,399 stars and 9,117 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 77,429 stars、9,117 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 77,429 stars and 9,117 forks，topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注多智能体编排框架的能力边界与真实落地场景，避免被「集群」「自治」等概念掩盖实际可用性。",
+          "zh": "值得观察：多 Agent 框架的功能边界不断扩张，产品经理需辨别哪些能力是真实工作流所需，哪些只是概念堆叠。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -587,26 +583,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一项让各类软件具备「Agent 原生」能力的项目，通过命令行接口把软件能力暴露给 AI Agent 调用，并配套 CLI-Hub 入口。",
+          "zh": "来自香港大学团队的项目，致力于让各类软件具备 Agent 原生能力，通过命令行接口让 AI Agent 直接操作软件。适合探索 Agent 与现有软件集成方式的开发者。",
           "en": "Star HKUDS / CLI-Anything \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
         },
-        "totalStars": 55442,
+        "totalStars": 55467,
         "language": "Python",
         "dailyStars": 606,
         "chineseIntro": {
-          "zh": "一项让各类软件具备「Agent 原生」能力的项目，通过命令行接口把软件能力暴露给 AI Agent 调用，并配套 CLI-Hub 入口。",
+          "zh": "来自香港大学团队的项目，致力于让各类软件具备 Agent 原生能力，通过命令行接口让 AI Agent 直接操作软件。适合探索 Agent 与现有软件集成方式的开发者。",
           "en": "Star HKUDS / CLI-Anything \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
         },
         "todayHighlight": {
-          "zh": "今日新增 606 stars，总 star 数约 5.5 万，位列全球趋势榜第 10；项目约 8 个月积累起规模关注，「让所有软件可被 Agent 调用」的定位持续吸引开发者。",
+          "zh": "今日新增 606 stars，总 star 数约 5.5 万，位列全球趋势榜第十；项目创建约八个月，随 Agent 生态扩张持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 55k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 606 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 55,442 stars、4,998 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 55,442 stars and 4,998 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 55,467 stars、5,000 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 55,467 stars and 5,000 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 CLI 是否会成为软件接入 Agent 生态的低成本标准入口，以及这对传统软件产品接口策略的影响。",
+          "zh": "值得观察：「让软件对 Agent 友好」可能成为新的产品设计维度，产品经理可思考自家产品是否需要提供 Agent 可调用的接口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -633,19 +629,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "OpenAI 宣布提升 ChatGPT 在低资源编程语言上的代码能力，并新增软件工程、SQLite 和 COBOL 迁移等评测。这意味着代码助手开始覆盖非主流语言与遗留系统场景。",
+          "zh": "OpenAI 公布 ChatGPT 在低资源编程语言上的能力提升，并新增软件工程、SQLite 与 COBOL 迁移等评测。对产品意味着代码助手可覆盖更边缘、更遗留的技术栈。",
           "en": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration."
         },
         "chineseIntro": {
-          "zh": "OpenAI 宣布提升 ChatGPT 在低资源编程语言上的代码能力，并新增软件工程、SQLite 和 COBOL 迁移等评测。这意味着代码助手开始覆盖非主流语言与遗留系统场景。",
+          "zh": "OpenAI 公布 ChatGPT 在低资源编程语言上的能力提升，并新增软件工程、SQLite 与 COBOL 迁移等评测。对产品意味着代码助手可覆盖更边缘、更遗留的技术栈。",
           "en": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration."
         },
         "todayHighlight": {
-          "zh": "把 COBOL 迁移纳入评测，直指企业遗留系统现代化这一高价值但长期被忽视的编程市场。",
-          "en": "把 COBOL 迁移纳入评测，直指企业遗留系统现代化这一高价值但长期被忽视的编程市场。"
+          "zh": "把评测扩展到 COBOL 等遗留语言，是在抢占企业现代化改造这一高价值场景的入口。",
+          "en": "把评测扩展到 COBOL 等遗留语言，是在抢占企业现代化改造这一高价值场景的入口。"
         },
         "pmInsight": {
-          "zh": "若你的产品面向企业开发工具，应评估低资源语言与遗留代码迁移是否可成为差异化场景，并提前设计对应评测集。",
+          "zh": "若你的代码产品面向企业迁移项目，应尽快用 COBOL/SQLite 类任务做回归测试，评估是否可包装成“遗留系统现代化”卖点。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -670,19 +666,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "GitHub 为 Copilot 模型策略开放 REST API，支持企业、企业团队、企业应用和组织四个层级查询与更新模型可用性。这让企业可以集中管控 Copilot 使用哪些模型。",
+          "zh": "GitHub 为 Copilot 模型策略开放 REST API，支持在企业、企业团队、企业应用和组织四个层级读取与更新模型可用性。对产品意味着企业可编程化管控 Copilot 用哪个模型。",
           "en": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, enterprise apps, and organizations. What&#8217;s new GET and PATCH endpoints are now&#8230; The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 为 Copilot 模型策略开放 REST API，支持企业、企业团队、企业应用和组织四个层级查询与更新模型可用性。这让企业可以集中管控 Copilot 使用哪些模型。",
+          "zh": "GitHub 为 Copilot 模型策略开放 REST API，支持在企业、企业团队、企业应用和组织四个层级读取与更新模型可用性。对产品意味着企业可编程化管控 Copilot 用哪个模型。",
           "en": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, enterprise apps, and organizations. What&#8217;s new GET and PATCH endpoints are now&#8230; The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "模型治理从控制台操作升级为 API 可编程，企业 AI 采购与合规管理将更依赖自动化策略。",
-          "en": "模型治理从控制台操作升级为 API 可编程，企业 AI 采购与合规管理将更依赖自动化策略。"
+          "zh": "模型选择权下放到组织与团队层级，说明 Copilot 正从单一模型产品转向可治理的多模型平台。",
+          "en": "模型选择权下放到组织与团队层级，说明 Copilot 正从单一模型产品转向可治理的多模型平台。"
         },
         "pmInsight": {
-          "zh": "做企业 AI 管理平台的 PM 应尽快把模型策略 API 纳入集成清单，并设计策略继承与委派的可视化配置。",
+          "zh": "做企业 AI 管控面的 PM 应把“模型策略即代码”纳入权限与审计设计，避免模型切换成为合规盲区。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -707,19 +703,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Hugging Face 推出 TorchNeuron，为 AWS Trainium 提供原生 PyTorch 后端，Transformers、Diffusers 和 Kernels 原生支持，10 月 20 日起公测。开发者运行和分享 Trainium 模型将更简单。",
+          "zh": "Hugging Face 推出 TorchNeuron 原生后端，Transformers、Diffusers 与 Kernels 可直接在 AWS Trainium 上运行，10 月 20 日起公测。对产品意味着在非英伟达芯片上跑 HF 模型的迁移成本明显下降。",
           "en": "TorchNeuron: running HF models on AWS Trainium is easier than ever"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 推出 TorchNeuron，为 AWS Trainium 提供原生 PyTorch 后端，Transformers、Diffusers 和 Kernels 原生支持，10 月 20 日起公测。开发者运行和分享 Trainium 模型将更简单。",
+          "zh": "Hugging Face 推出 TorchNeuron 原生后端，Transformers、Diffusers 与 Kernels 可直接在 AWS Trainium 上运行，10 月 20 日起公测。对产品意味着在非英伟达芯片上跑 HF 模型的迁移成本明显下降。",
           "en": "TorchNeuron: running HF models on AWS Trainium is easier than ever"
         },
         "todayHighlight": {
-          "zh": "HF 生态直接接入 AWS 自研芯片，降低非 NVIDIA 算力路线的迁移成本，可能改变推理成本结构。",
-          "en": "HF 生态直接接入 AWS 自研芯片，降低非 NVIDIA 算力路线的迁移成本，可能改变推理成本结构。"
+          "zh": "这是开源模型生态与 AWS 自研芯片的深度绑定，可能改变推理算力的成本结构。",
+          "en": "这是开源模型生态与 AWS 自研芯片的深度绑定，可能改变推理算力的成本结构。"
         },
         "pmInsight": {
-          "zh": "若产品对推理成本敏感，应把 Trainium 纳入算力选型对比，并验证现有 HF 模型在 TorchNeuron 下的兼容性与性能。",
+          "zh": "有推理成本压力的 PM 可把 Trainium 纳入备选算力池，先用小流量对比 optimum-neuron 与 TorchNeuron 的吞吐和迁移工时。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -744,19 +740,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "微软安全团队发文讨论智能体内部威胁，指出随着模型能力增强，AI 安全事故公开增多，需要新的安全框架来管控智能体行为。这为智能体产品提出了内控与审计要求。",
+          "zh": "微软安全团队发文讨论“代理型内部人”风险，指出能力增强的模型若管理不当会构成显著威胁。对产品意味着 Agent 产品的权限与行为审计将成为企业采购的硬门槛。",
           "en": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will compound as models become even more... The post Securing the agentic insider appeared first on The Official Microsoft Blo"
         },
         "chineseIntro": {
-          "zh": "微软安全团队发文讨论智能体内部威胁，指出随着模型能力增强，AI 安全事故公开增多，需要新的安全框架来管控智能体行为。这为智能体产品提出了内控与审计要求。",
+          "zh": "微软安全团队发文讨论“代理型内部人”风险，指出能力增强的模型若管理不当会构成显著威胁。对产品意味着 Agent 产品的权限与行为审计将成为企业采购的硬门槛。",
           "en": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will compound as models become even more... The post Securing the agentic insider appeared first on The Official Microsoft Blo"
         },
         "todayHighlight": {
-          "zh": "智能体从功能竞赛进入安全治理阶段，微软率先把内部威胁模型引入 AI 产品叙事。",
-          "en": "智能体从功能竞赛进入安全治理阶段，微软率先把内部威胁模型引入 AI 产品叙事。"
+          "zh": "在 Agent 大规模落地前把内部人风险摆上台面，微软意在用安全叙事抢占企业信任。",
+          "en": "在 Agent 大规模落地前把内部人风险摆上台面，微软意在用安全叙事抢占企业信任。"
         },
         "pmInsight": {
-          "zh": "设计智能体产品时，应默认加入权限最小化、行为审计和人工审批节点，并把安全能力作为企业版卖点。",
+          "zh": "设计 Agent 功能时，应默认加入最小权限、操作留痕与人工确认点，并把审计日志作为可售能力而非后台配置。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -781,19 +777,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "RunInfra 在 Product Hunt 上线，定位为面向智能体构建的开源模型基础设施。它反映了社区对智能体专用模型运行层的关注。",
+          "zh": "RunInfra 在 Product Hunt 上线，定位为“为 Agent 构建的开源模型”基础设施。对产品意味着 Agent 专用模型与托管层正在出现新的创业切口。",
           "en": "<p> Open models, built for agents. </p> <p> <a href=\"https://www.producthunt.com/products/runinfra?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1285989?app_id=339\">Link</a> </p>"
         },
         "chineseIntro": {
-          "zh": "RunInfra 在 Product Hunt 上线，定位为面向智能体构建的开源模型基础设施。它反映了社区对智能体专用模型运行层的关注。",
+          "zh": "RunInfra 在 Product Hunt 上线，定位为“为 Agent 构建的开源模型”基础设施。对产品意味着 Agent 专用模型与托管层正在出现新的创业切口。",
           "en": "<p> Open models, built for agents. </p> <p> <a href=\"https://www.producthunt.com/products/runinfra?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1285989?app_id=339\">Link</a> </p>"
         },
         "todayHighlight": {
-          "zh": "智能体基础设施正从概念走向可试用产品，开源模型与智能体结合成为新的创业切入点。",
-          "en": "智能体基础设施正从概念走向可试用产品，开源模型与智能体结合成为新的创业切入点。"
+          "zh": "社区开始把“Agent 原生模型”当作独立品类讨论，值得观察是否会形成新的部署标准。",
+          "en": "社区开始把“Agent 原生模型”当作独立品类讨论，值得观察是否会形成新的部署标准。"
         },
         "pmInsight": {
-          "zh": "关注 RunInfra 的模型托管与智能体编排方式，评估其是否可替代自建推理层以缩短产品上线周期。",
+          "zh": "可关注其模型选择与工具调用抽象方式，判断是否值得作为 Agent 产品的轻量后端替代自建推理。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -818,19 +814,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Anthropic 宣布向 METR 团队提供接近员工的访问权限，用于独立评估前沿模型风险，并公布评估结果。公司还与 SecureBio、Accenture 合作，并与 Hugging Face 等机构初步洽谈。",
+          "zh": "Anthropic 宣布向 METR 团队开放接近员工级别的访问权限，由其独立评估前沿模型风险并公开结果，同时与 SecureBio、埃森哲合作并接触 Hugging Face。对产品意味着第三方安全评估正成为模型上线的标配环节。",
           "en": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we`re announcing that we`ve started to give employee-like access to a team from METR, a nonprofit that evaluates frontier AI models.METR will publish the r"
         },
         "chineseIntro": {
-          "zh": "Anthropic 宣布向 METR 团队提供接近员工的访问权限，用于独立评估前沿模型风险，并公布评估结果。公司还与 SecureBio、Accenture 合作，并与 Hugging Face 等机构初步洽谈。",
+          "zh": "Anthropic 宣布向 METR 团队开放接近员工级别的访问权限，由其独立评估前沿模型风险并公开结果，同时与 SecureBio、埃森哲合作并接触 Hugging Face。对产品意味着第三方安全评估正成为模型上线的标配环节。",
           "en": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we`re announcing that we`ve started to give employee-like access to a team from METR, a nonprofit that evaluates frontier AI models.METR will publish the r"
         },
         "todayHighlight": {
-          "zh": "在签署白宫超级智能协议后，Anthropic 把第三方评估从承诺落为实际访问权限，为行业安全审计立下操作范式。",
-          "en": "在签署白宫超级智能协议后，Anthropic 把第三方评估从承诺落为实际访问权限，为行业安全审计立下操作范式。"
+          "zh": "在签署白宫超智能协议后迅速落地外部评估，Anthropic 试图把“可被审计”做成差异化信任资产。",
+          "en": "在签署白宫超智能协议后迅速落地外部评估，Anthropic 试图把“可被审计”做成差异化信任资产。"
         },
         "pmInsight": {
-          "zh": "若产品涉及高风险模型能力，应提前规划第三方评估接口与证据留存，避免合规审查时临时补材料。",
+          "zh": "若你的产品依赖第三方模型，应在供应商评估清单中加入“是否有独立评估报告及公开结论”，作为合规与采购依据。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
