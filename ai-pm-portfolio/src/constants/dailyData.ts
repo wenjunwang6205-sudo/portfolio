@@ -44,102 +44,114 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 技能化与本地化并行",
-      "en": "AI PM Daily: Agent Skills and Local-First Workflows Advance"
+      "zh": "AI 产品经理日报：Agent 技能化与垂直场景落地并行",
+      "en": "AI PM Daily: Agent Skills and Vertical Scenarios Advance in Parallel"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 能力从「模型调用」转向「技能封装」与「本地可控」：GitHub 趋势榜上，Cloudflare 安全审计技能、求职框架、多 Agent 工作台同时升温；公司侧，IBM 用可学习记忆在客服任务上超越前沿模型，OpenAI 给出可量化的企业工作流回报。",
-      "en": "Today's theme: agent capabilities are shifting from model calls to packaged skills and local-first control. On GitHub, Cloudflare's security-audit skill, a local job-search framework, and a multi-agent workbench are rising together; on the company side, IBM shows learned memory beating frontier models on customer-service tasks, while OpenAI offers a quantified enterprise workflow return."
+      "zh": "今日主线不在模型本身，而在「Agent 能力封装成技能」与「垂直场景可量化 ROI」两条线上同时升温。GitHub 侧，编码 agent 的技能包、编排层与安全审计持续在榜；公司侧，OpenAI 用餐饮加盟商案例给出可验证的业务收益，IBM 则用记忆机制证明非前沿模型也能在客服基准上领先。对 PM 而言，值得关注的是能力封装标准与场景验证方法，而非单点 star 数。",
+      "en": "Today's main thread is not the model itself, but the parallel rise of 'packaging agent capabilities into skills' and 'quantifiable ROI in vertical scenarios.' On GitHub, coding-agent skill packs, orchestration layers, and security audits remain on the trending list; on the company side, OpenAI offers a verifiable business case with a restaurant franchisee, while IBM shows that memory mechanisms let non-frontier models lead on a customer-service benchmark. For PMs, the focus should be on capability-packaging standards and scenario-validation methods, not single-point star counts."
     },
     "keyTakeaway": {
-      "zh": "Agent 竞争正从「模型能力」转向「技能封装 + 本地数据控制 + 可验证工作流」：Cloudflare 安全审计技能与本地求职框架同日进入趋势榜前列，说明企业级与个人级用户都在为「可审计、可掌控」的 Agent 付费或投入。",
-      "en": "Agent competition is shifting from raw model capability to packaged skills, local data control, and verifiable workflows: Cloudflare's security-audit skill and a local job-search framework both rank high on the trend list, showing enterprise and individual users are investing in auditable, controllable agents."
+      "zh": "Agent 生态正从「模型能力竞赛」转向「技能封装与场景验证」：编码 agent 的技能包、编排层与安全审计在 GitHub 持续升温，同时 OpenAI 与 IBM 分别用可量化 ROI 和记忆机制证明，垂直场景的落地效果越来越取决于工程封装而非模型规模。",
+      "en": "The agent ecosystem is shifting from a 'model capability race' to 'skill packaging and scenario validation': coding-agent skill packs, orchestration layers, and security audits keep heating up on GitHub, while OpenAI and IBM demonstrate via quantifiable ROI and memory mechanisms that vertical-scenario outcomes depend increasingly on engineering packaging rather than model scale."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 技能包进入企业级场景：安全审计与求职框架同日升温",
-          "en": "Agent skill packs enter enterprise scenarios: security audit and job-search frameworks rise together"
+          "zh": "编码 Agent 技能包密集在榜，能力封装成为竞争焦点",
+          "en": "Coding-Agent Skill Packs Cluster on Trending; Capability Packaging Becomes the Battleground"
         },
         "category": {
-          "zh": "开发者工具 / Agent 生态",
-          "en": "Developer Tools / Agent Ecosystem"
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "Cloudflare 的 security-audit-skill 今日新增 1712 stars，总 stars 超 3.4 万，将编码 Agent 变为多阶段安全审计员；MadsLorentzen/ai-job-search 今日新增 3861 stars，位列趋势榜第一，基于 Claude Code 在本地完成职位评估、简历定制与面试准备。两者共同点是「技能封装 + 本地数据掌控」。",
-          "en": "Cloudflare's security-audit-skill added 1,712 stars today (34k+ total), turning coding agents into multi-stage security auditors; MadsLorentzen/ai-job-search added 3,861 stars today, ranking first on the trend list, using Claude Code locally for job evaluation, resume tailoring, and interview prep. Both share packaged skills plus local data control."
+          "zh": "Cloudflare 开源 security-audit-skill（今日 +1712 stars，总约 3.46 万），把编码 agent 变成分阶段安全审计员；huashu-motion（约 1100 stars）让 agent 直接产出商业宣传片；ponytail（今日 +1208，总超 17 万）注入「少写代码」思维；graphify（今日 +802，总约 13 万）把代码库转为可查询知识图谱。四者共同点是：不训练新模型，而是把特定工作流封装成 agent 可调用的技能。",
+          "en": "Cloudflare open-sourced security-audit-skill (+1712 stars today, ~34.6k total), turning coding agents into staged security auditors; huashu-motion (~1.1k stars) lets agents produce commercial promo videos; ponytail (+1208 today, 170k+ total) injects a 'write less code' mindset; graphify (+802 today, ~130k total) converts codebases into queryable knowledge graphs. The common thread: no new model training, but packaging specific workflows into agent-callable skills."
         },
         "pmInsight": {
-          "zh": "企业级 Agent 的采购逻辑正在从「模型 API」转向「可审计的技能包」：安全审计需要可解释的流程与报告，求职需要本地隐私。PM 应评估将高频垂直流程封装为 Agent Skill 的可行性，优先选择合规敏感、数据不宜出域的环节。",
-          "en": "Enterprise agent procurement is shifting from model APIs to auditable skill packs: security audits need explainable processes and reports, job search needs local privacy. PMs should assess packaging high-frequency vertical workflows as Agent Skills, prioritizing compliance-sensitive steps where data should not leave the domain."
+          "zh": "技能包正在成为 agent 产品的差异化层，而非模型本身。PM 应评估自身产品中哪些高频工作流可封装为可复用技能，并关注技能的分发与兼容标准（如 MCP 实现差异），避免被单一 agent 平台锁定。",
+          "en": "Skill packs are becoming the differentiation layer for agent products, not the model itself. PMs should assess which high-frequency workflows in their products can be packaged as reusable skills, and watch distribution and compatibility standards (e.g., MCP implementation differences) to avoid lock-in to a single agent platform."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "GitHub: cloudflare/security-audit-skill",
+            "label": "cloudflare/security-audit-skill",
             "url": "https://github.com/cloudflare/security-audit-skill"
           },
           {
-            "label": "GitHub: MadsLorentzen/ai-job-search",
-            "url": "https://github.com/MadsLorentzen/ai-job-search"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "记忆与提示工程可弥补模型差距：客服 Agent 的低成本路径",
-          "en": "Memory and prompt engineering can close model gaps: a low-cost path for customer-service agents"
-        },
-        "category": {
-          "zh": "模型能力 / 客服 Agent",
-          "en": "Model Capability / Customer-Service Agent"
-        },
-        "summary": {
-          "zh": "IBM 研究团队发布 ALTK-Evolve，通过可学习记忆（playbook）让 GPT-4.1 在 τ²-bench 客服任务上达到 67.5% Pass^4，超越前沿模型且无需更新权重。与此同时，OpenAI 披露一家餐饮加盟商用 ChatGPT Work 将现金对账时间减少 94%、菜单调价时间减少 95%，释放约 10 万美元现金流。",
-          "en": "IBM Research released ALTK-Evolve, using learned memory (playbook) to let GPT-4.1 reach 67.5% Pass^4 on τ²-bench customer-service tasks, surpassing frontier models without weight updates. Meanwhile, OpenAI disclosed a restaurant franchisee cut cash reconciliation time by 94% and menu repricing time by 95% with ChatGPT Work, freeing about $100k in cash flow."
-        },
-        "pmInsight": {
-          "zh": "客服与运营 Agent 的竞争点正从「换更强模型」转向「积累可复用记忆」：playbook 让中等模型在特定任务上超越前沿模型，且成本更低。PM 应优先建设任务记忆与反馈闭环，而非盲目追新模型；同时用财务指标（时间节省、现金流）而非准确率来论证 ROI。",
-          "en": "Customer-service and operations agents are competing less on stronger models and more on reusable memory: playbooks let mid-tier models beat frontier models on specific tasks at lower cost. PMs should prioritize task memory and feedback loops over chasing new models, and argue ROI with financial metrics (time saved, cash flow) rather than accuracy alone."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Hugging Face: ALTK-Evolve",
-            "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+            "label": "alchaincyf/huashu-motion",
+            "url": "https://github.com/alchaincyf/huashu-motion"
           },
           {
-            "label": "OpenAI: Franchisee case study",
-            "url": "https://openai.com/index/ted-taylor-restaurant"
+            "label": "DietrichGebert/ponytail",
+            "url": "https://github.com/DietrichGebert/ponytail"
+          },
+          {
+            "label": "Graphify-Labs/graphify",
+            "url": "https://github.com/Graphify-Labs/graphify"
           }
         ]
       },
       {
         "title": {
-          "zh": "MCP 兼容性差异浮现：Agent 工具链互操作仍缺标准",
-          "en": "MCP compatibility gaps emerge: agent toolchains still lack interoperability standards"
+          "zh": "多 Agent 编排层持续在榜，MCP 兼容性成为隐性成本",
+          "en": "Multi-Agent Orchestration Layers Stay on Trending; MCP Compatibility Emerges as Hidden Cost"
         },
         "category": {
-          "zh": "协议与生态 / 互操作性",
-          "en": "Protocol & Ecosystem / Interoperability"
+          "zh": "Agent 基础设施",
+          "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "Polytomic 发布 MCP 兼容性对照表，揭示 Claude、Codex、Grok、Amp 等 Agent 在 MCP 实现上的行为差异，如工具输出重复传递等问题。同期 GitHub 上多 Agent 工作台 stablyai/orca 今日新增 1565 stars、总 stars 突破 10 万，说明多 Agent 编排需求在增长，但底层协议一致性不足。",
-          "en": "Polytomic published an MCP compatibility matrix revealing behavioral differences among Claude, Codex, Grok, and Amp in MCP implementations, such as duplicated tool-output passing. Meanwhile, multi-agent workbench stablyai/orca added 1,565 stars today (100k+ total), showing growing demand for multi-agent orchestration despite inconsistent protocol behavior."
+          "zh": "stablyai/orca（今日 +1565，总 star 突破 10 万）作为多 agent 协同工作台，支持用自有订阅运行 Claude Code、Grok Bot 等；anomalyco/opencode（今日 +1240，总超 21.9 万）作为开源编码 agent 持续获得新增。与此同时，Polytomic 发布「What the Harness?」MCP 兼容性对照表，列出 Claude、Codex、Grok、Amp 等代理在 MCP 实现上的行为差异（如工具输出重复传递）。",
+          "en": "stablyai/orca (+1565 today, crossing 100k total stars) is a multi-agent collaboration workbench supporting Claude Code, Grok Bot, etc. via users' own subscriptions; anomalyco/opencode (+1240 today, 219k+ total) keeps gaining as an open-source coding agent. Meanwhile, Polytomic released 'What the Harness?', an MCP compatibility matrix listing behavioral differences (e.g., duplicated tool-output passing) across Claude, Codex, Grok, and Amp."
         },
         "pmInsight": {
-          "zh": "MCP 生态的碎片化会推高 Agent 产品的集成与测试成本。PM 在选型多 Agent 工作台或工具链时，应把「MCP 兼容性测试」纳入验收清单，并关注是否出现事实标准或兼容层；对自研 Agent 产品，可考虑内置兼容性适配层作为差异化。",
-          "en": "MCP fragmentation raises integration and testing costs for agent products. When selecting multi-agent workbenches or toolchains, PMs should include MCP compatibility tests in acceptance criteria and watch for de facto standards or compatibility layers; for in-house agents, a built-in compatibility adapter could be a differentiator."
+          "zh": "编排层产品在聚合多家 agent，但 MCP 实现不一致意味着跨 agent 的工具调用需要额外适配与测试。PM 若在做 agent 集成，应把兼容性测试纳入路线图，并优先选择行为可预测的 harness，而非假设 MCP 即插即用。",
+          "en": "Orchestration products aggregate multiple agents, but inconsistent MCP implementations mean cross-agent tool calls require extra adaptation and testing. PMs building agent integrations should put compatibility testing on the roadmap and prefer harnesses with predictable behavior rather than assuming MCP is plug-and-play."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Hacker News: What the Harness?",
-            "url": "https://what-the-harness.polytomic.com"
+            "label": "stablyai/orca",
+            "url": "https://github.com/stablyai/orca"
           },
           {
-            "label": "GitHub: stablyai/orca",
-            "url": "https://github.com/stablyai/orca"
+            "label": "anomalyco/opencode",
+            "url": "https://github.com/anomalyco/opencode"
+          },
+          {
+            "label": "What the Harness? MCP compatibility",
+            "url": "https://what-the-harness.polytomic.com"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "垂直场景验证两条路径：可量化 ROI 与记忆机制反超",
+          "en": "Two Paths to Vertical Validation: Quantifiable ROI and Memory-Driven Outperformance"
+        },
+        "category": {
+          "zh": "商业化与场景落地",
+          "en": "Commercialization & Scenario Deployment"
+        },
+        "summary": {
+          "zh": "OpenAI 发布餐饮加盟商案例：用 ChatGPT Work 把现金对账时间减少 94%、菜单调价时间减少 95%，释放约 10 万美元现金流。IBM 研究团队在 Hugging Face 发布 ALTK-Evolve，用 GPT-4.1 加「学习到的记忆/操作手册」在客服基准 τ²-bench 零售任务上达到 67.5% Pass^4，超过榜单所有零售条目，且不更新模型权重。",
+          "en": "OpenAI published a restaurant-franchisee case: ChatGPT Work cut cash reconciliation time by 94% and menu repricing time by 95%, freeing ~$100k in cash flow. IBM Research released ALTK-Evolve on Hugging Face, using GPT-4.1 plus 'learned memory/playbooks' to reach 67.5% Pass^4 on the τ²-bench retail customer-service task, beating all retail entries without updating model weights."
+        },
+        "pmInsight": {
+          "zh": "两条路径共同指向：垂直场景的落地效果越来越取决于流程封装与记忆机制，而非换更大模型。PM 应优先在自身场景中建立可量化的基线指标（时间、成本、通过率），再评估记忆/提示工程能否以更低成本达到同等或更好效果，而非默认升级模型。",
+          "en": "Both paths point to the same conclusion: vertical-scenario outcomes depend increasingly on workflow packaging and memory mechanisms rather than switching to larger models. PMs should first establish quantifiable baseline metrics (time, cost, pass rate) in their own scenarios, then evaluate whether memory/prompt engineering can achieve equal or better results at lower cost, rather than defaulting to model upgrades."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "OpenAI: Franchisee reconciles cash in 94% less time",
+            "url": "https://openai.com/index/ted-taylor-restaurant"
+          },
+          {
+            "label": "Hugging Face: ALTK-Evolve",
+            "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
           }
         ]
       }
@@ -147,20 +159,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向中小企业的「可审计客服记忆包」产品假设",
-          "en": "Product hypothesis: an auditable customer-service memory pack for SMBs"
+          "zh": "为垂直场景构建「记忆+技能」轻量封装层",
+          "en": "Build a Lightweight 'Memory + Skills' Packaging Layer for Vertical Scenarios"
         },
         "category": {
-          "zh": "客服 Agent / 记忆层",
-          "en": "Customer-Service Agent / Memory Layer"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 ALTK-Evolve 的可学习记忆思路与 OpenAI 的财务回报案例，假设：为餐饮、零售等中小企业提供预置 playbook 的客服 Agent，可在不更换模型的前提下将重复咨询处理时间降低 50% 以上，并以「每单节省分钟数」作为核心指标。",
-          "en": "Building on ALTK-Evolve's learned-memory approach and OpenAI's financial-return case, hypothesize that a customer-service agent with preset playbooks for restaurants and retail SMBs can cut repetitive-inquiry handling time by over 50% without changing models, using minutes saved per ticket as the core metric."
+          "zh": "结合 ALTK-Evolve 的记忆机制与 GitHub 上技能包的封装模式，可假设：在客服、财务对账等高频垂直流程中，用「操作手册+记忆」封装现有模型，能在不换模型的前提下把任务通过率或处理时间改善 20% 以上。验证方式：选取一个内部流程，建立基线指标，对比封装前后的 Pass 率与耗时。",
+          "en": "Combining ALTK-Evolve's memory mechanism with the skill-packaging pattern on GitHub, hypothesize that in high-frequency vertical workflows (customer service, financial reconciliation), packaging existing models with 'playbooks + memory' can improve task pass rate or processing time by 20%+ without switching models. Validation: pick one internal workflow, establish baseline metrics, and compare pass rate and time before/after packaging."
         },
         "pmInsight": {
-          "zh": "验证方式：选取 3-5 家餐饮加盟商做 4 周试点，对比接入前后工单处理时长与升级率；若记忆包能复用跨门店，则产品化价值成立。风险在于 playbook 维护成本，需设计自动沉淀机制。",
-          "en": "Validation: run a 4-week pilot with 3-5 restaurant franchisees, comparing ticket handling time and escalation rate before and after; if playbooks transfer across stores, productization is justified. Risk is playbook maintenance cost, so design automatic capture mechanisms."
+          "zh": "该假设可直接用现有模型验证，成本低、周期短。若成立，产品路线应优先投入记忆与流程封装，而非模型采购；若不成立，则需重新评估场景复杂度是否超出封装层能力。",
+          "en": "This hypothesis can be validated with existing models at low cost and short cycle. If it holds, the product roadmap should prioritize memory and workflow packaging over model procurement; if not, reassess whether scenario complexity exceeds the packaging layer's capability."
         },
         "impact": "Medium",
         "sources": [
@@ -169,37 +181,37 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
           },
           {
-            "label": "OpenAI: Franchisee case study",
-            "url": "https://openai.com/index/ted-taylor-restaurant"
+            "label": "cloudflare/security-audit-skill",
+            "url": "https://github.com/cloudflare/security-audit-skill"
           }
         ]
       },
       {
         "title": {
-          "zh": "「Agent 技能市场 + 兼容性认证」的产品假设",
-          "en": "Product hypothesis: an agent skill marketplace with compatibility certification"
+          "zh": "把 MCP 兼容性测试做成 agent 集成的前置检查",
+          "en": "Make MCP Compatibility Testing a Pre-Integration Check for Agents"
         },
         "category": {
-          "zh": "Agent 生态 / 开发者平台",
-          "en": "Agent Ecosystem / Developer Platform"
+          "zh": "工程与集成",
+          "en": "Engineering & Integration"
         },
         "summary": {
-          "zh": "结合 Cloudflare 安全审计技能、求职框架与 MCP 兼容性差异，假设：开发者需要一个按场景分类、标注 MCP 兼容性与数据驻留策略的 Agent 技能目录，帮助团队在选型时降低集成风险。",
-          "en": "Combining Cloudflare's security-audit skill, the job-search framework, and MCP compatibility gaps, hypothesize that developers need a scenario-organized agent skill directory labeling MCP compatibility and data-residency policies, reducing integration risk during selection."
+          "zh": "基于 Polytomic 的 MCP 兼容性对照表与 orca 多 agent 编排的普及，可假设：跨 agent 工具调用的失败主要来自 harness 行为差异（如工具输出重复传递），而非工具本身。验证方式：在接入 2 个以上 agent 时，记录工具调用失败案例并按 harness 归类，若差异集中则可前置兼容性检查清单。",
+          "en": "Based on Polytomic's MCP compatibility matrix and the spread of multi-agent orchestration like orca, hypothesize that cross-agent tool-call failures stem mainly from harness behavioral differences (e.g., duplicated tool-output passing) rather than the tools themselves. Validation: when integrating 2+ agents, log tool-call failures and categorize by harness; if differences cluster, a pre-integration compatibility checklist is warranted."
         },
         "pmInsight": {
-          "zh": "验证方式：先以人工维护的「技能兼容性对照表」在开发者社区测试需求，观察周活跃查询与提交量；若查询集中在安全、求职、代码理解三类，则可扩展为带认证的技能市场。",
-          "en": "Validation: start with a manually maintained skill-compatibility matrix in developer communities, tracking weekly active queries and submissions; if demand clusters around security, job search, and code understanding, expand into a certified skill marketplace."
+          "zh": "若假设成立，兼容性检查清单可成为 agent 集成产品的差异化功能，降低客户接入成本；PM 应把 harness 行为差异纳入测试用例，而非仅测试工具功能。",
+          "en": "If the hypothesis holds, a compatibility checklist could become a differentiating feature for agent-integration products, lowering customer onboarding cost; PMs should include harness behavioral differences in test cases rather than testing only tool functionality."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "GitHub: cloudflare/security-audit-skill",
-            "url": "https://github.com/cloudflare/security-audit-skill"
+            "label": "What the Harness? MCP compatibility",
+            "url": "https://what-the-harness.polytomic.com"
           },
           {
-            "label": "Hacker News: What the Harness?",
-            "url": "https://what-the-harness.polytomic.com"
+            "label": "stablyai/orca",
+            "url": "https://github.com/stablyai/orca"
           }
         ]
       }
@@ -215,26 +227,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一款通过 Wi-Fi 远程清理 Android TV / Google TV 预装广告软件的工具，无需 root、无需拆机，还能把满是广告的桌面换成类似 Apple TV 的简洁启动器，并支持一键还原。",
+          "zh": "通过 Wi-Fi 远程清理 Android TV / Google TV 上的预装广告与臃肿应用，并把首页替换成类似 Apple TV 的简洁启动器；无需 root、不用拆机，一条命令即可恢复原状。",
           "en": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home."
         },
-        "totalStars": 13155,
+        "totalStars": 13596,
         "language": "Java",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一款通过 Wi-Fi 远程清理 Android TV / Google TV 预装广告软件的工具，无需 root、无需拆机，还能把满是广告的桌面换成类似 Apple TV 的简洁启动器，并支持一键还原。",
+          "zh": "通过 Wi-Fi 远程清理 Android TV / Google TV 上的预装广告与臃肿应用，并把首页替换成类似 Apple TV 的简洁启动器；无需 root、不用拆机，一条命令即可恢复原状。",
           "en": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即积累超 1.3 万 stars，智能电视去广告与隐私诉求在家庭场景中持续升温，今日进入上升榜。",
+          "zh": "创建仅约一个月即积累近 1.36 万 stars，围绕「电视去广告、换干净首页」的实用叙事在智能电视用户中持续升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 创建仅约 1 个月便已积累 13k+ stars, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,155 stars、1,468 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,155 stars and 1,468 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,596 stars、1,511 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,596 stars and 1,511 forks，topics: adb, adblock, android-tv, android-tv-launcher, apple-tv, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「系统级体验改造」类工具如何以零门槛、可回滚的方式切入存量硬件市场。",
+          "zh": "值得观察「用软件改造存量硬件体验」这类轻量工具如何靠单一痛点形成口碑传播。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -255,26 +267,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Google TV 及 LG、三星电视的开源无广告桌面，提供基于自有应用的推荐、天气与随日落变化的界面，并保留一键撤销。",
+          "zh": "面向 Google TV 及 LG、Samsung 电视的开源无广告首页，聚合自有应用推荐、天气与随日落变化的界面风格，并提供一键还原。",
           "en": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo."
         },
-        "totalStars": 1960,
+        "totalStars": 2029,
         "language": "Java",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 Google TV 及 LG、三星电视的开源无广告桌面，提供基于自有应用的推荐、天气与随日落变化的界面，并保留一键撤销。",
+          "zh": "面向 Google TV 及 LG、Samsung 电视的开源无广告首页，聚合自有应用推荐、天气与随日落变化的界面风格，并提供一键还原。",
           "en": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo."
         },
         "todayHighlight": {
-          "zh": "与同类电视去广告项目同期升温，创建不足一月已近 2000 stars，说明「换桌面」正成为电视端用户可感知的轻量改造入口。",
+          "zh": "与 cleanyourtv 同期出现、同样主打电视去广告，创建约一个月已获 2000+ stars，说明该需求正被多个项目同时验证。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,960 stars、206 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,960 stars and 206 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,029 stars、209 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,029 stars and 209 forks，topics: android-tv, claude-code, google-tv, home-screen, launcher, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注同一需求下多个开源方案并行竞争时，安装便捷性与可逆性如何决定用户选择。",
+          "zh": "可关注同一细分需求下多个开源方案并起时，产品差异化该落在兼容范围还是还原体验上。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -295,26 +307,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套给 AI 编程助手的技能包，让 Agent 直接产出商业级产品宣传片，支持自动作曲，并可指着画面局部提出修改。",
+          "zh": "一套给 AI 编程助手的技能包，让 agent 直接产出商业级产品宣传片：自动配乐、生成动效，并支持指着画面局部提出修改。",
           "en": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it."
         },
-        "totalStars": 1180,
+        "totalStars": 1183,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一套给 AI 编程助手的技能包，让 Agent 直接产出商业级产品宣传片，支持自动作曲，并可指着画面局部提出修改。",
+          "zh": "一套给 AI 编程助手的技能包，让 agent 直接产出商业级产品宣传片：自动配乐、生成动效，并支持指着画面局部提出修改。",
           "en": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it."
         },
         "todayHighlight": {
-          "zh": "创建约一个月获得 1180 stars，Agent Skills 生态扩张带动「一句话出片」叙事在营销与独立开发者圈传播。",
+          "zh": "创建约一个月获 1100+ stars，把「一句话出宣传片」的叙事接到 Claude Code、Codex 等 agent 生态上，带动关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,180 stars、119 forks，topics: agent-skills, animation, claude-code, codex, gsap，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,180 stars and 119 forks，topics: agent-skills, animation, claude-code, codex, gsap, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,183 stars、119 forks，topics: agent-skills, animation, claude-code, codex, gsap，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,183 stars and 119 forks，topics: agent-skills, animation, claude-code, codex, gsap, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察视频生产链路被 Agent 技能封装后，营销素材的制作成本与迭代节奏会如何变化。",
+          "zh": "值得观察营销视频这类高门槛内容生产，如何被 agent 技能拆解成可复用的标准流程。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -335,26 +347,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "运行在本地机器上的求职框架，基于 Claude Code 完成职位评估、简历定制、求职信撰写与面试准备，可 fork 后自行掌控数据。",
+          "zh": "运行在本地电脑上的求职框架，基于 Claude Code 完成职位评估、简历定制、求职信撰写与面试准备，可 fork 后完全自持数据。",
           "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
         },
-        "totalStars": 61123,
+        "totalStars": 61269,
         "language": "Python",
         "dailyStars": 3861,
         "chineseIntro": {
-          "zh": "运行在本地机器上的求职框架，基于 Claude Code 完成职位评估、简历定制、求职信撰写与面试准备，可 fork 后自行掌控数据。",
+          "zh": "运行在本地电脑上的求职框架，基于 Claude Code 完成职位评估、简历定制、求职信撰写与面试准备，可 fork 后完全自持数据。",
           "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
         },
         "todayHighlight": {
-          "zh": "今日新增 3861 stars，位列全球趋势榜第一，7 个月积累超 6.1 万 stars，求职季与本地隐私叙事共同推动增长。",
+          "zh": "今日新增 3861 stars，总 star 已超 6.1 万，位列全球趋势榜第一，求职季与「本地运行、数据自持」叙事共同推高热度。",
           "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 61k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 3,861 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 61,123 stars、19,002 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 61,123 stars and 19,002 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 61,269 stars、19,029 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 61,269 stars and 19,029 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "应关注高敏感个人数据场景中，「本地运行 + 可 fork」如何成为用户信任的关键卖点。",
+          "zh": "应关注求职这类高焦虑场景中，用户对隐私自持与流程自动化的取舍偏好。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -375,26 +387,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Cloudflare 出品的编码 Agent 技能，把 AI 助手变成安全审计员，通过多阶段流程完成侦察、漏洞排查、候选验证与可机器读取的审计报告。",
+          "zh": "Cloudflare 出品的编码 agent 技能，把 AI 助手变成安全审计员，分阶段完成侦察、漏洞排查、候选验证与可机器读取的审计报告。",
           "en": "Star cloudflare / security-audit-skill A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
         },
-        "totalStars": 34546,
+        "totalStars": 34647,
         "language": "JavaScript",
         "dailyStars": 1712,
         "chineseIntro": {
-          "zh": "Cloudflare 出品的编码 Agent 技能，把 AI 助手变成安全审计员，通过多阶段流程完成侦察、漏洞排查、候选验证与可机器读取的审计报告。",
+          "zh": "Cloudflare 出品的编码 agent 技能，把 AI 助手变成安全审计员，分阶段完成侦察、漏洞排查、候选验证与可机器读取的审计报告。",
           "en": "Star cloudflare / security-audit-skill A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
         },
         "todayHighlight": {
-          "zh": "今日新增 1712 stars，位列全球趋势榜第二，4 个月积累超 3.4 万 stars，企业级安全审计与 Agent 结合的方向持续获得关注。",
+          "zh": "今日新增 1712 stars，总 star 约 3.46 万；作为大厂开源的 agent 安全技能，随企业级 AI 编程需求升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 创建仅约 4 个月便已积累 34k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,712 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,546 stars、2,164 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,546 stars and 2,164 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 34,647 stars、2,178 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 34,647 stars and 2,178 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察大厂将内部安全工具链开源为 Agent 技能后，如何影响安全审计类产品的交付形态。",
+          "zh": "可观察安全审计这类专业工作被 agent 技能标准化后，企业采购与自建之间的边界如何变化。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -415,26 +427,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向多 Agent 协同的工作台，可用自有订阅运行 Claude Code、Grok Bot 等编码 Agent，覆盖桌面、移动与远程运行时。",
+          "zh": "面向多 agent 协同的工作台，可用自己的订阅运行 Claude Code、Grok Bot 等编码 agent，覆盖桌面、移动端与远程运行时。",
           "en": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
         },
-        "totalStars": 100008,
+        "totalStars": 100085,
         "language": "TypeScript",
         "dailyStars": 1565,
         "chineseIntro": {
-          "zh": "面向多 Agent 协同的工作台，可用自有订阅运行 Claude Code、Grok Bot 等编码 Agent，覆盖桌面、移动与远程运行时。",
+          "zh": "面向多 agent 协同的工作台，可用自己的订阅运行 Claude Code、Grok Bot 等编码 agent，覆盖桌面、移动端与远程运行时。",
           "en": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
         },
         "todayHighlight": {
-          "zh": "今日新增 1565 stars，总 stars 突破 10 万，位列全球趋势榜第三，多 Agent 编排正成为开发者工具的新竞争焦点。",
+          "zh": "今日新增 1565 stars，总 star 突破 10 万；作为 agent 编排层产品，随多 agent 并行工作方式普及持续在榜。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 100k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,565 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 100,008 stars、6,342 forks，topics: ade, agent-ide, ai-agents, automation, bot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 100,008 stars and 6,342 forks，topics: ade, agent-ide, ai-agents, automation, bot, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 100,085 stars、6,344 forks，topics: ade, agent-ide, ai-agents, automation, bot，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 100,085 stars and 6,344 forks，topics: ade, agent-ide, ai-agents, automation, bot, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得关注「Agent 舰队管理」是否会像 IDE 一样，成为开发者日常工作的核心入口。",
+          "zh": "值得关注「agent 调度台」这一层是否会成为用户与多个模型之间的默认入口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -455,26 +467,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源 AI 编码 Agent，在终端中直接调用模型完成代码编写与修改，是闭源编码助手的开放替代方案。",
+          "zh": "开源 AI 编码 agent，在终端中直接读写代码、执行任务，是开发者自建编程助手的主流选择之一。",
           "en": "The open source coding agent."
         },
-        "totalStars": 219115,
+        "totalStars": 219164,
         "language": "TypeScript",
         "dailyStars": 1240,
         "chineseIntro": {
-          "zh": "开源 AI 编码 Agent，在终端中直接调用模型完成代码编写与修改，是闭源编码助手的开放替代方案。",
+          "zh": "开源 AI 编码 agent，在终端中直接读写代码、执行任务，是开发者自建编程助手的主流选择之一。",
           "en": "The open source coding agent."
         },
         "todayHighlight": {
-          "zh": "今日新增 1240 stars，总 stars 已超 21.9 万，作为运营 18 个月的老牌项目仍位列全球趋势榜第八，生态惯性明显。",
+          "zh": "今日新增 1240 stars，总 star 已超 21.9 万；项目已运营约 18 个月，仍凭开源与可自托管定位稳定获得新增关注。",
           "en": "登上 GitHub Trending 日榜第 8 位, 总 star 数已达 219k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,240 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 219,115 stars、29,229 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 219,115 stars and 29,229 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 219,164 stars、29,236 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 219,164 stars and 29,236 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察开源编码 Agent 在长期积累后，如何靠插件与社区生态维持增长曲线。",
+          "zh": "可观察开源编码 agent 在长期运营中，如何靠生态与可定制性维持用户黏性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -495,26 +507,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套让 AI 编码助手遵循「能不写就不写」原则的规则集，用最懒资深工程师的思路抑制过度设计，减少无用代码。",
+          "zh": "给 AI 编程助手注入「懒资深工程师」思维的技能，主张能不写的代码就不写，用最少改动解决问题。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
-        "totalStars": 170064,
+        "totalStars": 170179,
         "language": "JavaScript",
         "dailyStars": 1208,
         "chineseIntro": {
-          "zh": "一套让 AI 编码助手遵循「能不写就不写」原则的规则集，用最懒资深工程师的思路抑制过度设计，减少无用代码。",
+          "zh": "给 AI 编程助手注入「懒资深工程师」思维的技能，主张能不写的代码就不写，用最少改动解决问题。",
           "en": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
         },
         "todayHighlight": {
-          "zh": "今日新增 1208 stars，4 个月积累超 17 万 stars，位列全球趋势榜第四，AI 生成代码质量与冗余问题正引发广泛讨论。",
+          "zh": "创建约四个月即积累超 17 万 stars，今日新增 1208；「最好的代码是没写的代码」这一反过度工程叙事持续传播。",
           "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 4 个月便已积累 170k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,208 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 170,064 stars、9,250 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 170,064 stars and 9,250 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 170,179 stars、9,255 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 170,179 stars and 9,255 forks，topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得关注「约束型提示工程」是否会成为 AI 编程工具的标准配置能力。",
+          "zh": "值得观察开发者对 AI 生成代码「少即是多」的偏好，如何反向影响 agent 的输出策略。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -535,26 +547,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "基于节点图的扩散模型图形界面与后端，支持本地高效推理，是 AI 图像与内容创作领域使用最广的可视化工作流工具之一。",
+          "zh": "基于节点图的扩散模型图形界面与后端，支持本地高效推理，是 AI 图像与内容创作工作流的主流搭建工具。",
           "en": "Star Comfy-Org / ComfyUI The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
         },
-        "totalStars": 140929,
+        "totalStars": 140982,
         "language": "Python",
         "dailyStars": 1206,
         "chineseIntro": {
-          "zh": "基于节点图的扩散模型图形界面与后端，支持本地高效推理，是 AI 图像与内容创作领域使用最广的可视化工作流工具之一。",
+          "zh": "基于节点图的扩散模型图形界面与后端，支持本地高效推理，是 AI 图像与内容创作工作流的主流搭建工具。",
           "en": "Star Comfy-Org / ComfyUI The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
         },
         "todayHighlight": {
-          "zh": "今日新增 1206 stars，运营近 4 年总 stars 超 14 万，位列全球趋势榜第五，本地生成式内容工作流需求保持稳定。",
+          "zh": "今日新增 1206 stars，总 star 约 14.1 万；作为运营近四年的老牌项目，仍随本地生成式创作需求稳定获得关注。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 140k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 1,206 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 140,929 stars、16,674 forks，topics: ai, comfy, comfyui, python, pytorch，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 140,929 stars and 16,674 forks，topics: ai, comfy, comfyui, python, pytorch, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 140,982 stars、16,678 forks，topics: ai, comfy, comfyui, python, pytorch，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 140,982 stars and 16,678 forks，topics: ai, comfy, comfyui, python, pytorch, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察节点式工作流在专业创作者群体中的黏性，以及其作为 AI 内容生产基础设施的长期位置。",
+          "zh": "可关注节点式工作流产品如何在模型快速迭代中保持接口与生态的稳定性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -575,26 +587,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "把代码库连同文档、SQL 结构、配置与 PDF 转成可查询知识图谱的 Agent 技能，基于本地确定性语法解析，每条关系可解释，不依赖向量库。",
+          "zh": "把代码库连同文档、SQL 结构、配置与 PDF 转成可查询知识图谱的 agent 技能，支持 Claude Code、Cursor、Codex 等，本地解析且不依赖向量库。",
           "en": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store."
         },
-        "totalStars": 130479,
+        "totalStars": 130556,
         "language": "Python",
         "dailyStars": 802,
         "chineseIntro": {
-          "zh": "把代码库连同文档、SQL 结构、配置与 PDF 转成可查询知识图谱的 Agent 技能，基于本地确定性语法解析，每条关系可解释，不依赖向量库。",
+          "zh": "把代码库连同文档、SQL 结构、配置与 PDF 转成可查询知识图谱的 agent 技能，支持 Claude Code、Cursor、Codex 等，本地解析且不依赖向量库。",
           "en": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store."
         },
         "todayHighlight": {
-          "zh": "今日新增 802 stars，7 个月积累超 13 万 stars，位列全球趋势榜第七，代码理解与 GraphRAG 方向持续获得关注。",
+          "zh": "今日新增 802 stars，总 star 约 13 万；作为 agent 代码理解与检索的基础组件，随 agent 生态升温持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 7 位, 总 star 数已达 130k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 802 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 130,479 stars、12,555 forks，topics: ai-agents, antigravity, ast, claude-code, code-analysis，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 130,479 stars and 12,555 forks，topics: ai-agents, antigravity, ast, claude-code, code-analysis, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 130,556 stars、12,559 forks，topics: ai-agents, antigravity, ast, claude-code, code-analysis，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 130,556 stars and 12,559 forks，topics: ai-agents, antigravity, ast, claude-code, code-analysis, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「可解释的知识图谱」在代码检索场景中，是否会替代部分向量检索方案。",
+          "zh": "值得观察代码知识图谱这类「给 agent 补上下文」的中间层，是否会成为开发工具的标配能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -621,22 +633,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Google 报告预测东南亚数字经济 2026 年达 3680 亿美元，AI 广泛采用是主要推力，2035 年有望破 1 万亿美元。",
+          "zh": "Google 报告预测东南亚数字经济 2026 年达 3680 亿美元、2035 年达 1 万亿美元，AI 普及是主要驱动力。对产品意味着该区域用户增长与 AI 功能渗透将同步加速。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/e-Conomy_SEA_hero.max-600x600.format-webp.webp\">Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
         },
         "chineseIntro": {
-          "zh": "Google 报告预测东南亚数字经济 2026 年达 3680 亿美元，AI 广泛采用是主要推力，2035 年有望破 1 万亿美元。",
+          "zh": "Google 报告预测东南亚数字经济 2026 年达 3680 亿美元、2035 年达 1 万亿美元，AI 普及是主要驱动力。对产品意味着该区域用户增长与 AI 功能渗透将同步加速。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/e-Conomy_SEA_hero.max-600x600.format-webp.webp\">Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
         },
         "todayHighlight": {
-          "zh": "这一预测为 AI 产品在东南亚的本地化与商业化提供了明确的市场规模锚点。",
-          "en": "这一预测为 AI 产品在东南亚的本地化与商业化提供了明确的市场规模锚点。"
+          "zh": "这是 Google 以宏观数据为 Gemini 与云服务在东南亚扩张造势，为区域产品路线提供需求侧依据。",
+          "en": "这是 Google 以宏观数据为 Gemini 与云服务在东南亚扩张造势，为区域产品路线提供需求侧依据。"
         },
         "pmInsight": {
-          "zh": "PM 应优先评估东南亚市场的 AI 功能渗透率与付费意愿，将区域增长数据纳入产品路线图的优先级排序。",
+          "zh": "若布局东南亚，应把 AI 功能本地化（语言、支付、低带宽）列入下季度路线图，并用该报告数据争取资源。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
             "label": "Google AI",
@@ -658,19 +670,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "一家餐饮加盟商使用 ChatGPT Work 将现金对账时间减少 94%，菜单调价时间减少 95%，并释放约 10 万美元现金流。",
+          "zh": "OpenAI 发布案例：一家餐饮加盟商用 ChatGPT Work 把现金对账时间减少 94%、菜单调价时间减少 95%，并释放约 10 万美元现金流。说明 ChatGPT 正从问答工具转向可落地的业务流程自动化。",
           "en": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow."
         },
         "chineseIntro": {
-          "zh": "一家餐饮加盟商使用 ChatGPT Work 将现金对账时间减少 94%，菜单调价时间减少 95%，并释放约 10 万美元现金流。",
+          "zh": "OpenAI 发布案例：一家餐饮加盟商用 ChatGPT Work 把现金对账时间减少 94%、菜单调价时间减少 95%，并释放约 10 万美元现金流。说明 ChatGPT 正从问答工具转向可落地的业务流程自动化。",
           "en": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow."
         },
         "todayHighlight": {
-          "zh": "这是 ChatGPT 企业工作流落地的可量化案例，证明通用模型在垂直运营场景中能直接产生财务回报。",
-          "en": "这是 ChatGPT 企业工作流落地的可量化案例，证明通用模型在垂直运营场景中能直接产生财务回报。"
+          "zh": "这是 OpenAI 用可量化 ROI 案例向中小企业证明 ChatGPT Work 的商业价值，直接对标企业办公套件。",
+          "en": "这是 OpenAI 用可量化 ROI 案例向中小企业证明 ChatGPT Work 的商业价值，直接对标企业办公套件。"
         },
         "pmInsight": {
-          "zh": "PM 应拆解该案例中的工作流节点，识别哪些重复性财务/运营任务可封装为模板化 AI 功能，并设计可量化的 ROI 指标。",
+          "zh": "做 AI 工作流产品时，应把“节省工时/释放现金”作为核心指标写进案例与定价页，而非只讲模型能力。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -695,19 +707,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "IBM 研究团队发布 ALTK-Evolve，通过可学习记忆（playbook）让 GPT-4.1 在 τ²-bench 客服任务上达到 67.5% Pass^4，超越前沿模型且无需更新权重。",
+          "zh": "IBM 研究团队在 Hugging Face 发布 ALTK-Evolve：用 GPT-4.1 加“学习到的记忆/操作手册”在客服基准 τ²-bench 零售任务上达到 67.5% Pass^4，超过榜单所有零售条目，且不更新模型权重。",
           "en": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model"
         },
         "chineseIntro": {
-          "zh": "IBM 研究团队发布 ALTK-Evolve，通过可学习记忆（playbook）让 GPT-4.1 在 τ²-bench 客服任务上达到 67.5% Pass^4，超越前沿模型且无需更新权重。",
+          "zh": "IBM 研究团队在 Hugging Face 发布 ALTK-Evolve：用 GPT-4.1 加“学习到的记忆/操作手册”在客服基准 τ²-bench 零售任务上达到 67.5% Pass^4，超过榜单所有零售条目，且不更新模型权重。",
           "en": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model"
         },
         "todayHighlight": {
-          "zh": "这表明记忆与提示工程可显著弥补模型能力差距，为不依赖前沿模型的客服 Agent 提供了低成本高回报路径。",
-          "en": "这表明记忆与提示工程可显著弥补模型能力差距，为不依赖前沿模型的客服 Agent 提供了低成本高回报路径。"
+          "zh": "它证明记忆与提示工程可让非前沿模型在垂直任务上反超，削弱“必须换更大模型”的采购逻辑。",
+          "en": "它证明记忆与提示工程可让非前沿模型在垂直任务上反超，削弱“必须换更大模型”的采购逻辑。"
         },
         "pmInsight": {
-          "zh": "PM 应评估在现有客服 Agent 中引入可学习记忆层，优先沉淀高频任务的操作手册，以低模型成本换取基准分数提升。",
+          "zh": "客服类产品应优先评估“可学习记忆层”而非升级模型，用任务通过率做 A/B 验证记忆策略的边际收益。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -732,19 +744,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "GitHub Dependabot 告警 REST API 新增 version_requirement 字段，可直接获取漏洞依赖的版本或版本约束，无需解析锁文件或额外 GraphQL 请求。",
+          "zh": "GitHub 在 Dependabot 告警 REST API 中新增 version_requirement 字段，直接返回仓库中漏洞依赖的版本或版本约束，无需再解析 lockfile 或额外调用 GraphQL。",
           "en": "You can now get the version of a vulnerable dependency directly from Dependabot alert responses in the REST API. Each alert&#8217;s dependency object includes a new version_requirement field with the&#8230; The post Dependabot alerts REST API now includes dependency versions appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Dependabot 告警 REST API 新增 version_requirement 字段，可直接获取漏洞依赖的版本或版本约束，无需解析锁文件或额外 GraphQL 请求。",
+          "zh": "GitHub 在 Dependabot 告警 REST API 中新增 version_requirement 字段，直接返回仓库中漏洞依赖的版本或版本约束，无需再解析 lockfile 或额外调用 GraphQL。",
           "en": "You can now get the version of a vulnerable dependency directly from Dependabot alert responses in the REST API. Each alert&#8217;s dependency object includes a new version_requirement field with the&#8230; The post Dependabot alerts REST API now includes dependency versions appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "这一小改动降低了安全工具集成的数据获取成本，强化了 GitHub 作为 DevSecOps 数据枢纽的地位。",
-          "en": "这一小改动降低了安全工具集成的数据获取成本，强化了 GitHub 作为 DevSecOps 数据枢纽的地位。"
+          "zh": "这是 GitHub 把安全数据进一步 API 化，降低安全工具同步成本，巩固其 DevSecOps 入口地位。",
+          "en": "这是 GitHub 把安全数据进一步 API 化，降低安全工具同步成本，巩固其 DevSecOps 入口地位。"
         },
         "pmInsight": {
-          "zh": "PM 应检查依赖安全看板的数据管道，移除冗余的锁文件解析逻辑，改用新字段简化同步流程并减少延迟。",
+          "zh": "做安全或依赖管理集成时，应改用该字段替代 lockfile 解析，并检查多版本告警与截断约束的边界处理。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -769,22 +781,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Polytomic 发布 MCP 兼容性对照表，揭示 Claude、Codex、Grok、Amp 等 Agent 在 MCP 实现上的行为差异，如工具输出重复传递等问题。",
+          "zh": "Polytomic 发布“What the Harness?”MCP 兼容性对照表，仿浏览器兼容表列出 Claude、Codex、Grok、Amp 等代理在 MCP 实现上的行为差异，如工具输出重复传递。",
           "en": "Hi HN,We (Polytomic) noticed that LLM agents (Claude, Codex, Grok, Amp, etc) are inconsistent in their MCP implementations.We made tables inspired by the browser-compatibility tables of yore that list the differences.Hope you find this as useful as we did! Comments URL: https://news.ycombinator.com/item?id=50170765 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "Polytomic 发布 MCP 兼容性对照表，揭示 Claude、Codex、Grok、Amp 等 Agent 在 MCP 实现上的行为差异，如工具输出重复传递等问题。",
+          "zh": "Polytomic 发布“What the Harness?”MCP 兼容性对照表，仿浏览器兼容表列出 Claude、Codex、Grok、Amp 等代理在 MCP 实现上的行为差异，如工具输出重复传递。",
           "en": "Hi HN,We (Polytomic) noticed that LLM agents (Claude, Codex, Grok, Amp, etc) are inconsistent in their MCP implementations.We made tables inspired by the browser-compatibility tables of yore that list the differences.Hope you find this as useful as we did! Comments URL: https://news.ycombinator.com/item?id=50170765 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "MCP 生态缺乏统一兼容性标准，这一社区信号可能推动协议实现规范化，影响 Agent 工具链的互操作性。",
-          "en": "MCP 生态缺乏统一兼容性标准，这一社区信号可能推动协议实现规范化，影响 Agent 工具链的互操作性。"
+          "zh": "MCP 正成为代理工具调用的事实标准，但各家实现不一致，兼容性将成为代理产品的隐性成本。",
+          "en": "MCP 正成为代理工具调用的事实标准，但各家实现不一致，兼容性将成为代理产品的隐性成本。"
         },
         "pmInsight": {
-          "zh": "PM 在选型 MCP 客户端时应要求供应商提供兼容性测试结果，并在集成测试中覆盖重复载荷、纯文本/结构化输出等边界场景。",
+          "zh": "接入 MCP 前应建立跨代理兼容性测试用例（如双 payload、纯文本/结构化输出），并把结果纳入发布门禁。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Hacker News LLM",
@@ -806,19 +818,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "社区发布 Eagle-4，宣称在推理速度上超过 DFlash2 和 DSpark，面向本地 LLM 部署场景。",
+          "zh": "社区发布 Eagle-4，宣称在推理速度上超过 DFlash2 与 DSpark，面向本地部署场景。对产品意味着本地推理的延迟与成本选项进一步增多。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xb6zds/eagle4_released_faster_than_dflash2_dspark/\"> <img src=\"https://external-preview.redd.it/WDxJi299PYszH6UKciwtDvVhLHWG_D_tDXCa0BdXYto.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dacfda6f8fe904055bb02547178cbe8ab0c5bace\" alt=\"Eagle-4 Released: Faster than DFlash2 &amp; DSpark\" title=\"Eagle-4 Released: Faster than DFlash2 &amp; DSpark\" /"
         },
         "chineseIntro": {
-          "zh": "社区发布 Eagle-4，宣称在推理速度上超过 DFlash2 和 DSpark，面向本地 LLM 部署场景。",
+          "zh": "社区发布 Eagle-4，宣称在推理速度上超过 DFlash2 与 DSpark，面向本地部署场景。对产品意味着本地推理的延迟与成本选项进一步增多。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xb6zds/eagle4_released_faster_than_dflash2_dspark/\"> <img src=\"https://external-preview.redd.it/WDxJi299PYszH6UKciwtDvVhLHWG_D_tDXCa0BdXYto.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dacfda6f8fe904055bb02547178cbe8ab0c5bace\" alt=\"Eagle-4 Released: Faster than DFlash2 &amp; DSpark\" title=\"Eagle-4 Released: Faster than DFlash2 &amp; DSpark\" /"
         },
         "todayHighlight": {
-          "zh": "本地推理加速竞赛持续升温，Eagle-4 可能降低边缘设备运行大模型的延迟门槛。",
-          "en": "本地推理加速竞赛持续升温，Eagle-4 可能降低边缘设备运行大模型的延迟门槛。"
+          "zh": "本地模型速度竞赛加剧，可能压低边缘/私有化部署的推理成本，影响云端 API 的定价空间。",
+          "en": "本地模型速度竞赛加剧，可能压低边缘/私有化部署的推理成本，影响云端 API 的定价空间。"
         },
         "pmInsight": {
-          "zh": "PM 应在本地部署方案中增加 Eagle-4 的基准测试，重点对比首 token 延迟与吞吐量，评估是否替换现有推理后端。",
+          "zh": "若产品有本地或私有化需求，应把 Eagle-4 纳入推理后端基准测试，重点对比首 token 延迟与吞吐而非只看榜单。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
