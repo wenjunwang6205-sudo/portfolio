@@ -44,61 +44,162 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 技能标准化与安全审计升温",
-      "en": "AI PM Daily: Agent Skills Standardization and Security Auditing Heat Up"
+      "zh": "AI 产品经理日报：Agent 技能标准化与安全运行时升温",
+      "en": "AI PM Daily: Agent Skill Standardization and Secure Runtimes Gain Momentum"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 生态从「能跑」走向「可控、可审计、可计量」：Anthropic 把 Agent Skills 交给中立基金会，Cloudflare 开源安全审计技能，GitHub 把 Copilot 计量扩展到第三方工具。同时，面向单一场景的轻量技能（Rust 规范、小红书轮播、去广告）在上升榜获得曝光，说明技能层正在细分。",
-      "en": "Today's theme: the agent ecosystem is moving from 'it runs' to 'controllable, auditable, measurable.' Anthropic donated Agent Skills to a neutral foundation, Cloudflare open-sourced a security audit skill, and GitHub extended Copilot metering to third-party tools. Meanwhile, narrow-scope skills (Rust conventions, Xiaohongshu carousels, ad removal) gained traction on trending lists, showing the skill layer is fragmenting into niches."
+      "zh": "今日主线不在模型本身，而在 Agent 的「规范层」与「安全层」：Anthropic 把 Agent Skills 标准捐给中立基金会，Cloudflare 与 NVIDIA 分别从审计技能和安全运行时切入，GitHub 则把用量计量扩展到第三方编码工具。对 PM 来说，Agent 生态的竞争正从「能不能做」转向「做得是否可控、可计量、可复用」。",
+      "en": "Today's thread is not the model itself but the 'spec layer' and 'safety layer' of agents: Anthropic donated the Agent Skills standard to a neutral foundation, Cloudflare and NVIDIA are entering via audit skills and secure runtimes, and GitHub extended usage metering to third-party coding tools. For PMs, agent competition is shifting from 'can it do it' to 'is it controllable, measurable, and reusable'."
     },
     "keyTakeaway": {
-      "zh": "Agent 技能正在从各家私有格式走向标准化与安全审计，竞争焦点从「谁有更多技能」转向「谁的技能可被验证、可被计量、可被治理」。",
-      "en": "Agent skills are shifting from proprietary formats toward standardization and security auditing; the competition is moving from 'who has more skills' to 'whose skills are verifiable, measurable, and governable.'"
+      "zh": "Agent 生态正在形成两层基础设施：一层是跨平台互操作的技能标准（Agent Skills 捐赠给中立基金会），另一层是让 Agent 安全操作真实系统的运行时与审计流程（NVIDIA OpenShell、Cloudflare security-audit-skill）。产品判断应随之从「接入哪个模型」转向「技能如何被治理、用量如何被计量」。",
+      "en": "The agent ecosystem is forming two infrastructure layers: a cross-platform skill standard (Agent Skills donated to a neutral foundation) and runtimes/audit workflows that let agents safely operate real systems (NVIDIA OpenShell, Cloudflare security-audit-skill). Product judgment should shift from 'which model to use' to 'how skills are governed and usage is metered'."
     },
     "signals": [
       {
         "title": {
-          "zh": "Anthropic 将 Agent Skills 捐赠给中立基金会，技能格式走向厂商中立",
-          "en": "Anthropic Donates Agent Skills to a Neutral Foundation, Moving Toward Vendor-Neutral Skill Formats"
+          "zh": "Agent Skills 标准走向中立治理，技能生态进入「可移植」阶段",
+          "en": "Agent Skills Standard Moves to Neutral Governance, Skill Ecosystem Becomes Portable"
         },
         "category": {
           "zh": "生态标准",
-          "en": "Ecosystem Standards"
+          "en": "Ecosystem Standard"
         },
         "summary": {
-          "zh": "Anthropic 把 Agent Skills 开放标准捐给 Agentic AI Foundation，该标准已被 ChatGPT、Cursor、GitHub Copilot 等 70 多个平台集成，累计发布 100 万个技能、安装近 2.8 亿次。",
-          "en": "Anthropic donated the Agent Skills open standard to the Agentic AI Foundation; it is already integrated by 70+ platforms including ChatGPT, Cursor, and GitHub Copilot, with 1M skills published and ~280M installs."
+          "zh": "Anthropic 将 Agent Skills 开放标准捐赠给 Agentic AI Foundation，该标准已被 70 多个代理平台集成，累计发布 100 万个技能、安装近 2.8 亿次。同日 GitHub 上 BeautifulRust、ian-xhs-carousel 等细分技能项目持续在榜，Cloudflare 的 security-audit-skill 今日新增 2264 stars。",
+          "en": "Anthropic donated the Agent Skills open standard to the Agentic AI Foundation; it is integrated by 70+ agent platforms with 1M skills published and ~280M installs. Meanwhile niche skill projects like BeautifulRust and ian-xhs-carousel remain on GitHub trending, and Cloudflare's security-audit-skill added 2,264 stars today."
         },
         "pmInsight": {
-          "zh": "技能格式中立化会降低跨平台迁移成本，产品护城河将从「技能数量」转向「技能质量与治理规则」。PM 应评估自有技能资产在标准下的可移植性，并关注基金会后续的认证与审核机制。",
-          "en": "Neutral skill formats lower cross-platform migration costs; moats shift from skill count to skill quality and governance. PMs should assess portability of their skill assets under the standard and watch the foundation's certification and review mechanisms."
+          "zh": "标准中立化意味着技能不再绑定单一厂商，PM 需要评估「技能资产」的跨平台复用价值，而不是把技能当作某个工具的附属功能。",
+          "en": "Neutral governance means skills are no longer tied to a single vendor; PMs should evaluate the cross-platform reuse value of skill assets rather than treating skills as add-ons to one tool."
         },
         "impact": "High",
         "sources": [
           {
             "label": "Anthropic: Donating Agent Skills to the Agentic AI Foundation",
             "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+          },
+          {
+            "label": "cloudflare/security-audit-skill",
+            "url": "https://github.com/cloudflare/security-audit-skill"
+          },
+          {
+            "label": "morganlinton/BeautifulRust",
+            "url": "https://github.com/morganlinton/BeautifulRust"
           }
         ]
       },
       {
         "title": {
-          "zh": "Cloudflare 开源安全审计技能，Agent 安全从「提示词约束」走向「多阶段验证」",
-          "en": "Cloudflare Open-Sources Security Audit Skill; Agent Security Moves from Prompt Constraints to Multi-Stage Verification"
+          "zh": "Agent 安全从「提示词约束」转向「运行时隔离 + 审计流程」",
+          "en": "Agent Safety Shifts from Prompt Constraints to Runtime Isolation + Audit Workflows"
         },
         "category": {
           "zh": "Agent 安全",
           "en": "Agent Security"
         },
         "summary": {
-          "zh": "Cloudflare 开源 security-audit-skill，把编码智能体变成安全审计员，按侦察、覆盖式排查、候选验证、结构化输出、独立复核等阶段执行，产出可机器读取且经独立验证的漏洞发现；今日新增 2264 star，总 star 超 4.5 万，位列全球趋势榜第一。同期 NVIDIA OpenShell 为 Agent 提供隔离运行时，今日新增 896 star。",
-          "en": "Cloudflare open-sourced security-audit-skill, turning coding agents into security auditors with staged reconnaissance, coverage scanning, candidate verification, structured output, and independent review; it gained 2,264 stars today (45K+ total), topping the global trending list. NVIDIA OpenShell, an isolated runtime for agents, added 896 stars."
+          "zh": "NVIDIA 推出 OpenShell 自主 Agent 安全私有运行时，今日新增 896 stars、总 star 近 2 万；Cloudflare 的 security-audit-skill 以多阶段审计流程产出可机器读取结果，今日新增 2264 stars、总 star 超 4.5 万。Hacker News 上开源安全平台 Argus 也因 AI 代理狩猎威胁受到关注。",
+          "en": "NVIDIA launched OpenShell, a secure private runtime for autonomous agents, adding 896 stars today (nearly 20K total); Cloudflare's security-audit-skill produces machine-readable results via a multi-stage audit workflow, adding 2,264 stars today (45K+ total). On Hacker News, open-source security platform Argus also drew attention for AI-agent threat hunting."
         },
         "pmInsight": {
-          "zh": "安全审计技能与隔离运行时同时升温，说明企业采用 Agent 的前置条件正在从「能力演示」变为「可审计、可隔离」。PM 应把安全审计阶段纳入 Agent 产品路线，并评估是否需要沙箱运行时作为默认配置。",
-          "en": "Security audit skills and isolated runtimes are heating up together, indicating enterprise adoption prerequisites are shifting from capability demos to auditability and isolation. PMs should fold audit stages into the agent roadmap and evaluate sandboxed runtimes as a default."
+          "zh": "安全能力正在从模型侧的对齐策略，下沉为 Agent 执行层的基础设施。PM 在设计 Agent 产品时，应把「隔离运行」「可审计输出」作为默认能力而非附加项。",
+          "en": "Security is moving from model-side alignment to infrastructure at the agent execution layer. PMs designing agent products should treat isolated execution and auditable output as defaults, not add-ons."
         },
         "impact": "High",
+        "sources": [
+          {
+            "label": "NVIDIA/OpenShell",
+            "url": "https://github.com/NVIDIA/OpenShell"
+          },
+          {
+            "label": "cloudflare/security-audit-skill",
+            "url": "https://github.com/cloudflare/security-audit-skill"
+          },
+          {
+            "label": "Hacker News AI: Argus",
+            "url": "https://medium.com/@ai_news/argus-might-be-one-of-the-most-impressive-open-source-cybersecurity-projects-released-this-year-118043bd0c8c"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AI 编码工具用量计量扩展到第三方客户端，企业采购进入「统一计量」阶段",
+          "en": "AI Coding Tool Metering Extends to Third-Party Clients, Enterprise Procurement Enters Unified Metering"
+        },
+        "category": {
+          "zh": "开发者工具商业化",
+          "en": "Developer Tool Monetization"
+        },
+        "summary": {
+          "zh": "GitHub Copilot 用量指标 API 新增按客户端统计，覆盖 OpenCode、Claude Code、Codex 等第三方工具。同期 GitHub 趋势榜上，claude-howto 今日新增 392 stars、总 star 超 4.4 万，说明编码代理的学习与使用需求持续在榜。",
+          "en": "GitHub Copilot's usage metrics API now breaks down usage by client, covering third-party tools like OpenCode, Claude Code, and Codex. On GitHub trending, claude-howto added 392 stars today (44K+ total), indicating sustained demand for learning and using coding agents."
+        },
+        "pmInsight": {
+          "zh": "计量范围从 IDE 扩展到多工具生态，意味着企业可以按工具/团队核算 AI 编码成本。PM 应关注「用量可见性」是否成为企业采购的决策门槛，并据此设计报表与配额能力。",
+          "en": "Metering expanding from IDE to a multi-tool ecosystem means enterprises can allocate AI coding costs by tool/team. PMs should watch whether usage visibility becomes a procurement gate, and design reporting and quota features accordingly."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog: Usage metrics API adds usage from tools like OpenCode",
+            "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode"
+          },
+          {
+            "label": "luongnv89/claude-howto",
+            "url": "https://github.com/luongnv89/claude-howto"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "面向企业的 Agent 技能治理面板：技能清单、来源审计与用量归因",
+          "en": "Enterprise Agent Skill Governance Dashboard: Inventory, Provenance Audit, and Usage Attribution"
+        },
+        "category": {
+          "zh": "企业 Agent 治理",
+          "en": "Enterprise Agent Governance"
+        },
+        "summary": {
+          "zh": "基于 Agent Skills 标准中立化与 GitHub 用量计量扩展两个信号，假设企业需要一个统一面板来管理已安装技能、审计技能来源、并按团队归因技能调用量。可先在编码代理场景验证：企业是否愿意为「技能可见性」付费。",
+          "en": "Building on the neutral Agent Skills standard and GitHub's expanded metering, hypothesize that enterprises need a unified dashboard to manage installed skills, audit provenance, and attribute skill usage by team. Validate first in coding-agent scenarios: will enterprises pay for skill visibility?"
+        },
+        "pmInsight": {
+          "zh": "验证指标可设为「技能清单覆盖率」与「按团队用量报表使用率」；若企业采购流程中安全/财务团队主动要求该面板，则假设成立。",
+          "en": "Validation metrics: skill inventory coverage and adoption of per-team usage reports; the hypothesis holds if security/finance teams proactively request the dashboard during procurement."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Anthropic: Donating Agent Skills to the Agentic AI Foundation",
+            "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+          },
+          {
+            "label": "GitHub Changelog: Usage metrics API adds usage from tools like OpenCode",
+            "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Agent 安全审计的「可机器读取报告」可作为合规交付物",
+          "en": "Machine-Readable Agent Audit Reports as Compliance Deliverables"
+        },
+        "category": {
+          "zh": "Agent 安全合规",
+          "en": "Agent Security Compliance"
+        },
+        "summary": {
+          "zh": "Cloudflare security-audit-skill 的多阶段流程与结构化输出，加上 NVIDIA OpenShell 的隔离运行时，提示一个产品假设：企业需要把 Agent 审计结果直接接入现有合规/工单系统，而非人工阅读报告。可验证企业是否愿意为「审计结果 API」单独付费或将其列为采购必需项。",
+          "en": "Cloudflare's multi-stage, structured-output audit skill plus NVIDIA OpenShell's isolated runtime suggest a hypothesis: enterprises need agent audit results piped directly into compliance/ticketing systems rather than read manually. Validate whether enterprises will pay separately for an audit-results API or make it a procurement requirement."
+        },
+        "pmInsight": {
+          "zh": "验证指标可设为「审计报告被下游系统消费的比例」；若安全团队要求报告格式对接 SIEM/工单系统，则产品方向成立。",
+          "en": "Validation metric: share of audit reports consumed by downstream systems; the direction holds if security teams require report formats that integrate with SIEM/ticketing systems."
+        },
+        "impact": "Watch",
         "sources": [
           {
             "label": "cloudflare/security-audit-skill",
@@ -107,91 +208,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "NVIDIA/OpenShell",
             "url": "https://github.com/NVIDIA/OpenShell"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "GitHub Copilot 计量扩展到第三方工具，多工具环境下的成本可见性提升",
-          "en": "GitHub Copilot Metering Extends to Third-Party Tools, Improving Cost Visibility in Multi-Tool Environments"
-        },
-        "category": {
-          "zh": "API/定价",
-          "en": "API/Pricing"
-        },
-        "summary": {
-          "zh": "GitHub Copilot 用量指标 API 新增按客户端统计，覆盖 OpenCode、Claude Code、Codex 等第三方工具，并细分模型选择模式。",
-          "en": "GitHub Copilot's usage metrics API now breaks down usage by client, covering third-party tools like OpenCode, Claude Code, and Codex, with finer model-selection breakdowns."
-        },
-        "pmInsight": {
-          "zh": "Copilot 正从单一 IDE 插件转向跨工具计量平台，企业采购与成本分摊将更依赖这类 API。PM 应关注计量粒度是否成为企业选型的硬性要求，并评估自有工具是否需提供对等的用量导出能力。",
-          "en": "Copilot is shifting from an IDE plugin to a cross-tool metering platform; enterprise procurement and cost allocation will lean on such APIs. PMs should watch whether metering granularity becomes a hard selection criterion and whether their tools need equivalent usage export."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub Changelog: Usage metrics API adds usage from tools like OpenCode",
-            "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode"
-          }
-        ]
-      }
-    ],
-    "opportunities": [
-      {
-        "title": {
-          "zh": "面向标准技能格式的「技能审计与认证」服务假设",
-          "en": "Hypothesis: A Skill Audit and Certification Service for Standardized Skill Formats"
-        },
-        "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
-        },
-        "summary": {
-          "zh": "结合 Anthropic 将 Agent Skills 交给中立基金会、Cloudflare 开源安全审计技能两条信号，可假设：企业愿意为「技能是否安全、是否符合规范、是否可追溯」付费。可验证方式为向已集成 Agent Skills 的企业开发者提供技能扫描报告，观察试用转化率。",
-          "en": "Combining Anthropic's donation of Agent Skills to a neutral foundation and Cloudflare's open-source audit skill, hypothesize that enterprises will pay for whether a skill is safe, standards-compliant, and traceable. Validate by offering skill scan reports to enterprise developers already integrating Agent Skills and measuring trial-to-paid conversion."
-        },
-        "pmInsight": {
-          "zh": "先做轻量扫描（规则匹配 + 依赖检查）验证需求，再决定是否接入多阶段审计。关键指标是扫描报告的复用率与付费意愿，而非技能数量。",
-          "en": "Start with lightweight scanning (rule matching + dependency checks) to validate demand before building multi-stage audits. Key metrics are report reuse rate and willingness to pay, not skill count."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Anthropic: Donating Agent Skills to the Agentic AI Foundation",
-            "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
-          },
-          {
-            "label": "cloudflare/security-audit-skill",
-            "url": "https://github.com/cloudflare/security-audit-skill"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "单一场景技能包（如小红书轮播、Rust 规范）的可控流程假设",
-          "en": "Hypothesis: Controllable Workflow Skill Packs for Narrow Scenarios (e.g., Xiaohongshu Carousels, Rust Conventions)"
-        },
-        "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
-        },
-        "summary": {
-          "zh": "ian-xhs-carousel 把「先出分镜表确认再逐页出图」做成可控流程，BeautifulRust 为 Agent 补上单一语言规范，两者均在上升榜获得曝光。可假设：用户愿意为「可确认中间产物」的垂直技能付费，验证方式为对比带确认步骤与全自动流程的完成率与重试率。",
-          "en": "ian-xhs-carousel makes 'confirm storyboard before generating pages' a controllable workflow, and BeautifulRust adds single-language conventions for agents; both gained trending exposure. Hypothesize users will pay for vertical skills with confirmable intermediate artifacts; validate by comparing completion and retry rates between confirm-step and fully automated flows."
-        },
-        "pmInsight": {
-          "zh": "重点不是技能数量，而是中间确认点是否降低返工。PM 应把「分镜确认」「规范检查」这类检查点设计成可跳过但默认开启，并用重试率衡量价值。",
-          "en": "The point is not skill count but whether intermediate checkpoints reduce rework. PMs should design checkpoints like storyboard confirmation and convention checks as skippable but on by default, and measure value via retry rate."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "helloianneo/ian-xhs-carousel",
-            "url": "https://github.com/helloianneo/ian-xhs-carousel"
-          },
-          {
-            "label": "morganlinton/BeautifulRust",
-            "url": "https://github.com/morganlinton/BeautifulRust"
           }
         ]
       }
@@ -207,26 +223,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个面向 AI 编程助手的 Rust 编码规范技能包，安装后能让 Claude Code、Cursor、Codex 等工具按 Rust 社区的最佳实践写代码，减少风格混乱和常见错误。适合用 AI 写 Rust 项目的开发者。",
+          "zh": "一个面向 AI 编程助手的技能插件，教 Claude 等编码代理写出符合 Rust 语言习惯、健壮且易维护的代码。兼容 Claude Code、Codex、Copilot、Cursor 等支持 Agent Skills 格式的工具。",
           "en": "A Claude Code plugin that teaches Claude to write idiomatic, robust Rust"
         },
-        "totalStars": 296,
+        "totalStars": 318,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个面向 AI 编程助手的 Rust 编码规范技能包，安装后能让 Claude Code、Cursor、Codex 等工具按 Rust 社区的最佳实践写代码，减少风格混乱和常见错误。适合用 AI 写 Rust 项目的开发者。",
+          "zh": "一个面向 AI 编程助手的技能插件，教 Claude 等编码代理写出符合 Rust 语言习惯、健壮且易维护的代码。兼容 Claude Code、Codex、Copilot、Cursor 等支持 Agent Skills 格式的工具。",
           "en": "A Claude Code plugin that teaches Claude to write idiomatic, robust Rust"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月、总 star 不足 300 的小项目，靠「给 Agent 补上语言规范」这一细分定位在上升榜获得曝光，属于 Agent Skills 生态里较早切入单一语言深度的尝试。",
+          "zh": "创建仅约一个月，已积累 318 stars，作为「给编码代理补语言规范」的细分技能在 Agent 生态中升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 296 stars、17 forks，topics: claude-code, claude-plugin, claude-skills, coding-agent, rust，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 296 stars and 17 forks，topics: claude-code, claude-plugin, claude-skills, coding-agent, rust, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 318 stars、21 forks，topics: claude-code, claude-plugin, claude-skills, coding-agent, rust，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 318 stars and 21 forks，topics: claude-code, claude-plugin, claude-skills, coding-agent, rust, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「按语言/框架拆分的 Agent 技能包」是否会成为一类可复用的产品形态，以及规范类技能如何衡量实际代码质量提升。",
+          "zh": "值得关注「按语言/领域拆分的编码规范技能」是否会成为 Agent 能力扩展的标准化商品。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -247,26 +263,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向国产安卓手机的去广告工具，可关闭系统内置的广告、热搜、资讯推荐和营销推送，无需 root、操作可还原，并提供桌面客户端和 AI 智能体一键执行两种方式。覆盖 ColorOS、HyperOS、MagicOS、OriginOS 等系统。",
+          "zh": "帮助关闭国产安卓手机系统内的广告、热搜、资讯推荐与营销推送，无需 root、操作可还原，并提供桌面客户端与 AI 智能体一键执行方式。",
           "en": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。"
         },
-        "totalStars": 258,
+        "totalStars": 295,
         "language": "Python",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向国产安卓手机的去广告工具，可关闭系统内置的广告、热搜、资讯推荐和营销推送，无需 root、操作可还原，并提供桌面客户端和 AI 智能体一键执行两种方式。覆盖 ColorOS、HyperOS、MagicOS、OriginOS 等系统。",
+          "zh": "帮助关闭国产安卓手机系统内的广告、热搜、资讯推荐与营销推送，无需 root、操作可还原，并提供桌面客户端与 AI 智能体一键执行方式。",
           "en": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。"
         },
         "todayHighlight": {
-          "zh": "切中国产安卓系统广告这一高频痛点，加上「不 root、可还原」降低了用户顾虑，创建约一个月即获得 258 star，在上升榜获得关注。",
+          "zh": "上线约一个月获得 295 stars，切中国产安卓用户「系统广告多」的高频痛点，在实用工具类项目中持续获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 258 stars、26 forks，topics: adb, ai-agent, android, coloros, debloat，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 258 stars and 26 forks，topics: adb, ai-agent, android, coloros, debloat, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 295 stars、28 forks，topics: adb, ai-agent, android, coloros, debloat，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 295 stars and 28 forks，topics: adb, ai-agent, android, coloros, debloat, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察工具类产品如何用「可还原、低风险」话术化解用户对系统改动的担忧，以及把 AI 智能体作为执行入口的产品设计。",
+          "zh": "可观察「系统级体验优化」这类强需求工具如何用低门槛客户端和可还原设计降低用户信任成本。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -287,18 +303,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Claude Code 技能，把文章、案例或笔记自动排成 3:4 的小红书图文轮播，内置 20 个母版和浅色/深色两套风格，先出分镜表确认再逐页出图，输出 1080×1440 的 PNG 和可编辑的 HTML 源文件。",
+          "zh": "一个 Claude Code 技能，把文章、案例或笔记自动排成 3:4 的小红书图文，内置 20 个母版与浅色/深色两套风格，先出分镜表确认再出图。",
           "en": "把文章、案例或笔记排成 3:4 小红书图文 | 1080×1440 | 20 个母版 | 浅色 / 深色 | Claude Code Skill"
         },
         "totalStars": 257,
         "language": "HTML",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 Claude Code 技能，把文章、案例或笔记自动排成 3:4 的小红书图文轮播，内置 20 个母版和浅色/深色两套风格，先出分镜表确认再逐页出图，输出 1080×1440 的 PNG 和可编辑的 HTML 源文件。",
+          "zh": "一个 Claude Code 技能，把文章、案例或笔记自动排成 3:4 的小红书图文，内置 20 个母版与浅色/深色两套风格，先出分镜表确认再出图。",
           "en": "把文章、案例或笔记排成 3:4 小红书图文 | 1080×1440 | 20 个母版 | 浅色 / 深色 | Claude Code Skill"
         },
         "todayHighlight": {
-          "zh": "围绕小红书图文这一明确的内容生产场景，把「先确认分镜再出图」做成可控流程，创建约一个月积累 257 star，在上升榜获得曝光。",
+          "zh": "创建约一个月积累 257 stars，契合内容创作者「一文多发」的排版需求，在小红书图文生产场景中获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
@@ -306,7 +322,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 257 stars and 19 forks，topics: ai-agent, carousel, chinese, claude-code, claude-skill, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察垂直内容平台（如小红书）的排版需求如何被拆成可复用的 Agent 技能，以及「人工确认节点」在生成式工作流中的留存价值。",
+          "zh": "值得观察「内容再排版」类技能如何把设计规范沉淀为可复用母版，降低非设计人员的出图门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -327,26 +343,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Cloudflare 开源的编码智能体安全审计技能，把 AI 编程助手变成安全审计员，按侦察、覆盖式排查、候选验证、结构化输出、独立复核等阶段执行多阶段审计，产出可机器读取且经过独立验证的漏洞发现。",
+          "zh": "Cloudflare 出品的编码代理技能，把 AI 助手变成安全审计员，按侦察、漏洞排查、候选验证、结构化输出与独立复核的多阶段流程产出可机器读取的审计结果。",
           "en": "Star cloudflare / security-audit-skill A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
         },
-        "totalStars": 45117,
+        "totalStars": 45277,
         "language": "JavaScript",
         "dailyStars": 2264,
         "chineseIntro": {
-          "zh": "Cloudflare 开源的编码智能体安全审计技能，把 AI 编程助手变成安全审计员，按侦察、覆盖式排查、候选验证、结构化输出、独立复核等阶段执行多阶段审计，产出可机器读取且经过独立验证的漏洞发现。",
+          "zh": "Cloudflare 出品的编码代理技能，把 AI 助手变成安全审计员，按侦察、漏洞排查、候选验证、结构化输出与独立复核的多阶段流程产出可机器读取的审计结果。",
           "en": "Star cloudflare / security-audit-skill A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
         },
         "todayHighlight": {
-          "zh": "作为 Cloudflare 漏洞挖掘体系的源头组件开源，叠加官方博客的技术叙事，今日新增 2264 star，总 star 已超 4.5 万，位列全球趋势榜第一。",
+          "zh": "今日新增 2264 stars、总 star 已超 4.5 万，位居全球趋势榜首位，作为安全审计 Agent 工作流的参考实现快速传播。",
           "en": "登上 GitHub Trending 日榜第 1 位, 创建仅约 4 个月便已积累 45k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,264 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,117 stars、2,805 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,117 stars and 2,805 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,277 stars、2,808 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,277 stars and 2,808 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察大厂把内部安全审计流程封装成 Agent 技能后对外开源的做法，以及「可验证的机器可读结论」如何成为安全类 AI 产品的信任基础。",
+          "zh": "应关注「多阶段 + 独立复核」的 Agent 流程设计，这可能是高风险任务中让 AI 结果可信的关键模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -367,26 +383,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "NVIDIA 推出的自主 AI 智能体安全私有运行时，为 Agent 提供隔离的执行环境，让其在受控条件下运行工具和任务，兼顾安全与隐私。",
+          "zh": "英伟达推出的自主 AI Agent 安全私有运行时，为代理执行提供隔离、可控的运行环境，降低让 AI 直接操作真实系统的风险。",
           "en": "Star NVIDIA / OpenShell OpenShell is the safe, private runtime for autonomous AI agents."
         },
-        "totalStars": 19607,
+        "totalStars": 19646,
         "language": "Rust",
         "dailyStars": 896,
         "chineseIntro": {
-          "zh": "NVIDIA 推出的自主 AI 智能体安全私有运行时，为 Agent 提供隔离的执行环境，让其在受控条件下运行工具和任务，兼顾安全与隐私。",
+          "zh": "英伟达推出的自主 AI Agent 安全私有运行时，为代理执行提供隔离、可控的运行环境，降低让 AI 直接操作真实系统的风险。",
           "en": "Star NVIDIA / OpenShell OpenShell is the safe, private runtime for autonomous AI agents."
         },
         "todayHighlight": {
-          "zh": "随 Agent 基础设施需求升温持续获得关注，创建约 8 个月积累近 2 万 star，今日新增 896，位列全球趋势榜第二。",
+          "zh": "今日新增 896 stars，总 star 近 2 万，随 Agent 落地对安全运行时的需求上升而持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 896 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,607 stars、1,940 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,607 stars and 1,940 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,646 stars、1,940 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,646 stars and 1,940 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察 Agent 运行时与沙箱层是否会像云基础设施一样成为独立产品品类，以及安全合规如何成为企业采用 Agent 的前置条件。",
+          "zh": "值得观察 Agent 基础设施层的机会：当代理开始执行真实操作，安全与权限隔离会成为产品选型的硬性条件。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -407,26 +423,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一套面向 AI 编程助手的设计语言技能，包含 1 个技能、24 条命令、浏览器实时迭代和 62 条确定性检测规则，用于约束和改善 AI 生成的前端界面设计。",
+          "zh": "一套面向 AI 编码代理的设计语言，包含技能、命令、浏览器实时迭代与数十条确定性检测规则，用于约束和提升 AI 生成前端的视觉质量。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
-        "totalStars": 86627,
+        "totalStars": 86683,
         "language": "Rust",
         "dailyStars": 619,
         "chineseIntro": {
-          "zh": "一套面向 AI 编程助手的设计语言技能，包含 1 个技能、24 条命令、浏览器实时迭代和 62 条确定性检测规则，用于约束和改善 AI 生成的前端界面设计。",
+          "zh": "一套面向 AI 编码代理的设计语言，包含技能、命令、浏览器实时迭代与数十条确定性检测规则，用于约束和提升 AI 生成前端的视觉质量。",
           "en": "Star pbakaus / impeccable The design language that makes your AI harness better at design."
         },
         "todayHighlight": {
-          "zh": "创建约 11 个月已积累 8.6 万 star，今日新增 619，在全球趋势榜排名第六，属于「AI 生成界面审美」这一持续升温赛道中体量较大的项目。",
+          "zh": "总 star 已超 8.6 万，今日新增 619，创建约 11 个月仍在趋势榜前列，说明「治理 AI 生成界面同质化」是持续被关注的需求。",
           "en": "登上 GitHub Trending 日榜第 6 位, 总 star 数已达 86k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 619 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 86,627 stars、5,172 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 86,627 stars and 5,172 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 86,683 stars、5,176 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 86,683 stars and 5,176 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察「设计规范 + 确定性检测规则」的组合如何把主观审美转成可执行的工程约束，以及这类技能对前端交付质量的量化影响。",
+          "zh": "可观察设计规范如何被产品化为可安装、可检测的规则集，从而把「审美」变成可交付的工程约束。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -447,26 +463,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "由 Together AI 出品的反「AI 味」设计技能，适用于 Claude Code、Cursor、Codex 等工具，内置 48 套主题，让 AI 生成的前端界面摆脱千篇一律的观感，并支持按名称重设计或审计。",
+          "zh": "面向 Claude Code、Cursor、Codex 等工具的反「AI 味」设计技能，提供多套主题与重设计、审计能力，让生成的前端界面不像模板产物。",
           "en": "Star Nutlope / hallmark Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
         },
-        "totalStars": 32452,
+        "totalStars": 32533,
         "language": "CSS",
         "dailyStars": 455,
         "chineseIntro": {
-          "zh": "由 Together AI 出品的反「AI 味」设计技能，适用于 Claude Code、Cursor、Codex 等工具，内置 48 套主题，让 AI 生成的前端界面摆脱千篇一律的观感，并支持按名称重设计或审计。",
+          "zh": "面向 Claude Code、Cursor、Codex 等工具的反「AI 味」设计技能，提供多套主题与重设计、审计能力，让生成的前端界面不像模板产物。",
           "en": "Star Nutlope / hallmark Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
         },
         "todayHighlight": {
-          "zh": "创建约 6 个月积累 3.2 万 star，今日新增 455，位列全球趋势榜第四，与同类设计技能共同带动「AI 界面审美」话题升温。",
+          "zh": "今日新增 455 stars，总 star 超 3.2 万，与同类设计技能一同升温，反映用户对 AI 生成界面质感的普遍不满。",
           "en": "登上 GitHub Trending 日榜第 4 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 455 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 32,452 stars、1,674 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 32,452 stars and 1,674 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 32,533 stars、1,679 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 32,533 stars and 1,679 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察多家厂商同时切入「反 AI 味设计」时，主题库规模、品牌背书和安装体验如何形成差异化。",
+          "zh": "值得关注「反 AI 同质化」正在形成独立的产品赛道，设计差异化可能成为 AI 编程工具的卖点。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -487,26 +503,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源、开箱即用的个人 AI 智能体，可在用户自己的电脑上直接完成实际任务，覆盖 macOS、Windows、Android、iOS 多端，基于 TypeScript 与 Electron/React Native 构建。",
+          "zh": "开源、开箱即用的个人 AI Agent，可在自己的电脑上直接完成实际任务，覆盖桌面端与移动端，支持多种模型与编码代理。",
           "en": "Star makecindy / cindy Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
         },
-        "totalStars": 4244,
+        "totalStars": 4284,
         "language": "TypeScript",
         "dailyStars": 477,
         "chineseIntro": {
-          "zh": "开源、开箱即用的个人 AI 智能体，可在用户自己的电脑上直接完成实际任务，覆盖 macOS、Windows、Android、iOS 多端，基于 TypeScript 与 Electron/React Native 构建。",
+          "zh": "开源、开箱即用的个人 AI Agent，可在自己的电脑上直接完成实际任务，覆盖桌面端与移动端，支持多种模型与编码代理。",
           "en": "Star makecindy / cindy Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
         },
         "todayHighlight": {
-          "zh": "创建约 3 个月积累 4244 star，今日新增 477，位列全球趋势榜第十，「开箱即用、跨端可用」的定位在个人 Agent 赛道获得较快关注。",
+          "zh": "创建约三个月即积累 4284 stars，今日新增 477，凭借「装上就能干活」的定位在个人 Agent 赛道快速获得关注。",
           "en": "登上 GitHub Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 477 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,244 stars、608 forks，topics: agent, ai-agent, ai-assistant, android, claude-code，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,244 stars and 608 forks，topics: agent, ai-agent, ai-assistant, android, claude-code, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,284 stars、614 forks，topics: agent, ai-agent, ai-assistant, android, claude-code，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,284 stars and 614 forks，topics: agent, ai-agent, ai-assistant, android, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察个人 Agent 产品在「开箱即用」与「本地执行」之间的取舍，以及跨端覆盖对用户留存的实际作用。",
+          "zh": "可观察开箱即用体验与跨端覆盖，是否是个人 Agent 从尝鲜走向日常使用的关键门槛。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -527,26 +543,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一份可视化、以示例驱动的 Claude Code 使用指南，从基础概念讲到进阶 Agent 用法，提供可直接复制使用的模板，帮助用户快速上手并产出实际价值。",
+          "zh": "一份可视化、以示例驱动的 Claude Code 学习指南，从基础概念讲到进阶 Agent，并提供可直接复制的模板。",
           "en": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
         },
-        "totalStars": 44712,
+        "totalStars": 44752,
         "language": "Python",
         "dailyStars": 392,
         "chineseIntro": {
-          "zh": "一份可视化、以示例驱动的 Claude Code 使用指南，从基础概念讲到进阶 Agent 用法，提供可直接复制使用的模板，帮助用户快速上手并产出实际价值。",
+          "zh": "一份可视化、以示例驱动的 Claude Code 学习指南，从基础概念讲到进阶 Agent，并提供可直接复制的模板。",
           "en": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
         },
         "todayHighlight": {
-          "zh": "创建约 12 个月积累 4.4 万 star，今日新增 392，位列全球趋势榜第五，说明围绕 Claude Code 的学习型内容仍有稳定需求。",
+          "zh": "总 star 超 4.4 万，今日新增 392，创建约一年仍在趋势榜，说明围绕编码代理的系统化学习内容有长期需求。",
           "en": "登上 GitHub Trending 日榜第 5 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 392 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,712 stars、5,501 forks，topics: claude-code, guide, tutorial，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,712 stars and 5,501 forks，topics: claude-code, guide, tutorial, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 44,752 stars、5,504 forks，topics: claude-code, guide, tutorial，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 44,752 stars and 5,504 forks，topics: claude-code, guide, tutorial, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察工具类产品升温后，教程与模板类内容如何承接新用户的学习需求，并成为生态中的流量入口。",
+          "zh": "值得关注教程类内容如何成为工具生态的入口，并影响新用户对产品能力的认知路径。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -567,26 +583,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源 AI Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等多种 IM 平台以及多家大模型，支持插件和 MCP，适合搭建聊天机器人与个人助理。",
+          "zh": "开源 AI Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等聊天平台及多种大模型，支持插件与 MCP 扩展，适合搭建自己的聊天机器人。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
-        "totalStars": 43276,
+        "totalStars": 43294,
         "language": "Python",
         "dailyStars": 225,
         "chineseIntro": {
-          "zh": "开源 AI Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等多种 IM 平台以及多家大模型，支持插件和 MCP，适合搭建聊天机器人与个人助理。",
+          "zh": "开源 AI Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等聊天平台及多种大模型，支持插件与 MCP 扩展，适合搭建自己的聊天机器人。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
         "todayHighlight": {
-          "zh": "项目已运营约 47 个月、积累 4.3 万 star，今日新增 225，位列中文趋势榜第一，属于长期在榜的成熟项目，近期随 Agent 与 MCP 生态升温持续获得关注。",
+          "zh": "今日新增 225 stars，总 star 超 4.3 万，作为运营近四年的老项目仍居中文趋势榜首位，生态与插件积累带来持续关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 225 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 43,276 stars、3,176 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 43,276 stars and 3,176 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 43,294 stars、3,180 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 43,294 stars and 3,180 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察老牌开源机器人框架如何通过接入 MCP 和新模型保持生命力，以及多 IM 渠道覆盖对国内用户增长的作用。",
+          "zh": "可观察多平台接入与插件生态如何延长开源项目的生命周期，并形成稳定的使用黏性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -613,19 +629,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "OpenAI 披露为支撑超 10 亿 ChatGPT 用户而重构在线存储架构，通过多租户、全局缓存与 Azure Cosmos DB 实现读取速度提升 12 倍。这意味着 ChatGPT 在大规模用户下的响应与稳定性获得底层保障。",
+          "zh": "OpenAI 披露了支撑 10 亿 ChatGPT 用户的在线存储架构，通过多租户、全局缓存与 Azure Cosmos DB 实现读取速度提升 12 倍。",
           "en": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
         },
         "chineseIntro": {
-          "zh": "OpenAI 披露为支撑超 10 亿 ChatGPT 用户而重构在线存储架构，通过多租户、全局缓存与 Azure Cosmos DB 实现读取速度提升 12 倍。这意味着 ChatGPT 在大规模用户下的响应与稳定性获得底层保障。",
+          "zh": "OpenAI 披露了支撑 10 亿 ChatGPT 用户的在线存储架构，通过多租户、全局缓存与 Azure Cosmos DB 实现读取速度提升 12 倍。",
           "en": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
         },
         "todayHighlight": {
-          "zh": "在用户规模突破十亿量级后，存储与数据层成为模型产品体验的隐形护城河，OpenAI 公开架构细节或为行业树立规模化新基准。",
-          "en": "在用户规模突破十亿量级后，存储与数据层成为模型产品体验的隐形护城河，OpenAI 公开架构细节或为行业树立规模化新基准。"
+          "zh": "这是 OpenAI 首次系统公开超大规模用户下的存储工程方案，为行业提供了可参考的规模化基础设施范式。",
+          "en": "这是 OpenAI 首次系统公开超大规模用户下的存储工程方案，为行业提供了可参考的规模化基础设施范式。"
         },
         "pmInsight": {
-          "zh": "评估自身产品在用户量级跃升时，优先排查存储读取延迟与多租户隔离瓶颈，而非仅关注模型推理优化。",
+          "zh": "PM 应关注存储延迟对对话体验的直接影响，在规划高并发功能时提前评估后端存储的读写瓶颈与缓存策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -650,19 +666,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "Reddit 社区讨论称 OpenAI 与 Anthropic 阻止了针对智能电视隐私监控的反向工程尝试，引发对模型安全策略边界的争议。这反映出模型厂商在安全对齐与开放研究之间的张力。",
+          "zh": "社区讨论指出 OpenAI 和 Anthropic 的模型阻止了对智能电视反向工程的请求，引发对模型安全策略边界的争议。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>REA (Reserve Engineer Anything) was blocked by Claude one day later...</p> <p><a href=\"https://x.com/AbhinavXJ/status/2113590263373508704\">https://x.com/AbhinavXJ/status/2113590263373508704</a></p> <p>Time for the pebbles to own the weights</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/kroggens\"> /u/kroggens </a> <br/> <span><a href=\"https://x"
         },
         "chineseIntro": {
-          "zh": "Reddit 社区讨论称 OpenAI 与 Anthropic 阻止了针对智能电视隐私监控的反向工程尝试，引发对模型安全策略边界的争议。这反映出模型厂商在安全对齐与开放研究之间的张力。",
+          "zh": "社区讨论指出 OpenAI 和 Anthropic 的模型阻止了对智能电视反向工程的请求，引发对模型安全策略边界的争议。",
           "en": "<!-- SC_OFF --><div class=\"md\"><p>REA (Reserve Engineer Anything) was blocked by Claude one day later...</p> <p><a href=\"https://x.com/AbhinavXJ/status/2113590263373508704\">https://x.com/AbhinavXJ/status/2113590263373508704</a></p> <p>Time for the pebbles to own the weights</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/kroggens\"> /u/kroggens </a> <br/> <span><a href=\"https://x"
         },
         "todayHighlight": {
-          "zh": "社区对模型安全拦截的敏感度上升，若厂商过度限制合法安全研究，可能影响开发者信任与开源生态。",
-          "en": "社区对模型安全拦截的敏感度上升，若厂商过度限制合法安全研究，可能影响开发者信任与开源生态。"
+          "zh": "这反映了模型厂商在安全对齐与合法研究之间的张力，可能影响开发者对模型可用性的预期。",
+          "en": "这反映了模型厂商在安全对齐与合法研究之间的张力，可能影响开发者对模型可用性的预期。"
         },
         "pmInsight": {
-          "zh": "设计安全策略时需明确区分恶意滥用与合法安全研究，并建立透明申诉通道，避免误伤开发者社区。",
+          "zh": "PM 需在安全策略中明确区分恶意攻击与合法逆向研究，避免过度拦截导致开发者流失或社区反弹。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -687,19 +703,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "GitHub Copilot 用量指标 API 新增按客户端统计，覆盖 OpenCode、Claude Code、Codex 等第三方工具，并细分模型选择模式。这让企业能更完整地追踪多工具环境下的 Copilot 使用与成本。",
+          "zh": "GitHub Copilot 用量指标 API 新增按客户端统计，覆盖 OpenCode、Claude Code、Codex 等第三方工具的使用数据。",
           "en": "The Copilot usage metrics API now reports model usage from more of the tools your developers use with Copilot, including tools like OpenCode that weren&#8217;t previously captured in your reports.&#8230; The post Usage metrics API adds usage from tools like OpenCode appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 用量指标 API 新增按客户端统计，覆盖 OpenCode、Claude Code、Codex 等第三方工具，并细分模型选择模式。这让企业能更完整地追踪多工具环境下的 Copilot 使用与成本。",
+          "zh": "GitHub Copilot 用量指标 API 新增按客户端统计，覆盖 OpenCode、Claude Code、Codex 等第三方工具的使用数据。",
           "en": "The Copilot usage metrics API now reports model usage from more of the tools your developers use with Copilot, including tools like OpenCode that weren&#8217;t previously captured in your reports.&#8230; The post Usage metrics API adds usage from tools like OpenCode appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "Copilot 正从单一 IDE 插件转向跨工具计量平台，API 粒度细化将影响企业采购与成本分摊决策。",
-          "en": "Copilot 正从单一 IDE 插件转向跨工具计量平台，API 粒度细化将影响企业采购与成本分摊决策。"
+          "zh": "这意味着 Copilot 的计量范围从 IDE 扩展到多工具生态，为企业统一管理 AI 编码工具用量提供了数据基础。",
+          "en": "这意味着 Copilot 的计量范围从 IDE 扩展到多工具生态，为企业统一管理 AI 编码工具用量提供了数据基础。"
         },
         "pmInsight": {
-          "zh": "若产品依赖 Copilot 生态，应尽快接入 totals_by_client 字段，按客户端与模型选择模式拆分用量，优化成本归因。",
+          "zh": "PM 应利用新增的 totals_by_client 字段分析团队工具偏好，据此优化 AI 编码工具的采购与推广策略。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -707,6 +723,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Changelog",
             "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: New Open-Source Cybersecurity Platform Uses AI Agents to Hunt Threats",
+          "en": "Hacker News AI: New Open-Source Cybersecurity Platform Uses AI Agents to Hunt Threats"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "开源网络安全平台 Argus 在 Hacker News 引发关注，它利用 AI 代理自动狩猎威胁，被视为今年最亮眼的开源安全项目之一。",
+          "en": "Article URL: https://medium.com/@ai_news/argus-might-be-one-of-the-most-impressive-open-source-cybersecurity-projects-released-this-year-118043bd0c8c Comments URL: https://news.ycombinator.com/item?id=50229059 Points: 9 # Comments: 1"
+        },
+        "chineseIntro": {
+          "zh": "开源网络安全平台 Argus 在 Hacker News 引发关注，它利用 AI 代理自动狩猎威胁，被视为今年最亮眼的开源安全项目之一。",
+          "en": "Article URL: https://medium.com/@ai_news/argus-might-be-one-of-the-most-impressive-open-source-cybersecurity-projects-released-this-year-118043bd0c8c Comments URL: https://news.ycombinator.com/item?id=50229059 Points: 9 # Comments: 1"
+        },
+        "todayHighlight": {
+          "zh": "AI 代理在安全运营中的落地加速，可能推动 SOC 自动化从规则驱动转向代理驱动。",
+          "en": "AI 代理在安全运营中的落地加速，可能推动 SOC 自动化从规则驱动转向代理驱动。"
+        },
+        "pmInsight": {
+          "zh": "PM 可评估将 AI 代理嵌入安全告警 triage 流程，优先验证误报率与响应速度是否优于现有规则引擎。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://medium.com/@ai_news/argus-might-be-one-of-the-most-impressive-open-source-cybersecurity-projects-released-this-year-118043bd0c8c"
           }
         ]
       },
@@ -724,63 +777,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Hugging Face 推出 torch-neuronx 模型支持查询 Space，可查看热门模型是否能在 AWS Trainium 上免修改运行，并给出运行脚本与性能数据。这降低了开发者评估非 GPU 推理硬件的门槛。",
+          "zh": "Hugging Face 推出模型支持查询 Space，可快速判断任意 Transformers 模型能否在 AWS Trainium 上无修改运行，并给出运行脚本。",
           "en": "Does Your Model Run on AWS Trainium? Look It Up"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 推出 torch-neuronx 模型支持查询 Space，可查看热门模型是否能在 AWS Trainium 上免修改运行，并给出运行脚本与性能数据。这降低了开发者评估非 GPU 推理硬件的门槛。",
+          "zh": "Hugging Face 推出模型支持查询 Space，可快速判断任意 Transformers 模型能否在 AWS Trainium 上无修改运行，并给出运行脚本。",
           "en": "Does Your Model Run on AWS Trainium? Look It Up"
         },
         "todayHighlight": {
-          "zh": "Trainium 生态获得 Hugging Face 官方可发现性支持，可能加速模型在非英伟达硬件上的部署多元化。",
-          "en": "Trainium 生态获得 Hugging Face 官方可发现性支持，可能加速模型在非英伟达硬件上的部署多元化。"
+          "zh": "这降低了 Trainium 的采用门槛，可能加速非 NVIDIA 芯片在模型部署中的份额增长。",
+          "en": "这降低了 Trainium 的采用门槛，可能加速非 NVIDIA 芯片在模型部署中的份额增长。"
         },
         "pmInsight": {
-          "zh": "在推理成本优化时，用该 Space 快速筛查候选模型在 Trainium 上的兼容性与内存占用，再决定是否迁移。",
+          "zh": "PM 在评估推理成本时，应将 Trainium 纳入备选，利用该 Space 快速验证目标模型的兼容性与性能。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Hugging Face",
             "url": "https://huggingface.co/blog/torch-neuronx-model-support"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News LLM: LLM-d v1.0.0 is out",
-          "en": "Hacker News LLM: LLM-d v1.0.0 is out"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "开源项目 LLM-d 发布 v1.0.0，重点提供多租户服务质量、优先级与公平性感知的流控及可控降载能力。这为自托管 LLM 推理服务提供了更成熟的生产级调度方案。",
-          "en": "Article URL: https://github.com/llm-d/llm-d/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50213960 Points: 2 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "开源项目 LLM-d 发布 v1.0.0，重点提供多租户服务质量、优先级与公平性感知的流控及可控降载能力。这为自托管 LLM 推理服务提供了更成熟的生产级调度方案。",
-          "en": "Article URL: https://github.com/llm-d/llm-d/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50213960 Points: 2 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "LLM 推理调度从实验走向 1.0 稳定版，多租户 QoS 成为开源推理栈的竞争焦点。",
-          "en": "LLM 推理调度从实验走向 1.0 稳定版，多租户 QoS 成为开源推理栈的竞争焦点。"
-        },
-        "pmInsight": {
-          "zh": "若自建推理服务，可评估 LLM-d 的优先级流控是否匹配自身 SLA 分层需求，替代简单轮询调度。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News LLM",
-            "url": "https://github.com/llm-d/llm-d/releases/tag/v1.0.0"
           }
         ]
       },
@@ -798,19 +814,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Anthropic 将 Agent Skills 开放标准捐赠给 Agentic AI Foundation，该标准已被 ChatGPT、Cursor、GitHub Copilot 等 70 多个平台集成，累计发布 100 万个技能、安装近 2.8 亿次。这推动智能体技能格式走向厂商中立。",
+          "zh": "Anthropic 将 Agent Skills 开放标准捐赠给 Agentic AI Foundation，该标准已被 70 多个代理平台集成，累计发布 100 万个技能、安装近 2.8 亿次。",
           "en": "Today, we’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation (AAIF). More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.Agent interoperability through simplicityA skill is a folder containing a SKILL.md file that teaches an age"
         },
         "chineseIntro": {
-          "zh": "Anthropic 将 Agent Skills 开放标准捐赠给 Agentic AI Foundation，该标准已被 ChatGPT、Cursor、GitHub Copilot 等 70 多个平台集成，累计发布 100 万个技能、安装近 2.8 亿次。这推动智能体技能格式走向厂商中立。",
+          "zh": "Anthropic 将 Agent Skills 开放标准捐赠给 Agentic AI Foundation，该标准已被 70 多个代理平台集成，累计发布 100 万个技能、安装近 2.8 亿次。",
           "en": "Today, we’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation (AAIF). More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.Agent interoperability through simplicityA skill is a folder containing a SKILL.md file that teaches an age"
         },
         "todayHighlight": {
-          "zh": "Anthropic 主动将事实标准交给中立基金会，意在抢占智能体互操作性的治理话语权，并降低生态锁定风险。",
-          "en": "Anthropic 主动将事实标准交给中立基金会，意在抢占智能体互操作性的治理话语权，并降低生态锁定风险。"
+          "zh": "这是代理互操作标准走向中立治理的关键一步，可能重塑 AI 代理生态的协作格局。",
+          "en": "这是代理互操作标准走向中立治理的关键一步，可能重塑 AI 代理生态的协作格局。"
         },
         "pmInsight": {
-          "zh": "规划智能体功能时优先采用 SKILL.md 格式，确保技能资产可在多平台迁移，避免绑定单一厂商运行时。",
+          "zh": "PM 应尽快评估将产品接入 Agent Skills 标准，以低成本获得跨平台技能复用与生态分发能力。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
