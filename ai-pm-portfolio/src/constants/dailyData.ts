@@ -48,30 +48,84 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily · 2026-10-31"
     },
     "editorNote": {
-      "zh": "今日主线不在模型参数，而在「Agent 的落地条件」：手机端免 ROOT 自动化、跨会话记忆、企业级可管控 AI 同事、以及为 Agent 重写的轻量浏览器，四条线同时升温。安全侧则出现两个反向信号——平台主动加码青少年保护，开源权重模型被实证可低成本利用补丁缺口。",
-      "en": "Today's thread is not model scale but the preconditions for agents to ship: no-root mobile automation, cross-session memory, governable enterprise AI coworkers, and browsers rebuilt for agents. On safety, two counter-signals: platforms tightening teen protections, and open-weight models empirically weaponizing patch gaps."
+      "zh": "今日主线是 Agent 基础设施的分层成形：记忆、设计规范、浏览器与执行环境各自出现高关注度项目，同时手机端本地 Agent 与可审计的企业 AI 同事两条产品路线在升温。",
+      "en": "Today's thread is the layering of agent infrastructure: memory, design conventions, browsers and execution environments each show high-attention projects, while on-device mobile agents and auditable enterprise AI coworkers are both warming up."
     },
     "keyTakeaway": {
-      "zh": "Agent 竞争正从「能不能做」转向「装得上、记得住、管得住」：安卓端免 ROOT 方案与跨会话记忆层同时升温，说明体验门槛和上下文连续性已成为产品分水岭；与此同时，开源权重模型被实证可低成本利用补丁缺口，安全与合规将更早进入 Agent 产品的需求清单。",
-      "en": "Agent competition is shifting from capability to deployability, memory, and governance: no-root Android automation and cross-session memory layers are both heating up, while open-weight models exploiting patch gaps pushes security and compliance earlier into agent product requirements."
+      "zh": "Agent 竞争正从「模型能力」转向「运行时与规范」：claude-mem 与 impeccable 分别占据记忆层和设计评审层，Mika、DSH-Android 则把执行环境推到手机本地，PM 需要开始为 Agent 的上下文、界面质量与权限边界设计产品约束。",
+      "en": "Agent competition is shifting from model capability to runtime and conventions: claude-mem and impeccable occupy the memory and design-review layers, while Mika and DSH-Android push execution onto the phone. PMs should start designing product constraints around agent context, UI quality and permission boundaries."
     },
     "signals": [
       {
         "title": {
-          "zh": "手机端 Agent 从「极客方案」走向「装个 APK」",
-          "en": "Mobile agents move from hacker setups to install-an-APK"
+          "zh": "Agent 记忆层成为独立基础组件",
+          "en": "Agent memory becomes a standalone infrastructure layer"
         },
         "category": {
-          "zh": "产品形态",
-          "en": "Product Form"
+          "zh": "Agent 基础设施",
+          "en": "Agent infrastructure"
         },
         "summary": {
-          "zh": "wangzan101/Mika 创建约一个月获 2007 星、322 次 fork，主打在安卓手机上代替用户操作各类 App 与网页；jackwener/DSH-Android 上线约一个月获 571 星，把 DeepSeek Harness 引擎内嵌进 APK，无需 ROOT、Termux 或电脑即可读屏操作 App、整理文件、改系统设置并执行定时或条件自动化。",
-          "en": "wangzan101/Mika reached 2,007 stars and 322 forks in about a month, operating Android apps and web pages on the user's behalf; jackwener/DSH-Android, at 571 stars in roughly a month, embeds the DeepSeek Harness engine in an APK so agents can read the screen, manage files, change settings, and run scheduled or conditional automation without root, Termux, or a PC."
+          "zh": "thedotmack/claude-mem 今日新增 1140 stars、总 star 超 10.6 万，位列全球趋势榜第 1；其定位是为 Claude Code、Codex、Gemini、Copilot 等提供跨会话持久记忆，用 AI 压缩后注入后续上下文。",
+          "en": "thedotmack/claude-mem added 1,140 stars today, surpassing 106k total and ranking #1 globally; it provides cross-session persistent memory for Claude Code, Codex, Gemini and Copilot by compressing and re-injecting context."
         },
         "pmInsight": {
-          "zh": "两个项目共同指向同一件事：手机 Agent 的瓶颈正在从模型能力转为部署摩擦。免 ROOT 的 APK 路径把体验门槛压到普通用户可接受的范围，意味着移动端自动化可能先于桌面端形成规模化入口。PM 应关注权限模型（无障碍服务、屏幕读取）与失败回滚设计，而非只比拼任务覆盖率。",
-          "en": "Both point to the same shift: the bottleneck for mobile agents is deployment friction, not model capability. A no-root APK lowers the bar to mainstream users, suggesting mobile automation may scale before desktop. PMs should focus on permission models (accessibility, screen reading) and failure rollback, not just task coverage."
+          "zh": "记忆正从各 Agent 的内置功能变成可替换的公共层，这意味着产品差异化将更多取决于「记什么、何时注入、如何让用户可编辑」，而非是否具备记忆。PM 应尽快定义记忆的可见性与纠错入口。",
+          "en": "Memory is moving from a built-in feature to a swappable shared layer, so differentiation will hinge on what is remembered, when it is injected and how users can edit it. PMs should define memory visibility and correction paths early."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "GitHub · thedotmack/claude-mem",
+            "url": "https://github.com/thedotmack/claude-mem"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "「反 AI 味」设计规范进入编程 Agent 工作流",
+          "en": "'Anti-AI-slop' design conventions enter coding agent workflows"
+        },
+        "category": {
+          "zh": "AI 编程工具",
+          "en": "AI coding tools"
+        },
+        "summary": {
+          "zh": "pbakaus/impeccable 今日新增 2300 stars、总 star 近 9.8 万，位列全球趋势榜第 3；它用 polish、bolder、critique、audit 等词汇给 Claude Code、Cursor、Codex 补上设计评审环节，在交付前拦截同质化界面。同日 GitHub 在 Product Hunt 发布 Copilot Fusion，主打多模型自动路由。",
+          "en": "pbakaus/impeccable added 2,300 stars today, nearing 98k total and ranking #3 globally; it adds design review steps (polish, bolder, critique, audit) to Claude Code, Cursor and Codex to block generic UI before delivery. GitHub also launched Copilot Fusion on Product Hunt, focused on automatic multi-model routing."
+        },
+        "pmInsight": {
+          "zh": "编程 Agent 的竞争点正从「生成代码」扩展到「生成可交付质量」，设计评审与多模型路由都是质量层的手段。PM 应把「交付前检查」设计成可配置的 Agent 技能，而不是依赖单一模型能力。",
+          "en": "Coding agent competition is expanding from code generation to deliverable quality, with design review and multi-model routing as quality levers. PMs should design pre-delivery checks as configurable agent skills rather than relying on a single model."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub · pbakaus/impeccable",
+            "url": "https://github.com/pbakaus/impeccable"
+          },
+          {
+            "label": "Product Hunt · GitHub Copilot Fusion",
+            "url": "https://www.producthunt.com/products/github-copilot-fusion"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "手机端本地 Agent 与可审计企业 Agent 同步升温",
+          "en": "On-device mobile agents and auditable enterprise agents warm up together"
+        },
+        "category": {
+          "zh": "Agent 产品形态",
+          "en": "Agent product forms"
+        },
+        "summary": {
+          "zh": "wangzan101/Mika 创建约一个月获 2053 stars，jackwener/DSH-Android 创建不到一周获 575 stars，两者都主打安卓本地执行、免云端数据；CopilotKit/OpenBot 今日新增 706 stars、总 star 9020，强调每个 AI 同事有独立浏览器与文件权限、行动留记录、可部署在企业自有基础设施。",
+          "en": "wangzan101/Mika reached 2,053 stars in about a month, and jackwener/DSH-Android reached 575 stars in under a week, both emphasizing local Android execution without cloud data. CopilotKit/OpenBot added 706 stars today (9,020 total), emphasizing per-coworker browser and file permissions, action logs and self-hosted deployment."
+        },
+        "pmInsight": {
+          "zh": "两端需求指向同一件事：Agent 的权限与审计需要产品化。手机端用户关心数据不出设备，企业用户关心行动可追溯。PM 应把权限范围、操作日志和撤销机制作为 Agent 产品的核心界面，而非后台配置。",
+          "en": "Both ends point to the same need: agent permissions and audit must be productized. Mobile users care about data staying on-device; enterprises care about traceable actions. PMs should treat permission scope, action logs and undo as core agent UI, not backend settings."
         },
         "impact": "Medium",
         "sources": [
@@ -82,93 +136,10 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub · jackwener/DSH-Android",
             "url": "https://github.com/jackwener/DSH-Android"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Agent 记忆层与设计品味层同时成为独立品类",
-          "en": "Agent memory and design taste emerge as standalone layers"
-        },
-        "category": {
-          "zh": "开发者基础设施",
-          "en": "Developer Infrastructure"
-        },
-        "summary": {
-          "zh": "thedotmack/claude-mem 总 star 超 10.6 万，今日新增 1140 星并位居全球趋势榜第 1，为 Claude Code、Codex、Gemini 等多种 Agent 提供跨会话持久记忆；pbakaus/impeccable 总 star 近 9.8 万，今日新增 2300 星、全球趋势榜第 3，用 polish、bolder、critique、audit 等指令在交付前拦截「AI 味」界面。",
-          "en": "thedotmack/claude-mem passed 106k stars with 1,140 added today, ranking #1 globally, offering cross-session persistent memory across Claude Code, Codex, and Gemini; pbakaus/impeccable is near 98k stars with 2,300 added today at #3, using polish, bolder, critique, and audit commands to catch generic AI-looking UI before delivery."
-        },
-        "pmInsight": {
-          "zh": "两者都是「模型之外的差异化层」：记忆决定 Agent 能否长期陪伴，品味决定产出能否直接交付。它们以技能/插件形式跨工具复用，说明 Agent 生态正在形成独立于模型厂商的中间层。PM 应评估自研还是接入这类层，并明确记忆的数据边界与可解释性。",
-          "en": "Both are differentiation layers outside the model: memory determines whether an agent can accompany users long-term, taste determines whether output ships as-is. Their cross-tool skill/plugin form shows a middleware layer forming independent of model vendors. PMs should decide build vs. integrate and define memory data boundaries and explainability."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "GitHub · thedotmack/claude-mem",
-            "url": "https://github.com/thedotmack/claude-mem"
           },
-          {
-            "label": "GitHub · pbakaus/impeccable",
-            "url": "https://github.com/pbakaus/impeccable"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "企业级「可管控 AI 同事」与 Agent 专用浏览器同步升温",
-          "en": "Governable AI coworkers and agent-native browsers heat up together"
-        },
-        "category": {
-          "zh": "企业应用",
-          "en": "Enterprise Applications"
-        },
-        "summary": {
-          "zh": "CopilotKit/OpenBot 创建约三个月积累近 9000 星，今日新增 706 星、全球趋势榜第 4，每个 AI 同事拥有独立浏览器、文件和工具权限，执行前决策、执行后留痕，可接入任意 AG-UI Agent；lightpanda-io/browser 维护约 45 个月、近 3.9 万星，今日新增 626 星、趋势榜第 15，用 Zig 从零重写无头浏览器，官方称比 Chromium 轻 16 倍、快 9 倍，兼容 Puppeteer 与 Playwright。",
-          "en": "CopilotKit/OpenBot reached nearly 9,000 stars in about three months, adding 706 today at #4 globally, giving each AI coworker its own browser, file, and tool permissions with pre-action decisions and post-action audit trails, compatible with any AG-UI agent; lightpanda-io/browser, maintained ~45 months at ~38.7k stars, added 626 today at #15, a Zig rewrite of a headless browser claimed 16x lighter and 9x faster than Chromium, compatible with Puppeteer and Playwright."
-        },
-        "pmInsight": {
-          "zh": "OpenBot 的「权限隔离 + 执行留痕」与 lightpanda 的「为自动化重写浏览器」是同一需求的两端：Agent 要进入企业流程，必须同时解决可审计与运行成本。PM 可把「每个 Agent 的权限边界与操作日志」作为企业版的核心卖点，而非附加功能。",
-          "en": "OpenBot's permission isolation plus audit trail and lightpanda's automation-first browser are two ends of one need: for agents to enter enterprise workflows, auditability and runtime cost must both be solved. PMs can make per-agent permission boundaries and action logs the core enterprise pitch, not an add-on."
-        },
-        "impact": "Medium",
-        "sources": [
           {
             "label": "GitHub · CopilotKit/OpenBot",
             "url": "https://github.com/CopilotKit/OpenBot"
-          },
-          {
-            "label": "GitHub · lightpanda-io/browser",
-            "url": "https://github.com/lightpanda-io/browser"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "安全与合规成为 Agent 产品的前置约束",
-          "en": "Safety and compliance become upfront constraints for agents"
-        },
-        "category": {
-          "zh": "政策/安全",
-          "en": "Policy & Safety"
-        },
-        "summary": {
-          "zh": "OpenAI 发布社区安全报告并强化青少年保护，扩大防护范围、提前干预并新增公共安全报告承诺；Epoch AI 报告显示开源权重模型 GLM 5.3 可利用补丁发布到用户更新之间的缺口，以约 1000 美元成本攻破多个 Firefox 版本。",
-          "en": "OpenAI published a community safety report and strengthened teen protections with broader coverage, earlier intervention, and new public safety reporting commitments; Epoch AI reports that open-weight model GLM 5.3 can exploit the gap between patch release and user update, breaching multiple Firefox versions at roughly $1,000."
-        },
-        "pmInsight": {
-          "zh": "一边是平台主动抬高合规基线，一边是低成本攻击被实证，二者共同压缩了「先上线再补安全」的空间。对做浏览器自动化或读屏操作的 Agent 产品，这意味着权限最小化、操作确认与版本更新策略需要写进产品设计，而非事后补丁。",
-          "en": "Platforms raising the compliance baseline while low-cost attacks are empirically demonstrated narrows the room for ship-first-patch-later. For agents doing browser automation or screen reading, least privilege, action confirmation, and update strategy must be designed in, not patched later."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "OpenAI · Community safety report",
-            "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
-          },
-          {
-            "label": "Epoch AI · Open-weight models patch gap",
-            "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
           }
         ]
       }
@@ -176,59 +147,55 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向手机 Agent 的「权限与回滚」中间件假设",
-          "en": "Hypothesis: permission-and-rollback middleware for mobile agents"
+          "zh": "为 Agent 记忆提供「可编辑上下文面板」",
+          "en": "An editable context panel for agent memory"
         },
         "category": {
           "zh": "产品机会",
-          "en": "Product Opportunity"
+          "en": "Product opportunity"
         },
         "summary": {
-          "zh": "基于 Mika 与 DSH-Android 的免 ROOT 路径，假设用户对手机 Agent 的最大顾虑不是任务能力，而是「它动了什么、能不能撤回」。可验证方式：在同类 APK 方案中提供逐步操作预览与一键回滚，观察任务完成率与授权率的变化。",
-          "en": "Given the no-root paths of Mika and DSH-Android, hypothesize that users' main concern with mobile agents is not task capability but what was touched and whether it can be undone. Validate by adding step previews and one-tap rollback to comparable APK agents and measuring task completion and authorization rates."
+          "zh": "基于 claude-mem 这类记忆层组件，构建面向终端用户的记忆查看与编辑界面：展示被压缩注入的上下文、允许删除或置顶条目、标注来源会话。",
+          "en": "Build an end-user memory viewer and editor on top of memory layers like claude-mem: show compressed injected context, allow deleting or pinning entries, and label source sessions."
         },
         "pmInsight": {
-          "zh": "若授权率随回滚能力显著上升，则「可控性」应作为手机 Agent 的一级功能而非设置项；若不上升，说明瓶颈仍在任务成功率，应优先投入读屏理解与异常恢复。",
-          "en": "If authorization rises materially with rollback, controllability should be a first-class feature, not a setting; if not, the bottleneck remains task success, and investment should go to screen understanding and exception recovery."
+          "zh": "可验证假设：在 Agent 产品中加入记忆编辑面板后，用户对「Agent 记错事」的投诉率下降，且二次会话的任务完成率提升。可先在小范围用户中对比有无面板的留存差异。",
+          "en": "Testable hypothesis: adding a memory editing panel reduces complaints about agents misremembering and improves task completion in follow-up sessions. Start with a small A/B test on retention with and without the panel."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "GitHub · wangzan101/Mika",
-            "url": "https://github.com/wangzan101/Mika"
-          },
-          {
-            "label": "GitHub · jackwener/DSH-Android",
-            "url": "https://github.com/jackwener/DSH-Android"
+            "label": "GitHub · thedotmack/claude-mem",
+            "url": "https://github.com/thedotmack/claude-mem"
           }
         ]
       },
       {
         "title": {
-          "zh": "企业 Agent 的「操作审计即卖点」假设",
-          "en": "Hypothesis: action audit as the enterprise agent selling point"
+          "zh": "把「交付前设计评审」做成编程 Agent 的默认技能",
+          "en": "Make pre-delivery design review a default coding-agent skill"
         },
         "category": {
-          "zh": "商业化",
-          "en": "Monetization"
+          "zh": "产品机会",
+          "en": "Product opportunity"
         },
         "summary": {
-          "zh": "基于 OpenBot 的权限隔离与执行留痕、lightpanda 的低成本自动化浏览器，假设企业采购 Agent 时，审计日志与权限边界的权重高于单任务能力。可验证方式：在试点中对比「能力清单」与「审计与权限清单」两类材料的决策影响。",
-          "en": "Drawing on OpenBot's permission isolation and audit trails plus lightpanda's low-cost automation browser, hypothesize that enterprises weigh audit logs and permission boundaries above single-task capability when buying agents. Validate by comparing decision impact of capability-first versus audit-and-permission-first materials in pilots."
+          "zh": "参考 impeccable 的 critique/audit 词汇与 Copilot Fusion 的多模型路由，为编程 Agent 提供可开关的交付前检查清单：界面一致性、可访问性、组件复用，并输出可执行的修改建议。",
+          "en": "Drawing on impeccable's critique/audit vocabulary and Copilot Fusion's multi-model routing, offer coding agents a toggleable pre-delivery checklist covering UI consistency, accessibility and component reuse, with actionable fix suggestions."
         },
         "pmInsight": {
-          "zh": "若审计材料更能推进采购决策，则产品路线应把日志、权限与回放做成可演示模块，并以此定价分层；否则说明能力仍是唯一门槛，审计可作为差异化补充。",
-          "en": "If audit materials advance procurement more, the roadmap should make logs, permissions, and replay demo-ready modules and price tiers around them; otherwise capability remains the sole gate and audit is a differentiator."
+          "zh": "可验证假设：开启交付前设计评审后，AI 生成界面的返工次数下降，开发者对生成结果的采纳率上升。可用同一批任务对比开启与关闭评审的修改轮次。",
+          "en": "Testable hypothesis: enabling pre-delivery design review reduces rework on AI-generated UI and raises developer adoption of generated output. Compare revision rounds on the same task set with review on and off."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "GitHub · CopilotKit/OpenBot",
-            "url": "https://github.com/CopilotKit/OpenBot"
+            "label": "GitHub · pbakaus/impeccable",
+            "url": "https://github.com/pbakaus/impeccable"
           },
           {
-            "label": "GitHub · lightpanda-io/browser",
-            "url": "https://github.com/lightpanda-io/browser"
+            "label": "Product Hunt · GitHub Copilot Fusion",
+            "url": "https://www.producthunt.com/products/github-copilot-fusion"
           }
         ]
       }
@@ -244,26 +211,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一款运行在安卓手机上的私人 AI 助理，能代替用户操作各类 App、浏览网页并完成具体任务，把「动口不动手」的移动端自动化变成现实。",
+          "zh": "一款运行在安卓手机上的本地 AI 助理，能代替用户操作各类 App、浏览网页并完成具体任务，无需把数据交给云端。适合希望用一句话交代事情、由手机自动执行的日常场景。",
           "en": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you."
         },
-        "totalStars": 2007,
+        "totalStars": 2053,
         "language": "Kotlin",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一款运行在安卓手机上的私人 AI 助理，能代替用户操作各类 App、浏览网页并完成具体任务，把「动口不动手」的移动端自动化变成现实。",
+          "zh": "一款运行在安卓手机上的本地 AI 助理，能代替用户操作各类 App、浏览网页并完成具体任务，无需把数据交给云端。适合希望用一句话交代事情、由手机自动执行的日常场景。",
           "en": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即积累 2007 星、322 次 fork，作为新晋上升项目进入视野，手机端 Agent 这一细分方向正在升温。",
+          "zh": "项目创建仅约一个月，已积累 2053 stars、327 forks，今日进入上升榜，反映出「手机端本地 Agent」这一方向正在升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,007 stars、322 forks，topics: accessibility, ai-agent, android, automation, jetpack-compose，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,007 stars and 322 forks，topics: accessibility, ai-agent, android, automation, jetpack-compose, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,053 stars、327 forks，topics: accessibility, ai-agent, android, automation, jetpack-compose，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,053 stars and 327 forks，topics: accessibility, ai-agent, android, automation, jetpack-compose, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察手机端 Agent 如何在不越权的前提下获取操作权限，以及「替用户点 App」这类能力的产品边界与信任设计。",
+          "zh": "值得观察手机端 Agent 如何在不越权的前提下获得操作 App 的能力，以及本地运行对隐私叙事和用户信任的加成。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -271,46 +238,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/wangzan101/Mika"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "jackwener/DSH-Android",
-          "en": "jackwener/DSH-Android"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "把 DeepSeek Harness 引擎直接内嵌进安卓 App，无需 ROOT、无需 Termux 或电脑，一个 APK 就能让 AI 读屏操作 App、整理文件、修改系统设置并执行定时或条件自动化。",
-          "en": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku"
-        },
-        "totalStars": 571,
-        "language": "Kotlin",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "把 DeepSeek Harness 引擎直接内嵌进安卓 App，无需 ROOT、无需 Termux 或电脑，一个 APK 就能让 AI 读屏操作 App、整理文件、修改系统设置并执行定时或条件自动化。",
-          "en": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku"
-        },
-        "todayHighlight": {
-          "zh": "项目上线约一个月获得 571 星，免 ROOT 的「装个 APK 就能用」路径降低了手机 Agent 的体验门槛，在安卓自动化圈层持续获得关注。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 571 stars、58 forks，topics: ai-agent, android, deepseek, deepseek-harness, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 571 stars and 58 forks，topics: ai-agent, android, deepseek, deepseek-harness, llm, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "可关注它如何用 Shizuku 等可选方案平衡系统权限与易用性，这是移动端 Agent 落地的关键取舍。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/jackwener/DSH-Android"
           }
         ]
       },
@@ -324,26 +251,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "收录 232 个像素风特效动画，每个都是一小段可运行代码，涵盖火焰、爆炸、魔法、天气、UI 等；同时提供 Claude Code 技能，让 AI 帮你生成新的特效。",
+          "zh": "收录 232 个像素风特效与动画，每个都是可独立运行的小段代码，可直接用于浏览器游戏，或导出精灵图给任意引擎使用；另附一个 Claude Code 技能，帮用户自制特效。",
           "en": "232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own."
         },
-        "totalStars": 562,
+        "totalStars": 601,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "收录 232 个像素风特效动画，每个都是一小段可运行代码，涵盖火焰、爆炸、魔法、天气、UI 等；同时提供 Claude Code 技能，让 AI 帮你生成新的特效。",
+          "zh": "收录 232 个像素风特效与动画，每个都是可独立运行的小段代码，可直接用于浏览器游戏，或导出精灵图给任意引擎使用；另附一个 Claude Code 技能，帮用户自制特效。",
           "en": "232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own."
         },
         "todayHighlight": {
-          "zh": "创建仅一天多便获得 562 星，像素美术与 AI 技能生成的组合在独立游戏开发者中快速传播。",
+          "zh": "项目上线约一个月即获得 601 stars，今日出现在上升榜，像素美术与 AI 技能结合的定位在独立游戏开发者中快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 562 stars、77 forks，topics: agent-skills, animation, canvas, claude-code-plugin, gamedev，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 562 stars and 77 forks，topics: agent-skills, animation, canvas, claude-code-plugin, gamedev, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 601 stars、83 forks，topics: agent-skills, animation, canvas, claude-code-plugin, gamedev，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 601 stars and 83 forks，topics: agent-skills, animation, canvas, claude-code-plugin, gamedev, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察「素材库 + Agent 技能」这种组合形态，如何把创作者工具变成可被 AI 调用的能力模块。",
+          "zh": "可关注「素材库 + Agent 技能」这种打包方式，如何把一次性资源变成可被 AI 反复调用的生产能力。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -351,6 +278,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/patch-gg/pixelfx"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "jackwener/DSH-Android",
+          "en": "jackwener/DSH-Android"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "把 DeepSeek Harness 引擎直接内嵌进安卓 App，免 ROOT、免 Termux，一个 APK 就能让 AI 读屏操作 App、整理文件、修改系统设置并执行定时或条件自动化任务。",
+          "en": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku"
+        },
+        "totalStars": 575,
+        "language": "Kotlin",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "把 DeepSeek Harness 引擎直接内嵌进安卓 App，免 ROOT、免 Termux，一个 APK 就能让 AI 读屏操作 App、整理文件、修改系统设置并执行定时或条件自动化任务。",
+          "en": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku"
+        },
+        "todayHighlight": {
+          "zh": "创建不到一周已获 575 stars，今日继续在上升榜获得关注，与 Mika 同属手机 Agent 赛道，形成话题共振。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 575 stars、59 forks，topics: ai-agent, android, deepseek, deepseek-harness, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 575 stars and 59 forks，topics: ai-agent, android, deepseek, deepseek-harness, llm, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "应留意「免 ROOT 装一个 App 就能用」这种低门槛路径，它可能决定手机 Agent 能否从极客走向普通用户。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/jackwener/DSH-Android"
           }
         ]
       },
@@ -364,26 +331,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "给 AI 编程助手注入设计品味的技能集，用 polish、bolder、critique、audit 等指令引导生成结果，在代码交付前拦截千篇一律的「AI 味」界面。",
+          "zh": "给 AI 编程助手补上一套设计词汇：用 polish、bolder 调整风格，用 critique、audit 做评审，在代码交付前拦住千篇一律的 AI 界面。兼容 Claude Code、Cursor、Codex 等主流编程工具。",
           "en": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
         },
-        "totalStars": 97550,
+        "totalStars": 97588,
         "language": "Rust",
         "dailyStars": 2300,
         "chineseIntro": {
-          "zh": "给 AI 编程助手注入设计品味的技能集，用 polish、bolder、critique、audit 等指令引导生成结果，在代码交付前拦截千篇一律的「AI 味」界面。",
+          "zh": "给 AI 编程助手补上一套设计词汇：用 polish、bolder 调整风格，用 critique、audit 做评审，在代码交付前拦住千篇一律的 AI 界面。兼容 Claude Code、Cursor、Codex 等主流编程工具。",
           "en": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
         },
         "todayHighlight": {
-          "zh": "总 star 已接近 9.8 万，今日新增 2300 星并位列全球趋势榜第 3，创建约一年仍在加速获得关注。",
+          "zh": "总 star 已接近 9.8 万，今日新增 2300，位列全球趋势榜第 3，说明「反 AI 味设计」已成为编程 Agent 生态中的高频需求。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 97k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,300 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 97,550 stars、5,748 forks，topics: agent-skills, ai, anti-slop, design, slop，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 97,550 stars and 5,748 forks，topics: agent-skills, ai, anti-slop, design, slop, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 97,588 stars、5,751 forks，topics: agent-skills, ai, anti-slop, design, slop，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 97,588 stars and 5,751 forks，topics: agent-skills, ai, anti-slop, design, slop, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "「反 AI 垃圾产出」正在成为独立的产品卖点，值得观察设计质量如何被拆解成可复用的 Agent 指令。",
+          "zh": "值得观察设计规范如何被产品化为 Agent 可调用的指令集，这可能是提升 AI 生成界面质量的最低成本杠杆。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -404,26 +371,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为各类 AI 编程 Agent 提供跨会话的持久记忆：自动记录会话过程，用 AI 压缩后在未来会话中注入相关上下文，兼容 Claude Code、Codex、Gemini 等多种工具。",
+          "zh": "为各类 AI Agent 提供跨会话的持久记忆：记录会话中发生的一切，用 AI 压缩后，在后续会话中注入相关上下文。支持 Claude Code、Codex、Gemini、Copilot 等多种工具。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
-        "totalStars": 106860,
+        "totalStars": 106904,
         "language": "TypeScript",
         "dailyStars": 1140,
         "chineseIntro": {
-          "zh": "为各类 AI 编程 Agent 提供跨会话的持久记忆：自动记录会话过程，用 AI 压缩后在未来会话中注入相关上下文，兼容 Claude Code、Codex、Gemini 等多种工具。",
+          "zh": "为各类 AI Agent 提供跨会话的持久记忆：记录会话中发生的一切，用 AI 压缩后，在后续会话中注入相关上下文。支持 Claude Code、Codex、Gemini、Copilot 等多种工具。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
         "todayHighlight": {
-          "zh": "总 star 已超 10.6 万，今日新增 1140 星并位居全球趋势榜第 1，作为 Agent 记忆层的基础组件随生态扩张持续升温。",
+          "zh": "总 star 已超 10.6 万，今日新增 1140，位居全球趋势榜第 1，作为 Agent 记忆层的基础组件持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 106k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,140 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 106,860 stars、9,399 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 106,860 stars and 9,399 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 106,904 stars、9,400 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 106,904 stars and 9,400 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "记忆正从模型能力变成独立基础设施，产品经理应关注上下文压缩与召回质量如何影响 Agent 的实际可用性。",
+          "zh": "记忆正从单个产品的功能演变为跨工具的公共基础设施，产品经理需要思考上下文归属与用户数据边界。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -444,26 +411,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的企业级 AI 同事平台，每个 AI 同事拥有独立浏览器、文件和工具权限，所有动作执行前先决策、执行后留记录，可接入任意 AG-UI Agent。",
+          "zh": "开源的「AI 同事」平台：每个 AI 同事拥有独立浏览器、文件和工具权限，行动前先决策、行动后留记录，可接入任意 AG-UI Agent，并部署在企业自有基础设施上。",
           "en": "Star CopilotKit / OpenBot Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent."
         },
-        "totalStars": 8998,
+        "totalStars": 9020,
         "language": "TypeScript",
         "dailyStars": 706,
         "chineseIntro": {
-          "zh": "开源的企业级 AI 同事平台，每个 AI 同事拥有独立浏览器、文件和工具权限，所有动作执行前先决策、执行后留记录，可接入任意 AG-UI Agent。",
+          "zh": "开源的「AI 同事」平台：每个 AI 同事拥有独立浏览器、文件和工具权限，行动前先决策、行动后留记录，可接入任意 AG-UI Agent，并部署在企业自有基础设施上。",
           "en": "Star CopilotKit / OpenBot Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent."
         },
         "todayHighlight": {
-          "zh": "创建约三个月积累近 9000 星，今日新增 706 星并位列全球趋势榜第 4，企业自建可管控 AI 助手的叙事带动关注。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 3 个月便已积累 8,998 stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 706 星."
+          "zh": "创建约三个月已积累 9020 stars，今日新增 706，位列全球趋势榜第 4，企业自建可审计 AI 助手的叙事带动了增长。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 创建仅约 3 个月便已积累 9,020 stars, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 706 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,998 stars、1,123 forks，topics: ag-ui, agent-governance, ai-agents, browser-automation, copilotkit，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,998 stars and 1,123 forks，topics: ag-ui, agent-governance, ai-agents, browser-automation, copilotkit, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,020 stars、1,125 forks，topics: ag-ui, agent-governance, ai-agents, browser-automation, copilotkit，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,020 stars and 1,125 forks，topics: ag-ui, agent-governance, ai-agents, browser-automation, copilotkit, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注「动作前审批、动作后留痕」的治理设计，这是企业愿意把 AI 同事放进真实工作流的前提。",
+          "zh": "可关注「可治理的 AI 同事」这一产品形态，权限、审计与私有部署正成为企业采购 Agent 时的核心考量。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -484,26 +451,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "从零为 AI 与自动化场景打造的轻量无头浏览器，不基于 Chromium 或 WebKit，而是用 Zig 重写，官方称比 Chromium 轻 16 倍、快 9 倍，兼容 Puppeteer、Playwright 等常用接口。",
+          "zh": "从零为 AI 与自动化场景打造的无头浏览器，并非 Chromium 或 WebKit 的分支，官方称比 Chromium 轻 16 倍、快 9 倍，兼容 Playwright、Puppeteer 等常用接口。",
           "en": "Star lightpanda-io / browser Lightpanda: the headless browser designed for AI and automation"
         },
-        "totalStars": 38716,
+        "totalStars": 38733,
         "language": "Zig",
         "dailyStars": 626,
         "chineseIntro": {
-          "zh": "从零为 AI 与自动化场景打造的轻量无头浏览器，不基于 Chromium 或 WebKit，而是用 Zig 重写，官方称比 Chromium 轻 16 倍、快 9 倍，兼容 Puppeteer、Playwright 等常用接口。",
+          "zh": "从零为 AI 与自动化场景打造的无头浏览器，并非 Chromium 或 WebKit 的分支，官方称比 Chromium 轻 16 倍、快 9 倍，兼容 Playwright、Puppeteer 等常用接口。",
           "en": "Star lightpanda-io / browser Lightpanda: the headless browser designed for AI and automation"
         },
         "todayHighlight": {
-          "zh": "项目已维护约 45 个月、积累近 3.9 万星，今日新增 626 星并位列全球趋势榜第 15，随 Agent 抓取与自动化需求增长重新获得关注。",
+          "zh": "项目已持续约 45 个月，总 star 达 3.87 万，今日新增 626 并位列全球趋势榜第 15，随 Agent 抓取与自动化需求升温而重新获得关注。",
           "en": "登上 GitHub Trending 日榜第 15 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 626 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,716 stars、1,884 forks，topics: browser, browser-automation, cdp, headless, lightpanda，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,716 stars and 1,884 forks，topics: browser, browser-automation, cdp, headless, lightpanda, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 38,733 stars、1,883 forks，topics: browser, browser-automation, cdp, headless, lightpanda，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 38,733 stars and 1,883 forks，topics: browser, browser-automation, cdp, headless, lightpanda, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "当 Agent 需要大量访问网页时，浏览器本身的资源成本会成为瓶颈，值得观察这类专用基础设施的替代空间。",
+          "zh": "当 Agent 大量访问网页时，浏览器本身的成本与性能会成为瓶颈，值得评估这类专用基础设施对产品体验和成本结构的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -524,26 +491,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "集多 IM 平台、多模型、插件与 AI 能力于一体的 Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等聊天渠道，作为开源的聊天机器人方案长期维护。",
+          "zh": "集成了 QQ、Telegram、Discord 等大量即时通讯平台与大模型、插件、MCP 的 AI Agent 助手与开发框架，可作为 OpenClaw 的替代方案，快速搭建聊天机器人与自动化助手。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
-        "totalStars": 45174,
+        "totalStars": 45177,
         "language": "Python",
         "dailyStars": 324,
         "chineseIntro": {
-          "zh": "集多 IM 平台、多模型、插件与 AI 能力于一体的 Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等聊天渠道，作为开源的聊天机器人方案长期维护。",
+          "zh": "集成了 QQ、Telegram、Discord 等大量即时通讯平台与大模型、插件、MCP 的 AI Agent 助手与开发框架，可作为 OpenClaw 的替代方案，快速搭建聊天机器人与自动化助手。",
           "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
         },
         "todayHighlight": {
-          "zh": "项目已运营近四年、积累 4.5 万星，今日新增 324 星并位列中文趋势榜第 5，在中文社群中持续获得稳定关注。",
+          "zh": "项目已运营约 47 个月，总 star 达 4.5 万，今日新增 324，位列中文趋势榜第 5，多平台接入能力使其在中文社区持续获得关注。",
           "en": "登上 GitHub 中文 Trending 日榜第 5 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 324 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,174 stars、3,311 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,174 stars and 3,311 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 45,177 stars、3,311 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 45,177 stars and 3,311 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察多平台接入与插件生态如何构成聊天机器人的长期壁垒，而非单点模型能力。",
+          "zh": "可观察多 IM 平台统一接入的框架价值，它降低了聊天机器人产品的渠道适配成本，也决定了插件生态的扩展速度。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -564,26 +531,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 在文档处理等专门任务上按可复现的方式完成工作。",
+          "zh": "Anthropic 官方维护的 Agent Skills 仓库，以文件夹形式封装指令、脚本与资源，让 Claude 能按可复现的方式完成文档处理等专项任务。",
           "en": "Star anthropics / skills Public repository for Agent Skills"
         },
-        "totalStars": 185605,
+        "totalStars": 185638,
         "language": "Python",
         "dailyStars": 295,
         "chineseIntro": {
-          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 在文档处理等专门任务上按可复现的方式完成工作。",
+          "zh": "Anthropic 官方维护的 Agent Skills 仓库，以文件夹形式封装指令、脚本与资源，让 Claude 能按可复现的方式完成文档处理等专项任务。",
           "en": "Star anthropics / skills Public repository for Agent Skills"
         },
         "todayHighlight": {
-          "zh": "总 star 已超 18.5 万，今日新增 295 星并位列全球趋势榜第 11，作为 Agent Skills 标准的官方参考实现持续获得关注。",
+          "zh": "总 star 已达 18.5 万，今日新增 295，位列全球趋势榜第 11，作为 Agent Skills 标准的参考实现持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 11 位, 总 star 数已达 185k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 295 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,605 stars、21,914 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,605 stars and 21,914 forks，topics: agent-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 185,638 stars、21,916 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 185,638 stars and 21,916 forks，topics: agent-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "技能正在成为 Agent 能力的封装单位，产品经理应关注官方标准如何影响第三方工具与生态的接入方式。",
+          "zh": "官方标准仓库的走向会影响整个 Agent 技能生态的接口规范，产品经理应关注技能如何被分发、安装与复用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -604,18 +571,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "企业级 AI 低代码平台，用一句话即可生成前后端代码甚至整套系统，AI Skills 支持画流程、设计表单、生成报表与大屏，并内置 AI 聊天、知识库、流程编排、MCP 插件等能力。",
-          "en": "Star jeecgboot / JeecgBoot 【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。"
+          "zh": "企业级 AI 低代码平台，一句话即可生成前后端代码乃至整个系统，AI Skills 可画流程、设计表单、生成报表与大屏，并内置 AI 聊天、知识库、流程编排、MCP 插件等能力。",
+          "en": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。"
         },
         "totalStars": 48350,
         "language": "Java",
         "dailyStars": 21,
         "chineseIntro": {
-          "zh": "企业级 AI 低代码平台，用一句话即可生成前后端代码甚至整套系统，AI Skills 支持画流程、设计表单、生成报表与大屏，并内置 AI 聊天、知识库、流程编排、MCP 插件等能力。",
-          "en": "Star jeecgboot / JeecgBoot 【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。"
+          "zh": "企业级 AI 低代码平台，一句话即可生成前后端代码乃至整个系统，AI Skills 可画流程、设计表单、生成报表与大屏，并内置 AI 聊天、知识库、流程编排、MCP 插件等能力。",
+          "en": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。"
         },
         "todayHighlight": {
-          "zh": "项目已维护约八年、积累 4.8 万星，今日新增 21 星并位列中文趋势榜第 6，属于长期在榜的成熟项目。",
+          "zh": "项目已运营约 97 个月，总 star 达 4.8 万，今日新增 21，位列中文趋势榜第 6，AI 低代码的「Skills 生成」模式使其在存量项目中保持活跃。",
           "en": "登上 GitHub 中文 Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 21 星."
         },
         "inclusionReason": {
@@ -623,7 +590,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,350 stars and 16,221 forks，topics: activiti, agent, ai, antd, claude-code, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察传统低代码平台如何借 Skills 与代码生成重塑开发流程，以及「生成后仍可手工修改」这一折中设计的价值。",
+          "zh": "可关注老牌低代码平台如何借 Agent 技能重塑开发流程，以及「生成 + 手工合并」这种折中模式对交付效率的实际影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -650,19 +617,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "OpenAI 发布社区安全报告，并针对青少年用户强化暴力预防机制，包括扩大防护范围、提前干预和新增公共安全报告承诺。",
+          "zh": "OpenAI 发布社区安全报告，并针对 ChatGPT 中的青少年用户加强暴力预防措施，包括扩展防护机制和更早的干预。",
           "en": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布社区安全报告，并针对青少年用户强化暴力预防机制，包括扩大防护范围、提前干预和新增公共安全报告承诺。",
+          "zh": "OpenAI 发布社区安全报告，并针对 ChatGPT 中的青少年用户加强暴力预防措施，包括扩展防护机制和更早的干预。",
           "en": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
         },
         "todayHighlight": {
-          "zh": "在监管压力与青少年保护议题升温之际，OpenAI 主动加码安全基建，可能为行业设定新的合规基线。",
-          "en": "在监管压力与青少年保护议题升温之际，OpenAI 主动加码安全基建，可能为行业设定新的合规基线。"
+          "zh": "在监管压力增大之际，OpenAI 主动加码安全承诺，可能为行业设定青少年保护的新基准。",
+          "en": "在监管压力增大之际，OpenAI 主动加码安全承诺，可能为行业设定青少年保护的新基准。"
         },
         "pmInsight": {
-          "zh": "若产品涉及未成年用户，应尽快梳理现有安全策略与 OpenAI 新防护的差距，评估是否需要引入类似的前置干预与报告机制。",
+          "zh": "涉及青少年用户的产品团队应审查内容过滤与干预流程，考虑引入年龄分层策略和主动上报机制。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -687,19 +654,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "IBM 在 Hugging Face 发布 Granite Switch 4.1.1 补丁版，以软件更新方式增量升级适配器，新增多语言语音识别和决策适配器，基础模型无需重训。",
+          "zh": "IBM 在 Hugging Face 发布 Granite Switch 4.1.1 补丁版本，以软件更新的方式增量升级适配器，新增多语言语音识别和决策适配器。",
           "en": "Granite Switch 4.1.1 — Update models like you update software"
         },
         "chineseIntro": {
-          "zh": "IBM 在 Hugging Face 发布 Granite Switch 4.1.1 补丁版，以软件更新方式增量升级适配器，新增多语言语音识别和决策适配器，基础模型无需重训。",
+          "zh": "IBM 在 Hugging Face 发布 Granite Switch 4.1.1 补丁版本，以软件更新的方式增量升级适配器，新增多语言语音识别和决策适配器。",
           "en": "Granite Switch 4.1.1 — Update models like you update software"
         },
         "todayHighlight": {
-          "zh": "这种“模型即软件”的模块化更新模式，可能大幅降低企业定制与迭代成本，挑战传统全量微调范式。",
-          "en": "这种“模型即软件”的模块化更新模式，可能大幅降低企业定制与迭代成本，挑战传统全量微调范式。"
+          "zh": "这种模块化、向后兼容的更新模式可能改变企业部署 AI 模型的维护方式，降低升级成本。",
+          "en": "这种模块化、向后兼容的更新模式可能改变企业部署 AI 模型的维护方式，降低升级成本。"
         },
         "pmInsight": {
-          "zh": "评估现有模型迭代流程是否可拆分为可独立更新的适配器，优先在语音转写等高频场景试点增量升级。",
+          "zh": "产品团队可评估采用适配器架构，将模型更新与基础模型解耦，以加快迭代速度并减少迁移风险。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -707,43 +674,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Hugging Face",
             "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News AI: Open-weight AI models can exploit the patch gap",
-          "en": "Hacker News AI: Open-weight AI models can exploit the patch gap"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "Epoch AI 报告显示，开源权重模型 GLM 5.3 可利用软件补丁发布到用户更新之间的“补丁缺口”，以约 1000 美元成本攻破多个 Firefox 版本。",
-          "en": "Article URL: https://epoch.ai/publications/open-weight-models-patch-gap Comments URL: https://news.ycombinator.com/item?id=50314276 Points: 1 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "Epoch AI 报告显示，开源权重模型 GLM 5.3 可利用软件补丁发布到用户更新之间的“补丁缺口”，以约 1000 美元成本攻破多个 Firefox 版本。",
-          "en": "Article URL: https://epoch.ai/publications/open-weight-models-patch-gap Comments URL: https://news.ycombinator.com/item?id=50314276 Points: 1 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "这首次实证开源模型可低成本武器化补丁缺口，可能迫使浏览器与操作系统厂商重新评估发布节奏与安全策略。",
-          "en": "这首次实证开源模型可低成本武器化补丁缺口，可能迫使浏览器与操作系统厂商重新评估发布节奏与安全策略。"
-        },
-        "pmInsight": {
-          "zh": "若产品依赖开源模型或浏览器内核，应审查补丁发布与强制更新之间的窗口期，并考虑缩短静默更新周期。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
           }
         ]
       },
@@ -761,19 +691,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "GitHub 在 Meta API 的 hooks 字段中新增 webhook 投递 IP 段，使用静态白名单的开发者需手动添加三个 CIDR 前缀以避免拒收。",
+          "zh": "GitHub 在 Meta API 中新增 webhook 投递的 IP 范围，使用静态允许列表的开发者需更新 CIDR 前缀以避免拒绝投递。",
           "en": "We&#8217;re adding IP ranges for GitHub webhook deliveries on github.com. The Meta API now includes these additional ranges in the hooks field. If you maintain a static network allowlist for&#8230; The post Webhook IP ranges added to the Meta API appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 在 Meta API 的 hooks 字段中新增 webhook 投递 IP 段，使用静态白名单的开发者需手动添加三个 CIDR 前缀以避免拒收。",
+          "zh": "GitHub 在 Meta API 中新增 webhook 投递的 IP 范围，使用静态允许列表的开发者需更新 CIDR 前缀以避免拒绝投递。",
           "en": "We&#8217;re adding IP ranges for GitHub webhook deliveries on github.com. The Meta API now includes these additional ranges in the hooks field. If you maintain a static network allowlist for&#8230; The post Webhook IP ranges added to the Meta API appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "看似微小的基础设施变更，却可能静默中断依赖静态白名单的 CI/CD 流水线，凸显平台 API 变更的连锁风险。",
-          "en": "看似微小的基础设施变更，却可能静默中断依赖静态白名单的 CI/CD 流水线，凸显平台 API 变更的连锁风险。"
+          "zh": "这提醒依赖 webhook 的集成产品必须动态管理网络配置，否则可能中断服务。",
+          "en": "这提醒依赖 webhook 的集成产品必须动态管理网络配置，否则可能中断服务。"
         },
         "pmInsight": {
-          "zh": "检查团队是否维护静态 webhook 白名单，若是则立即更新并推动迁移到 Meta API 动态获取，避免投递失败。",
+          "zh": "检查产品中是否硬编码了 GitHub webhook IP，并改用 Meta API 动态获取，以提升鲁棒性。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -798,19 +728,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "LocalLLaMA 社区热议 Fable 5 的 GGUF 量化版本何时发布，反映本地部署用户对新模型可及性的迫切期待。",
+          "zh": "LocalLLaMA 社区讨论 Fable 5 模型何时发布 GGUF 格式，反映本地部署用户对新模型量化版本的期待。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xjwtrv/fable_5gguf_when/\"> <img src=\"https://preview.redd.it/r2djpeb0cpyh1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=38d2904991aa2802453493637aeed92cec26782b\" alt=\"Fable 5.gguf when?\" title=\"Fable 5.gguf when?\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/speedb0at\"> /u/speedb0at </a> "
         },
         "chineseIntro": {
-          "zh": "LocalLLaMA 社区热议 Fable 5 的 GGUF 量化版本何时发布，反映本地部署用户对新模型可及性的迫切期待。",
+          "zh": "LocalLLaMA 社区讨论 Fable 5 模型何时发布 GGUF 格式，反映本地部署用户对新模型量化版本的期待。",
           "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xjwtrv/fable_5gguf_when/\"> <img src=\"https://preview.redd.it/r2djpeb0cpyh1.jpeg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=38d2904991aa2802453493637aeed92cec26782b\" alt=\"Fable 5.gguf when?\" title=\"Fable 5.gguf when?\" /> </a> </td><td> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/speedb0at\"> /u/speedb0at </a> "
         },
         "todayHighlight": {
-          "zh": "社区对 GGUF 的追问表明，模型发布若缺少本地量化支持，可能错失开源生态的传播窗口。",
-          "en": "社区对 GGUF 的追问表明，模型发布若缺少本地量化支持，可能错失开源生态的传播窗口。"
+          "zh": "社区对 GGUF 的迫切需求显示本地推理生态的活跃度，可能影响模型发布策略。",
+          "en": "社区对 GGUF 的迫切需求显示本地推理生态的活跃度，可能影响模型发布策略。"
         },
         "pmInsight": {
-          "zh": "若团队发布开源模型，应同步规划 GGUF 等本地格式的转换与社区沟通，避免热度被“何时能本地跑”的追问稀释。",
+          "zh": "若产品面向本地部署，应关注社区量化需求，提前规划模型格式支持以抢占用户。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -835,19 +765,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "Anthropic 将 AI for Science 计划扩展至 20 家全球科研基金会与机构，向高影响力科研项目提供免费 Claude 额度。",
+          "zh": "Anthropic 扩大 AI for Science 计划，与全球 20 个科学基金会、机构和研究组合作，提供免费 Claude 额度。",
           "en": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program, which gives free Claude credits to researchers working on high-impact scientific projects.We started the AI for Science program in May 2025 with the belief that AI could significantly speed up scientific progress. Our goal is to increase access "
         },
         "chineseIntro": {
-          "zh": "Anthropic 将 AI for Science 计划扩展至 20 家全球科研基金会与机构，向高影响力科研项目提供免费 Claude 额度。",
+          "zh": "Anthropic 扩大 AI for Science 计划，与全球 20 个科学基金会、机构和研究组合作，提供免费 Claude 额度。",
           "en": "We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of our AI for Science program, which gives free Claude credits to researchers working on high-impact scientific projects.We started the AI for Science program in May 2025 with the belief that AI could significantly speed up scientific progress. Our goal is to increase access "
         },
         "todayHighlight": {
-          "zh": "通过绑定科研基金会而非单个研究者，Anthropic 在科学发现场景构建机构级分发渠道，与 OpenAI 的学术渗透形成竞争。",
-          "en": "通过绑定科研基金会而非单个研究者，Anthropic 在科学发现场景构建机构级分发渠道，与 OpenAI 的学术渗透形成竞争。"
+          "zh": "此举加速 AI 在科研领域的渗透，可能为 Anthropic 建立学术生态壁垒并推动模型在专业场景的优化。",
+          "en": "此举加速 AI 在科研领域的渗透，可能为 Anthropic 建立学术生态壁垒并推动模型在专业场景的优化。"
         },
         "pmInsight": {
-          "zh": "关注科研机构采购决策链，评估是否可借鉴“免费额度换机构合作”模式切入垂直行业的高价值场景。",
+          "zh": "面向科研的产品可借鉴此模式，通过免费额度换取领域数据与反馈，加速垂直场景的模型调优。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -855,6 +785,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Anthropic",
             "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Product Hunt AI: GitHub Copilot Fusion",
+          "en": "Product Hunt AI: GitHub Copilot Fusion"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "GitHub 在 Product Hunt 发布 Copilot Fusion，一个能自动选择和组合多种模型的 AI 编码代理。",
+          "en": "<p> GitHub's AI coding agent that picks and combines models </p> <p> <a href=\"https://www.producthunt.com/products/github-copilot-fusion?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1296734?app_id=339\">Link</a> </p>"
+        },
+        "chineseIntro": {
+          "zh": "GitHub 在 Product Hunt 发布 Copilot Fusion，一个能自动选择和组合多种模型的 AI 编码代理。",
+          "en": "<p> GitHub's AI coding agent that picks and combines models </p> <p> <a href=\"https://www.producthunt.com/products/github-copilot-fusion?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1296734?app_id=339\">Link</a> </p>"
+        },
+        "todayHighlight": {
+          "zh": "多模型路由成为编码助手的新竞争点，可能提升复杂任务的处理效果并降低对单一模型的依赖。",
+          "en": "多模型路由成为编码助手的新竞争点，可能提升复杂任务的处理效果并降低对单一模型的依赖。"
+        },
+        "pmInsight": {
+          "zh": "评估在编码产品中引入模型路由层，根据任务类型动态选择模型，以平衡成本与性能。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Product Hunt AI",
+            "url": "https://www.producthunt.com/products/github-copilot-fusion"
           }
         ]
       }
