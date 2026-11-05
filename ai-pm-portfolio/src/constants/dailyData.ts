@@ -48,114 +48,123 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily · 2026-11-05"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 从「能跑」走向「可托管、可审计、可评估」：一边是无人值守调度、桌面操作、并行工作区等运行层工具升温，一边是 NVIDIA 语义层与 OpenAI/Ai2 新评测把可靠性与真实任务表现推到台前。",
-      "en": "Today's thread: agents are moving from 'it runs' to 'it can be hosted, audited, and evaluated' — runtime tooling (unattended loops, desktop control, parallel worktrees) is heating up while NVIDIA's semantic layer and new OpenAI/Ai2 benchmarks push reliability and real-task performance to the front."
+      "zh": "今日主线不在模型参数，而在 Agent 的「运行底座」：桌面操作、并行工作流、记忆与语义推理层同时升温，叠加 OpenAI 进入政府云合规渠道，Agent 从演示走向可交付系统的条件在变厚。",
+      "en": "Today's thread is not model scale but the agent runtime stack: desktop control, parallel workflows, memory and semantic reasoning layers are all warming up, while OpenAI enters government-cloud compliance channels — the conditions for agents to move from demos to deliverable systems are thickening."
     },
     "keyTakeaway": {
-      "zh": "Agent 的竞争重心正从模型能力转向运行与评估基础设施：谁能让 Agent 长时间无人值守地跑、在真实桌面与并行工作区里稳定交付，并用贴近真实任务的基准证明效果，谁就更容易进入企业采购清单。",
-      "en": "The competitive center of gravity for agents is shifting from raw model capability to runtime and evaluation infrastructure: whoever can keep agents running unattended, deliver reliably across real desktops and parallel worktrees, and prove it with realistic benchmarks is more likely to enter enterprise procurement lists."
+      "zh": "Agent 竞争正从「模型能力」下移到「运行与治理层」：谁能把桌面操作、并行任务、持久记忆和可解释检索做成稳定底座，谁就更可能拿到企业级交付订单。",
+      "en": "Agent competition is shifting from model capability down to the runtime and governance layer: whoever makes desktop control, parallel tasks, persistent memory and explainable retrieval into a stable foundation is more likely to win enterprise delivery deals."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 运行层集中升温：无人值守、桌面操作、并行工作区同时上榜",
-          "en": "Agent runtime layer heats up: unattended loops, desktop control, parallel worktrees all trending"
+          "zh": "Agent 开始「操作桌面」，通用执行边界外扩",
+          "en": "Agents start operating the desktop, expanding the general execution boundary"
         },
         "category": {
-          "zh": "开发者工具 / Agent 基础设施",
-          "en": "Developer Tools / Agent Infrastructure"
+          "zh": "Agent 运行时",
+          "en": "Agent Runtime"
         },
         "summary": {
-          "zh": "agent-autoloop 创建约一个月即近 2800 stars，主打关掉终端任务也不断的无人值守调度；vercel-labs/agent-desktop 今日新增 2470 stars、总 star 超 1.5 万，让 Agent 通过无障碍树操作桌面应用；worktrunk 今日新增 531 stars，解决多 Agent 并行改代码的 worktree 隔离问题。三者分别覆盖调度、执行面与协作隔离。",
-          "en": "agent-autoloop reached ~2,800 stars in about a month with unattended scheduling that survives closing the terminal; vercel-labs/agent-desktop added 2,470 stars today (15k+ total) to let agents operate desktop apps via accessibility trees; worktrunk added 531 stars today, isolating parallel agent code changes via git worktrees. Together they cover scheduling, execution surface, and collaboration isolation."
+          "zh": "Vercel Labs 的 agent-desktop 今日新增 2470 stars、位列全球趋势第 6，通过操作系统无障碍树让 Agent 看见并操作 macOS/Windows/Linux 桌面应用；同期 uncut 以无 TUI、无遥测、不裁剪上下文的克制定位数天获约 600 stars。",
+          "en": "Vercel Labs' agent-desktop added 2,470 stars today, ranking 6th globally, letting agents see and operate desktop apps on macOS/Windows/Linux via the OS accessibility tree; meanwhile uncut gained ~600 stars in days with a restrained no-TUI, no-telemetry, no-context-truncation stance."
         },
         "pmInsight": {
-          "zh": "运行层正在被拆成可插拔模块，意味着 Agent 产品的差异化会更多来自「托管与治理」而非「能不能调用模型」。PM 应评估自家 Agent 在无人值守时长、桌面/本地应用覆盖、多 Agent 冲突处理上的短板，并优先补齐可观测与中断恢复能力。",
-          "en": "The runtime layer is being modularized, so agent differentiation will come more from hosting and governance than from model access. PMs should audit gaps in unattended runtime, desktop/local app coverage, and multi-agent conflict handling, prioritizing observability and interrupt recovery."
+          "zh": "桌面操作把 Agent 的可触达任务从「有 API 的系统」扩展到「所有有界面的软件」，这是通用 Agent 产品化的关键一步；但无障碍树方案的稳定性与权限模型仍是落地瓶颈。PM 应优先评估自家高频任务中哪些必须走桌面路径，并提前设计人工确认与权限边界。",
+          "en": "Desktop control extends agent-reachable tasks from API-enabled systems to all GUI software — a key step toward general agent products; but accessibility-tree stability and permission models remain bottlenecks. PMs should assess which high-frequency tasks must go desktop-first and design human confirmation and permission boundaries early."
         },
         "impact": "High",
         "sources": [
-          {
-            "label": "KKKKhazix/agent-autoloop",
-            "url": "https://github.com/KKKKhazix/agent-autoloop"
-          },
           {
             "label": "vercel-labs/agent-desktop",
             "url": "https://github.com/vercel-labs/agent-desktop"
           },
           {
-            "label": "max-sixty/worktrunk",
-            "url": "https://github.com/max-sixty/worktrunk"
+            "label": "Balanov/uncut",
+            "url": "https://github.com/Balanov/uncut"
           }
         ]
       },
       {
         "title": {
-          "zh": "Agent 可靠性被拆成「语义层 + 记忆层 + 评测层」三条线",
-          "en": "Agent reliability splits into semantic layer, memory layer, and evaluation layer"
+          "zh": "并行 Agent 工作流催生「调度层」工具",
+          "en": "Parallel agent workflows spawn a scheduling-layer tooling category"
         },
         "category": {
-          "zh": "模型与数据基础设施",
-          "en": "Model & Data Infrastructure"
+          "zh": "开发者工作流",
+          "en": "Developer Workflow"
         },
         "summary": {
-          "zh": "NVIDIA/auto-ontology 今日新增 2050 stars、位列全球趋势榜第 1，用图结构语义层为 LLM/Agent 提供确定性查询；claude-mem 总 star 超 11 万、今日新增 1172，做跨会话持久记忆；OpenAI 发布 LifeVal 评测个性化代理式消费者任务，Ai2 在 Hugging Face 发布 StateBench 评测长文档状态追踪。",
-          "en": "NVIDIA/auto-ontology added 2,050 stars today (No.1 global trend), offering a graph-structured semantic layer for deterministic queries; claude-mem passed 113k stars (+1,172 today) for cross-session memory; OpenAI released LifeVal for personalized agentic consumer tasks, and Ai2 released StateBench on Hugging Face for long-document state tracking."
+          "zh": "worktrunk 今日新增 531 stars、位列全球趋势第 2，用 Git worktree 管理多个并行 Agent 任务互不干扰；agent-autoloop 创建约一个月积累近 2900 stars，主打「关掉终端任务也不断」并在需拍板时推送确认卡片。",
+          "en": "worktrunk added 531 stars today, ranking 2nd globally, using Git worktrees to run parallel agent tasks without interference; agent-autoloop reached ~2,900 stars in about a month, pitching 'tasks continue after closing the terminal' with confirmation cards when decisions are needed."
         },
         "pmInsight": {
-          "zh": "上下文质量正被拆成可采购的组件，且评测开始针对「个性化代理任务」和「状态追踪」这类真实短板。PM 应把 LifeVal/StateBench 这类基准纳入验收清单，并在架构上区分语义检索层与记忆层，避免把两者混在一个向量库里。",
-          "en": "Context quality is becoming procurable components, and evaluations now target real weaknesses like personalized agentic tasks and state tracking. PMs should add benchmarks like LifeVal/StateBench to acceptance criteria and separate semantic retrieval from memory in architecture rather than collapsing both into one vector store."
+          "zh": "当开发者同时跑多个 Agent，冲突管理、任务续跑和人工介入点成为新的产品面。这说明 Agent 产品的差异化正从「单次生成质量」转向「多任务编排与可控性」。PM 可关注把「确认卡片 + 任务队列」抽象为通用交互模式，用于非开发者场景。",
+          "en": "When developers run multiple agents concurrently, conflict management, task resumption and human intervention points become a new product surface. Differentiation is shifting from single-run output quality to multi-task orchestration and controllability. PMs can abstract 'confirmation cards + task queue' into a general interaction pattern for non-developer scenarios."
         },
-        "impact": "High",
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "max-sixty/worktrunk",
+            "url": "https://github.com/max-sixty/worktrunk"
+          },
+          {
+            "label": "KKKKhazix/agent-autoloop",
+            "url": "https://github.com/KKKKhazix/agent-autoloop"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Agent 可靠性议题升温：语义推理层与状态跟踪基准",
+          "en": "Agent reliability gains attention: semantic reasoning layers and state-tracking benchmarks"
+        },
+        "category": {
+          "zh": "模型与评测",
+          "en": "Models & Evaluation"
+        },
+        "summary": {
+          "zh": "NVIDIA 开源 auto-ontology 今日新增 2050 stars、登全球趋势第 1，在数据之上构建图结构推理层以生成确定性查询；Ai2 在 Hugging Face 发布 StateBench，专门评测模型在长文档中跟踪实体状态变化的能力，区分「找最新更新」与「追踪变化链」。",
+          "en": "NVIDIA open-sourced auto-ontology, adding 2,050 stars today and topping the global trend, building a graph-structured reasoning layer for deterministic queries; Ai2 released StateBench on Hugging Face to test models' ability to track entity state changes over long documents, separating 'find latest update' from 'trace change chains'."
+        },
+        "pmInsight": {
+          "zh": "两条信号指向同一问题：长上下文不等于可靠推理。语义层和状态跟踪基准为「可解释、可验证」的 Agent 提供了评估抓手。PM 应在选型时把状态跟踪准确率纳入验收指标，而非只看上下文窗口大小。",
+          "en": "Both signals point to one issue: long context is not reliable reasoning. Semantic layers and state-tracking benchmarks give evaluation handles for explainable, verifiable agents. PMs should include state-tracking accuracy in acceptance criteria rather than judging by context window size alone."
+        },
+        "impact": "Medium",
         "sources": [
           {
             "label": "NVIDIA/auto-ontology",
             "url": "https://github.com/NVIDIA/auto-ontology"
           },
           {
-            "label": "thedotmack/claude-mem",
-            "url": "https://github.com/thedotmack/claude-mem"
-          },
-          {
-            "label": "OpenAI LifeVal",
-            "url": "https://cdn.openai.com/pdf/lifeval.pdf"
-          },
-          {
-            "label": "Ai2 StateBench",
+            "label": "Hugging Face: StateBench",
             "url": "https://huggingface.co/blog/allenai/statebench"
           }
         ]
       },
       {
         "title": {
-          "zh": "合规通道与代码安全精度同步推进，企业侧门槛在变",
-          "en": "Compliance channels and code-security precision advance together, shifting enterprise thresholds"
+          "zh": "OpenAI 经 AWS GovCloud 进入政府合规渠道",
+          "en": "OpenAI enters government compliance channel via AWS GovCloud"
         },
         "category": {
-          "zh": "企业合规 / 开发者安全",
-          "en": "Enterprise Compliance / Developer Security"
+          "zh": "生态与合规",
+          "en": "Ecosystem & Compliance"
         },
         "summary": {
-          "zh": "OpenAI 将 GPT-5.6 Cyber 以 Daybreak Red 形式通过 Amazon Bedrock 上架 AWS GovCloud（美东），首次把前沿模型嵌入政府云合规通道；GitHub 发布 CodeQL 2.27.4，Java/Kotlin、Rust、C/C++ 误报明显减少。两者共同抬高企业采购时对「合规可达 + 告警可信」的预期。",
-          "en": "OpenAI put GPT-5.6 Cyber (as Daybreak Red) on AWS GovCloud US-East via Amazon Bedrock, its first front-tier model in a government-cloud compliance channel; GitHub shipped CodeQL 2.27.4 with notably fewer false positives in Java/Kotlin, Rust, and C/C++. Together they raise enterprise expectations for compliance reach plus trustworthy alerts."
+          "zh": "OpenAI 将 GPT-5.6 Cyber 以 Daybreak Red 形式通过 Amazon Bedrock 上架 AWS GovCloud（美东），面向获批客户开放网络安全用途，首次把前沿模型能力延伸到政府云合规场景。",
+          "en": "OpenAI listed GPT-5.6 Cyber as Daybreak Red on AWS GovCloud (US-East) via Amazon Bedrock for approved cybersecurity use cases, extending frontier model capability into government-cloud compliance scenarios for the first time."
         },
         "pmInsight": {
-          "zh": "面向受监管行业的 Agent 产品，合规通道正在成为可选项而非加分项；同时 AI 代码评审类产品若建立在误报偏高的静态分析上，价值会被 CodeQL 这类基础层迭代稀释。PM 应确认模型供给的合规路径，并把告警精度作为安全类功能的硬指标。",
-          "en": "For agents targeting regulated industries, compliance channels are becoming table stakes; meanwhile AI code-review products built on noisy static analysis will see value diluted by base-layer improvements like CodeQL. PMs should confirm compliant model supply paths and treat alert precision as a hard metric for security features."
+          "zh": "合规渠道正成为前沿模型的分销战场，云厂商与模型厂商在受监管市场的竞合关系更复杂。面向金融、医疗、政务的 PM 应重新评估「模型直连」与「经云市场采购」的路径差异，合规资质可能比模型分数更影响成交。",
+          "en": "Compliance channels are becoming a distribution battleground for frontier models, complicating cloud-model co-opetition in regulated markets. PMs targeting finance, healthcare and public sector should reassess direct model access versus cloud-marketplace procurement — compliance credentials may matter more than benchmark scores for closing deals."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "OpenAI Daybreak Red on AWS GovCloud",
+            "label": "OpenAI: Daybreak Red in AWS GovCloud",
             "url": "https://openai.com/index/daybreak-red-aws-govcloud"
-          },
-          {
-            "label": "GitHub CodeQL 2.27.4",
-            "url": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata"
-          },
-          {
-            "label": "The-PR-Agent/pr-agent",
-            "url": "https://github.com/The-PR-Agent/pr-agent"
           }
         ]
       }
@@ -163,67 +172,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "「可审计无人值守」Agent 托管层假设",
-          "en": "Hypothesis: an auditable unattended-agent hosting layer"
+          "zh": "面向非开发者桌面任务的「确认卡片」Agent 助手",
+          "en": "A confirmation-card agent assistant for non-developer desktop tasks"
         },
         "category": {
-          "zh": "产品机会 / Agent 平台",
-          "en": "Product Opportunity / Agent Platform"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "结合 agent-autoloop 的无人值守调度、uncut 的无遥测/不截断上下文定位与 worktrunk 的并行隔离，可假设企业愿意为「关掉终端仍可跑、每步可回溯、多 Agent 不互相污染」的托管层付费。验证方式：对 10 家已用 Claude Code/Codex 的团队做访谈，测量无人值守任务占比与因上下文截断导致的返工率。",
-          "en": "Combining agent-autoloop's unattended scheduling, uncut's no-telemetry/no-truncation stance, and worktrunk's parallel isolation, hypothesize that enterprises will pay for a hosting layer that keeps running after terminal close, traces every step, and prevents cross-agent contamination. Validate by interviewing 10 teams already using Claude Code/Codex, measuring unattended task share and rework caused by context truncation."
+          "zh": "结合 agent-desktop 的桌面操作能力与 agent-autoloop 的「需拍板时推送确认卡片」交互，可假设：在报销填报、CRM 录入等高频桌面任务中，带逐步确认的 Agent 助手比全自动方案更容易被企业接受。",
+          "en": "Combining agent-desktop's desktop control with agent-autoloop's 'push a confirmation card when a decision is needed', hypothesize that for high-frequency desktop tasks like expense filing and CRM entry, a step-confirmation agent assistant is more acceptable to enterprises than full automation."
         },
         "pmInsight": {
-          "zh": "若访谈显示无人值守任务占比超过三成且返工可归因于上下文丢失，则该托管层可作为独立 SKU；否则应作为现有 Agent 产品的附加能力而非新品类。",
-          "en": "If interviews show unattended tasks exceed 30% and rework is attributable to context loss, this hosting layer can be a standalone SKU; otherwise it should be an add-on to existing agent products rather than a new category."
+          "zh": "可验证假设：在 20 名运营人员中试点，若带确认卡片的完成率与全自动方案差距小于 15%，但错误回滚成本显著更低，则确认式交互应作为默认模式。",
+          "en": "Testable hypothesis: pilot with 20 operations staff; if the completion rate of the confirmation-card version is within 15% of full automation while rollback cost is significantly lower, confirmation-style interaction should be the default."
         },
         "impact": "Medium",
         "sources": [
           {
+            "label": "vercel-labs/agent-desktop",
+            "url": "https://github.com/vercel-labs/agent-desktop"
+          },
+          {
             "label": "KKKKhazix/agent-autoloop",
             "url": "https://github.com/KKKKhazix/agent-autoloop"
-          },
-          {
-            "label": "Balanov/uncut",
-            "url": "https://github.com/Balanov/uncut"
-          },
-          {
-            "label": "max-sixty/worktrunk",
-            "url": "https://github.com/max-sixty/worktrunk"
           }
         ]
       },
       {
         "title": {
-          "zh": "「按推理缺口补知识」的编排假设",
-          "en": "Hypothesis: retrieve-on-gap orchestration"
+          "zh": "把状态跟踪基准变成 Agent 产品的验收指标",
+          "en": "Turn state-tracking benchmarks into agent product acceptance metrics"
         },
         "category": {
-          "zh": "产品机会 / Agent 编排",
-          "en": "Product Opportunity / Agent Orchestration"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "arXiv 论文显示事前检索收益有限、推理中按知识缺口检索效果更好，与 NVIDIA auto-ontology 的确定性查询层方向一致。可假设在医疗、法务等高准确度场景，把「挑战者检查缺口 → 触发检索/招募专家」做成可配置编排，比一次性 RAG 更能降低错误率。验证方式：在内部知识问答集上对比两种编排的准确率与延迟。",
-          "en": "An arXiv paper finds pre-retrieval gains are limited while gap-triggered retrieval during reasoning works better, aligning with NVIDIA auto-ontology's deterministic query layer. Hypothesize that in high-accuracy domains like medical and legal, a configurable 'challenger detects gap → triggers retrieval/expert recruitment' orchestration beats one-shot RAG on error rate. Validate by comparing accuracy and latency of both orchestrations on an internal QA set."
+          "zh": "基于 StateBench 对「追踪变化链」的区分能力与 auto-ontology 的确定性查询思路，可假设：在合同审阅、工单跟进等长文档场景中，引入状态跟踪评测能提前暴露 Agent 的漏更新问题。",
+          "en": "Based on StateBench's ability to separate 'trace change chains' and auto-ontology's deterministic query approach, hypothesize that in long-document scenarios like contract review and ticket follow-up, adding state-tracking evaluation can surface missed-update failures early."
         },
         "pmInsight": {
-          "zh": "若缺口触发式编排在准确率上领先且延迟可接受，应把它做成编排层的默认模板；若延迟代价过高，则限定在高价值、低并发场景启用。",
-          "en": "If gap-triggered orchestration leads on accuracy with acceptable latency, make it the default orchestration template; if latency cost is too high, restrict it to high-value, low-concurrency scenarios."
+          "zh": "可验证假设：对现有 Agent 在 50 份含多次修订的合同上跑状态跟踪测试，若漏更新率超过 10%，则应在产品中加入「变更链摘要」视图作为补偿设计。",
+          "en": "Testable hypothesis: run state-tracking tests on 50 multi-revision contracts; if the missed-update rate exceeds 10%, add a 'change-chain summary' view as a compensating design."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "arXiv: Challenge-Aware Knowledge Recruitment",
-            "url": "https://arxiv.org/abs/2611.05393"
+            "label": "Hugging Face: StateBench",
+            "url": "https://huggingface.co/blog/allenai/statebench"
           },
           {
             "label": "NVIDIA/auto-ontology",
             "url": "https://github.com/NVIDIA/auto-ontology"
-          },
-          {
-            "label": "Ai2 StateBench",
-            "url": "https://huggingface.co/blog/allenai/statebench"
           }
         ]
       }
@@ -239,26 +240,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个轻量级的命令行 Agent 自动化中台：把任务调度、事件来源、通知通道和上线流水线都做成可插拔插件，让 Claude Code、Codex 这类 Agent 在后台自己接活、自己跟进，只在需要拍板时才发卡片找你确认。",
+          "zh": "一个轻量的自动化中台，让 Claude Code、Codex 这类命令行 Agent 在后台自己接任务、自己跟进到底，平时不打扰你，只在需要拍板时推送卡片确认。装在本机一条命令即可运行，无需云服务器或公网端口。",
           "en": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。"
         },
-        "totalStars": 2835,
+        "totalStars": 2898,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个轻量级的命令行 Agent 自动化中台：把任务调度、事件来源、通知通道和上线流水线都做成可插拔插件，让 Claude Code、Codex 这类 Agent 在后台自己接活、自己跟进，只在需要拍板时才发卡片找你确认。",
+          "zh": "一个轻量的自动化中台，让 Claude Code、Codex 这类命令行 Agent 在后台自己接任务、自己跟进到底，平时不打扰你，只在需要拍板时推送卡片确认。装在本机一条命令即可运行，无需云服务器或公网端口。",
           "en": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即积累近 2800 stars，主打「关掉终端任务也不断」的无人值守叙事，在命令行 Agent 用户中升温，今日进入上升榜。",
+          "zh": "创建仅约一个月即积累近 2900 stars，主打「关掉终端任务也不断」的痛点叙事，在命令行 Agent 用户中升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,835 stars、546 forks，topics: ai-agents, automation, claude-code, cli, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,835 stars and 546 forks，topics: ai-agents, automation, claude-code, cli, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,898 stars、558 forks，topics: ai-agents, automation, claude-code, cli, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,898 stars and 558 forks，topics: ai-agents, automation, claude-code, cli, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「Agent 从人守着用转向后台自主运行」这一交互范式变化，以及人工审批卡点如何被产品化设计。",
+          "zh": "值得观察 Agent 从「人守着终端」转向「后台自主接活、关键节点人工审批」的产品形态，这可能是 Agent 工作流的产品化方向。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -279,26 +280,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个 Agent Skill：用一句话描述你的技术栈，即可生成带官方 Logo 的架构图，适合快速产出方案示意图和对外沟通材料。",
+          "zh": "一个 Agent 技能：用一句话描述你的技术栈，就能生成带官方 Logo 的架构图，适合快速产出技术方案配图与团队沟通材料。",
           "en": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos"
         },
-        "totalStars": 1786,
+        "totalStars": 1793,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个 Agent Skill：用一句话描述你的技术栈，即可生成带官方 Logo 的架构图，适合快速产出方案示意图和对外沟通材料。",
+          "zh": "一个 Agent 技能：用一句话描述你的技术栈，就能生成带官方 Logo 的架构图，适合快速产出技术方案配图与团队沟通材料。",
           "en": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos"
         },
         "todayHighlight": {
-          "zh": "创建仅数天便获得近 1800 stars，切中「让 Agent 顺手出图」的轻量需求，在 Claude Skills 生态中快速传播。",
+          "zh": "上线不足一个月已获近 1800 stars，作为 Claude Code、Codex 等 Agent 的即插即用技能，随 Agent 技能生态升温获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,786 stars、81 forks，topics: agent-skills, architecture-diagram, claude-code, claude-skills, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,786 stars and 81 forks，topics: agent-skills, architecture-diagram, claude-code, claude-skills, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,793 stars、82 forks，topics: agent-skills, architecture-diagram, claude-code, claude-skills, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,793 stars and 82 forks，topics: agent-skills, architecture-diagram, claude-code, claude-skills, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注 Agent Skill 这种「一句话调用专业能力」的分发形态，是否会成为工具类产品的新入口。",
+          "zh": "可关注「一句话生成专业图表」这类轻量技能如何降低技术文档与方案沟通的产出成本。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -319,26 +320,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一个无界面、无损的编码 Agent 运行框架：单个约 7MB 静态二进制、四个工具、纯标准输入输出，不做上下文静默截断，也不带遥测，适合本地模型和脚本化集成。",
+          "zh": "一个无界面、无损的编程 Agent 运行框架，单个 7MB 静态二进制、四个工具、纯标准输入输出，不做上下文静默截断，也不带遥测。适合追求可控与本地化的开发者。",
           "en": "The lossless, headless coding agent harness. One 7 MB static binary, four tools, plain stdin/stdout, no silent cuts."
         },
-        "totalStars": 601,
+        "totalStars": 602,
         "language": "Go",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "一个无界面、无损的编码 Agent 运行框架：单个约 7MB 静态二进制、四个工具、纯标准输入输出，不做上下文静默截断，也不带遥测，适合本地模型和脚本化集成。",
+          "zh": "一个无界面、无损的编程 Agent 运行框架，单个 7MB 静态二进制、四个工具、纯标准输入输出，不做上下文静默截断，也不带遥测。适合追求可控与本地化的开发者。",
           "en": "The lossless, headless coding agent harness. One 7 MB static binary, four tools, plain stdin/stdout, no silent cuts."
         },
         "todayHighlight": {
-          "zh": "创建不足一周获得约 600 stars，以「极简、可审计、不偷偷裁剪上下文」的差异化定位吸引关注，属于早期升温项目。",
+          "zh": "创建仅数天已积累约 600 stars，以「无 TUI、无遥测、不偷偷裁剪上下文」的克制定位在 Agent 工具链中形成差异化。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 601 stars、14 forks，topics: agent-harness, cli, coding-agent, go, headless，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 601 stars and 14 forks，topics: agent-harness, cli, coding-agent, go, headless, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 602 stars、14 forks，topics: agent-harness, cli, coding-agent, go, headless，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 602 stars and 14 forks，topics: agent-harness, cli, coding-agent, go, headless, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可留意开发者对 Agent 透明性与可审计性的诉求，这可能成为企业选型时的关键差异点。",
+          "zh": "可观察开发者对 Agent 工具「透明可控、可本地部署」的诉求，是否会成为企业选型的关键考量。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -359,26 +360,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Vercel Labs 出品的「电脑使用」命令行工具，让 AI Agent 通过操作系统无障碍树查看并操作 macOS、Windows、Linux 上的桌面应用，把 GUI 软件变成 Agent 可调用的能力。",
+          "zh": "Vercel Labs 出品的计算机使用命令行工具，让 AI Agent 通过操作系统无障碍树「看见」并操作 macOS、Windows、Linux 上的桌面应用。",
           "en": "Star vercel-labs / agent-desktop Computer use CLI for AI agents"
         },
-        "totalStars": 15692,
+        "totalStars": 15813,
         "language": "Rust",
         "dailyStars": 2470,
         "chineseIntro": {
-          "zh": "Vercel Labs 出品的「电脑使用」命令行工具，让 AI Agent 通过操作系统无障碍树查看并操作 macOS、Windows、Linux 上的桌面应用，把 GUI 软件变成 Agent 可调用的能力。",
+          "zh": "Vercel Labs 出品的计算机使用命令行工具，让 AI Agent 通过操作系统无障碍树「看见」并操作 macOS、Windows、Linux 上的桌面应用。",
           "en": "Star vercel-labs / agent-desktop Computer use CLI for AI agents"
         },
         "todayHighlight": {
-          "zh": "今日新增 2470 stars，总 star 已超 1.5 万，位列全球趋势榜第 6；背靠 Vercel Labs 品牌与「Agent 直接操作桌面」的想象空间，关注度快速上升。",
+          "zh": "今日新增 2470 stars，位列全球趋势榜第 6，背靠 Vercel Labs 品牌与「Agent 操作桌面」的通用能力叙事，关注度快速上升。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,470 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,692 stars、1,088 forks，topics: accessibility, accessibility-api, ai-agents, automation, cli，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,692 stars and 1,088 forks，topics: accessibility, accessibility-api, ai-agents, automation, cli, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 15,813 stars、1,103 forks，topics: accessibility, accessibility-api, ai-agents, automation, cli，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 15,813 stars and 1,103 forks，topics: accessibility, accessibility-api, ai-agents, automation, cli, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 Agent 操作桌面软件这一路径，是否会绕开 API 生态，重塑传统软件的自动化与集成方式。",
+          "zh": "值得观察桌面自动化成为 Agent 能力边界扩展的关键一环，以及大厂实验室项目如何带动生态标准。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -402,7 +403,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "NVIDIA 开源的 Python 框架，在数据之上构建语义化、图结构的推理层，帮助 LLM 与 Agent 生成确定性查询、提升上下文检索质量，让分析结果更可解释。",
           "en": "Star NVIDIA / auto-ontology Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows."
         },
-        "totalStars": 5704,
+        "totalStars": 5888,
         "language": "Python",
         "dailyStars": 2050,
         "chineseIntro": {
@@ -410,15 +411,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Star NVIDIA / auto-ontology Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows."
         },
         "todayHighlight": {
-          "zh": "今日新增 2050 stars，总 star 约 5700，位列全球趋势榜第 1；在 Agent 数据可靠性讨论升温的背景下，大厂出品的「上下文层」定位获得集中关注。",
+          "zh": "今日新增 2050 stars 并登上全球趋势榜第 1，创建约半年，随 Agent 数据分析可靠性议题升温而快速获得关注。",
           "en": "登上 GitHub Trending 日榜第 1 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 2,050 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,704 stars、448 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,704 stars and 448 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 5,888 stars、461 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 5,888 stars and 461 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "应关注 Agent 分析类产品的准确性与可解释性底座，语义层可能成为企业级 Agent 的标配组件。",
+          "zh": "可关注 Agent 做数据分析时「答得快不如答得对」，语义层与本体可能成为企业级 Agent 的必备基础设施。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -439,26 +440,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为各类编码 Agent 提供跨会话的持久记忆：记录会话过程、用 AI 压缩后，在后续会话中注入相关上下文，兼容 Claude Code、Codex、Gemini、Copilot 等多种工具。",
+          "zh": "为各类编程 Agent 提供跨会话的持久记忆：记录会话中发生的一切，用 AI 压缩后在未来会话中注入相关上下文，兼容 Claude Code、Codex、Gemini、Copilot 等多种工具。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
-        "totalStars": 113076,
+        "totalStars": 113127,
         "language": "TypeScript",
         "dailyStars": 1172,
         "chineseIntro": {
-          "zh": "为各类编码 Agent 提供跨会话的持久记忆：记录会话过程、用 AI 压缩后，在后续会话中注入相关上下文，兼容 Claude Code、Codex、Gemini、Copilot 等多种工具。",
+          "zh": "为各类编程 Agent 提供跨会话的持久记忆：记录会话中发生的一切，用 AI 压缩后在未来会话中注入相关上下文，兼容 Claude Code、Codex、Gemini、Copilot 等多种工具。",
           "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
         },
         "todayHighlight": {
-          "zh": "总 star 已超 11 万，今日新增 1172，位列全球趋势榜第 5；作为 Agent 记忆层的基础组件，随多 Agent 工具生态扩张持续获得关注。",
+          "zh": "总 star 已超 11.3 万，今日新增 1172，作为 Agent 记忆层的老牌项目持续在榜，生态位稳固。",
           "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 113k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,172 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 113,076 stars、9,819 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 113,076 stars and 9,819 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 113,127 stars、9,820 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 113,127 stars and 9,820 forks，topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察「记忆」如何从功能点演化为跨工具的通用基础设施，以及它对用户留存与切换成本的影响。",
+          "zh": "可观察「Agent 记忆」正从附加功能变成跨工具的基础能力，记忆的压缩与召回质量直接影响使用体验。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -479,26 +480,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "一站式 AI 短视频生成工具：输入主题或关键词，自动完成脚本撰写、素材匹配、字幕与背景音乐生成，并合成高清短视频，支持 Windows、macOS、Linux。",
+          "zh": "一站式 AI 短视频生成工具，输入主题或关键词即可自动生成脚本、匹配素材、添加字幕与背景音乐，并合成高清短视频，支持 Windows、macOS、Linux。",
           "en": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
         },
-        "totalStars": 139266,
+        "totalStars": 139349,
         "language": "Python",
         "dailyStars": 617,
         "chineseIntro": {
-          "zh": "一站式 AI 短视频生成工具：输入主题或关键词，自动完成脚本撰写、素材匹配、字幕与背景音乐生成，并合成高清短视频，支持 Windows、macOS、Linux。",
+          "zh": "一站式 AI 短视频生成工具，输入主题或关键词即可自动生成脚本、匹配素材、添加字幕与背景音乐，并合成高清短视频，支持 Windows、macOS、Linux。",
           "en": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
         },
         "todayHighlight": {
-          "zh": "总 star 已近 14 万，今日新增 617，位列全球趋势榜第 9；作为上线逾两年的成熟项目，「一键出片」叙事在内容创作者中持续获得关注。",
+          "zh": "总 star 已近 14 万，今日新增 617，作为运营超两年半的成熟项目仍在全球趋势榜第 9，持续获得内容创作者关注。",
           "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 139k+，持续占据 AI 开源热门榜单, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 617 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,266 stars、22,217 forks，topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,266 stars and 22,217 forks，topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,349 stars、22,227 forks，topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,349 stars and 22,227 forks，topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注成熟内容自动化工具的长尾生命力，以及模型能力升级如何持续为老产品带来新增量。",
+          "zh": "可关注「一键出片」类工具的长尾生命力，以及模板化工作流对短视频内容生产门槛的持续压低。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -519,26 +520,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向并行 AI Agent 工作流的 Git worktree 管理命令行工具，让多个 Agent 各自在独立工作区并行改代码，减少互相干扰与切换成本。",
+          "zh": "面向并行 AI Agent 工作流的 Git worktree 管理命令行工具，帮助开发者在多个分支上同时运行 Agent 任务而不互相干扰。",
           "en": "Star max-sixty / worktrunk Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows"
         },
-        "totalStars": 11180,
+        "totalStars": 11219,
         "language": "Rust",
         "dailyStars": 531,
         "chineseIntro": {
-          "zh": "面向并行 AI Agent 工作流的 Git worktree 管理命令行工具，让多个 Agent 各自在独立工作区并行改代码，减少互相干扰与切换成本。",
+          "zh": "面向并行 AI Agent 工作流的 Git worktree 管理命令行工具，帮助开发者在多个分支上同时运行 Agent 任务而不互相干扰。",
           "en": "Star max-sixty / worktrunk Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows"
         },
         "todayHighlight": {
-          "zh": "今日新增 531 stars，总 star 约 1.1 万，位列全球趋势榜第 2；随「多 Agent 并行开发」实践普及，这一细分工具位持续升温。",
+          "zh": "今日新增 531 stars，位列全球趋势榜第 2，随多 Agent 并行开发场景升温而获得关注。",
           "en": "登上 GitHub Trending 日榜第 2 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 531 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,180 stars、418 forks，topics: agents, claude-code, codex, developer-tools, git，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,180 stars and 418 forks，topics: agents, claude-code, codex, developer-tools, git, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 11,219 stars、420 forks，topics: agents, claude-code, codex, developer-tools, git，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 11,219 stars and 420 forks，topics: agents, claude-code, codex, developer-tools, git, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察多 Agent 并行协作带来的工程配套缺口，这类「小而准」的工具往往是新工作流的先行指标。",
+          "zh": "可观察多 Agent 并行开发带来的工程协作新问题，版本控制层的配套工具正在成为刚需。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -559,26 +560,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "把 Claude Code 等编码 Agent 组织成一支虚拟工程团队：由 CEO、工程经理、设计师、评审、QA、安全官、发布工程师等 23 个角色化工具分工协作，全部以斜杠命令和 Markdown 实现。",
+          "zh": "把 Claude Code 等编程 Agent 变成一支虚拟工程团队：CEO、工程经理、设计师、代码审查、QA、安全官、发布工程师各司其职，全部以斜杠命令和 Markdown 实现，MIT 免费。",
           "en": "Star garrytan / gstack Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA"
         },
-        "totalStars": 139491,
+        "totalStars": 139523,
         "language": "TypeScript",
         "dailyStars": 290,
         "chineseIntro": {
-          "zh": "把 Claude Code 等编码 Agent 组织成一支虚拟工程团队：由 CEO、工程经理、设计师、评审、QA、安全官、发布工程师等 23 个角色化工具分工协作，全部以斜杠命令和 Markdown 实现。",
+          "zh": "把 Claude Code 等编程 Agent 变成一支虚拟工程团队：CEO、工程经理、设计师、代码审查、QA、安全官、发布工程师各司其职，全部以斜杠命令和 Markdown 实现，MIT 免费。",
           "en": "Star garrytan / gstack Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA"
         },
         "todayHighlight": {
-          "zh": "总 star 近 14 万，今日新增 290，位列全球趋势榜第 10；作者 YC 总裁的公开身份与「照搬我的 Claude Code 配置」叙事，带动持续关注。",
+          "zh": "总 star 近 14 万，今日新增 290，创建约 8 个月，凭借 YC 总裁个人实践背书的叙事持续在榜。",
           "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 139k+，持续占据 AI 开源热门榜单, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 290 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,491 stars、20,646 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,491 stars and 20,646 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 139,523 stars、20,650 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 139,523 stars and 20,650 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注角色化、流程化的 Agent 编排思路，以及个人方法论产品化后的传播效应。",
+          "zh": "可关注「角色化 Agent 团队」的产品设计思路，以及个人实践方法论如何转化为可复用的工具包。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -599,26 +600,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "开源的 AI 代码评审工具，自动分析 Pull Request 并给出评审意见，支持 OpenAI、Anthropic、Ollama 等多种模型，可接入现有研发流程。",
+          "zh": "开源的 AI 代码审查工具，可自动对 Pull Request 进行评审，支持 OpenAI、Anthropic、Ollama 等多种模型，适合接入团队代码评审流程。",
           "en": "Star The-PR-Agent / pr-agent 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier."
         },
-        "totalStars": 14897,
+        "totalStars": 14927,
         "language": "Python",
         "dailyStars": 280,
         "chineseIntro": {
-          "zh": "开源的 AI 代码评审工具，自动分析 Pull Request 并给出评审意见，支持 OpenAI、Anthropic、Ollama 等多种模型，可接入现有研发流程。",
+          "zh": "开源的 AI 代码审查工具，可自动对 Pull Request 进行评审，支持 OpenAI、Anthropic、Ollama 等多种模型，适合接入团队代码评审流程。",
           "en": "Star The-PR-Agent / pr-agent 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier."
         },
         "todayHighlight": {
-          "zh": "上线逾三年、总 star 近 1.5 万，今日新增 280 并位列全球趋势榜第 8；在 AI 代码评审赛道竞争加剧的背景下，其「原版开源」定位重新获得关注。",
+          "zh": "运营超三年仍位列全球趋势榜第 8，今日新增 280，作为 AI 代码评审的早期项目持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 280 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,897 stars、2,100 forks，topics: ai, anthropic, code-review, coding-assistant, devtools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,897 stars and 2,100 forks，topics: ai, anthropic, code-review, coding-assistant, devtools, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 14,927 stars、2,100 forks，topics: ai, anthropic, code-review, coding-assistant, devtools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 14,927 stars and 2,100 forks，topics: ai, anthropic, code-review, coding-assistant, devtools, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察 AI 代码评审从尝鲜工具走向研发流程标配的过程，以及开源与商业版本之间的定位博弈。",
+          "zh": "可观察 AI 代码评审从尝鲜工具走向研发流程标配的过程，以及老牌开源项目如何维持生态位。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -645,19 +646,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "OpenAI 将 GPT-5.6 Cyber 以 Daybreak Red 形式通过 Amazon Bedrock 上架 AWS GovCloud（美东），面向获批客户开放网络安全用途。这意味着 OpenAI 首次把前沿模型能力嵌入政府云合规通道，产品可触达联邦与受监管行业客户。",
+          "zh": "OpenAI 将 GPT-5.6 Cyber 以 Daybreak Red 形式通过 Amazon Bedrock 上架 AWS GovCloud（美东），面向获批客户开放网络安全用途。这意味着 OpenAI 首次把前沿模型能力延伸到政府云合规场景，产品可服务联邦与受监管行业客户。",
           "en": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
         },
         "chineseIntro": {
-          "zh": "OpenAI 将 GPT-5.6 Cyber 以 Daybreak Red 形式通过 Amazon Bedrock 上架 AWS GovCloud（美东），面向获批客户开放网络安全用途。这意味着 OpenAI 首次把前沿模型能力嵌入政府云合规通道，产品可触达联邦与受监管行业客户。",
+          "zh": "OpenAI 将 GPT-5.6 Cyber 以 Daybreak Red 形式通过 Amazon Bedrock 上架 AWS GovCloud（美东），面向获批客户开放网络安全用途。这意味着 OpenAI 首次把前沿模型能力延伸到政府云合规场景，产品可服务联邦与受监管行业客户。",
           "en": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
         },
         "todayHighlight": {
-          "zh": "这是 OpenAI 在政府云合规市场与 AWS 深度绑定的关键一步，直接对标微软 Azure Government 的模型供给优势。",
-          "en": "这是 OpenAI 在政府云合规市场与 AWS 深度绑定的关键一步，直接对标微软 Azure Government 的模型供给优势。"
+          "zh": "这是 OpenAI 在政府云渠道的关键落子，直接与云厂商在合规 AI 市场展开竞争。",
+          "en": "这是 OpenAI 在政府云渠道的关键落子，直接与云厂商在合规 AI 市场展开竞争。"
         },
         "pmInsight": {
-          "zh": "若产品面向政企或受监管行业，应尽快评估 Bedrock 上 Daybreak Red 的准入条件与数据边界，把合规部署路径纳入路线图。",
+          "zh": "若产品面向政企或安全团队，应评估 GovCloud 部署路径与授权门槛，提前梳理数据驻留与合规要求。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -682,19 +683,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 发布 CodeQL 2.27.4，提升多语言查询准确率、加强 pack 发布时的安全检查并修正查询元数据，Java/Kotlin、Rust、C/C++ 的误报明显减少。对使用 GitHub 代码扫描的团队意味着更少噪音告警和更可信的安全门禁。",
+          "zh": "GitHub 发布 CodeQL 2.27.4，提升多语言查询准确率、加强打包发布时的安全检查，并修正查询元数据。对使用 GitHub 代码扫描的团队来说，误报减少、CWE 标签更准确，安全告警的可信度提高。",
           "en": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We&#8217;ve recently released CodeQL 2.27.4 with query accuracy improvements across several&#8230; The post CodeQL 2.27.4 improves accuracy and query metadata appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 发布 CodeQL 2.27.4，提升多语言查询准确率、加强 pack 发布时的安全检查并修正查询元数据，Java/Kotlin、Rust、C/C++ 的误报明显减少。对使用 GitHub 代码扫描的团队意味着更少噪音告警和更可信的安全门禁。",
+          "zh": "GitHub 发布 CodeQL 2.27.4，提升多语言查询准确率、加强打包发布时的安全检查，并修正查询元数据。对使用 GitHub 代码扫描的团队来说，误报减少、CWE 标签更准确，安全告警的可信度提高。",
           "en": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We&#8217;ve recently released CodeQL 2.27.4 with query accuracy improvements across several&#8230; The post CodeQL 2.27.4 improves accuracy and query metadata appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "静态分析引擎的精度迭代直接决定 AI 代码安全产品的告警可信度，是开发者安全工具链竞争的基础设施层。",
-          "en": "静态分析引擎的精度迭代直接决定 AI 代码安全产品的告警可信度，是开发者安全工具链竞争的基础设施层。"
+          "zh": "静态分析引擎的持续迭代正在把 AI 辅助编码的安全底座做厚，影响开发者安全工具链的默认体验。",
+          "en": "静态分析引擎的持续迭代正在把 AI 辅助编码的安全底座做厚，影响开发者安全工具链的默认体验。"
         },
         "pmInsight": {
-          "zh": "安全类产品应把本次查询变更纳入回归测试基线，重点验证 java/log-injection 与 Rust 误报下降对告警阈值和人工复核流程的影响。",
+          "zh": "依赖代码扫描的产品应回归测试新版本对告警数量和 CWE 分类的影响，避免仪表盘指标突变引发客户困惑。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -707,8 +708,8 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Hacker News AI: LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks [pdf]",
-          "en": "Hacker News AI: LifeVal: Evaluating AI Model Performance on Personalized Agentic Consumer Tasks [pdf]"
+          "zh": "Hacker News AI: New Research Tests Whether AI Models Know Their Own Thoughts",
+          "en": "Hacker News AI: New Research Tests Whether AI Models Know Their Own Thoughts"
         },
         "category": {
           "zh": "公司动态",
@@ -719,26 +720,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "OpenAI 发布 LifeVal 评测论文，用于衡量模型在个性化、代理式消费者任务上的表现。这为 agent 产品提供了更贴近真实用户场景的评估维度，而非仅看通用基准分数。",
-          "en": "Article URL: https://cdn.openai.com/pdf/lifeval.pdf Comments URL: https://news.ycombinator.com/item?id=50375549 Points: 2 # Comments: 0"
+          "zh": "Quanta 报道的新研究通过向大模型直接注入“想法”来测试其内省能力，试图描绘 AI 对自身思维过程的感知边界。这为可解释性和模型自我报告的可信度提供了新的实验视角。",
+          "en": "Article URL: https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/ Comments URL: https://news.ycombinator.com/item?id=50376124 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 LifeVal 评测论文，用于衡量模型在个性化、代理式消费者任务上的表现。这为 agent 产品提供了更贴近真实用户场景的评估维度，而非仅看通用基准分数。",
-          "en": "Article URL: https://cdn.openai.com/pdf/lifeval.pdf Comments URL: https://news.ycombinator.com/item?id=50375549 Points: 2 # Comments: 0"
+          "zh": "Quanta 报道的新研究通过向大模型直接注入“想法”来测试其内省能力，试图描绘 AI 对自身思维过程的感知边界。这为可解释性和模型自我报告的可信度提供了新的实验视角。",
+          "en": "Article URL: https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/ Comments URL: https://news.ycombinator.com/item?id=50376124 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "个性化 agent 任务评测的缺位一直是消费级 AI 产品落地的盲区，该基准可能成为 agent 产品选型与验收的新参照。",
-          "en": "个性化 agent 任务评测的缺位一直是消费级 AI 产品落地的盲区，该基准可能成为 agent 产品选型与验收的新参照。"
+          "zh": "内省能力若被证实有限，将直接影响依赖模型自我解释的产品设计假设。",
+          "en": "内省能力若被证实有限，将直接影响依赖模型自我解释的产品设计假设。"
         },
         "pmInsight": {
-          "zh": "设计 agent 功能时，可参照 LifeVal 的任务拆解方式，把个性化偏好保持与多步任务完成率纳入自有评测集。",
+          "zh": "不要默认模型能准确解释自己的输出，涉及审计或调试的功能应辅以外部可观测信号而非仅靠模型自述。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
         "sources": [
           {
             "label": "Hacker News AI",
-            "url": "https://cdn.openai.com/pdf/lifeval.pdf"
+            "url": "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104/"
           }
         ]
       },
@@ -756,22 +757,22 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Ai2 在 Hugging Face 发布 StateBench，专门评测模型在长文档中跟踪实体状态变化的能力，并区分“找最新更新”与“追踪变化链”两类难度。这揭示了长上下文模型在代码阅读、叙事理解等任务上的真实短板。",
+          "zh": "Ai2 在 Hugging Face 发布 StateBench，专门评测语言模型在长文档中跟踪实体状态变化的能力，覆盖从读代码到读故事的多种场景。基准区分了“找最新更新”和“追踪变化链”两类难度，揭示 Transformer 在长依赖上的理论短板。",
           "en": "StateBench: Testing how language models track state changes over long documents"
         },
         "chineseIntro": {
-          "zh": "Ai2 在 Hugging Face 发布 StateBench，专门评测模型在长文档中跟踪实体状态变化的能力，并区分“找最新更新”与“追踪变化链”两类难度。这揭示了长上下文模型在代码阅读、叙事理解等任务上的真实短板。",
+          "zh": "Ai2 在 Hugging Face 发布 StateBench，专门评测语言模型在长文档中跟踪实体状态变化的能力，覆盖从读代码到读故事的多种场景。基准区分了“找最新更新”和“追踪变化链”两类难度，揭示 Transformer 在长依赖上的理论短板。",
           "en": "StateBench: Testing how language models track state changes over long documents"
         },
         "todayHighlight": {
-          "zh": "该基准把长上下文竞争从“窗口长度”拉回“状态追踪质量”，可能推动循环与混合架构成为下一轮模型设计焦点。",
-          "en": "该基准把长上下文竞争从“窗口长度”拉回“状态追踪质量”，可能推动循环与混合架构成为下一轮模型设计焦点。"
+          "zh": "长上下文竞争正从“能塞多少 token”转向“能否准确跟踪状态”，为架构选型提供新标尺。",
+          "en": "长上下文竞争正从“能塞多少 token”转向“能否准确跟踪状态”，为架构选型提供新标尺。"
         },
         "pmInsight": {
-          "zh": "若产品依赖长文档理解，应先用 StateBench 类任务验证模型在链式状态更新上的失败率，再决定是否需要外挂记忆或结构化状态层。",
+          "zh": "若产品依赖长文档问答，应把状态跟踪类用例纳入评测集，并考虑混合或循环架构作为长链任务的备选方案。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "Medium",
         "sources": [
           {
             "label": "Hugging Face",
@@ -793,19 +794,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一篇 arXiv 论文提出“挑战感知”的多智能体医疗推理方法：由外部 CHALLENGER 检查推理轨迹中的知识缺口，再触发针对性检索或中途招募专家。实验显示事前检索收益有限，而推理中按缺口检索效果更好。",
+          "zh": "一篇 arXiv 论文提出“挑战感知”的多智能体医疗推理方法：由外部 CHALLENGER 检查推理轨迹中的知识缺口，再触发针对性检索或中途招募专家。在 MEDAGENTSBENCH 困难子集上，事前检索收益有限，而推理中检索效果更好。",
           "en": "arXiv:2611.05393v1 Announce Type: new Abstract: Large language models perform strongly on standard medical QA but degrade on harder reasoning tasks, where multi-agent debate often fails to beat strong single-model prompting. We argue that a key limitation is that existing systems select experts and retrieve knowledge from the question alone, rather than from gaps that emerge during reasoning. We propose challenge-awa"
         },
         "chineseIntro": {
-          "zh": "一篇 arXiv 论文提出“挑战感知”的多智能体医疗推理方法：由外部 CHALLENGER 检查推理轨迹中的知识缺口，再触发针对性检索或中途招募专家。实验显示事前检索收益有限，而推理中按缺口检索效果更好。",
+          "zh": "一篇 arXiv 论文提出“挑战感知”的多智能体医疗推理方法：由外部 CHALLENGER 检查推理轨迹中的知识缺口，再触发针对性检索或中途招募专家。在 MEDAGENTSBENCH 困难子集上，事前检索收益有限，而推理中检索效果更好。",
           "en": "arXiv:2611.05393v1 Announce Type: new Abstract: Large language models perform strongly on standard medical QA but degrade on harder reasoning tasks, where multi-agent debate often fails to beat strong single-model prompting. We argue that a key limitation is that existing systems select experts and retrieve knowledge from the question alone, rather than from gaps that emerge during reasoning. We propose challenge-awa"
         },
         "todayHighlight": {
-          "zh": "该研究挑战了“先检索再推理”的默认范式，为多智能体产品的编排逻辑提供了“按推理缺口动态补知识”的新思路。",
-          "en": "该研究挑战了“先检索再推理”的默认范式，为多智能体产品的编排逻辑提供了“按推理缺口动态补知识”的新思路。"
+          "zh": "多智能体系统正从“堆专家”转向“按推理缺口动态调度”，为复杂推理产品提供新范式。",
+          "en": "多智能体系统正从“堆专家”转向“按推理缺口动态调度”，为复杂推理产品提供新范式。"
         },
         "pmInsight": {
-          "zh": "多智能体产品可把“推理中缺口检测”做成独立编排节点，优先在医疗、法律等高准确性场景验证其相对事前 RAG 的增益。",
+          "zh": "设计多智能体工作流时，可加入一个专职“找漏洞”的监督角色，把检索和专家调用从问题前置改为推理中触发。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -830,19 +831,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Google 汇总发布 2026 年 10 月 AI 进展，覆盖 Gemini 模型、DeepMind 研究、开发者工具与云基础设施等方向。这是月度能力盘点，反映 Google 在模型、产品与云三线的同步推进节奏。",
+          "zh": "Google 汇总了 2026 年 10 月的 AI 进展，覆盖 Gemini 模型、DeepMind 研究、开发者工具与云基础设施等方向。这是月度节奏的官方盘点，帮助外界把握 Google 在模型与应用层的整体推进速度。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Oct_AI_Recap_social.max-600x600.format-webp.webp\">Here are Google’s latest AI updates from October 2026"
         },
         "chineseIntro": {
-          "zh": "Google 汇总发布 2026 年 10 月 AI 进展，覆盖 Gemini 模型、DeepMind 研究、开发者工具与云基础设施等方向。这是月度能力盘点，反映 Google 在模型、产品与云三线的同步推进节奏。",
+          "zh": "Google 汇总了 2026 年 10 月的 AI 进展，覆盖 Gemini 模型、DeepMind 研究、开发者工具与云基础设施等方向。这是月度节奏的官方盘点，帮助外界把握 Google 在模型与应用层的整体推进速度。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Oct_AI_Recap_social.max-600x600.format-webp.webp\">Here are Google’s latest AI updates from October 2026"
         },
         "todayHighlight": {
-          "zh": "月度汇总本身是竞争信号：Google 正以 Gemini 为核心把研究、开发者工具和企业云打包成一体化叙事。",
-          "en": "月度汇总本身是竞争信号：Google 正以 Gemini 为核心把研究、开发者工具和企业云打包成一体化叙事。"
+          "zh": "在 OpenAI 与 Anthropic 密集发力的窗口期，Google 的月度汇总本身就是竞争节奏的信号释放。",
+          "en": "在 OpenAI 与 Anthropic 密集发力的窗口期，Google 的月度汇总本身就是竞争节奏的信号释放。"
         },
         "pmInsight": {
-          "zh": "建议从汇总中筛出与自身赛道重叠的 Gemini 能力更新，逐条对照竞品功能矩阵，标记本周需跟进的 API 或定价变化。",
+          "zh": "把这份月度清单当作竞品路线图来读，逐项对照自家功能排期，标记出需要在本季度跟进或防御的能力点。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
