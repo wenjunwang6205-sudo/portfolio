@@ -44,44 +44,40 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报 · 2026-11-09",
-      "en": "AI PM Daily · 2026-11-09"
+      "zh": "AI 产品经理日报：Agent 从对话走向可执行、可治理",
+      "en": "AI PM Daily: Agents Move from Chat to Executable and Governable"
     },
     "editorNote": {
-      "zh": "今日主线是 Agent 基础设施的「接口化」：从技能封装、设计系统到浏览器与手机操作，Agent 正在获得标准化的执行面；同时成本与合规两条约束线开始显性化。",
-      "en": "Today's thread is the 'interfacing' of agent infrastructure: from skill packaging and design systems to browser and phone control, agents are gaining standardized execution surfaces, while cost and compliance constraints become explicit."
+      "zh": "今日主线不在模型参数，而在 Agent 的「落地接口」：官方技能标准、浏览器与手机操作层、企业级审查 API、以及面向真实实验与仿真的评测基准同时升温。",
+      "en": "Today's thread is not model parameters but the interfaces that make agents usable: official skill standards, browser and phone operation layers, enterprise review APIs, and benchmarks for real labs and simulation."
     },
     "keyTakeaway": {
-      "zh": "Agent 能力正从模型侧转向「可被调用的执行面」：Anthropic Skills 与 Meta Astryx 分别把任务封装和 UI 组件标准化，Vercel 与 poki 则补齐网页与真机操作；与此同时，llm-cost-watch 与开源模型合规讨论提示，成本可观测性与模型来源治理将成为 Agent 产品化的下一道门槛。",
-      "en": "Agent capability is shifting from the model to callable execution surfaces: Anthropic Skills and Meta Astryx standardize task packaging and UI components, while Vercel and poki fill in web and real-device control. Meanwhile, llm-cost-watch and open-model compliance debates signal that cost observability and model provenance governance are the next gates for agent productization."
+      "zh": "Agent 竞争正从「模型能力」转向「可执行接口 + 可治理流程」：Anthropic 技能仓库与 Vercel 浏览器工具在补齐执行层，GitHub 把 Copilot 审查做成可编程策略，OpenAI 与 NVIDIA 则把评测和仿真推向真实世界任务。",
+      "en": "Agent competition is shifting from model capability to executable interfaces plus governable workflows: Anthropic's skills repo and Vercel's browser tool fill the execution layer, GitHub makes Copilot review programmable, and OpenAI and NVIDIA push evaluation and simulation toward real-world tasks."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 执行面标准化：Skills、设计系统与操作层同时升温",
-          "en": "Standardizing the agent execution surface: skills, design systems and control layers heat up together"
+          "zh": "Agent 执行层升温：技能标准与浏览器/手机操作工具同时走强",
+          "en": "Agent execution layer heats up: skill standards and browser/phone operation tools rise together"
         },
         "category": {
-          "zh": "Agent 基础设施",
-          "en": "Agent Infrastructure"
+          "zh": "开发者生态",
+          "en": "Developer Ecosystem"
         },
         "summary": {
-          "zh": "anthropics/skills 今日新增 792 stars、总 star 超 19 万并居趋势榜第 1，以文件夹封装指令、脚本与资源；meta/astryx 今日新增 875 stars，以 React 19 + StyleX 定位「同时服务设计师与 AI Agent」的组件基础；vercel-labs/agent-browser 今日新增 815 stars，提供基于可访问性树的网页操作 CLI；poki 以本地 MCP 让 Agent 操作真实 iPhone，642 stars 但已有 129 fork。",
-          "en": "anthropics/skills added 792 stars today, surpassing 190k total and topping the trend list, packaging instructions, scripts and resources as folders; meta/astryx added 875 stars today, positioning React 19 + StyleX components as serving both designers and AI agents; vercel-labs/agent-browser added 815 stars today with an accessibility-tree-based web control CLI; poki uses local MCP to let agents drive a real iPhone, with 642 stars but 129 forks."
+          "zh": "anthropics/skills 今日新增 1052 stars 位列趋势榜第 1，总 star 超 19 万；vercel-labs/agent-browser 今日新增 914 stars，总 star 约 4.8 万；poki 以本地 MCP 服务让 Agent 操作真实 iPhone，上线约一个月获 651 stars。三者共同指向 Agent 需要标准化的「手和眼」。",
+          "en": "anthropics/skills added 1,052 stars today, ranking #1 on the trend list with over 190k total stars; vercel-labs/agent-browser added 914 stars, reaching about 48k total; poki lets agents operate a real iPhone via a local MCP service and gained 651 stars in about a month. Together they point to standardized 'hands and eyes' for agents."
         },
         "pmInsight": {
-          "zh": "四者共同指向同一件事：Agent 的竞争力越来越取决于「能调用什么」，而非「模型多强」。Skills 定义任务封装格式，Astryx 定义 Agent 可读的 UI 契约，agent-browser 与 poki 定义操作通道。PM 应把「Agent 可调用面」当作独立产品资产来规划，而不是散落在各功能里。",
-          "en": "All four point to one thing: agent competitiveness depends increasingly on what it can call, not how strong the model is. Skills defines task packaging, Astryx defines an agent-readable UI contract, and agent-browser and poki define control channels. PMs should plan the 'agent-callable surface' as a standalone product asset rather than scattering it across features."
+          "zh": "技能封装、网页操作与移动端操作正在形成 Agent 的通用执行层。PM 应评估自家 Agent 产品是否应兼容 Skills 式文件夹规范或 MCP 接口，而不是自建封闭插件体系，否则会在生态接入上落后。",
+          "en": "Skill packaging, web operation, and mobile operation are forming a common execution layer for agents. PMs should assess whether their agent products should support Skills-style folder specs or MCP interfaces rather than building closed plugin systems, or risk falling behind on ecosystem integration."
         },
         "impact": "High",
         "sources": [
           {
             "label": "anthropics/skills",
             "url": "https://github.com/anthropics/skills"
-          },
-          {
-            "label": "meta/astryx",
-            "url": "https://github.com/meta/astryx"
           },
           {
             "label": "vercel-labs/agent-browser",
@@ -95,63 +91,63 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "LLM 成本治理从仪表盘走向对话式诊断",
-          "en": "LLM cost governance moves from dashboards to conversational diagnosis"
+          "zh": "AI 代码审查进入可编程治理阶段",
+          "en": "AI code review enters programmable governance"
         },
         "category": {
-          "zh": "成本与运维",
-          "en": "Cost & Operations"
+          "zh": "企业研发基础设施",
+          "en": "Enterprise R&D Infrastructure"
         },
         "summary": {
-          "zh": "Show HN 项目 llm-cost-watch 以 MCP 服务器形式，让用户用自然语言向 Claude 询问 LLM 花费与延迟异常的原因；同期 Gemini Omni 1.2 Flash 将 15 秒视频生成价格下调 30%。一边是成本透明度工具，一边是单价下行，成本结构正在同时变化。",
-          "en": "Show HN project llm-cost-watch is an MCP server that lets users ask Claude in natural language why LLM spend and latency spiked; meanwhile Gemini Omni 1.2 Flash cut 15-second video generation pricing by 30%. Cost transparency tools and falling unit prices are changing the cost structure simultaneously."
+          "zh": "GitHub Copilot 代码审查设置现可通过 REST 和 GraphQL API 从企业策略到单仓库管理，并新增审查归因字段与更紧凑的概览评论。与此同时 meta/astryx 今日新增 3324 stars 位列趋势榜第 2，其「Agent 就绪」的设计系统定位也在强化前端与 Agent 协同。",
+          "en": "GitHub Copilot code review settings can now be managed via REST and GraphQL APIs from enterprise policy down to individual repos, with new review attribution fields and a more compact overview comment. Meanwhile meta/astryx added 3,324 stars today, ranking #2, reinforcing its 'agent-ready' design system positioning for frontend-agent collaboration."
         },
         "pmInsight": {
-          "zh": "单价下降不等于总成本下降——Agent 调用次数与重试会放大用量。llm-cost-watch 说明「按会话/按任务归因成本」正在成为刚需。PM 应尽早把成本归因维度（任务、Agent、工具调用）设计进产品埋点，否则降价红利会被用量增长吞掉。",
-          "en": "Lower unit prices do not mean lower total cost—agent calls and retries amplify usage. llm-cost-watch shows per-session and per-task cost attribution is becoming a must-have. PMs should design cost attribution dimensions (task, agent, tool call) into instrumentation early, or price cuts will be eaten by volume growth."
+          "zh": "AI 审查从个人助手变成可审计、可策略化的研发基础设施，意味着采购决策会从开发者偏好转向平台治理需求。PM 应把「策略 API、归因字段、合规审计」列为 AI 研发工具的核心卖点，而非只比审查准确率。",
+          "en": "AI review is moving from a personal assistant to auditable, policy-driven R&D infrastructure, meaning purchasing decisions shift from developer preference to platform governance. PMs should make policy APIs, attribution fields, and compliance auditing core selling points of AI dev tools, not just review accuracy."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Show HN: llm-cost-watch",
-            "url": "https://github.com/rohith0707/llm-cost-watch"
+            "label": "GitHub Changelog: Copilot code review API management",
+            "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates"
           },
           {
-            "label": "Gemini Omni 1.2 Flash",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+            "label": "meta/astryx",
+            "url": "https://github.com/meta/astryx"
           }
         ]
       },
       {
         "title": {
-          "zh": "模型来源与评测标准同时收紧：合规与真实工作流成为选型变量",
-          "en": "Model provenance and evaluation standards tighten together: compliance and real workflows become selection variables"
+          "zh": "评测与仿真转向真实世界任务，安全评测方法受质疑",
+          "en": "Evaluation and simulation turn to real-world tasks; safety benchmark methods questioned"
         },
         "category": {
-          "zh": "政策与评测",
-          "en": "Policy & Evaluation"
+          "zh": "模型评测与安全",
+          "en": "Model Evaluation & Safety"
         },
         "summary": {
-          "zh": "LocalLLaMA 社区讨论「禁止中国模型」的实际所指，反映开源模型地缘政策讨论升温；OpenAI 发布 BioBasicsBench，用 100 项任务衡量 AI 代理解读原始实验数据的能力；GitHub Copilot 代码审查开放 REST/GraphQL API 管理，并新增审查归因字段。",
-          "en": "LocalLLaMA discusses what 'banning Chinese models' actually means, reflecting rising geopolitical debate over open models; OpenAI released BioBasicsBench with 100 tasks measuring agents' ability to interpret raw experimental data; GitHub Copilot code review opened REST/GraphQL API management and added review attribution fields."
+          "zh": "OpenAI 发布 BioBasicsBench，用 100 项任务衡量 Agent 处理湿实验室原始数据的能力；NVIDIA 在 Hugging Face 开放 Cosmos 3 四个商用权重检查点，覆盖驾驶、机器人仿真与文本到视频；arXiv 研究则指出选择题格式会显著降低模型拒答率，可能系统性高估安全性。",
+          "en": "OpenAI released BioBasicsBench with 100 tasks measuring agents on raw wet-lab data; NVIDIA open-sourced four commercially usable Cosmos 3 checkpoints on Hugging Face covering driving, robot simulation, and text-to-video; an arXiv study finds multiple-choice formats significantly lower refusal rates, potentially overestimating safety."
         },
         "pmInsight": {
-          "zh": "三件事共同说明：模型选型不再只看 benchmark 分数，而要看来源合规、评测是否贴近真实工作流、以及能否被企业流程编排。Copilot 审查 API 化是「AI 能力变成可治理平台能力」的样本。PM 应把合规来源与可编排性列入选型清单。",
-          "en": "Together these show model selection is no longer just benchmark scores but provenance compliance, whether evaluation matches real workflows, and whether it can be orchestrated into enterprise processes. Copilot's review API is a template for turning AI capability into governable platform capability. PMs should add provenance compliance and orchestratability to selection criteria."
+          "zh": "评测正从静态问答转向真实操作与仿真，而安全评测本身的方法缺陷被机制性证据指出。PM 在选型或对外披露模型能力时，应区分「选择题分数」与「真实任务表现」，并优先采用带操作轨迹的基准。",
+          "en": "Evaluation is shifting from static Q&A to real operations and simulation, while mechanistic evidence exposes flaws in safety benchmark methods. PMs should distinguish multiple-choice scores from real-task performance when selecting or disclosing model capabilities, and prefer benchmarks with operation traces."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "LocalLLaMA 讨论",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xroin1/is_this_what_they_mean_when_they_want_to_ban/"
-          },
-          {
-            "label": "OpenAI BioBasicsBench",
+            "label": "OpenAI: BioBasicsBench",
             "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
           },
           {
-            "label": "GitHub Copilot code review API",
-            "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates"
+            "label": "Hugging Face: NVIDIA Cosmos 3",
+            "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+          },
+          {
+            "label": "arXiv: Forcing a Letter Suppresses Refusal",
+            "url": "https://arxiv.org/abs/2611.08639"
           }
         ]
       }
@@ -159,20 +155,20 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "把「Agent 可调用面」做成可审计的能力目录",
-          "en": "Turn the 'agent-callable surface' into an auditable capability catalog"
+          "zh": "面向企业的 Agent 执行层兼容网关",
+          "en": "Enterprise agent execution-layer compatibility gateway"
         },
         "category": {
-          "zh": "产品假设",
-          "en": "Product Hypothesis"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 Skills 的文件夹封装、Astryx 的 Agent 就绪组件与 agent-browser/poki 的操作通道，假设：为 Agent 提供一份「可调用能力目录」（含权限、成本、失败率），能显著降低企业接入 Agent 的集成时间。",
-          "en": "Building on Skills' folder packaging, Astryx's agent-ready components and agent-browser/poki control channels, hypothesize that giving agents a callable capability catalog (with permissions, cost, failure rate) significantly cuts enterprise agent integration time."
+          "zh": "基于 Skills 文件夹规范、MCP 与浏览器自动化工具的并行升温，可假设企业需要一个统一网关，把内部系统封装为 Agent 可调用的技能与操作接口，并集中管理权限与审计。",
+          "en": "Given the parallel rise of Skills folder specs, MCP, and browser automation tools, enterprises may need a unified gateway that wraps internal systems as agent-callable skills and operation interfaces with centralized permission and audit control."
         },
         "pmInsight": {
-          "zh": "验证方式：选 3 个内部 Agent 场景，记录接入前后集成工时与失败排查时间；若目录使集成时间下降 30% 以上，则值得产品化。风险在于标准尚未收敛，需保持格式可替换。",
-          "en": "Validation: pick 3 internal agent scenarios and record integration hours and failure triage time before/after; if the catalog cuts integration time by over 30%, it is worth productizing. Risk: standards are not settled, so keep formats swappable."
+          "zh": "可验证假设：在 4 周内为 3 家试点企业接入 10 个内部技能，若技能复用率超过 40% 且权限审计请求成为高频需求，则验证「执行层网关」比单点 Agent 应用更具采购价值。",
+          "en": "Testable hypothesis: onboard 10 internal skills for 3 pilot enterprises within 4 weeks; if skill reuse exceeds 40% and permission-audit requests become frequent, the execution-layer gateway has more procurement value than a single-point agent app."
         },
         "impact": "Medium",
         "sources": [
@@ -181,41 +177,41 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/anthropics/skills"
           },
           {
-            "label": "meta/astryx",
-            "url": "https://github.com/meta/astryx"
-          },
-          {
             "label": "vercel-labs/agent-browser",
             "url": "https://github.com/vercel-labs/agent-browser"
+          },
+          {
+            "label": "JosssphZhou/poki",
+            "url": "https://github.com/JosssphZhou/poki"
           }
         ]
       },
       {
         "title": {
-          "zh": "对话式成本诊断嵌入 Agent 控制台",
-          "en": "Embed conversational cost diagnosis into the agent console"
+          "zh": "带操作轨迹的 Agent 评测服务",
+          "en": "Agent evaluation service with operation traces"
         },
         "category": {
-          "zh": "产品假设",
-          "en": "Product Hypothesis"
+          "zh": "产品机会",
+          "en": "Product Opportunity"
         },
         "summary": {
-          "zh": "基于 llm-cost-watch 的 MCP 形态与 Gemini 视频生成降价 30%，假设：在 Agent 控制台中提供「问一句为什么贵了」的诊断入口，并按任务/工具归因，可使用户在降价后仍能控制总成本。",
-          "en": "Building on llm-cost-watch's MCP form and Gemini's 30% video generation price cut, hypothesize that a 'ask why it got expensive' diagnostic entry in the agent console, attributed by task/tool, lets users control total cost even after price cuts."
+          "zh": "OpenAI 的湿实验室基准与 arXiv 对选择题评测的质疑共同说明，市场缺少能记录真实操作过程、区分格式偏差的 Agent 评测工具。",
+          "en": "OpenAI's wet-lab benchmark and the arXiv critique of multiple-choice evaluation together indicate a gap for agent evaluation tools that record real operation processes and separate format bias."
         },
         "pmInsight": {
-          "zh": "验证方式：对比有/无诊断入口的两组用户，观察单位任务成本与重试率变化；若重试率下降且成本可解释，则说明归因维度设计有效。注意避免把诊断做成仅展示账单的仪表盘。",
-          "en": "Validation: compare users with and without the diagnostic entry on per-task cost and retry rate; if retries fall and costs become explainable, the attribution design works. Avoid turning diagnosis into a mere billing dashboard."
+          "zh": "可验证假设：为 5 个 Agent 产品同时跑选择题基准与操作轨迹基准，若两者排名差异超过 20%，则「轨迹型评测」可作为独立产品对外提供，优先面向模型卡与合规披露场景。",
+          "en": "Testable hypothesis: run both multiple-choice and operation-trace benchmarks on 5 agent products; if rankings differ by more than 20%, trace-based evaluation can be offered as a standalone product, targeting model cards and compliance disclosure first."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "Show HN: llm-cost-watch",
-            "url": "https://github.com/rohith0707/llm-cost-watch"
+            "label": "OpenAI: BioBasicsBench",
+            "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
           },
           {
-            "label": "Gemini Omni 1.2 Flash",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+            "label": "arXiv: Forcing a Letter Suppresses Refusal",
+            "url": "https://arxiv.org/abs/2611.08639"
           }
         ]
       }
@@ -231,26 +227,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 AI Agent 的无头 3D 与视觉特效引擎，让智能体能够直接驱动 GPU 渲染、光线追踪与特效生成，可用于自动化内容生产、游戏与影视预览等场景。",
+          "zh": "面向 AI Agent 的无头 3D 与视觉特效引擎，让智能体能够直接驱动 GPU 渲染、光线追踪与特效生成，可用于自动化内容生产、游戏素材与实时视觉场景。",
           "en": "Headless 3D and VFX engine for agents. Research preview."
         },
-        "totalStars": 1221,
+        "totalStars": 1234,
         "language": "Rust",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 AI Agent 的无头 3D 与视觉特效引擎，让智能体能够直接驱动 GPU 渲染、光线追踪与特效生成，可用于自动化内容生产、游戏与影视预览等场景。",
+          "zh": "面向 AI Agent 的无头 3D 与视觉特效引擎，让智能体能够直接驱动 GPU 渲染、光线追踪与特效生成，可用于自动化内容生产、游戏素材与实时视觉场景。",
           "en": "Headless 3D and VFX engine for agents. Research preview."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即积累 1221 stars，以 Rust 实现并覆盖 Vulkan、Metal 等图形栈，在 Agent 与实时渲染交叉领域获得早期关注。",
+          "zh": "创建仅约一个月即积累 1234 stars，以 Rust 实现并覆盖 Vulkan、Metal 等图形后端，在 Agent 与图形渲染交叉方向上获得早期关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,221 stars、91 forks，topics: 3d, ai-agents, gpu, metal, ray-tracing，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,221 stars and 91 forks，topics: 3d, ai-agents, gpu, metal, ray-tracing, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,234 stars、91 forks，topics: 3d, ai-agents, gpu, metal, ray-tracing，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,234 stars and 91 forks，topics: 3d, ai-agents, gpu, metal, ray-tracing, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 Agent 能力从文本、代码向实时 3D 视觉生产延伸时，工具链会以什么形态被封装和调用。",
+          "zh": "值得观察 Agent 能力从文本、代码向 3D 视觉生产延伸时，渲染引擎是否会成为新的基础设施层。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -271,26 +267,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "让 AI Agent 直接操作一台真实 iPhone 的本地 MCP 服务，无需越狱或额外硬件，可用于自动化测试、App 操作演示与手机端任务代执行。",
+          "zh": "让 AI Agent 直接操作真实 iPhone 的本地 MCP 服务，无需越狱或额外硬件，可用于自动完成手机上的点击、浏览与应用操作任务。",
           "en": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware."
         },
-        "totalStars": 642,
+        "totalStars": 651,
         "language": "Swift",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "让 AI Agent 直接操作一台真实 iPhone 的本地 MCP 服务，无需越狱或额外硬件，可用于自动化测试、App 操作演示与手机端任务代执行。",
+          "zh": "让 AI Agent 直接操作真实 iPhone 的本地 MCP 服务，无需越狱或额外硬件，可用于自动完成手机上的点击、浏览与应用操作任务。",
           "en": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware."
         },
         "todayHighlight": {
-          "zh": "上线约一个月积累 642 stars，129 个 fork 相对 star 数偏高，说明已有开发者在实际尝试接入，本地 MCP 方案在移动端 Agent 场景中升温。",
+          "zh": "上线约一个月获得 651 stars、133 次 fork，多语言 README 同步覆盖中日韩西等语种，在移动端 Agent 自动化方向持续获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 642 stars、129 forks，topics: ai-agents, automation, ios, iphone, mcp，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 642 stars and 129 forks，topics: ai-agents, automation, ios, iphone, mcp, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 651 stars、133 forks，topics: ai-agents, automation, ios, iphone, mcp，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 651 stars and 133 forks，topics: ai-agents, automation, ios, iphone, mcp, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "移动端是 Agent 落地的重要缺口，可关注「真机操作」这类能力如何转化为可复用的产品接口。",
+          "zh": "手机作为 Agent 执行终端的可行性正在被验证，产品经理可关注移动端自动化在测试、运营与个人助理场景的落地边界。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -314,7 +310,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "在 DeepSeek Harness 侧边栏中用一句话描述小游戏即可生成并试玩，支持替换 AI 美术素材，并一键导出单个 HTML 文件发布到 GitHub Pages 或 Cloudflare。",
           "en": "Describe a small game in one sentence, play it in the DeepSeek Harness sidebar, swap in AI art, and publish to GitHub Pages or Cloudflare in one click."
         },
-        "totalStars": 437,
+        "totalStars": 439,
         "language": "TypeScript",
         "dailyStars": null,
         "chineseIntro": {
@@ -322,15 +318,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Describe a small game in one sentence, play it in the DeepSeek Harness sidebar, swap in AI art, and publish to GitHub Pages or Cloudflare in one click."
         },
         "todayHighlight": {
-          "zh": "创建约一个月获得 437 stars，把「一句话出游戏」与现成托管发布链路打包，契合轻量创作工具的传播叙事。",
+          "zh": "创建约一个月积累 439 stars，把「一句话出游戏」与主流对话式开发环境绑定，在 AI 生成小游戏的轻量创作场景中升温。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 437 stars、40 forks，topics: ai-agent, ai-game-generator, deepseek-harness, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 437 stars and 40 forks，topics: ai-agent, ai-game-generator, deepseek-harness, dsh, dsh-plugin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 439 stars、40 forks，topics: ai-agent, ai-game-generator, deepseek-harness, dsh, dsh-plugin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 439 stars and 40 forks，topics: ai-agent, ai-game-generator, deepseek-harness, dsh, dsh-plugin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察生成式工具如何通过「生成—预览—发布」闭环降低创作门槛，而非只停留在生成环节。",
+          "zh": "可观察对话式开发工具如何通过插件生态把生成能力延伸到可发布、可分发的成品交付环节。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -338,46 +334,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/ZSeven-W/dsh-game-studio"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "anthropics/skills",
-          "en": "anthropics/skills"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 在文档处理等专门任务上按可复现的方式执行。",
-          "en": "Star anthropics / skills Public repository for Agent Skills"
-        },
-        "totalStars": 190111,
-        "language": "Python",
-        "dailyStars": 792,
-        "chineseIntro": {
-          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 在文档处理等专门任务上按可复现的方式执行。",
-          "en": "Star anthropics / skills Public repository for Agent Skills"
-        },
-        "todayHighlight": {
-          "zh": "位居全球趋势榜第 1，今日新增 792 stars，总 star 已超 19 万，作为 Agent Skills 标准的参考实现持续吸引关注。",
-          "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 190k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 792 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 190,111 stars、22,388 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 190,111 stars and 22,388 forks，topics: agent-skills, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "Skills 正在成为 Agent 能力封装的事实规范，产品经理应关注其目录结构与复用方式对自身 Agent 设计的约束。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/anthropics/skills"
           }
         ]
       },
@@ -391,26 +347,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Meta 开源的可完全定制设计系统，基于 React 19 与 StyleX，定位为同时服务人类设计师与 AI Agent 的组件基础。",
+          "zh": "Meta 开源的设计系统，基于 React 19 与 StyleX 构建，强调完全可定制并面向人与 AI Agent 协同开发的场景，适合统一产品界面规范与组件复用。",
           "en": "Star meta / astryx An open source design system that's fully customizable and agent ready"
         },
-        "totalStars": 18261,
+        "totalStars": 18478,
         "language": "TypeScript",
-        "dailyStars": 875,
+        "dailyStars": 3324,
         "chineseIntro": {
-          "zh": "Meta 开源的可完全定制设计系统，基于 React 19 与 StyleX，定位为同时服务人类设计师与 AI Agent 的组件基础。",
+          "zh": "Meta 开源的设计系统，基于 React 19 与 StyleX 构建，强调完全可定制并面向人与 AI Agent 协同开发的场景，适合统一产品界面规范与组件复用。",
           "en": "Star meta / astryx An open source design system that's fully customizable and agent ready"
         },
         "todayHighlight": {
-          "zh": "今日新增 875 stars，总 star 达 1.8 万，处于 Beta 阶段即登上全球趋势榜第 2，大厂出品与「Agent 就绪」定位共同带动关注。",
-          "en": "登上 GitHub Trending 日榜第 2 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 875 星."
+          "zh": "今日新增 3324 stars，位列全球趋势榜第 2，总 star 已达 1.8 万；大厂背书叠加「Agent 就绪」定位，使其在 AI 生成前端话题中快速传播。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 3,324 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,261 stars、1,421 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,261 stars and 1,421 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,478 stars、1,430 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,478 stars and 1,430 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "设计系统开始显式面向 Agent 消费，值得观察组件规范是否会成为 AI 生成界面的质量基线。",
+          "zh": "设计系统正在把「对 Agent 友好」作为一等需求，产品经理应关注组件规范如何影响 AI 生成界面的质量下限。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -418,6 +374,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/meta/astryx"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "anthropics/skills",
+          "en": "anthropics/skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 能按可复用的方式完成文档处理等专项任务。",
+          "en": "Star anthropics / skills Public repository for Agent Skills"
+        },
+        "totalStars": 190217,
+        "language": "Python",
+        "dailyStars": 1052,
+        "chineseIntro": {
+          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 能按可复用的方式完成文档处理等专项任务。",
+          "en": "Star anthropics / skills Public repository for Agent Skills"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 1052 stars，位列全球趋势榜第 1，总 star 已超 19 万；作为 Agent Skills 标准的官方实现，随技能生态扩张持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 190k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,052 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 190,217 stars、22,394 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 190,217 stars and 22,394 forks，topics: agent-skills, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "技能包正在成为 Agent 能力的封装与分发单位，产品经理可观察其是否会演化为类似应用商店的能力市场。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/anthropics/skills"
           }
         ]
       },
@@ -431,26 +427,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取内容并在页面上执行操作。",
+          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取页面内容并在命令行中操作元素，适合网页任务自动化与信息采集。",
           "en": "Star vercel-labs / agent-browser Browser automation CLI for AI agents"
         },
-        "totalStars": 48102,
+        "totalStars": 48144,
         "language": "Rust",
-        "dailyStars": 815,
+        "dailyStars": 914,
         "chineseIntro": {
-          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取内容并在页面上执行操作。",
+          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取页面内容并在命令行中操作元素，适合网页任务自动化与信息采集。",
           "en": "Star vercel-labs / agent-browser Browser automation CLI for AI agents"
         },
         "todayHighlight": {
-          "zh": "今日新增 815 stars，总 star 约 4.8 万，创建约十个月，作为 Agent 网页操作的基础组件随生态升温持续获得关注。",
-          "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 815 星."
+          "zh": "今日新增 914 stars，总 star 约 4.8 万，位列全球趋势榜第 7；作为 Agent 接入真实网页的轻量工具，随浏览器类 Agent 需求升温持续增长。",
+          "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 914 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,102 stars、3,286 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,102 stars and 3,286 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,144 stars、3,286 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,144 stars and 3,286 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "网页操作是 Agent 的高频刚需，可关注 CLI 形态的轻量方案与浏览器插件、云端方案之间的取舍。",
+          "zh": "网页仍是 Agent 最重要的外部环境之一，可关注浏览器自动化工具如何影响 Agent 产品的可靠性与权限设计。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -458,6 +454,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/vercel-labs/agent-browser"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "anthropics/claude-quickstarts",
+          "en": "anthropics/claude-quickstarts"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "Anthropic 官方提供的 Claude API 快速上手项目集合，包含客服 Agent 等可部署示例，帮助开发者以较低门槛搭建并定制自己的 AI 应用。",
+          "en": "Star anthropics / claude-quickstarts A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API"
+        },
+        "totalStars": 19743,
+        "language": "Python",
+        "dailyStars": 560,
+        "chineseIntro": {
+          "zh": "Anthropic 官方提供的 Claude API 快速上手项目集合，包含客服 Agent 等可部署示例，帮助开发者以较低门槛搭建并定制自己的 AI 应用。",
+          "en": "Star anthropics / claude-quickstarts A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API"
+        },
+        "todayHighlight": {
+          "zh": "今日新增 560 stars，总 star 近 2 万，位列全球趋势榜第 5；作为官方入门样板，在 Claude 开发者生态扩张中持续获得新增关注。",
+          "en": "登上 GitHub Trending 日榜第 5 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 560 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,743 stars、3,293 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,743 stars and 3,293 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "官方 Quickstart 往往定义了开发者对能力的默认认知，产品经理可从中观察平台方主推的应用形态与集成路径。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/anthropics/claude-quickstarts"
           }
         ]
       },
@@ -471,26 +507,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "LLM 驱动的多市场股票智能分析系统，整合多源行情与实时新闻，提供决策看板与自动推送，并支持零成本定时运行。",
+          "zh": "LLM 驱动的多市场股票智能分析系统，整合多源行情与实时新闻，提供决策看板与自动推送，并支持零成本定时运行，适合个人投资者做日常盯盘辅助。",
           "en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
         },
-        "totalStars": 68428,
+        "totalStars": 68479,
         "language": "Python",
         "dailyStars": 505,
         "chineseIntro": {
-          "zh": "LLM 驱动的多市场股票智能分析系统，整合多源行情与实时新闻，提供决策看板与自动推送，并支持零成本定时运行。",
+          "zh": "LLM 驱动的多市场股票智能分析系统，整合多源行情与实时新闻，提供决策看板与自动推送，并支持零成本定时运行，适合个人投资者做日常盯盘辅助。",
           "en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
         },
         "todayHighlight": {
-          "zh": "今日新增 505 stars，总 star 约 6.8 万，fork 数高达 5.6 万，fork 与 star 比例异常突出，显示大量用户倾向自行部署使用。",
+          "zh": "今日新增 505 stars，总 star 约 6.8 万，位列全球趋势榜第 9；金融分析叠加 LLM 与零成本定时运行的叙事，在个人量化与投资辅助人群中持续传播。",
           "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 68k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 505 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 68,428 stars、56,298 forks，topics: a-stock, ai-agent, aigc, llm, quant，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 68,428 stars and 56,298 forks，topics: a-stock, ai-agent, aigc, llm, quant, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 68,479 stars、56,313 forks，topics: a-stock, ai-agent, aigc, llm, quant，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 68,479 stars and 56,313 forks，topics: a-stock, ai-agent, aigc, llm, quant, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "金融分析类 Agent 产品的价值更多在数据源整合与推送触达，而非模型本身，值得拆解其可配置化设计。",
+          "zh": "可观察 LLM 在强数据、强时效的金融场景中如何定位为辅助决策而非替代判断，以及合规与免责边界如何设计。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -511,26 +547,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "为已有 Agent 提供可控的长期记忆层，显式存储事实及其来源，支持更正与撤回，并让同一份记忆在多个 Agent 之间共享。",
+          "zh": "为已有 AI Agent 提供可控记忆层的开源项目，以带来源的显式事实存储为基础，支持纠错与撤回，并让同一份记忆在多个 Agent 之间共享。",
           "en": "Star garrytan / gbrain Garry's Opinionated OpenClaw/Hermes Agent Brain"
         },
-        "totalStars": 31844,
+        "totalStars": 31873,
         "language": "TypeScript",
         "dailyStars": 215,
         "chineseIntro": {
-          "zh": "为已有 Agent 提供可控的长期记忆层，显式存储事实及其来源，支持更正与撤回，并让同一份记忆在多个 Agent 之间共享。",
+          "zh": "为已有 AI Agent 提供可控记忆层的开源项目，以带来源的显式事实存储为基础，支持纠错与撤回，并让同一份记忆在多个 Agent 之间共享。",
           "en": "Star garrytan / gbrain Garry's Opinionated OpenClaw/Hermes Agent Brain"
         },
         "todayHighlight": {
-          "zh": "今日新增 215 stars，总 star 约 3.2 万，创建约七个月，Agent 记忆与可溯源需求上升带动其持续在榜。",
+          "zh": "今日新增 215 stars，总 star 约 3.2 万，创建约 7 个月；在 Agent 记忆与个人数据控制话题下持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 215 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,844 stars、4,742 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,844 stars and 4,742 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 31,873 stars、4,748 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 31,873 stars and 4,748 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "记忆的可更正、可撤回与跨 Agent 共享，是 Agent 产品从演示走向可信使用的关键设计点。",
+          "zh": "记忆的可控性与可撤回性正成为 Agent 产品的差异化点，产品经理应关注用户对「AI 记住什么」的信任设计。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -551,26 +587,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学。",
+          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，覆盖深度学习主要方向，被多国数百所大学用于教学，适合系统学习与课程配套。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
-        "totalStars": 82375,
+        "totalStars": 82378,
         "language": "Python",
         "dailyStars": 33,
         "chineseIntro": {
-          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学。",
+          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，覆盖深度学习主要方向，被多国数百所大学用于教学，适合系统学习与课程配套。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
         "todayHighlight": {
-          "zh": "登上中文趋势榜第 2，今日新增 33 stars，作为长期维护的经典教材在 AI 学习需求回升时被重新检索和推荐。",
+          "zh": "今日新增 33 stars，总 star 约 8.2 万，位列中文趋势榜第 2；作为长期沉淀的经典教材，在 AI 学习需求上升时反复回到榜单。",
           "en": "登上 GitHub 中文 Trending 日榜第 2 位, 总 star 数已达 82k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 33 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 82,375 stars、12,484 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 82,375 stars and 12,484 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 82,378 stars、12,486 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 82,378 stars and 12,486 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "经典教育资源的持续在榜说明 AI 人才供给端仍在扩张，可关注其作为团队入门培训素材的可用性。",
+          "zh": "可观察经典学习资源在 AI 热潮中如何持续承担人才入口角色，以及教材型内容的长尾流量价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -580,53 +616,13 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://github.com/d2l-ai/d2l-zh"
           }
         ]
-      },
-      {
-        "title": {
-          "zh": "anthropics/claude-quickstarts",
-          "en": "anthropics/claude-quickstarts"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Anthropic 官方提供的 Claude API 入门示例集合，包含客服 Agent 等可部署应用模板，帮助开发者快速搭建并二次定制。",
-          "en": "Star anthropics / claude-quickstarts A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API"
-        },
-        "totalStars": 19717,
-        "language": "Python",
-        "dailyStars": 32,
-        "chineseIntro": {
-          "zh": "Anthropic 官方提供的 Claude API 入门示例集合，包含客服 Agent 等可部署应用模板，帮助开发者快速搭建并二次定制。",
-          "en": "Star anthropics / claude-quickstarts A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API"
-        },
-        "todayHighlight": {
-          "zh": "今日新增 32 stars，总 star 近 2 万，创建已逾两年，作为官方上手路径在 Claude 生态扩张中稳定获得新增关注。",
-          "en": "登上 GitHub Trending 日榜第 5 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 32 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,717 stars、3,293 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,717 stars and 3,293 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "官方 Quickstart 往往定义了生态的默认架构，可从中观察 Anthropic 对 Agent 应用形态的引导方向。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/anthropics/claude-quickstarts"
-          }
-        ]
       }
     ],
     "companyUpdates": [
       {
         "title": {
-          "zh": "Hacker News LLM: Show HN: LLM-cost-watch – Ask Claude why your LLM bill jumped",
-          "en": "Hacker News LLM: Show HN: LLM-cost-watch – Ask Claude why your LLM bill jumped"
+          "zh": "Reddit LocalLLaMA: New Gemma Models",
+          "en": "Reddit LocalLLaMA: New Gemma Models"
         },
         "category": {
           "zh": "公司动态",
@@ -637,63 +633,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "开源项目 llm-cost-watch 以 MCP 服务器形式，让用户直接用自然语言向 Claude 询问 LLM 花费与延迟异常的原因。对产品意味着 LLM 成本可观测性正从仪表盘转向对话式诊断。",
-          "en": "Article URL: https://github.com/rohith0707/llm-cost-watch Comments URL: https://news.ycombinator.com/item?id=50415785 Points: 1 # Comments: 0"
+          "zh": "LocalLLaMA 社区讨论 Gemma 4 之后是否会有 Gemma 5，用户反馈 Gemma 4 31b 在本地多卡部署下质量已很好，期待新模型提升吞吐。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Are there any (insider) infos to upcoming Gemma Models? Gemma 4 is for my usecase really good and I am looking forward if they will release any new even better models most likely named Gemma 5? Currently using Gemma 4 31b nvfp4 on 3x rtx pro 6000, quality is is really good only hoping for the newer models to be even faster with tps</p> <p>Update:<br/> no, this is not a troll post. We"
         },
         "chineseIntro": {
-          "zh": "开源项目 llm-cost-watch 以 MCP 服务器形式，让用户直接用自然语言向 Claude 询问 LLM 花费与延迟异常的原因。对产品意味着 LLM 成本可观测性正从仪表盘转向对话式诊断。",
-          "en": "Article URL: https://github.com/rohith0707/llm-cost-watch Comments URL: https://news.ycombinator.com/item?id=50415785 Points: 1 # Comments: 0"
+          "zh": "LocalLLaMA 社区讨论 Gemma 4 之后是否会有 Gemma 5，用户反馈 Gemma 4 31b 在本地多卡部署下质量已很好，期待新模型提升吞吐。",
+          "en": "<!-- SC_OFF --><div class=\"md\"><p>Are there any (insider) infos to upcoming Gemma Models? Gemma 4 is for my usecase really good and I am looking forward if they will release any new even better models most likely named Gemma 5? Currently using Gemma 4 31b nvfp4 on 3x rtx pro 6000, quality is is really good only hoping for the newer models to be even faster with tps</p> <p>Update:<br/> no, this is not a troll post. We"
         },
         "todayHighlight": {
-          "zh": "MCP 生态开始出现垂直运维工具，说明协议层正成为 AI 产品集成的新入口。",
-          "en": "MCP 生态开始出现垂直运维工具，说明协议层正成为 AI 产品集成的新入口。"
+          "zh": "开源小模型迭代节奏成为本地部署用户选型的关键变量，社区预期会提前影响开发者对 Gemma 系列的采用决策。",
+          "en": "开源小模型迭代节奏成为本地部署用户选型的关键变量，社区预期会提前影响开发者对 Gemma 系列的采用决策。"
         },
         "pmInsight": {
-          "zh": "评估是否将成本/延迟查询接入自有 MCP 工具链，把 FinOps 能力前置到对话界面。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News LLM",
-            "url": "https://github.com/rohith0707/llm-cost-watch"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Reddit LocalLLaMA: Is this what they mean when they want to ban Chinese models?",
-          "en": "Reddit LocalLLaMA: Is this what they mean when they want to ban Chinese models?"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "政策/安全",
-          "en": "政策/安全"
-        },
-        "summary": {
-          "zh": "LocalLLaMA 社区讨论所谓“禁止中国模型”的实际所指，反映出开源模型地缘政策讨论升温。对产品意味着模型选型需开始考虑合规与供应链风险。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xroin1/is_this_what_they_mean_when_they_want_to_ban/\"> <img src=\"https://preview.redd.it/s2xa17n2gk0i1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=2ced672462248cd9aa0396cf6e92532655fc3560\" alt=\"Is this what they mean when they want to ban Chinese models?\" title=\"Is this what they mean when they want to ban Chinese models?\" /> </a> </td><td>"
-        },
-        "chineseIntro": {
-          "zh": "LocalLLaMA 社区讨论所谓“禁止中国模型”的实际所指，反映出开源模型地缘政策讨论升温。对产品意味着模型选型需开始考虑合规与供应链风险。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xroin1/is_this_what_they_mean_when_they_want_to_ban/\"> <img src=\"https://preview.redd.it/s2xa17n2gk0i1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=2ced672462248cd9aa0396cf6e92532655fc3560\" alt=\"Is this what they mean when they want to ban Chinese models?\" title=\"Is this what they mean when they want to ban Chinese models?\" /> </a> </td><td>"
-        },
-        "todayHighlight": {
-          "zh": "社区情绪显示模型来源正从技术问题变成采购与合规问题，可能影响企业本地部署决策。",
-          "en": "社区情绪显示模型来源正从技术问题变成采购与合规问题，可能影响企业本地部署决策。"
-        },
-        "pmInsight": {
-          "zh": "在模型选型清单中加入来源地/许可证合规维度，提前准备可替代的开源权重方案。",
+          "zh": "关注本地部署社区对 tps 和量化精度的真实反馈，可作为评估下一代开源模型发布窗口与硬件适配需求的先行指标。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
         "sources": [
           {
             "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xroin1/is_this_what_they_mean_when_they_want_to_ban/"
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrpcke/new_gemma_models/"
           }
         ]
       },
@@ -711,19 +670,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub Copilot 代码审查现可通过 REST/GraphQL API 管理企业到仓库级设置，并新增审查归因字段与更紧凑的概览评论。对产品意味着 AI 代码审查可被编排进企业现有研发流程。",
+          "zh": "GitHub Copilot 代码审查设置现可通过 REST 和 GraphQL API 从企业策略到单个仓库进行管理，并新增审查归因字段和更紧凑的概览评论。",
           "en": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot&#8217;s review overview comment is now more compact,&#8230; The post Copilot code review: API management and review overview updates appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub Copilot 代码审查现可通过 REST/GraphQL API 管理企业到仓库级设置，并新增审查归因字段与更紧凑的概览评论。对产品意味着 AI 代码审查可被编排进企业现有研发流程。",
+          "zh": "GitHub Copilot 代码审查设置现可通过 REST 和 GraphQL API 从企业策略到单个仓库进行管理，并新增审查归因字段和更紧凑的概览评论。",
           "en": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot&#8217;s review overview comment is now more compact,&#8230; The post Copilot code review: API management and review overview updates appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "Copilot 审查能力 API 化，标志 AI 代码审查从 IDE 功能升级为可治理的平台能力。",
-          "en": "Copilot 审查能力 API 化，标志 AI 代码审查从 IDE 功能升级为可治理的平台能力。"
+          "zh": "把 AI 代码审查纳入 API 可编程管理，意味着 Copilot 正从个人助手转向企业级可治理的研发基础设施。",
+          "en": "把 AI 代码审查纳入 API 可编程管理，意味着 Copilot 正从个人助手转向企业级可治理的研发基础设施。"
         },
         "pmInsight": {
-          "zh": "梳理企业客户对审查策略的 API 管控需求，评估是否将 Copilot 审查结果接入自有质量门禁。",
+          "zh": "做研发效能产品时，应把 AI 审查的归因字段（技能、MCP、自定义指令）纳入审计与效果度量，而不是只看审查通过率。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -748,19 +707,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "OpenAI 发布 BioBasicsBench，用 100 项任务衡量 AI 代理解读原始实验数据和处理日常湿实验室工作的能力。对产品意味着科研代理有了更贴近真实工作流的评测基准。",
+          "zh": "OpenAI 发布 BioBasicsBench，用 100 项任务衡量 AI 智能体解读原始实验数据和处理日常湿实验室工作的能力。",
           "en": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
         },
         "chineseIntro": {
-          "zh": "OpenAI 发布 BioBasicsBench，用 100 项任务衡量 AI 代理解读原始实验数据和处理日常湿实验室工作的能力。对产品意味着科研代理有了更贴近真实工作流的评测基准。",
+          "zh": "OpenAI 发布 BioBasicsBench，用 100 项任务衡量 AI 智能体解读原始实验数据和处理日常湿实验室工作的能力。",
           "en": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
         },
         "todayHighlight": {
-          "zh": "基准从问答转向原始数据解读，显示代理评测正逼近真实科研操作层。",
-          "en": "基准从问答转向原始数据解读，显示代理评测正逼近真实科研操作层。"
+          "zh": "这是 OpenAI 首次把评测重心从问答转向真实实验操作，为科学智能体的能力边界提供了可比较的基准。",
+          "en": "这是 OpenAI 首次把评测重心从问答转向真实实验操作，为科学智能体的能力边界提供了可比较的基准。"
         },
         "pmInsight": {
-          "zh": "若做科研类代理产品，可将 BioBasicsBench 任务拆解为功能清单，定位数据解析环节的短板。",
+          "zh": "若规划科研类智能体，应优先拆解原始实验数据解析与多步骤操作任务，而不是用通用推理分数替代领域评测。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -768,6 +727,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "OpenAI",
             "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "arXiv CL: Forcing a Letter Suppresses Refusal: Mechanistic Evidence from WMDP",
+          "en": "arXiv CL: Forcing a Letter Suppresses Refusal: Mechanistic Evidence from WMDP"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "研究在 WMDP 数据集上发现，选择题格式会让模型快速锁定答案字母，激活远离拒绝方向，从而显著降低拒答率，并给出注意力头层面的机制证据。",
+          "en": "arXiv:2611.08639v1 Announce Type: new Abstract: Safety benchmarks for large language models (LLMs) commonly use multiple-choice question (MCQ) format. However, prior studies documented that MCQ format reduces refusal rates, which may significantly affect the safety behavior of the model. We provide a first mechanistic explanation of this effect on the Weapons of Mass Destruction Proxy (WMDP) dataset across two models"
+        },
+        "chineseIntro": {
+          "zh": "研究在 WMDP 数据集上发现，选择题格式会让模型快速锁定答案字母，激活远离拒绝方向，从而显著降低拒答率，并给出注意力头层面的机制证据。",
+          "en": "arXiv:2611.08639v1 Announce Type: new Abstract: Safety benchmarks for large language models (LLMs) commonly use multiple-choice question (MCQ) format. However, prior studies documented that MCQ format reduces refusal rates, which may significantly affect the safety behavior of the model. We provide a first mechanistic explanation of this effect on the Weapons of Mass Destruction Proxy (WMDP) dataset across two models"
+        },
+        "todayHighlight": {
+          "zh": "安全评测若继续依赖选择题格式，可能系统性高估模型安全性，这对监管与模型卡披露方式构成直接挑战。",
+          "en": "安全评测若继续依赖选择题格式，可能系统性高估模型安全性，这对监管与模型卡披露方式构成直接挑战。"
+        },
+        "pmInsight": {
+          "zh": "设计安全评测或红队流程时，应同时保留开放式提问与选择题两种格式，并单独报告格式差异，避免安全指标失真。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "arXiv CL",
+            "url": "https://arxiv.org/abs/2611.08639"
           }
         ]
       },
@@ -785,19 +781,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "NVIDIA 在 Hugging Face 发布 Cosmos 3 系列四个开放权重检查点，覆盖多视角驾驶数据生成、相机与 LiDAR 同步仿真、文本到真实感视频及双臂机器人动作预测。对产品意味着世界模型开始以可商用开源权重形式进入仿真与机器人管线。",
+          "zh": "NVIDIA 在 Hugging Face 发布 Cosmos 3 系列四个开放权重检查点，覆盖多视角驾驶数据生成、相机与激光雷达同步仿真、文本到真实感视频以及机器人双臂动作预测。",
           "en": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
         },
         "chineseIntro": {
-          "zh": "NVIDIA 在 Hugging Face 发布 Cosmos 3 系列四个开放权重检查点，覆盖多视角驾驶数据生成、相机与 LiDAR 同步仿真、文本到真实感视频及双臂机器人动作预测。对产品意味着世界模型开始以可商用开源权重形式进入仿真与机器人管线。",
+          "zh": "NVIDIA 在 Hugging Face 发布 Cosmos 3 系列四个开放权重检查点，覆盖多视角驾驶数据生成、相机与激光雷达同步仿真、文本到真实感视频以及机器人双臂动作预测。",
           "en": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
         },
         "todayHighlight": {
-          "zh": "开放权重加商用许可的组合，可能压低自动驾驶与机器人仿真数据生成的门槛。",
-          "en": "开放权重加商用许可的组合，可能压低自动驾驶与机器人仿真数据生成的门槛。"
+          "zh": "开放权重且允许商用的世界模型，把自动驾驶与机器人仿真的数据生成能力从闭源平台释放到开发者生态。",
+          "en": "开放权重且允许商用的世界模型，把自动驾驶与机器人仿真的数据生成能力从闭源平台释放到开发者生态。"
         },
         "pmInsight": {
-          "zh": "评估 Cosmos3-Nano-Sim-Auto 能否替代部分真实路采数据，先在小场景做合成数据质量对照。",
+          "zh": "做仿真或合成数据产品时，可评估用 Cosmos3-Nano 系列替代部分自建渲染管线，重点验证多传感器同步与商用许可条款。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -822,19 +818,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Gemini Omni 1.2 Flash 支持原生 15 秒视频生成与编辑，一致性更强且价格下调 30%。对产品意味着长片段视频生成的成本门槛明显降低。",
+          "zh": "Gemini Omni 1.2 Flash 支持原生 15 秒视频生成与编辑，一致性更强，价格下调 30%。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.max-600x600.format-webp.webp\">Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
         },
         "chineseIntro": {
-          "zh": "Gemini Omni 1.2 Flash 支持原生 15 秒视频生成与编辑，一致性更强且价格下调 30%。对产品意味着长片段视频生成的成本门槛明显降低。",
+          "zh": "Gemini Omni 1.2 Flash 支持原生 15 秒视频生成与编辑，一致性更强，价格下调 30%。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.max-600x600.format-webp.webp\">Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
         },
         "todayHighlight": {
-          "zh": "降价叠加更长时长，直接压缩视频生成类产品的单位内容成本，可能引发价格竞争。",
-          "en": "降价叠加更长时长，直接压缩视频生成类产品的单位内容成本，可能引发价格竞争。"
+          "zh": "更长时长加降价 30%，直接压低视频生成的单位成本，可能加速营销与电商素材场景的规模化采用。",
+          "en": "更长时长加降价 30%，直接压低视频生成的单位成本，可能加速营销与电商素材场景的规模化采用。"
         },
         "pmInsight": {
-          "zh": "按 15 秒片段重算视频功能毛利，评估是否将默认生成时长从短片段升级并调整定价。",
+          "zh": "视频类产品应重算按秒计费的成本模型，并测试 15 秒原生片段能否替代拼接方案以降低一致性问题。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
