@@ -48,63 +48,30 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "AI PM Daily · 2026-11-10"
     },
     "editorNote": {
-      "zh": "今日主线是「Agent 基础设施与分发入口同时升温」：一边是 Anthropic 官方 Skills 与 Meta 的 Agent 就绪设计系统在 GitHub 趋势榜前列，另一边是 OpenAI 把企业版搬进 AWS 采购流程、Claude 新模型发布当天进入 Copilot。模型能力差距在收窄，竞争重心转向执行环境、采购入口与单位任务成本。",
-      "en": "Today's thread is the simultaneous warming of agent infrastructure and distribution entry points: Anthropic's official Skills and Meta's agent-ready design system sit atop GitHub trends, while OpenAI moves Enterprise into AWS procurement and Claude's new model lands in Copilot on launch day. As model capability gaps narrow, competition shifts to execution environments, procurement entry points, and per-task cost."
+      "zh": "今日主线是「Agent 基础设施化」：模型侧以降价提速与云市场分销降低接入门槛，工具侧以设计系统、技能包与浏览器自动化补齐 Agent 的工程底座。",
+      "en": "Today's throughline is the infrastructuralization of agents: model vendors cut price and latency while opening cloud-marketplace distribution, and tooling layers fill in the engineering substrate with design systems, skill packs, and browser automation."
     },
     "keyTakeaway": {
-      "zh": "Agent 生态正从「模型能力」转向「执行与采购基础设施」：Skills、浏览器自动化、记忆治理与设计系统在开源侧持续升温，云市场与 IDE 则成为模型厂商争夺企业入口的前线。PM 本周应把评估重点从榜单分数转向单位任务成本与集成摩擦。",
-      "en": "The agent ecosystem is shifting from model capability to execution and procurement infrastructure: skills, browser automation, memory governance, and design systems keep warming on the open-source side, while cloud marketplaces and IDEs become the front line for enterprise entry. PMs should shift evaluation from leaderboard scores to per-task cost and integration friction this week."
+      "zh": "Agent 竞争正从「模型能力」转向「可交付的工程底座」：Anthropic 以降价提速加 Copilot 当日集成压缩接入成本，Meta 的 Agent-ready 设计系统与 Vercel 的浏览器自动化则补齐了界面与执行两端。对 PM 而言，选型重点应从跑分转向技能生态、渠道与成本结构的组合。",
+      "en": "Agent competition is shifting from raw model capability to a deliverable engineering substrate: Anthropic compresses integration cost with cheaper, faster models and same-day Copilot availability, while Meta's agent-ready design system and Vercel's browser automation fill in the UI and execution ends. For PMs, selection criteria should move from benchmarks to the combination of skill ecosystem, distribution channel, and cost structure."
     },
     "signals": [
       {
         "title": {
-          "zh": "Agent 执行层开源项目集体在榜，Skills 与浏览器自动化成为事实标准候选",
-          "en": "Agent execution-layer projects cluster on trending; Skills and browser automation emerge as de facto standard candidates"
+          "zh": "模型发布到主流编码工具的集成周期缩短到「当天」",
+          "en": "Model-to-mainstream-coding-tool integration has compressed to same-day"
         },
         "category": {
-          "zh": "开源生态",
-          "en": "Open-source ecosystem"
+          "zh": "模型平台 / 开发者生态",
+          "en": "Model Platform / Developer Ecosystem"
         },
         "summary": {
-          "zh": "anthropics/skills 今日新增 1038 星、总 star 超 19 万，位列全球趋势榜第 1；vercel-labs/agent-browser 新增 916 星、总 star 近 4.9 万，位列第 7；garrytan/gbrain 新增 216 星，聚焦 Agent 记忆的更正与撤回。三者分别覆盖技能封装、网页执行与记忆治理，构成 Agent 执行栈的互补层。",
-          "en": "anthropics/skills added 1,038 stars today (191K+ total), ranking #1 globally; vercel-labs/agent-browser added 916 (48.8K total), ranking #7; garrytan/gbrain added 216, focused on correctable, retractable agent memory. Together they cover skill packaging, web execution, and memory governance—complementary layers of the agent execution stack."
+          "zh": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，输出速度最高提升 30%，价格降至每百万输入 8 美元、输出 40 美元；同日 GitHub Changelog 显示 Fable 5.2 已在 Copilot 全面可用，覆盖 VS Code、CLI、编码代理与移动端，企业管理员需手动开启策略并默认要求数据留存以运行安全分类器。",
+          "en": "Anthropic released Claude Fable 5.2 and Mythos 5.2 with up to 30% faster output and pricing at $8 per million input / $40 per million output tokens; the same day, GitHub Changelog showed Fable 5.2 generally available in Copilot across VS Code, CLI, coding agent, and mobile, with enterprise admins required to opt in and data retention defaulted on to run safety classifiers."
         },
         "pmInsight": {
-          "zh": "Agent 能力竞争正从「模型会不会做」转向「能否可复现、可审计地做」。Skills 的文件夹式封装与 gbrain 的来源可追溯记忆，都是企业采购时会追问的合规点。PM 应尽快确认自家 Agent 产品的技能封装格式与记忆撤回机制是否与这些参考实现兼容，避免在集成阶段返工。",
-          "en": "Agent competition is moving from 'can the model do it' to 'can it be done reproducibly and auditably.' Skills' folder-based packaging and gbrain's source-traceable memory are exactly the compliance points enterprise buyers probe. PMs should verify whether their agent's skill packaging and memory-retraction mechanisms are compatible with these reference implementations to avoid rework at integration."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "anthropics/skills",
-            "url": "https://github.com/anthropics/skills"
-          },
-          {
-            "label": "vercel-labs/agent-browser",
-            "url": "https://github.com/vercel-labs/agent-browser"
-          },
-          {
-            "label": "garrytan/gbrain",
-            "url": "https://github.com/garrytan/gbrain"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "模型发布当天即进 Copilot，云市场成为企业采购入口",
-          "en": "New models land in Copilot on launch day; cloud marketplaces become enterprise procurement entry"
-        },
-        "category": {
-          "zh": "分发与商业化",
-          "en": "Distribution & commercialization"
-        },
-        "summary": {
-          "zh": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，输出速度最高提升 30%，价格降至每百万输入 8 美元、输出 40 美元；同日 Claude Fable 5.2 在 GitHub Copilot 全面可用，覆盖 VS Code、CLI、编码代理与移动端，企业管理员需手动开启。OpenAI 则将 ChatGPT Enterprise 上架 AWS Marketplace，客户可用现有 AWS 采购与账单关系完成购买。",
-          "en": "Anthropic released Fable 5.2 and Mythos 5.2 with up to 30% faster output and pricing at $8/M input and $40/M output; the same day Claude Fable 5.2 became generally available in GitHub Copilot across VS Code, CLI, coding agents, and mobile, with enterprise admins needing to opt in. OpenAI listed ChatGPT Enterprise on AWS Marketplace, letting customers buy through existing AWS procurement and billing."
-        },
-        "pmInsight": {
-          "zh": "模型厂商的竞争已从参数转向「发布即集成」与「采购零摩擦」。对企业 PM 而言，模型选型的隐性成本正在从 API 单价转移到管理员开关、采购流程与账单归属。建议本周梳理自家产品的模型接入清单，标注哪些模型需要管理员手动开启、哪些可通过云市场结算，这会直接影响企业客户的落地周期。",
-          "en": "Model vendors now compete on 'integrate on launch' and 'zero-friction procurement' rather than parameters. For enterprise PMs, hidden model-selection costs are shifting from API unit price to admin toggles, procurement flows, and billing ownership. This week, audit your product's model integration list, flagging which models require manual admin enablement and which can be settled via cloud marketplaces—this directly affects enterprise deployment cycles."
+          "zh": "降价与提速同时发生，叠加当日集成，意味着模型厂商正用性价比与分发速度争夺编码类高价值负载。PM 应把「新模型可切换时间」纳入供应商评估，并提前确认企业侧的数据留存与合规开关，否则能力升级会被采购流程抵消。",
+          "en": "Simultaneous price cuts and speed gains, plus same-day integration, mean vendors are competing for high-value coding workloads on cost-effectiveness and distribution speed. PMs should add 'time-to-switch for new models' to vendor evaluation and pre-confirm enterprise data-retention and compliance toggles, or capability upgrades will be offset by procurement friction."
         },
         "impact": "High",
         "sources": [
@@ -113,41 +80,99 @@ export const DAILY_BRIEFS: DailyBrief[] = [
             "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
           },
           {
-            "label": "GitHub Changelog: Claude Fable 5.2 in Copilot",
+            "label": "GitHub Changelog: Claude Fable 5.2 in GitHub Copilot",
             "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot"
-          },
-          {
-            "label": "OpenAI: ChatGPT Enterprise on AWS Marketplace",
-            "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
           }
         ]
       },
       {
         "title": {
-          "zh": "决策模型占请求 26% 却只占支出零头，模型选型逻辑转向单位任务成本",
-          "en": "Decision models take 26% of requests but a sliver of spend; model selection shifts to per-task cost"
+          "zh": "Agent 技能生态持续升温，官方与社区实现并行扩张",
+          "en": "Agent skill ecosystem keeps warming, with official and community implementations expanding in parallel"
         },
         "category": {
-          "zh": "成本结构",
-          "en": "Cost structure"
+          "zh": "Agent 技能生态",
+          "en": "Agent Skill Ecosystem"
         },
         "summary": {
-          "zh": "Vercel AI Gateway 月度指数显示，决策类模型已占请求量 26%，但支出占比极低（每美元半美分级别）；Anthropic 在新团队中取得 2:1 胜率，大用量团队中七成使用了决策模型。同期 LocalLLaMA 社区质疑 ArtificialAnalysis 对开源权重模型存在评测偏差，榜单公信力争议升温。",
-          "en": "Vercel's AI Gateway monthly index shows decision models at 26% of requests but a negligible share of spend (half a cent per dollar); Anthropic wins new teams 2:1, and 70% of high-volume teams use decision models. Meanwhile LocalLLaMA questions whether ArtificialAnalysis is biased against open-weight models, heating up debate over leaderboard credibility."
+          "zh": "Anthropic 官方 skills 仓库总 star 接近 19.2 万、今日新增 1676，位列全球趋势榜第 2；addyosmani/agent-skills 总 star 达 11.4 万、今日新增 465，兼容 Claude Code、Cursor、Codex 等工具；中文社区 solo-to-team-skills 创建数日即获 476 stars、44 forks，主打「一人统筹 AI 团队」的派活与核证流程。",
+          "en": "Anthropic's official skills repo is near 192k stars with 1,676 added today, ranking #2 globally; addyosmani/agent-skills sits at 114k stars with 465 added today and cross-tool compatibility across Claude Code, Cursor, and Codex; the Chinese-community solo-to-team-skills gained 476 stars and 44 forks within days, focused on task delegation and verification for one person orchestrating an AI team."
         },
         "pmInsight": {
-          "zh": "请求量与支出占比的背离说明「便宜的小模型做决策、贵的大模型做生成」的分层架构正在成为默认实践。叠加榜单公信力争议，单一第三方评分已不足以支撑选型。PM 应建立按任务类型拆分的成本-质量看板，用自家真实流量验证分层路由的收益，而不是照搬榜单排名。",
-          "en": "The divergence between request share and spend share suggests a tiered architecture—cheap small models for decisions, expensive large models for generation—is becoming default practice. Combined with leaderboard credibility concerns, a single third-party score no longer suffices for selection. PMs should build a cost-quality dashboard split by task type and validate tiered routing gains on their own traffic rather than copying rankings."
+          "zh": "技能层正在成为跨模型的「可移植资产」，官方参考实现与社区最佳实践同时扩张，说明用户关心的是行为一致性而非单一模型。PM 应评估把核心工作流封装为可复用技能包，并关注跨工具兼容性，避免被单一供应商锁定。",
+          "en": "The skill layer is becoming a portable asset across models, with official reference implementations and community best practices expanding together, indicating users care about behavioral consistency rather than a single model. PMs should evaluate packaging core workflows as reusable skill packs and watch cross-tool compatibility to avoid single-vendor lock-in."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "Vercel AI Gateway Production Index",
+            "label": "anthropics/skills",
+            "url": "https://github.com/anthropics/skills"
+          },
+          {
+            "label": "addyosmani/agent-skills",
+            "url": "https://github.com/addyosmani/agent-skills"
+          },
+          {
+            "label": "dabingfy-dot/solo-to-team-skills",
+            "url": "https://github.com/dabingfy-dot/solo-to-team-skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Agent 的界面与执行两端同时被补齐",
+          "en": "Both the UI and execution ends of agents are being filled in"
+        },
+        "category": {
+          "zh": "Agent 工程底座",
+          "en": "Agent Engineering Substrate"
+        },
+        "summary": {
+          "zh": "Meta 开源设计系统 astryx，基于 React 19 与 StyleX，主打完全可定制并面向 Agent 协作，今日新增 3111 stars、总 star 2.1 万，位列全球趋势榜第 1；Vercel Labs 的 agent-browser 让 Agent 打开网页、以可访问性树读取内容并执行操作，今日新增 775 stars、总 star 4.9 万。",
+          "en": "Meta open-sourced astryx, a design system built on React 19 and StyleX, fully customizable and positioned for agent collaboration, adding 3,111 stars today to reach 21k and ranking #1 globally; Vercel Labs' agent-browser lets agents open pages, read content via the accessibility tree, and act on them, adding 775 stars today to reach 48.9k."
+        },
+        "pmInsight": {
+          "zh": "设计系统解决「Agent 生成的界面如何保持一致」，浏览器自动化解决「Agent 如何操作真实网页」，两者共同降低 Agent 产品的交付成本。PM 可据此重新评估自研前端与自建爬取管线的必要性，优先复用标准化底座。",
+          "en": "The design system addresses how agent-generated interfaces stay consistent, while browser automation addresses how agents operate real web pages; together they lower delivery cost for agent products. PMs can use this to reassess the need for bespoke front-ends and custom scraping pipelines, preferring standardized substrate."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "meta/astryx",
+            "url": "https://github.com/meta/astryx"
+          },
+          {
+            "label": "vercel-labs/agent-browser",
+            "url": "https://github.com/vercel-labs/agent-browser"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "生产流量结构从生成转向决策，成本模型随之改变",
+          "en": "Production traffic shifts from generation to decision, changing the cost model"
+        },
+        "category": {
+          "zh": "生产流量 / 成本结构",
+          "en": "Production Traffic / Cost Structure"
+        },
+        "summary": {
+          "zh": "Vercel AI Gateway 月度指数显示，决策类模型已占请求量 26%，却只占支出的半美分每美元；Anthropic 在新团队获取上以 2:1 领先。同时 OpenAI 将 ChatGPT Enterprise 上架 AWS Marketplace，企业可直接用现有 AWS 采购与账单关系完成订阅。",
+          "en": "Vercel's AI Gateway monthly index shows decision models at 26% of requests but only half a cent per dollar of spend, with Anthropic leading new-team acquisition 2:1; meanwhile OpenAI listed ChatGPT Enterprise on AWS Marketplace, letting enterprises subscribe through existing AWS procurement and billing."
+        },
+        "pmInsight": {
+          "zh": "低单价高调用量的决策模型正在改写 AI 产品的成本结构与默认模型选择，而云市场分销则降低企业采购摩擦。PM 应把「按任务类型分层选模型」和「渠道可达性」一起纳入定价与 GTM 设计，而非只按单一模型报价。",
+          "en": "Low-unit-price, high-volume decision models are rewriting AI product cost structures and default model choices, while cloud-marketplace distribution lowers enterprise procurement friction. PMs should fold task-tiered model routing and channel reachability into pricing and GTM design rather than quoting a single model."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Vercel AI: AI Gateway Production Index, November 2026",
             "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
           },
           {
-            "label": "LocalLLaMA: ArtificialAnalysis bias discussion",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/"
+            "label": "OpenAI: ChatGPT Enterprise now available in AWS Marketplace",
+            "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
           }
         ]
       }
@@ -155,59 +180,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "面向企业的 Agent 技能与记忆合规层",
-          "en": "Enterprise agent skill and memory compliance layer"
+          "zh": "面向企业的「模型切换与合规开关」控制台",
+          "en": "An enterprise console for model switching and compliance toggles"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product opportunity"
+          "zh": "企业 AI 治理",
+          "en": "Enterprise AI Governance"
         },
         "summary": {
-          "zh": "基于 anthropics/skills 的文件夹式技能封装与 gbrain 的来源可追溯、可撤回记忆，构建一层面向企业的「Agent 行为审计」中间件：记录每次技能调用的输入输出、记忆写入的来源与更正历史，并支持按合规要求导出。",
-          "en": "Build an enterprise 'agent behavior audit' middleware on top of anthropics/skills' folder-based skill packaging and gbrain's source-traceable, retractable memory: log each skill invocation's inputs/outputs, memory writes' provenance and correction history, and export for compliance."
+          "zh": "基于 Fable 5.2 当日进入 Copilot、且企业需手动开启策略并默认数据留存的事实，假设企业团队存在「想快速用上新模型但被合规流程卡住」的痛点，可做一个统一管理模型版本、数据留存策略与安全分类器开关的控制台。",
+          "en": "Given Fable 5.2 landing in Copilot same-day with enterprise opt-in and default data retention, hypothesize that enterprise teams want fast access to new models but are blocked by compliance processes; a console unifying model versions, data-retention policies, and safety-classifier toggles could address this."
         },
         "pmInsight": {
-          "zh": "可验证假设：在采购评估中，提供技能调用与记忆变更审计日志的 Agent 产品，企业客户的安全评审通过率显著高于无审计版本。建议先在一个企业试点客户中埋点验证，用评审周期与法务问询数量作为指标。",
-          "en": "Testable hypothesis: in procurement evaluation, agent products offering skill-invocation and memory-change audit logs pass enterprise security review at a notably higher rate than unaudited versions. Validate with one pilot enterprise customer, using review cycle length and legal inquiry count as metrics."
+          "zh": "验证方式：访谈 5-10 家中大型企业的 AI 平台负责人，确认模型切换平均耗时与合规审批环节；若「切换耗时 > 1 周」占比过半，则该控制台有明确需求。",
+          "en": "Validation: interview 5-10 AI platform owners at mid-to-large enterprises to confirm average model-switch time and compliance approval steps; if 'switch time > 1 week' holds for over half, the console has clear demand."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "anthropics/skills",
-            "url": "https://github.com/anthropics/skills"
+            "label": "GitHub Changelog: Claude Fable 5.2 in GitHub Copilot",
+            "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot"
           },
           {
-            "label": "garrytan/gbrain",
-            "url": "https://github.com/garrytan/gbrain"
+            "label": "Anthropic: Claude Fable 5.2 and Mythos 5.2",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
           }
         ]
       },
       {
         "title": {
-          "zh": "按任务分层的模型路由与成本看板",
-          "en": "Task-tiered model routing and cost dashboard"
+          "zh": "把「一人成队」技能包产品化为团队协作模板",
+          "en": "Productizing the 'solo-to-team' skill pack into team collaboration templates"
         },
         "category": {
-          "zh": "产品机会",
-          "en": "Product opportunity"
+          "zh": "Agent 协作产品",
+          "en": "Agent Collaboration Product"
         },
         "summary": {
-          "zh": "针对决策模型占请求 26% 却只占支出零头的结构，为开发者产品内置「任务分层路由」：简单判定走低价模型、复杂生成走高价模型，并实时展示每类任务的单位成本与质量指标，替代对单一榜单的依赖。",
-          "en": "Given decision models at 26% of requests but a sliver of spend, embed 'task-tiered routing' into developer products: cheap models for simple judgments, premium models for complex generation, with real-time per-task unit cost and quality metrics—replacing reliance on a single leaderboard."
+          "zh": "基于 solo-to-team-skills 数日获 476 stars、44 forks 的传播，以及官方与社区技能仓库的持续扩张，假设个人创作者与小微团队需要「派活—核证—复用」的标准化模板，可将其封装为带审计记录与经验库的协作产品。",
+          "en": "Given solo-to-team-skills gaining 476 stars and 44 forks within days, plus continued expansion of official and community skill repos, hypothesize that solo creators and small teams need standardized delegate-verify-reuse templates; packaging this with audit trails and an experience library could form a collaboration product."
         },
         "pmInsight": {
-          "zh": "可验证假设：接入分层路由的团队，其单位任务成本下降幅度与任务成功率无显著负相关。建议用 A/B 对比同一批任务在单模型与分层路由下的成本与通过率，若成本降幅超过 20% 且成功率差异在 2 个百分点内，即可作为默认配置推广。",
-          "en": "Testable hypothesis: teams adopting tiered routing see unit-task cost reductions without a significant negative correlation to task success rate. Run an A/B on the same task batch comparing single-model vs. tiered routing; if cost drops over 20% with success-rate difference within 2 percentage points, promote it as the default configuration."
+          "zh": "验证方式：观察该仓库 fork 后的二次修改内容，统计有多少 fork 在补充核证或审计逻辑；若比例显著，说明「可验证性」是付费意愿的关键，而非派活本身。",
+          "en": "Validation: inspect post-fork modifications in that repo and count how many forks add verification or audit logic; a significant share would indicate verifiability, not delegation itself, drives willingness to pay."
         },
-        "impact": "Medium",
+        "impact": "Watch",
         "sources": [
           {
-            "label": "Vercel AI Gateway Production Index",
-            "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
+            "label": "dabingfy-dot/solo-to-team-skills",
+            "url": "https://github.com/dabingfy-dot/solo-to-team-skills"
           },
           {
-            "label": "Anthropic: Claude Fable 5.2 and Mythos 5.2",
-            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+            "label": "anthropics/skills",
+            "url": "https://github.com/anthropics/skills"
           }
         ]
       }
@@ -223,18 +248,18 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "把提词器与 AI 剪辑代理结合的视频制作工作流，用 JSON 驱动动画和动态图形，面向 YouTube 创作者完成从脚本到成片的编辑流程。",
+          "zh": "面向 YouTube 创作者的 AI 视频剪辑工作流，把提词器与剪辑 Agent 结合，通过 JSON 驱动动画和动态图形，让口播视频的剪辑与包装更自动化。",
           "en": "Eyeline teleprompter meets editing agents: JSON-driven animation and motion graphics workflow"
         },
         "totalStars": 481,
         "language": "HTML",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "把提词器与 AI 剪辑代理结合的视频制作工作流，用 JSON 驱动动画和动态图形，面向 YouTube 创作者完成从脚本到成片的编辑流程。",
+          "zh": "面向 YouTube 创作者的 AI 视频剪辑工作流，把提词器与剪辑 Agent 结合，通过 JSON 驱动动画和动态图形，让口播视频的剪辑与包装更自动化。",
           "en": "Eyeline teleprompter meets editing agents: JSON-driven animation and motion graphics workflow"
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即进入上升榜，总 star 481，安装量标注 127K，说明「AI 代理接管剪辑」的叙事在视频创作者中开始升温。",
+          "zh": "创建仅约一个月即进入上升榜，今日总 star 达 481，README 中展示的安装量数据也为其带来传播素材，在 AI 视频剪辑这一细分方向持续获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
         },
         "inclusionReason": {
@@ -242,7 +267,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 481 stars and 1 forks，topics: ai-agents, ai-video-editing, animation, claude-design, design, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 AI 视频工具是否正从「一键生成」转向「可编排的剪辑工作流」，以及 JSON 这类结构化中间层能否成为创作者与代理协作的接口。",
+          "zh": "值得观察「提词器+剪辑 Agent」这类垂直工作流如何把创作者的重复劳动拆成可编排步骤，以及 JSON 驱动的内容结构能否成为视频生产的新交付格式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -263,26 +288,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向「一个人带 AI 团队」的协作技能包，覆盖派活、核证、步骤说明与经验复用，帮助个人用多个 Agent 完成团队级任务。",
+          "zh": "一套面向「一个人统筹 AI 团队」的协作技能包，覆盖派活、核证、清楚说明与经验复用，帮助个人用户把多个 AI Agent 组织成可管理的工作团队。",
           "en": "Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。"
         },
-        "totalStars": 462,
+        "totalStars": 476,
         "language": "Unknown",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向「一个人带 AI 团队」的协作技能包，覆盖派活、核证、步骤说明与经验复用，帮助个人用多个 Agent 完成团队级任务。",
+          "zh": "一套面向「一个人统筹 AI 团队」的协作技能包，覆盖派活、核证、清楚说明与经验复用，帮助个人用户把多个 AI Agent 组织成可管理的工作团队。",
           "en": "Skills for human-led AI teams: delegate tasks, verify evidence, explain steps clearly, and learn from real cases. 一个人统筹 AI 团队：派活、核证、清楚说明、经验复用。"
         },
         "todayHighlight": {
-          "zh": "创建约一个月、总 star 462，fork 达 42，说明「人类主导、AI 执行」的组织方法在 Agent 技能生态中持续获得关注。",
+          "zh": "创建仅数日便积累 476 stars、44 forks，中文「一人成队」叙事在 Agent 技能生态中快速传播，今日持续在上升榜获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 462 stars、42 forks，topics: agent-skills, ai-agents, collaboration, human-in-the-loop, workflow，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 462 stars and 42 forks，topics: agent-skills, ai-agents, collaboration, human-in-the-loop, workflow, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 476 stars、44 forks，topics: agent-skills, ai-agents, collaboration, human-in-the-loop, workflow，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 476 stars and 44 forks，topics: agent-skills, ai-agents, collaboration, human-in-the-loop, workflow, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可关注「人机协作流程标准化」这一需求：用户要的不只是更强的模型，而是可复用、可验收的协作规范。",
+          "zh": "可关注「人类主导、Agent 执行」的协作规范如何产品化，尤其是任务分派与结果核证环节，这可能是多 Agent 产品差异化的关键。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -303,26 +328,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "DeepSeek Harness 的提示词插件，用激活词切换到大白话提问模式，内置技能库调用、漏洞知识库与授权渗透流程。",
+          "zh": "DeepSeek Harness 的提示词插件，以「富江」为激活词，让用户用大白话提问，并内置技能库下载调用、漏洞知识库与自动化授权渗透能力。",
           "en": "富江破甲（破甲）：DeepSeek Harness破甲插件，激活词富江，所有东西直接大白话问，内含技能库skill下载与调用、漏洞知识库poc利用、漏洞报告更新和全自动授权渗透。当前版本：0.20.12，附免责声明。插件图片看最下面"
         },
-        "totalStars": 404,
+        "totalStars": 420,
         "language": "JavaScript",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "DeepSeek Harness 的提示词插件，用激活词切换到大白话提问模式，内置技能库调用、漏洞知识库与授权渗透流程。",
+          "zh": "DeepSeek Harness 的提示词插件，以「富江」为激活词，让用户用大白话提问，并内置技能库下载调用、漏洞知识库与自动化授权渗透能力。",
           "en": "富江破甲（破甲）：DeepSeek Harness破甲插件，激活词富江，所有东西直接大白话问，内含技能库skill下载与调用、漏洞知识库poc利用、漏洞报告更新和全自动授权渗透。当前版本：0.20.12，附免责声明。插件图片看最下面"
         },
         "todayHighlight": {
-          "zh": "创建仅数日总 star 已过 400、fork 达 223，fork 与 star 比例偏高，显示安全测试人群的下载与二次使用意愿较强。",
+          "zh": "创建仅两天即获 420 stars、225 forks，fork 比例偏高，说明不少用户在自行部署与二次修改，安全工具类项目在中文社区升温较快。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 404 stars、223 forks，topics: ai-agent, cve, deepseek, deepseek-harness, fujiang-pojia，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 404 stars and 223 forks，topics: ai-agent, cve, deepseek, deepseek-harness, fujiang-pojia, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 420 stars、225 forks，topics: ai-agent, cve, deepseek, deepseek-harness, fujiang-pojia，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 420 stars and 225 forks，topics: ai-agent, cve, deepseek, deepseek-harness, fujiang-pojia, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "这类项目提示 PM 注意：安全与渗透场景对「降低使用门槛」的需求真实存在，但合规边界与免责声明是产品化必须前置处理的问题。",
+          "zh": "需观察此类「降低安全测试门槛」的工具如何在能力开放与合规免责之间划界，以及插件化分发对 Agent 生态治理提出的新问题。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -343,26 +368,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Meta 开源的设计系统，主打完全可定制并面向 Agent 协作场景，基于 React 19 与 StyleX，为人和 AI 共同构建界面提供统一组件基础。",
+          "zh": "Meta 开源的设计系统，主打完全可定制并面向 Agent 协作场景，基于 React 19 与 StyleX 构建，为「人与 AI 一起写界面」提供统一的组件与样式基础。",
           "en": "Star meta / astryx An open source design system that's fully customizable and agent ready"
         },
-        "totalStars": 21168,
+        "totalStars": 21303,
         "language": "TypeScript",
-        "dailyStars": 3278,
+        "dailyStars": 3111,
         "chineseIntro": {
-          "zh": "Meta 开源的设计系统，主打完全可定制并面向 Agent 协作场景，基于 React 19 与 StyleX，为人和 AI 共同构建界面提供统一组件基础。",
+          "zh": "Meta 开源的设计系统，主打完全可定制并面向 Agent 协作场景，基于 React 19 与 StyleX 构建，为「人与 AI 一起写界面」提供统一的组件与样式基础。",
           "en": "Star meta / astryx An open source design system that's fully customizable and agent ready"
         },
         "todayHighlight": {
-          "zh": "今日新增 3278 星、总 star 超 2.1 万，位列全球趋势榜第 2，大厂背书叠加「Agent 就绪」定位带动快速传播。",
-          "en": "登上 GitHub Trending 日榜第 2 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 3,278 星."
+          "zh": "今日新增 3111 stars，位列全球趋势榜第 1，总 star 已达 2.1 万；大厂开源加「Agent ready 设计系统」的定位，使其在 AI 生成前端话题中快速传播。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 3,111 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 21,168 stars、1,630 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 21,168 stars and 1,630 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 21,303 stars、1,657 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 21,303 stars and 1,657 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察设计系统是否正在把「AI 可读、可改」作为一等需求，这会直接影响前端团队与 AI 编程工具的协作方式。",
+          "zh": "值得关注设计系统如何为 AI 生成界面提供约束与一致性，这直接影响 AI 编程产品的产出质量与品牌可控性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -383,26 +408,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 在特定任务上按可复现的方式执行。",
+          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 能按需加载并稳定完成文档处理等专项任务。",
           "en": "Star anthropics / skills Public repository for Agent Skills"
         },
-        "totalStars": 191604,
+        "totalStars": 191729,
         "language": "Python",
-        "dailyStars": 1038,
+        "dailyStars": 1676,
         "chineseIntro": {
-          "zh": "Anthropic 官方的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 在特定任务上按可复现的方式执行。",
+          "zh": "Anthropic 官方维护的 Agent Skills 仓库，用文件夹形式封装指令、脚本与资源，让 Claude 能按需加载并稳定完成文档处理等专项任务。",
           "en": "Star anthropics / skills Public repository for Agent Skills"
         },
         "todayHighlight": {
-          "zh": "总 star 已超 19 万，今日新增 1038，位列全球趋势榜第 1，作为 Agent Skills 标准的参考实现持续吸引新增关注。",
-          "en": "登上 GitHub Trending 日榜第 1 位, 总 star 数已达 191k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,038 星."
+          "zh": "总 star 已接近 19.2 万，今日新增 1676，位列全球趋势榜第 2；作为 Agent Skills 标准的参考实现，随技能生态扩张持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 191k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,676 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 191,604 stars、22,505 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 191,604 stars and 22,505 forks，topics: agent-skills, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 191,729 stars、22,529 forks，topics: agent-skills，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 191,729 stars and 22,529 forks，topics: agent-skills, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "PM 应关注「技能包」是否会成为 AI 能力分发的标准单元，以及围绕技能的市场、版本与权限治理机会。",
+          "zh": "应把 Skills 视为 Agent 能力的可复用封装层，观察其目录规范与加载机制是否会成为行业事实标准。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -423,26 +448,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取内容并在页面上执行操作。",
+          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取内容并在页面上执行操作，是 Agent 接入 Web 的轻量方案。",
           "en": "Star vercel-labs / agent-browser Browser automation CLI for AI agents"
         },
-        "totalStars": 48827,
+        "totalStars": 48861,
         "language": "Rust",
-        "dailyStars": 916,
+        "dailyStars": 775,
         "chineseIntro": {
-          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取内容并在页面上执行操作。",
+          "zh": "Vercel Labs 出品的浏览器自动化命令行工具，让 AI Agent 打开网页、以可访问性树读取内容并在页面上执行操作，是 Agent 接入 Web 的轻量方案。",
           "en": "Star vercel-labs / agent-browser Browser automation CLI for AI agents"
         },
         "todayHighlight": {
-          "zh": "今日新增 916 星、总 star 近 4.9 万，位列全球趋势榜第 7，随 Agent 执行网页任务的需求升温而持续获得关注。",
-          "en": "登上 GitHub Trending 日榜第 7 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 916 星."
+          "zh": "今日新增 775 stars，总 star 达 4.9 万，位列全球趋势榜第 8；随 Agent 需要操作真实网页的需求上升，该项目持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 8 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 775 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,827 stars、3,355 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,827 stars and 3,355 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 48,861 stars、3,386 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 48,861 stars and 3,386 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察 Agent 操作网页的「基础设施层」竞争：谁能提供稳定、可调试的浏览能力，谁就掌握 Agent 落地真实业务的关键一环。",
+          "zh": "可观察 Agent 操作网页的抽象方式，可访问性树路线对兼容性与稳定性意味着什么，会直接影响浏览器类 Agent 产品的可用边界。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -450,6 +475,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/vercel-labs/agent-browser"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "addyosmani/agent-skills",
+          "en": "addyosmani/agent-skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "面向 AI 编程 Agent 的工程技能集合，把资深工程师的工作流、质量门禁与最佳实践打包成技能，让 Agent 在开发各阶段保持一致行为。",
+          "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
+        },
+        "totalStars": 114765,
+        "language": "JavaScript",
+        "dailyStars": 465,
+        "chineseIntro": {
+          "zh": "面向 AI 编程 Agent 的工程技能集合，把资深工程师的工作流、质量门禁与最佳实践打包成技能，让 Agent 在开发各阶段保持一致行为。",
+          "en": "Star addyosmani / agent-skills Production-grade engineering skills for AI coding agents."
+        },
+        "todayHighlight": {
+          "zh": "总 star 已达 11.4 万，今日新增 465，位列全球趋势榜第 3；创建约九个月，跨 Claude Code、Cursor、Codex 等工具的兼容定位带来持续关注。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 114k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 465 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 114,765 stars、11,994 forks，topics: agent-skills, antigravity, claude-code, codex, cursor，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 114,765 stars and 11,994 forks，topics: agent-skills, antigravity, claude-code, codex, cursor, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "值得观察「工程规范即技能」的思路，它把团队研发标准变成可分发资产，可能改变 AI 编程工具的能力供给方式。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/addyosmani/agent-skills"
           }
         ]
       },
@@ -463,26 +528,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "Anthropic 官方示例集合，提供客服 Agent 等可直接部署的起步项目，帮助开发者快速用 Claude API 搭建应用。",
+          "zh": "Anthropic 官方的 Claude API 入门示例集合，提供客服 Agent 等可直接部署的项目模板，帮助开发者快速搭起基于 Claude 的应用。",
           "en": "Star anthropics / claude-quickstarts A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API"
         },
-        "totalStars": 20209,
+        "totalStars": 20235,
         "language": "Python",
-        "dailyStars": 551,
+        "dailyStars": 530,
         "chineseIntro": {
-          "zh": "Anthropic 官方示例集合，提供客服 Agent 等可直接部署的起步项目，帮助开发者快速用 Claude API 搭建应用。",
+          "zh": "Anthropic 官方的 Claude API 入门示例集合，提供客服 Agent 等可直接部署的项目模板，帮助开发者快速搭起基于 Claude 的应用。",
           "en": "Star anthropics / claude-quickstarts A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API"
         },
         "todayHighlight": {
-          "zh": "项目已近两年，今日仍新增 551 星、总 star 超 2 万，位列全球趋势榜第 5，说明新入局开发者仍在持续涌入 Claude 生态。",
-          "en": "登上 GitHub Trending 日榜第 5 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 551 星."
+          "zh": "作为创建已超两年的官方示例库，今日新增 530 stars、总 star 突破 2 万，位列全球趋势榜第 4，说明新开发者仍在持续涌入 Claude 生态。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 530 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 20,209 stars、3,362 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 20,209 stars and 3,362 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 20,235 stars、3,382 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 20,235 stars and 3,382 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "PM 可从中观察官方示例如何塑造开发者的默认架构选择，这往往决定了后续工具链与云服务的采用路径。",
+          "zh": "可关注官方 Quickstart 覆盖哪些场景，这往往反映平台方判断的高价值应用方向，对产品选型有参考意义。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -490,86 +555,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/anthropics/claude-quickstarts"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "ZhuLinsen/daily_stock_analysis",
-          "en": "ZhuLinsen/daily_stock_analysis"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "LLM 驱动的多市场股票分析系统，整合多源行情与实时新闻，输出决策看板并支持自动推送和零成本定时运行。",
-          "en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
-        },
-        "totalStars": 69406,
-        "language": "Python",
-        "dailyStars": 506,
-        "chineseIntro": {
-          "zh": "LLM 驱动的多市场股票分析系统，整合多源行情与实时新闻，输出决策看板并支持自动推送和零成本定时运行。",
-          "en": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
-        },
-        "todayHighlight": {
-          "zh": "总 star 近 6.9 万、今日新增 506，fork 数高达 5.6 万，fork 与 star 比例异常突出，显示大量用户实际部署自用。",
-          "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 69k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 506 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 69,406 stars、56,566 forks，topics: a-stock, ai-agent, aigc, llm, quant，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 69,406 stars and 56,566 forks，topics: a-stock, ai-agent, aigc, llm, quant, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "值得观察「个人量化 + LLM」场景的真实使用深度：高 fork 低讨论的结构，往往意味着工具型产品而非社区型产品。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "garrytan/gbrain",
-          "en": "garrytan/gbrain"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "给常用 AI Agent 加上可控记忆的开源方案，显式存储事实及其来源，支持更正与撤回，并让多个 Agent 共享同一份记忆。",
-          "en": "Star garrytan / gbrain Garry's Opinionated OpenClaw/Hermes Agent Brain"
-        },
-        "totalStars": 32372,
-        "language": "TypeScript",
-        "dailyStars": 216,
-        "chineseIntro": {
-          "zh": "给常用 AI Agent 加上可控记忆的开源方案，显式存储事实及其来源，支持更正与撤回，并让多个 Agent 共享同一份记忆。",
-          "en": "Star garrytan / gbrain Garry's Opinionated OpenClaw/Hermes Agent Brain"
-        },
-        "todayHighlight": {
-          "zh": "创建约 7 个月、总 star 超 3.2 万，今日新增 216，位列全球趋势榜第 6，Agent 记忆治理话题持续获得关注。",
-          "en": "登上 GitHub Trending 日榜第 6 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 216 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 32,372 stars、4,807 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 32,372 stars and 4,807 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "PM 应关注「记忆的来源与可撤回」正成为 Agent 产品的信任基础，而不只是检索效果问题。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/garrytan/gbrain"
           }
         ]
       },
@@ -583,26 +568,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学。",
+          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学，是中文深度学习学习的经典入口。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
-        "totalStars": 82428,
+        "totalStars": 82431,
         "language": "Python",
         "dailyStars": 49,
         "chineseIntro": {
-          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学。",
+          "zh": "《动手学深度学习》中文版开源教材，内容可运行、可讨论，中英文版被 70 多个国家的 500 多所大学用于教学，是中文深度学习学习的经典入口。",
           "en": "Star d2l-ai / d2l-zh 《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。"
         },
         "todayHighlight": {
-          "zh": "作为近十年前创建的经典教材，今日仍新增 49 星并位列中文趋势榜第 2，长期教学采用带来稳定关注。",
-          "en": "登上 GitHub 中文 Trending 日榜第 2 位, 总 star 数已达 82k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 49 星."
+          "zh": "作为 2017 年创建的老项目，今日仍新增 49 stars 并位列中文趋势榜第 6，总 star 超 8.2 万，长期教学使用带来稳定关注。",
+          "en": "登上 GitHub 中文 Trending 日榜第 6 位, 总 star 数已达 82k+，属于持续在榜的头部 AI 开源项目, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 49 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 82,428 stars、12,487 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 82,428 stars and 12,487 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 82,431 stars、12,487 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 82,431 stars and 12,487 forks，topics: book, chinese, computer-vision, deep-learning, machine-learning, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察经典教育内容在 AI 时代的持续价值：结构化、可运行的教材仍是学习路径的锚点，也是工具与课程产品的入口。",
+          "zh": "可观察经典教材型开源项目如何靠教学场景维持长期生命力，这对 AI 学习类产品的持续运营有借鉴价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -610,6 +595,46 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Repository",
             "url": "https://github.com/d2l-ai/d2l-zh"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "AstrBotDevs/AstrBot",
+          "en": "AstrBotDevs/AstrBot"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "集成多种 IM 平台、大模型与插件的 AI Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等渠道，作为开箱即用的聊天机器人方案。",
+          "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+        },
+        "totalStars": 46586,
+        "language": "Python",
+        "dailyStars": 96,
+        "chineseIntro": {
+          "zh": "集成多种 IM 平台、大模型与插件的 AI Agent 助手与开发框架，可接入 QQ、Telegram、Discord 等渠道，作为开箱即用的聊天机器人方案。",
+          "en": "Star AstrBotDevs / AstrBot AI Agent Assistant &amp; development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+        },
+        "todayHighlight": {
+          "zh": "创建已四年，今日新增 96 stars、总 star 达 4.6 万，位列中文趋势榜第 16；多平台接入与插件生态使其在 IM 机器人方向持续获得关注。",
+          "en": "登上 GitHub 中文 Trending 日榜第 16 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 96 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 46,586 stars、3,466 forks，topics: agent, ai, astrbot, chatbot, chatgpt，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 46,586 stars and 3,466 forks，topics: agent, ai, astrbot, chatbot, chatgpt, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "值得观察多 IM 渠道统一接入的产品结构，渠道适配与插件生态如何决定聊天机器人产品的扩展速度。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/AstrBotDevs/AstrBot"
           }
         ]
       }
@@ -629,19 +654,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "生态合作"
         },
         "summary": {
-          "zh": "ChatGPT Enterprise 上架 AWS Marketplace，企业可直接用现有 AWS 采购与账单关系完成购买。这意味着 OpenAI 把企业销售渠道嵌入云厂商的采购流程，降低客户签约与结算摩擦。",
+          "zh": "ChatGPT Enterprise 上架 AWS Marketplace，企业可直接用现有 AWS 采购与账单关系完成订阅。对产品意味着采购摩擦大幅降低，企业销售渠道进一步向云市场倾斜。",
           "en": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships."
         },
         "chineseIntro": {
-          "zh": "ChatGPT Enterprise 上架 AWS Marketplace，企业可直接用现有 AWS 采购与账单关系完成购买。这意味着 OpenAI 把企业销售渠道嵌入云厂商的采购流程，降低客户签约与结算摩擦。",
+          "zh": "ChatGPT Enterprise 上架 AWS Marketplace，企业可直接用现有 AWS 采购与账单关系完成订阅。对产品意味着采购摩擦大幅降低，企业销售渠道进一步向云市场倾斜。",
           "en": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships."
         },
         "todayHighlight": {
-          "zh": "企业级 AI 的分发竞争正从模型能力转向采购入口，OpenAI 借 AWS 渠道直接触达已签约云客户。",
-          "en": "企业级 AI 的分发竞争正从模型能力转向采购入口，OpenAI 借 AWS 渠道直接触达已签约云客户。"
+          "zh": "这是 OpenAI 把企业级分销交给云厂商的关键一步，直接与 AWS 上已有的模型服务形成渠道竞争。",
+          "en": "这是 OpenAI 把企业级分销交给云厂商的关键一步，直接与 AWS 上已有的模型服务形成渠道竞争。"
         },
         "pmInsight": {
-          "zh": "若你的产品面向企业客户，应评估是否同步上架主流云市场，并把采购合规与账单合并作为销售话术的一部分。",
+          "zh": "做企业版定价与打包时，应把云市场结算、私有报价和承诺用量折扣纳入同一套商务模型，避免直销与渠道价格打架。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -666,19 +691,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，在编码、推理、视觉上提升，输出速度最高快 30%，价格降至每百万输入 8 美元、输出 40 美元，并提供可选快速模式。Mythos 面向网络安全与生物医药等受控场景，需申请访问。",
+          "zh": "Anthropic 升级 Fable 5.2 与 Mythos 5.2，在编码、推理、视觉上提升，输出速度最高快 30%，价格降至每百万输入 8 美元、输出 40 美元。同一底层模型按安全护栏拆成面向全量的 Fable 和面向受审机构的 Mythos。",
           "en": "Quote“The model is in my head. It understands the intent behind every prompt I’ve given it. I haven’t had to say ‘No, I meant…’ a single time. Projects we’ve been pushing along with other models for weeks got finished and approved by our teammates in a few days with Claude Fable 5.2, and the humans reviewing its code had less to say.”CompanyVercelAuthorJoe Haddad, Member of Technical Staff"
         },
         "chineseIntro": {
-          "zh": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，在编码、推理、视觉上提升，输出速度最高快 30%，价格降至每百万输入 8 美元、输出 40 美元，并提供可选快速模式。Mythos 面向网络安全与生物医药等受控场景，需申请访问。",
+          "zh": "Anthropic 升级 Fable 5.2 与 Mythos 5.2，在编码、推理、视觉上提升，输出速度最高快 30%，价格降至每百万输入 8 美元、输出 40 美元。同一底层模型按安全护栏拆成面向全量的 Fable 和面向受审机构的 Mythos。",
           "en": "Quote“The model is in my head. It understands the intent behind every prompt I’ve given it. I haven’t had to say ‘No, I meant…’ a single time. Projects we’ve been pushing along with other models for weeks got finished and approved by our teammates in a few days with Claude Fable 5.2, and the humans reviewing its code had less to say.”CompanyVercelAuthorJoe Haddad, Member of Technical Staff"
         },
         "todayHighlight": {
-          "zh": "同一底层模型拆成通用版与受控版，并以降价加提速参战，直接压缩竞品在高端编码场景的性价比空间。",
-          "en": "同一底层模型拆成通用版与受控版，并以降价加提速参战，直接压缩竞品在高端编码场景的性价比空间。"
+          "zh": "降价加提速同时发生，说明 Anthropic 正用性价比正面争夺编码与科研类高价值工作负载。",
+          "en": "降价加提速同时发生，说明 Anthropic 正用性价比正面争夺编码与科研类高价值工作负载。"
         },
         "pmInsight": {
-          "zh": "重新测算编码类功能的单任务成本，把提速与降价折算成用户可感知的等待时间和调用预算，再决定是否切换默认模型。",
+          "zh": "评估模型时不要只看榜单，应按任务统计完成步数与工具调用次数，把速度提升折算成单位任务成本再决定是否迁移。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
@@ -703,19 +728,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "产品功能"
         },
         "summary": {
-          "zh": "Claude Fable 5.2 在 GitHub Copilot 全面可用，覆盖 VS Code、CLI、编码代理与移动端，早期测试中完成更多任务且步骤与工具调用更少。企业管理员需手动开启该模型策略，默认关闭。",
+          "zh": "Claude Fable 5.2 在 GitHub Copilot 全面可用，覆盖 VS Code、CLI、编码代理和移动端，面向复杂多步编码任务。企业管理员需手动开启策略，且默认要求数据留存以运行安全分类器。",
           "en": "Claude Fable 5.2, Anthropic&#8217;s newest Fable model, is now generally available in GitHub Copilot. You can use it for complex, multistep coding tasks across large codebases. In early testing, Fable&#8230; The post Claude Fable 5.2 in GitHub Copilot appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "Claude Fable 5.2 在 GitHub Copilot 全面可用，覆盖 VS Code、CLI、编码代理与移动端，早期测试中完成更多任务且步骤与工具调用更少。企业管理员需手动开启该模型策略，默认关闭。",
+          "zh": "Claude Fable 5.2 在 GitHub Copilot 全面可用，覆盖 VS Code、CLI、编码代理和移动端，面向复杂多步编码任务。企业管理员需手动开启策略，且默认要求数据留存以运行安全分类器。",
           "en": "Claude Fable 5.2, Anthropic&#8217;s newest Fable model, is now generally available in GitHub Copilot. You can use it for complex, multistep coding tasks across large codebases. In early testing, Fable&#8230; The post Claude Fable 5.2 in GitHub Copilot appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "新模型发布当天即进入主流编码工具，说明模型厂商与开发者平台的绑定速度已成为竞争关键。",
-          "en": "新模型发布当天即进入主流编码工具，说明模型厂商与开发者平台的绑定速度已成为竞争关键。"
+          "zh": "新模型发布当天即进入主流编码工具，说明模型厂商与开发者平台的绑定节奏已缩短到以天计。",
+          "en": "新模型发布当天即进入主流编码工具，说明模型厂商与开发者平台的绑定节奏已缩短到以天计。"
         },
         "pmInsight": {
-          "zh": "在 Copilot 中对比 Fable 5.2 与现有默认模型的完成率与步骤数，用真实仓库任务决定团队默认模型并同步管理员策略。",
+          "zh": "在编码助手选型中，把数据留存策略和零留存资格作为硬性门槛，先确认企业合规路径再开放模型选择器。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -723,6 +748,43 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "GitHub Changelog",
             "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: Fable 5.2 not only has guardrails against AI acceleration, its capabilities were capped in training too",
+          "en": "Reddit LocalLLaMA: Fable 5.2 not only has guardrails against AI acceleration, its capabilities were capped in training too"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "社区讨论称 Fable 5.2 不仅在推理侧设有防 AI 加速的护栏，训练阶段也对能力做了上限控制。这反映出前沿模型开始在能力释放上做主动取舍。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsjfwo/fable_52_not_only_has_guardrails_against_ai/\"> <img src=\"https://preview.redd.it/8uv4vmjtfr0i1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e82e3761e735c7d379083be35428291fe0da854b\" alt=\"Fable 5.2 not only has guardrails against AI acceleration, its capabilities were capped in training too\" title=\"Fable 5.2 not only has guardrails agai"
+        },
+        "chineseIntro": {
+          "zh": "社区讨论称 Fable 5.2 不仅在推理侧设有防 AI 加速的护栏，训练阶段也对能力做了上限控制。这反映出前沿模型开始在能力释放上做主动取舍。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xsjfwo/fable_52_not_only_has_guardrails_against_ai/\"> <img src=\"https://preview.redd.it/8uv4vmjtfr0i1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=e82e3761e735c7d379083be35428291fe0da854b\" alt=\"Fable 5.2 not only has guardrails against AI acceleration, its capabilities were capped in training too\" title=\"Fable 5.2 not only has guardrails agai"
+        },
+        "todayHighlight": {
+          "zh": "若属实，意味着模型竞争从单纯堆能力转向可控能力释放，安全设计本身成为产品差异点。",
+          "en": "若属实，意味着模型竞争从单纯堆能力转向可控能力释放，安全设计本身成为产品差异点。"
+        },
+        "pmInsight": {
+          "zh": "对依赖前沿模型做高风险自动化的团队，应在合同中要求披露能力限制与护栏变更通知，避免能力被静默收紧影响线上流程。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsjfwo/fable_52_not_only_has_guardrails_against_ai/"
           }
         ]
       },
@@ -740,19 +802,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "Vercel AI Gateway 月度指数显示，决策类模型已占请求量 26%，但只占支出的每美元半美分；Anthropic 在新团队中取得 2:1 的胜率。大用量团队中七成使用了决策模型。",
+          "zh": "Vercel AI Gateway 月度指数显示，决策类模型已占请求量 26%，却只占支出的半美分每美元；Anthropic 在新团队获取上以 2:1 领先。生产流量结构正在从生成转向决策。",
           "en": "AI Gateway Production Index — November 2026Every month, AI Gateway routes more than 100 trillion tokens between production applications and AI labs. That traffic gives us a view of what AI usage looks like in today’s enterprise and startup landscape across language, decision, voice, image, and video models. We publish it here monthly. See the Production Index reports from August, September, and October.November 2026 "
         },
         "chineseIntro": {
-          "zh": "Vercel AI Gateway 月度指数显示，决策类模型已占请求量 26%，但只占支出的每美元半美分；Anthropic 在新团队中取得 2:1 的胜率。大用量团队中七成使用了决策模型。",
+          "zh": "Vercel AI Gateway 月度指数显示，决策类模型已占请求量 26%，却只占支出的半美分每美元；Anthropic 在新团队获取上以 2:1 领先。生产流量结构正在从生成转向决策。",
           "en": "AI Gateway Production Index — November 2026Every month, AI Gateway routes more than 100 trillion tokens between production applications and AI labs. That traffic gives us a view of what AI usage looks like in today’s enterprise and startup landscape across language, decision, voice, image, and video models. We publish it here monthly. See the Production Index reports from August, September, and October.November 2026 "
         },
         "todayHighlight": {
-          "zh": "决策模型以极低单价吃下四分之一请求，说明推理成本结构正在被重塑，模型选择逻辑从能力转向单位任务成本。",
-          "en": "决策模型以极低单价吃下四分之一请求，说明推理成本结构正在被重塑，模型选择逻辑从能力转向单位任务成本。"
+          "zh": "决策模型低单价高调用量的组合，正在改写 AI 产品的成本结构与默认模型选择。",
+          "en": "决策模型低单价高调用量的组合，正在改写 AI 产品的成本结构与默认模型选择。"
         },
         "pmInsight": {
-          "zh": "按请求类型拆分你的模型路由，把高频低价值决策调用迁到低价决策模型，并监控新团队选型趋势以调整默认推荐。",
+          "zh": "按请求类型拆分成本与延迟预算，把决策类调用单独路由到低价模型，避免用生成模型的价格承担高频判断任务。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -760,43 +822,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           {
             "label": "Vercel AI",
             "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Reddit LocalLLaMA: Is ArtificialAnalysis biased against open weight models?",
-          "en": "Reddit LocalLLaMA: Is ArtificialAnalysis biased against open weight models?"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "LocalLLaMA 社区质疑 ArtificialAnalysis 的评测是否对开源权重模型存在偏差，讨论集中在评测方法与榜单代表性。这反映开源社区对第三方基准公信力的持续敏感。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/\"> <img src=\"https://preview.redd.it/glw3miqrvn0i1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=0db61f65e6f993f50b490aa894956f96031408bf\" alt=\"Is ArtificialAnalysis biased against open weight models?\" title=\"Is ArtificialAnalysis biased against open weight models?\" /> </a> </td><td> <!--"
-        },
-        "chineseIntro": {
-          "zh": "LocalLLaMA 社区质疑 ArtificialAnalysis 的评测是否对开源权重模型存在偏差，讨论集中在评测方法与榜单代表性。这反映开源社区对第三方基准公信力的持续敏感。",
-          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/\"> <img src=\"https://preview.redd.it/glw3miqrvn0i1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=0db61f65e6f993f50b490aa894956f96031408bf\" alt=\"Is ArtificialAnalysis biased against open weight models?\" title=\"Is ArtificialAnalysis biased against open weight models?\" /> </a> </td><td> <!--"
-        },
-        "todayHighlight": {
-          "zh": "榜单公信力争议升温，意味着模型选型不能只依赖单一第三方评分，开源模型的真实口碑正在分流。",
-          "en": "榜单公信力争议升温，意味着模型选型不能只依赖单一第三方评分，开源模型的真实口碑正在分流。"
-        },
-        "pmInsight": {
-          "zh": "在选型文档中标注评测来源与方法差异，补充自有场景的 A/B 结果，避免团队被单一榜单带偏。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Reddit LocalLLaMA",
-            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/"
           }
         ]
       },
@@ -814,19 +839,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "政策/安全"
         },
         "summary": {
-          "zh": "论文在 WMDP 数据集上对 Llama-3.1-8B 与 Qwen3-8B 给出机制解释：选择题格式会让模型快速锁定答案字母，激活偏离拒绝方向约三倍，从而压低拒答率。这提示安全评测格式本身会改变模型行为。",
+          "zh": "研究在 WMDP 数据集上给出机制解释：选择题格式会让模型快速锁定答案字母，激活偏离拒答方向约三倍，从而压低拒答率。这解释了安全评测格式本身如何影响结论。",
           "en": "arXiv:2611.08639v1 Announce Type: new Abstract: Safety benchmarks for large language models (LLMs) commonly use multiple-choice question (MCQ) format. However, prior studies documented that MCQ format reduces refusal rates, which may significantly affect the safety behavior of the model. We provide a first mechanistic explanation of this effect on the Weapons of Mass Destruction Proxy (WMDP) dataset across two models"
         },
         "chineseIntro": {
-          "zh": "论文在 WMDP 数据集上对 Llama-3.1-8B 与 Qwen3-8B 给出机制解释：选择题格式会让模型快速锁定答案字母，激活偏离拒绝方向约三倍，从而压低拒答率。这提示安全评测格式本身会改变模型行为。",
+          "zh": "研究在 WMDP 数据集上给出机制解释：选择题格式会让模型快速锁定答案字母，激活偏离拒答方向约三倍，从而压低拒答率。这解释了安全评测格式本身如何影响结论。",
           "en": "arXiv:2611.08639v1 Announce Type: new Abstract: Safety benchmarks for large language models (LLMs) commonly use multiple-choice question (MCQ) format. However, prior studies documented that MCQ format reduces refusal rates, which may significantly affect the safety behavior of the model. We provide a first mechanistic explanation of this effect on the Weapons of Mass Destruction Proxy (WMDP) dataset across two models"
         },
         "todayHighlight": {
-          "zh": "安全基准的选择题格式可能系统性低估风险，直接影响监管与合规评测结论的可信度。",
-          "en": "安全基准的选择题格式可能系统性低估风险，直接影响监管与合规评测结论的可信度。"
+          "zh": "安全基准的题型设计可能系统性高估模型安全性，直接影响监管与发布前的评测可信度。",
+          "en": "安全基准的题型设计可能系统性高估模型安全性，直接影响监管与发布前的评测可信度。"
         },
         "pmInsight": {
-          "zh": "若产品用选择题做安全红队，应补充开放式问法复测，并把格式差异写入评测报告，避免合规结论被格式效应误导。",
+          "zh": "设计安全评测时同时跑选择题与开放式两种格式，并把格式差异作为发布门槛指标，而不是只报单一分数。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
