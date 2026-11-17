@@ -38,6 +38,800 @@ export type DailyBrief = {
 
 export const DAILY_BRIEFS: DailyBrief[] = [
   {
+    "date": "2026-11-17",
+    "label": {
+      "zh": "最新",
+      "en": "Latest"
+    },
+    "title": {
+      "zh": "AI 产品经理日报 · 2026-11-17",
+      "en": "AI PM Daily · 2026-11-17"
+    },
+    "editorNote": {
+      "zh": "今日主线不在模型本身，而在「代理如何被接入、被评测、被分发」：协议层、技能评测与推理路由同时升温，编码代理则继续向多模型编排与企业场景靠拢。",
+      "en": "Today's thread is not the model itself but how agents get wired in, evaluated, and distributed: protocol layers, skill evaluation, and inference routing are all warming up, while coding agents keep moving toward multi-model orchestration and enterprise use."
+    },
+    "keyTakeaway": {
+      "zh": "代理生态正从「能跑」转向「可接入、可评测、可分发」：ag-ui 与 chrome-devtools-mcp 在补接入层，NVIDIA SkillEvaluator 在补质量层，Hugging Face 改用 OpenRouter 则把开源模型的调用层交给聚合器。对 PM 而言，竞争焦点正从模型选型转向代理的接入标准与评测体系。",
+      "en": "The agent ecosystem is shifting from 'it runs' to 'it plugs in, gets evaluated, and gets distributed': ag-ui and chrome-devtools-mcp fill the integration layer, NVIDIA's SkillEvaluator fills the quality layer, and Hugging Face routing through OpenRouter hands the open-weight call layer to an aggregator. For PMs, the battleground is moving from model choice to agent integration standards and evaluation."
+    },
+    "signals": [
+      {
+        "title": {
+          "zh": "代理接入层升温：ag-ui 登顶趋势榜，Chrome DevTools MCP 持续在榜",
+          "en": "Agent integration layer heats up: ag-ui tops trending, Chrome DevTools MCP stays on the board"
+        },
+        "category": {
+          "zh": "代理基础设施",
+          "en": "Agent Infrastructure"
+        },
+        "summary": {
+          "zh": "ag-ui-protocol/ag-ui 位居 GitHub 全球趋势榜第 1，今日新增 791 star，总 star 近 2 万，定位是把任意代理接入任意前端；ChromeDevTools/chrome-devtools-mcp 总 star 近 5.8 万，今日新增 841，让 Claude、Cursor、Copilot 等控制真实浏览器。两者分别覆盖「界面接入」与「环境接入」。",
+          "en": "ag-ui-protocol/ag-ui ranks #1 on GitHub global trending with 791 stars today and nearly 20k total, positioning itself as the way to connect any agent to any frontend; ChromeDevTools/chrome-devtools-mcp has nearly 58k stars and 841 today, letting Claude, Cursor, and Copilot control a real browser. Together they cover UI integration and environment integration."
+        },
+        "pmInsight": {
+          "zh": "代理能力不再只由模型决定，接入协议与工具接口正在成为产品差异化的实际位置。PM 应评估自家产品是继续自建私有接入，还是对齐 ag-ui、MCP 这类开放层，以免在代理生态扩张时被排除在默认集成之外。",
+          "en": "Agent capability is no longer set by the model alone; integration protocols and tool interfaces are becoming the real locus of product differentiation. PMs should decide whether to keep proprietary integration or align with open layers like ag-ui and MCP, so the product is not left out of default integrations as the agent ecosystem expands."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "ag-ui-protocol/ag-ui",
+            "url": "https://github.com/ag-ui-protocol/ag-ui"
+          },
+          {
+            "label": "ChromeDevTools/chrome-devtools-mcp",
+            "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "技能数量增长带来评测刚需：NVIDIA 推出 SkillEvaluator",
+          "en": "Skill proliferation creates evaluation demand: NVIDIA ships SkillEvaluator"
+        },
+        "category": {
+          "zh": "代理质量与评测",
+          "en": "Agent Quality & Evaluation"
+        },
+        "summary": {
+          "zh": "NVIDIA/SkillEvaluator 登上趋势榜第 10，今日新增 873 star，总 star 约 3000，提供质量门禁、语义重叠检测、合成评测数据集生成与实机行为评估。同期 Claude 技能包持续在榜：Claude-BugHunter 今日新增 1094 star，claude-trading-skills 今日新增 837 star。",
+          "en": "NVIDIA/SkillEvaluator ranks #10 on trending with 873 stars today and about 3k total, offering quality gates, semantic overlap detection, synthetic eval dataset generation, and live behavior evaluation. Claude skill packs are trending alongside: Claude-BugHunter added 1,094 stars today and claude-trading-skills added 837."
+        },
+        "pmInsight": {
+          "zh": "技能供给正在快速增加，但「技能是否可靠、是否互相重叠、是否真的改变代理行为」缺少统一答案。PM 若在做技能市场或代理平台，应尽早把评测与质量门禁纳入产品设计，而不是等技能数量失控后再补。",
+          "en": "Skill supply is growing fast, but there is no shared answer to whether a skill is reliable, overlaps with others, or actually changes agent behavior. PMs building skill marketplaces or agent platforms should bake evaluation and quality gates into the product early rather than retrofit after skill volume gets out of hand."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "NVIDIA/SkillEvaluator",
+            "url": "https://github.com/NVIDIA/SkillEvaluator"
+          },
+          {
+            "label": "elementalsouls/Claude-BugHunter",
+            "url": "https://github.com/elementalsouls/Claude-BugHunter"
+          },
+          {
+            "label": "tradermonty/claude-trading-skills",
+            "url": "https://github.com/tradermonty/claude-trading-skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "编码代理转向多模型编排：Copilot 引入竞品模型，Hugging Face 改用 OpenRouter 路由",
+          "en": "Coding agents move to multi-model orchestration: Copilot adds rival models, Hugging Face routes via OpenRouter"
+        },
+        "category": {
+          "zh": "模型分发与编排",
+          "en": "Model Distribution & Orchestration"
+        },
+        "summary": {
+          "zh": "GitHub Copilot 本周更新新增 Claude Fable 5.2 与 Gemini 4 Carbon 两个可选模型，并强化企业仓库支持与 agent 会话管理；Hugging Face 将 Inference Providers 的请求路由从自研切换为 OpenRouter，由后者在 80 多家提供商间按价格、速度与可靠性选择并自动重试。",
+          "en": "GitHub Copilot this week added Claude Fable 5.2 and Gemini 4 Carbon as selectable models, plus enterprise repo support and agent session management; Hugging Face switched Inference Providers routing from in-house to OpenRouter, which picks among 80+ providers by price, speed, and reliability with automatic retries."
+        },
+        "pmInsight": {
+          "zh": "模型选择权正在从单一厂商转向编排层，调用层的价值被聚合器捕获。PM 应重新评估自建推理路由的投入产出，并考虑把「多模型可切换 + 自动降级重试」作为产品能力而非后台细节。",
+          "en": "Model choice is shifting from single vendors to an orchestration layer, and the call layer's value is being captured by aggregators. PMs should reassess the ROI of in-house inference routing and treat multi-model switching with automatic fallback and retry as a product capability, not a backend detail."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "GitHub Changelog: Copilot weekly releases — November 9",
+            "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9"
+          },
+          {
+            "label": "Hugging Face and OpenRouter",
+            "url": "https://huggingface.co/blog/openrouter"
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "title": {
+          "zh": "面向技能市场的「评测即服务」假设",
+          "en": "Hypothesis: evaluation-as-a-service for skill marketplaces"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "基于 SkillEvaluator 与 Claude 技能包同时升温，可假设：技能市场若提供一键质量门禁与重叠检测，技能采纳率会显著高于无评测的市场。验证方式是在小规模技能目录中上线评测标签，对比带标签与不带标签技能的安装与留存差异。",
+          "en": "Given SkillEvaluator and Claude skill packs trending together, hypothesize that a skill marketplace offering one-click quality gates and overlap detection will see materially higher skill adoption than one without evaluation. Validate by adding eval badges to a small skill catalog and comparing install and retention for badged vs. unbadged skills."
+        },
+        "pmInsight": {
+          "zh": "评测能力本身可以成为平台护城河，但需先证明它能改变用户选择行为，而不是只增加展示信息。",
+          "en": "Evaluation can become a platform moat, but first prove it changes user choice behavior rather than just adding display information."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "NVIDIA/SkillEvaluator",
+            "url": "https://github.com/NVIDIA/SkillEvaluator"
+          },
+          {
+            "label": "elementalsouls/Claude-BugHunter",
+            "url": "https://github.com/elementalsouls/Claude-BugHunter"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "移动端编码代理的远程操控假设",
+          "en": "Hypothesis: remote control for mobile coding agents"
+        },
+        "category": {
+          "zh": "产品机会",
+          "en": "Product Opportunity"
+        },
+        "summary": {
+          "zh": "dsh-Go 创建约一个月总 star 超 2.5 万，说明手机端运行与远程操控电脑的编码代理形态获得关注。可假设：移动端代理的核心价值在「离开工位时的任务接管与审批」，而非完整编码。验证方式是统计移动端会话中审批、查看、中断三类操作占比。",
+          "en": "dsh-Go passed 25k stars in about a month, showing interest in coding agents that run on phones and remote-control a computer. Hypothesize that the core value is task takeover and approval when away from the desk, not full coding. Validate by measuring the share of approval, review, and interrupt actions in mobile sessions."
+        },
+        "pmInsight": {
+          "zh": "若审批类操作占主导，移动端产品应围绕通知、审批与回滚设计，而不是复刻桌面 IDE。",
+          "en": "If approval actions dominate, mobile products should be designed around notifications, approvals, and rollback rather than replicating a desktop IDE."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "ccch1mneyyy/dsh-Go",
+            "url": "https://github.com/ccch1mneyyy/dsh-Go"
+          }
+        ]
+      }
+    ],
+    "githubProjects": [
+      {
+        "title": {
+          "zh": "ccch1mneyyy/dsh-Go",
+          "en": "ccch1mneyyy/dsh-Go"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "把 DeepSeek Harness 装进手机的应用：Android 版已可直接使用，iOS 版仍在开发中。它让 AI 编程代理既能在手机本机运行，也能远程操控你的电脑。",
+          "en": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。"
+        },
+        "totalStars": 25242,
+        "language": "Dart",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "把 DeepSeek Harness 装进手机的应用：Android 版已可直接使用，iOS 版仍在开发中。它让 AI 编程代理既能在手机本机运行，也能远程操控你的电脑。",
+          "en": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。"
+        },
+        "todayHighlight": {
+          "zh": "创建仅约一个月，总 star 已超过 2.5 万，说明「手机端 AI 编程代理」这一形态正在快速获得关注；今日新增数据暂未披露。",
+          "en": "创建仅约 1 个月便已积累 25k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 25,242 stars、1,210 forks，topics: ai-agent, android, android-app, coding-agent, deepseek，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 25,242 stars and 1,210 forks，topics: ai-agent, android, android-app, coding-agent, deepseek, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "值得观察移动端是否会成为 AI 编程代理的新入口，以及「本机运行 + 远程遥控电脑」这类混合形态能否形成稳定的使用场景。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ccch1mneyyy/dsh-Go"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "JuneYaooo/rea-video",
+          "en": "JuneYaooo/rea-video"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "逆向拆解任意视频，逐个镜头判断它是实拍、AI 生成还是代码制作，并给出复刻方法；拆解结果按开放的 VIDEO.md 格式输出，方便代理逐层读取。",
+          "en": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。"
+        },
+        "totalStars": 9893,
+        "language": "Python",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "逆向拆解任意视频，逐个镜头判断它是实拍、AI 生成还是代码制作，并给出复刻方法；拆解结果按开放的 VIDEO.md 格式输出，方便代理逐层读取。",
+          "en": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。"
+        },
+        "todayHighlight": {
+          "zh": "创建约一个月即积累近 1 万 star，围绕「看懂并复刻爆款视频」的叙事在短视频与 AI 视频创作圈持续升温；今日新增数据暂未披露。",
+          "en": "创建仅约 1 个月便已积累 9,893 stars, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 9,893 stars、1,454 forks，topics: agent-skills, ai-video, aigc-detection, claude-code, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 9,893 stars and 1,454 forks，topics: agent-skills, ai-video, aigc-detection, claude-code, codex, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "视频拆解正在从人工经验变成可被代理读取的结构化格式，产品经理可关注 VIDEO.md 这类开放格式能否成为视频创作工具之间的通用接口。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/JuneYaooo/rea-video"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "YellowLaborerMarket/Gemini-Config-Checker-",
+          "en": "YellowLaborerMarket/Gemini-Config-Checker-"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "扫描并检测代理配置，帮助用户找到能正常登录 Google AI Studio 和 Gemini 的网络方案，覆盖 Windows、macOS、Linux 和 Android。",
+          "en": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)"
+        },
+        "totalStars": 474,
+        "language": "Makefile",
+        "dailyStars": null,
+        "chineseIntro": {
+          "zh": "扫描并检测代理配置，帮助用户找到能正常登录 Google AI Studio 和 Gemini 的网络方案，覆盖 Windows、macOS、Linux 和 Android。",
+          "en": "Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android)"
+        },
+        "todayHighlight": {
+          "zh": "项目创建仅两天便进入上升榜，总 star 约 474，属于典型的短期工具型关注；今日新增数据暂未披露。",
+          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 474 stars、0 forks，topics: ai, ai-search, aichecker, chatgpt, cli，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 474 stars and 0 forks，topics: ai, ai-search, aichecker, chatgpt, cli, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "这类工具反映的是 AI 服务可访问性上的真实摩擦，产品经理可留意区域可用性与登录体验对用户留存的直接影响。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "dream-num/univer",
+          "en": "dream-num/univer"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "开源的 Office 办公套件 SDK，把表格、文档、幻灯片、PDF 的编辑、计算、协作与文件处理能力嵌入自有产品，同时面向人和 AI 代理。",
+          "en": "Star dream-num / univer Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core."
+        },
+        "totalStars": 28481,
+        "language": "TypeScript",
+        "dailyStars": 1828,
+        "chineseIntro": {
+          "zh": "开源的 Office 办公套件 SDK，把表格、文档、幻灯片、PDF 的编辑、计算、协作与文件处理能力嵌入自有产品，同时面向人和 AI 代理。",
+          "en": "Star dream-num / univer Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core."
+        },
+        "todayHighlight": {
+          "zh": "登上全球趋势榜第 3，今日新增 1828 star，总 star 已超 2.8 万；「自建 AI 办公」的定位在代理生态升温下持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 3 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,828 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 28,481 stars、2,567 forks，topics: board, collaboration, doc, docx, excel，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 28,481 stars and 2,567 forks，topics: board, collaboration, doc, docx, excel, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "办公套件正从终端产品变成可嵌入的 SDK，产品经理可评估把表格、文档能力直接集成进自家 AI 产品的可行性。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/dream-num/univer"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "elementalsouls/Claude-BugHunter",
+          "en": "elementalsouls/Claude-BugHunter"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，内置 82 个技能、15 个斜杠命令，以及覆盖 24 类漏洞的 681 条公开报告模式。",
+          "en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices."
+        },
+        "totalStars": 7788,
+        "language": "Python",
+        "dailyStars": 1094,
+        "chineseIntro": {
+          "zh": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，内置 82 个技能、15 个斜杠命令，以及覆盖 24 类漏洞的 681 条公开报告模式。",
+          "en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices."
+        },
+        "todayHighlight": {
+          "zh": "登上全球趋势榜第 5，今日新增 1094 star，总 star 约 7800；安全场景与 Claude 技能生态的结合正在升温。",
+          "en": "登上 GitHub Trending 日榜第 5 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,094 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 7,788 stars、1,215 forks，topics: ai-security, anthropic, application-security, bug-bounty, bugbounty，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 7,788 stars and 1,215 forks，topics: ai-security, anthropic, application-security, bug-bounty, bugbounty, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "安全类技能包说明垂直专业能力可以封装成代理技能分发，产品经理可关注高门槛领域是否会率先形成技能市场。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/elementalsouls/Claude-BugHunter"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "alibaba/open-code-review",
+          "en": "alibaba/open-code-review"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "阿里巴巴开源的代码审查工具，采用确定性流水线加 LLM Agent 的混合架构，支持行级精确评论、多语言规则集（空指针、线程安全、XSS、SQL 注入等），并兼容 OpenAI 与 Anthropic。",
+          "en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
+        },
+        "totalStars": 53213,
+        "language": "Go",
+        "dailyStars": 951,
+        "chineseIntro": {
+          "zh": "阿里巴巴开源的代码审查工具，采用确定性流水线加 LLM Agent 的混合架构，支持行级精确评论、多语言规则集（空指针、线程安全、XSS、SQL 注入等），并兼容 OpenAI 与 Anthropic。",
+          "en": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
+        },
+        "todayHighlight": {
+          "zh": "总 star 已超 5.3 万，今日新增 951，创建约半年；大厂规模化实战背书让它在代码审查赛道持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 11 位, 总 star 数已达 53k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 951 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 53,213 stars、4,361 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 53,213 stars and 4,361 forks，topics: agent, agent-skills, code-review, code-review-assistant, harness, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "代码审查是 AI 代理落地最成熟的场景之一，产品经理可观察「规则引擎 + 大模型」的混合架构如何平衡准确率与成本。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/alibaba/open-code-review"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "tradermonty/claude-trading-skills",
+          "en": "tradermonty/claude-trading-skills"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "面向个人投资者的 Claude Code 技能集，覆盖市场分析、技术图表、经济日历、选股筛选和交易策略开发，主打长期投资与 ETF、股息股。",
+          "en": "Star tradermonty / claude-trading-skills Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development."
+        },
+        "totalStars": 6577,
+        "language": "Python",
+        "dailyStars": 837,
+        "chineseIntro": {
+          "zh": "面向个人投资者的 Claude Code 技能集，覆盖市场分析、技术图表、经济日历、选股筛选和交易策略开发，主打长期投资与 ETF、股息股。",
+          "en": "Star tradermonty / claude-trading-skills Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development."
+        },
+        "todayHighlight": {
+          "zh": "登上全球趋势榜第 4，今日新增 837 star，总 star 约 6600；项目已有一年多积累，近期随 Claude 技能生态升温重新获得关注。",
+          "en": "登上 GitHub Trending 日榜第 4 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 837 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 6,577 stars、1,378 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 6,577 stars and 1,378 forks, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "金融投资是个人用户高频且付费意愿强的场景，产品经理可关注技能化封装如何降低专业工具的使用门槛。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/tradermonty/claude-trading-skills"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "NVIDIA/SkillEvaluator",
+          "en": "NVIDIA/SkillEvaluator"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "英伟达推出的 AI 代理技能与插件评估框架，提供质量门禁、语义重叠检测、合成评测数据集生成，以及衡量技能如何影响代理行为的实机评估。",
+          "en": "Star NVIDIA / SkillEvaluator Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior."
+        },
+        "totalStars": 3013,
+        "language": "Python",
+        "dailyStars": 873,
+        "chineseIntro": {
+          "zh": "英伟达推出的 AI 代理技能与插件评估框架，提供质量门禁、语义重叠检测、合成评测数据集生成，以及衡量技能如何影响代理行为的实机评估。",
+          "en": "Star NVIDIA / SkillEvaluator Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior."
+        },
+        "todayHighlight": {
+          "zh": "登上全球趋势榜第 10，今日新增 873 star，总 star 约 3000；随着技能数量增长，「如何评测技能」成为生态刚需。",
+          "en": "登上 GitHub Trending 日榜第 10 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 873 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 3,013 stars、430 forks，topics: agent-evaluation, agent-plugins, agent-security, agent-skills, agentic-ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 3,013 stars and 430 forks，topics: agent-evaluation, agent-plugins, agent-security, agent-skills, agentic-ai, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "技能生态扩张后，评测与质量门禁会成为基础设施，产品经理应提前考虑自家代理技能的可衡量性与安全审查。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/NVIDIA/SkillEvaluator"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ag-ui-protocol/ag-ui",
+          "en": "ag-ui-protocol/ag-ui"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "连接任意 AI 代理与任意前端应用的开放协议，让代理的交互能力可以直接接入产品界面，而不是停留在命令行或聊天框里。",
+          "en": "Star ag-ui-protocol / ag-ui AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications."
+        },
+        "totalStars": 19516,
+        "language": "TypeScript",
+        "dailyStars": 791,
+        "chineseIntro": {
+          "zh": "连接任意 AI 代理与任意前端应用的开放协议，让代理的交互能力可以直接接入产品界面，而不是停留在命令行或聊天框里。",
+          "en": "Star ag-ui-protocol / ag-ui AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications."
+        },
+        "todayHighlight": {
+          "zh": "位居全球趋势榜第 1，今日新增 791 star，总 star 近 2 万；作为代理与前端之间的协议层，随代理生态升温持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 1 位, 多名开发者反馈可显著改善微 SaaS / 产品 UI/UX 的改造效果，设计圈讨论升温, 今日新增 791 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 19,516 stars、2,020 forks，topics: ag-ui-protocol, agent-frontend, agent-ui, agentic-workflow, ai-agents，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 19,516 stars and 2,020 forks，topics: ag-ui-protocol, agent-frontend, agent-ui, agentic-workflow, ai-agents, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "代理与用户界面的交互标准正在形成，产品经理可关注该协议是否会成为 AI 产品前端集成的默认选项。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ag-ui-protocol/ag-ui"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "ChromeDevTools/chrome-devtools-mcp",
+          "en": "ChromeDevTools/chrome-devtools-mcp"
+        },
+        "category": {
+          "zh": "GitHub 项目",
+          "en": "GitHub project"
+        },
+        "summary": {
+          "zh": "把 Chrome DevTools 的能力开放给 AI 编程代理，让 Claude、Cursor、Copilot 等可以控制和检查真实浏览器，用于自动化与调试。",
+          "en": "Chrome DevTools for coding agents"
+        },
+        "totalStars": 57841,
+        "language": "TypeScript",
+        "dailyStars": 841,
+        "chineseIntro": {
+          "zh": "把 Chrome DevTools 的能力开放给 AI 编程代理，让 Claude、Cursor、Copilot 等可以控制和检查真实浏览器，用于自动化与调试。",
+          "en": "Chrome DevTools for coding agents"
+        },
+        "todayHighlight": {
+          "zh": "总 star 已近 5.8 万，今日新增 841，创建约 14 个月；作为浏览器调试类 MCP 服务，随编码代理普及持续获得关注。",
+          "en": "登上 GitHub Trending 日榜第 13 位, 总 star 数已达 57k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 841 星."
+        },
+        "inclusionReason": {
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 57,841 stars、4,857 forks，topics: browser, chrome, chrome-devtools, debugging, devtools，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 57,841 stars and 4,857 forks，topics: browser, chrome, chrome-devtools, debugging, devtools, making it a developer adoption and trend signal."
+        },
+        "pmInsight": {
+          "zh": "浏览器是代理操作真实世界的关键接口，产品经理可观察 MCP 这类标准如何让代理安全地接管网页操作。",
+          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "GitHub Repository",
+            "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+          }
+        ]
+      }
+    ],
+    "companyUpdates": [
+      {
+        "title": {
+          "zh": "OpenAI: Broadening access to AI for scientists",
+          "en": "OpenAI: Broadening access to AI for scientists"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "生态合作",
+          "en": "生态合作"
+        },
+        "summary": {
+          "zh": "OpenAI 将 ChatGPT for Academic Researchers 计划扩展至全球 20 万名科研人员，提供前沿模型免费使用权限。这意味着 OpenAI 正以学术场景为切口，扩大前沿模型在科研工作流中的渗透。",
+          "en": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models."
+        },
+        "chineseIntro": {
+          "zh": "OpenAI 将 ChatGPT for Academic Researchers 计划扩展至全球 20 万名科研人员，提供前沿模型免费使用权限。这意味着 OpenAI 正以学术场景为切口，扩大前沿模型在科研工作流中的渗透。",
+          "en": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models."
+        },
+        "todayHighlight": {
+          "zh": "在模型能力竞争之外，OpenAI 用免费学术供给抢占科研用户心智，可能影响未来科研工具链的默认选择。",
+          "en": "在模型能力竞争之外，OpenAI 用免费学术供给抢占科研用户心智，可能影响未来科研工具链的默认选择。"
+        },
+        "pmInsight": {
+          "zh": "若产品面向科研或教育场景，应评估是否接入或对标该计划，并梳理学术用户从免费试用到付费转化的路径。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "OpenAI",
+            "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Google AI: New Ask Maps features to help with holiday travel and prep",
+          "en": "Google AI: New Ask Maps features to help with holiday travel and prep"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "Google Maps 为假日出行推出 Ask Maps 新功能，支持规划公路旅行、获取路线建议、查找本地预约以及搜索已保存列表。这显示 Google 正把对话式 AI 深度嵌入地图这一高频生活场景。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.max-600x600.format-webp.webp\">Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features."
+        },
+        "chineseIntro": {
+          "zh": "Google Maps 为假日出行推出 Ask Maps 新功能，支持规划公路旅行、获取路线建议、查找本地预约以及搜索已保存列表。这显示 Google 正把对话式 AI 深度嵌入地图这一高频生活场景。",
+          "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.max-600x600.format-webp.webp\">Plan holiday road trips, get route tips, find local appointments, and search your saved lists with new Ask Maps features."
+        },
+        "todayHighlight": {
+          "zh": "地图是 AI 助手落地的高价值入口，Google 此举意在把假日流量转化为 AI 功能使用习惯。",
+          "en": "地图是 AI 助手落地的高价值入口，Google 此举意在把假日流量转化为 AI 功能使用习惯。"
+        },
+        "pmInsight": {
+          "zh": "做本地生活或出行产品的 PM 可拆解 Ask Maps 的意图识别与列表检索设计，评估对话式交互对转化率的影响。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "Google AI",
+            "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "GitHub Changelog: GitHub Copilot weekly releases — November 9",
+          "en": "GitHub Changelog: GitHub Copilot weekly releases — November 9"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "产品功能",
+          "en": "产品功能"
+        },
+        "summary": {
+          "zh": "GitHub Copilot 本周更新包括：Copilot 应用支持 GitHub Enterprise Server 仓库、VS Code 中可优先查看需要处理的 agent 会话，并新增 Claude Fable 5.2 和 Gemini 4 Carbon 两个可选模型。",
+          "en": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude&#8230; The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog."
+        },
+        "chineseIntro": {
+          "zh": "GitHub Copilot 本周更新包括：Copilot 应用支持 GitHub Enterprise Server 仓库、VS Code 中可优先查看需要处理的 agent 会话，并新增 Claude Fable 5.2 和 Gemini 4 Carbon 两个可选模型。",
+          "en": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude&#8230; The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog."
+        },
+        "todayHighlight": {
+          "zh": "Copilot 同时引入竞品模型并强化企业仓库与 agent 会话管理，表明编码助手正从单模型插件转向多模型、多会话的编排层。",
+          "en": "Copilot 同时引入竞品模型并强化企业仓库与 agent 会话管理，表明编码助手正从单模型插件转向多模型、多会话的编排层。"
+        },
+        "pmInsight": {
+          "zh": "开发者工具 PM 应关注多模型切换的默认策略与管理员策略开关设计，避免企业客户因数据留存要求而无法启用新模型。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Medium",
+        "sources": [
+          {
+            "label": "GitHub Changelog",
+            "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hugging Face: Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+          "en": "Hugging Face: Hugging Face and OpenRouter join forces to make open-weight models easy to run"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "生态合作",
+          "en": "生态合作"
+        },
+        "summary": {
+          "zh": "Hugging Face 将 Inference Providers 的请求路由从自研路由器切换为 OpenRouter，后者基于实时价格、速度和可靠性在 80 多家提供商之间选择并自动重试。用户代码不变，即可用 Hugging Face token 调用 Hub 上被提供商服务的开源权重模型。",
+          "en": "Hugging Face and OpenRouter join forces to make open-weight models easy to run"
+        },
+        "chineseIntro": {
+          "zh": "Hugging Face 将 Inference Providers 的请求路由从自研路由器切换为 OpenRouter，后者基于实时价格、速度和可靠性在 80 多家提供商之间选择并自动重试。用户代码不变，即可用 Hugging Face token 调用 Hub 上被提供商服务的开源权重模型。",
+          "en": "Hugging Face and OpenRouter join forces to make open-weight models easy to run"
+        },
+        "todayHighlight": {
+          "zh": "开源模型的分发与推理路由正在标准化，Hugging Face 放弃自研路由意味着开源生态的“调用层”可能被 OpenRouter 这类聚合器占据。",
+          "en": "开源模型的分发与推理路由正在标准化，Hugging Face 放弃自研路由意味着开源生态的“调用层”可能被 OpenRouter 这类聚合器占据。"
+        },
+        "pmInsight": {
+          "zh": "依赖开源模型的产品应重新评估推理供应商锁定风险，并测试 OpenRouter 路由在延迟与失败重试上的实际表现。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "High",
+        "sources": [
+          {
+            "label": "Hugging Face",
+            "url": "https://huggingface.co/blog/openrouter"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Reddit LocalLLaMA: maxwell-model/Maxwell-V1-Flash · Hugging Face",
+          "en": "Reddit LocalLLaMA: maxwell-model/Maxwell-V1-Flash · Hugging Face"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
+        },
+        "summary": {
+          "zh": "LocalLLaMA 社区出现 Maxwell-V1-Flash 模型在 Hugging Face 上的发布讨论，目前信息有限，属于社区早期信号。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xyamk6/maxwellmodelmaxwellv1flash_hugging_face/\"> <img src=\"https://external-preview.redd.it/rC062Fglp6msA2dKmUhTrFdtc4Xn_pPnUGCLt0R6pd8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=3ce6f14a1944d9d64c22244deb571937aff3f540\" alt=\"maxwell-model/Maxwell-V1-Flash · Hugging Face\" title=\"maxwell-model/Maxwell-V1-Flash · Hugging Face\" /> </a> </td><"
+        },
+        "chineseIntro": {
+          "zh": "LocalLLaMA 社区出现 Maxwell-V1-Flash 模型在 Hugging Face 上的发布讨论，目前信息有限，属于社区早期信号。",
+          "en": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xyamk6/maxwellmodelmaxwellv1flash_hugging_face/\"> <img src=\"https://external-preview.redd.it/rC062Fglp6msA2dKmUhTrFdtc4Xn_pPnUGCLt0R6pd8.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=3ce6f14a1944d9d64c22244deb571937aff3f540\" alt=\"maxwell-model/Maxwell-V1-Flash · Hugging Face\" title=\"maxwell-model/Maxwell-V1-Flash · Hugging Face\" /> </a> </td><"
+        },
+        "todayHighlight": {
+          "zh": "本地开源模型社区持续涌现新发布，值得关注其是否形成可复现的评测与部署反馈。",
+          "en": "本地开源模型社区持续涌现新发布，值得关注其是否形成可复现的评测与部署反馈。"
+        },
+        "pmInsight": {
+          "zh": "关注本地部署的 PM 可先收藏该模型页并跟踪社区评测，暂不纳入正式选型，待有基准数据后再评估。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Reddit LocalLLaMA",
+            "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xyamk6/maxwellmodelmaxwellv1flash_hugging_face/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "Hacker News AI: Mizan bias benchmark: testing AI models",
+          "en": "Hacker News AI: Mizan bias benchmark: testing AI models"
+        },
+        "category": {
+          "zh": "公司动态",
+          "en": "Company update"
+        },
+        "eventType": {
+          "zh": "政策/安全",
+          "en": "政策/安全"
+        },
+        "summary": {
+          "zh": "Tech for Palestine 推出 Mizan 偏见基准，用“hostage 还是 detainee”等测试检验 AI 模型在以色列-巴勒斯坦议题上的措辞偏向。这属于第三方对模型中立性的外部审计尝试。",
+          "en": "Article URL: https://mizan.techforpalestine.org/hostage-or-detainee/ Comments URL: https://news.ycombinator.com/item?id=50528296 Points: 1 # Comments: 0"
+        },
+        "chineseIntro": {
+          "zh": "Tech for Palestine 推出 Mizan 偏见基准，用“hostage 还是 detainee”等测试检验 AI 模型在以色列-巴勒斯坦议题上的措辞偏向。这属于第三方对模型中立性的外部审计尝试。",
+          "en": "Article URL: https://mizan.techforpalestine.org/hostage-or-detainee/ Comments URL: https://news.ycombinator.com/item?id=50528296 Points: 1 # Comments: 0"
+        },
+        "todayHighlight": {
+          "zh": "地缘敏感议题的偏见基准可能成为模型合规与公关风险的新触发点，尤其影响面向全球市场的产品。",
+          "en": "地缘敏感议题的偏见基准可能成为模型合规与公关风险的新触发点，尤其影响面向全球市场的产品。"
+        },
+        "pmInsight": {
+          "zh": "负责模型安全或内容策略的 PM 应将该类外部基准纳入红队测试清单，提前定义敏感措辞的本地化与中立性标准。",
+          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "Hacker News AI",
+            "url": "https://mizan.techforpalestine.org/hostage-or-detainee/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "label": {
       "zh": "最新",
@@ -23409,812 +24203,6 @@ export const DAILY_BRIEFS: DailyBrief[] = [
         },
         "pmInsight": {
           "zh": "面向企业研发的产品应把许可证检查结果纳入 PR 状态与发布门禁，并设计例外审批流，避免合规阻断拖慢交付节奏。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub Changelog",
-            "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-10-18",
-    "label": {
-      "zh": "最新",
-      "en": "Latest"
-    },
-    "title": {
-      "zh": "AI 产品经理日报：代理基础设施与生态入口同步升温",
-      "en": "AI PM Daily: Agent Infrastructure and Ecosystem Gateways Heat Up Together"
-    },
-    "editorNote": {
-      "zh": "今日主线不在单点模型，而在代理的运行底座与分发入口：官方插件目录、代理性能系统、多代理工作台同时获得较高日增；同时 Vercel 把会话粘性做成可观测指标，GitHub 把许可证合规变成合并门禁，说明代理工程正在从「能跑」走向「可运营、可审计」。",
-      "en": "Today's thread is not a single model but the runtime and distribution layer for agents: official plugin directories, agent performance systems, and multi-agent workbenches all saw strong daily gains. Meanwhile Vercel made session affinity observable and GitHub turned license compliance into a merge gate, signaling agent engineering is moving from 'it runs' to 'it is operable and auditable'."
-    },
-    "keyTakeaway": {
-      "zh": "代理生态的竞争重心正从模型能力转向「入口 + 底座 + 可观测性」：Anthropic 官方插件目录与多代理工作台占据趋势榜前列，Vercel 与 GitHub 则把成本与合规变成可运营指标，PM 应优先评估自身产品在代理分发链路中的位置。",
-      "en": "The competitive focus in the agent ecosystem is shifting from model capability to gateway, runtime, and observability: Anthropic's official plugin directory and multi-agent workbenches lead the trending list, while Vercel and GitHub turn cost and compliance into operable metrics. PMs should first assess where their product sits in the agent distribution chain."
-    },
-    "signals": [
-      {
-        "title": {
-          "zh": "官方插件目录成为代理生态默认入口",
-          "en": "Official Plugin Directory Becomes the Default Agent Gateway"
-        },
-        "category": {
-          "zh": "生态与分发",
-          "en": "Ecosystem & Distribution"
-        },
-        "summary": {
-          "zh": "anthropics/claude-plugins-official 今日新增 1397 stars、总 star 超 4.2 万，位列全球趋势榜第一；同期 OpenAI 披露 Stack Overflow for Agents 借助 ChatGPT 插件实现注册量翻三倍、智能体创建最高 10 倍增长。",
-          "en": "anthropics/claude-plugins-official added 1,397 stars today, surpassing 42k total and ranking first globally; meanwhile OpenAI reported that Stack Overflow for Agents tripled signups and saw up to 10x agent creation growth via its ChatGPT plugin."
-        },
-        "pmInsight": {
-          "zh": "官方背书的插件目录正在成为开发者工具冷启动的高杠杆渠道，类似早期应用商店的卡位效应。PM 应评估产品是否值得为 Claude Code / ChatGPT 插件形态做适配，并提前设计插件内的激活与留存路径，而非只把插件当流量入口。",
-          "en": "Officially backed plugin directories are becoming a high-leverage cold-start channel for developer tools, similar to early app-store positioning. PMs should assess whether to adapt their product to Claude Code / ChatGPT plugin formats and design in-plugin activation and retention paths rather than treating plugins as mere traffic sources."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "GitHub: anthropics/claude-plugins-official",
-            "url": "https://github.com/anthropics/claude-plugins-official"
-          },
-          {
-            "label": "OpenAI: Stack Overflow for Agents triples signups with ChatGPT plugin",
-            "url": "https://openai.com/index/stack-overflow-chatgpt-plugin"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "多代理编排与代理底座持续在榜",
-          "en": "Multi-Agent Orchestration and Agent Runtime Stay on the Board"
-        },
-        "category": {
-          "zh": "代理基础设施",
-          "en": "Agent Infrastructure"
-        },
-        "summary": {
-          "zh": "stablyai/orca（多代理工作台，9.5 万 stars，今日 +830）、affaan-m/ECC（代理性能系统，28 万 stars，今日 +1145）、feder-cr/git-ai（多代理并行提交的 Git 工具，创建约一个月 1158 stars）同时出现在趋势榜，指向同一类需求：多个代理并行工作时的编排、记忆与冲突治理。",
-          "en": "stablyai/orca (multi-agent workbench, 95k stars, +830 today), affaan-m/ECC (agent performance system, 282k stars, +1,145 today), and feder-cr/git-ai (Git tool for parallel agent commits, 1,158 stars in about a month) all appear on the trending list, pointing to the same need: orchestration, memory, and conflict governance when multiple agents work in parallel."
-        },
-        "pmInsight": {
-          "zh": "代理数量增加后，瓶颈从「单代理能力」转向「多代理协同的秩序」，版本冲突、记忆共享、成本分摊都会成为产品差异点。PM 可优先梳理自身工作流中哪些环节会被多代理并行改写，并评估是否需要引入编排层或冲突治理能力。",
-          "en": "As agent count grows, the bottleneck shifts from single-agent capability to the order of multi-agent collaboration; version conflicts, shared memory, and cost allocation become differentiators. PMs should map which parts of their workflow will be rewritten by parallel agents and assess whether an orchestration layer or conflict governance is needed."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "GitHub: stablyai/orca",
-            "url": "https://github.com/stablyai/orca"
-          },
-          {
-            "label": "GitHub: affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
-          },
-          {
-            "label": "GitHub: feder-cr/git-ai",
-            "url": "https://github.com/feder-cr/git-ai"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "代理成本与合规进入可运营、可审计阶段",
-          "en": "Agent Cost and Compliance Enter the Operable and Auditable Stage"
-        },
-        "category": {
-          "zh": "可观测性与治理",
-          "en": "Observability & Governance"
-        },
-        "summary": {
-          "zh": "Vercel AI Gateway 日志新增 Sessions 视图，按会话展示粘性路由、缓存命中率与成本；GitHub 面向 Enterprise Cloud 正式开放开源许可证合规，在 PR 中自动检查依赖许可证并作为合并门禁；xerj 以「比 grep 省约 40 倍 token」为卖点今日新增 1160 stars。",
-          "en": "Vercel AI Gateway logs added a Sessions view showing sticky routing, cache hit rate, and cost per session; GitHub made open source license compliance generally available for Enterprise Cloud, auto-checking dependency licenses in PRs as a merge gate; xerj, pitched as saving about 40x tokens versus grep, added 1,160 stars today."
-        },
-        "pmInsight": {
-          "zh": "多轮代理的推理成本与依赖合规正在从「事后排查」变成「默认可见、默认拦截」，这会改变代理产品的成本结构和上线流程。PM 应把会话级成本、缓存命中与许可证检查纳入产品指标与发布门禁，而不是留到运维阶段。",
-          "en": "Multi-turn agent inference cost and dependency compliance are moving from after-the-fact investigation to default visibility and default blocking, which changes the cost structure and release process of agent products. PMs should fold session-level cost, cache hit rate, and license checks into product metrics and release gates rather than leaving them to ops."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Vercel: AI Gateway logs now show session affinity",
-            "url": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity"
-          },
-          {
-            "label": "GitHub Changelog: Open source license compliance generally available",
-            "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available"
-          },
-          {
-            "label": "GitHub: xerj-org/xerj",
-            "url": "https://github.com/xerj-org/xerj"
-          }
-        ]
-      }
-    ],
-    "opportunities": [
-      {
-        "title": {
-          "zh": "面向多代理工作流的「会话成本看板」插件",
-          "en": "A Session-Cost Dashboard Plugin for Multi-Agent Workflows"
-        },
-        "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
-        },
-        "summary": {
-          "zh": "结合 Vercel 会话粘性日志与 ECC/orca 的代理底座定位，可假设：为多代理团队提供一个按会话聚合成本、缓存命中与模型路由的看板，并以 Claude Code / ChatGPT 插件形态分发，能显著降低团队对代理成本的失控感。",
-          "en": "Combining Vercel's session affinity logs with the agent-runtime positioning of ECC/orca, a testable hypothesis: a dashboard that aggregates cost, cache hits, and model routing per session for multi-agent teams, distributed as a Claude Code / ChatGPT plugin, can materially reduce teams' sense of losing control over agent cost."
-        },
-        "pmInsight": {
-          "zh": "验证方式：选取 5-10 个已在使用多代理的团队，对比接入看板前后单会话 token 成本与缓存命中率变化；若成本下降可归因且团队愿意为看板付费，则假设成立。",
-          "en": "Validation: recruit 5-10 teams already using multiple agents and compare per-session token cost and cache hit rate before and after adopting the dashboard; if cost reduction is attributable and teams are willing to pay, the hypothesis holds."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Vercel: AI Gateway logs now show session affinity",
-            "url": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity"
-          },
-          {
-            "label": "GitHub: affaan-m/ECC",
-            "url": "https://github.com/affaan-m/ECC"
-          },
-          {
-            "label": "GitHub: stablyai/orca",
-            "url": "https://github.com/stablyai/orca"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "代理原生 CLI 的「合规门禁」中间层",
-          "en": "A Compliance Gate Middleware for Agent-Native CLIs"
-        },
-        "category": {
-          "zh": "产品机会",
-          "en": "Product Opportunity"
-        },
-        "summary": {
-          "zh": "HKUDS/CLI-Anything 试图让所有软件成为代理可直接调用的 CLI，而 GitHub 已把许可证合规做成 PR 门禁。可假设：为代理调用的 CLI 工具链提供一层依赖许可证与来源检查的中间层，能在代理自动引入依赖时提前拦截风险。",
-          "en": "HKUDS/CLI-Anything aims to make all software callable by agents as CLIs, while GitHub has turned license compliance into a PR gate. A testable hypothesis: a middleware layer that checks dependency licenses and provenance for agent-invoked CLI toolchains can intercept risk before agents auto-introduce dependencies."
-        },
-        "pmInsight": {
-          "zh": "验证方式：在 CLI-Hub 类入口上统计代理自动新增依赖的频次与许可证类型分布，若高风险许可证占比可观且团队愿意为拦截付费，则该中间层具备产品价值。",
-          "en": "Validation: measure the frequency and license-type distribution of dependencies auto-added by agents on CLI-Hub-like gateways; if high-risk licenses are a meaningful share and teams will pay for interception, the middleware has product value."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub: HKUDS/CLI-Anything",
-            "url": "https://github.com/HKUDS/CLI-Anything"
-          },
-          {
-            "label": "GitHub Changelog: Open source license compliance generally available",
-            "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available"
-          }
-        ]
-      }
-    ],
-    "githubProjects": [
-      {
-        "title": {
-          "zh": "feder-cr/git-ai",
-          "en": "feder-cr/git-ai"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "面向 AI 编程代理重新设计的 Git 工具，让多个代理同时在同一分支上提交改动时仍能有序合并，解决 AI 并行写代码时的版本冲突问题。",
-          "en": "Git designed for AI agents."
-        },
-        "totalStars": 1158,
-        "language": "Go",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "面向 AI 编程代理重新设计的 Git 工具，让多个代理同时在同一分支上提交改动时仍能有序合并，解决 AI 并行写代码时的版本冲突问题。",
-          "en": "Git designed for AI agents."
-        },
-        "todayHighlight": {
-          "zh": "创建仅约一个月即积累 1158 stars，今日进入上升榜，反映「多代理协作写代码」场景正在升温。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 1,158 stars、125 forks，topics: ai-agents, coding-agents, git, golang, scion，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 1,158 stars and 125 forks，topics: ai-agents, coding-agents, git, golang, scion, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "当团队开始同时运行多个编码代理，版本控制层的协作与冲突处理会成为新的产品机会点。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/feder-cr/git-ai"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Leonxlnx/earshot",
-          "en": "Leonxlnx/earshot"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "给编码代理装上「耳朵」的开源工具，让 AI 能生成、试听并评审音效，纯 CPU 运行，可接入 Claude Code 等代理工作流。",
-          "en": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source."
-        },
-        "totalStars": 716,
-        "language": "Python",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "给编码代理装上「耳朵」的开源工具，让 AI 能生成、试听并评审音效，纯 CPU 运行，可接入 Claude Code 等代理工作流。",
-          "en": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source."
-        },
-        "todayHighlight": {
-          "zh": "上线约一个月获得 716 stars，今日在上升榜出现，切中了 AI 生成游戏、演示视频后「听不出好坏」的空白环节。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 716 stars、43 forks，topics: ai-agents, audio, claude-code, mcp, sound-design，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 716 stars and 43 forks，topics: ai-agents, audio, claude-code, mcp, sound-design, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "多模态能力正从「看」扩展到「听」，音频质量评审可能成为代理工具链的下一个差异化点。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/Leonxlnx/earshot"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "anujasid/blender-ai-mcp-addon",
-          "en": "anujasid/blender-ai-mcp-addon"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Blender 的 AI 助手插件与 MCP 服务器，可通过对话查看场景、创建物体、编辑材质并执行多步骤 3D 工作流，兼容 OpenAI、Claude、Gemini 等模型。",
-          "en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot for 3D, bpy Python scripting, MCP integration."
-        },
-        "totalStars": 689,
-        "language": "Python",
-        "dailyStars": null,
-        "chineseIntro": {
-          "zh": "Blender 的 AI 助手插件与 MCP 服务器，可通过对话查看场景、创建物体、编辑材质并执行多步骤 3D 工作流，兼容 OpenAI、Claude、Gemini 等模型。",
-          "en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot for 3D, bpy Python scripting, MCP integration."
-        },
-        "todayHighlight": {
-          "zh": "发布约一个月积累 689 stars、235 forks，fork 比例偏高，说明 3D 创作者有较强的二次定制意愿。",
-          "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 689 stars、235 forks，topics: ai-assistant, blender, blender-addon, blender-ai, blender-automation，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 689 stars and 235 forks，topics: ai-assistant, blender, blender-addon, blender-ai, blender-automation, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "专业创作软件接入 MCP 后，AI 助手正从「聊天」走向直接操作生产工具，值得关注垂直工具的代理化改造。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/anujasid/blender-ai-mcp-addon"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "anthropics/claude-plugins-official",
-          "en": "anthropics/claude-plugins-official"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "Anthropic 官方维护的 Claude Code 插件目录，汇集官方与第三方高质量插件，为开发者提供可信的扩展入口。",
-          "en": "Star anthropics / claude-plugins-official Official, Anthropic-managed directory of high quality Claude Code Plugins."
-        },
-        "totalStars": 42137,
-        "language": "Python",
-        "dailyStars": 1397,
-        "chineseIntro": {
-          "zh": "Anthropic 官方维护的 Claude Code 插件目录，汇集官方与第三方高质量插件，为开发者提供可信的扩展入口。",
-          "en": "Star anthropics / claude-plugins-official Official, Anthropic-managed directory of high quality Claude Code Plugins."
-        },
-        "todayHighlight": {
-          "zh": "今日新增 1397 stars，总 star 已超 4.2 万，位列全球趋势榜第一，官方背书使其成为 Claude Code 生态的默认入口。",
-          "en": "登上 GitHub Trending 日榜第 1 位, MCP 工具接入成为 Agent 产品标配方向，相关 server/工具项目在开发者社区快速扩散, 今日新增 1,397 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 42,137 stars、4,494 forks，topics: claude-code, mcp, skills，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 42,137 stars and 4,494 forks，topics: claude-code, mcp, skills, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "官方插件目录正在成为代理生态的分发渠道，产品经理应关注插件市场的入口卡位与信任机制。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/anthropics/claude-plugins-official"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "MadsLorentzen/ai-job-search",
-          "en": "MadsLorentzen/ai-job-search"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "基于 Claude Code 的求职框架，可在本地完成职位评估、简历定制、求职信撰写和面试准备，用户可 fork 后完全自持数据。",
-          "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
-        },
-        "totalStars": 51114,
-        "language": "Python",
-        "dailyStars": 1365,
-        "chineseIntro": {
-          "zh": "基于 Claude Code 的求职框架，可在本地完成职位评估、简历定制、求职信撰写和面试准备，用户可 fork 后完全自持数据。",
-          "en": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it."
-        },
-        "todayHighlight": {
-          "zh": "创建约 7 个月已积累 5.1 万 stars、1.7 万 forks，今日新增 1365 stars 并位列趋势榜第二，「本地运行、自己掌控」的叙事持续吸引求职人群。",
-          "en": "登上 GitHub Trending 日榜第 2 位, 总 star 数已达 51k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,365 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 51,114 stars、17,019 forks，topics: ai, ai-agents, career, claude-code, cover-letter，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 51,114 stars and 17,019 forks，topics: ai, ai-agents, career, claude-code, cover-letter, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "高 fork 数说明用户更愿意把求职流程当作可改造的个人工具，而非订阅式 SaaS。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/MadsLorentzen/ai-job-search"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "affaan-m/ECC",
-          "en": "affaan-m/ECC"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "面向 Claude Code、Codex、Cursor 等代理的「性能优化系统」，提供技能、记忆、安全与研究优先的开发能力，相当于代理的运行底座。",
-          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
-        },
-        "totalStars": 282822,
-        "language": "JavaScript",
-        "dailyStars": 1145,
-        "chineseIntro": {
-          "zh": "面向 Claude Code、Codex、Cursor 等代理的「性能优化系统」，提供技能、记忆、安全与研究优先的开发能力，相当于代理的运行底座。",
-          "en": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
-        },
-        "todayHighlight": {
-          "zh": "总 star 已超 28 万，今日新增 1145 stars 并位列趋势榜第三，作为代理基础设施持续获得关注。",
-          "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 282k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,145 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 282,822 stars、42,013 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 282,822 stars and 42,013 forks，topics: ai-agents, anthropic, claude, claude-code, developer-tools, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "代理生态的竞争正从模型能力转向「运行框架」，记忆与安全等底座能力值得重点观察。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/affaan-m/ECC"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "xerj-org/xerj",
-          "en": "xerj-org/xerj"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "面向 AI 的数据搜索引擎，一条命令即可索引代码、文档、日志和 PDF，供搜索、RAG 与代理记忆使用，宣称比 grep 节省约 40 倍 token。",
-          "en": "Star xerj-org / xerj XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep (1974 tool). One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. It’s durable and can replace ElasticSearch saving you x10 infra costs."
-        },
-        "totalStars": 8067,
-        "language": "Rust",
-        "dailyStars": 1160,
-        "chineseIntro": {
-          "zh": "面向 AI 的数据搜索引擎，一条命令即可索引代码、文档、日志和 PDF，供搜索、RAG 与代理记忆使用，宣称比 grep 节省约 40 倍 token。",
-          "en": "Star xerj-org / xerj XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep (1974 tool). One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. It’s durable and can replace ElasticSearch saving you x10 infra costs."
-        },
-        "todayHighlight": {
-          "zh": "创建约 4 个月积累 8067 stars，今日新增 1160 stars，在趋势榜第 13 位，token 成本叙事带动了这轮增长。",
-          "en": "登上 GitHub Trending 日榜第 13 位, 创建仅约 4 个月便已积累 8,067 stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 1,160 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 8,067 stars、429 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 8,067 stars and 429 forks，topics: ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "代理的检索成本直接影响产品毛利，索引层替代方案值得在架构选型时纳入比较。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/xerj-org/xerj"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "K-Dense-AI/scientific-agent-skills",
-          "en": "K-Dense-AI/scientific-agent-skills"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "面向科研场景的 Agent Skills 库，提供 177 个经验证的技能并接入 100 多个科学数据库，覆盖生物、化学、医学与药物发现。",
-          "en": "Star K-Dense-AI / scientific-agent-skills Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
-        },
-        "totalStars": 52468,
-        "language": "Python",
-        "dailyStars": 878,
-        "chineseIntro": {
-          "zh": "面向科研场景的 Agent Skills 库，提供 177 个经验证的技能并接入 100 多个科学数据库，覆盖生物、化学、医学与药物发现。",
-          "en": "Star K-Dense-AI / scientific-agent-skills Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard."
-        },
-        "todayHighlight": {
-          "zh": "创建约一年积累 5.2 万 stars，今日新增 878 stars 并位列趋势榜第五，科研代理技能库的定位持续吸引关注。",
-          "en": "登上 GitHub Trending 日榜第 5 位, 总 star 数已达 52k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 878 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 52,468 stars、4,642 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 52,468 stars and 4,642 forks，topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "垂直领域的技能库正在形成壁垒，产品经理应关注「技能 + 数据库」组合在专业场景的复用价值。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "stablyai/orca",
-          "en": "stablyai/orca"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "用于管理多代理舰队的桌面与移动工作台，可用自有订阅运行 Claude Code、Grok Bot 等编码代理，并支持远程运行时。",
-          "en": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
-        },
-        "totalStars": 95786,
-        "language": "TypeScript",
-        "dailyStars": 830,
-        "chineseIntro": {
-          "zh": "用于管理多代理舰队的桌面与移动工作台，可用自有订阅运行 Claude Code、Grok Bot 等编码代理，并支持远程运行时。",
-          "en": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
-        },
-        "todayHighlight": {
-          "zh": "创建约 7 个月积累 9.5 万 stars，今日新增 830 stars 并位列趋势榜第八，多代理编排需求带动持续增长。",
-          "en": "登上 GitHub Trending 日榜第 8 位, 总 star 数已达 95k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 830 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 95,786 stars、6,128 forks，topics: ade, agent-ide, ai-agents, automation, bot，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 95,786 stars and 6,128 forks，topics: ade, agent-ide, ai-agents, automation, bot, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "当用户同时使用多个代理，统一调度与订阅复用的工作台会成为新的入口层。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/stablyai/orca"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "HKUDS/CLI-Anything",
-          "en": "HKUDS/CLI-Anything"
-        },
-        "category": {
-          "zh": "GitHub 项目",
-          "en": "GitHub project"
-        },
-        "summary": {
-          "zh": "把各类软件改造成代理可直接调用的命令行接口，目标是让所有软件都「代理原生」，并提供 CLI-Hub 作为统一入口。",
-          "en": "Star HKUDS / CLI-Anything \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
-        },
-        "totalStars": 54251,
-        "language": "Python",
-        "dailyStars": 574,
-        "chineseIntro": {
-          "zh": "把各类软件改造成代理可直接调用的命令行接口，目标是让所有软件都「代理原生」，并提供 CLI-Hub 作为统一入口。",
-          "en": "Star HKUDS / CLI-Anything \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
-        },
-        "todayHighlight": {
-          "zh": "创建约 7 个月积累 5.4 万 stars，今日新增 574 stars 并位列趋势榜第四，尽管近期更新较少仍保持关注度。",
-          "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 54k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 574 星."
-        },
-        "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 54,251 stars、4,918 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 54,251 stars and 4,918 forks, making it a developer adoption and trend signal."
-        },
-        "pmInsight": {
-          "zh": "让存量软件被代理调用是落地关键，CLI 作为通用适配层值得产品经理评估其改造成本。",
-          "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "GitHub Repository",
-            "url": "https://github.com/HKUDS/CLI-Anything"
-          }
-        ]
-      }
-    ],
-    "companyUpdates": [
-      {
-        "title": {
-          "zh": "Hacker News AI: Show HN: Connecting Captions Local Private AI Interpreter",
-          "en": "Hacker News AI: Show HN: Connecting Captions Local Private AI Interpreter"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
-        },
-        "summary": {
-          "zh": "开发者发布 macOS 本地实时字幕与翻译浮层，语音识别和 Apple 翻译全部在设备端运行，无需联网或账号。对产品意味着隐私敏感场景（会议、双语对话）有了可离线部署的实时翻译方案。",
-          "en": "Hi HN,I built Connecting Captions, a live captioning and translation overlay for macOS that runs entirely on-device. Nothing goes over the network: no API calls, no audio leaving your machine, and it keeps working offline.I wanted live translation I could use in meetings and conversations without worrying about connectivity, latency spikes, or sending sensitive audio to a third party.The technically interesting part "
-        },
-        "chineseIntro": {
-          "zh": "开发者发布 macOS 本地实时字幕与翻译浮层，语音识别和 Apple 翻译全部在设备端运行，无需联网或账号。对产品意味着隐私敏感场景（会议、双语对话）有了可离线部署的实时翻译方案。",
-          "en": "Hi HN,I built Connecting Captions, a live captioning and translation overlay for macOS that runs entirely on-device. Nothing goes over the network: no API calls, no audio leaving your machine, and it keeps working offline.I wanted live translation I could use in meetings and conversations without worrying about connectivity, latency spikes, or sending sensitive audio to a third party.The technically interesting part "
-        },
-        "todayHighlight": {
-          "zh": "在云端翻译普遍依赖 API 的当下，纯端侧方案验证了「零数据外发」可作为差异化卖点。",
-          "en": "在云端翻译普遍依赖 API 的当下，纯端侧方案验证了「零数据外发」可作为差异化卖点。"
-        },
-        "pmInsight": {
-          "zh": "评估本地推理在延迟与多语种覆盖上的实际表现，判断是否值得为隐私敏感客户提供端侧翻译选项。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News AI",
-            "url": "https://local-host.ai/connectingCaptions/"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Hacker News LLM: Apple releases RSI-Inference: evaluating agents for self-improving LLM inference",
-          "en": "Hacker News LLM: Apple releases RSI-Inference: evaluating agents for self-improving LLM inference"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "社区/研究信号",
-          "en": "社区/研究信号"
-        },
-        "summary": {
-          "zh": "Apple ML Research 发布 RSI-Inference Bench，用真实 vLLM/SGLang 推理工程任务评测 AI 智能体能否自我改进推理系统，最佳智能体 pass@1 仅 26.7%。说明「AI 优化 AI 基础设施」仍远未饱和。",
-          "en": "Article URL: https://twitter.com/onloglogn/status/2111170954944823685 Comments URL: https://news.ycombinator.com/item?id=50134215 Points: 2 # Comments: 0"
-        },
-        "chineseIntro": {
-          "zh": "Apple ML Research 发布 RSI-Inference Bench，用真实 vLLM/SGLang 推理工程任务评测 AI 智能体能否自我改进推理系统，最佳智能体 pass@1 仅 26.7%。说明「AI 优化 AI 基础设施」仍远未饱和。",
-          "en": "Article URL: https://twitter.com/onloglogn/status/2111170954944823685 Comments URL: https://news.ycombinator.com/item?id=50134215 Points: 2 # Comments: 0"
-        },
-        "todayHighlight": {
-          "zh": "首次以可验证奖励系统化度量智能体对推理栈的改进能力，为推理工程自动化设定了基准线。",
-          "en": "首次以可验证奖励系统化度量智能体对推理栈的改进能力，为推理工程自动化设定了基准线。"
-        },
-        "pmInsight": {
-          "zh": "若规划推理成本优化，可先用该基准评估智能体在 Day-0 模型支持与缓存优化上的实际收益，再决定是否投入自动化。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Watch",
-        "sources": [
-          {
-            "label": "Hacker News LLM",
-            "url": "https://twitter.com/onloglogn/status/2111170954944823685"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "OpenAI: Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "en": "OpenAI: Stack Overflow for Agents triples signups with ChatGPT plugin"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "生态合作",
-          "en": "生态合作"
-        },
-        "summary": {
-          "zh": "两名工程师用 Codex 数周内做出面向智能体的问答社区，借助 ChatGPT 插件实现最高 10 倍智能体创建增长、注册量翻三倍。显示插件分发能显著放大开发者工具的冷启动。",
-          "en": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
-        },
-        "chineseIntro": {
-          "zh": "两名工程师用 Codex 数周内做出面向智能体的问答社区，借助 ChatGPT 插件实现最高 10 倍智能体创建增长、注册量翻三倍。显示插件分发能显著放大开发者工具的冷启动。",
-          "en": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
-        },
-        "todayHighlight": {
-          "zh": "验证了 ChatGPT 插件作为开发者产品增长渠道的杠杆效应，可能吸引更多工具类产品接入。",
-          "en": "验证了 ChatGPT 插件作为开发者产品增长渠道的杠杆效应，可能吸引更多工具类产品接入。"
-        },
-        "pmInsight": {
-          "zh": "评估将产品核心能力封装为 ChatGPT 插件能否带来可量化的获客提升，并提前设计插件内的转化路径。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "OpenAI",
-            "url": "https://openai.com/index/stack-overflow-chatgpt-plugin"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Vercel AI: AI Gateway logs now show session affinity",
-          "en": "Vercel AI: AI Gateway logs now show session affinity"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
-        },
-        "summary": {
-          "zh": "Vercel AI Gateway 日志新增 Sessions 视图，按会话聚合请求并展示会话粘性路由、缓存命中率、成本与所用模型/提供商。让多轮编码智能体的缓存复用和成本变得可观测。",
-          "en": "AI Gateway logs now have a Sessions view that groups requests into sessions and shows how session affinity routed each one. Each row shows the coding agent or app that ran the session, such as Claude Code, Codex, or Cursor, along with its cost, models, providers, and how much of its input was cached across every turn.Open a session to see its cache hit rate, duration, and path. The path lists each turn with its model"
-        },
-        "chineseIntro": {
-          "zh": "Vercel AI Gateway 日志新增 Sessions 视图，按会话聚合请求并展示会话粘性路由、缓存命中率、成本与所用模型/提供商。让多轮编码智能体的缓存复用和成本变得可观测。",
-          "en": "AI Gateway logs now have a Sessions view that groups requests into sessions and shows how session affinity routed each one. Each row shows the coding agent or app that ran the session, such as Claude Code, Codex, or Cursor, along with its cost, models, providers, and how much of its input was cached across every turn.Open a session to see its cache hit rate, duration, and path. The path lists each turn with its model"
-        },
-        "todayHighlight": {
-          "zh": "把会话粘性从底层路由细节变成可运营指标，直接影响多轮智能体的推理成本优化。",
-          "en": "把会话粘性从底层路由细节变成可运营指标，直接影响多轮智能体的推理成本优化。"
-        },
-        "pmInsight": {
-          "zh": "在接入多提供商网关时，把会话粘性与缓存命中率纳入成本看板，优先将长会话固定在单一提供商以提升缓存复用。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Vercel AI",
-            "url": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Anthropic: Anthropic update on independent evaluators",
-          "en": "Anthropic: Anthropic update on independent evaluators"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "政策/安全",
-          "en": "政策/安全"
-        },
-        "summary": {
-          "zh": "Anthropic 开始向 METR 团队开放类员工级访问权限，由其独立评估前沿模型风险并公开发布结果，同时与 SecureBio、Accenture 合作并接触 Hugging Face。第三方评估正从承诺走向可审计的常态机制。",
-          "en": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we`re announcing that we`ve started to give employee-like access to a team from METR, a nonprofit that evaluates frontier AI models.METR will publish the r"
-        },
-        "chineseIntro": {
-          "zh": "Anthropic 开始向 METR 团队开放类员工级访问权限，由其独立评估前沿模型风险并公开发布结果，同时与 SecureBio、Accenture 合作并接触 Hugging Face。第三方评估正从承诺走向可审计的常态机制。",
-          "en": "Last month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we`re announcing that we`ve started to give employee-like access to a team from METR, a nonprofit that evaluates frontier AI models.METR will publish the r"
-        },
-        "todayHighlight": {
-          "zh": "在签署白宫超级智能协议后率先落地外部评估访问，为前沿模型安全治理树立可参照的操作范式。",
-          "en": "在签署白宫超级智能协议后率先落地外部评估访问，为前沿模型安全治理树立可参照的操作范式。"
-        },
-        "pmInsight": {
-          "zh": "若产品依赖前沿模型，提前梳理对外部评估结果的披露口径与客户沟通话术，避免评估结论发布时被动应对。",
-          "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
-        },
-        "impact": "Medium",
-        "sources": [
-          {
-            "label": "Anthropic",
-            "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "GitHub Changelog: Open source license compliance generally available",
-          "en": "GitHub Changelog: Open source license compliance generally available"
-        },
-        "category": {
-          "zh": "公司动态",
-          "en": "Company update"
-        },
-        "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
-        },
-        "summary": {
-          "zh": "GitHub 面向 Enterprise Cloud 正式开放开源许可证合规功能，通过规则集在 PR 中自动检查新增或变更依赖的许可证，并支持企业级策略与例外管理。依赖治理从人工审查转为合并前强制门禁。",
-          "en": "Enterprises can now manage their dependencies&#8217; licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterprise Cloud&#8230; The post Open source license compliance generally available appeared first on The GitHub Blog."
-        },
-        "chineseIntro": {
-          "zh": "GitHub 面向 Enterprise Cloud 正式开放开源许可证合规功能，通过规则集在 PR 中自动检查新增或变更依赖的许可证，并支持企业级策略与例外管理。依赖治理从人工审查转为合并前强制门禁。",
-          "en": "Enterprises can now manage their dependencies&#8217; licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterprise Cloud&#8230; The post Open source license compliance generally available appeared first on The GitHub Blog."
-        },
-        "todayHighlight": {
-          "zh": "把许可证合规嵌入 PR 合并条件，意味着 AI 生成代码大量引入依赖后，合规风险可在源头被拦截。",
-          "en": "把许可证合规嵌入 PR 合并条件，意味着 AI 生成代码大量引入依赖后，合规风险可在源头被拦截。"
-        },
-        "pmInsight": {
-          "zh": "在 AI 编码助手普及的团队中，优先配置许可证规则集与例外流程，避免智能体自动引入依赖导致合并阻塞。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
