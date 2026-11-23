@@ -44,106 +44,106 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       "en": "Latest"
     },
     "title": {
-      "zh": "AI 产品经理日报：Agent 生态从「接模型」转向「接工具与接框架」",
-      "en": "AI PM Daily: Agent Ecosystem Shifts from Model Access to Tool and Harness Integration"
+      "zh": "AI 产品经理日报 · 2026-11-23",
+      "en": "AI PM Daily · 2026-11-23"
     },
     "editorNote": {
-      "zh": "今日主线不在单点模型能力，而在 Agent 与外部世界的连接层：CLI、MCP、工具检索、harness 适配、技能包同时升温。对 PM 而言，选型问题正从「用哪个模型」变成「用哪套执行框架与工具协议」。",
-      "en": "Today's thread is not raw model capability but the connective layer between agents and the outside world: CLI, MCP, tool retrieval, harness adapters and skill packs are all warming up. For PMs, the question is shifting from 'which model' to 'which execution framework and tool protocol'."
+      "zh": "今日主线不在模型本身，而在 Agent 与工具、软件、评测之间的连接层：GitHub 上 MCP 插件、CLI 调用层、技能包密集在榜，公司侧 Gemini 工具检索、Hugging Face harness adapters、OpenAI 困惑度评测同时指向「接口标准化」。",
+      "en": "Today's thread is not the model itself but the connective layer between agents, tools, software and evaluation: MCP add-ons, CLI invocation layers and skill packs cluster on GitHub, while Gemini Tool Retrieval, HF harness adapters and OpenAI's perplexity metric all point to interface standardization."
     },
     "keyTakeaway": {
-      "zh": "Agent 竞争的重心正在从模型能力转向「连接层」：CLI-Anything、Blender MCP 插件、Gemini Tool Retrieval 与 Hugging Face harness adapters 同日出现，说明工具接入、框架适配与技能复用正成为产品差异化的主战场。",
-      "en": "The center of gravity in agent competition is moving from model capability to the connectivity layer: CLI-Anything, the Blender MCP addon, Gemini Tool Retrieval and Hugging Face harness adapters appearing together suggest tool access, harness fit and skill reuse are becoming the main battleground for product differentiation."
+      "zh": "Agent 竞争正从「模型能力」转向「连接与评测基础设施」：谁能低成本接入更多工具、软件与可比较的评测口径，谁就掌握下一阶段的产品节奏。",
+      "en": "Agent competition is shifting from raw model capability to connection and evaluation infrastructure: whoever can cheaply plug into more tools, software and comparable evaluation standards sets the next product cadence."
     },
     "signals": [
       {
         "title": {
-          "zh": "「Agent 原生软件」连接层升温：CLI 与 MCP 成为通用入口",
-          "en": "The 'agent-native software' connectivity layer heats up: CLI and MCP as universal entry points"
+          "zh": "Agent 与软件的连接层持续升温：MCP 插件、CLI 调用层、技能包同时获关注",
+          "en": "The agent-to-software connection layer keeps heating up: MCP add-ons, CLI layers and skill packs gain attention together"
         },
         "category": {
           "zh": "Agent 基础设施",
           "en": "Agent Infrastructure"
         },
         "summary": {
-          "zh": "HKUDS/CLI-Anything 总 star 超 6.3 万、今日新增 699，主张通过 CLI 层把各类软件能力暴露给 Agent；同期 Blender AI MCP 插件创建约一个月即达 2758 stars，让 ChatGPT、Claude、Gemini、Ollama 直接读取 3D 场景并执行多步操作。两者分别从通用 CLI 与垂直 3D 场景验证同一路径：把软件能力封装成 Agent 可调用的接口。",
-          "en": "HKUDS/CLI-Anything has passed 63k stars with 699 added today, arguing for exposing software capabilities to agents via a CLI layer; meanwhile the Blender AI MCP addon reached 2,758 stars in about a month, letting ChatGPT, Claude, Gemini and Ollama read 3D scenes and run multi-step operations. Both validate the same path from a general CLI angle and a vertical 3D angle: wrapping software capabilities into agent-callable interfaces."
+          "zh": "blender-ai-mcp-addon 创建约一个月获 2759 stars，把 ChatGPT、Claude 等模型通过 MCP 接入 Blender 场景操作；HKUDS/CLI-Anything 总 star 超 6.3 万、今日新增 699，目标是让所有软件可被 Agent 通过命令行调用；Claude-BugHunter 今日新增 1716 stars 位列趋势榜第 1，以 82+ 技能覆盖安全测试。三者分别对应 3D 创作、通用软件调用与垂直安全场景。",
+          "en": "blender-ai-mcp-addon reached 2,759 stars in about a month, wiring ChatGPT/Claude into Blender via MCP; HKUDS/CLI-Anything passed 63k stars with +699 today, aiming to make any software callable by agents via CLI; Claude-BugHunter added 1,716 stars today and topped the trending chart with 82+ security skills. Together they cover 3D creation, general software invocation and vertical security."
         },
         "pmInsight": {
-          "zh": "当连接层被标准化，产品护城河将从「有没有 AI 功能」转向「暴露了多少可组合能力、以及这些能力在真实工作流中的成功率」。PM 应优先盘点自家产品可被 Agent 调用的原子能力清单，并评估 MCP/CLI 接入的成本与收益。",
-          "en": "Once the connectivity layer is standardized, the moat shifts from 'having AI features' to 'how many composable capabilities are exposed and how reliably they succeed in real workflows.' PMs should inventory their product's agent-callable atomic capabilities and assess the cost/benefit of MCP or CLI exposure."
+          "zh": "连接层正在被社区以「技能包 + 协议 + CLI」三种形态同时填充，说明 Agent 产品的差异化将更多来自可接入的工具广度与调用可靠性，而非模型本身。PM 应评估自家产品是否已有稳定的工具注册与调用抽象，否则会在 Agent 生态中被绕过。",
+          "en": "The connection layer is being filled simultaneously via skill packs, protocols and CLIs, implying agent differentiation will come more from tool breadth and invocation reliability than the model. PMs should check whether their product has a stable tool-registration and invocation abstraction, or risk being bypassed in the agent ecosystem."
         },
         "impact": "High",
         "sources": [
           {
-            "label": "HKUDS/CLI-Anything",
+            "label": "GitHub · blender-ai-mcp-addon",
+            "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"
+          },
+          {
+            "label": "GitHub · CLI-Anything",
             "url": "https://github.com/HKUDS/CLI-Anything"
           },
           {
-            "label": "bookwjitchieni1986/blender-ai-mcp-addon",
-            "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"
+            "label": "GitHub · Claude-BugHunter",
+            "url": "https://github.com/elementalsouls/Claude-BugHunter"
           }
         ]
       },
       {
         "title": {
-          "zh": "工具规模成为 Agent 平台新竞争维度：检索与适配层同时被标准化",
-          "en": "Tool scale becomes a new competitive dimension for agent platforms: retrieval and adaptation layers standardized together"
+          "zh": "工具规模膨胀后的成本问题被正面处理：Gemini 工具检索与 Token Bill 成本对比同日出现",
+          "en": "Cost of tool sprawl gets addressed head-on: Gemini Tool Retrieval and Token Bill cost comparison land the same day"
         },
         "category": {
-          "zh": "模型平台 / Agent 框架",
-          "en": "Model Platform / Agent Framework"
+          "zh": "Agent 成本与选型",
+          "en": "Agent Cost & Selection"
         },
         "summary": {
-          "zh": "Google 在 Gemini API 预览上线 Tool Retrieval，让 Agent 在接入数百个工具时按需检索以降低 token 消耗；Hugging Face 推出 harness adapters，把选定模型适配到特定 agent harness 以提升表现并降低成本。两者分别从闭源 API 与开源生态侧解决同一问题：工具与框架规模膨胀后的效率与成本。",
-          "en": "Google previewed Tool Retrieval in the Gemini API, letting agents retrieve tools on demand when connected to hundreds of them to cut token usage; Hugging Face launched harness adapters to fit a chosen model to a specific agent harness for better performance and lower cost. Both address the same problem from the closed API side and the open ecosystem side: efficiency and cost once tools and frameworks scale up."
+          "zh": "Google 在 Gemini API 预览上线 Tool Retrieval，让智能体在接入数百个工具时按需检索工具定义以减少 token 消耗；同期 Token Bill 上线 LLM API 成本计算器，并排对比 24 个模型价格，覆盖长上下文附加费、批量折扣与缓存输入占比。",
+          "en": "Google previewed Tool Retrieval in the Gemini API so agents with hundreds of tools can retrieve definitions on demand to cut token use; meanwhile Token Bill launched an LLM API cost calculator comparing 24 models, covering long-context surcharges, batch discounts and cached-input share."
         },
         "pmInsight": {
-          "zh": "这意味着「支持多少工具」不再是卖点，「在数百工具下仍保持低 token 与高命中率」才是。PM 在做 Agent 产品时应把工具检索、路由与 harness 适配纳入架构设计，而不是把工具全量塞进上下文。",
-          "en": "This means 'how many tools supported' is no longer the selling point; 'keeping tokens low and hit rate high across hundreds of tools' is. PMs building agent products should design tool retrieval, routing and harness adaptation into the architecture rather than stuffing all tools into context."
-        },
-        "impact": "High",
-        "sources": [
-          {
-            "label": "Google AI: Tool Retrieval in the Gemini API",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
-          },
-          {
-            "label": "Hugging Face: harness adapters",
-            "url": "https://huggingface.co/blog/harness-adapters-at-scale"
-          }
-        ]
-      },
-      {
-        "title": {
-          "zh": "Agent 技能包向垂直专业场景渗透：安全红队与合规上架先行",
-          "en": "Agent skill packs penetrate vertical professional scenarios: security red-teaming and app-store compliance lead"
-        },
-        "category": {
-          "zh": "Agent 技能生态 / 安全合规",
-          "en": "Agent Skill Ecosystem / Security & Compliance"
-        },
-        "summary": {
-          "zh": "Claude-BugHunter 登上全球趋势榜首位、今日新增 1716 stars，以 80 多个技能、681 条已披露报告模式覆盖 24 类漏洞；app-store-compliance 今日新增 621 stars，收录 124 种被拒模式并跟踪 112 项法规截止日期。两者都把「专家经验」编码成 Agent 可执行技能，且都面向高门槛、高风险的合规与安全流程。",
-          "en": "Claude-BugHunter topped the global trending list with 1,716 stars added today, covering 24 vulnerability classes via 80+ skills and 681 disclosed report patterns; app-store-compliance added 621 stars today, cataloging 124 rejection patterns and tracking 112 regulatory deadlines. Both encode expert experience into agent-executable skills, targeting high-barrier, high-risk compliance and security workflows."
-        },
-        "pmInsight": {
-          "zh": "技能包正在把「资深专家」变成可分发产品，最先落地的是有明确规则与失败代价的领域（安全、合规）。PM 可评估自身业务中哪些高门槛流程具备「可编码的专家判断」，这可能是比通用助手更快的商业化切口。",
-          "en": "Skill packs are turning 'senior experts' into distributable products, landing first in domains with explicit rules and costly failure (security, compliance). PMs should assess which high-barrier workflows in their business contain 'encodable expert judgment'—potentially a faster commercialization wedge than general assistants."
+          "zh": "工具检索把 Agent 扩展瓶颈从「能接多少工具」转向「如何高效选工具」，而成本计算器让多模型选型从手工表格变为可复用估算。两者叠加意味着 Agent 产品的成本结构将更可测，PM 需要把「工具检索命中率」和「单位任务 token 成本」纳入核心指标。",
+          "en": "Tool retrieval shifts the scaling bottleneck from how many tools to how to select them efficiently, while the cost calculator turns multi-model selection into reusable estimation. Together they make agent cost structure more measurable; PMs should add tool-retrieval hit rate and per-task token cost to core metrics."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "elementalsouls/Claude-BugHunter",
-            "url": "https://github.com/elementalsouls/Claude-BugHunter"
+            "label": "Google AI · Tool Retrieval in Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
           },
           {
-            "label": "mjmirza/app-store-compliance",
-            "url": "https://github.com/mjmirza/app-store-compliance"
+            "label": "Token Bill",
+            "url": "https://tokenbill.dev/"
+          }
+        ]
+      },
+      {
+        "title": {
+          "zh": "评测口径走向统一与解耦：OpenAI 公开困惑度数据，Hugging Face 推出 harness adapters",
+          "en": "Evaluation moves toward unified and decoupled standards: OpenAI opens perplexity data, Hugging Face ships harness adapters"
+        },
+        "category": {
+          "zh": "模型评测",
+          "en": "Model Evaluation"
+        },
+        "summary": {
+          "zh": "OpenAI 首席科学家提出以困惑度（交叉熵损失）作为跨模型开发者的统一评测指标，并首次公开内部预训练困惑度数据；Hugging Face 推出 harness adapters，让开发者把所选模型适配到自己的评测/运行框架以提升性能并降低成本。两者分别从指标口径和工具链解耦两个方向推进评测可比性。",
+          "en": "OpenAI's chief scientist proposed perplexity (cross-entropy loss) as a unified cross-model evaluation metric and disclosed internal pretraining perplexity data for the first time; Hugging Face launched harness adapters so developers can adapt a chosen model to their own harness to improve performance and cut cost. They advance comparability via metric standard and toolchain decoupling respectively."
+        },
+        "pmInsight": {
+          "zh": "评测从零散基准转向单一标尺与可复用 harness，意味着模型选型的依据会更透明，但也可能被头部实验室的指标定义主导。PM 在选型时应同时保留自有任务集评测，避免完全依赖外部统一口径。",
+          "en": "Evaluation shifting from scattered benchmarks to a single yardstick and reusable harness makes model selection more transparent but risks being shaped by leading labs' metric definitions. PMs should keep in-house task-set evaluation alongside external unified metrics."
+        },
+        "impact": "Watch",
+        "sources": [
+          {
+            "label": "OpenAI · Perplexity and Intelligence",
+            "url": "https://openai.com/index/perplexity-and-intelligence"
           },
           {
-            "label": "GitHub Changelog: Security advisory permissions GA",
-            "url": "https://github.blog/changelog/2026-11-20-security-advisory-permissions-are-now-generally-available"
+            "label": "Hugging Face · harness adapters",
+            "url": "https://huggingface.co/blog/harness-adapters-at-scale"
           }
         ]
       }
@@ -151,59 +151,59 @@ export const DAILY_BRIEFS: DailyBrief[] = [
     "opportunities": [
       {
         "title": {
-          "zh": "假设：为垂直 SaaS 提供「MCP/CLI 接入层」比自建 Agent 更快见效",
-          "en": "Hypothesis: an 'MCP/CLI access layer' for vertical SaaS pays off faster than building an in-house agent"
+          "zh": "面向垂直场景的「工具检索 + 成本看板」中间层",
+          "en": "A vertical 'tool retrieval + cost dashboard' middleware layer"
         },
         "category": {
-          "zh": "产品机会 / Agent 接入",
-          "en": "Product Opportunity / Agent Access"
+          "zh": "Agent 中间件",
+          "en": "Agent Middleware"
         },
         "summary": {
-          "zh": "基于 CLI-Anything 与 Blender MCP 插件的同时升温，可验证假设：为设计、剪辑、财务等垂直工具提供标准化的 MCP/CLI 接入层，能让其被主流 Agent 直接调用，从而在不自研模型的前提下获得 Agent 流量。验证方式：选一个垂直工具，暴露 5-10 个原子能力，测量 Agent 调用成功率与用户留存变化。",
-          "en": "Given the simultaneous rise of CLI-Anything and the Blender MCP addon, a testable hypothesis: providing a standardized MCP/CLI access layer for vertical tools (design, editing, finance) lets mainstream agents call them directly, capturing agent traffic without building models. Validation: pick one vertical tool, expose 5-10 atomic capabilities, and measure agent call success rate and retention change."
+          "zh": "结合 Gemini Tool Retrieval 与 Token Bill 的方向，可为接入 50+ 工具的企业 Agent 提供工具定义检索与单位任务成本估算的组合能力，先在设计或安全等单一垂直场景验证。",
+          "en": "Combining Gemini Tool Retrieval and Token Bill directions, offer combined tool-definition retrieval and per-task cost estimation for enterprise agents with 50+ tools, validated first in a single vertical such as design or security."
         },
         "pmInsight": {
-          "zh": "关键指标不是接入数量，而是「Agent 首次调用成功率」与「多步任务完成率」。若这两项在接入后显著提升，说明连接层本身构成分发渠道。",
-          "en": "The key metrics are not integration count but 'first-call success rate by agents' and 'multi-step task completion rate.' If both improve markedly after integration, the connectivity layer itself becomes a distribution channel."
+          "zh": "可验证假设：在工具数超过 50 的 Agent 中引入工具检索后，单任务 token 成本下降 30% 以上且任务成功率不降。若成立，该中间层可作为独立产品卖给自建 Agent 的团队。",
+          "en": "Testable hypothesis: introducing tool retrieval in agents with 50+ tools cuts per-task token cost by over 30% without lowering task success rate. If true, this middleware can be sold standalone to teams building their own agents."
         },
         "impact": "Medium",
         "sources": [
           {
-            "label": "HKUDS/CLI-Anything",
-            "url": "https://github.com/HKUDS/CLI-Anything"
+            "label": "Google AI · Tool Retrieval in Gemini API",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
           },
           {
-            "label": "bookwjitchieni1986/blender-ai-mcp-addon",
-            "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"
+            "label": "Token Bill",
+            "url": "https://tokenbill.dev/"
           }
         ]
       },
       {
         "title": {
-          "zh": "假设：BYOK + 本地模型的轻量 AI 工具可切入「数据敏感型」团队",
-          "en": "Hypothesis: lightweight BYOK + local-model AI tools can win data-sensitive teams"
+          "zh": "合规与安全技能包的产品化封装",
+          "en": "Productizing compliance and security skill packs"
         },
         "category": {
-          "zh": "产品机会 / 交付形态",
-          "en": "Product Opportunity / Delivery Model"
+          "zh": "垂直 Agent 技能",
+          "en": "Vertical Agent Skills"
         },
         "summary": {
-          "zh": "结合 VS Code 免账号 BYOK 代码审查插件与 Token Bill 多模型成本计算器的出现，可验证假设：面向有数据合规顾虑的团队，提供「自带 Key / 本地 Ollama + 成本可视化」的轻量工具，比订阅制 SaaS 更容易通过采购。验证方式：对比 BYOK 版与 SaaS 版在中小团队的试用转化率与付费意愿。",
-          "en": "Combining the account-free BYOK VS Code code-review plugin and the Token Bill multi-model cost calculator, a testable hypothesis: for teams with data-compliance concerns, a lightweight tool with 'bring-your-own-key / local Ollama + cost visibility' clears procurement more easily than subscription SaaS. Validation: compare trial conversion and willingness to pay between BYOK and SaaS versions among small/mid-size teams."
+          "zh": "app-store-compliance 今日新增 621 stars，收录 124 种被拒原因与 112 项法规截止日期；Claude-BugHunter 今日新增 1716 stars 位列趋势榜第 1。两者都证明「高频痛点 + 结构化知识 + Agent 技能」的组合有传播力。",
+          "en": "app-store-compliance added 621 stars today with 124 rejection reasons and 112 regulatory deadlines; Claude-BugHunter added 1,716 stars and topped trending. Both show the combination of high-frequency pain, structured knowledge and agent skills travels well."
         },
         "pmInsight": {
-          "zh": "该假设成立的前提是「成本透明度」本身构成决策变量——Token Bill 类工具的出现说明这一点正在被验证。PM 应把成本估算器作为产品内置模块而非附加文档。",
-          "en": "The hypothesis holds only if 'cost transparency' is itself a decision variable—the emergence of tools like Token Bill suggests this is being validated. PMs should build cost estimators as an in-product module rather than supplementary documentation."
+          "zh": "可验证假设：把上架合规检查做成可被 Claude Code/Cursor 调用的技能后，开发者提交前自查覆盖率提升，首次审核通过率上升。可先在 iOS 上架场景做小范围 A/B 验证。",
+          "en": "Testable hypothesis: packaging app-store compliance checks as skills callable by Claude Code/Cursor raises pre-submission self-check coverage and first-review pass rate. Validate with a small A/B in the iOS submission scenario first."
         },
         "impact": "Watch",
         "sources": [
           {
-            "label": "Show HN: AI code review in VS Code (BYOK/Ollama)",
-            "url": "https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model"
+            "label": "GitHub · app-store-compliance",
+            "url": "https://github.com/mjmirza/app-store-compliance"
           },
           {
-            "label": "Token Bill – LLM API cost calculator",
-            "url": "https://tokenbill.dev/"
+            "label": "GitHub · Claude-BugHunter",
+            "url": "https://github.com/elementalsouls/Claude-BugHunter"
           }
         ]
       }
@@ -219,26 +219,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Blender 的 AI 助手插件，内置 MCP 服务器，让 ChatGPT、Claude、Gemini、Ollama 等模型直接读取场景、创建物体、修改材质并执行多步骤 3D 工作流。适合 3D 建模、场景搭建和 bpy 脚本自动化场景。",
+          "zh": "把 AI 助手直接接进 Blender 的插件，通过 MCP 协议让 ChatGPT、Claude、Gemini、Ollama 等模型读取场景、创建物体、修改材质并执行多步 3D 工作流。适合 3D 设计师用自然语言对话完成建模与脚本编写。",
           "en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration."
         },
-        "totalStars": 2758,
+        "totalStars": 2759,
         "language": "Unknown",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "面向 Blender 的 AI 助手插件，内置 MCP 服务器，让 ChatGPT、Claude、Gemini、Ollama 等模型直接读取场景、创建物体、修改材质并执行多步骤 3D 工作流。适合 3D 建模、场景搭建和 bpy 脚本自动化场景。",
+          "zh": "把 AI 助手直接接进 Blender 的插件，通过 MCP 协议让 ChatGPT、Claude、Gemini、Ollama 等模型读取场景、创建物体、修改材质并执行多步 3D 工作流。适合 3D 设计师用自然语言对话完成建模与脚本编写。",
           "en": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration."
         },
         "todayHighlight": {
-          "zh": "创建仅约一个月即积累 2758 stars，MCP 与 Blender 结合的定位在 3D 创作者与 Agent 工具圈同步升温，近期仍在持续更新。",
+          "zh": "创建仅约一个月即积累 2759 stars，作为 Blender 与 MCP 生态的早期结合点，随 3D 创作场景的 Agent 化讨论升温获得关注。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,758 stars、39 forks，topics: ai-agents, ai-assistant, blender, blender-addon, blender-ai，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,758 stars and 39 forks，topics: ai-agents, ai-assistant, blender, blender-addon, blender-ai, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,759 stars、39 forks，topics: ai-agents, ai-assistant, blender, blender-addon, blender-ai，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,759 stars and 39 forks，topics: ai-agents, ai-assistant, blender, blender-addon, blender-ai, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察专业创作软件如何通过 MCP 被 Agent 接管，这可能是 3D、设计类工具接入 AI 工作流的通用范式。",
+          "zh": "值得观察专业创作软件如何借 MCP 变成 Agent 可操作的工作台，以及插件形态能否成为 AI 能力进入垂直工具的标准入口。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -259,26 +259,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "性能优化工具，主张不必整体重写，而是先分析 Python、Node、Ruby 应用的性能瓶颈，再用编码 Agent 把最慢的 5% 函数移植为 Rust，并验证行为一致。",
+          "zh": "面向性能优化的开发者工具：先分析 Python、Node 或 Ruby 应用的性能瓶颈，再让 AI 编程助手只把最慢的那 5% 函数用 Rust 重写，并验证行为一致。解决「全量重写成本高」的问题。",
           "en": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
         },
-        "totalStars": 2324,
+        "totalStars": 2456,
         "language": "Rust",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "性能优化工具，主张不必整体重写，而是先分析 Python、Node、Ruby 应用的性能瓶颈，再用编码 Agent 把最慢的 5% 函数移植为 Rust，并验证行为一致。",
+          "zh": "面向性能优化的开发者工具：先分析 Python、Node 或 Ruby 应用的性能瓶颈，再让 AI 编程助手只把最慢的那 5% 函数用 Rust 重写，并验证行为一致。解决「全量重写成本高」的问题。",
           "en": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
         },
         "todayHighlight": {
-          "zh": "创建仅数日便获得 2324 stars，切中「重写语言成本高」的开发者痛点，借 AI 编码 Agent 的普及快速传播。",
+          "zh": "创建仅两天即获 2456 stars，以「别重写整个项目，只重写慢的那 5%」的反主流叙事在开发者社区快速传播。",
           "en": "近 1 个月内新建，属于近期快速走红的 AI 新项目, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,324 stars、144 forks，topics: agent-skills, ai-agents, claude-code, claude-code-plugin, codex，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,324 stars and 144 forks，topics: agent-skills, ai-agents, claude-code, claude-code-plugin, codex, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 2,456 stars、156 forks，topics: agent-skills, ai-agents, claude-code, claude-code-plugin, codex，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 2,456 stars and 156 forks，topics: agent-skills, ai-agents, claude-code, claude-code-plugin, codex, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注「AI 做局部重构 + 自动验证」这一模式，它把性能优化从专家手工活变成可复制的 Agent 流程。",
+          "zh": "可关注 AI 编程助手从「写新代码」转向「精准改造存量系统」的产品机会，以及性能优化这类高价值场景的 Agent 化路径。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -299,26 +299,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "把 DeepSeek Harness 装进手机的移动应用，可在 Android 本机运行编码 Agent，也能远程遥控电脑上的任务；iOS 版仍在开发测试中。",
+          "zh": "把 DeepSeek Harness 装进手机的移动应用，可在 Android 本机运行 AI 编程代理，也能远程遥控电脑上的开发环境。让开发者脱离桌面也能发起和跟进编码任务。",
           "en": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。"
         },
-        "totalStars": 30407,
+        "totalStars": 30463,
         "language": "Dart",
         "dailyStars": null,
         "chineseIntro": {
-          "zh": "把 DeepSeek Harness 装进手机的移动应用，可在 Android 本机运行编码 Agent，也能远程遥控电脑上的任务；iOS 版仍在开发测试中。",
+          "zh": "把 DeepSeek Harness 装进手机的移动应用，可在 Android 本机运行 AI 编程代理，也能远程遥控电脑上的开发环境。让开发者脱离桌面也能发起和跟进编码任务。",
           "en": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。"
         },
         "todayHighlight": {
-          "zh": "创建约一个月已积累 3 万 stars，移动端运行与遥控编码 Agent 的叙事在开发者社区持续获得关注，今日仍在活跃更新。",
+          "zh": "创建约一个月已积累 3 万+ stars，移动端运行与远程遥控电脑的双重能力切中开发者「随时接管任务」的需求，持续获得关注。",
           "en": "创建仅约 1 个月便已积累 30k+ stars, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 30,407 stars、1,459 forks，topics: ai-agent, android, android-app, coding-agent, deepseek，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 30,407 stars and 1,459 forks，topics: ai-agent, android, android-app, coding-agent, deepseek, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 30,463 stars、1,465 forks，topics: ai-agent, android, android-app, coding-agent, deepseek，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 30,463 stars and 1,465 forks，topics: ai-agent, android, android-app, coding-agent, deepseek, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "移动端成为 Agent 入口的趋势值得留意，产品经理应思考「随身触发、远程执行」如何改变编码与自动化任务的使用场景。",
+          "zh": "值得观察 AI 编程代理从桌面走向移动端的形态变化，以及「手机遥控电脑」是否会成为开发者工具的新交互范式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -339,26 +339,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，包含 80 多个技能、15 个斜杠命令和 681 条已披露报告模式，覆盖 24 类核心漏洞及企业身份与基础设施攻击矩阵。",
+          "zh": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，内置 82+ 技能、15 个斜杠命令和 681 条已披露报告模式，覆盖 24 类核心漏洞，并集成企业身份与基础设施攻击矩阵。",
           "en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices."
         },
-        "totalStars": 18415,
+        "totalStars": 18579,
         "language": "Python",
         "dailyStars": 1716,
         "chineseIntro": {
-          "zh": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，包含 80 多个技能、15 个斜杠命令和 681 条已披露报告模式，覆盖 24 类核心漏洞及企业身份与基础设施攻击矩阵。",
+          "zh": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，内置 82+ 技能、15 个斜杠命令和 681 条已披露报告模式，覆盖 24 类核心漏洞，并集成企业身份与基础设施攻击矩阵。",
           "en": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices."
         },
         "todayHighlight": {
-          "zh": "登上全球趋势榜首位，今日新增 1716 stars，总 star 达 1.8 万；AI 安全与红队场景的实战型技能包正快速获得关注。",
+          "zh": "今日新增 1716 stars，位列全球趋势榜第 1，安全从业者对「AI 辅助授权渗透测试」的关注明显升温。",
           "en": "登上 GitHub Trending 日榜第 1 位, 面向具体工作流的 AI skill/自动化模板在独立开发者和小团队间快速复制, 今日新增 1,716 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,415 stars、2,020 forks，topics: ai-security, anthropic, application-security, bug-bounty, bugbounty，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,415 stars and 2,020 forks，topics: ai-security, anthropic, application-security, bug-bounty, bugbounty, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 18,579 stars、2,030 forks，topics: ai-security, anthropic, application-security, bug-bounty, bugbounty，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 18,579 stars and 2,030 forks，topics: ai-security, anthropic, application-security, bug-bounty, bugbounty, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "安全类 Agent 技能包开始形成体系化资产，产品经理应关注合规边界与「技能即产品」的打包方式。",
+          "zh": "可观察垂直领域技能包如何把专家经验结构化封装给 AI 代理，以及安全合规边界在产品设计中的重要性。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -379,26 +379,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "提出「让所有软件都成为 Agent 原生」的思路，通过 CLI 层把各类软件能力暴露给 AI Agent 调用，并配套 CLI-Hub 入口。",
+          "zh": "港大数据智能实验室推出的项目，目标是让所有软件都能被 AI Agent 通过命令行直接调用，为 Agent 操作各类工具提供统一入口。",
           "en": "Star HKUDS / CLI-Anything \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
         },
-        "totalStars": 63020,
+        "totalStars": 63093,
         "language": "Python",
         "dailyStars": 699,
         "chineseIntro": {
-          "zh": "提出「让所有软件都成为 Agent 原生」的思路，通过 CLI 层把各类软件能力暴露给 AI Agent 调用，并配套 CLI-Hub 入口。",
+          "zh": "港大数据智能实验室推出的项目，目标是让所有软件都能被 AI Agent 通过命令行直接调用，为 Agent 操作各类工具提供统一入口。",
           "en": "Star HKUDS / CLI-Anything \"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/"
         },
         "todayHighlight": {
-          "zh": "总 star 已超 6.3 万，今日新增 699，作为 Agent 与软件之间的通用连接层，随 Agent 生态升温持续获得关注。",
+          "zh": "总 star 已超 6.3 万，今日新增 699，作为 Agent 与软件之间的通用连接层，随 Agent 生态扩张持续获得新增关注。",
           "en": "登上 GitHub Trending 日榜第 3 位, 总 star 数已达 63k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 699 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 63,020 stars、5,733 forks，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 63,020 stars and 5,733 forks, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 63,093 stars、5,736 forks，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 63,093 stars and 5,736 forks, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "值得观察「CLI 作为 Agent 接口标准」的生态位，它可能决定哪些软件能被 Agent 生态自然接入。",
+          "zh": "值得思考产品是否需要为 Agent 提供「可被调用」的接口形态，CLI 可能成为软件接入 AI 生态的低成本通道。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -419,26 +419,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "AI Agent 技能，可跨 Reddit、X、YouTube、HN、Polymarket 和网页检索任意话题，再综合成有依据的摘要，偏向「搜人而非搜编辑」。",
+          "zh": "一个 AI Agent 技能，可跨 Reddit、X、YouTube、Hacker News、Polymarket 和网页检索任意话题，并汇总成有出处的摘要。适合做舆情追踪与话题调研。",
           "en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
-        "totalStars": 72981,
+        "totalStars": 73031,
         "language": "Python",
         "dailyStars": 668,
         "chineseIntro": {
-          "zh": "AI Agent 技能，可跨 Reddit、X、YouTube、HN、Polymarket 和网页检索任意话题，再综合成有依据的摘要，偏向「搜人而非搜编辑」。",
+          "zh": "一个 AI Agent 技能，可跨 Reddit、X、YouTube、Hacker News、Polymarket 和网页检索任意话题，并汇总成有出处的摘要。适合做舆情追踪与话题调研。",
           "en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
         },
         "todayHighlight": {
-          "zh": "总 star 已近 7.3 万，今日新增 668，多语言 README 覆盖十余种语言，社区传播面较广，持续在榜。",
-          "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 72k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 668 星."
+          "zh": "总 star 已超 7.3 万，今日新增 668，多语言 README 覆盖十余种语言，社区传播面较广，持续在榜。",
+          "en": "登上 GitHub Trending 日榜第 10 位, 总 star 数已达 73k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 668 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 72,981 stars、6,453 forks，topics: agent-skills, artificial-intelligence, automation, bot, command-line，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 72,981 stars and 6,453 forks，topics: agent-skills, artificial-intelligence, automation, bot, command-line, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 73,031 stars、6,454 forks，topics: agent-skills, artificial-intelligence, automation, bot, command-line，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 73,031 stars and 6,454 forks，topics: agent-skills, artificial-intelligence, automation, bot, command-line, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可关注「Agent 驱动的舆情与话题研究」如何替代传统搜索，以及多源信息可信度如何呈现给用户。",
+          "zh": "可关注「搜索人而不是搜索编辑内容」的调研型 Agent 技能，以及多源信息聚合在决策支持类产品中的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -459,26 +459,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 iOS 与 Android 上架的合规手册与提交前检查工具，收录 124 种被拒模式及修复方式、隐私清单与数据安全核查，并跟踪 112 项法规截止日期，同时提供 AI 编码 Agent 技能。",
+          "zh": "面向 iOS 与 Android 上架的开源合规手册与提交前检查工具，收录 124 种被拒原因及修复方式、隐私清单与数据安全核查，并跟踪 112 项法规截止日期。还提供供 AI 编程助手使用的技能。",
           "en": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents."
         },
-        "totalStars": 4246,
+        "totalStars": 4334,
         "language": "Shell",
         "dailyStars": 621,
         "chineseIntro": {
-          "zh": "面向 iOS 与 Android 上架的合规手册与提交前检查工具，收录 124 种被拒模式及修复方式、隐私清单与数据安全核查，并跟踪 112 项法规截止日期，同时提供 AI 编码 Agent 技能。",
+          "zh": "面向 iOS 与 Android 上架的开源合规手册与提交前检查工具，收录 124 种被拒原因及修复方式、隐私清单与数据安全核查，并跟踪 112 项法规截止日期。还提供供 AI 编程助手使用的技能。",
           "en": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents."
         },
         "todayHighlight": {
-          "zh": "今日新增 621 stars，总 star 超 4200；应用商店审核与 EU AI Act 等合规压力上升，使这类「提交前护栏」工具获得关注。",
+          "zh": "今日新增 621 stars，移动应用合规与隐私监管趋严的背景下，上架被拒这一高频痛点带动关注升温。",
           "en": "登上 GitHub Trending 日榜第 12 位, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 621 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,246 stars、272 forks，topics: accessibility, ai-agents, android, app-review-guidelines, app-store，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,246 stars and 272 forks，topics: accessibility, ai-agents, android, app-review-guidelines, app-store, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 4,334 stars、276 forks，topics: accessibility, ai-agents, android, app-review-guidelines, app-store，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 4,334 stars and 276 forks，topics: accessibility, ai-agents, android, app-review-guidelines, app-store, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "合规正在成为产品发布流程中的可工具化环节，产品经理应评估把审核风险前置检查纳入研发流程的收益。",
+          "zh": "值得观察合规知识如何被产品化为可执行的检查清单，以及 AI 技能在降低应用上架风险上的实际作用。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -502,7 +502,7 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "zh": "开源 AI 视频剪辑桌面工具，贴一个链接即可把播客、访谈、课程等长视频自动剪成短视频，并生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels、YouTube Shorts 等平台。",
           "en": "Star zhouxiaoka / autoclip AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping &amp; content repurposing."
         },
-        "totalStars": 13810,
+        "totalStars": 13923,
         "language": "Python",
         "dailyStars": 641,
         "chineseIntro": {
@@ -510,15 +510,15 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Star zhouxiaoka / autoclip AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping &amp; content repurposing."
         },
         "todayHighlight": {
-          "zh": "项目已运营约 17 个月，今日新增 641 stars，总 star 近 1.4 万；「一键出片」叙事在内容创作者圈持续带动关注。",
+          "zh": "项目已运营约 17 个月，今日新增 641 stars，「一键出片」叙事在短视频创作者群体中持续获得关注。",
           "en": "登上 GitHub Trending 日榜第 16 位, “一键出片”叙事在短视频创作者和 AI 内容生产圈持续传播, 今日新增 641 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,810 stars、2,172 forks，topics: ai-agent, ai-video-editor, content-repurposing, desktop-app, douyin，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,810 stars and 2,172 forks，topics: ai-agent, ai-video-editor, content-repurposing, desktop-app, douyin, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 13,923 stars、2,180 forks，topics: ai-agent, ai-video-editor, content-repurposing, desktop-app, douyin，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 13,923 stars and 2,180 forks，topics: ai-agent, ai-video-editor, content-repurposing, desktop-app, douyin, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "内容再分发工具的关键在于平台适配与成片可用率，产品经理应关注本地渲染与云端模型计费如何平衡成本与体验。",
+          "zh": "可关注内容再加工工具如何把多平台分发需求打包成一条流水线，以及本地渲染与云端模型计费的混合商业模式。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -539,26 +539,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "面向 Claude Code、Codex、Copilot、Cursor 等编码 Agent 的图表设计技能，提供 52 种图表类型，输出自包含的 HTML + SVG 文件，强调编辑级排版而非 Mermaid 式默认样式。",
+          "zh": "给 AI 编程助手用的图表设计技能，可生成自包含的 HTML + SVG 编辑级图表，支持 52 种图表类型并贴合品牌风格，避免千篇一律的 Mermaid 默认样式。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
-        "totalStars": 70507,
+        "totalStars": 70571,
         "language": "HTML",
         "dailyStars": 518,
         "chineseIntro": {
-          "zh": "面向 Claude Code、Codex、Copilot、Cursor 等编码 Agent 的图表设计技能，提供 52 种图表类型，输出自包含的 HTML + SVG 文件，强调编辑级排版而非 Mermaid 式默认样式。",
+          "zh": "给 AI 编程助手用的图表设计技能，可生成自包含的 HTML + SVG 编辑级图表，支持 52 种图表类型并贴合品牌风格，避免千篇一律的 Mermaid 默认样式。",
           "en": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
         },
         "todayHighlight": {
-          "zh": "总 star 已超 7 万，今日新增 518，作为 Agent 技能生态中的「设计品味」类组件持续获得关注。",
+          "zh": "总 star 已超 7 万，今日新增 518，作为 Claude Code、Codex、Cursor 等多家代理通用的设计类技能，随 Agent 技能生态升温持续在榜。",
           "en": "登上 GitHub Trending 日榜第 9 位, 总 star 数已达 70k+，持续占据 AI 开源热门榜单, 作为 Agent 生态的重要基础组件，随 Agent 应用普及持续获得新增关注, 今日新增 518 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,507 stars、4,732 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,507 stars and 4,732 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 70,571 stars、4,736 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 70,571 stars and 4,736 forks，topics: agent-skills, claude-code, codex, data-visualization, diagrams, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "可观察 Agent 技能如何从功能型扩展到审美型，设计质量正成为 AI 生成内容差异化的关键变量。",
+          "zh": "值得观察「审美与设计规范」如何被封装为 Agent 技能，以及跨代理兼容对技能分发规模的影响。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -579,26 +579,26 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "GitHub project"
         },
         "summary": {
-          "zh": "从零训练 64M 参数小语言模型的教学项目，主打两小时内完成训练，帮助理解大模型原理与完整流程。",
+          "zh": "一个教学型开源项目，用约两小时从零训练出 64M 参数的小型大语言模型，帮助学习者完整理解大模型训练流程。",
           "en": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours."
         },
-        "totalStars": 69011,
+        "totalStars": 69103,
         "language": "Python",
         "dailyStars": 473,
         "chineseIntro": {
-          "zh": "从零训练 64M 参数小语言模型的教学项目，主打两小时内完成训练，帮助理解大模型原理与完整流程。",
+          "zh": "一个教学型开源项目，用约两小时从零训练出 64M 参数的小型大语言模型，帮助学习者完整理解大模型训练流程。",
           "en": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours."
         },
         "todayHighlight": {
-          "zh": "项目已运营约 28 个月，总 star 近 6.9 万，今日新增 473，作为长期教学型项目仍在持续获得新增关注。",
+          "zh": "项目已运营约 28 个月，今日新增 473 stars，作为长期在榜的入门级大模型教程，随 AI 学习需求持续获得新增关注。",
           "en": "登上 GitHub Trending 日榜第 4 位, 总 star 数已达 69k+，持续占据 AI 开源热门榜单, 项目切中 AI/LLM/Agent 工具链的高频痛点，开发者社区采用信号明显, 今日新增 473 星."
         },
         "inclusionReason": {
-          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 69,011 stars、9,017 forks，topics: artificial-intelligence, large-language-model，可作为开发者采用和技术趋势信号观察。",
-          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 69,011 stars and 9,017 forks，topics: artificial-intelligence, large-language-model, making it a developer adoption and trend signal."
+          "zh": "昨日以来仍有更新，且属于 AI/LLM/Agent/RAG 相关方向；当前约 69,103 stars、9,026 forks，topics: artificial-intelligence, large-language-model，可作为开发者采用和技术趋势信号观察。",
+          "en": "Updated since yesterday and relevant to AI/LLM/Agent/RAG; currently around 69,103 stars and 9,026 forks，topics: artificial-intelligence, large-language-model, making it a developer adoption and trend signal."
         },
         "pmInsight": {
-          "zh": "产品经理可用它低成本建立对大模型训练流程的直觉，理解模型能力与数据、参数规模之间的关系。",
+          "zh": "可观察长生命周期教育类项目如何靠清晰的入门路径维持热度，以及「亲手训练」体验对理解 AI 产品能力的价值。",
           "en": "Use it as an early signal for AI application patterns and developer adoption. Review the README, examples, and recent commits."
         },
         "impact": "Watch",
@@ -625,19 +625,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "OpenAI 首席科学家提出以困惑度（交叉熵损失）作为跨模型开发者的统一评测指标，并首次公开内部预训练困惑度数据。这意味着模型能力评估可能从各家自说自话走向可横向比较的公共基准。",
+          "zh": "OpenAI 首席科学家提出将困惑度（交叉熵损失）作为跨模型开发者的统一评测指标，并首次公开其内部预训练困惑度数据。这意味着模型能力评估可能从零散基准转向可横向比较的单一标尺。",
           "en": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities."
         },
         "chineseIntro": {
-          "zh": "OpenAI 首席科学家提出以困惑度（交叉熵损失）作为跨模型开发者的统一评测指标，并首次公开内部预训练困惑度数据。这意味着模型能力评估可能从各家自说自话走向可横向比较的公共基准。",
+          "zh": "OpenAI 首席科学家提出将困惑度（交叉熵损失）作为跨模型开发者的统一评测指标，并首次公开其内部预训练困惑度数据。这意味着模型能力评估可能从零散基准转向可横向比较的单一标尺。",
           "en": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities."
         },
         "todayHighlight": {
-          "zh": "头部实验室主动公开竞争敏感指标，是在为行业安全标准与评测话语权抢先定调。",
-          "en": "头部实验室主动公开竞争敏感指标，是在为行业安全标准与评测话语权抢先定调。"
+          "zh": "头部实验室主动公开内部训练指标，是在为行业安全标准与评测话语权抢先定调。",
+          "en": "头部实验室主动公开内部训练指标，是在为行业安全标准与评测话语权抢先定调。"
         },
         "pmInsight": {
-          "zh": "在选型或对外宣称模型能力时，可开始把困惑度/交叉熵纳入内部评测表，提前对齐这一潜在行业口径。",
+          "zh": "在选型或对外沟通模型能力时，可提前把困惑度纳入评测表，观察供应商是否跟进披露，以此判断其透明度与合作意愿。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -650,38 +650,38 @@ export const DAILY_BRIEFS: DailyBrief[] = [
       },
       {
         "title": {
-          "zh": "Hacker News AI: Show HN: AI code review in VS Code with your own API key or Ollama, no account",
-          "en": "Hacker News AI: Show HN: AI code review in VS Code with your own API key or Ollama, no account"
+          "zh": "Hacker News AI: Frontier models need only one text to unmask its human or AI author",
+          "en": "Hacker News AI: Frontier models need only one text to unmask its human or AI author"
         },
         "category": {
           "zh": "公司动态",
           "en": "Company update"
         },
         "eventType": {
-          "zh": "产品功能",
-          "en": "产品功能"
+          "zh": "社区/研究信号",
+          "en": "社区/研究信号"
         },
         "summary": {
-          "zh": "一款 VS Code 插件支持用自带 API Key 或本地 Ollama 模型做代码审查，无需账号、无每日限额，代码只发往用户自选的服务商。这降低了 AI 代码审查的接入门槛与数据顾虑。",
-          "en": "Article URL: https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model Comments URL: https://news.ycombinator.com/item?id=50608149 Points: 1 # Comments: 0"
+          "zh": "一篇 arXiv 论文显示，前沿模型仅凭单条文本和零样本提示，就能判断作者是 AI 还是人类、出自哪家实验室，甚至定位到具体评审人或评论用户名。这直接冲击匿名评审与匿名社区的内容信任基础。",
+          "en": "Article URL: https://arxiv.org/abs/2611.26216 Comments URL: https://news.ycombinator.com/item?id=50608919 Points: 2 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "一款 VS Code 插件支持用自带 API Key 或本地 Ollama 模型做代码审查，无需账号、无每日限额，代码只发往用户自选的服务商。这降低了 AI 代码审查的接入门槛与数据顾虑。",
-          "en": "Article URL: https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model Comments URL: https://news.ycombinator.com/item?id=50608149 Points: 1 # Comments: 0"
+          "zh": "一篇 arXiv 论文显示，前沿模型仅凭单条文本和零样本提示，就能判断作者是 AI 还是人类、出自哪家实验室，甚至定位到具体评审人或评论用户名。这直接冲击匿名评审与匿名社区的内容信任基础。",
+          "en": "Article URL: https://arxiv.org/abs/2611.26216 Comments URL: https://news.ycombinator.com/item?id=50608919 Points: 2 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "BYOK+本地模型的免账号形态，正在把 AI 编码助手从订阅制 SaaS 推向可自托管的轻量工具。",
-          "en": "BYOK+本地模型的免账号形态，正在把 AI 编码助手从订阅制 SaaS 推向可自托管的轻量工具。"
+          "zh": "作者归属识别能力已从实验室指标变成可落地的溯源工具，内容平台与学术评审的匿名假设需要重估。",
+          "en": "作者归属识别能力已从实验室指标变成可落地的溯源工具，内容平台与学术评审的匿名假设需要重估。"
         },
         "pmInsight": {
-          "zh": "若做开发者工具，应评估「自带密钥/本地模型」作为获客入口，用它降低试用摩擦再转化到团队版。",
+          "zh": "若产品涉及 UGC、评审或匿名反馈，应尽快评估接入 AI 文本溯源检测的成本与误判率，并设计申诉与标注机制。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
-        "impact": "Watch",
+        "impact": "High",
         "sources": [
           {
             "label": "Hacker News AI",
-            "url": "https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model"
+            "url": "https://arxiv.org/abs/2611.26216"
           }
         ]
       },
@@ -699,19 +699,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "Token Bill 上线 LLM API 成本计算器，按流量与提示长度并排对比 24 个模型，计入长上下文加价、批量折扣与缓存占比。这让多模型成本测算从手工表格变成可复用工具。",
+          "zh": "Token Bill 上线 LLM API 成本计算器，并排对比 24 个模型的价格，覆盖长上下文附加费、批量折扣与缓存输入占比。这让多模型成本测算从手工表格变成可复用的估算工具。",
           "en": "Article URL: https://tokenbill.dev/ Comments URL: https://news.ycombinator.com/item?id=50606332 Points: 1 # Comments: 0"
         },
         "chineseIntro": {
-          "zh": "Token Bill 上线 LLM API 成本计算器，按流量与提示长度并排对比 24 个模型，计入长上下文加价、批量折扣与缓存占比。这让多模型成本测算从手工表格变成可复用工具。",
+          "zh": "Token Bill 上线 LLM API 成本计算器，并排对比 24 个模型的价格，覆盖长上下文附加费、批量折扣与缓存输入占比。这让多模型成本测算从手工表格变成可复用的估算工具。",
           "en": "Article URL: https://tokenbill.dev/ Comments URL: https://news.ycombinator.com/item?id=50606332 Points: 1 # Comments: 0"
         },
         "todayHighlight": {
-          "zh": "模型价格战下，成本透明度本身成为选型决策的关键变量，第三方比价工具开始填补空白。",
-          "en": "模型价格战下，成本透明度本身成为选型决策的关键变量，第三方比价工具开始填补空白。"
+          "zh": "模型价格战下，成本透明度本身成为开发者选型的独立决策维度。",
+          "en": "模型价格战下，成本透明度本身成为开发者选型的独立决策维度。"
         },
         "pmInsight": {
-          "zh": "把此类计算器纳入定价评审流程，用真实流量与缓存比例复核单位请求成本，而非只看标价。",
+          "zh": "把该工具的计算口径（缓存占比、批量折扣、长上下文溢价）固化进自家成本模型，避免按标价粗算导致预算偏差。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Watch",
@@ -732,23 +732,23 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "Company update"
         },
         "eventType": {
-          "zh": "政策/安全",
-          "en": "政策/安全"
+          "zh": "产品功能",
+          "en": "产品功能"
         },
         "summary": {
-          "zh": "GitHub 安全公告权限正式可用，组织可通过自定义仓库角色授予查看、创建管理、接收私密漏洞报告、发布公告与申请 CVE 四类细粒度权限。团队不再需要管理员或组织级安全经理角色才能处理漏洞。",
+          "zh": "GitHub 安全公告权限正式 GA，组织所有者可通过自定义仓库角色授予查看、编辑、接受私密漏洞报告、发布公告与申请 CVE 四类细粒度权限，无需再给管理员或组织级安全经理角色。",
           "en": "Organization owners can now let people work on repository security advisories, including private vulnerability reports, through custom repository roles. You no longer have to make them repository administrators or give&#8230; The post Security advisory permissions are now generally available appeared first on The GitHub Blog."
         },
         "chineseIntro": {
-          "zh": "GitHub 安全公告权限正式可用，组织可通过自定义仓库角色授予查看、创建管理、接收私密漏洞报告、发布公告与申请 CVE 四类细粒度权限。团队不再需要管理员或组织级安全经理角色才能处理漏洞。",
+          "zh": "GitHub 安全公告权限正式 GA，组织所有者可通过自定义仓库角色授予查看、编辑、接受私密漏洞报告、发布公告与申请 CVE 四类细粒度权限，无需再给管理员或组织级安全经理角色。",
           "en": "Organization owners can now let people work on repository security advisories, including private vulnerability reports, through custom repository roles. You no longer have to make them repository administrators or give&#8230; The post Security advisory permissions are now generally available appeared first on The GitHub Blog."
         },
         "todayHighlight": {
-          "zh": "漏洞响应权限从组织级下放到仓库级，反映供应链安全治理正走向最小权限化。",
-          "en": "漏洞响应权限从组织级下放到仓库级，反映供应链安全治理正走向最小权限化。"
+          "zh": "安全协作权限从组织级下沉到仓库级，是 DevSecOps 权限模型的一次结构性细化。",
+          "en": "安全协作权限从组织级下沉到仓库级，是 DevSecOps 权限模型的一次结构性细化。"
         },
         "pmInsight": {
-          "zh": "若产品涉及代码托管集成，应同步支持按仓库粒度配置安全角色，避免客户因权限过宽而卡住采购。",
+          "zh": "若产品对接 GitHub 安全流程，应同步调整角色映射，把「发布公告/申请 CVE」设为独立审批节点，避免权限过度集中。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -773,19 +773,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "新模型/新能力"
         },
         "summary": {
-          "zh": "Hugging Face 推出 harness adapters，可把选定模型适配到特定 agent harness 上，以提升任务表现并降低成本。这指向「模型+执行框架」联合调优而非单纯换模型。",
+          "zh": "Hugging Face 推出 harness adapters，让开发者把所选模型适配到自己的评测/运行框架（harness）中，以提升性能并降低成本。这降低了模型与工具链绑定的迁移摩擦。",
           "en": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost"
         },
         "chineseIntro": {
-          "zh": "Hugging Face 推出 harness adapters，可把选定模型适配到特定 agent harness 上，以提升任务表现并降低成本。这指向「模型+执行框架」联合调优而非单纯换模型。",
+          "zh": "Hugging Face 推出 harness adapters，让开发者把所选模型适配到自己的评测/运行框架（harness）中，以提升性能并降低成本。这降低了模型与工具链绑定的迁移摩擦。",
           "en": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost"
         },
         "todayHighlight": {
-          "zh": "竞争焦点从模型本身转向模型与 agent 框架的适配层，开源侧开始标准化这一环节。",
-          "en": "竞争焦点从模型本身转向模型与 agent 框架的适配层，开源侧开始标准化这一环节。"
+          "zh": "模型与 harness 解耦，意味着评测结果的可比性和复用性将成为开源生态的新竞争点。",
+          "en": "模型与 harness 解耦，意味着评测结果的可比性和复用性将成为开源生态的新竞争点。"
         },
         "pmInsight": {
-          "zh": "评估 agent 效果时固定 harness 再比模型，或固定模型再调 harness，避免把框架收益误记为模型能力。",
+          "zh": "在模型选型流程中加入「harness 适配成本」一项，优先选择已有 adapter 的模型，缩短从评测到上线的周期。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "Medium",
@@ -810,19 +810,19 @@ export const DAILY_BRIEFS: DailyBrief[] = [
           "en": "API/定价"
         },
         "summary": {
-          "zh": "Gemini API 预览上线 Tool Retrieval，让 agent 在接入数百个工具时按需检索、减少 token 消耗。这缓解了工具数量膨胀带来的上下文与成本压力。",
+          "zh": "Gemini API 预览上线 Tool Retrieval，让智能体在接入数百个工具时按需检索工具定义，从而显著减少 token 消耗。这解决了工具数量膨胀带来的上下文成本问题。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Tool_retrieval_hero.max-600x600.format-webp.webp\">Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API."
         },
         "chineseIntro": {
-          "zh": "Gemini API 预览上线 Tool Retrieval，让 agent 在接入数百个工具时按需检索、减少 token 消耗。这缓解了工具数量膨胀带来的上下文与成本压力。",
+          "zh": "Gemini API 预览上线 Tool Retrieval，让智能体在接入数百个工具时按需检索工具定义，从而显著减少 token 消耗。这解决了工具数量膨胀带来的上下文成本问题。",
           "en": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Tool_retrieval_hero.max-600x600.format-webp.webp\">Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API."
         },
         "todayHighlight": {
-          "zh": "工具规模成为 agent 平台的新竞争维度，谁能低成本支撑海量工具谁就更容易承载企业级 agent。",
-          "en": "工具规模成为 agent 平台的新竞争维度，谁能低成本支撑海量工具谁就更容易承载企业级 agent。"
+          "zh": "工具检索把智能体扩展的瓶颈从「能接多少工具」转向「如何高效选工具」，是 agent 基础设施的关键补位。",
+          "en": "工具检索把智能体扩展的瓶颈从「能接多少工具」转向「如何高效选工具」，是 agent 基础设施的关键补位。"
         },
         "pmInsight": {
-          "zh": "设计多工具 agent 时优先验证检索式工具注入的召回准确率，再决定是否放弃全量工具塞入提示词。",
+          "zh": "工具数超过约 20 个的 agent 产品应尽快做 A/B：对比全量注入与 Tool Retrieval 的 token 成本、工具命中率与端到端延迟。",
           "en": "Track how platform companies shift capability boundaries, vertical scenarios, and monetization narratives."
         },
         "impact": "High",
